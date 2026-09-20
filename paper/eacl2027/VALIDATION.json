@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-09-20T11:24:08.244371+00:00",
-  "status": "prepared_for_human_author_review_not_submitted",
+  "checked_at": "2026-09-20T12:37:51.397514+00:00",
+  "status": "revised_local_materials_for_human_author_review_not_submitted",
   "author": {
     "name": "Yuki Oshio",
     "affiliation": "UPHASH Inc.",
@@ -9,16 +9,16 @@
     "count": 1,
     "confirmed_by_user": true
   },
-  "evidence_revision": "47aaf5a9ae78b1385ba6044917865afc56a9b969",
-  "source_url": "https://github.com/UpHash-Network/mini-jev/tree/47aaf5a9ae78b1385ba6044917865afc56a9b969",
+  "evidence_revision": null,
+  "source_url": null,
   "artifacts": {
     "EACL2027_Mini_Jev_Draft.pdf": {
       "bytes": 208729,
       "sha256": "0fc182d22514f07347e3b81cf6181a587fc66c299605e4df396ea07410ab63ba"
     },
     "Mini_Jev_Demonstration.mp4": {
-      "bytes": 2975547,
-      "sha256": "87884e9866ecbfc1baa5f86cd839cab69fa4e127e9f84f0d86872d9a36bb32bf"
+      "bytes": 9105242,
+      "sha256": "094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123"
     },
     "main.tex": {
       "bytes": 23208,
@@ -49,18 +49,32 @@
     "visual_review": "All seven pages rendered and inspected; final first and sixth pages rechecked after publication-link edits."
   },
   "video": {
-    "duration_seconds": 135.0,
+    "duration_seconds": 144.96,
     "codec": "h264",
     "dimensions": [
-      1280,
-      920
+      1920,
+      1080
     ],
     "audio_tracks": 0,
-    "captions": "Original English panels beneath live browser recording",
+    "captions": "Original English panels beneath the live presentation-view recording",
     "full_decode_passed": true,
-    "representative_scene_frames_inspected": 6,
     "live_examples": 2,
-    "prediction_substitution": false
+    "prediction_substitution": false,
+    "visual_review": "Passed for the inspected scenes and boundaries. Parent inspected 15 representative frames from the first revised encode; a second AI reviewer inspected 17 representative scenes and then 24 boundary frames from this final artifact. The final encode uses the same captured footage, adjusts caption timing, and shortens the Run instruction. All 39 required DOM rectangles fit the capture viewport; full-file decoding passed. This is not an every-frame human review or a user comprehension study.",
+    "final_caption_boundary_review_completed": true,
+    "layout_verification": {
+      "record": "recording/video-layout-check.json",
+      "required_rectangles_checked": 39,
+      "all_inside_viewport": true,
+      "minimum_primary_body_font_px": 18,
+      "result_value_font_px": 34
+    },
+    "clipboard_verification": "The isolated recording browser was granted clipboard permission for the loopback demo. Its freshly copied response was read back and exactly matched the visible live response JSON.",
+    "source_files_match_recording_provenance": true,
+    "metadata_source": "ffprobe on canonical Mini_Jev_Demonstration.mp4",
+    "final_caption_boundary_frames_inspected": 24,
+    "earlier_encode_content_scenes_inspected": 17,
+    "visual_review_scope": "17 representative scenes from the earlier encode of the same recording, plus 24 boundary frames read directly from the final SHA-256 artifact. This is AI-agent visual inspection, not author approval."
   },
   "demo": {
     "cpu_integration_tests_passed": 8,
@@ -90,55 +104,28 @@
       },
       "horizontal_overflow": false,
       "scope": "Separate source copy and fresh bridge process using the existing verified native runtime and resident model on the same machine. Full native rebuild/model download on a new machine was not repeated."
-    }
+    },
+    "current_revision_cpu_test_check": {
+      "passed": 8,
+      "suite": "demo.test_demo",
+      "checked_at": "2026-09-20T12:25:12+00:00",
+      "real_model_api_used": false
+    },
+    "historical_browser_and_review_scope": "Independent AI code review, desktop/mobile exercise, and separate-source-copy smoke predate the presentation-view revision. The updated video has its own live-request and layout provenance."
   },
-  "public_access_checks": [
-    {
-      "url": "https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/EACL2027_Mini_Jev_Draft.pdf",
-      "http_status": 200,
-      "bytes": 208729,
-      "sha256": "0fc182d22514f07347e3b81cf6181a587fc66c299605e4df396ea07410ab63ba",
-      "matches_local": true,
-      "authenticated": false
-    },
-    {
-      "url": "https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/Mini_Jev_Demonstration.mp4",
-      "http_status": 200,
-      "bytes": 2975547,
-      "sha256": "87884e9866ecbfc1baa5f86cd839cab69fa4e127e9f84f0d86872d9a36bb32bf",
-      "matches_local": true,
-      "authenticated": false
-    },
-    {
-      "url": "https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/demo/README.md",
-      "http_status": 200,
-      "bytes": 6859,
-      "sha256": "3f273bbf3dd68923c20d8fc8c5158fec4c2b95298cdb02f36b266e153ea2d8d6",
-      "matches_local": true,
-      "authenticated": false
-    },
-    {
-      "url": "https://github.com/UpHash-Network/mini-jev/tree/research/eacl2027-demo",
-      "http_status": 200,
-      "authenticated": false
-    },
-    {
-      "url": "https://github.com/UpHash-Network/mini-jev/archive/refs/heads/research/eacl2027-demo.zip",
-      "http_status": 200,
-      "authenticated": false,
-      "all_tracked_files_match": true,
-      "file_count": 376,
-      "sha256": "c085e26a7bc027fddc1e0066eb03ed5e37dc8b419a36e9acaad3159c0d2a640e"
-    }
-  ],
-  "public_access_checked_at_revision": "47aaf5a9ae78b1385ba6044917865afc56a9b969",
+  "public_access_checks": [],
+  "public_access_checked_at_revision": null,
   "release_hygiene": {
     "schema_version": 1,
     "passed": true,
-    "files_scanned": 376,
-    "bytes_scanned": 133799941,
+    "files_scanned": 378,
+    "bytes_scanned": 139970035,
     "findings": [],
-    "scope": "Static release hygiene only. Not a comprehensive secret detector, legal review, or model-quality test."
+    "scope": "Static release hygiene only. Not a comprehensive secret detector, legal review, or model-quality test.",
+    "command": "python3 scripts/check_public_release.py",
+    "result_reported_by": "root agent",
+    "reported_at": "2026-09-20T12:38:41.040412+00:00",
+    "byte_count_scope": "Exact totals at the reported command execution; subsequent documentation edits can change byte totals."
   },
   "scientific_review": {
     "citations_verified": 15,
@@ -148,10 +135,93 @@
   },
   "remaining": [
     "Human author critical review and final approval of exact materials",
-    "Active OpenReview profile and authenticated form inspection",
+    "Publish the approved revised artifacts, verify public downloads, and regenerate matching ZIP packages",
+    "OpenReview activation pending (user reports registration submitted), active login and authenticated form inspection",
     "Reviewer nomination consent, conflicts, overlap and actual submission declarations",
     "Venue submission and receipt verification"
   ],
   "full_submission_ready": false,
-  "venue_submission_performed": false
+  "venue_submission_performed": false,
+  "historical_revision_checks": [
+    {
+      "checked_at": "2026-09-20T11:24:08.244371+00:00",
+      "evidence_revision": "47aaf5a9ae78b1385ba6044917865afc56a9b969",
+      "video_artifact": {
+        "bytes": 2975547,
+        "sha256": "87884e9866ecbfc1baa5f86cd839cab69fa4e127e9f84f0d86872d9a36bb32bf"
+      },
+      "video_checks": {
+        "duration_seconds": 135.0,
+        "codec": "h264",
+        "dimensions": [
+          1280,
+          920
+        ],
+        "audio_tracks": 0,
+        "captions": "Original English panels beneath live browser recording",
+        "full_decode_passed": true,
+        "representative_scene_frames_inspected": 6,
+        "live_examples": 2,
+        "prediction_substitution": false
+      },
+      "public_access_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/EACL2027_Mini_Jev_Draft.pdf",
+          "http_status": 200,
+          "bytes": 208729,
+          "sha256": "0fc182d22514f07347e3b81cf6181a587fc66c299605e4df396ea07410ab63ba",
+          "matches_local": true,
+          "authenticated": false
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/Mini_Jev_Demonstration.mp4",
+          "http_status": 200,
+          "bytes": 2975547,
+          "sha256": "87884e9866ecbfc1baa5f86cd839cab69fa4e127e9f84f0d86872d9a36bb32bf",
+          "matches_local": true,
+          "authenticated": false
+        },
+        {
+          "url": "https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/demo/README.md",
+          "http_status": 200,
+          "bytes": 6859,
+          "sha256": "3f273bbf3dd68923c20d8fc8c5158fec4c2b95298cdb02f36b266e153ea2d8d6",
+          "matches_local": true,
+          "authenticated": false
+        },
+        {
+          "url": "https://github.com/UpHash-Network/mini-jev/tree/research/eacl2027-demo",
+          "http_status": 200,
+          "authenticated": false
+        },
+        {
+          "url": "https://github.com/UpHash-Network/mini-jev/archive/refs/heads/research/eacl2027-demo.zip",
+          "http_status": 200,
+          "authenticated": false,
+          "all_tracked_files_match": true,
+          "file_count": 376,
+          "sha256": "c085e26a7bc027fddc1e0066eb03ed5e37dc8b419a36e9acaad3159c0d2a640e"
+        }
+      ],
+      "public_access_checked_at_revision": "47aaf5a9ae78b1385ba6044917865afc56a9b969",
+      "release_hygiene": {
+        "schema_version": 1,
+        "passed": true,
+        "files_scanned": 376,
+        "bytes_scanned": 133799941,
+        "findings": [],
+        "scope": "Static release hygiene only. Not a comprehensive secret detector, legal review, or model-quality test."
+      }
+    }
+  ],
+  "working_tree_base_revision": "16c54ef2cbb5f26cb884de744ec4c835f6209b15",
+  "source_status": "Presentation/video revision prepared against working_tree_base_revision; current recording-source hashes are verified. Publication and package verification performed after committing this record are stored separately in outputs/EACL2027_STATUS.json.",
+  "public_access_verified_for_current_artifacts": false,
+  "public_access_scope": "Previous successful checks are retained under historical_revision_checks. Public verification of this revision was not performed at this record timestamp; later evidence is stored outside the versioned files in outputs/EACL2027_STATUS.json.",
+  "release_hygiene_scope": "Passed on this video/presentation revision before the final documentation synchronization; totals describe that command execution.",
+  "release_hygiene_verified_for_current_artifacts": true,
+  "openreview_registration_submitted_user_reported": true,
+  "openreview_activation_status": "pending_activation_user_reported",
+  "submission_zip_generated_at_validation_time": false,
+  "remaining_scope": "Outstanding at this validation timestamp; later publication/package/account events are recorded in the external status file without rewriting this commit to cite itself."
 }

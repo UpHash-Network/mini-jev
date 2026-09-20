@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-20T12:30:47.438653+00:00",
+  "video_sha256": "094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123",
+  "viewport": {
+    "width": 1440,
+    "height": 720
+  },
+  "checks": [
+    {
+      "name": "00-overview",
+      "rows": [
+        {
+          "selector": "#state-input",
+          "x": 24,
+          "y": 100,
+          "width": 1392,
+          "height": 76,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#run-button",
+          "x": 24,
+          "y": 184,
+          "width": 248,
+          "height": 45,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answers",
+          "x": 24,
+          "y": 271,
+          "width": 1392,
+          "height": 262,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "01-choice-criteria",
+      "rows": [
+        {
+          "selector": "#question-editors .question-editor:nth-child(1)",
+          "x": 24,
+          "y": 71.296875,
+          "width": 1392,
+          "height": 537.875,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "02-noul-criteria",
+      "rows": [
+        {
+          "selector": "#question-editors .question-editor:nth-child(2)",
+          "x": 24,
+          "y": 18.296875,
+          "width": 1392,
+          "height": 410.5,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "03-score-criteria",
+      "rows": [
+        {
+          "selector": "#question-editors .question-editor:nth-child(3)",
+          "x": 24,
+          "y": 18.296875,
+          "width": 1392,
+          "height": 536.875,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "04-ready-to-run",
+      "rows": [
+        {
+          "selector": "#state-input",
+          "x": 24,
+          "y": 100,
+          "width": 1392,
+          "height": 76,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#run-button",
+          "x": 24,
+          "y": 184,
+          "width": 248,
+          "height": 45,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answers",
+          "x": 24,
+          "y": 271,
+          "width": 1392,
+          "height": 262,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "urgent-billing",
+      "rows": [
+        {
+          "selector": "#state-input",
+          "x": 24,
+          "y": 100,
+          "width": 1392,
+          "height": 76,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#run-button",
+          "x": 24,
+          "y": 184,
+          "width": 248,
+          "height": 45,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answers",
+          "x": 24,
+          "y": 271,
+          "width": 1392,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "urgent-billing",
+      "rows": [
+        {
+          "selector": "#answer-routing",
+          "x": 24,
+          "y": 271,
+          "width": 454.65625,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answer-urgent",
+          "x": 492.65625,
+          "y": 271,
+          "width": 454.671875,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answer-priority",
+          "x": 961.328125,
+          "y": 271,
+          "width": 454.65625,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "05-stale-result",
+      "rows": [
+        {
+          "selector": "#state-input",
+          "x": 24,
+          "y": 100,
+          "width": 1392,
+          "height": 76,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#run-button",
+          "x": 24,
+          "y": 184,
+          "width": 248,
+          "height": 45,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answers",
+          "x": 24,
+          "y": 274.390625,
+          "width": 1392,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "routine-account",
+      "rows": [
+        {
+          "selector": "#state-input",
+          "x": 24,
+          "y": 100,
+          "width": 1392,
+          "height": 76,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#run-button",
+          "x": 24,
+          "y": 184,
+          "width": 248,
+          "height": 45,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answers",
+          "x": 24,
+          "y": 271,
+          "width": 1392,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "routine-account",
+      "rows": [
+        {
+          "selector": "#answer-routing",
+          "x": 24,
+          "y": 271,
+          "width": 454.65625,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answer-urgent",
+          "x": 492.65625,
+          "y": 271,
+          "width": 454.671875,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answer-priority",
+          "x": 961.328125,
+          "y": 271,
+          "width": 454.65625,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "request-json",
+      "rows": [
+        {
+          "selector": "#request-json",
+          "x": 24,
+          "y": 68.921875,
+          "width": 1392,
+          "height": 470,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#copy-request",
+          "x": 1303.34375,
+          "y": 17.921875,
+          "width": 112.65625,
+          "height": 41,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "response-json",
+      "rows": [
+        {
+          "selector": "#response-json",
+          "x": 24,
+          "y": 68.921875,
+          "width": 1392,
+          "height": 470,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#copy-response",
+          "x": 1289.984375,
+          "y": 17.921875,
+          "width": 126.015625,
+          "height": 41,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "clipboard-confirmation",
+      "rows": [
+        {
+          "selector": "#copy-response",
+          "x": 1289.984375,
+          "y": 17.921875,
+          "width": 126.015625,
+          "height": 41,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#copy-response-status",
+          "x": 24,
+          "y": 544.921875,
+          "width": 1392,
+          "height": 27,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "13-probability-semantics",
+      "rows": [
+        {
+          "selector": "#state-input",
+          "x": 24,
+          "y": 100,
+          "width": 1392,
+          "height": 76,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#run-button",
+          "x": 24,
+          "y": 184,
+          "width": 248,
+          "height": 45,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answers",
+          "x": 24,
+          "y": 271,
+          "width": 1392,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "semantics",
+      "rows": [
+        {
+          "selector": ".semantics-note",
+          "x": 24,
+          "y": 532.90625,
+          "width": 1392,
+          "height": 25.296875,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answers",
+          "x": 24,
+          "y": 271,
+          "width": 1392,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "14-evidence-context",
+      "rows": [
+        {
+          "selector": "#state-input",
+          "x": 24,
+          "y": 100,
+          "width": 1392,
+          "height": 76,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#run-button",
+          "x": 24,
+          "y": 184,
+          "width": 248,
+          "height": 45,
+          "font_size": "18px",
+          "fully_visible": true
+        },
+        {
+          "selector": "#answers",
+          "x": 24,
+          "y": 271,
+          "width": 1392,
+          "height": 254.90625,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    },
+    {
+      "name": "source-and-setup",
+      "rows": [
+        {
+          "selector": ".page-footer",
+          "x": 24,
+          "y": 489.703125,
+          "width": 1200,
+          "height": 229.96875,
+          "font_size": "18px",
+          "fully_visible": true
+        }
+      ]
+    }
+  ],
+  "all_required_rectangles_inside_viewport": true,
+  "clipboard_matches_live_response": true,
+  "browser_errors": [],
+  "scope": "Required DOM rectangles checked at each recorded scene. Full video decoding and visual inspection are separate checks; this is not a human usability study."
+}

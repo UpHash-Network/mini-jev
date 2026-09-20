@@ -13,7 +13,7 @@
 | 連絡先 | oshio@uphash.net（ユーザー指定。OpenReview確認済みメールかは未確認） |
 | 所属 | **UPHASH Inc.（本人確定）** |
 | 所在地 | 未確認。実フォームで必要な場合に確認 |
-| OpenReview profile ID / 有効化 | **本人確認待ち** |
+| OpenReview profile ID / 有効化 | **登録申請済み・有効化待ち（本人報告）**。profile IDと有効なログインは未確認 |
 | 投稿PDF | [`EACL2027_Mini_Jev_Draft.pdf`](EACL2027_Mini_Jev_Draft.pdf)、7ページ（本文6ページ）、SHA-256 `0fc182d22514f07347e3b81cf6181a587fc66c299605e4df396ea07410ab63ba` |
 | 査読担当候補の著者 | Yuki Oshio（仮。本人の引受未確認） |
 | 発表担当 | 未確認。採択後の登録・live demoとposterへの対応を確認 |
@@ -39,8 +39,8 @@ Keywords候補（フォームに欄がある場合のみ）：typed decisions; l
 | 公開リポジトリ | https://github.com/UpHash-Network/mini-jev/tree/research/eacl2027-demo |
 | インストール可能なデモ配布物 | https://github.com/UpHash-Network/mini-jev/archive/refs/heads/research/eacl2027-demo.zip — 起動手順は [`demo/README.md`](../../demo/README.md)。対応する確定commitと検証範囲は検査記録に記載 |
 | WebデモURL | インストール可能な配布物方式。起動後のローカルURLは `http://127.0.0.1:8766/`（外部公開Webホストは用意していない） |
-| 150秒以内の動画URL | https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/Mini_Jev_Demonstration.mp4 — 135秒、英語字幕、音声なし。PDF中と同じURL |
-| MPEG4添付 | [`Mini_Jev_Demonstration.mp4`](Mini_Jev_Demonstration.mp4)、2,975,547 bytes。添付欄の有無・容量とリンクの扱いは実画面で確認 |
+| 150秒以内の動画URL | https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/Mini_Jev_Demonstration.mp4 — PDF中と同じURL。改訂動画は144.96秒（約145秒）、1920×1080、英語字幕、音声なし。公開後は下記SHA-256との一致を確認する（準備時の検査記録と、その後の公開検査を区別） |
+| MPEG4添付 | [`Mini_Jev_Demonstration.mp4`](Mini_Jev_Demonstration.mp4)、9,105,242 bytes、SHA-256 `094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123`。改訂版。添付欄の有無・容量とリンクの扱いは実画面で確認 |
 | その他の補足 | 本文で説明する再現用資料だけを選び、権利・実行手順・版を添える。必須欄や容量は未確認 |
 
 ## 開示用の内容案
@@ -61,8 +61,8 @@ Keywords候補（フォームに欄がある場合のみ）：typed decisions; l
 
 ## 本人の確定が必要な情報
 
-- OpenReview profile IDと有効化状態、確認済みメール、必要な場合の所在地。著者・単著・所属の意思決定は確定済み。
+- OpenReviewは本人から登録申請済み・有効化待ちと報告されている。profile ID、有効化完了、確認済みメール、必要な場合の所在地を確認する。著者・単著・所属の意思決定は確定済み。
 - 査読担当の引受、利益相反、他投稿との重複、引用/ライセンス/内容への確認と責任。
 - 最終PDF・動画・配布物の版への承認。実際の画面に出た申告・宣誓の正確な文面への回答。
 
-PDF・字幕動画・デモソースは完成し、著者確認用に準備済み。本人確認・実フォーム入力・宣誓・最終投稿は未実施。アカウント作成やメール送信も実施していない。
+PDF・字幕動画・デモソースは著者確認用資料であり、最終承認は未了。動画の可読性改善版と最終境界目視は確認済み。改訂版の公開・一致検査・ZIP生成が本記録より後に行われた場合、その証拠は外部状態ファイルに記録し、準備時の旧公開版検査と混同しない。本人からOpenReview登録申請済み・有効化待ちとの報告があるが、有効なログイン・実フォーム入力・宣誓・最終投稿は未確認または未実施。こちらからアカウント作成やメール送信は実施していない。

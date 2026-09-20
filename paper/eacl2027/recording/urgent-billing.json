@@ -60,9 +60,9 @@
       "output_tokens": 0,
       "questions": 3
     },
-    "latency_ms": 1150.1302081160247,
-    "request_id": "70abeaa524d44a30b92c27698484a814"
+    "latency_ms": 644.5542918518186,
+    "request_id": "bf169cb3ca184d20b8d6885dadd21e09"
   },
-  "elapsed_ms": 1151.03420894593,
+  "elapsed_ms": 645.4827496781945,
   "source": "live_api"
 }

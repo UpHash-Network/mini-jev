@@ -50,6 +50,18 @@ The displayed **Browser round-trip** uses the browser's monotonic clock around i
 
 All controls are reachable by keyboard. Use Tab/Shift+Tab, Enter to activate buttons, and Enter/Space on expandable questions and the JSON inspector. Controls have visible focus, form labels, loading/error announcements, and a mobile layout. Clipboard access may require browser permission; JSON remains selectable if it is denied.
 
+## Presentation view
+
+For a screen recording or live audience, open **http://127.0.0.1:8766/#presentation**. Use the URL fragment, not `?presentation=1`: the server deliberately serves only its explicit routes. Open `/#standard` to return to the usual layout. Switching views changes presentation only; the request, model, candidate scores, and inference path are identical.
+
+At 1280×720 or 1440×720 browser viewport size, the presentation layout places the editable message, Run button, and three result cards in one view for the two included examples. Result values use 34 px text; state, candidate labels/probabilities, concentration, and result status use 18 px or larger. The layout avoids browser zoom or cropping. Arbitrarily long user inputs, additional candidates, or larger accessibility text may need scrolling.
+
+Keep the page at the top for the result scene. The smaller **Bridge → API** timing and temperature metadata remain available in the standard layout and JSON exchange; presentation view emphasizes the measured browser round-trip and actual token counts. Edited inputs visibly mark prior results with an 18 px **INPUTS CHANGED · RUN AGAIN** label and dashed outline. A completed new request clears that marking.
+
+Scroll down for **Questions & candidates**. Open one question at a time to show its full instructions and candidate meanings. In this view, candidate descriptions use wrapping textareas; editing them has exactly the same effect as in the standard form. In particular, the Noul and Score instructions refer to urgency/timing **explicitly expressed by the message**, not an objective assessment of the customer's circumstances.
+
+The JSON inspector uses one column with 18 px text and a 470 px scrollable area for each exchange. Show the current request and last response as separate scenes; each Copy button has its own visible success/failure message directly below that JSON area. Clipboard success is reported only after the browser's write operation succeeds. All results still come from live API calls; presentation view adds no saved-result or replay path.
+
 ## Local boundary
 
 The bridge binds only `127.0.0.1`. It serves an explicit static-file allowlist and accepts only the matching loopback Host/port. API routes require a custom header; inference additionally requires the exact same browser Origin. Cross-site requests are rejected, no CORS headers are added, and a restrictive content security policy blocks external scripts, framing, and remote resources.

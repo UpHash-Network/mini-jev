@@ -1,17 +1,18 @@
 {
-  "status": "recorded_live_not_submitted",
-  "duration_seconds": 135,
+  "status": "recorded_live_visual_revision_not_submitted",
+  "duration_seconds": 144.96,
   "file": "Mini_Jev_Demonstration.mp4",
-  "capture": "Continuous browser screen recording of the local demo with real model API requests; no prediction substitution. Initial page-load wait trimmed.",
-  "presentation": "Original English caption panels appended below the screen; no audio track.",
+  "capture": "Continuous screen recording of actual local browser interactions and two real model API requests. No prediction substitution; the initial 0.05-second page-load interval was trimmed.",
+  "presentation": "Opt-in /#presentation view. Browser capture resized from 1440x720 to 1920x960 without cropping; original English captions appended in a 120-pixel strip. No audio track.",
   "viewport_pixels": [
-    1280,
-    800
+    1440,
+    720
   ],
   "video_pixels": [
-    1280,
-    920
+    1920,
+    1080
   ],
+  "frame_rate": 25,
   "model": {
     "schema_version": 1,
     "role": "decision_model",
@@ -35,7 +36,23 @@
       "name": "ready"
     },
     {
-      "at_seconds": 27.204,
+      "at_seconds": 7.568,
+      "name": "01-choice-criteria"
+    },
+    {
+      "at_seconds": 16.626,
+      "name": "02-noul-criteria"
+    },
+    {
+      "at_seconds": 25.579,
+      "name": "03-score-criteria"
+    },
+    {
+      "at_seconds": 36.057,
+      "name": "urgent-billing-clicked"
+    },
+    {
+      "at_seconds": 36.709,
       "name": "urgent-billing",
       "answers": {
         "routing": "billing",
@@ -44,15 +61,15 @@
       }
     },
     {
-      "at_seconds": 27.21,
-      "name": "show_first_results"
+      "at_seconds": 51.551,
+      "name": "changed-message"
     },
     {
-      "at_seconds": 55.026,
-      "name": "changed_message"
+      "at_seconds": 57.052,
+      "name": "routine-account-clicked"
     },
     {
-      "at_seconds": 63.586,
+      "at_seconds": 57.645,
       "name": "routine-account",
       "answers": {
         "routing": "account",
@@ -61,39 +78,160 @@
       }
     },
     {
-      "at_seconds": 80.044,
-      "name": "json_inspector"
+      "at_seconds": 70.57,
+      "name": "request-json"
     },
     {
-      "at_seconds": 94.029,
-      "name": "copy_request"
+      "at_seconds": 75.032,
+      "name": "request-criteria-json"
     },
     {
-      "at_seconds": 100.046,
-      "name": "probability_semantics"
+      "at_seconds": 80.542,
+      "name": "response-choice-json"
     },
     {
-      "at_seconds": 120.008,
-      "name": "installation_and_scope"
+      "at_seconds": 84.044,
+      "name": "response-choice-value-json"
     },
     {
-      "at_seconds": 135.002,
+      "at_seconds": 86.042,
+      "name": "response-noul-json"
+    },
+    {
+      "at_seconds": 91.543,
+      "name": "response-score-json"
+    },
+    {
+      "at_seconds": 95.538,
+      "name": "response-tail-json"
+    },
+    {
+      "at_seconds": 99.098,
+      "name": "copy-response-confirmed",
+      "clipboard_matches_response": true
+    },
+    {
+      "at_seconds": 105.543,
+      "name": "probability-semantics"
+    },
+    {
+      "at_seconds": 118.541,
+      "name": "evidence-context"
+    },
+    {
+      "at_seconds": 129.572,
+      "name": "source-and-setup"
+    },
+    {
+      "at_seconds": 145.001,
       "name": "end"
     }
   ],
   "browser_errors": [],
   "source_files_sha256": {
     "demo/server.py": "f8f2bd851280181702373f8d14b0fb7455d68834afdee18a5354891c217bb03f",
-    "demo/static/index.html": "9ca0491c5605d9ee9795b3792c39b31759becb130712efc73dd53ca01b6bf9bc",
-    "demo/static/app.js": "ed585b93af28eef76d68029f6251ce40d5217d5bcc994956f5cf0563e72b0f42",
-    "demo/static/style.css": "3d093f6f2b94cc9663fe5ed9e51d2fc61c5c9ddf65edf2aa1a08b084947cb20d"
+    "demo/static/index.html": "725bab5445bb235ee33876250cdfd8718e263c45941150e3b105704a0e4e88cb",
+    "demo/static/style.css": "bfe347cfb9d9fff18b35120e209c9d9ff6ad454a7da39408f3935e01ab42949d",
+    "demo/static/app.js": "12dac53a0c66653908d20f463cd4c0ea0a629e6392c40d56126c82570d9c0b3c"
   },
-  "limits": "Two English support examples demonstrate software use; they are not a quality benchmark. Timing is live UI timing, separate from the paper study.",
-  "post_capture_changes": [
+  "captions": [
     {
-      "file": "demo/static/index.html",
-      "change": "Only the two repository/footer documentation hrefs were updated to the research/eacl2027-demo branch after capture; controls, styles, text, and inference behavior were unchanged."
+      "start": 0,
+      "end": 7.568,
+      "title": "MINI JEV / LIVE LOCAL DEMONSTRATION",
+      "text": "Small typed decisions from a frozen language model.\nCandidate-token scores become structured values; no answer text is generated."
+    },
+    {
+      "start": 7.568,
+      "end": 16.626,
+      "title": "1 / DEFINE THE ALLOWED ANSWERS",
+      "text": "Choice: define support queues and what each candidate means.\nThe model selects a key; software constructs the typed response."
+    },
+    {
+      "start": 16.626,
+      "end": 25.579,
+      "title": "2 / DEFINE A BINARY QUESTION",
+      "text": "Noul: ask whether urgency is explicitly requested.\nThe output is P(true), normalized over the two candidates."
+    },
+    {
+      "start": 25.579,
+      "end": 34.5,
+      "title": "3 / DEFINE ORDERED STAGES",
+      "text": "Score: define ordered, equally spaced priority stages.\nThe output is their probability-weighted mean, not a class ID."
+    },
+    {
+      "start": 34.5,
+      "end": 39,
+      "title": "RUN / ACTUAL MODEL INFERENCE",
+      "text": "Run three questions on the live model.\nEach question is evaluated separately."
+    },
+    {
+      "start": 39,
+      "end": 51.551,
+      "title": "INSPECT / URGENT BILLING MESSAGE",
+      "text": "Read the route, urgency probability, and expected priority together.\nEach card also shows the distribution over its allowed candidates."
+    },
+    {
+      "start": 51.551,
+      "end": 57.645,
+      "title": "CHANGE THE INPUT / RUN AGAIN",
+      "text": "Load a routine account request.\nPrevious results are marked stale until the next run completes."
+    },
+    {
+      "start": 57.645,
+      "end": 70.57,
+      "title": "COMPARE / ROUTINE ACCOUNT MESSAGE",
+      "text": "Compare how the route, urgency probability, and priority change.\nThese values are live model outputs, not prefilled answers."
+    },
+    {
+      "start": 70.57,
+      "end": 80.542,
+      "title": "INSPECT / THE ACTUAL REQUEST",
+      "text": "The request contains the state, instructions, and candidate meanings.\nThe same interface is available through the Python SDK and HTTP API."
+    },
+    {
+      "start": 80.542,
+      "end": 99.098,
+      "title": "INSPECT / THE ACTUAL RESPONSE",
+      "text": "Scroll through the typed answers, probabilities, and calibration metadata.\nThe full JSON remains available for inspection and export."
+    },
+    {
+      "start": 99.098,
+      "end": 105.543,
+      "title": "EXPORT / COPY THE LIVE RESPONSE",
+      "text": "Copy the JSON response for use in your own tools.\nThe confirmation shows whether the clipboard operation succeeded."
+    },
+    {
+      "start": 105.543,
+      "end": 118.541,
+      "title": "INTERPRET / KNOW WHAT THE NUMBERS MEAN",
+      "text": "Probabilities compare allowed candidates only; concentration is not correctness.\nA well-typed output can still be semantically wrong."
+    },
+    {
+      "start": 118.541,
+      "end": 129.572,
+      "title": "EVIDENCE / WHAT THE PAPER FOUND",
+      "text": "Direct readout and native one-token selection agreed in all 1,350 pairs.\nThis study did not establish a latency advantage over one-token selection."
+    },
+    {
+      "start": 129.572,
+      "end": 145,
+      "title": "SOURCE / SETUP AND REPRODUCIBLE ARTIFACTS",
+      "text": "github.com/UpHash-Network/mini-jev  •  branch: research/eacl2027-demo\nFollow demo/README.md. Tested on Apple Silicon; model weights are separate."
     }
   ],
-  "artifact_sha256": "87884e9866ecbfc1baa5f86cd839cab69fa4e127e9f84f0d86872d9a36bb32bf"
+  "clipboard_verification": "The isolated recording browser was granted clipboard permission for the loopback demo. Its freshly copied response was read back and exactly matched the visible live response JSON.",
+  "layout_verification": {
+    "record": "recording/video-layout-check.json",
+    "required_rectangles_checked": 39,
+    "all_inside_viewport": true,
+    "minimum_primary_body_font_px": 18,
+    "result_value_font_px": 34
+  },
+  "limits": "Two English support examples demonstrate software use; they are not a quality benchmark. Live UI timing is separate from the unchanged paper study. Large JSON is shown in sequential scroll positions rather than all fields in one frame.",
+  "post_capture_changes": [],
+  "previous_artifact_sha256": "87884e9866ecbfc1baa5f86cd839cab69fa4e127e9f84f0d86872d9a36bb32bf",
+  "raw_capture_sha256": "2a401b07b09a32ebf4aa57d27e9cf6cb2fea9893b7da136e9c9692a123ed568c",
+  "artifact_sha256": "094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123",
+  "final_visual_review": "Passed for the inspected scenes and boundaries. Parent inspected 15 representative frames from the first revised encode; a second AI reviewer inspected 17 representative scenes and then 24 boundary frames from this final artifact. The final encode uses the same captured footage, adjusts caption timing, and shortens the Run instruction. All 39 required DOM rectangles fit the capture viewport; full-file decoding passed. This is not an every-frame human review or a user comprehension study."
 }

@@ -1,5 +1,8 @@
 'use strict';
 const $ = (id) => document.getElementById(id);
+// A URL fragment needs no extra server route and never changes the API payload.
+let presentationMode = window.location.hash.startsWith('#presentation');
+document.documentElement.classList.toggle('presentation', presentationMode);
 const EXAMPLES = {
   'urgent-billing': 'Since this morning, I have been charged twice for the same subscription. Please fix this urgently; the extra charge is blocking today’s payment.',
   'routine-account': 'Hi, I would like to change the email address on my account. There is no rush; next week is fine.'
@@ -37,7 +40,9 @@ function node(tag, className, text) {
 
 function labelInput(parent, name, id, value, className, maximum = 8192) {
   const label = node('label', 'sr-only', name); label.htmlFor = id;
-  const input = node('input', className); input.id = id; input.value = value;
+  const multiline = presentationMode && className === 'criterion-description';
+  const input = node(multiline ? 'textarea' : 'input', className); input.id = id; input.value = value;
+  if (multiline) input.rows = 2;
   input.maxLength = maximum; input.required = true; input.autocomplete = 'off';
   parent.append(label, input);
   return input;
@@ -116,10 +121,17 @@ function changed() {
     const payload = requestPayload();
     $('request-json').textContent = JSON.stringify(payload, null, 2);
     $('copy-request').disabled = false;
-    if (completedRequest) $('result-state').textContent = JSON.stringify(payload) === completedRequest ? 'LAST COMPLETED RUN' : 'INPUTS CHANGED · RUN AGAIN';
+    if (completedRequest) {
+      const stale = JSON.stringify(payload) !== completedRequest;
+      $('result-state').textContent = stale ? 'INPUTS CHANGED · RUN AGAIN' : 'LAST COMPLETED RUN';
+      $('output-panel').classList.toggle('stale-results', stale);
+    }
   } catch (error) {
     $('request-json').textContent = error.message; $('copy-request').disabled = true;
-    if (completedRequest) $('result-state').textContent = 'INPUTS CHANGED · RUN AGAIN';
+    if (completedRequest) {
+      $('result-state').textContent = 'INPUTS CHANGED · RUN AGAIN';
+      $('output-panel').classList.add('stale-results');
+    }
   }
 }
 
@@ -177,6 +189,7 @@ function renderAnswers(response, request, elapsed, browserElapsed) {
     if (answer.type === 'score') value.append(node('small', '', ` / ${question.criteria.length - 1}`));
     const explanation = answer.type === 'choice' ? describe(question, answer.choice) : answer.type === 'noul' ? `P(true) = ${probabilityPercent(answer.noul)} · most likely: ${answer.label}` : `Most likely stage ${answer.label}: ${describe(question, answer.label)}`;
     card.append(heading, value, node('p', 'answer-description', explanation));
+    card.append(node('p', 'presentation-caption', answer.type === 'choice' ? 'Selected support queue' : answer.type === 'noul' ? 'Probability of explicit urgency' : `Most likely: stage ${answer.label}`));
     const list = node('ul', 'probability-list'); list.setAttribute('aria-label', `${title} candidate probabilities`);
     for (const [key, probability] of Object.entries(answer.probabilities)) {
       const item = node('li', 'probability-row');
@@ -204,6 +217,7 @@ $('decision-form').addEventListener('submit', async (event) => {
   let request;
   try { request = requestPayload(); } catch (error) { $('error-message').textContent = error.message; $('error-message').hidden = false; return; }
   busy = true; updateControls(); $('result-state').textContent = 'LIVE REQUEST RUNNING';
+  if (lastResponse) $('output-panel').classList.add('stale-results');
   $('run-announcement').textContent = 'Running three questions on the live model.';
   const started = performance.now();
   try {
@@ -211,6 +225,7 @@ $('decision-form').addEventListener('submit', async (event) => {
     if (result.source !== 'live_api') throw new Error('Unexpected response source. This workbench accepts live API output only.');
     lastResponse = result.response; completedRequest = JSON.stringify(request);
     renderAnswers(result.response, request, result.elapsed_ms, performance.now() - started);
+    $('output-panel').classList.remove('stale-results');
     $('result-state').textContent = 'LIVE RUN COMPLETE';
   } catch (error) {
     $('error-message').textContent = error.message; $('error-message').hidden = false;
@@ -221,8 +236,11 @@ $('decision-form').addEventListener('submit', async (event) => {
 
 async function copyJson(kind) {
   const text = kind === 'request' ? JSON.stringify(requestPayload(), null, 2) : JSON.stringify(lastResponse, null, 2);
-  try { await navigator.clipboard.writeText(text); $('copy-status').textContent = `${kind === 'request' ? 'Request' : 'Response'} copied.`; }
-  catch { $('copy-status').textContent = 'Clipboard access is unavailable. Select the JSON text and copy it with your keyboard.'; $(`${kind}-json`).focus(); }
+  let message;
+  try { await navigator.clipboard.writeText(text); message = `${kind === 'request' ? 'Request' : 'Response'} copied.`; }
+  catch { message = 'Clipboard access is unavailable. Select the JSON text and copy it with your keyboard.'; $(`${kind}-json`).focus(); }
+  $('copy-status').textContent = message;
+  $(`copy-${kind}-status`).textContent = message;
 }
 $('copy-request').addEventListener('click', () => copyJson('request'));
 $('copy-response').addEventListener('click', () => copyJson('response'));
@@ -231,4 +249,10 @@ $('example-button').addEventListener('click', () => { $('state-input').value = E
 $('state-input').addEventListener('input', changed);
 $('state-input').value = EXAMPLES['urgent-billing'];
 buildEditors(); changed(); checkConnection();
+window.addEventListener('hashchange', () => {
+  if (!window.location.hash.startsWith('#presentation') && window.location.hash !== '#standard') return;
+  presentationMode = window.location.hash.startsWith('#presentation');
+  document.documentElement.classList.toggle('presentation', presentationMode);
+  QUESTIONS.forEach((question) => renderCriteria(question, $(`${question.id}-criteria`)));
+});
 setInterval(() => { if (!busy && !document.hidden) checkConnection(); }, 15000);

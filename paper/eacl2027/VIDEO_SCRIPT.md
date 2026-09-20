@@ -1,47 +1,83 @@
 # Demonstration recording and caption script
 
-Recorded duration: 135 seconds (maximum allowed: 150 seconds).
+Recorded duration: 144.96 seconds (maximum allowed: 150 seconds).
 
-The video is a continuous browser recording of actual local inference through the demo interface. English support examples illustrate the software; the reported quality benchmarks are Japanese.
+The revised video uses the opt-in presentation view of the actual local demo. It is a continuous screen recording of two live native inference requests. Results are not substituted. English examples illustrate the interface; the paper's quality evaluations are Japanese.
 
-| Time | Screen action | Explanation |
-|---|---|---|
-| 0–15 s | Show the application and connected model | Local typed decisions from an unchanged model. |
-| 15–35 s | Inspect an urgent billing request and its three questions; run | Choice routing, binary urgency, ordered priority share the input but are evaluated sequentially. |
-| 35–55 s | Show three results and candidate distributions | Response types are constructed by software; the model still determines semantic quality. |
-| 55–80 s | Replace input with a routine account question; run again | The same interface can process edited input. Show actual values without promising a particular prediction. |
-| 80–100 s | Open the JSON inspector | Inspect the request and typed response; copy them for the Python SDK or HTTP client. |
-| 100–120 s | Show probability explanation and evidence | Candidate-normalized probabilities are not guaranteed correctness probabilities. The paper compares direct, one-token, and JSON paths. |
-| 120–135 s | Show installation link and environment | Source available; verified native path on Apple Silicon. Model download is separate. |
+The 1440 × 720 browser capture is resized without cropping to 1920 × 960, with a 120-pixel English caption strip beneath it. The finished video is 1920 × 1080, with no audio track. Primary UI text is 18 px and result values are 34 px before resizing.
 
-Production disclosure: original English caption panels are appended beneath the actual browser recording. There is no audio track. Native model responses are not replaced or fabricated. The initial page-load wait is trimmed; the recorded interaction is otherwise continuous. Raw responses and screen-capture events are retained in recording/ and VIDEO_PROVENANCE.json.
+Input and all three typed result cards remain visible together in result scenes. Each question's instructions and candidate meanings are shown separately. The JSON request and response are inspected at multiple scroll positions; the full live response is copied with a visible success message and its clipboard contents are verified.
+
+Caption boundaries follow recorded interaction events. The short run explanation remains visible until the result-reading scene. Raw responses and layout checks are in recording/; VIDEO_PROVENANCE.json records source hashes, event times, caption text, and production details.
 
 ## English captions
 
-**0–15 s**
+**0.000–7.568 s — MINI JEV / LIVE LOCAL DEMONSTRATION**
 
-Mini Jev makes small language model decisions inspectable. This is a live local system using a frozen model. It returns typed values and candidate probabilities.
+Small typed decisions from a frozen language model.
+Candidate-token scores become structured values; no answer text is generated.
 
-**15–35 s**
+**7.568–16.626 s — 1 / DEFINE THE ALLOWED ANSWERS**
 
-Here, one support message is evaluated by three editable questions. Choice selects a route. Noul scores the true candidate for urgency. Score returns an expected priority stage. Each question runs separately.
+Choice: define support queues and what each candidate means.
+The model selects a key; software constructs the typed response.
 
-**35–55 s**
+**16.626–25.579 s — 2 / DEFINE A BINARY QUESTION**
 
-These are actual model responses. The cards show the selected labels and the probability assigned to each allowed candidate. A valid output type does not establish that the decision is correct.
+Noul: ask whether urgency is explicitly requested.
+The output is P(true), normalized over the two candidates.
 
-**55–80 s**
+**25.579–34.500 s — 3 / DEFINE ORDERED STAGES**
 
-Now we change the message and run the same questions again. The interface exposes what the model returns. You can also edit the instructions and criteria to explore how the decision changes.
+Score: define ordered, equally spaced priority stages.
+The output is their probability-weighted mean, not a class ID.
 
-**80–100 s**
+**34.500–39.000 s — RUN / ACTUAL MODEL INFERENCE**
 
-The inspector shows the request and response as JSON. These are the same typed interfaces used by the Python client. The displayed elapsed time measures this live request, rather than a controlled benchmark.
+Run three questions on the live model.
+Each question is evaluated separately.
 
-**100–120 s**
+**39.000–51.551 s — INSPECT / URGENT BILLING MESSAGE**
 
-Candidate probabilities are normalized only over the allowed answers. Concentration is not a correctness guarantee. Our paper compares direct readout with matched one token selection and constrained JSON generation, and reports their differences and limitations.
+Read the route, urgency probability, and expected priority together.
+Each card also shows the distribution over its allowed candidates.
 
-**120–135 s**
+**51.551–57.645 s — CHANGE THE INPUT / RUN AGAIN**
 
-Source and installation instructions are available on GitHub. The tested native path uses Apple Silicon. Model weights are downloaded separately. The paper includes Japanese evaluations, reproducible protocols, and recorded results.
+Load a routine account request.
+Previous results are marked stale until the next run completes.
+
+**57.645–70.570 s — COMPARE / ROUTINE ACCOUNT MESSAGE**
+
+Compare how the route, urgency probability, and priority change.
+These values are live model outputs, not prefilled answers.
+
+**70.570–80.542 s — INSPECT / THE ACTUAL REQUEST**
+
+The request contains the state, instructions, and candidate meanings.
+The same interface is available through the Python SDK and HTTP API.
+
+**80.542–99.098 s — INSPECT / THE ACTUAL RESPONSE**
+
+Scroll through the typed answers, probabilities, and calibration metadata.
+The full JSON remains available for inspection and export.
+
+**99.098–105.543 s — EXPORT / COPY THE LIVE RESPONSE**
+
+Copy the JSON response for use in your own tools.
+The confirmation shows whether the clipboard operation succeeded.
+
+**105.543–118.541 s — INTERPRET / KNOW WHAT THE NUMBERS MEAN**
+
+Probabilities compare allowed candidates only; concentration is not correctness.
+A well-typed output can still be semantically wrong.
+
+**118.541–129.572 s — EVIDENCE / WHAT THE PAPER FOUND**
+
+Direct readout and native one-token selection agreed in all 1,350 pairs.
+This study did not establish a latency advantage over one-token selection.
+
+**129.572–145.000 s — SOURCE / SETUP AND REPRODUCIBLE ARTIFACTS**
+
+github.com/UpHash-Network/mini-jev  •  branch: research/eacl2027-demo
+Follow demo/README.md. Tested on Apple Silicon; model weights are separate.
