@@ -1,6 +1,6 @@
 # X release draft
 
-Status: **not posted**. The repository transfer to UpHash-Network is complete and public access to the URL below has been verified. Intended placement: the author's normal timeline. Use the main post first; optionally add the English reply below or a Japanese explanation from [X_JA.md](X_JA.md). Do not post headings, status notes, or character counts.
+Status: **published** from @UPHASHbigsalt: [main post](https://x.com/UPHASHbigsalt/status/2101554436040761795) and [English reply](https://x.com/UPHASHbigsalt/status/2101554437647180256). See [publication receipt](X_PUBLISHED.json) for the exact three-post thread. The repository transfer to UpHash-Network is complete and public access to the URL below has been verified. The main post, English reply, and Japanese overview from [X_JA.md](X_JA.md) were published as one thread. Do not post headings, status notes, or character counts.
 
 ## Main post
 
