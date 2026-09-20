@@ -1,0 +1,99 @@
+{
+  "status": "recorded_live_not_submitted",
+  "duration_seconds": 135,
+  "file": "Mini_Jev_Demonstration.mp4",
+  "capture": "Continuous browser screen recording of the local demo with real model API requests; no prediction substitution. Initial page-load wait trimmed.",
+  "presentation": "Original English caption panels appended below the screen; no audio track.",
+  "viewport_pixels": [
+    1280,
+    800
+  ],
+  "video_pixels": [
+    1280,
+    920
+  ],
+  "model": {
+    "schema_version": 1,
+    "role": "decision_model",
+    "repo_id": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "filename": "Qwen3.6-35B-A3B-Q4_K_M.gguf",
+    "bytes": 20419565568,
+    "sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+    "path": null,
+    "format": "gguf",
+    "quantization": "Q4_K_M",
+    "license": "Apache-2.0",
+    "source_model": {
+      "repo": "Qwen/Qwen3.6-35B-A3B",
+      "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0"
+    }
+  },
+  "events": [
+    {
+      "at_seconds": 0,
+      "name": "ready"
+    },
+    {
+      "at_seconds": 27.204,
+      "name": "urgent-billing",
+      "answers": {
+        "routing": "billing",
+        "urgent": "true",
+        "priority": "2"
+      }
+    },
+    {
+      "at_seconds": 27.21,
+      "name": "show_first_results"
+    },
+    {
+      "at_seconds": 55.026,
+      "name": "changed_message"
+    },
+    {
+      "at_seconds": 63.586,
+      "name": "routine-account",
+      "answers": {
+        "routing": "account",
+        "urgent": "false",
+        "priority": "0"
+      }
+    },
+    {
+      "at_seconds": 80.044,
+      "name": "json_inspector"
+    },
+    {
+      "at_seconds": 94.029,
+      "name": "copy_request"
+    },
+    {
+      "at_seconds": 100.046,
+      "name": "probability_semantics"
+    },
+    {
+      "at_seconds": 120.008,
+      "name": "installation_and_scope"
+    },
+    {
+      "at_seconds": 135.002,
+      "name": "end"
+    }
+  ],
+  "browser_errors": [],
+  "source_files_sha256": {
+    "demo/server.py": "f8f2bd851280181702373f8d14b0fb7455d68834afdee18a5354891c217bb03f",
+    "demo/static/index.html": "9ca0491c5605d9ee9795b3792c39b31759becb130712efc73dd53ca01b6bf9bc",
+    "demo/static/app.js": "ed585b93af28eef76d68029f6251ce40d5217d5bcc994956f5cf0563e72b0f42",
+    "demo/static/style.css": "3d093f6f2b94cc9663fe5ed9e51d2fc61c5c9ddf65edf2aa1a08b084947cb20d"
+  },
+  "limits": "Two English support examples demonstrate software use; they are not a quality benchmark. Timing is live UI timing, separate from the paper study.",
+  "post_capture_changes": [
+    {
+      "file": "demo/static/index.html",
+      "change": "Only the two repository/footer documentation hrefs were updated to the research/eacl2027-demo branch after capture; controls, styles, text, and inference behavior were unchanged."
+    }
+  ],
+  "artifact_sha256": "87884e9866ecbfc1baa5f86cd839cab69fa4e127e9f84f0d86872d9a36bb32bf"
+}

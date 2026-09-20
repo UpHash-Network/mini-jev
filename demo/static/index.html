@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Inspect live typed decisions from a local language model with Mini Jev.">
+  <title>Mini Jev — Typed decision workbench</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workbench">Skip to workbench</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Mini Jev home"><span class="brand-mark" aria-hidden="true">{j}</span> Mini Jev<span class="brand-detail">LOCAL DECISION WORKBENCH</span></a>
+    <div class="connection"><span id="connection-state" class="status" role="status">Checking model API…</span><button id="connection-button" class="text-button" type="button">Check connection</button></div>
+  </header>
+  <main id="workbench">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">A frozen model. A finite set of answers.</p><h1 id="page-title">One message.<br><span>Three kinds of decision.</span></h1></div>
+      <p class="intro-description">Route a support request, test its urgency, and estimate its priority. Inspect the candidate distribution behind each typed value.</p>
+    </section>
+    <div id="error-message" class="error-message" role="alert" hidden></div>
+    <div class="workbench-grid">
+      <form id="decision-form" class="input-panel" novalidate>
+        <fieldset id="input-fields">
+          <legend class="sr-only">Decision inputs</legend>
+          <div class="section-heading"><h2>Shared state</h2><span class="quiet-label">SUPPORT TRIAGE</span></div>
+          <div class="example-controls"><label class="sr-only" for="example-select">Example message</label><select id="example-select"><option value="urgent-billing">Urgent billing request</option><option value="routine-account">Routine account request</option></select><button type="button" id="example-button" class="secondary-button">Load example</button></div>
+          <label for="state-input" class="field-label">Customer message</label>
+          <textarea id="state-input" rows="5" maxlength="8192" required spellcheck="false" aria-describedby="state-help"></textarea>
+          <p class="field-help" id="state-help">Edit the message or load another example. Each question reads this state independently.</p>
+          <div class="section-heading question-heading"><h2>Questions &amp; candidates</h2><span class="quiet-label">EDITABLE</span></div>
+          <div id="question-editors"></div>
+        </fieldset>
+        <div class="run-controls"><button id="run-button" class="primary-button" type="submit" disabled><span id="run-button-label">Run decisions</span><span aria-hidden="true">↗</span></button><p id="run-help" class="field-help">Start the model API to run a live request.</p></div>
+      </form>
+      <section class="output-panel" aria-labelledby="output-title" aria-busy="false" id="output-panel">
+        <div class="section-heading"><h2 id="output-title">Typed readout</h2><span id="result-state" class="quiet-label">NO REQUEST YET</span></div>
+        <div class="run-metrics" id="run-metrics"><span>Live inference only</span><span>One shared state → three questions</span></div>
+        <div id="answers" class="answer-stack">
+          <article class="answer-card empty-card"><div class="answer-top"><span class="type-name">Choice</span><span class="return-type">semantic key</span></div><p class="empty-value">Which queue?</p><p class="answer-description">One candidate key, with a probability for every option.</p></article>
+          <article class="answer-card empty-card"><div class="answer-top"><span class="type-name">Noul</span><span class="return-type">number · 0–1</span></div><p class="empty-value">Urgent or not?</p><p class="answer-description">The true candidate’s probability, rather than a forced yes/no.</p></article>
+          <article class="answer-card empty-card"><div class="answer-top"><span class="type-name">Score</span><span class="return-type">expected stage</span></div><p class="empty-value">What priority?</p><p class="answer-description">A probability-weighted stage, with the stage order you define.</p></article>
+        </div>
+        <p id="run-announcement" class="sr-only" role="status" aria-live="polite"></p>
+        <aside class="semantics-note"><strong>A distribution is not a correctness guarantee.</strong><p>Probabilities are normalized only over your candidates. Concentration is 1 minus normalized entropy: it measures how peaked this distribution is, not whether the answer is right. A narrow distribution can still be wrong.</p></aside>
+      </section>
+    </div>
+    <details id="inspect-json" class="json-inspector">
+      <summary><span>Inspect the API exchange</span><span class="summary-hint">Request · validated response</span></summary>
+      <p class="field-help">The request can also be sent to <code>POST /v1/systemone</code> with the Python SDK or curl. Response metadata describes the last completed request.</p>
+      <div class="json-grid"><section><div class="section-heading"><h3>Current request</h3><button id="copy-request" type="button" class="text-button">Copy request</button></div><pre id="request-json" tabindex="0" aria-label="Current request JSON"></pre></section><section><div class="section-heading"><h3>Last response</h3><button id="copy-response" type="button" class="text-button" disabled>Copy response</button></div><pre id="response-json" tabindex="0" aria-label="Last validated response JSON">No response yet. Run the decisions to inspect live model output.</pre></section></div>
+      <p id="copy-status" class="field-help" role="status"></p>
+    </details>
+    <footer class="page-footer"><p id="model-info">Model information appears when the local API is ready.</p><p>These English examples illustrate the interface. Published quality evaluations are Japanese and do not establish the accuracy of this example. No answer text is generated by the direct-readout API.</p><p>Local demonstration · no saved-history or replay mode · inputs are sent only to the configured loopback API</p><p class="project-links"><a href="https://github.com/UpHash-Network/mini-jev/tree/research/eacl2027-demo" target="_blank" rel="noopener noreferrer">Source &amp; installation</a><span aria-hidden="true"> · </span><a href="https://github.com/UpHash-Network/mini-jev/blob/research/eacl2027-demo/demo/README.md" target="_blank" rel="noopener noreferrer">Demo guide</a></p></footer>
+  </main>
+</body>
+</html>

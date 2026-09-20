@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-09-20",
+  "venue": "EACL 2027 System Demonstrations",
+  "submission_status": "preparation_only_not_submitted",
+  "sources": {
+    "demo_cfp": "https://2027.eacl.org/calls/demos/",
+    "portal": "https://openreview.net/group?id=eacl.org/EACL/2027/Demo",
+    "conference": "https://2027.eacl.org/",
+    "main_cfp": "https://2027.eacl.org/calls/papers/",
+    "style": "https://acl-org.github.io/ACLPUB/formatting.html",
+    "style_files": "https://github.com/acl-org/acl-style-files",
+    "ethics": "https://www.aclweb.org/adminwiki/index.php/ACL_Policy_on_Publication_Ethics",
+    "integrity": "https://2027.eacl.org/calls/paper-integrity-policy/",
+    "reviewer": "https://www.aclweb.org/adminwiki/index.php?title=ACL_Reviewer_Guidelines",
+    "activation": "https://docs.openreview.net/getting-started/creating-an-openreview-profile/signing-up-for-openreview",
+    "naacl_demo": "https://2027.naacl.org/calls/system_demonstration/"
+  },
+  "verification": {
+    "official_cfp_body": "directly_retrieved",
+    "style_ethics_integrity_activation_bodies": "directly_retrieved",
+    "portal_link": "followed_from_official_cfp",
+    "unauthenticated_portal_body": "Loading shell only",
+    "parent_browser_observation": "Verifying your browser / Complete the check below / Sign in to skip this check; account authentication status and submission form remain unverified; no challenge bypass or sign-in submitted",
+    "actual_form_fields_verified": false,
+    "user_account_activation_verified": false,
+    "form_required_flags_upload_limits_and_attestations": null
+  },
+  "dates": {
+    "source": "demo_cfp",
+    "submission_opens": "2026-08-18",
+    "submission_deadline_aoe": "2026-09-22T23:59:00-12:00",
+    "submission_deadline_utc": "2026-09-23T11:59:00Z",
+    "submission_deadline_jst": "2026-09-23T20:59:00+09:00",
+    "notification_date_as_published": "2026-12-18",
+    "notification_delivery_time": null,
+    "camera_ready_deadline_aoe": "2027-01-06T23:59:00-12:00",
+    "camera_ready_deadline_jst": "2027-01-07T20:59:00+09:00",
+    "conference_dates": ["2027-03-09", "2027-03-14"],
+    "location": "Athens, Greece",
+    "rebuttal": false
+  },
+  "mandatory_deliverables": {
+    "source": "demo_cfp",
+    "paper": {
+      "format": "PDF",
+      "main_pages_max": 6,
+      "additional_unlimited": ["optional ethics/broader impact", "references", "informative appendices"],
+      "accepted_extra_main_pages": 1,
+      "technical_visuals_required": true,
+      "some_validation_evidence_required": true,
+      "single_blind": true,
+      "author_names_and_affiliations_visible": true,
+      "generic_main_track_anonymity_not_applicable": true
+    },
+    "video": {
+      "max_seconds": 150,
+      "narration": "recommended",
+      "options": ["hosted video link", "MPEG4 supplementary upload"],
+      "link_in_pdf_and_form": true,
+      "supplement_upload_link_handling": "verify_in_actual_form"
+    },
+    "demo_access": {
+      "options": ["live website", "downloadable installable package"],
+      "link_in_pdf_and_form": true,
+      "special_hardware_exception": "must clearly justify impossibility of sharing a link",
+      "access_and_installation_checked": false
+    },
+    "missing_component_consequence": "desk_rejection"
+  },
+  "style_checks": {
+    "source": "style",
+    "paper_size": "A4",
+    "columns": 2,
+    "body_font_pt": 11,
+    "abstract_words_max": 200,
+    "fonts_embedded": true,
+    "review_page_and_line_numbers": true,
+    "non_english_examples": "English translation; non-Latin examples also romanization",
+    "pdf_form_metadata_match": true,
+    "limitations_section": true,
+    "conflicting_generic_anonymous_review_instructions": "Demo CFP single-blind and explicit AI disclosure take precedence; use conservative six-page placement if section exemptions are unclear"
+  },
+  "author_and_review_requirements": {
+    "reciprocal_reviewer_source": "demo_cfp",
+    "reciprocal_reviewer_count": 1,
+    "reciprocal_reviewer_must_be_author": true,
+    "demo_specific_qualification_threshold": null,
+    "demo_specific_exemption_procedure": null,
+    "reviewer_nomination_consent": "pending_user",
+    "ethics_source": "ethics",
+    "human_authorship_criteria": ["substantial contribution", "drafting or critical revision", "final approval", "accountability"],
+    "generative_tools_as_authors_allowed": false,
+    "generative_content_assistance_disclosure": "Acknowledgements; describe actual scope",
+    "review_first_draft_generated_by_ai_allowed": false,
+    "review_confidentiality_and_conflicts": true,
+    "human_author_final_review_record": "pending"
+  },
+  "ai_integrity_scope": {
+    "sources": ["main_cfp", "integrity", "demo_cfp", "ethics"],
+    "main_cfp_mentions_entirely_ai_generated_papers": true,
+    "operational_percentage_or_test_published": false,
+    "demo_specific_definition_or_exemption_found": false,
+    "demo_explicitly_adopts_acl_ethics": true,
+    "acknowledgement_alone_guarantees_compliance": false,
+    "required_local_action": "Author must critically review claims, methods, evidence, citations and limitations; record corrections and final version approval without fabricating completed human review"
+  },
+  "publication_and_reuse": {
+    "sources": ["demo_cfp", "ethics"],
+    "archival_companion_proceedings": true,
+    "concurrent_refereed_archival_venue_or_arr_review_allowed": false,
+    "concurrent_journal_review_allowed": false,
+    "significant_overlap_with_published_or_pending_publication_allowed": false,
+    "multiple_demo_submissions_content_results_overlap_threshold_percent": 25,
+    "acl_text_reuse_threshold_percent": 10,
+    "text_reuse_rule_own_preprints_excluded": true,
+    "thresholds_are_not_the_same_rule": true,
+    "license_and_prior_work_disclosure": true,
+    "accepted_author_registration_and_live_demo_with_poster": true
+  },
+  "naacl_transfer_timing": {
+    "source": "naacl_demo",
+    "naacl_submission_deadline_jst": "2026-12-05T20:59:00+09:00",
+    "can_wait_for_eacl_normal_decision_then_submit_same_paper_to_naacl_2027_demo": false,
+    "reason": "EACL notification follows NAACL deadline; review periods may not overlap",
+    "earlier_transfer": "complete formal EACL withdrawal before any NAACL submission; verify procedure rather than presume withdrawal"
+  },
+  "draft_identity": {
+    "author": "Yuki Oshio",
+    "author_count": 1,
+    "sole_author_and_affiliation_confirmed_by_user": true,
+    "email": "oshio@uphash.net",
+    "affiliation": "UPHASH Inc.",
+    "address": null,
+    "profile_id": null,
+    "profile_active": null,
+    "video_url": null,
+    "installable_demo_url": null,
+    "title_abstract": "synchronized with in-progress main.tex on 2026-09-20; recheck completed main.tex and final PDF"
+  },
+  "actions_not_taken": ["external submission", "account creation", "email sending", "reviewer consent on behalf of author"]
+}

@@ -1,0 +1,68 @@
+{
+  "response": {
+    "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "answers": {
+      "routing": {
+        "type": "choice",
+        "label": "billing",
+        "probabilities": {
+          "account": 0.00001107700549877668,
+          "billing": 0.9999881901663317,
+          "technical": 7.32828169553384e-7
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "confidence": 0.9998647769837254,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "choice": "billing"
+      },
+      "urgent": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 0.0002691910385709974,
+          "true": 0.999730808961429
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "confidence": 0.9964193331007666,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "noul": 0.999730808961429
+      },
+      "priority": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 0.0000392570842773061,
+          "1": 0.0006152752848478113,
+          "2": 0.9993454676308748
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "confidence": 0.9949012062440004,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "score": 1.9993062105465975,
+        "legend": {
+          "0": "Routine: no urgency; the normal queue is acceptable",
+          "1": "Soon: prompt help is requested, but immediate handling is not explicitly required",
+          "2": "Immediate: urgent or immediate handling is explicitly requested"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 795,
+      "output_tokens": 0,
+      "questions": 3
+    },
+    "latency_ms": 1150.1302081160247,
+    "request_id": "70abeaa524d44a30b92c27698484a814"
+  },
+  "elapsed_ms": 1151.03420894593,
+  "source": "live_api"
+}

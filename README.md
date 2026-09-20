@@ -25,6 +25,10 @@ The suite is **self-authored**: 2,220 programmatically generated items across 45
 
 Failures remain: delay-from-promised-time 29/49, conditional obligation 31/49, and counts after cancellation 33/49. Temperature scaling slightly improved NLL but worsened ECE and Score expectation MAE. [Full results and limitations](paper/TECHNICAL_REPORT.md#results)
 
+## EACL demonstration preparation
+
+The [local decision workbench](demo/README.md) adds an editable browser interface for Choice, Noul, and Score. The [EACL review-draft package](paper/eacl2027/README.md) includes a six-page-body paper, a 135-second captioned live demonstration, and reproducibility material. These materials are **not submitted, accepted, or peer reviewed**.
+
 ## Run the native service
 
 The tested native path requires an Apple Silicon Mac with macOS 26.4+, Python 3.10+, Xcode command-line tools, CMake, and Git. The pinned model download is **20.4 GB**. Model weights and prebuilt native binaries are not included in the source repository. Other platforms are not validated for this native path.

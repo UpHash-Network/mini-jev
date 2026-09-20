@@ -20,6 +20,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: API and native protocol fixtures
         run: python -m unittest service.test_service test_native_engine native.test_packaging -v
+      - name: Browser demonstration bridge fixtures
+        run: python -m unittest demo.test_demo -v
       - name: Evaluation runner fixtures
         run: python -m unittest discover -s acceptance-v2 -p test_runner.py -v
       - name: Publication tests
