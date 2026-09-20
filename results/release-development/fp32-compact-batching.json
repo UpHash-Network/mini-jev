@@ -1,0 +1,722 @@
+[
+  {
+    "id": "choice_01",
+    "maxdiff": 3.677613769070831e-16,
+    "same_label": true
+  },
+  {
+    "id": "choice_02",
+    "maxdiff": 2.740863092043355e-16,
+    "same_label": true
+  },
+  {
+    "id": "choice_03",
+    "maxdiff": 2.7582103268031233e-16,
+    "same_label": true
+  },
+  {
+    "id": "choice_04",
+    "maxdiff": 6.002143226879753e-16,
+    "same_label": true
+  },
+  {
+    "id": "choice_05",
+    "maxdiff": 6.019490461639521e-16,
+    "same_label": true
+  },
+  {
+    "id": "choice_06",
+    "maxdiff": 2.1941559680271894e-11,
+    "same_label": true
+  },
+  {
+    "id": "choice_07",
+    "maxdiff": 1.4704491964334654e-17,
+    "same_label": true
+  },
+  {
+    "id": "choice_08",
+    "maxdiff": 8.38901430960659e-18,
+    "same_label": true
+  },
+  {
+    "id": "choice_09",
+    "maxdiff": 3.805289416902724e-14,
+    "same_label": true
+  },
+  {
+    "id": "choice_10",
+    "maxdiff": 1.3444106938820255e-17,
+    "same_label": true
+  },
+  {
+    "id": "choice_11",
+    "maxdiff": 2.643718577388654e-15,
+    "same_label": true
+  },
+  {
+    "id": "choice_12",
+    "maxdiff": 5.800481622797449e-18,
+    "same_label": true
+  },
+  {
+    "id": "choice_13",
+    "maxdiff": 9.64939933512099e-18,
+    "same_label": true
+  },
+  {
+    "id": "choice_14",
+    "maxdiff": 1.4606371667724716e-15,
+    "same_label": true
+  },
+  {
+    "id": "choice_15",
+    "maxdiff": 1.5829351718288365e-17,
+    "same_label": true
+  },
+  {
+    "id": "choice_16",
+    "maxdiff": 4.683753385137379e-17,
+    "same_label": true
+  },
+  {
+    "id": "noul_01",
+    "maxdiff": 8.131516293641283e-19,
+    "same_label": true
+  },
+  {
+    "id": "noul_02",
+    "maxdiff": 2.222614453595284e-18,
+    "same_label": true
+  },
+  {
+    "id": "noul_03",
+    "maxdiff": 3.9979955110402976e-18,
+    "same_label": true
+  },
+  {
+    "id": "noul_04",
+    "maxdiff": 1.6432439176733427e-19,
+    "same_label": true
+  },
+  {
+    "id": "noul_05",
+    "maxdiff": 0.0,
+    "same_label": true
+  },
+  {
+    "id": "noul_06",
+    "maxdiff": 3.2187251995663413e-19,
+    "same_label": true
+  },
+  {
+    "id": "noul_07",
+    "maxdiff": 1.5612511283791264e-17,
+    "same_label": true
+  },
+  {
+    "id": "noul_08",
+    "maxdiff": 6.776263578034403e-19,
+    "same_label": true
+  },
+  {
+    "id": "noul_09",
+    "maxdiff": 1.5449880957918438e-18,
+    "same_label": true
+  },
+  {
+    "id": "noul_10",
+    "maxdiff": 1.428648829460144e-05,
+    "same_label": true
+  },
+  {
+    "id": "noul_11",
+    "maxdiff": 1.4907779871675686e-18,
+    "same_label": true
+  },
+  {
+    "id": "noul_12",
+    "maxdiff": 8.300922883092143e-19,
+    "same_label": true
+  },
+  {
+    "id": "noul_13",
+    "maxdiff": 3.611748487092337e-18,
+    "same_label": true
+  },
+  {
+    "id": "noul_14",
+    "maxdiff": 2.1846673775582914e-17,
+    "same_label": true
+  },
+  {
+    "id": "noul_15",
+    "maxdiff": 1.222980050563649e-16,
+    "same_label": true
+  },
+  {
+    "id": "noul_16",
+    "maxdiff": 2.0091621508872004e-18,
+    "same_label": true
+  },
+  {
+    "id": "score_01",
+    "maxdiff": 2.097931203759451e-17,
+    "same_label": true
+  },
+  {
+    "id": "score_02",
+    "maxdiff": 3.5762786865234375e-07,
+    "same_label": true
+  },
+  {
+    "id": "score_03",
+    "maxdiff": 2.3973878437999474e-15,
+    "same_label": true
+  },
+  {
+    "id": "score_04",
+    "maxdiff": 4.336808689942018e-19,
+    "same_label": true
+  },
+  {
+    "id": "score_05",
+    "maxdiff": 5.041540102057596e-18,
+    "same_label": true
+  },
+  {
+    "id": "score_06",
+    "maxdiff": 3.982925100842749e-15,
+    "same_label": true
+  },
+  {
+    "id": "score_07",
+    "maxdiff": 5.129230373768223e-14,
+    "same_label": true
+  },
+  {
+    "id": "score_08",
+    "maxdiff": 1.666960840196463e-18,
+    "same_label": true
+  },
+  {
+    "id": "score_09",
+    "maxdiff": 5.832134775118902e-10,
+    "same_label": true
+  },
+  {
+    "id": "score_10",
+    "maxdiff": 1.1570605584765303e-15,
+    "same_label": true
+  },
+  {
+    "id": "score_11",
+    "maxdiff": 1.5401013797600172e-12,
+    "same_label": true
+  },
+  {
+    "id": "score_12",
+    "maxdiff": 2.7284841053187847e-12,
+    "same_label": true
+  },
+  {
+    "id": "score_13",
+    "maxdiff": 4.573977915173222e-19,
+    "same_label": true
+  },
+  {
+    "id": "score_14",
+    "maxdiff": 2.92300905702092e-16,
+    "same_label": true
+  },
+  {
+    "id": "score_15",
+    "maxdiff": 1.9729137420654297e-05,
+    "same_label": true
+  },
+  {
+    "id": "score_16",
+    "maxdiff": 1.1444091796875e-05,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_01",
+    "maxdiff": 1.3823577699190182e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_02",
+    "maxdiff": 6.505213034913027e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_03",
+    "maxdiff": 4.54009659728305e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_04",
+    "maxdiff": 1.951563910473908e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_05",
+    "maxdiff": 5.915407053080912e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_06",
+    "maxdiff": 3.126388037344441e-11,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_07",
+    "maxdiff": 5.384208634495735e-07,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_08",
+    "maxdiff": 2.42861286636753e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_09",
+    "maxdiff": 9.464429240324534e-12,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_10",
+    "maxdiff": 2.0339632755828063e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_11",
+    "maxdiff": 5.984795992119984e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_12",
+    "maxdiff": 6.993104012531504e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_13",
+    "maxdiff": 1.1920928955078125e-07,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_14",
+    "maxdiff": 1.4506440493278205e-09,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_15",
+    "maxdiff": 1.4840017235895342e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_16",
+    "maxdiff": 3.5214886562329184e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_17",
+    "maxdiff": 6.401129626354418e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_18",
+    "maxdiff": 4.5656634029001e-10,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_19",
+    "maxdiff": 3.0357660829594124e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_20",
+    "maxdiff": 4.109126233720062e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_21",
+    "maxdiff": 1.2807138162485021e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_22",
+    "maxdiff": 5.364597654988756e-13,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_23",
+    "maxdiff": 4.3021142204224816e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_24",
+    "maxdiff": 2.414043899674756e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_25",
+    "maxdiff": 1.1785277614917433e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_26",
+    "maxdiff": 1.9208528101444244e-09,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_27",
+    "maxdiff": 9.893344823930228e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_28",
+    "maxdiff": 1.126863935496658e-09,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_29",
+    "maxdiff": 6.353424730765056e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_30",
+    "maxdiff": 1.009663273127126e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_31",
+    "maxdiff": 2.862293735361732e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_choice_32",
+    "maxdiff": 1.6292522886374172e-14,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_01",
+    "maxdiff": 3.9979955110402976e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_02",
+    "maxdiff": 6.810144895924575e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_03",
+    "maxdiff": 5.266070365905762e-05,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_04",
+    "maxdiff": 2.710505431213761e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_05",
+    "maxdiff": 2.99002630380768e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_06",
+    "maxdiff": 1.3891340334970526e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_07",
+    "maxdiff": 2.92300905702092e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_08",
+    "maxdiff": 2.7144952952085077e-13,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_09",
+    "maxdiff": 1.7618285302889447e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_10",
+    "maxdiff": 0.0,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_11",
+    "maxdiff": 7.013432803265607e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_12",
+    "maxdiff": 4.0657581468206416e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_13",
+    "maxdiff": 1.0842021724855044e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_14",
+    "maxdiff": 3.9471735342050396e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_15",
+    "maxdiff": 1.474514954580286e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_16",
+    "maxdiff": 2.303929616531697e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_17",
+    "maxdiff": 5.377642775528102e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_18",
+    "maxdiff": 2.032879073410321e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_19",
+    "maxdiff": 1.3617579286417936e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_20",
+    "maxdiff": 2.0599841277224584e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_21",
+    "maxdiff": 0.0,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_22",
+    "maxdiff": 1.3823577699190182e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_23",
+    "maxdiff": 2.5804011705155006e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_24",
+    "maxdiff": 3.4897757426877174e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_25",
+    "maxdiff": 1.6264767310758543e-13,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_26",
+    "maxdiff": 1.5720931501039814e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_27",
+    "maxdiff": 1.0232158002831948e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_28",
+    "maxdiff": 4.2182240773264157e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_29",
+    "maxdiff": 1.6296913905172739e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_30",
+    "maxdiff": 1.0503208545953324e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_31",
+    "maxdiff": 1.4535085374883794e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_noul_32",
+    "maxdiff": 3.1509625637859973e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_01",
+    "maxdiff": 7.008282842946301e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_02",
+    "maxdiff": 6.418476861114186e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_03",
+    "maxdiff": 2.47198095326695e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_04",
+    "maxdiff": 5.47183283926278e-19,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_05",
+    "maxdiff": 8.81239525796218e-15,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_06",
+    "maxdiff": 1.797173521111972e-15,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_07",
+    "maxdiff": 2.4868887331386258e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_08",
+    "maxdiff": 2.432949675057472e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_09",
+    "maxdiff": 3.963843142607004e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_10",
+    "maxdiff": 1.5395670849294163e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_11",
+    "maxdiff": 1.927169361592984e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_12",
+    "maxdiff": 1.1449174941446927e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_13",
+    "maxdiff": 9.141992718397773e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_14",
+    "maxdiff": 1.5432100042289676e-14,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_15",
+    "maxdiff": 1.3617579286417936e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_16",
+    "maxdiff": 1.5382118322138094e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_17",
+    "maxdiff": 2.73939804174006e-09,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_18",
+    "maxdiff": 9.167706593871117e-10,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_19",
+    "maxdiff": 2.3163693185779266e-11,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_20",
+    "maxdiff": 2.688821387764051e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_21",
+    "maxdiff": 4.423544863740858e-17,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_22",
+    "maxdiff": 1.0685896612017132e-15,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_23",
+    "maxdiff": 4.796510411075872e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_24",
+    "maxdiff": 4.9897863618753036e-12,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_25",
+    "maxdiff": 2.6001423236721166e-13,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_26",
+    "maxdiff": 1.1920928955078125e-07,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_27",
+    "maxdiff": 2.642742795433417e-18,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_28",
+    "maxdiff": 4.0592529337857286e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_29",
+    "maxdiff": 3.708144902248023e-13,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_30",
+    "maxdiff": 4.7712092055007815e-09,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_31",
+    "maxdiff": 5.230191280070073e-16,
+    "same_label": true
+  },
+  {
+    "id": "ht_score_32",
+    "maxdiff": 2.959871930885427e-17,
+    "same_label": true
+  }
+]

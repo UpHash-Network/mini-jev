@@ -1,0 +1,191 @@
+{
+  "authoring": "independent_manual_no_models_no_existing_data_or_results_read",
+  "exact_cross_split_duplicates": 0,
+  "cross_split_normalized_state_max_sequence_similarity": 0.535211,
+  "similarity_note": "Digits normalized; SequenceMatcher ratio is a screening heuristic, not a proof of semantic independence. Top pairs manually reviewed and found not to be paraphrase copies.",
+  "rubric_review": "All labels reviewed against information inside each case. Unknown-as-false policy is explicit. Score uses rubric index, not rounded expectation.",
+  "datasets": {
+    "acceptance_test": {
+      "rows": 180,
+      "types": {
+        "choice": 60,
+        "noul": 60,
+        "score": 60
+      },
+      "families": {
+        "meaning": 20,
+        "negation": 12,
+        "history": 19,
+        "scope": 18,
+        "priority": 7,
+        "insufficient": 11,
+        "arithmetic": 17,
+        "conjunction": 6,
+        "sequence": 3,
+        "exception": 4,
+        "intersection": 1,
+        "distractor": 1,
+        "permission": 2,
+        "extraction": 6,
+        "range": 4,
+        "contrast": 2,
+        "temporal": 5,
+        "comparison": 5,
+        "quotation": 1,
+        "boundary": 9,
+        "entailment": 2,
+        "disjunction": 3,
+        "conditional": 4,
+        "exact_match": 1,
+        "sentiment": 5,
+        "count": 12
+      },
+      "structured_states": 21,
+      "max_state_characters": 234,
+      "noul_labels": {
+        "true": 30,
+        "false": 30
+      },
+      "choice_correct_positions_by_candidate_count": {
+        "2": {
+          "0": 5,
+          "1": 4
+        },
+        "3": {
+          "0": 3,
+          "1": 3,
+          "2": 3
+        },
+        "4": {
+          "0": 3,
+          "1": 2,
+          "2": 2,
+          "3": 2
+        },
+        "5": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 1
+        },
+        "6": {
+          "0": 2,
+          "1": 2,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "7": {
+          "0": 2,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1
+        },
+        "8": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        }
+      }
+    },
+    "calibration": {
+      "rows": 120,
+      "types": {
+        "choice": 40,
+        "noul": 40,
+        "score": 40
+      },
+      "families": {
+        "language": 20,
+        "causality": 3,
+        "sequence": 3,
+        "logic": 2,
+        "extraction": 10,
+        "mapping": 7,
+        "ordering": 6,
+        "count": 2,
+        "conditional": 1,
+        "comparison": 4,
+        "priority": 1,
+        "spatial": 4,
+        "sets": 2,
+        "arithmetic": 8,
+        "transformation": 2,
+        "negation": 6,
+        "history": 1,
+        "scope": 7,
+        "quantifier": 1,
+        "insufficient": 2,
+        "certainty": 5,
+        "deduction": 2,
+        "exact_match": 2,
+        "boundary": 4,
+        "meaning": 7,
+        "range": 3,
+        "frequency": 5
+      },
+      "structured_states": 5,
+      "max_state_characters": 57,
+      "noul_labels": {
+        "false": 20,
+        "true": 20
+      },
+      "choice_correct_positions_by_candidate_count": {
+        "2": {
+          "0": 3,
+          "1": 3
+        },
+        "3": {
+          "0": 2,
+          "1": 2,
+          "2": 2
+        },
+        "4": {
+          "0": 2,
+          "1": 2,
+          "2": 1,
+          "3": 1
+        },
+        "5": {
+          "0": 2,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1
+        },
+        "6": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        },
+        "7": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1
+        },
+        "8": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1
+        }
+      }
+    }
+  }
+}

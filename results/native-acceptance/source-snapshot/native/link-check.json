@@ -1,0 +1,86 @@
+{
+  "relocated_package_load": true,
+  "custom_binaries_loaded_from_same_bin": 8,
+  "cpu_template_smoke": true,
+  "assistant_prefix_smoke": true,
+  "gpu_initialized": false,
+  "total_decode_count": 0,
+  "dependencies": {
+    "libggml-base.0.24.0.dylib": [
+      "@rpath/libggml-base.0.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/usr/lib/libc++.1.dylib"
+    ],
+    "libggml-blas.0.24.0.dylib": [
+      "@rpath/libggml-blas.0.dylib",
+      "@rpath/libggml-base.0.dylib",
+      "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib"
+    ],
+    "libggml-cpu.0.24.0.dylib": [
+      "@rpath/libggml-cpu.0.dylib",
+      "@rpath/libggml-base.0.dylib",
+      "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib"
+    ],
+    "libggml-metal.0.24.0.dylib": [
+      "@rpath/libggml-metal.0.dylib",
+      "@rpath/libggml-base.0.dylib",
+      "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+      "/System/Library/Frameworks/Metal.framework/Versions/A/Metal",
+      "/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib",
+      "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+      "/usr/lib/libobjc.A.dylib"
+    ],
+    "libggml.0.24.0.dylib": [
+      "@rpath/libggml.0.dylib",
+      "@rpath/libggml-cpu.0.dylib",
+      "@rpath/libggml-blas.0.dylib",
+      "@rpath/libggml-metal.0.dylib",
+      "@rpath/libggml-base.0.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib"
+    ],
+    "libllama-common.0.4.1.dylib": [
+      "@rpath/libllama-common.0.dylib",
+      "@rpath/libllama.0.dylib",
+      "@rpath/libggml.0.dylib",
+      "@rpath/libggml-cpu.0.dylib",
+      "@rpath/libggml-blas.0.dylib",
+      "@rpath/libggml-metal.0.dylib",
+      "@rpath/libggml-base.0.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib"
+    ],
+    "libllama.0.4.1.dylib": [
+      "@rpath/libllama.0.dylib",
+      "@rpath/libggml.0.dylib",
+      "@rpath/libggml-cpu.0.dylib",
+      "@rpath/libggml-blas.0.dylib",
+      "@rpath/libggml-metal.0.dylib",
+      "@rpath/libggml-base.0.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib"
+    ],
+    "llama-decision-helper": [
+      "@rpath/libllama-common.0.dylib",
+      "@rpath/libllama.0.dylib",
+      "@rpath/libggml.0.dylib",
+      "@rpath/libggml-base.0.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib"
+    ],
+    "llama-decision-helper.new": [
+      "@rpath/libllama-common.0.dylib",
+      "@rpath/libllama.0.dylib",
+      "@rpath/libggml.0.dylib",
+      "@rpath/libggml-base.0.dylib",
+      "/usr/lib/libc++.1.dylib",
+      "/usr/lib/libSystem.B.dylib"
+    ]
+  }
+}

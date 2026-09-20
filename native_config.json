@@ -1,0 +1,16 @@
+{
+  "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+  "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+  "model_file": "models/Qwen3.6-35B-A3B-Q4_K_M.gguf",
+  "model_manifest": "native_model.json",
+  "native_binary": ".build/runtime/bin/llama-decision-helper",
+  "native_manifest": ".build/runtime/BUILD.json",
+  "device": "metal",
+  "dtype": "Q4_K_M",
+  "threads": 6,
+  "max_input_tokens": 2048,
+  "temperature": 1.0,
+  "prompt_style": "repeat_typed_score",
+  "log_file": ".build/native-engine.log",
+  "temperature_config": null
+}

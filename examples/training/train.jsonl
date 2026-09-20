@@ -1,0 +1,12 @@
+{"id": "train-00", "type": "choice", "group": "train-scenario-0", "family": "toy-parity", "state": {"number": 10}, "instructions": "数値の偶奇を選んでください。", "criteria": {"even": "偶数", "odd": "奇数"}, "label": "even"}
+{"id": "train-01", "type": "noul", "group": "train-scenario-1", "family": "toy-parity", "state": {"number": 11}, "instructions": "数値は偶数ですか。", "criteria": {"false": "いいえ", "true": "はい"}, "label": false}
+{"id": "train-02", "type": "score", "group": "train-scenario-2", "family": "toy-modulo-three", "state": {"number": 12}, "instructions": "数値を3で割った余りに対応する段階を選んでください。", "criteria": ["余り0", "余り1", "余り2"], "label": 0}
+{"id": "train-03", "type": "choice", "group": "train-scenario-3", "family": "toy-parity", "state": {"number": 13}, "instructions": "数値の偶奇を選んでください。", "criteria": {"even": "偶数", "odd": "奇数"}, "label": "odd"}
+{"id": "train-04", "type": "noul", "group": "train-scenario-4", "family": "toy-parity", "state": {"number": 14}, "instructions": "数値は偶数ですか。", "criteria": {"false": "いいえ", "true": "はい"}, "label": true}
+{"id": "train-05", "type": "score", "group": "train-scenario-5", "family": "toy-modulo-three", "state": {"number": 15}, "instructions": "数値を3で割った余りに対応する段階を選んでください。", "criteria": ["余り0", "余り1", "余り2"], "label": 0}
+{"id": "train-06", "type": "choice", "group": "train-scenario-6", "family": "toy-parity", "state": {"number": 16}, "instructions": "数値の偶奇を選んでください。", "criteria": {"even": "偶数", "odd": "奇数"}, "label": "even"}
+{"id": "train-07", "type": "noul", "group": "train-scenario-7", "family": "toy-parity", "state": {"number": 17}, "instructions": "数値は偶数ですか。", "criteria": {"false": "いいえ", "true": "はい"}, "label": false}
+{"id": "train-08", "type": "score", "group": "train-scenario-8", "family": "toy-modulo-three", "state": {"number": 18}, "instructions": "数値を3で割った余りに対応する段階を選んでください。", "criteria": ["余り0", "余り1", "余り2"], "label": 0}
+{"id": "train-09", "type": "choice", "group": "train-scenario-9", "family": "toy-parity", "state": {"number": 19}, "instructions": "数値の偶奇を選んでください。", "criteria": {"even": "偶数", "odd": "奇数"}, "label": "odd"}
+{"id": "train-10", "type": "noul", "group": "train-scenario-10", "family": "toy-parity", "state": {"number": 20}, "instructions": "数値は偶数ですか。", "criteria": {"false": "いいえ", "true": "はい"}, "label": true}
+{"id": "train-11", "type": "score", "group": "train-scenario-11", "family": "toy-modulo-three", "state": {"number": 21}, "instructions": "数値を3で割った余りに対応する段階を選んでください。", "criteria": ["余り0", "余り1", "余り2"], "label": 0}

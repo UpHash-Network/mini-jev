@@ -1,0 +1,6 @@
+{"id": "calibration-00", "type": "choice", "group": "calibration-scenario-0", "family": "toy-parity", "state": {"number": 200}, "instructions": "数値の偶奇を選んでください。", "criteria": {"even": "偶数", "odd": "奇数"}, "label": "even"}
+{"id": "calibration-01", "type": "noul", "group": "calibration-scenario-1", "family": "toy-parity", "state": {"number": 201}, "instructions": "数値は偶数ですか。", "criteria": {"false": "いいえ", "true": "はい"}, "label": false}
+{"id": "calibration-02", "type": "score", "group": "calibration-scenario-2", "family": "toy-modulo-three", "state": {"number": 202}, "instructions": "数値を3で割った余りに対応する段階を選んでください。", "criteria": ["余り0", "余り1", "余り2"], "label": 1}
+{"id": "calibration-03", "type": "choice", "group": "calibration-scenario-3", "family": "toy-parity", "state": {"number": 203}, "instructions": "数値の偶奇を選んでください。", "criteria": {"even": "偶数", "odd": "奇数"}, "label": "odd"}
+{"id": "calibration-04", "type": "noul", "group": "calibration-scenario-4", "family": "toy-parity", "state": {"number": 204}, "instructions": "数値は偶数ですか。", "criteria": {"false": "いいえ", "true": "はい"}, "label": true}
+{"id": "calibration-05", "type": "score", "group": "calibration-scenario-5", "family": "toy-modulo-three", "state": {"number": 205}, "instructions": "数値を3で割った余りに対応する段階を選んでください。", "criteria": ["余り0", "余り1", "余り2"], "label": 1}

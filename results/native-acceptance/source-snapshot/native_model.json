@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "role": "decision_model",
+  "repo_id": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+  "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+  "filename": "Qwen3.6-35B-A3B-Q4_K_M.gguf",
+  "bytes": 20419565568,
+  "sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+  "path": null,
+  "format": "gguf",
+  "quantization": "Q4_K_M",
+  "license": "Apache-2.0",
+  "source_model": {
+    "repo": "Qwen/Qwen3.6-35B-A3B",
+    "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0"
+  }
+}

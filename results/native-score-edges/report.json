@@ -1,0 +1,708 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-09-20T03:26:27.138107+00:00",
+  "mode": "real_model",
+  "fixture_source": "four public literals for Score 2/10/11/26 boundaries; no acceptance data",
+  "scope": "single stage extraction and API/branch consistency; not a benchmark",
+  "planned_requests": 4,
+  "planned_decode_calls": 4,
+  "batch_strategy": "sequential_independent_requests",
+  "script": {
+    "path": "${ORIGINAL_PROJECT}/validate_score_edges.py",
+    "sha256": "78c8e42414b1e34b173601dfccde1f672e23d53ae0cece289b70c75ce6c07d3a",
+    "bytes": 15047
+  },
+  "config": {
+    "path": "${ORIGINAL_PROJECT}/native_config.json",
+    "sha256": "c826b8487bd45652c24bb90b9125ee5816934524dba13ae95f0397453d0ec329",
+    "bytes": 512
+  },
+  "resolved_kwargs": {
+    "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "model_file": "${WORKSPACE}/work/models/qwen3.6-35b-a3b-gguf/Qwen3.6-35B-A3B-Q4_K_M.gguf",
+    "model_manifest": "${ORIGINAL_PROJECT}/native_model.json",
+    "native_binary": "${ORIGINAL_PROJECT}/native/bin/llama-decision-helper",
+    "native_manifest": "${ORIGINAL_PROJECT}/native/BUILD.json",
+    "device": "metal",
+    "dtype": "Q4_K_M",
+    "threads": 6,
+    "max_input_tokens": 2048,
+    "temperature": 1.0,
+    "prompt_style": "repeat_typed_score",
+    "log_file": "${ORIGINAL_PROJECT}/native-engine.log",
+    "temperature_config": "${ORIGINAL_PROJECT}/native_temperature.json"
+  },
+  "calibration_file": {
+    "path": "${ORIGINAL_PROJECT}/native_temperature.json",
+    "sha256": "1e0b40ee4055d7914ed352ad5ac7b64e5a4d91fec624f94a74614a686985fadd",
+    "bytes": 4149
+  },
+  "model_manifest": {
+    "path": "${ORIGINAL_PROJECT}/native_model.json",
+    "sha256": "506286b90b296c7ae1979794d29e2993e9ce9eabc821ccd07e9b86b0a7c09c27",
+    "bytes": 518
+  },
+  "native_manifest": {
+    "path": "${ORIGINAL_PROJECT}/native/BUILD.json",
+    "sha256": "51fdfc2349a2956dabc35c331f06fe7af2667bc05bf521f9ee3e20b3d06f3a66",
+    "bytes": 5318
+  },
+  "diagnostics_log_override": "${ORIGINAL_PROJECT}/results/native-score-edges/native.stderr.log",
+  "runtime_fingerprint": "4d2953166c63f2f1392b661a0331168459ac7cd359638612f37299513a118152",
+  "engine_info": {
+    "batch_strategy": "sequential_independent_requests",
+    "ctx": 2048,
+    "gpu_layers": 99,
+    "mode": "direct_logits",
+    "ready": true,
+    "total_decode_count": 0,
+    "vocab_size": 248320
+  },
+  "temperature": 1.3489628825916533,
+  "temperature_calibration_applied": true,
+  "observed_total_decode_count": 4,
+  "passed": true,
+  "checks_passed": 93,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "name": "selected_prompt_style",
+      "passed": true,
+      "actual": "repeat_typed_score"
+    },
+    {
+      "name": "fresh_engine_counter",
+      "passed": true,
+      "actual": 0
+    },
+    {
+      "name": "public.score_2.candidate_spec",
+      "passed": true,
+      "candidates": [
+        "0",
+        "1"
+      ],
+      "assistant_prefix": "{\"answer\":",
+      "value_kind": "number"
+    },
+    {
+      "name": "public.score_2.one_request",
+      "passed": true,
+      "actual": 1
+    },
+    {
+      "name": "public.score_2.wire_candidates",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.wire_prefix",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.wire_messages",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.wire_limit",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.type",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.gold",
+      "passed": true,
+      "expected": "1",
+      "actual": "1"
+    },
+    {
+      "name": "public.score_2.candidate_keys",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.probability_keys",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.finite_probabilities",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.probability_sum",
+      "passed": true,
+      "actual": 0.9999999999999999
+    },
+    {
+      "name": "public.score_2.score_range",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.score_expectation",
+      "passed": true,
+      "expected": 0.9984992736894088,
+      "actual": 0.9984992736894088
+    },
+    {
+      "name": "public.score_2.legend",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.candidate_ids",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.finite_logits",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.one_decode",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.total_decode_counter",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.zero_generation",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.single_sequential",
+      "passed": true
+    },
+    {
+      "name": "public.score_2.probability_semantics",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.candidate_spec",
+      "passed": true,
+      "candidates": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "assistant_prefix": "{\"answer\":",
+      "value_kind": "number"
+    },
+    {
+      "name": "public.score_10.one_request",
+      "passed": true,
+      "actual": 1
+    },
+    {
+      "name": "public.score_10.wire_candidates",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.wire_prefix",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.wire_messages",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.wire_limit",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.type",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.gold",
+      "passed": true,
+      "expected": "9",
+      "actual": "9"
+    },
+    {
+      "name": "public.score_10.candidate_keys",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.probability_keys",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.finite_probabilities",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.probability_sum",
+      "passed": true,
+      "actual": 1.0
+    },
+    {
+      "name": "public.score_10.score_range",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.score_expectation",
+      "passed": true,
+      "expected": 8.974753070823452,
+      "actual": 8.974753070823452
+    },
+    {
+      "name": "public.score_10.legend",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.candidate_ids",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.finite_logits",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.one_decode",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.total_decode_counter",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.zero_generation",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.single_sequential",
+      "passed": true
+    },
+    {
+      "name": "public.score_10.probability_semantics",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.candidate_spec",
+      "passed": true,
+      "candidates": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "assistant_prefix": "",
+      "value_kind": "string"
+    },
+    {
+      "name": "public.score_11.one_request",
+      "passed": true,
+      "actual": 1
+    },
+    {
+      "name": "public.score_11.wire_candidates",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.wire_prefix",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.wire_messages",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.wire_limit",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.type",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.gold",
+      "passed": true,
+      "expected": "10",
+      "actual": "10"
+    },
+    {
+      "name": "public.score_11.candidate_keys",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.probability_keys",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.finite_probabilities",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.probability_sum",
+      "passed": true,
+      "actual": 0.9999999999999999
+    },
+    {
+      "name": "public.score_11.score_range",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.score_expectation",
+      "passed": true,
+      "expected": 9.995820213748203,
+      "actual": 9.995820213748203
+    },
+    {
+      "name": "public.score_11.legend",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.candidate_ids",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.finite_logits",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.one_decode",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.total_decode_counter",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.zero_generation",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.single_sequential",
+      "passed": true
+    },
+    {
+      "name": "public.score_11.probability_semantics",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.candidate_spec",
+      "passed": true,
+      "candidates": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ],
+      "assistant_prefix": "",
+      "value_kind": "string"
+    },
+    {
+      "name": "public.score_26.one_request",
+      "passed": true,
+      "actual": 1
+    },
+    {
+      "name": "public.score_26.wire_candidates",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.wire_prefix",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.wire_messages",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.wire_limit",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.type",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.gold",
+      "passed": true,
+      "expected": "25",
+      "actual": "25"
+    },
+    {
+      "name": "public.score_26.candidate_keys",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.probability_keys",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.finite_probabilities",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.probability_sum",
+      "passed": true,
+      "actual": 1.0
+    },
+    {
+      "name": "public.score_26.score_range",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.score_expectation",
+      "passed": true,
+      "expected": 24.989591597535163,
+      "actual": 24.989591597535163
+    },
+    {
+      "name": "public.score_26.legend",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.candidate_ids",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.finite_logits",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.one_decode",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.total_decode_counter",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.zero_generation",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.single_sequential",
+      "passed": true
+    },
+    {
+      "name": "public.score_26.probability_semantics",
+      "passed": true
+    },
+    {
+      "name": "exactly_four_requests",
+      "passed": true,
+      "actual": 4
+    },
+    {
+      "name": "exactly_four_decodes",
+      "passed": true,
+      "actual": 4
+    },
+    {
+      "name": "score_10_to_11_fallback",
+      "passed": true
+    }
+  ],
+  "cases": [
+    {
+      "id": "public.score_2",
+      "candidate_count": 2,
+      "expected_label": "1",
+      "label": "1",
+      "candidate_tokens": [
+        "0",
+        "1"
+      ],
+      "assistant_prefix": "{\"answer\":",
+      "value_kind": "number",
+      "candidate_ids": [
+        15,
+        16
+      ],
+      "score": 0.9984992736894088,
+      "expected_score_from_probabilities": 0.9984992736894088,
+      "probability_sum": 0.9999999999999999,
+      "input_tokens": 221,
+      "native_decode_count": 1,
+      "output_tokens": 0
+    },
+    {
+      "id": "public.score_10",
+      "candidate_count": 10,
+      "expected_label": "9",
+      "label": "9",
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "assistant_prefix": "{\"answer\":",
+      "value_kind": "number",
+      "candidate_ids": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "score": 8.974753070823452,
+      "expected_score_from_probabilities": 8.974753070823452,
+      "probability_sum": 1.0,
+      "input_tokens": 349,
+      "native_decode_count": 1,
+      "output_tokens": 0
+    },
+    {
+      "id": "public.score_11",
+      "candidate_count": 11,
+      "expected_label": "10",
+      "label": "10",
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "assistant_prefix": "",
+      "value_kind": "string",
+      "candidate_ids": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "score": 9.995820213748203,
+      "expected_score_from_probabilities": 9.995820213748203,
+      "probability_sum": 0.9999999999999999,
+      "input_tokens": 402,
+      "native_decode_count": 1,
+      "output_tokens": 0
+    },
+    {
+      "id": "public.score_26",
+      "candidate_count": 26,
+      "expected_label": "25",
+      "label": "25",
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ],
+      "assistant_prefix": "",
+      "value_kind": "string",
+      "candidate_ids": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "score": 24.989591597535163,
+      "expected_score_from_probabilities": 24.989591597535163,
+      "probability_sum": 1.0,
+      "input_tokens": 792,
+      "native_decode_count": 1,
+      "output_tokens": 0
+    }
+  ],
+  "finished_at_utc": "2026-09-20T03:26:37.214232+00:00"
+}

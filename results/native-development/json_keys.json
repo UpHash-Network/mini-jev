@@ -1,0 +1,51 @@
+{
+  "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+  "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+  "prompt_style": "json_keys",
+  "overall": {
+    "count": 463,
+    "correct": 423,
+    "accuracy": 0.9136069114470843
+  },
+  "by_type": {
+    "choice": {
+      "count": 154,
+      "correct": 143,
+      "accuracy": 0.9285714285714286
+    },
+    "noul": {
+      "count": 158,
+      "correct": 149,
+      "accuracy": 0.9430379746835443
+    },
+    "score": {
+      "count": 151,
+      "correct": 131,
+      "accuracy": 0.8675496688741722
+    }
+  },
+  "by_source": {
+    "generated": {
+      "count": 180,
+      "correct": 152,
+      "accuracy": 0.8444444444444444
+    },
+    "manual": {
+      "count": 139,
+      "correct": 131,
+      "accuracy": 0.9424460431654677
+    },
+    "old-development": {
+      "count": 144,
+      "correct": 140,
+      "accuracy": 0.9722222222222222
+    }
+  },
+  "latency_le_512": {
+    "count": 463,
+    "p50_ms": 147.9050423949957,
+    "p95_ms": 188.83024994283915
+  },
+  "native_decode_count": 466,
+  "runtime_fingerprint": "c1d508cff3711d61f3d25a9d969c4c518e6b973b3d949f8b5f399ee7a91365d9"
+}

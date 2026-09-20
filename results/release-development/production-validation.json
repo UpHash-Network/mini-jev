@@ -1,0 +1,90 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "dtype": "torch.float32",
+  "device": "mps",
+  "attention": "eager",
+  "prompt_style": "compact",
+  "runtime_fingerprint": "362da4208ddaf1ae04c14fd4aa55968f505503ba7e24a8f274f09d3ee9a584d9",
+  "passed": true,
+  "checks": [
+    {
+      "name": "normal_forward_choice_01",
+      "passed": true,
+      "max_logit_difference": 4.57763671875e-05,
+      "tolerance": 0.001
+    },
+    {
+      "name": "normal_forward_choice_06",
+      "passed": true,
+      "max_logit_difference": 3.0517578125e-05,
+      "tolerance": 0.001
+    },
+    {
+      "name": "normal_forward_noul_02",
+      "passed": true,
+      "max_logit_difference": 2.288818359375e-05,
+      "tolerance": 0.001
+    },
+    {
+      "name": "normal_forward_noul_10",
+      "passed": true,
+      "max_logit_difference": 1.9073486328125e-05,
+      "tolerance": 0.001
+    },
+    {
+      "name": "single_batch_probabilities",
+      "passed": true,
+      "max_difference": 3.244727849960327e-06,
+      "tolerance": 0.001
+    },
+    {
+      "name": "single_batch_labels",
+      "passed": true
+    },
+    {
+      "name": "permutation_choice_01",
+      "passed": true
+    },
+    {
+      "name": "permutation_choice_06",
+      "passed": true
+    },
+    {
+      "name": "permutation_ht_choice_08",
+      "passed": true
+    },
+    {
+      "name": "permutation_ht_choice_31",
+      "passed": true
+    },
+    {
+      "name": "score_2",
+      "passed": true
+    },
+    {
+      "name": "score_8",
+      "passed": true
+    },
+    {
+      "name": "score_26",
+      "passed": true
+    },
+    {
+      "name": "long_input_rejected",
+      "passed": true
+    },
+    {
+      "name": "frozen_backbone",
+      "passed": true
+    },
+    {
+      "name": "no_generated_tokens",
+      "passed": true
+    },
+    {
+      "name": "repeat_deterministic",
+      "passed": true
+    }
+  ]
+}

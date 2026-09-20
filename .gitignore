@@ -1,0 +1,16 @@
+.venv/
+.build/
+.cache/
+.runs/
+models/
+__pycache__/
+*.py[cod]
+.DS_Store
+native-engine.log
+*.partial
+*.download.lock
+*.gguf
+.env
+.env.*
+dist/
+*.egg-info/

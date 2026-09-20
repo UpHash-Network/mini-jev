@@ -1,0 +1,64 @@
+{
+  "frozen_at": "2026-09-20T02:03:21.194797+00:00",
+  "mode": "evaluate",
+  "seed": 20260920,
+  "engine_kwargs": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "device": "mps",
+    "dtype": "float32",
+    "prompt_style": "compact",
+    "attention": "eager",
+    "local_files_only": true,
+    "max_input_tokens": 2048,
+    "temperature_config": "${ORIGINAL_PROJECT}/temperature.json"
+  },
+  "runtime": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "runtime_fingerprint": "00d2c2248762141e38b525f743184bbe07484c5be320c899d5ea9e88b12946be",
+    "dtype": "torch.float32",
+    "device": "mps",
+    "prompt_style": "compact",
+    "attention": "eager",
+    "max_input_tokens": 2048,
+    "temperature": 6.309573444801933,
+    "temperature_calibration_applied": true
+  },
+  "sha256": {
+    "${ORIGINAL_PROJECT}/release_engine.py": "99ca4022026ce3b84be5ab17f4d7d1d8ad6090c0d51e601df9eca6b246ceb780",
+    "${ORIGINAL_PROJECT}/mini_jev.py": "f60a522de4cd8dbcac8ec57b60728879d97ee04376926de5f2f3bab20de80b2d",
+    "${ORIGINAL_PROJECT}/acceptance/run_acceptance.py": "dba32dbf5eaa6948d75347dae6dbc3183706ee318198e86a00afe670dcd5945e",
+    "${ORIGINAL_PROJECT}/COMPLETION_CRITERIA.md": "6f171fbbc34fb22358edf0b5b80bb12defb50905848fc541631a0af2bedb8db2",
+    "${ORIGINAL_PROJECT}/requirements.txt": "1c7de76bc11d161c51f53edfcbf71ea9943d5c6a1ca36a89213ca20715edbc75",
+    "${ORIGINAL_PROJECT}/requirements.lock.txt": "23103d69f88c0b2e2b445760a8d3f568aca512ac2675865e517397ee385b816d",
+    "${ORIGINAL_PROJECT}/release_config.json": "3d0cdafeb9c54fc47f42617fc82139b73b7382152add362a363e768cfaaea0fe",
+    "${ORIGINAL_PROJECT}/temperature.json": "14b4468fdb734bf4374d5d6058361da489bea88b24d5364e8d43cd2b8ff186c9",
+    "${ORIGINAL_PROJECT}/acceptance/private/acceptance_test.jsonl": "16436f5e31f092f79ec3d4f39530ccd15521bf092539a9d21195e2059a7840bd",
+    "${ORIGINAL_PROJECT}/acceptance/private/generated_2220.jsonl": "141ee4c379fa8d72df6bca3fe793054c9d2847ca7d16d2fa6622bc92558d4bb3"
+  },
+  "hardware": {
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.10.5",
+    "machdep.cpu.brand_string": "Apple M5 Pro",
+    "hw.memsize": "68719476736",
+    "versions": {
+      "torch": "2.12.1",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.7.0"
+    }
+  },
+  "temperature_grid": null,
+  "candidate_order_test": "reverse input mapping, actual forward; runtime may canonicalize keys",
+  "latency_token_limit": 512,
+  "test_cases": 2400,
+  "counts": {
+    "choice": 800,
+    "noul": 800,
+    "score": 800
+  },
+  "model_load_seconds": 2.469277041964233
+}

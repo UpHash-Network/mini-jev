@@ -1,0 +1,46 @@
+{
+  "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+  "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+  "prompt_style": "repeat_labels",
+  "overall": {
+    "count": 800,
+    "correct": 712,
+    "accuracy": 0.89
+  },
+  "by_type": {
+    "choice": {
+      "count": 0,
+      "correct": 0,
+      "accuracy": null
+    },
+    "noul": {
+      "count": 0,
+      "correct": 0,
+      "accuracy": null
+    },
+    "score": {
+      "count": 800,
+      "correct": 712,
+      "accuracy": 0.89
+    }
+  },
+  "by_source": {
+    "generated": {
+      "count": 740,
+      "correct": 654,
+      "accuracy": 0.8837837837837837
+    },
+    "manual": {
+      "count": 60,
+      "correct": 58,
+      "accuracy": 0.9666666666666667
+    }
+  },
+  "latency_le_512": {
+    "count": 763,
+    "p50_ms": 286.0877080820501,
+    "p95_ms": 364.67487504705787
+  },
+  "native_decode_count": 803,
+  "runtime_fingerprint": "31a61efd2e70c3d1da4ee1e213c6168b1132a79bcd8271fff1ef1d39ea09063e"
+}

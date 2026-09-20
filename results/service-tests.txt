@@ -1,0 +1,43 @@
+test_client_context_manager_and_typed_groups (service.test_service.ClientTests) ... ok
+test_client_refuses_remote_origins (service.test_service.ClientTests) ... ok
+test_client_rejects_inconsistent_responses (service.test_service.ClientTests) ... ok
+test_client_validation_and_api_error (service.test_service.ClientTests) ... ok
+test_typed_client_end_to_end (service.test_service.ClientTests) ... ok
+test_browser_origin_and_rebinding_rejected (service.test_service.HTTPTests) ... ok
+test_concurrent_requests_are_serialized (service.test_service.HTTPTests) ... ok
+test_confidence_and_calibration_metadata (service.test_service.HTTPTests) ... ok
+test_corrupt_results_never_escape (service.test_service.HTTPTests) ... request 2e62c6bd8e104314bc8ad81889595e98 invalid backend output
+request 49273f9666884843923f5b54220caa5e invalid backend output
+request 767582f5506a412c924d606da6998f29 invalid backend output
+request 031d9ca287af40b2bc5ff9773ec5bc0b invalid backend output
+request fb148accd1cf47649f363ed8cdb8bd53 invalid backend output
+ok
+test_duplicate_content_length (service.test_service.HTTPTests) ... ok
+test_duplicate_content_type (service.test_service.HTTPTests) ... ok
+test_duplicate_nonfinite_invalid_json_rejected_before_engine (service.test_service.HTTPTests) ... ok
+test_engine_error_is_sanitized_and_worker_survives (service.test_service.HTTPTests) ... request ee2c34e33b974d358e122c18bee1873b inference failure: RuntimeError
+ok
+test_engine_input_rejection_is_422 (service.test_service.HTTPTests) ... ok
+test_health_and_typed_response (service.test_service.HTTPTests) ... ok
+test_health_not_ready (service.test_service.HTTPTests) ... ok
+test_http_connection_limit (service.test_service.HTTPTests) ... ok
+test_input_read_deadline (service.test_service.HTTPTests) ... ok
+test_media_length_size_method_and_path (service.test_service.HTTPTests) ... ok
+test_model_mismatch_rejected (service.test_service.HTTPTests) ... ok
+test_queue_full_returns_503 (service.test_service.HTTPTests) ... ok
+test_running_timeout_retains_slot_and_queued_timeout_skips_engine (service.test_service.HTTPTests) ... ok
+test_print_config_does_not_load_a_model (service.test_service.LauncherTests) ... ok
+test_release_config_calibration_paths_and_opt_out (service.test_service.LauncherTests) ... ok
+test_release_config_rejects_typos_and_invalid_values (service.test_service.LauncherTests) ... ok
+test_choice_and_score_bounds (service.test_service.SchemaTests) ... ok
+test_duplicate_and_nonfinite_and_utf16_json (service.test_service.SchemaTests) ... ok
+test_key_ids_are_routing_only_and_state_shared (service.test_service.SchemaTests) ... ok
+test_limits_and_nesting (service.test_service.SchemaTests) ... ok
+test_noul_criteria_and_empty_descriptions (service.test_service.SchemaTests) ... ok
+test_state_types (service.test_service.SchemaTests) ... ok
+test_unknown_fields_missing_fields_and_model (service.test_service.SchemaTests) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.134s
+
+OK

@@ -1,0 +1,6 @@
+{
+  "sigint_requested": true,
+  "forced": false,
+  "returncode": 0,
+  "graceful": true
+}

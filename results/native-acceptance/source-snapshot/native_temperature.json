@@ -1,0 +1,176 @@
+{
+  "temperature": 1.3489628825916533,
+  "runtime_fingerprint": "4d2953166c63f2f1392b661a0331168459ac7cd359638612f37299513a118152",
+  "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+  "model_revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+  "created_at": "2026-09-20T03:08:07.496306+00:00",
+  "method": "single positive temperature minimizing multiclass NLL",
+  "calibration_count": 120,
+  "calibration_sha256": "53317fc63913164194c51b399050153388112cebe69568d39bdd4f1ee84c7e7b",
+  "grid": {
+    "min": 0.1,
+    "max": 10.0,
+    "count": 201,
+    "spacing": "logarithmic"
+  },
+  "nll_before": 0.14821288849694564,
+  "nll_after": 0.13523335402219486,
+  "metrics_before": {
+    "valid_metric_count": 120,
+    "nll": 0.14821288849694564,
+    "brier_multiclass_sum": 0.0644370524351579,
+    "ece_10_equal_width": 0.03243907703110899,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 0
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 2,
+        "mean_confidence": 0.5559800473755454,
+        "accuracy": 1
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 0
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 1,
+        "mean_confidence": 0.7445044760982007,
+        "accuracy": 1
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 4,
+        "mean_confidence": 0.8806415486628116,
+        "accuracy": 0.5
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 113,
+        "mean_confidence": 0.9931556426542577,
+        "accuracy": 0.9823008849557522
+      }
+    ],
+    "score_count": 40,
+    "score_expectation_mae": 0.07594028718080169,
+    "score_normalized_expectation_mae": 0.0190630488365816
+  },
+  "metrics_after": {
+    "valid_metric_count": 120,
+    "nll": 0.13523335402219486,
+    "brier_multiclass_sum": 0.06250349791665606,
+    "ece_10_equal_width": 0.03314024226942718,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 1,
+        "mean_confidence": 0.4656979824432021,
+        "accuracy": 1
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 1,
+        "mean_confidence": 0.5076779870884216,
+        "accuracy": 1
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 1,
+        "mean_confidence": 0.6695708164645001,
+        "accuracy": 1
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 2,
+        "mean_confidence": 0.7842224643358898,
+        "accuracy": 1
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 8,
+        "mean_confidence": 0.847201223453971,
+        "accuracy": 0.625
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 107,
+        "mean_confidence": 0.9868167196320804,
+        "accuracy": 0.9906542056074766
+      }
+    ],
+    "score_count": 40,
+    "score_expectation_mae": 0.08334378656346803,
+    "score_normalized_expectation_mae": 0.021182848362532394
+  },
+  "actual_llama_decode_calls": 127,
+  "decode_count_semantics": "llama_decode_API_calls",
+  "warmup": {
+    "count": 7,
+    "latency_ms": [
+      157.11433300748467,
+      145.46462520956993,
+      151.91058302298188,
+      158.35104091092944,
+      163.72699989005923,
+      169.5838333107531,
+      188.4377500973642
+    ]
+  },
+  "generalization_validated": false,
+  "freeze_sha256": "fe242a939da0441a809f2da0946aa087339cf7759b405091eb408e9bab834df0"
+}

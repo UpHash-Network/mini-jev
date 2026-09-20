@@ -1,0 +1,18 @@
+{
+  "count": 2400,
+  "by_type": {
+    "choice": 800,
+    "noul": 800,
+    "score": 800
+  },
+  "by_source": {
+    "manual": 180,
+    "generated": 2220
+  },
+  "sha256": {
+    "questions_2400.jsonl": "9c1309168c407360b22f64af771784a216874ad4b120024b18dc674cc71f04c7",
+    "questions_2400.csv": "c4b9d4f5b486a7619088d234a7392589a3a6bfbecac43eab8398109a13ba74d3"
+  },
+  "calibration_excluded": true,
+  "csv_roundtrip_verified": true
+}

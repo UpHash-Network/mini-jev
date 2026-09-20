@@ -1,0 +1,6 @@
+{"id": "test-00", "type": "choice", "group": "test-scenario-0", "family": "toy-parity", "state": {"number": 300}, "instructions": "数値の偶奇を選んでください。", "criteria": {"even": "偶数", "odd": "奇数"}, "label": "even"}
+{"id": "test-01", "type": "noul", "group": "test-scenario-1", "family": "toy-parity", "state": {"number": 301}, "instructions": "数値は偶数ですか。", "criteria": {"false": "いいえ", "true": "はい"}, "label": false}
+{"id": "test-02", "type": "score", "group": "test-scenario-2", "family": "toy-modulo-three", "state": {"number": 302}, "instructions": "数値を3で割った余りに対応する段階を選んでください。", "criteria": ["余り0", "余り1", "余り2"], "label": 2}
+{"id": "test-03", "type": "choice", "group": "test-scenario-3", "family": "toy-parity", "state": {"number": 303}, "instructions": "数値の偶奇を選んでください。", "criteria": {"even": "偶数", "odd": "奇数"}, "label": "odd"}
+{"id": "test-04", "type": "noul", "group": "test-scenario-4", "family": "toy-parity", "state": {"number": 304}, "instructions": "数値は偶数ですか。", "criteria": {"false": "いいえ", "true": "はい"}, "label": true}
+{"id": "test-05", "type": "score", "group": "test-scenario-5", "family": "toy-modulo-three", "state": {"number": 305}, "instructions": "数値を3で割った余りに対応する段階を選んでください。", "criteria": ["余り0", "余り1", "余り2"], "label": 2}

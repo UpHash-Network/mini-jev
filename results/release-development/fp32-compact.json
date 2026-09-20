@@ -1,0 +1,6418 @@
+{
+  "accuracy": 0.9652777777777778,
+  "by_type": {
+    "choice": 0.9791666666666666,
+    "noul": 0.9791666666666666,
+    "score": 0.9375
+  },
+  "p50_ms": 248.15827095881104,
+  "p95_ms": 325.07842141203577,
+  "rows": [
+    {
+      "id": "choice_01",
+      "type": "choice",
+      "expected": "returns",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "returns",
+        "probabilities": {
+          "account": 8.213434272985598e-13,
+          "billing": 6.287368195523335e-12,
+          "returns": 1.0,
+          "shipping": 1.1343487781034778e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "returns",
+        "confidence": 0.9999999996603132,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "account",
+          "billing",
+          "returns",
+          "shipping"
+        ],
+        "candidate_logits": [
+          25.189414978027344,
+          27.22477149963379,
+          53.017250061035156,
+          27.81487274169922
+        ],
+        "candidate_mass": null,
+        "input_tokens": 174,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 844.3160420283675,
+        "model_ms": 761.6909998469055
+      }
+    },
+    {
+      "id": "choice_02",
+      "type": "choice",
+      "expected": "thursday",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "thursday",
+        "probabilities": {
+          "friday": 1.0681931820197624e-13,
+          "thursday": 1.0,
+          "tuesday": 6.238067245915857e-13,
+          "unknown": 1.5947042297792535e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "thursday",
+        "confidence": 0.9999999996990592,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "friday",
+          "thursday",
+          "tuesday",
+          "unknown"
+        ],
+        "candidate_logits": [
+          24.19310760498047,
+          54.06074523925781,
+          25.957809448242188,
+          29.198997497558594
+        ],
+        "candidate_mass": null,
+        "input_tokens": 158,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 237.90637496858835,
+        "model_ms": 233.65716682747006
+      }
+    },
+    {
+      "id": "choice_03",
+      "type": "choice",
+      "expected": "negative",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "negative",
+        "probabilities": {
+          "mixed": 8.972572576419757e-14,
+          "negative": 1.0,
+          "neutral": 4.823847050972052e-12,
+          "positive": 1.7955957901105712e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "negative",
+        "confidence": 0.9999999995868996,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "mixed",
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "candidate_logits": [
+          22.325321197509766,
+          52.367340087890625,
+          26.309890747070312,
+          27.62424087524414
+        ],
+        "candidate_mass": null,
+        "input_tokens": 165,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 246.93999998271465,
+        "model_ms": 242.18708323314786
+      }
+    },
+    {
+      "id": "choice_04",
+      "type": "choice",
+      "expected": "login",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "login",
+        "probabilities": {
+          "delivery": 1.9599190326236027e-11,
+          "invoice": 1.5978768655444675e-11,
+          "login": 1.0,
+          "refund": 7.986958316941184e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "login",
+        "confidence": 0.999999999217663,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "delivery",
+          "invoice",
+          "login",
+          "refund"
+        ],
+        "candidate_logits": [
+          28.59253692626953,
+          28.388309478759766,
+          53.248069763183594,
+          27.69485855102539
+        ],
+        "candidate_mass": null,
+        "input_tokens": 155,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 237.2317500412464,
+        "model_ms": 232.3499582707882
+      }
+    },
+    {
+      "id": "choice_05",
+      "type": "choice",
+      "expected": "signed",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "signed",
+        "probabilities": {
+          "destroyed": 1.1517193448939977e-12,
+          "signed": 1.0,
+          "unknown": 1.0528657806707642e-11,
+          "unsigned": 3.738645244083516e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "signed",
+        "confidence": 0.9999999997142275,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "destroyed",
+          "signed",
+          "unknown",
+          "unsigned"
+        ],
+        "candidate_logits": [
+          25.42574691772461,
+          52.91551208496094,
+          27.638591766357422,
+          26.603214263916016
+        ],
+        "candidate_mass": null,
+        "input_tokens": 174,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 236.14824982360005,
+        "model_ms": 234.91591680794954
+      }
+    },
+    {
+      "id": "choice_06",
+      "type": "choice",
+      "expected": "manager",
+      "correct": false,
+      "answer": {
+        "type": "choice",
+        "label": "director",
+        "probabilities": {
+          "chief": 2.457040213649231e-12,
+          "director": 0.9999995231628418,
+          "manager": 4.4190619519213215e-07,
+          "none": 1.3237695661860727e-10
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "director",
+        "confidence": 0.9999949895493607,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "chief",
+          "director",
+          "manager",
+          "none"
+        ],
+        "candidate_logits": [
+          24.731040954589844,
+          51.463104248046875,
+          36.830936431884766,
+          28.717737197875977
+        ],
+        "candidate_mass": null,
+        "input_tokens": 184,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 293.81712479516864,
+        "model_ms": 289.30741734802723
+      }
+    },
+    {
+      "id": "choice_07",
+      "type": "choice",
+      "expected": "announcement",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "announcement",
+        "probabilities": {
+          "announcement": 1.0,
+          "cancellation": 1.9363593302575144e-13,
+          "complaint": 2.1603956145734016e-13,
+          "purchase": 2.030851615347773e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "announcement",
+        "confidence": 0.9999999999870851,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "announcement",
+          "cancellation",
+          "complaint",
+          "purchase"
+        ],
+        "candidate_logits": [
+          54.160675048828125,
+          24.88787841796875,
+          24.997360229492188,
+          24.935523986816406
+        ],
+        "candidate_mass": null,
+        "input_tokens": 182,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 263.7665830552578,
+        "model_ms": 258.97620897740126
+      }
+    },
+    {
+      "id": "choice_08",
+      "type": "choice",
+      "expected": "shipping",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "shipping",
+        "probabilities": {
+          "account": 1.45744469959427e-14,
+          "returns": 1.6969331010350565e-14,
+          "sales": 1.5198194265597653e-13,
+          "shipping": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "shipping",
+        "confidence": 0.9999999999960412,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "account",
+          "returns",
+          "sales",
+          "shipping"
+        ],
+        "candidate_logits": [
+          26.163732528686523,
+          26.31587028503418,
+          28.508224487304688,
+          58.02323913574219
+        ],
+        "candidate_mass": null,
+        "input_tokens": 180,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 262.7852917648852,
+        "model_ms": 258.0878329463303
+      }
+    },
+    {
+      "id": "choice_09",
+      "type": "choice",
+      "expected": "sold_out",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "sold_out",
+        "probabilities": {
+          "available": 3.9117983852143823e-10,
+          "reserved": 9.211734847136555e-11,
+          "sold_out": 1.0,
+          "unknown": 4.007152248908241e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "sold_out",
+        "confidence": 0.999999991660032,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "available",
+          "reserved",
+          "sold_out",
+          "unknown"
+        ],
+        "candidate_logits": [
+          31.156982421875,
+          29.710878372192383,
+          52.8188362121582,
+          28.878480911254883
+        ],
+        "candidate_mass": null,
+        "input_tokens": 163,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 247.46999982744455,
+        "model_ms": 242.72700026631355
+      }
+    },
+    {
+      "id": "choice_10",
+      "type": "choice",
+      "expected": "report",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "report",
+        "probabilities": {
+          "attachments": 2.427664460517148e-13,
+          "both": 2.430212335622489e-13,
+          "neither": 3.4748248115695768e-12,
+          "report": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "report",
+        "confidence": 0.9999999999236849,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "attachments",
+          "both",
+          "neither",
+          "report"
+        ],
+        "candidate_logits": [
+          26.65142059326172,
+          26.652469635009766,
+          29.312620162963867,
+          55.698097229003906
+        ],
+        "candidate_mass": null,
+        "input_tokens": 163,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 229.61133299395442,
+        "model_ms": 228.4606252796948
+      }
+    },
+    {
+      "id": "choice_11",
+      "type": "choice",
+      "expected": "specification",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "specification",
+        "probabilities": {
+          "cancel": 8.648196048177681e-11,
+          "payment": 1.5637584976913033e-11,
+          "repair": 1.5907641523482674e-11,
+          "specification": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "specification",
+        "confidence": 0.9999999979885252,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "cancel",
+          "payment",
+          "repair",
+          "specification"
+        ],
+        "candidate_logits": [
+          28.934627532958984,
+          27.224369049072266,
+          27.241491317749023,
+          52.105712890625
+        ],
+        "candidate_mass": null,
+        "input_tokens": 172,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 257.9688751138747,
+        "model_ms": 252.70283408463
+      }
+    },
+    {
+      "id": "choice_12",
+      "type": "choice",
+      "expected": "success_then_disconnection",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "success_then_disconnection",
+        "probabilities": {
+          "authentication_failed": 7.997697285249544e-14,
+          "failed_then_success": 3.713291813248719e-14,
+          "no_disconnection": 1.6274802957117612e-13,
+          "success_then_disconnection": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "success_then_disconnection",
+        "confidence": 0.9999999999939749,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "authentication_failed",
+          "failed_then_success",
+          "no_disconnection",
+          "success_then_disconnection"
+        ],
+        "candidate_logits": [
+          26.04731559753418,
+          25.280080795288086,
+          26.757780075073242,
+          56.20435333251953
+        ],
+        "candidate_mass": null,
+        "input_tokens": 179,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 263.0176250822842,
+        "model_ms": 258.2280826754868
+      }
+    },
+    {
+      "id": "choice_13",
+      "type": "choice",
+      "expected": "online",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "online",
+        "probabilities": {
+          "absent": 1.421792371336661e-13,
+          "online": 1.0,
+          "onsite": 4.005245028866622e-13,
+          "unknown": 8.405163500965762e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "online",
+        "confidence": 0.9999999999718605,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "absent",
+          "online",
+          "onsite",
+          "unknown"
+        ],
+        "candidate_logits": [
+          25.16720199584961,
+          54.7488899230957,
+          26.20288848876953,
+          26.944129943847656
+        ],
+        "candidate_mass": null,
+        "input_tokens": 151,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 236.2881670705974,
+        "model_ms": 231.06620786711574
+      }
+    },
+    {
+      "id": "choice_14",
+      "type": "choice",
+      "expected": "red",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "red",
+        "probabilities": {
+          "blue": 1.1691654588918965e-11,
+          "green": 4.023955821330638e-11,
+          "red": 1.0,
+          "yellow": 1.5733449265642463e-10
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "red",
+        "confidence": 0.9999999965310824,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "blue",
+          "green",
+          "red",
+          "yellow"
+        ],
+        "candidate_logits": [
+          24.639881134033203,
+          25.875856399536133,
+          49.81202697753906,
+          27.2393798828125
+        ],
+        "candidate_mass": null,
+        "input_tokens": 170,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 247.10024986416101,
+        "model_ms": 242.07741674035788
+      }
+    },
+    {
+      "id": "choice_15",
+      "type": "choice",
+      "expected": "order",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "order",
+        "probabilities": {
+          "negotiate": 2.8658504605885704e-13,
+          "order": 1.0,
+          "reject": 1.0338527993772328e-12,
+          "undecided": 2.4822325184886695e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "order",
+        "confidence": 0.9999999999256012,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "negotiate",
+          "order",
+          "reject",
+          "undecided"
+        ],
+        "candidate_logits": [
+          23.984699249267578,
+          52.865440368652344,
+          25.267711639404297,
+          26.143577575683594
+        ],
+        "candidate_mass": null,
+        "input_tokens": 170,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 232.6822499744594,
+        "model_ms": 231.60295886918902
+      }
+    },
+    {
+      "id": "choice_16",
+      "type": "choice",
+      "expected": "reissue",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "reissue",
+        "probabilities": {
+          "extend": 1.1582617189583727e-13,
+          "reissue": 1.0,
+          "reserve": 2.791773973456757e-13,
+          "return": 1.886122334704421e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "reissue",
+        "confidence": 0.9999999999549598,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "extend",
+          "reissue",
+          "reserve",
+          "return"
+        ],
+        "candidate_logits": [
+          24.789623260498047,
+          54.57630920410156,
+          25.66938018798828,
+          27.579811096191406
+        ],
+        "candidate_mass": null,
+        "input_tokens": 166,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 248.841917142272,
+        "model_ms": 244.24425000324845
+      }
+    },
+    {
+      "id": "noul_01",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 2.108925691414812e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999911197,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          23.770633697509766,
+          52.95806121826172
+        ],
+        "candidate_mass": null,
+        "input_tokens": 130,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 280.82745941355824,
+        "model_ms": 276.0544163174927
+      }
+    },
+    {
+      "id": "noul_02",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 5.056683695901787e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 5.056683695901787e-14,
+        "confidence": 0.9999999999977666,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.215309143066406,
+          25.599828720092773
+        ],
+        "candidate_mass": null,
+        "input_tokens": 134,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 223.40916702523828,
+        "model_ms": 219.58074998110533
+      }
+    },
+    {
+      "id": "noul_03",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 1.4935196634112413e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999936366,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          24.862457275390625,
+          54.394927978515625
+        ],
+        "candidate_mass": null,
+        "input_tokens": 150,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 236.3095423206687,
+        "model_ms": 231.70929215848446
+      }
+    },
+    {
+      "id": "noul_04",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 2.154050016427069e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 2.154050016427069e-14,
+        "confidence": 0.9999999999990221,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.76298522949219,
+          25.294143676757812
+        ],
+        "candidate_mass": null,
+        "input_tokens": 146,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 256.88579212874174,
+        "model_ms": 252.11137486621737
+      }
+    },
+    {
+      "id": "noul_05",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 7.602210825912933e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999966869,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          24.080341339111328,
+          54.28809356689453
+        ],
+        "candidate_mass": null,
+        "input_tokens": 155,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 277.15708315372467,
+        "model_ms": 276.1167911812663
+      }
+    },
+    {
+      "id": "noul_06",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 1.5269113962579003e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.5269113962579003e-14,
+        "confidence": 0.9999999999992992,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.42934799194336,
+          24.616403579711914
+        ],
+        "candidate_mass": null,
+        "input_tokens": 165,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 288.37295807898045,
+        "model_ms": 287.3205840587616
+      }
+    },
+    {
+      "id": "noul_07",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 5.840394357373158e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999762652,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          24.462894439697266,
+          52.6317024230957
+        ],
+        "candidate_mass": null,
+        "input_tokens": 155,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 245.45624991878867,
+        "model_ms": 244.39445929601789
+      }
+    },
+    {
+      "id": "noul_08",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 5.884154925459018e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 5.884154925459018e-14,
+        "confidence": 0.999999999997414,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.478187561035156,
+          26.014259338378906
+        ],
+        "candidate_mass": null,
+        "input_tokens": 158,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 227.0034160465002,
+        "model_ms": 225.96004093065858
+      }
+    },
+    {
+      "id": "noul_09",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 4.052310787275304e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999833181,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          25.474267959594727,
+          54.00858688354492
+        ],
+        "candidate_mass": null,
+        "input_tokens": 141,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 233.0171251669526,
+        "model_ms": 228.31966588273644
+      }
+    },
+    {
+      "id": "noul_10",
+      "type": "noul",
+      "expected": "false",
+      "correct": false,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 0.044534556567668915,
+          "true": 0.9554654359817505
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 0.9554654359817505,
+        "confidence": 0.7372900478459206,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          45.06000518798828,
+          48.125938415527344
+        ],
+        "candidate_mass": null,
+        "input_tokens": 139,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 250.47679198905826,
+        "model_ms": 245.70979131385684
+      }
+    },
+    {
+      "id": "noul_11",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 1.3062713074846882e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999944092,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          23.868776321411133,
+          53.53520584106445
+        ],
+        "candidate_mass": null,
+        "input_tokens": 149,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 296.78875021636486,
+        "model_ms": 291.4248341694474
+      }
+    },
+    {
+      "id": "noul_12",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 3.345057453143889e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 3.345057453143889e-14,
+        "confidence": 0.9999999999985025,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          57.48838806152344,
+          26.459680557250977
+        ],
+        "candidate_mass": null,
+        "input_tokens": 136,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 245.45591697096825,
+        "model_ms": 237.09395807236433
+      }
+    },
+    {
+      "id": "noul_13",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 4.117026340612513e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999981694,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          23.577857971191406,
+          54.39891815185547
+        ],
+        "candidate_mass": null,
+        "input_tokens": 143,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 227.85995807498693,
+        "model_ms": 222.7036659605801
+      }
+    },
+    {
+      "id": "noul_14",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 6.732414647471485e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 6.732414647471485e-13,
+        "confidence": 0.9999999999727782,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          54.715599060058594,
+          26.688926696777344
+        ],
+        "candidate_mass": null,
+        "input_tokens": 138,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 225.27266619727015,
+        "model_ms": 220.43262515217066
+      }
+    },
+    {
+      "id": "noul_15",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 1.2733433231437719e-11,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999995391441,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          26.88596534729004,
+          51.972755432128906
+        ],
+        "candidate_mass": null,
+        "input_tokens": 151,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 222.21183311194181,
+        "model_ms": 221.2364999577403
+      }
+    },
+    {
+      "id": "noul_16",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 5.0121101117118344e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 5.0121101117118344e-14,
+        "confidence": 0.9999999999977855,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          55.907344818115234,
+          25.283010482788086
+        ],
+        "candidate_mass": null,
+        "input_tokens": 156,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 239.96991710737348,
+        "model_ms": 235.09741621091962
+      }
+    },
+    {
+      "id": "score_01",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 1.0,
+          "1": 4.776893399068005e-13,
+          "2": 1.3937473137409784e-13,
+          "3": 5.003974123084232e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.2576310395802657e-12,
+        "confidence": 0.9999999999770246,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          57.97467803955078,
+          29.604862213134766,
+          28.37306785583496,
+          29.651304244995117
+        ],
+        "candidate_mass": null,
+        "input_tokens": 148,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "0件",
+          "1": "1件から3件",
+          "2": "4件から9件",
+          "3": "10件以上"
+        },
+        "latency_ms": 235.21599965170026,
+        "model_ms": 230.51920905709267
+      }
+    },
+    {
+      "id": "score_02",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 5.626041299500173e-12,
+          "1": 0.9985503554344177,
+          "2": 0.0014495750656351447,
+          "3": 1.0033799346942374e-09
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.0014495085758277,
+        "confidence": 0.9921201874709018,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          26.276268005371094,
+          52.17843246459961,
+          45.64339828491211,
+          31.459991455078125
+        ],
+        "candidate_mass": null,
+        "input_tokens": 159,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "0%",
+          "1": "0%を超え50%未満",
+          "2": "50%以上100%未満",
+          "3": "100%"
+        },
+        "latency_ms": 237.3027498833835,
+        "model_ms": 232.59529192000628
+      }
+    },
+    {
+      "id": "score_03",
+      "type": "score",
+      "expected": "2",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 9.786231070299523e-13,
+          "1": 4.4916251273896535e-11,
+          "2": 1.0,
+          "3": 1.746829417226259e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.000000000097321,
+        "confidence": 0.9999999988963767,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          25.18260955810547,
+          29.009017944335938,
+          52.83523941040039,
+          28.064605712890625
+        ],
+        "candidate_mass": null,
+        "input_tokens": 169,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "返信時期の指定がない",
+          "1": "今週中の返信を希望する",
+          "2": "明日までの返信を希望する",
+          "3": "本日中または即時の返信を希望する"
+        },
+        "latency_ms": 249.312958214432,
+        "model_ms": 244.23116585239768
+      }
+    },
+    {
+      "id": "score_04",
+      "type": "score",
+      "expected": "3",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "3",
+        "probabilities": {
+          "0": 2.7136313216023084e-14,
+          "1": 5.72570216608205e-14,
+          "2": 2.290278698028475e-13,
+          "3": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 3.000000000000515,
+        "confidence": 0.9999999999933208,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          25.342884063720703,
+          26.089561462402344,
+          27.475854873657227,
+          56.580787658691406
+        ],
+        "candidate_mass": null,
+        "input_tokens": 174,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "利用への影響はない",
+          "1": "表示だけに不具合があるが全機能を使える",
+          "2": "一部の機能だけ利用できない",
+          "3": "すべての機能を利用できない"
+        },
+        "latency_ms": 237.9092499613762,
+        "model_ms": 236.8765422143042
+      }
+    },
+    {
+      "id": "score_05",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 1.0,
+          "1": 5.001960759649926e-13,
+          "2": 4.423199003247835e-13,
+          "3": 1.0549236180781851e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 4.549606730849115e-12,
+        "confidence": 0.9999999999597183,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          56.310340881347656,
+          27.98656463623047,
+          27.863597869873047,
+          28.7327880859375
+        ],
+        "candidate_mass": null,
+        "input_tokens": 165,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "受信を明確に拒否している",
+          "1": "希望について記載がない",
+          "2": "受信に関心はあるが同意していない",
+          "3": "受信に明確に同意している"
+        },
+        "latency_ms": 237.30091704055667,
+        "model_ms": 236.31291696801782
+      }
+    },
+    {
+      "id": "score_06",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 1.1889369697093422e-11,
+          "1": 1.0,
+          "2": 2.088179351655839e-10,
+          "3": 1.0131034205995704e-10
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.000000000721567,
+        "confidence": 0.9999999947449985,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          25.603988647460938,
+          50.75936508178711,
+          28.469806671142578,
+          27.746532440185547
+        ],
+        "candidate_mass": null,
+        "input_tokens": 159,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "0分以上5分未満",
+          "1": "5分以上10分未満",
+          "2": "10分以上30分未満",
+          "3": "30分以上"
+        },
+        "latency_ms": 221.14845784381032,
+        "model_ms": 219.86408298835158
+      }
+    },
+    {
+      "id": "score_07",
+      "type": "score",
+      "expected": "2",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 1.3445004658219073e-11,
+          "1": 1.9212944568636203e-09,
+          "2": 1.0,
+          "3": 4.67558991523731e-10
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.0000000033239713,
+        "confidence": 0.999999964695626,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          25.515689849853516,
+          30.47783660888672,
+          50.54810333251953,
+          29.064607620239258
+        ],
+        "candidate_mass": null,
+        "input_tokens": 196,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "0項目が記入済み",
+          "1": "1項目が記入済み",
+          "2": "2項目が記入済み",
+          "3": "3項目すべてが記入済み"
+        },
+        "latency_ms": 305.6279169395566,
+        "model_ms": 300.3084580413997
+      }
+    },
+    {
+      "id": "score_08",
+      "type": "score",
+      "expected": "3",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "3",
+        "probabilities": {
+          "0": 6.431565891841518e-14,
+          "1": 1.0755859500581263e-13,
+          "2": 2.1912675938085685e-13,
+          "3": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 3.000000000000546,
+        "confidence": 0.9999999999916664,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          25.363216400146484,
+          25.87744903564453,
+          26.58906364440918,
+          55.738189697265625
+        ],
+        "candidate_mass": null,
+        "input_tokens": 181,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "本人確認書類が未提出",
+          "1": "本人確認書類は提出済みで審査前",
+          "2": "審査は完了したが利用開始前",
+          "3": "利用を開始している"
+        },
+        "latency_ms": 264.9841671809554,
+        "model_ms": 260.02479111775756
+      }
+    },
+    {
+      "id": "score_09",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 0.9999983310699463,
+          "1": 1.6617079836578341e-06,
+          "2": 2.9409605306618403e-10,
+          "3": 9.518317384271668e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.6625817252854946e-06,
+        "confidence": 0.9999828383980092,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          54.64313507080078,
+          41.335472106933594,
+          32.696022033691406,
+          31.56791877746582
+        ],
+        "candidate_mass": null,
+        "input_tokens": 185,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "予定日以前に到着",
+          "1": "予定日の1日後に到着",
+          "2": "予定日の2日後または3日後に到着",
+          "3": "予定日の4日後以降に到着"
+        },
+        "latency_ms": 263.58612487092614,
+        "model_ms": 258.4667499177158
+      }
+    },
+    {
+      "id": "score_10",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 8.69778099370222e-13,
+          "1": 1.0,
+          "2": 2.2472169958209776e-11,
+          "3": 9.10024312850144e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.000000000072245,
+        "confidence": 0.9999999994182357,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          23.55831527709961,
+          51.328853607177734,
+          26.810110092163086,
+          25.9061336517334
+        ],
+        "candidate_mass": null,
+        "input_tokens": 190,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "自動制御は0設備",
+          "1": "自動制御は1設備",
+          "2": "自動制御は2設備",
+          "3": "自動制御は3設備"
+        },
+        "latency_ms": 264.3207497894764,
+        "model_ms": 259.2259170487523
+      }
+    },
+    {
+      "id": "score_11",
+      "type": "score",
+      "expected": "2",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 2.6352037219012914e-10,
+          "1": 2.4823214594960064e-09,
+          "2": 1.0,
+          "3": 2.525938214148482e-08
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.000000078260468,
+        "confidence": 0.9999996415720193,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          31.569955825805664,
+          33.812774658203125,
+          53.62684631347656,
+          36.13277816772461
+        ],
+        "candidate_mass": null,
+        "input_tokens": 162,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "回答が1",
+          "1": "回答が2または3",
+          "2": "回答が4",
+          "3": "回答が5"
+        },
+        "latency_ms": 247.63383297249675,
+        "model_ms": 242.82074999064207
+      }
+    },
+    {
+      "id": "score_12",
+      "type": "score",
+      "expected": "3",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "3",
+        "probabilities": {
+          "0": 5.934921336932936e-14,
+          "1": 3.9121348304957393e-13,
+          "2": 1.4283689608873829e-07,
+          "3": 0.9999998807907104
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.9999999280463148,
+        "confidence": 0.9999982900060836,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          24.258033752441406,
+          26.143848419189453,
+          38.95180892944336,
+          54.71337127685547
+        ],
+        "candidate_mass": null,
+        "input_tokens": 198,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "閲覧も編集も削除も不可",
+          "1": "閲覧のみ可能",
+          "2": "閲覧と編集が可能だが削除は不可",
+          "3": "閲覧と編集と削除がすべて可能"
+        },
+        "latency_ms": 304.63716574013233,
+        "model_ms": 299.710042309016
+      }
+    },
+    {
+      "id": "score_13",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 1.0,
+          "1": 7.995359135501943e-15,
+          "2": 4.406555500401305e-15,
+          "3": 4.4427432890068504e-15
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 3.0136700003325105e-14,
+        "confidence": 0.9999999999996018,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          60.25214385986328,
+          27.79222869873047,
+          27.196460723876953,
+          27.204639434814453
+        ],
+        "candidate_mass": null,
+        "input_tokens": 162,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "0回",
+          "1": "1回",
+          "2": "2回",
+          "3": "3回以上"
+        },
+        "latency_ms": 228.36891608312726,
+        "model_ms": 227.36441576853395
+      }
+    },
+    {
+      "id": "score_14",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 5.4719245627665725e-12,
+          "1": 1.0,
+          "2": 1.1939046105913231e-11,
+          "3": 7.921009334554974e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.000000000047641,
+        "confidence": 0.9999999995349841,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          25.44635581970215,
+          51.37774658203125,
+          26.226539611816406,
+          25.81624412536621
+        ],
+        "candidate_mass": null,
+        "input_tokens": 187,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "完了条件は0個",
+          "1": "完了条件は1個",
+          "2": "完了条件は2個",
+          "3": "完了条件は3個"
+        },
+        "latency_ms": 306.4550831913948,
+        "model_ms": 301.7175421118736
+      }
+    },
+    {
+      "id": "score_15",
+      "type": "score",
+      "expected": "2",
+      "correct": false,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 2.0149413249015424e-09,
+          "1": 0.7425040602684021,
+          "2": 0.25749585032463074,
+          "3": 1.3151560551705188e-07
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.2574961554644801,
+        "confidence": 0.5885264140892466,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          25.006343841552734,
+          44.731292724609375,
+          43.67226791381836,
+          29.184879302978516
+        ],
+        "candidate_mass": null,
+        "input_tokens": 224,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "一致を確認できる条件は0個",
+          "1": "一致を確認できる条件は1個",
+          "2": "一致を確認できる条件は2個",
+          "3": "一致を確認できる条件は3個"
+        },
+        "latency_ms": 383.10283282771707,
+        "model_ms": 374.6775002218783
+      }
+    },
+    {
+      "id": "score_16",
+      "type": "score",
+      "expected": "3",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "3",
+        "probabilities": {
+          "0": 2.2855200804833276e-12,
+          "1": 5.279011949799184e-11,
+          "2": 0.0527922697365284,
+          "3": 0.9472077488899231
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.9472077861956163,
+        "confidence": 0.850929039633921,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          27.31438446044922,
+          30.45411491394043,
+          51.17742156982422,
+          54.0645751953125
+        ],
+        "candidate_mass": null,
+        "input_tokens": 166,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "0%",
+          "1": "0%を超え50%未満",
+          "2": "50%以上100%未満",
+          "3": "100%"
+        },
+        "latency_ms": 234.87337492406368,
+        "model_ms": 233.83916728198528
+      }
+    },
+    {
+      "id": "ht_choice_01",
+      "type": "choice",
+      "expected": "k1",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k1",
+        "probabilities": {
+          "k1": 1.0,
+          "k2": 1.2132043416754335e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k1",
+        "confidence": 0.9999999999947946,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2"
+        ],
+        "candidate_logits": [
+          58.22917175292969,
+          28.48883056640625
+        ],
+        "candidate_mass": null,
+        "input_tokens": 158,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 225.86054215207696,
+        "model_ms": 224.81087502092123
+      }
+    },
+    {
+      "id": "ht_choice_02",
+      "type": "choice",
+      "expected": "k2",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k2",
+        "probabilities": {
+          "k1": 5.717495433262693e-14,
+          "k2": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k2",
+        "confidence": 0.9999999999974848,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2"
+        ],
+        "candidate_logits": [
+          24.152606964111328,
+          54.645267486572266
+        ],
+        "candidate_mass": null,
+        "input_tokens": 153,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 236.52183404192328,
+        "model_ms": 231.55129188671708
+      }
+    },
+    {
+      "id": "ht_choice_03",
+      "type": "choice",
+      "expected": "k1",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k1",
+        "probabilities": {
+          "k1": 1.0,
+          "k2": 1.3490459292199442e-13,
+          "k3": 3.9752567421646665e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k1",
+        "confidence": 0.9999999999952446,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3"
+        ],
+        "candidate_logits": [
+          57.66056823730469,
+          28.02635955810547,
+          26.804466247558594
+        ],
+        "candidate_mass": null,
+        "input_tokens": 165,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 243.42795880511403,
+        "model_ms": 242.35312500968575
+      }
+    },
+    {
+      "id": "ht_choice_04",
+      "type": "choice",
+      "expected": "k2",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k2",
+        "probabilities": {
+          "k1": 2.20335021386929e-13,
+          "k2": 1.0,
+          "k3": 7.885355779793657e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k2",
+        "confidence": 0.9999999999741521,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3"
+        ],
+        "candidate_logits": [
+          25.368152618408203,
+          54.51177978515625,
+          26.64318084716797
+        ],
+        "candidate_mass": null,
+        "input_tokens": 174,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 236.56249977648258,
+        "model_ms": 235.54316582158208
+      }
+    },
+    {
+      "id": "ht_choice_05",
+      "type": "choice",
+      "expected": "k3",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k3",
+        "probabilities": {
+          "k1": 1.9312188567072175e-12,
+          "k2": 2.5913996642978887e-11,
+          "k3": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k3",
+        "confidence": 0.9999999993776,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3"
+        ],
+        "candidate_logits": [
+          27.337142944335938,
+          29.933774948120117,
+          54.31001281738281
+        ],
+        "candidate_mass": null,
+        "input_tokens": 213,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 318.54099966585636,
+        "model_ms": 313.18175001069903
+      }
+    },
+    {
+      "id": "ht_choice_06",
+      "type": "choice",
+      "expected": "k1",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k1",
+        "probabilities": {
+          "k1": 0.9999985694885254,
+          "k2": 2.4116847185950974e-08,
+          "k3": 1.3681933523912448e-06,
+          "k4": 3.579861740377055e-08
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k1",
+        "confidence": 0.999984894491124,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4"
+        ],
+        "candidate_logits": [
+          48.417091369628906,
+          30.876737594604492,
+          34.91507339477539,
+          31.27173614501953
+        ],
+        "candidate_mass": null,
+        "input_tokens": 202,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 307.2806252166629,
+        "model_ms": 302.39325016736984
+      }
+    },
+    {
+      "id": "ht_choice_07",
+      "type": "choice",
+      "expected": "k2",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k2",
+        "probabilities": {
+          "k1": 6.373220701183513e-11,
+          "k2": 0.9983940720558167,
+          "k3": 0.0016059477347880602,
+          "k4": 2.207408300591851e-08
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k2",
+        "confidence": 0.9913887247715395,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4"
+        ],
+        "candidate_logits": [
+          24.062278747558594,
+          47.53700256347656,
+          41.10456848144531,
+          29.909748077392578
+        ],
+        "candidate_mass": null,
+        "input_tokens": 169,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 238.2295406423509,
+        "model_ms": 237.2021246701479
+      }
+    },
+    {
+      "id": "ht_choice_08",
+      "type": "choice",
+      "expected": "k3",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k3",
+        "probabilities": {
+          "k1": 1.0362139748684718e-12,
+          "k2": 2.1373707925070873e-12,
+          "k3": 1.0,
+          "k4": 3.1841142136140865e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k3",
+        "confidence": 0.999999999877139,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4"
+        ],
+        "candidate_logits": [
+          24.181400299072266,
+          24.90540313720703,
+          51.77684783935547,
+          25.304000854492188
+        ],
+        "candidate_mass": null,
+        "input_tokens": 183,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 264.4014577381313,
+        "model_ms": 259.054709225893
+      }
+    },
+    {
+      "id": "ht_choice_09",
+      "type": "choice",
+      "expected": "k4",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k4",
+        "probabilities": {
+          "k1": 8.011537033780769e-08,
+          "k2": 3.8233244348262474e-10,
+          "k3": 2.485209815716871e-10,
+          "k4": 0.9999998807907104
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k4",
+        "confidence": 0.9999989597698439,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4"
+        ],
+        "candidate_logits": [
+          38.53472137451172,
+          33.189788818359375,
+          32.75902557373047,
+          54.87451934814453
+        ],
+        "candidate_mass": null,
+        "input_tokens": 203,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 304.80679171159863,
+        "model_ms": 299.6725421398878
+      }
+    },
+    {
+      "id": "ht_choice_10",
+      "type": "choice",
+      "expected": "k1",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k1",
+        "probabilities": {
+          "k1": 1.0,
+          "k2": 1.4749187114693196e-12,
+          "k3": 2.4870522308262366e-12,
+          "k4": 5.321009258207887e-12,
+          "k5": 3.9287659497205807e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k1",
+        "confidence": 0.9999999998409465,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5"
+        ],
+        "candidate_logits": [
+          53.9083251953125,
+          26.66590690612793,
+          27.18840217590332,
+          27.94896697998047,
+          25.34304428100586
+        ],
+        "candidate_mass": null,
+        "input_tokens": 201,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 315.8414578065276,
+        "model_ms": 310.90645771473646
+      }
+    },
+    {
+      "id": "ht_choice_11",
+      "type": "choice",
+      "expected": "k2",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k2",
+        "probabilities": {
+          "k1": 2.973608230309732e-13,
+          "k2": 1.0,
+          "k3": 5.1345178109230005e-12,
+          "k4": 3.4872074845815337e-12,
+          "k5": 1.2537944315584026e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k2",
+        "confidence": 0.9999999998522634,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5"
+        ],
+        "candidate_logits": [
+          24.25737762451172,
+          53.1012077331543,
+          27.106172561645508,
+          26.719287872314453,
+          23.393775939941406
+        ],
+        "candidate_mass": null,
+        "input_tokens": 197,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 302.74870805442333,
+        "model_ms": 298.71991695836186
+      }
+    },
+    {
+      "id": "ht_choice_12",
+      "type": "choice",
+      "expected": "k3",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k3",
+        "probabilities": {
+          "k1": 5.243769828078282e-13,
+          "k2": 2.3297609501315986e-12,
+          "k3": 1.0,
+          "k4": 1.7337536571335188e-12,
+          "k5": 1.6264965177655022e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k3",
+        "confidence": 0.9999999999198653,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5"
+        ],
+        "candidate_logits": [
+          26.0982666015625,
+          27.589576721191406,
+          54.37483215332031,
+          27.294099807739258,
+          24.927654266357422
+        ],
+        "candidate_mass": null,
+        "input_tokens": 186,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 264.4879170693457,
+        "model_ms": 259.55129181966186
+      }
+    },
+    {
+      "id": "ht_choice_13",
+      "type": "choice",
+      "expected": "k4",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k4",
+        "probabilities": {
+          "k1": 1.8399448631356563e-10,
+          "k2": 0.0003018939169123769,
+          "k3": 4.0937020884257436e-08,
+          "k4": 0.9996981620788574,
+          "k5": 1.980490660358214e-09
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k4",
+        "confidence": 0.9982916308693155,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5"
+        ],
+        "candidate_logits": [
+          26.643413543701172,
+          40.95409393310547,
+          32.04829788208008,
+          49.059226989746094,
+          29.019607543945312
+        ],
+        "candidate_mass": null,
+        "input_tokens": 217,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 317.67008267343044,
+        "model_ms": 312.8910413943231
+      }
+    },
+    {
+      "id": "ht_choice_14",
+      "type": "choice",
+      "expected": "k5",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k5",
+        "probabilities": {
+          "k1": 5.909833178385782e-10,
+          "k2": 9.503771252639126e-06,
+          "k3": 1.6123932189415768e-09,
+          "k4": 1.124915538497362e-08,
+          "k5": 0.9999904632568359
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k5",
+        "confidence": 0.9999256338444145,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5"
+        ],
+        "candidate_logits": [
+          28.334135055541992,
+          38.01954650878906,
+          29.33782196044922,
+          31.2803955078125,
+          49.58335876464844
+        ],
+        "candidate_mass": null,
+        "input_tokens": 224,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 304.3994172476232,
+        "model_ms": 303.23308426886797
+      }
+    },
+    {
+      "id": "ht_choice_15",
+      "type": "choice",
+      "expected": "k1",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k1",
+        "probabilities": {
+          "k1": 1.0,
+          "k2": 2.580963092172709e-14,
+          "k3": 5.992443683194154e-14,
+          "k4": 4.3646333834461426e-14,
+          "k5": 4.475351092860826e-15,
+          "k6": 2.317498872588474e-15
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k1",
+        "confidence": 0.9999999999976555,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          58.18836212158203,
+          26.900333404541016,
+          27.7426700592041,
+          27.425704956054688,
+          25.14817237854004,
+          24.49007225036621
+        ],
+        "candidate_mass": null,
+        "input_tokens": 227,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 337.91383309289813,
+        "model_ms": 330.05295787006617
+      }
+    },
+    {
+      "id": "ht_choice_16",
+      "type": "choice",
+      "expected": "k2",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k2",
+        "probabilities": {
+          "k1": 1.1743095645194712e-12,
+          "k2": 1.0,
+          "k3": 1.3194263390192695e-11,
+          "k4": 8.443442126027101e-12,
+          "k5": 4.0311035217309443e-13,
+          "k6": 4.496832322741645e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k2",
+        "confidence": 0.9999999996638118,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          24.686084747314453,
+          52.15642547607422,
+          27.105186462402344,
+          26.658794403076172,
+          23.616859436035156,
+          23.726192474365234
+        ],
+        "candidate_mass": null,
+        "input_tokens": 225,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 326.2320840731263,
+        "model_ms": 322.2749582491815
+      }
+    },
+    {
+      "id": "ht_choice_17",
+      "type": "choice",
+      "expected": "k3",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k3",
+        "probabilities": {
+          "k1": 2.9426456930881084e-12,
+          "k2": 1.5971394345948298e-11,
+          "k3": 1.0,
+          "k4": 8.646937332823512e-12,
+          "k5": 8.593333835314743e-13,
+          "k6": 8.445918118528406e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k3",
+        "confidence": 0.9999999995854303,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          25.169551849365234,
+          26.861042022705078,
+          51.72126388549805,
+          26.247447967529297,
+          23.938644409179688,
+          23.921340942382812
+        ],
+        "candidate_mass": null,
+        "input_tokens": 220,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 317.1333339996636,
+        "model_ms": 311.6661668755114
+      }
+    },
+    {
+      "id": "ht_choice_18",
+      "type": "choice",
+      "expected": "k4",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k4",
+        "probabilities": {
+          "k1": 1.5854742648965803e-12,
+          "k2": 1.1029609368051752e-06,
+          "k3": 9.976630508390372e-07,
+          "k4": 0.9999979734420776,
+          "k5": 8.917664523488966e-11,
+          "k6": 2.7061920412907448e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k4",
+        "confidence": 0.9999827294007211,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          20.10177993774414,
+          33.554405212402344,
+          33.45406723022461,
+          47.271915435791016,
+          24.131515502929688,
+          22.939023971557617
+        ],
+        "candidate_mass": null,
+        "input_tokens": 207,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 307.8516670502722,
+        "model_ms": 302.6419170200825
+      }
+    },
+    {
+      "id": "ht_choice_19",
+      "type": "choice",
+      "expected": "k5",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k5",
+        "probabilities": {
+          "k1": 3.563917390370097e-12,
+          "k2": 7.028794321746468e-13,
+          "k3": 1.4593015381161867e-12,
+          "k4": 9.385231307390551e-12,
+          "k5": 1.0,
+          "k6": 6.5782184387186415e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k5",
+        "confidence": 0.9999999996868638,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          23.78091049194336,
+          22.157480239868164,
+          22.88800811767578,
+          24.749187469482422,
+          50.14107131958008,
+          24.393814086914062
+        ],
+        "candidate_mass": null,
+        "input_tokens": 216,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 314.75108303129673,
+        "model_ms": 309.9500830285251
+      }
+    },
+    {
+      "id": "ht_choice_20",
+      "type": "choice",
+      "expected": "k6",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k6",
+        "probabilities": {
+          "k1": 1.3700054545678908e-13,
+          "k2": 1.4079243413483988e-13,
+          "k3": 7.742697542140187e-13,
+          "k4": 1.1119285830626935e-12,
+          "k5": 1.658994773154343e-12,
+          "k6": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k6",
+        "confidence": 0.9999999999411631,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          26.27421760559082,
+          26.3015193939209,
+          28.006153106689453,
+          28.368083953857422,
+          28.768199920654297,
+          55.893009185791016
+        ],
+        "candidate_mass": null,
+        "input_tokens": 227,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 311.4374172873795,
+        "model_ms": 310.40658382698894
+      }
+    },
+    {
+      "id": "ht_choice_21",
+      "type": "choice",
+      "expected": "k1",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k1",
+        "probabilities": {
+          "k1": 1.0,
+          "k2": 5.155237673380719e-14,
+          "k3": 5.874981897453432e-14,
+          "k4": 7.881712724968834e-14,
+          "k5": 1.8915387512601425e-14,
+          "k6": 3.2666263950412297e-15
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k1",
+        "confidence": 0.9999999999963991,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          56.11050796508789,
+          25.51432991027832,
+          25.64501953125,
+          25.938861846923828,
+          24.511707305908203,
+          22.755489349365234
+        ],
+        "candidate_mass": null,
+        "input_tokens": 220,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 299.2060841061175,
+        "model_ms": 298.1337499804795
+      }
+    },
+    {
+      "id": "ht_choice_22",
+      "type": "choice",
+      "expected": "k2",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k2",
+        "probabilities": {
+          "k1": 3.268593395944208e-09,
+          "k2": 1.0,
+          "k3": 2.0551463308926543e-10,
+          "k4": 6.905629540421288e-11,
+          "k5": 2.0087790805756178e-11,
+          "k6": 6.548574182918543e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k2",
+        "confidence": 0.9999999605260003,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          32.341793060302734,
+          51.880699157714844,
+          29.5751953125,
+          28.484600067138672,
+          27.24979019165039,
+          26.128925323486328
+        ],
+        "candidate_mass": null,
+        "input_tokens": 238,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 328.75954220071435,
+        "model_ms": 323.57637537643313
+      }
+    },
+    {
+      "id": "ht_choice_23",
+      "type": "choice",
+      "expected": "k3",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k3",
+        "probabilities": {
+          "k1": 8.144155922568119e-13,
+          "k2": 3.788789768033318e-11,
+          "k3": 1.0,
+          "k4": 1.3768832428373567e-11,
+          "k5": 6.844724440013827e-13,
+          "k6": 2.7845309608434676e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k3",
+        "confidence": 0.999999999272556,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          25.75520133972168,
+          29.595117568969727,
+          53.59150695800781,
+          28.58289337158203,
+          25.581378936767578,
+          24.68198013305664
+        ],
+        "candidate_mass": null,
+        "input_tokens": 193,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 312.01841589063406,
+        "model_ms": 306.2382498756051
+      }
+    },
+    {
+      "id": "ht_choice_24",
+      "type": "choice",
+      "expected": "k4",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k4",
+        "probabilities": {
+          "k1": 1.1116219842408417e-14,
+          "k2": 4.378087993593509e-15,
+          "k3": 3.131919230252647e-14,
+          "k4": 1.0,
+          "k5": 1.1149090649992515e-14,
+          "k6": 6.3190373106888995e-15
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k4",
+        "confidence": 0.9999999999988611,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          27.033462524414062,
+          26.101667404174805,
+          28.06928825378418,
+          59.16383361816406,
+          27.036415100097656,
+          26.468624114990234
+        ],
+        "candidate_mass": null,
+        "input_tokens": 235,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 327.9810422100127,
+        "model_ms": 323.09654215350747
+      }
+    },
+    {
+      "id": "ht_choice_25",
+      "type": "choice",
+      "expected": "k5",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k5",
+        "probabilities": {
+          "k1": 2.721885217216169e-13,
+          "k2": 9.84610139189053e-14,
+          "k3": 1.3473614856197164e-13,
+          "k4": 1.8179045508520675e-12,
+          "k5": 1.0,
+          "k6": 8.430177671388261e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k5",
+        "confidence": 0.9999999999512221,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          24.039737701416016,
+          23.022903442382812,
+          23.33656120300293,
+          25.938682556152344,
+          52.97201919555664,
+          25.170230865478516
+        ],
+        "candidate_mass": null,
+        "input_tokens": 196,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 290.6806250102818,
+        "model_ms": 289.57337513566017
+      }
+    },
+    {
+      "id": "ht_choice_26",
+      "type": "choice",
+      "expected": "k6",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k6",
+        "probabilities": {
+          "k1": 2.1362166863995308e-13,
+          "k2": 4.1931971675283897e-13,
+          "k3": 4.6226915524638645e-12,
+          "k4": 2.6489837182452902e-05,
+          "k5": 1.046280284633383e-10,
+          "k6": 0.9999735355377197
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k6",
+        "confidence": 0.9998294210711121,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          23.61809730529785,
+          24.292524337768555,
+          26.692623138427734,
+          42.2539176940918,
+          29.812057495117188,
+          52.792640686035156
+        ],
+        "candidate_mass": null,
+        "input_tokens": 207,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 292.6597921177745,
+        "model_ms": 291.57779179513454
+      }
+    },
+    {
+      "id": "ht_choice_27",
+      "type": "choice",
+      "expected": "k1",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k1",
+        "probabilities": {
+          "k1": 1.0,
+          "k2": 9.189049125562718e-14,
+          "k3": 3.2345141647537046e-13,
+          "k4": 2.031324191969705e-13,
+          "k5": 4.255872997765975e-14,
+          "k6": 1.579999694446832e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k1",
+        "confidence": 0.999999999988944,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          55.75765609741211,
+          25.739477157592773,
+          26.997928619384766,
+          26.532737731933594,
+          24.969764709472656,
+          23.97888946533203
+        ],
+        "candidate_mass": null,
+        "input_tokens": 224,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 305.7405408471823,
+        "model_ms": 304.7025417909026
+      }
+    },
+    {
+      "id": "ht_choice_28",
+      "type": "choice",
+      "expected": "k2",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k2",
+        "probabilities": {
+          "k1": 5.641275779844079e-10,
+          "k2": 0.9999898672103882,
+          "k3": 9.528487680654507e-06,
+          "k4": 1.6505417477219453e-08,
+          "k5": 5.825800144521054e-07,
+          "k6": 4.327546321292175e-09
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k2",
+        "confidence": 0.9999279768001574,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          26.059371948242188,
+          47.3551025390625,
+          35.793888092041016,
+          29.435535430908203,
+          32.99931335449219,
+          28.096847534179688
+        ],
+        "candidate_mass": null,
+        "input_tokens": 191,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 264.5075828768313,
+        "model_ms": 259.70054091885686
+      }
+    },
+    {
+      "id": "ht_choice_29",
+      "type": "choice",
+      "expected": "k3",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k3",
+        "probabilities": {
+          "k1": 1.4850178920756962e-13,
+          "k2": 5.193107771063465e-13,
+          "k3": 1.0,
+          "k4": 3.330443776664027e-12,
+          "k5": 1.7436253179139993e-13,
+          "k6": 6.332699528611638e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k3",
+        "confidence": 0.9999999999362976,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          23.020593643188477,
+          24.272499084472656,
+          52.558773040771484,
+          26.130857467651367,
+          23.181133270263672,
+          22.16830825805664
+        ],
+        "candidate_mass": null,
+        "input_tokens": 200,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 305.2889169193804,
+        "model_ms": 300.4460004158318
+      }
+    },
+    {
+      "id": "ht_choice_30",
+      "type": "choice",
+      "expected": "k4",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k4",
+        "probabilities": {
+          "k1": 7.383900450439167e-15,
+          "k2": 2.397109805235011e-15,
+          "k3": 6.593713070121229e-14,
+          "k4": 1.0,
+          "k5": 5.6255910032328854e-14,
+          "k6": 1.3326647185958607e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k4",
+        "confidence": 0.9999999999975084,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          24.433677673339844,
+          23.30864143371582,
+          26.623077392578125,
+          56.97315216064453,
+          26.46428680419922,
+          25.024141311645508
+        ],
+        "candidate_mass": null,
+        "input_tokens": 246,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 343.24258379638195,
+        "model_ms": 338.16708344966173
+      }
+    },
+    {
+      "id": "ht_choice_31",
+      "type": "choice",
+      "expected": "k5",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k5",
+        "probabilities": {
+          "k1": 1.7854576324360938e-13,
+          "k2": 3.57602063737715e-14,
+          "k3": 5.998046975546831e-14,
+          "k4": 5.992766504391012e-13,
+          "k5": 1.0,
+          "k6": 1.3756061719404078e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k5",
+        "confidence": 0.9999999999837513,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          24.744075775146484,
+          23.136066436767578,
+          23.653249740600586,
+          25.954954147338867,
+          54.09800720214844,
+          24.483295440673828
+        ],
+        "candidate_mass": null,
+        "input_tokens": 217,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 300.4846656695008,
+        "model_ms": 299.40875014290214
+      }
+    },
+    {
+      "id": "ht_choice_32",
+      "type": "choice",
+      "expected": "k6",
+      "correct": true,
+      "answer": {
+        "type": "choice",
+        "label": "k6",
+        "probabilities": {
+          "k1": 4.265763853261717e-10,
+          "k2": 2.3392095552243752e-12,
+          "k3": 1.0514610015999182e-11,
+          "k4": 1.826218343214947e-11,
+          "k5": 7.91305129060893e-12,
+          "k6": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "choice": "k6",
+        "confidence": 0.999999994315223,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "k1",
+          "k2",
+          "k3",
+          "k4",
+          "k5",
+          "k6"
+        ],
+        "candidate_logits": [
+          32.02516174316406,
+          26.819183349609375,
+          28.32213592529297,
+          28.874202728271484,
+          28.037883758544922,
+          53.60039138793945
+        ],
+        "candidate_mass": null,
+        "input_tokens": 210,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 314.990249928087,
+        "model_ms": 309.8676670342684
+      }
+    },
+    {
+      "id": "ht_noul_01",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 6.977990911873413e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 6.977990911873413e-14,
+        "confidence": 0.9999999999969503,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          57.27813720703125,
+          26.98470687866211
+        ],
+        "candidate_mass": null,
+        "input_tokens": 149,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 225.65079107880592,
+        "model_ms": 224.67754082754254
+      }
+    },
+    {
+      "id": "ht_noul_02",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 3.255823887403364e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999985413,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          21.188955307006836,
+          52.24470138549805
+        ],
+        "candidate_mass": null,
+        "input_tokens": 143,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 213.382207788527,
+        "model_ms": 212.4005421064794
+      }
+    },
+    {
+      "id": "ht_noul_03",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 0.6942500472068787,
+          "true": 0.30574995279312134
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 0.30574995279312134,
+        "confidence": 0.11179356007349184,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          49.384254455566406,
+          48.56418991088867
+        ],
+        "candidate_mass": null,
+        "input_tokens": 141,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 214.84104171395302,
+        "model_ms": 213.8881660066545
+      }
+    },
+    {
+      "id": "ht_noul_04",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 3.5259152504152694e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999984243,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          21.995563507080078,
+          52.971614837646484
+        ],
+        "candidate_mass": null,
+        "input_tokens": 143,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 208.50483421236277,
+        "model_ms": 207.4086661450565
+      }
+    },
+    {
+      "id": "ht_noul_05",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 7.838531832350757e-15
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 7.838531832350757e-15,
+        "confidence": 0.9999999999996327,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          57.231773376464844,
+          24.75204849243164
+        ],
+        "candidate_mass": null,
+        "input_tokens": 142,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 228.9410000666976,
+        "model_ms": 224.01320794597268
+      }
+    },
+    {
+      "id": "ht_noul_06",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 7.292925215552498e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999968173,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          21.04196548461914,
+          51.29125213623047
+        ],
+        "candidate_mass": null,
+        "input_tokens": 135,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 234.25683425739408,
+        "model_ms": 228.86391589418054
+      }
+    },
+    {
+      "id": "ht_noul_07",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 1.0938428114670717e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0938428114670717e-11,
+        "confidence": 0.9999999996017122,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.13202667236328,
+          30.893287658691406
+        ],
+        "candidate_mass": null,
+        "input_tokens": 138,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 212.88391575217247,
+        "model_ms": 211.85041684657335
+      }
+    },
+    {
+      "id": "ht_noul_08",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 1.0392933180725095e-09,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999689856687,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          28.437437057495117,
+          49.122161865234375
+        ],
+        "candidate_mass": null,
+        "input_tokens": 137,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 226.73320909962058,
+        "model_ms": 221.3120423257351
+      }
+    },
+    {
+      "id": "ht_noul_09",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 7.082715354966504e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 7.082715354966504e-14,
+        "confidence": 0.999999999996906,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.627235412597656,
+          26.34870147705078
+        ],
+        "candidate_mass": null,
+        "input_tokens": 148,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 222.69258368760347,
+        "model_ms": 221.70258313417435
+      }
+    },
+    {
+      "id": "ht_noul_10",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 1.145068875873026e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999950774,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          21.478782653808594,
+          51.27692413330078
+        ],
+        "candidate_mass": null,
+        "input_tokens": 149,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 223.30187493935227,
+        "model_ms": 222.33945783227682
+      }
+    },
+    {
+      "id": "ht_noul_11",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 4.591193351606397e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 4.591193351606397e-14,
+        "confidence": 0.9999999999979657,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.32660675048828,
+          25.61455535888672
+        ],
+        "candidate_mass": null,
+        "input_tokens": 150,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 223.0843328870833,
+        "model_ms": 222.05658303573728
+      }
+    },
+    {
+      "id": "ht_noul_12",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 5.269996746393342e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999976754,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          21.597370147705078,
+          52.171531677246094
+        ],
+        "candidate_mass": null,
+        "input_tokens": 151,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 223.5865001566708,
+        "model_ms": 222.53208281472325
+      }
+    },
+    {
+      "id": "ht_noul_13",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 3.7793288735089164e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 3.7793288735089164e-14,
+        "confidence": 0.9999999999983148,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.530792236328125,
+          25.624147415161133
+        ],
+        "candidate_mass": null,
+        "input_tokens": 143,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 210.486208088696,
+        "model_ms": 209.48691619560122
+      }
+    },
+    {
+      "id": "ht_noul_14",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 1.4747961695187745e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999993224,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          21.24270248413086,
+          53.09037399291992
+        ],
+        "candidate_mass": null,
+        "input_tokens": 135,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 210.8098343014717,
+        "model_ms": 209.81850009411573
+      }
+    },
+    {
+      "id": "ht_noul_15",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 1.932455795860752e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.932455795860752e-13,
+        "confidence": 0.9999999999918383,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.26817321777344,
+          26.993358612060547
+        ],
+        "candidate_mass": null,
+        "input_tokens": 145,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 237.638124730438,
+        "model_ms": 232.40262502804399
+      }
+    },
+    {
+      "id": "ht_noul_16",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 1.213996080311891e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999947913,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          23.134868621826172,
+          52.87455749511719
+        ],
+        "candidate_mass": null,
+        "input_tokens": 143,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 208.1689997576177,
+        "model_ms": 207.17141684144735
+      }
+    },
+    {
+      "id": "ht_noul_17",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 2.172773462885691e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 2.172773462885691e-12,
+        "confidence": 0.9999999999158189,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          54.82533264160156,
+          27.97031593322754
+        ],
+        "candidate_mass": null,
+        "input_tokens": 172,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 236.60762468352914,
+        "model_ms": 235.50312500447035
+      }
+    },
+    {
+      "id": "ht_noul_18",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 2.664711984054491e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999888692,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          23.951168060302734,
+          52.90467834472656
+        ],
+        "candidate_mass": null,
+        "input_tokens": 149,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 219.87833315506577,
+        "model_ms": 218.89049978926778
+      }
+    },
+    {
+      "id": "ht_noul_19",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 6.493387858658162e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 6.493387858658162e-12,
+        "confidence": 0.9999999997586787,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          55.857574462890625,
+          30.09733772277832
+        ],
+        "candidate_mass": null,
+        "input_tokens": 142,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 212.4889581464231,
+        "model_ms": 211.51558263227344
+      }
+    },
+    {
+      "id": "ht_noul_20",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 2.6925767930389977e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999887569,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          21.853816986083984,
+          50.79692459106445
+        ],
+        "candidate_mass": null,
+        "input_tokens": 142,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 210.14262503013015,
+        "model_ms": 209.1334997676313
+      }
+    },
+    {
+      "id": "ht_noul_21",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 4.83847547260146e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 4.83847547260146e-14,
+        "confidence": 0.9999999999978598,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          55.63072967529297,
+          24.97113800048828
+        ],
+        "candidate_mass": null,
+        "input_tokens": 145,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 217.15429238975048,
+        "model_ms": 216.10208321362734
+      }
+    },
+    {
+      "id": "ht_noul_22",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 9.043014546818856e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999960817,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          21.994770050048828,
+          52.028968811035156
+        ],
+        "candidate_mass": null,
+        "input_tokens": 139,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 213.0214162170887,
+        "model_ms": 212.055082898587
+      }
+    },
+    {
+      "id": "ht_noul_23",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 7.499500152829963e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 7.499500152829963e-13,
+        "confidence": 0.9999999999697933,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.17997741699219,
+          28.261207580566406
+        ],
+        "candidate_mass": null,
+        "input_tokens": 144,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 232.5015002861619,
+        "model_ms": 227.01537515968084
+      }
+    },
+    {
+      "id": "ht_noul_24",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 2.0316213988902376e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.999999999999076,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          21.299806594848633,
+          52.82716369628906
+        ],
+        "candidate_mass": null,
+        "input_tokens": 133,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 226.09920799732208,
+        "model_ms": 221.13041579723358
+      }
+    },
+    {
+      "id": "ht_noul_25",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 1.5790035945428826e-09
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.5790035945428826e-09,
+        "confidence": 0.9999999538325586,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          52.73616027832031,
+          32.469688415527344
+        ],
+        "candidate_mass": null,
+        "input_tokens": 151,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 220.72379104793072,
+        "model_ms": 219.74958293139935
+      }
+    },
+    {
+      "id": "ht_noul_26",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 5.142503176763791e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.999999999979007,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          22.51953125,
+          50.81559753417969
+        ],
+        "candidate_mass": null,
+        "input_tokens": 151,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 219.62437499314547,
+        "model_ms": 218.73358404263854
+      }
+    },
+    {
+      "id": "ht_noul_27",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 1.0735957614452576e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0735957614452576e-13,
+        "confidence": 0.9999999999953747,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.4283561706543,
+          26.565763473510742
+        ],
+        "candidate_mass": null,
+        "input_tokens": 144,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 209.12562496960163,
+        "model_ms": 208.17966666072607
+      }
+    },
+    {
+      "id": "ht_noul_28",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 2.0161611841303627e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999990827,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          21.940879821777344,
+          53.47587585449219
+        ],
+        "candidate_mass": null,
+        "input_tokens": 160,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 242.40824999287724,
+        "model_ms": 237.465042155236
+      }
+    },
+    {
+      "id": "ht_noul_29",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 4.7507770693745385e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 4.7507770693745385e-14,
+        "confidence": 0.9999999999978973,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.471614837646484,
+          25.793731689453125
+        ],
+        "candidate_mass": null,
+        "input_tokens": 152,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 244.58966590464115,
+        "model_ms": 239.23904122784734
+      }
+    },
+    {
+      "id": "ht_noul_30",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 1.8526900933540924e-14,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999991549,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          22.836711883544922,
+          54.45626449584961
+        ],
+        "candidate_mass": null,
+        "input_tokens": 157,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 239.01212494820356,
+        "model_ms": 233.3418750204146
+      }
+    },
+    {
+      "id": "ht_noul_31",
+      "type": "noul",
+      "expected": "false",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "false",
+        "probabilities": {
+          "false": 1.0,
+          "true": 2.2421829475559318e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 2.2421829475559318e-14,
+        "confidence": 0.9999999999989834,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          56.7598876953125,
+          25.331146240234375
+        ],
+        "candidate_mass": null,
+        "input_tokens": 146,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 222.02062467113137,
+        "model_ms": 221.0131250321865
+      }
+    },
+    {
+      "id": "ht_noul_32",
+      "type": "noul",
+      "expected": "true",
+      "correct": true,
+      "answer": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 1.032640227667525e-13,
+          "true": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "noul": 1.0,
+        "confidence": 0.9999999999955453,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "false",
+          "true"
+        ],
+        "candidate_logits": [
+          22.196352005004883,
+          52.09783935546875
+        ],
+        "candidate_mass": null,
+        "input_tokens": 163,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "latency_ms": 239.30858401581645,
+        "model_ms": 238.31262486055493
+      }
+    },
+    {
+      "id": "ht_score_01",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 1.0,
+          "1": 6.085415504841762e-11,
+          "2": 3.813052738138589e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 6.84802605246948e-11,
+        "confidence": 0.9999999986057871,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "candidate_logits": [
+          57.32618713378906,
+          33.803646087646484,
+          31.03359603881836
+        ],
+        "candidate_mass": null,
+        "input_tokens": 163,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "対応に未着手",
+          "1": "担当者が調査している",
+          "2": "回答が相手へ届いて完了"
+        },
+        "latency_ms": 231.99570877477527,
+        "model_ms": 230.88120808824897
+      }
+    },
+    {
+      "id": "ht_score_02",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 1.861788040359233e-13,
+          "1": 1.0,
+          "2": 8.472673951320786e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.0000000000169453,
+        "confidence": 0.9999999997984174,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "candidate_logits": [
+          23.141204833984375,
+          52.45327377319336,
+          26.95909881591797
+        ],
+        "candidate_mass": null,
+        "input_tokens": 165,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "提案を全面的に拒否",
+          "1": "修正条件付きで賛成",
+          "2": "修正を求めず全面的に賛成"
+        },
+        "latency_ms": 234.04204193502665,
+        "model_ms": 232.99658298492432
+      }
+    },
+    {
+      "id": "ht_score_03",
+      "type": "score",
+      "expected": "2",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 1.0060834543940134e-12,
+          "1": 4.318760626897955e-12,
+          "2": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.0000000000043188,
+        "confidence": 0.9999999998718323,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "candidate_logits": [
+          25.153356552124023,
+          26.610260009765625,
+          52.77831268310547
+        ],
+        "candidate_mass": null,
+        "input_tokens": 166,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "必要な準備が何も終わっていない",
+          "1": "必要な準備の一部だけ終わった",
+          "2": "必要な準備がすべて終わった"
+        },
+        "latency_ms": 234.4068749807775,
+        "model_ms": 233.39695809409022
+      }
+    },
+    {
+      "id": "ht_score_04",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 1.0,
+          "1": 5.2299003242526915e-15,
+          "2": 1.914788619816147e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 4.352567272057563e-14,
+        "confidence": 0.9999999999992929,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "candidate_logits": [
+          59.95195007324219,
+          27.06756591796875,
+          28.365365982055664
+        ],
+        "candidate_mass": null,
+        "input_tokens": 180,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "満足度に関する証拠がない",
+          "1": "間接的に満足を示す情報がある",
+          "2": "利用者が満足したと明言している"
+        },
+        "latency_ms": 251.39237521216273,
+        "model_ms": 250.37333276122808
+      }
+    },
+    {
+      "id": "ht_score_05",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 6.39572596272675e-13,
+          "1": 1.0,
+          "2": 1.1831666202333224e-10
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.0000000002366334,
+        "confidence": 0.9999999975219651,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "candidate_logits": [
+          25.22954559326172,
+          53.30752182006836,
+          30.449865341186523
+        ],
+        "candidate_mass": null,
+        "input_tokens": 162,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "一枚も設置されていない",
+          "1": "一部は設置されたが残りがある",
+          "2": "すべて設置された"
+        },
+        "latency_ms": 235.6025418266654,
+        "model_ms": 234.5263329334557
+      }
+    },
+    {
+      "id": "ht_score_06",
+      "type": "score",
+      "expected": "2",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 1.0668336873631556e-12,
+          "1": 6.274086111757171e-11,
+          "2": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.000000000062741,
+        "confidence": 0.9999999986316215,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2"
+        ],
+        "candidate_logits": [
+          24.43509292602539,
+          28.509410858154297,
+          52.00141906738281
+        ],
+        "candidate_mass": null,
+        "input_tokens": 174,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "三項目とも欠ける",
+          "1": "一部の項目が欠ける",
+          "2": "三項目すべてが明記される"
+        },
+        "latency_ms": 236.60350032150745,
+        "model_ms": 235.54641706869006
+      }
+    },
+    {
+      "id": "ht_score_07",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 1.0,
+          "1": 8.684266278096917e-14,
+          "2": 9.092635092121729e-14,
+          "3": 9.55712221059439e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 5.554090309412354e-13,
+        "confidence": 0.9999999999940797,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          57.940460205078125,
+          27.865781784057617,
+          27.911733627319336,
+          27.96155548095703
+        ],
+        "candidate_mass": null,
+        "input_tokens": 160,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "受付のみで未着手",
+          "1": "作業中",
+          "2": "作業が終わり確認待ち",
+          "3": "確認が済み完了"
+        },
+        "latency_ms": 221.7890419997275,
+        "model_ms": 220.8042498677969
+      }
+    },
+    {
+      "id": "ht_score_08",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 3.7231871231890867e-13,
+          "1": 1.0,
+          "2": 1.2339848110345941e-12,
+          "3": 4.900578207123196e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.0000000000171698,
+        "confidence": 0.9999999998758479,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          26.61913299560547,
+          55.2381591796875,
+          27.817386627197266,
+          29.196491241455078
+        ],
+        "candidate_mass": null,
+        "input_tokens": 165,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "執筆中",
+          "1": "初回確認中",
+          "2": "指摘を受けて修正中",
+          "3": "修正後の確認を終えて公開済み"
+        },
+        "latency_ms": 233.0644172616303,
+        "model_ms": 232.05054178833961
+      }
+    },
+    {
+      "id": "ht_score_09",
+      "type": "score",
+      "expected": "2",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 2.617756272166316e-13,
+          "1": 8.652745187021083e-12,
+          "2": 1.0,
+          "3": 8.080057456449907e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.000000000032893,
+        "confidence": 0.9999999996866651,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          24.90984535217285,
+          28.407989501953125,
+          53.881134033203125,
+          28.33951187133789
+        ],
+        "candidate_mass": null,
+        "input_tokens": 186,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "まだ連絡していない",
+          "1": "連絡したが受信未確認",
+          "2": "受信は確認済みで作業完了は未確認",
+          "3": "作業完了の報告を受けた"
+        },
+        "latency_ms": 253.0999593436718,
+        "model_ms": 252.00529117137194
+      }
+    },
+    {
+      "id": "ht_score_10",
+      "type": "score",
+      "expected": "3",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "3",
+        "probabilities": {
+          "0": 6.504947405380768e-14,
+          "1": 6.535116008456535e-14,
+          "2": 5.032219215980738e-13,
+          "3": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 3.0000000000010716,
+        "confidence": 0.9999999999868648,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "candidate_logits": [
+          26.26412582397461,
+          26.268753051757812,
+          28.310009002685547,
+          56.62775421142578
+        ],
+        "candidate_mass": null,
+        "input_tokens": 199,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "説明をまだ受けていない",
+          "1": "説明と見学まで終えた",
+          "2": "補助があれば作業できるが単独成功はない",
+          "3": "補助なしで一連の作業に成功した"
+        },
+        "latency_ms": 304.3322083540261,
+        "model_ms": 299.29604195058346
+      }
+    },
+    {
+      "id": "ht_score_11",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 1.0,
+          "1": 5.2667814093255647e-14,
+          "2": 1.0562317893144518e-13,
+          "3": 1.264353747566782e-13,
+          "4": 2.1957651354705815e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.5215263504144132e-12,
+        "confidence": 0.999999999990729,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "candidate_logits": [
+          55.51103591918945,
+          24.936264038085938,
+          25.632137298583984,
+          25.81199073791504,
+          26.36396026611328
+        ],
+        "candidate_mass": null,
+        "input_tokens": 191,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "四項目とも未記載",
+          "1": "一項目だけ記載",
+          "2": "二項目を記載",
+          "3": "三項目を記載",
+          "4": "四項目すべて記載"
+        },
+        "latency_ms": 251.66100030764937,
+        "model_ms": 250.63433311879635
+      }
+    },
+    {
+      "id": "ht_score_12",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 4.055635764287774e-13,
+          "1": 1.0,
+          "2": 2.7306642190472186e-12,
+          "3": 3.2289435882015827e-12,
+          "4": 2.0684273521406893e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.0000000000159757,
+        "confidence": 0.9999999998907969,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "candidate_logits": [
+          24.391286849975586,
+          52.92478561401367,
+          26.298309326171875,
+          26.465919494628906,
+          23.717967987060547
+        ],
+        "candidate_mass": null,
+        "input_tokens": 192,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "構成も未決定",
+          "1": "構成決定済みで執筆前",
+          "2": "本文を書き終え校正前",
+          "3": "校正済みで製本前",
+          "4": "製本を終えて完成"
+        },
+        "latency_ms": 294.93083292618394,
+        "model_ms": 289.71433406695724
+      }
+    },
+    {
+      "id": "ht_score_13",
+      "type": "score",
+      "expected": "2",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 8.76098347514509e-13,
+          "1": 1.5957145327316624e-11,
+          "2": 1.0,
+          "3": 1.4629755740180883e-11,
+          "4": 6.610917867820587e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.000000000062491,
+        "confidence": 0.9999999995000997,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "candidate_logits": [
+          23.843677520751953,
+          26.745861053466797,
+          51.60697555541992,
+          26.659011840820312,
+          23.562091827392578
+        ],
+        "candidate_mass": null,
+        "input_tokens": 167,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "強い不満",
+          "1": "やや不満",
+          "2": "肯定にも否定にも傾いていない",
+          "3": "やや満足",
+          "4": "強い満足"
+        },
+        "latency_ms": 250.1967498101294,
+        "model_ms": 245.08149968460202
+      }
+    },
+    {
+      "id": "ht_score_14",
+      "type": "score",
+      "expected": "3",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "3",
+        "probabilities": {
+          "0": 9.060335489675941e-13,
+          "1": 2.118650307275649e-13,
+          "2": 6.438645450135283e-11,
+          "3": 1.0,
+          "4": 1.3953480038075838e-10
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 3.000000000687124,
+        "confidence": 0.999999997074364,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "candidate_logits": [
+          28.432737350463867,
+          26.979610443115234,
+          32.696319580078125,
+          56.162437438964844,
+          33.469730377197266
+        ],
+        "candidate_mass": null,
+        "input_tokens": 183,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "仕様が未決定",
+          "1": "仕様だけ決定済み",
+          "2": "実装まで完了",
+          "3": "動作確認まで完了",
+          "4": "公開まで完了"
+        },
+        "latency_ms": 250.22474955767393,
+        "model_ms": 249.14545798674226
+      }
+    },
+    {
+      "id": "ht_score_15",
+      "type": "score",
+      "expected": "4",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "4",
+        "probabilities": {
+          "0": 4.769425685554468e-14,
+          "1": 3.2606523140158925e-14,
+          "2": 5.4428876905760273e-14,
+          "3": 2.3783364600654666e-12,
+          "4": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 4.000000000007277,
+        "confidence": 0.9999999999578777,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "candidate_logits": [
+          24.022151947021484,
+          23.64185333251953,
+          24.15423583984375,
+          27.93149757385254,
+          54.69611740112305
+        ],
+        "candidate_mass": null,
+        "input_tokens": 184,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "強い不満で再参加したくない",
+          "1": "不満が多い",
+          "2": "良くも悪くもない",
+          "3": "満足しているが不満もある",
+          "4": "強く満足し、不満を述べていない"
+        },
+        "latency_ms": 251.64387514814734,
+        "model_ms": 250.62779197469354
+      }
+    },
+    {
+      "id": "ht_score_16",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 1.0,
+          "1": 3.464180439900766e-14,
+          "2": 5.602547302496243e-14,
+          "3": 6.212476415462867e-14,
+          "4": 1.8236780290645065e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 4.060141640753988e-13,
+        "confidence": 0.9999999999967384,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "candidate_logits": [
+          56.483001708984375,
+          25.489286422729492,
+          25.97003173828125,
+          26.0733699798584,
+          24.847665786743164
+        ],
+        "candidate_mass": null,
+        "input_tokens": 194,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "どの工程も未完了",
+          "1": "台本準備だけ完了",
+          "2": "字幕作成まで完了",
+          "3": "同期確認まで完了",
+          "4": "公開まで完了"
+        },
+        "latency_ms": 307.06291692331433,
+        "model_ms": 301.77808413282037
+      }
+    },
+    {
+      "id": "ht_score_17",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 5.12981932843104e-05,
+          "1": 0.9999487400054932,
+          "2": 3.8434105897877657e-10,
+          "3": 9.177749532573998e-11,
+          "4": 1.1377141416468728e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 0.9999487410950164,
+        "confidence": 0.9996533040927927,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "candidate_logits": [
+          40.739681243896484,
+          50.61748504638672,
+          28.938045501708984,
+          27.505882263183594,
+          25.418121337890625
+        ],
+        "candidate_mass": null,
+        "input_tokens": 190,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "案内作成も未完了",
+          "1": "案内作成まで完了",
+          "2": "発送まで完了",
+          "3": "参加回答回収まで完了",
+          "4": "人数確定まで完了"
+        },
+        "latency_ms": 255.7760840281844,
+        "model_ms": 254.58008283749223
+      }
+    },
+    {
+      "id": "ht_score_18",
+      "type": "score",
+      "expected": "2",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 2.696948220304307e-09,
+          "1": 2.5610772354411893e-05,
+          "2": 0.9998940229415894,
+          "3": 8.03540024207905e-05,
+          "4": 2.6256406826519196e-08
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.000054823688423,
+        "confidence": 0.9992948369148833,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "candidate_logits": [
+          24.38041114807129,
+          33.539058685302734,
+          44.1114501953125,
+          34.68248748779297,
+          26.656200408935547
+        ],
+        "candidate_mass": null,
+        "input_tokens": 204,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "空",
+          "1": "容量の四分の一",
+          "2": "容量の半分",
+          "3": "容量の四分の三",
+          "4": "満杯"
+        },
+        "latency_ms": 308.28708317130804,
+        "model_ms": 302.8150419704616
+      }
+    },
+    {
+      "id": "ht_score_19",
+      "type": "score",
+      "expected": "3",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "3",
+        "probabilities": {
+          "0": 3.8465926407646456e-13,
+          "1": 1.6096792787578806e-09,
+          "2": 3.1906020581118355e-07,
+          "3": 0.9999996423721313,
+          "4": 1.0100892344766521e-10
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.999999567250521,
+        "confidence": 0.9999967907918019,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "candidate_logits": [
+          24.84400177001953,
+          33.183189392089844,
+          38.4725341796875,
+          53.430419921875,
+          30.414608001708984
+        ],
+        "candidate_mass": null,
+        "input_tokens": 180,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "完了ゼロ",
+          "1": "一項目完了",
+          "2": "二項目完了",
+          "3": "三項目完了",
+          "4": "四項目すべて完了"
+        },
+        "latency_ms": 246.79283425211906,
+        "model_ms": 245.72854209691286
+      }
+    },
+    {
+      "id": "ht_score_20",
+      "type": "score",
+      "expected": "4",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "4",
+        "probabilities": {
+          "0": 7.771178449009208e-13,
+          "1": 2.659705409472496e-13,
+          "2": 3.419457100285739e-13,
+          "3": 6.131900976563687e-12,
+          "4": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 4.000000000019345,
+        "confidence": 0.9999999998772892,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "candidate_logits": [
+          26.456567764282227,
+          25.384361267089844,
+          25.63562774658203,
+          28.522235870361328,
+          54.339752197265625
+        ],
+        "candidate_mass": null,
+        "input_tokens": 201,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "種をまいた直後",
+          "1": "芽が出た段階",
+          "2": "葉が増えた段階",
+          "3": "つぼみの段階",
+          "4": "開花した段階"
+        },
+        "latency_ms": 296.13654175773263,
+        "model_ms": 295.15862511470914
+      }
+    },
+    {
+      "id": "ht_score_21",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 1.0,
+          "1": 1.7837941410428493e-12,
+          "2": 1.0027232950210463e-12,
+          "3": 2.734524846143005e-13,
+          "4": 3.918765065593667e-14,
+          "5": 2.5157278333003824e-14
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 4.892135179216609e-12,
+        "confidence": 0.9999999999520767,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          57.359718322753906,
+          30.30743980407715,
+          29.731416702270508,
+          28.432069778442383,
+          26.489303588867188,
+          26.04608917236328
+        ],
+        "candidate_mass": null,
+        "input_tokens": 194,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "資料入手も未完了",
+          "1": "資料入手まで完了",
+          "2": "通読まで完了",
+          "3": "要約まで完了",
+          "4": "意見作成まで完了",
+          "5": "提出まで完了"
+        },
+        "latency_ms": 285.4837919585407,
+        "model_ms": 284.447125159204
+      }
+    },
+    {
+      "id": "ht_score_22",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 2.461548976803729e-12,
+          "1": 1.0,
+          "2": 1.0327561028589116e-10,
+          "3": 4.299825773212973e-11,
+          "4": 2.078418166739926e-12,
+          "5": 6.947595168442511e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.0000000003473335,
+        "confidence": 0.9999999980230614,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          25.662771224975586,
+          52.393001556396484,
+          29.399381637573242,
+          28.52313995361328,
+          25.493587493896484,
+          24.397790908813477
+        ],
+        "candidate_mass": null,
+        "input_tokens": 196,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "テーマ未決定",
+          "1": "テーマ決定まで完了",
+          "2": "作品選定まで完了",
+          "3": "配置計画まで完了",
+          "4": "設営まで完了",
+          "5": "開幕済み"
+        },
+        "latency_ms": 291.6490421630442,
+        "model_ms": 290.6122077256441
+      }
+    },
+    {
+      "id": "ht_score_23",
+      "type": "score",
+      "expected": "2",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 7.535417602400063e-13,
+          "1": 1.553288747624393e-11,
+          "2": 1.0,
+          "3": 1.320451040176529e-11,
+          "4": 4.279725987661742e-13,
+          "5": 2.020836026728895e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.000000000057869,
+        "confidence": 0.9999999995777936,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          25.40394401550293,
+          28.429874420166016,
+          53.317935943603516,
+          28.267473220825195,
+          24.838218688964844,
+          24.087841033935547
+        ],
+        "candidate_mass": null,
+        "input_tokens": 209,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "故障受付も未完了",
+          "1": "故障受付まで完了",
+          "2": "原因特定まで完了",
+          "3": "部品交換まで完了",
+          "4": "動作試験まで完了",
+          "5": "使用を再開済み"
+        },
+        "latency_ms": 315.68145798519254,
+        "model_ms": 310.508250258863
+      }
+    },
+    {
+      "id": "ht_score_24",
+      "type": "score",
+      "expected": "3",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "3",
+        "probabilities": {
+          "0": 1.7404819447654207e-13,
+          "1": 1.671214978470753e-13,
+          "2": 3.0276257195760437e-11,
+          "3": 1.0,
+          "4": 2.8450092059983945e-08,
+          "5": 1.4108361831230432e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 3.000000113868142,
+        "confidence": 0.9999997236763907,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          26.445987701416016,
+          26.405376434326172,
+          31.604774475097656,
+          55.82543182373047,
+          38.4503173828125,
+          28.538593292236328
+        ],
+        "candidate_mass": null,
+        "input_tokens": 187,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "成形前",
+          "1": "成形まで完了",
+          "2": "乾燥まで完了",
+          "3": "素焼きまで完了",
+          "4": "釉薬がけまで完了",
+          "5": "本焼きまで完了"
+        },
+        "latency_ms": 252.87325028330088,
+        "model_ms": 251.83045817539096
+      }
+    },
+    {
+      "id": "ht_score_25",
+      "type": "score",
+      "expected": "4",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "4",
+        "probabilities": {
+          "0": 2.626874412436919e-13,
+          "1": 2.9925438212521915e-13,
+          "2": 2.4515840746364148e-11,
+          "3": 1.6618667553203181e-09,
+          "4": 1.0,
+          "5": 1.1540310373980844e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 4.000000005092633,
+        "confidence": 0.9999999807446124,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          26.580368041992188,
+          26.710697174072266,
+          31.116477966308594,
+          35.332855224609375,
+          55.548179626464844,
+          30.363004684448242
+        ],
+        "candidate_mass": null,
+        "input_tokens": 209,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "回収も未完了",
+          "1": "回収まで完了",
+          "2": "分類まで完了",
+          "3": "番号付けまで完了",
+          "4": "一覧作成まで完了",
+          "5": "保管まで完了"
+        },
+        "latency_ms": 295.92212522402406,
+        "model_ms": 294.78787491098046
+      }
+    },
+    {
+      "id": "ht_score_26",
+      "type": "score",
+      "expected": "5",
+      "correct": false,
+      "answer": {
+        "type": "score",
+        "label": "4",
+        "probabilities": {
+          "0": 4.05188339477891e-12,
+          "1": 3.954943143813505e-12,
+          "2": 1.4406881070072597e-11,
+          "3": 8.472621215727116e-11,
+          "4": 0.9980248212814331,
+          "5": 0.001975183840841055
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 4.001975204616885,
+        "confidence": 0.9920341515708664,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          25.690792083740234,
+          25.666576385498047,
+          26.95931625366211,
+          28.731035232543945,
+          51.920654296875,
+          45.69553756713867
+        ],
+        "candidate_mass": null,
+        "input_tokens": 215,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "受付前",
+          "1": "受付済み",
+          "2": "仕分け済み",
+          "3": "輸送へ出発済み",
+          "4": "宛先地域へ到着済みで未受渡し",
+          "5": "受取人への受渡し完了"
+        },
+        "latency_ms": 317.9281251505017,
+        "model_ms": 312.77491711080074
+      }
+    },
+    {
+      "id": "ht_score_27",
+      "type": "score",
+      "expected": "0",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "0",
+        "probabilities": {
+          "0": 1.0,
+          "1": 4.71765801337426e-13,
+          "2": 3.6063936125624307e-13,
+          "3": 3.1498929983428403e-13,
+          "4": 6.397004237088111e-14,
+          "5": 1.1561383090035598e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.9719617473380686e-12,
+        "confidence": 0.9999999999786929,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          54.50450897216797,
+          26.122215270996094,
+          25.85361099243164,
+          25.718271255493164,
+          24.124147415161133,
+          24.715988159179688
+        ],
+        "candidate_mass": null,
+        "input_tokens": 196,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "強い否定で再利用を拒否",
+          "1": "否定的だが強い拒否はない",
+          "2": "少し否定寄り",
+          "3": "少し肯定寄り",
+          "4": "肯定的だが強い推奨はない",
+          "5": "強く肯定し他者にも勧める"
+        },
+        "latency_ms": 287.39408403635025,
+        "model_ms": 286.34512471035123
+      }
+    },
+    {
+      "id": "ht_score_28",
+      "type": "score",
+      "expected": "1",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "1",
+        "probabilities": {
+          "0": 1.0345312930967743e-12,
+          "1": 1.0,
+          "2": 8.519604292878125e-12,
+          "3": 4.381595346963918e-12,
+          "4": 2.6452562471197816e-13,
+          "5": 7.067362645628295e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 1.0000000000347757,
+        "confidence": 0.9999999997836028,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          23.87313461303711,
+          51.47020721435547,
+          25.981555938720703,
+          25.316598892211914,
+          22.509368896484375,
+          23.492088317871094
+        ],
+        "candidate_mass": null,
+        "input_tokens": 237,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "仮説がまだない",
+          "1": "仮説を立てた段階",
+          "2": "試験方法を決めた段階",
+          "3": "試験を実施した段階",
+          "4": "結果を確認した段階",
+          "5": "別条件での再確認まで済んだ段階"
+        },
+        "latency_ms": 331.3607913441956,
+        "model_ms": 326.2822921387851
+      }
+    },
+    {
+      "id": "ht_score_29",
+      "type": "score",
+      "expected": "2",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 1.1925520250130606e-12,
+          "1": 1.0717866871789994e-10,
+          "2": 1.0,
+          "3": 4.049066415490188e-09,
+          "4": 1.4532686035476083e-12,
+          "5": 6.987196736994716e-13
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.0000000122636847,
+        "confidence": 0.9999999549048424,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          24.32275390625,
+          28.821155548095703,
+          51.777679443359375,
+          32.45289993286133,
+          24.52047348022461,
+          23.78815269470215
+        ],
+        "candidate_mass": null,
+        "input_tokens": 183,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "全面的な拒否",
+          "1": "強い不満",
+          "2": "やや不満寄り",
+          "3": "やや満足寄り",
+          "4": "強い満足",
+          "5": "最高評価で無条件に推奨"
+        },
+        "latency_ms": 248.68270894512534,
+        "model_ms": 247.5697910413146
+      }
+    },
+    {
+      "id": "ht_score_30",
+      "type": "score",
+      "expected": "3",
+      "correct": false,
+      "answer": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 2.3070025056970422e-11,
+          "1": 9.86330017660464e-10,
+          "2": 0.9999828338623047,
+          "3": 1.7128682884504087e-05,
+          "4": 1.3733798820414478e-10,
+          "5": 4.090917275073602e-12
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 2.0000170553294,
+        "confidence": 0.9998854905716291,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          25.206344604492188,
+          28.961801528930664,
+          49.698814392089844,
+          38.72407531738281,
+          26.99025535583496,
+          23.476579666137695
+        ],
+        "candidate_mass": null,
+        "input_tokens": 227,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "手配済みゼロ",
+          "1": "一項目手配済み",
+          "2": "二項目手配済み",
+          "3": "三項目手配済み",
+          "4": "四項目手配済み",
+          "5": "五項目すべて手配済み"
+        },
+        "latency_ms": 316.82433327659965,
+        "model_ms": 315.74987480416894
+      }
+    },
+    {
+      "id": "ht_score_31",
+      "type": "score",
+      "expected": "4",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "4",
+        "probabilities": {
+          "0": 3.174410333119798e-13,
+          "1": 2.102283191279808e-13,
+          "2": 1.0062312311501231e-12,
+          "3": 1.4431126432734587e-11,
+          "4": 1.0,
+          "5": 2.080822840422325e-11
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 4.000000000149558,
+        "confidence": 0.9999999994892808,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          25.08654022216797,
+          24.674442291259766,
+          26.240215301513672,
+          28.903390884399414,
+          53.86502456665039,
+          29.269351959228516
+        ],
+        "candidate_mass": null,
+        "input_tokens": 220,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "申込前",
+          "1": "申込まで完了",
+          "2": "メール確認まで完了",
+          "3": "プロフィール入力まで完了",
+          "4": "内容審査まで完了",
+          "5": "会員証発行まで完了"
+        },
+        "latency_ms": 303.1068337149918,
+        "model_ms": 302.03300016000867
+      }
+    },
+    {
+      "id": "ht_score_32",
+      "type": "score",
+      "expected": "5",
+      "correct": true,
+      "answer": {
+        "type": "score",
+        "label": "5",
+        "probabilities": {
+          "0": 1.0768216694842167e-13,
+          "1": 2.8273938095305096e-13,
+          "2": 9.14443434169021e-13,
+          "3": 6.70747203439237e-13,
+          "4": 2.3115159959730125e-12,
+          "5": 1.0
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "score": 5.00000000001337,
+        "confidence": 0.99999999993444,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "candidate_keys": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "candidate_logits": [
+          25.832481384277344,
+          26.797822952270508,
+          27.97161293029785,
+          27.66168975830078,
+          28.898956298828125,
+          55.692073822021484
+        ],
+        "candidate_mass": null,
+        "input_tokens": 218,
+        "output_tokens": 0,
+        "batch_size": 1,
+        "temperature": 1.0,
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "projection": "selected",
+        "legend": {
+          "0": "異常未確認",
+          "1": "異常確認まで完了",
+          "2": "装置停止まで完了",
+          "3": "原因除去まで完了",
+          "4": "試運転まで完了",
+          "5": "通常運転に復帰済み"
+        },
+        "latency_ms": 318.26800014823675,
+        "model_ms": 313.1102076731622
+      }
+    }
+  ]
+}

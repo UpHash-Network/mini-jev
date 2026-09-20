@@ -1,0 +1,4 @@
+# No third-party Python packages are required by the native service or SDK.
+# Python >= 3.10; evaluated with native arm64 CPython 3.10.5.
+# Native libraries and source revisions are locked in native/BUILD.json.
+# The GGUF model is pinned in native_model.json and verified on each startup.

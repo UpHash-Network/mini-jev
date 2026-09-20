@@ -1,0 +1,38 @@
+{
+  "status": "development_only",
+  "method": "combined disjoint-type records from repeat v1 regression and repeat_labels Score run; not a new blind test",
+  "overall": {
+    "count": 2400,
+    "correct": 2237,
+    "accuracy": 0.9320833333333334
+  },
+  "by_type": {
+    "choice": {
+      "count": 800,
+      "correct": 761,
+      "accuracy": 0.95125
+    },
+    "noul": {
+      "count": 800,
+      "correct": 764,
+      "accuracy": 0.955
+    },
+    "score": {
+      "count": 800,
+      "correct": 712,
+      "accuracy": 0.89
+    }
+  },
+  "by_source": {
+    "manual": {
+      "count": 180,
+      "correct": 174,
+      "accuracy": 0.9666666666666667
+    },
+    "generated": {
+      "count": 2220,
+      "correct": 2063,
+      "accuracy": 0.9292792792792792
+    }
+  }
+}

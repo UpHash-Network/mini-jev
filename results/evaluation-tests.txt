@@ -1,0 +1,19 @@
+test_calibration_uses_only_120_and_saves_fingerprint (test_runner.RunnerTests) ... ok
+test_end_to_end_2400_single_forward_and_reverse (test_runner.RunnerTests) ... ok
+test_forward_counter_detects_cached_reply (test_runner.RunnerTests) ... ok
+test_freeze_detects_source_and_identity_changes (test_runner.RunnerTests) ... ok
+test_known_metrics_and_percentile (test_runner.RunnerTests) ... ok
+test_question_excludes_gold_metadata (test_runner.RunnerTests) ... ok
+test_strict_json_rejects_duplicates_and_nonfinite (test_runner.RunnerTests) ... ok
+test_validation_rejects_wrong_scalar_sum_and_argmax (test_runner.RunnerTests) ... ok
+test_byte_equivalent_regeneration (test_generated_eval.GeneratedAcceptanceTests) ... ok
+test_checklist_order_does_not_create_a_new_problem (test_generated_eval.GeneratedAcceptanceTests) ... ok
+test_every_case_and_distribution (test_generated_eval.GeneratedAcceptanceTests) ... ok
+test_hand_specified_oracle_examples (test_generated_eval.GeneratedAcceptanceTests) ... ok
+test_meaningful_order_is_preserved (test_generated_eval.GeneratedAcceptanceTests) ... ok
+test_record_order_does_not_create_a_new_problem (test_generated_eval.GeneratedAcceptanceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.400s
+
+OK

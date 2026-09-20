@@ -1,0 +1,5 @@
+[
+  {"type":"choice","state":{"number":42},"instructions":"数値の偶奇を選んでください。","criteria":{"even":"偶数","odd":"奇数"}},
+  {"type":"noul","state":{"number":19},"instructions":"数値は偶数ですか。","criteria":{"false":"いいえ","true":"はい"}},
+  {"type":"score","state":{"number":23},"instructions":"数値を3で割った余りに対応する段階を選んでください。","criteria":["余り0","余り1","余り2"]}
+]

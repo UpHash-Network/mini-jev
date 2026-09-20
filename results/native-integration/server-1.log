@@ -1,0 +1,3 @@
+Verifying and loading native model; diagnostics are written to the configured log.
+MiniJev ready at http://127.0.0.1:60627
+Stopping MiniJev

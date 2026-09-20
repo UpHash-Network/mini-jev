@@ -1,0 +1,169 @@
+{
+  "temperature": 6.309573444801933,
+  "runtime_fingerprint": "00d2c2248762141e38b525f743184bbe07484c5be320c899d5ea9e88b12946be",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "created_at": "2026-09-20T02:01:34.386203+00:00",
+  "method": "single positive temperature minimizing multiclass NLL",
+  "calibration_count": 120,
+  "calibration_sha256": "c7c60dac95e216efca8c78c760fa5f7a18c21eabe4da122f2645142460e14a1a",
+  "grid": {
+    "min": 0.1,
+    "max": 10.0,
+    "count": 201,
+    "spacing": "logarithmic"
+  },
+  "nll_before": 1.1565636715249987,
+  "nll_after": 0.25548438361685755,
+  "metrics_before": {
+    "valid_metric_count": 120,
+    "nll": 1.1565636715249987,
+    "brier_multiclass_sum": 0.13375466331059305,
+    "ece_10_equal_width": 0.06774971786214329,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 0
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 0
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 0
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 0
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 1,
+        "mean_confidence": 0.8071140595565507,
+        "accuracy": 1
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 119,
+        "mean_confidence": 0.9994712622101996,
+        "accuracy": 0.9327731092436975
+      }
+    ],
+    "score_count": 40,
+    "score_expectation_mae": 0.1258809484821299,
+    "score_normalized_expectation_mae": 0.033553703557625256
+  },
+  "metrics_after": {
+    "valid_metric_count": 120,
+    "nll": 0.25548438361685755,
+    "brier_multiclass_sum": 0.11886704631964182,
+    "ece_10_equal_width": 0.03142539888135744,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 0
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 0
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 4,
+        "mean_confidence": 0.5690029503759737,
+        "accuracy": 0.5
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 2,
+        "mean_confidence": 0.6611594834576775,
+        "accuracy": 1
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 4,
+        "mean_confidence": 0.7556905048519503,
+        "accuracy": 1
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 9,
+        "mean_confidence": 0.8621733086625819,
+        "accuracy": 0.6666666666666666
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 101,
+        "mean_confidence": 0.9694994329443671,
+        "accuracy": 0.9702970297029703
+      }
+    ],
+    "score_count": 40,
+    "score_expectation_mae": 0.18650959948211876,
+    "score_normalized_expectation_mae": 0.0514228505461786
+  },
+  "actual_backbone_forwards": 127,
+  "warmup": {
+    "count": 7,
+    "latency_ms": [
+      605.2605411969125,
+      235.73233280330896,
+      236.23033380135894,
+      245.46212516725063,
+      246.72316713258624,
+      258.9413751848042,
+      261.4512499421835
+    ]
+  },
+  "generalization_validated": false,
+  "freeze_sha256": "7fa80170fb53324df449e6163574eab299fc59685850e75378d05437af3f40cc"
+}

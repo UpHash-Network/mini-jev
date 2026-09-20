@@ -1,0 +1,713 @@
+{
+  "completed_at": "2026-09-20T02:22:28.557489+00:00",
+  "all_evaluation_criteria_passed": false,
+  "criteria": {
+    "counts_2400_800_each": true,
+    "overall_accuracy_ge_90pct": false,
+    "each_type_accuracy_ge_85pct": false,
+    "manual_180_accuracy_ge_90pct": false,
+    "manual_each_type_accuracy_ge_85pct": true,
+    "choice_order_semantic_consistency_ge_90pct": true,
+    "all_answers_type_valid": true,
+    "latency_le_512_p95_le_500ms": false,
+    "target_hardware_m5_pro_64gb_mps": true,
+    "every_measured_call_executed_one_backbone_forward": true
+  },
+  "overall": {
+    "count": 2400,
+    "correct": 1713,
+    "accuracy": 0.71375,
+    "valid": 2400
+  },
+  "by_type": {
+    "choice": {
+      "count": 800,
+      "correct": 619,
+      "accuracy": 0.77375,
+      "valid": 800
+    },
+    "noul": {
+      "count": 800,
+      "correct": 604,
+      "accuracy": 0.755,
+      "valid": 800
+    },
+    "score": {
+      "count": 800,
+      "correct": 490,
+      "accuracy": 0.6125,
+      "valid": 800
+    }
+  },
+  "manual": {
+    "count": 180,
+    "correct": 160,
+    "accuracy": 0.8888888888888888,
+    "valid": 180
+  },
+  "manual_by_type": {
+    "choice": {
+      "count": 60,
+      "correct": 52,
+      "accuracy": 0.8666666666666667,
+      "valid": 60
+    },
+    "noul": {
+      "count": 60,
+      "correct": 53,
+      "accuracy": 0.8833333333333333,
+      "valid": 60
+    },
+    "score": {
+      "count": 60,
+      "correct": 55,
+      "accuracy": 0.9166666666666666,
+      "valid": 60
+    }
+  },
+  "by_source": {
+    "generated": {
+      "count": 2220,
+      "correct": 1553,
+      "accuracy": 0.6995495495495495,
+      "valid": 2220
+    },
+    "manual": {
+      "count": 180,
+      "correct": 160,
+      "accuracy": 0.8888888888888888,
+      "valid": 180
+    }
+  },
+  "by_family": {
+    "generated:いずれかの条件": {
+      "count": 50,
+      "correct": 50,
+      "accuracy": 1.0,
+      "valid": 50
+    },
+    "generated:不在時の代理": {
+      "count": 49,
+      "correct": 24,
+      "accuracy": 0.4897959183673469,
+      "valid": 49
+    },
+    "generated:不足の段階": {
+      "count": 49,
+      "correct": 20,
+      "accuracy": 0.40816326530612246,
+      "valid": 49
+    },
+    "generated:予定時間の重なり": {
+      "count": 49,
+      "correct": 24,
+      "accuracy": 0.4897959183673469,
+      "valid": 49
+    },
+    "generated:事実と否定質問": {
+      "count": 50,
+      "correct": 47,
+      "accuracy": 0.94,
+      "valid": 50
+    },
+    "generated:二属性照合": {
+      "count": 49,
+      "correct": 47,
+      "accuracy": 0.9591836734693877,
+      "valid": 49
+    },
+    "generated:件数の段階境界": {
+      "count": 50,
+      "correct": 41,
+      "accuracy": 0.82,
+      "valid": 50
+    },
+    "generated:例外による上限": {
+      "count": 49,
+      "correct": 26,
+      "accuracy": 0.5306122448979592,
+      "valid": 49
+    },
+    "generated:例外の優先": {
+      "count": 50,
+      "correct": 38,
+      "accuracy": 0.76,
+      "valid": 50
+    },
+    "generated:全条件の充足": {
+      "count": 50,
+      "correct": 47,
+      "accuracy": 0.94,
+      "valid": 50
+    },
+    "generated:出来事の前後関係": {
+      "count": 49,
+      "correct": 35,
+      "accuracy": 0.7142857142857143,
+      "valid": 49
+    },
+    "generated:利用可能集合の差": {
+      "count": 49,
+      "correct": 47,
+      "accuracy": 0.9591836734693877,
+      "valid": 49
+    },
+    "generated:参照先の担当": {
+      "count": 50,
+      "correct": 36,
+      "accuracy": 0.72,
+      "valid": 50
+    },
+    "generated:参照表の順序尺度": {
+      "count": 49,
+      "correct": 44,
+      "accuracy": 0.8979591836734694,
+      "valid": 49
+    },
+    "generated:参照関係の真偽": {
+      "count": 49,
+      "correct": 27,
+      "accuracy": 0.5510204081632653,
+      "valid": 49
+    },
+    "generated:取消しを反映した件数": {
+      "count": 49,
+      "correct": 12,
+      "accuracy": 0.24489795918367346,
+      "valid": 49
+    },
+    "generated:否定条件で選択": {
+      "count": 50,
+      "correct": 41,
+      "accuracy": 0.82,
+      "valid": 50
+    },
+    "generated:問い合わせ経路": {
+      "count": 50,
+      "correct": 49,
+      "accuracy": 0.98,
+      "valid": 50
+    },
+    "generated:小数量の比較": {
+      "count": 49,
+      "correct": 26,
+      "accuracy": 0.5306122448979592,
+      "valid": 49
+    },
+    "generated:工程の依存順": {
+      "count": 49,
+      "correct": 41,
+      "accuracy": 0.8367346938775511,
+      "valid": 49
+    },
+    "generated:改訂と例外の優先": {
+      "count": 49,
+      "correct": 32,
+      "accuracy": 0.6530612244897959,
+      "valid": 49
+    },
+    "generated:文章内の順序参照": {
+      "count": 49,
+      "correct": 43,
+      "accuracy": 0.8775510204081632,
+      "valid": 49
+    },
+    "generated:時刻順の評価更新": {
+      "count": 49,
+      "correct": 30,
+      "accuracy": 0.6122448979591837,
+      "valid": 49
+    },
+    "generated:時間枠の包含": {
+      "count": 49,
+      "correct": 23,
+      "accuracy": 0.46938775510204084,
+      "valid": 49
+    },
+    "generated:更新後の状態": {
+      "count": 49,
+      "correct": 35,
+      "accuracy": 0.7142857142857143,
+      "valid": 49
+    },
+    "generated:最終更新": {
+      "count": 50,
+      "correct": 29,
+      "accuracy": 0.58,
+      "valid": 50
+    },
+    "generated:条件と優先例外": {
+      "count": 50,
+      "correct": 50,
+      "accuracy": 1.0,
+      "valid": 50
+    },
+    "generated:条件付き不足書類": {
+      "count": 49,
+      "correct": 32,
+      "accuracy": 0.6530612244897959,
+      "valid": 49
+    },
+    "generated:条件付き義務": {
+      "count": 49,
+      "correct": 23,
+      "accuracy": 0.46938775510204084,
+      "valid": 49
+    },
+    "generated:独立チェックの合計": {
+      "count": 50,
+      "correct": 30,
+      "accuracy": 0.6,
+      "valid": 50
+    },
+    "generated:目標からの差": {
+      "count": 49,
+      "correct": 21,
+      "accuracy": 0.42857142857142855,
+      "valid": 49
+    },
+    "generated:範囲の開閉境界": {
+      "count": 49,
+      "correct": 49,
+      "accuracy": 1.0,
+      "valid": 49
+    },
+    "generated:約束時刻からの遅れ": {
+      "count": 49,
+      "correct": 17,
+      "accuracy": 0.3469387755102041,
+      "valid": 49
+    },
+    "generated:緊急条件の加点": {
+      "count": 50,
+      "correct": 26,
+      "accuracy": 0.52,
+      "valid": 50
+    },
+    "generated:締切の境界": {
+      "count": 50,
+      "correct": 33,
+      "accuracy": 0.66,
+      "valid": 50
+    },
+    "generated:複数属性の制約": {
+      "count": 49,
+      "correct": 47,
+      "accuracy": 0.9591836734693877,
+      "valid": 49
+    },
+    "generated:要件への一致数": {
+      "count": 49,
+      "correct": 18,
+      "accuracy": 0.3673469387755102,
+      "valid": 49
+    },
+    "generated:記述の満足段階": {
+      "count": 50,
+      "correct": 44,
+      "accuracy": 0.88,
+      "valid": 50
+    },
+    "generated:記録と主張の照合": {
+      "count": 49,
+      "correct": 48,
+      "accuracy": 0.9795918367346939,
+      "valid": 49
+    },
+    "generated:証拠の最高到達段階": {
+      "count": 49,
+      "correct": 28,
+      "accuracy": 0.5714285714285714,
+      "valid": 49
+    },
+    "generated:識別文字列の完全一致": {
+      "count": 49,
+      "correct": 32,
+      "accuracy": 0.6530612244897959,
+      "valid": 49
+    },
+    "generated:軽重のある項目": {
+      "count": 49,
+      "correct": 29,
+      "accuracy": 0.5918367346938775,
+      "valid": 49
+    },
+    "generated:重複を除いた件数": {
+      "count": 49,
+      "correct": 27,
+      "accuracy": 0.5510204081632653,
+      "valid": 49
+    },
+    "generated:集合と否定所属": {
+      "count": 49,
+      "correct": 36,
+      "accuracy": 0.7346938775510204,
+      "valid": 49
+    },
+    "generated:順番に進む工程": {
+      "count": 50,
+      "correct": 49,
+      "accuracy": 0.98,
+      "valid": 50
+    },
+    "manual:arithmetic": {
+      "count": 17,
+      "correct": 10,
+      "accuracy": 0.5882352941176471,
+      "valid": 17
+    },
+    "manual:boundary": {
+      "count": 9,
+      "correct": 7,
+      "accuracy": 0.7777777777777778,
+      "valid": 9
+    },
+    "manual:comparison": {
+      "count": 5,
+      "correct": 5,
+      "accuracy": 1.0,
+      "valid": 5
+    },
+    "manual:conditional": {
+      "count": 4,
+      "correct": 4,
+      "accuracy": 1.0,
+      "valid": 4
+    },
+    "manual:conjunction": {
+      "count": 6,
+      "correct": 6,
+      "accuracy": 1.0,
+      "valid": 6
+    },
+    "manual:contrast": {
+      "count": 2,
+      "correct": 2,
+      "accuracy": 1.0,
+      "valid": 2
+    },
+    "manual:count": {
+      "count": 12,
+      "correct": 11,
+      "accuracy": 0.9166666666666666,
+      "valid": 12
+    },
+    "manual:disjunction": {
+      "count": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "valid": 3
+    },
+    "manual:distractor": {
+      "count": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "valid": 1
+    },
+    "manual:entailment": {
+      "count": 2,
+      "correct": 2,
+      "accuracy": 1.0,
+      "valid": 2
+    },
+    "manual:exact_match": {
+      "count": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "valid": 1
+    },
+    "manual:exception": {
+      "count": 4,
+      "correct": 3,
+      "accuracy": 0.75,
+      "valid": 4
+    },
+    "manual:extraction": {
+      "count": 6,
+      "correct": 5,
+      "accuracy": 0.8333333333333334,
+      "valid": 6
+    },
+    "manual:history": {
+      "count": 19,
+      "correct": 16,
+      "accuracy": 0.8421052631578947,
+      "valid": 19
+    },
+    "manual:insufficient": {
+      "count": 11,
+      "correct": 10,
+      "accuracy": 0.9090909090909091,
+      "valid": 11
+    },
+    "manual:intersection": {
+      "count": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "valid": 1
+    },
+    "manual:meaning": {
+      "count": 20,
+      "correct": 20,
+      "accuracy": 1.0,
+      "valid": 20
+    },
+    "manual:negation": {
+      "count": 12,
+      "correct": 12,
+      "accuracy": 1.0,
+      "valid": 12
+    },
+    "manual:permission": {
+      "count": 2,
+      "correct": 2,
+      "accuracy": 1.0,
+      "valid": 2
+    },
+    "manual:priority": {
+      "count": 7,
+      "correct": 5,
+      "accuracy": 0.7142857142857143,
+      "valid": 7
+    },
+    "manual:quotation": {
+      "count": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "valid": 1
+    },
+    "manual:range": {
+      "count": 4,
+      "correct": 4,
+      "accuracy": 1.0,
+      "valid": 4
+    },
+    "manual:scope": {
+      "count": 18,
+      "correct": 16,
+      "accuracy": 0.8888888888888888,
+      "valid": 18
+    },
+    "manual:sentiment": {
+      "count": 5,
+      "correct": 5,
+      "accuracy": 1.0,
+      "valid": 5
+    },
+    "manual:sequence": {
+      "count": 3,
+      "correct": 3,
+      "accuracy": 1.0,
+      "valid": 3
+    },
+    "manual:temporal": {
+      "count": 5,
+      "correct": 5,
+      "accuracy": 1.0,
+      "valid": 5
+    }
+  },
+  "family_macro_accuracy": 0.7840180536127114,
+  "generated_family_macro_accuracy": 0.6987755102040816,
+  "candidate_order": {
+    "count": 800,
+    "same_semantic_label": 800,
+    "consistency": 1.0,
+    "correct_after_reverse": 619,
+    "accuracy_after_reverse": 0.77375,
+    "valid_after_reverse": 800,
+    "method": "reverse Choice input map; runtime canonicalizes keys before prompt; independent real forward"
+  },
+  "probability_metrics_calibrated": {
+    "valid_metric_count": 2400,
+    "nll": 0.805051671546493,
+    "brier_multiclass_sum": 0.41993525016029165,
+    "ece_10_equal_width": 0.10591426368160492,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 4,
+        "mean_confidence": 0.18845058155317618,
+        "accuracy": 0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 37,
+        "mean_confidence": 0.2577042475765204,
+        "accuracy": 0.35135135135135137
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 75,
+        "mean_confidence": 0.35501162250536045,
+        "accuracy": 0.26666666666666666
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 127,
+        "mean_confidence": 0.4506327014331581,
+        "accuracy": 0.3543307086614173
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 188,
+        "mean_confidence": 0.5474524551563051,
+        "accuracy": 0.4946808510638298
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 143,
+        "mean_confidence": 0.6490172376411638,
+        "accuracy": 0.5244755244755245
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 211,
+        "mean_confidence": 0.7508997390074832,
+        "accuracy": 0.6113744075829384
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 390,
+        "mean_confidence": 0.8568223607355132,
+        "accuracy": 0.6794871794871795
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 1225,
+        "mean_confidence": 0.9614597312086174,
+        "accuracy": 0.8759183673469387
+      }
+    ],
+    "score_count": 800,
+    "score_expectation_mae": 0.742613921459699,
+    "score_normalized_expectation_mae": 0.1893594620168751
+  },
+  "probability_metrics_uncalibrated": {
+    "valid_metric_count": 2400,
+    "nll": 3.578348637506622,
+    "brier_multiclass_sum": 0.5440990984819648,
+    "ece_10_equal_width": 0.26327207140966546,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.3,
+        "count": 0
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.4,
+        "count": 2,
+        "mean_confidence": 0.35813699346883543,
+        "accuracy": 0.5
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 9,
+        "mean_confidence": 0.44844108701286234,
+        "accuracy": 0.1111111111111111
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6,
+        "count": 25,
+        "mean_confidence": 0.5440837758050912,
+        "accuracy": 0.44
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.7,
+        "count": 25,
+        "mean_confidence": 0.6448301353641905,
+        "accuracy": 0.4
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "count": 51,
+        "mean_confidence": 0.7457538249999701,
+        "accuracy": 0.49019607843137253
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 55,
+        "mean_confidence": 0.8512964514673312,
+        "accuracy": 0.38181818181818183
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 2233,
+        "mean_confidence": 0.9963975270497472,
+        "accuracy": 0.7362292879534259
+      }
+    ],
+    "score_count": 800,
+    "score_expectation_mae": 0.7489873912125724,
+    "score_normalized_expectation_mae": 0.1850114013386589
+  },
+  "latency": {
+    "input_tokens_le_512": {
+      "count": 2400,
+      "p50_ms": 337.57504215463996,
+      "p95_ms": 518.825495848432,
+      "max_ms": 868.1600419804454
+    },
+    "input_tokens_gt_512": {
+      "count": 0,
+      "p50_ms": null,
+      "p95_ms": null,
+      "max_ms": null
+    },
+    "unmeasured_or_failed": 0,
+    "reverse_choice": {
+      "count": 800,
+      "p50_ms": 357.20047913491726,
+      "p95_ms": 545.5683983396736,
+      "max_ms": 734.2337910085917
+    }
+  },
+  "warmup": {
+    "count": 7,
+    "latency_ms": [
+      324.06366616487503,
+      237.1827089227736,
+      232.10762487724423,
+      243.04945766925812,
+      241.86433292925358,
+      254.91804210469127,
+      255.7927081361413
+    ]
+  },
+  "actual_backbone_forwards": 3207,
+  "scope": "This is a limited hand-authored/template-generated acceptance suite, not a general capability guarantee.",
+  "completion_note": "Only evaluation criteria are covered here. API, restart, SDK, numerical equivalence, documentation and operational checks require separate verification.",
+  "freeze_sha256": "ed97336eeaaefb28f4b9ec5a95aac3d4f24faa78ac37fc139a9204974e4fb2a7",
+  "predictions_sha256": "d1cf81de10e9484e8d13406ac880100e9ea2239e68594d3efbdeb2ba81ef672c"
+}

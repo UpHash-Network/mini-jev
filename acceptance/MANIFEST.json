@@ -1,0 +1,20 @@
+{
+  "acceptance_test": {
+    "rows": 180,
+    "types": {
+      "choice": 60,
+      "noul": 60,
+      "score": 60
+    },
+    "sha256": "16436f5e31f092f79ec3d4f39530ccd15521bf092539a9d21195e2059a7840bd"
+  },
+  "calibration": {
+    "rows": 120,
+    "types": {
+      "choice": 40,
+      "noul": 40,
+      "score": 40
+    },
+    "sha256": "c7c60dac95e216efca8c78c760fa5f7a18c21eabe4da122f2645142460e14a1a"
+  }
+}

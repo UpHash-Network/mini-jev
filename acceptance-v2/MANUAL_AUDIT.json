@@ -1,0 +1,296 @@
+{
+  "version": 2,
+  "status": "self-audit complete; peer review recorded",
+  "no_model_calls": true,
+  "authoring_context": "The author diagnosed the first 400 frozen v1 predictions before v2 authoring. No later predictions, v2 predictions, or selected new model were consulted. Per-type skill-family counts and candidate cardinalities were held exactly constant.",
+  "split_scope": "Independent new situations and rubrics. Logical skill families intentionally recur; no claim of new abstract skills.",
+  "exact_input_overlap_with_all_v1": 0,
+  "exact_duplicates_within_v2_manual_and_calibration": 0,
+  "normalized_state_trigram_max_jaccard_to_v1": 0.26087,
+  "similarity_note": "Numbers normalized, long supplemental paragraphs removed. Highest-similarity pairs manually reviewed; lexical similarity is not a proof of semantic independence.",
+  "v1_files_unchanged": {
+    "acceptance_test": "16436f5e31f092f79ec3d4f39530ccd15521bf092539a9d21195e2059a7840bd",
+    "calibration": "c7c60dac95e216efca8c78c760fa5f7a18c21eabe4da122f2645142460e14a1a",
+    "generated_2220": "141ee4c379fa8d72df6bca3fe793054c9d2847ca7d16d2fa6622bc92558d4bb3"
+  },
+  "datasets": {
+    "acceptance_test": {
+      "count": 180,
+      "sha256": "58f5d36e278462d2e48d5ff38c3f97b7df6370ea865389e7f3e016eb6ac7aff6",
+      "family_count": 26,
+      "families": {
+        "meaning": 20,
+        "negation": 12,
+        "history": 19,
+        "scope": 18,
+        "priority": 7,
+        "insufficient": 11,
+        "arithmetic": 17,
+        "conjunction": 6,
+        "sequence": 3,
+        "exception": 4,
+        "intersection": 1,
+        "distractor": 1,
+        "permission": 2,
+        "extraction": 6,
+        "range": 4,
+        "contrast": 2,
+        "temporal": 5,
+        "comparison": 5,
+        "quotation": 1,
+        "boundary": 9,
+        "entailment": 2,
+        "disjunction": 3,
+        "conditional": 4,
+        "exact_match": 1,
+        "sentiment": 5,
+        "count": 12
+      },
+      "structured_states": 21,
+      "long_states": 9,
+      "max_state_characters": 233,
+      "per_type": {
+        "choice": {
+          "family_distribution_exactly_matches_v1": true,
+          "candidate_count_distribution_exactly_matches_v1": true,
+          "candidate_counts": {
+            "2": 9,
+            "3": 9,
+            "4": 9,
+            "5": 9,
+            "6": 8,
+            "7": 8,
+            "8": 8
+          },
+          "correct_positions_after_key_sort": {
+            "2": [
+              5,
+              4
+            ],
+            "3": [
+              3,
+              3,
+              3
+            ],
+            "4": [
+              3,
+              2,
+              2,
+              2
+            ],
+            "5": [
+              2,
+              2,
+              2,
+              2,
+              1
+            ],
+            "6": [
+              2,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            "7": [
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "8": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "noul": {
+          "family_distribution_exactly_matches_v1": true,
+          "candidate_count_distribution_exactly_matches_v1": true,
+          "candidate_counts": {
+            "2": 60
+          },
+          "labels": {
+            "true": 30,
+            "false": 30
+          }
+        },
+        "score": {
+          "family_distribution_exactly_matches_v1": true,
+          "candidate_count_distribution_exactly_matches_v1": true,
+          "candidate_counts": {
+            "5": 34,
+            "4": 18,
+            "3": 4,
+            "6": 4
+          },
+          "stages": {
+            "0": 9,
+            "1": 14,
+            "2": 16,
+            "3": 13,
+            "4": 7,
+            "5": 1
+          }
+        }
+      }
+    },
+    "calibration": {
+      "count": 120,
+      "sha256": "53317fc63913164194c51b399050153388112cebe69568d39bdd4f1ee84c7e7b",
+      "family_count": 27,
+      "families": {
+        "language": 20,
+        "causality": 3,
+        "sequence": 3,
+        "logic": 2,
+        "extraction": 10,
+        "mapping": 7,
+        "ordering": 6,
+        "count": 2,
+        "conditional": 1,
+        "comparison": 4,
+        "priority": 1,
+        "spatial": 4,
+        "sets": 2,
+        "arithmetic": 8,
+        "transformation": 2,
+        "negation": 6,
+        "history": 1,
+        "scope": 7,
+        "quantifier": 1,
+        "insufficient": 2,
+        "certainty": 5,
+        "deduction": 2,
+        "exact_match": 2,
+        "boundary": 4,
+        "meaning": 7,
+        "range": 3,
+        "frequency": 5
+      },
+      "structured_states": 5,
+      "long_states": 0,
+      "max_state_characters": 91,
+      "per_type": {
+        "choice": {
+          "family_distribution_exactly_matches_v1": true,
+          "candidate_count_distribution_exactly_matches_v1": true,
+          "candidate_counts": {
+            "2": 6,
+            "3": 6,
+            "4": 6,
+            "5": 6,
+            "6": 6,
+            "7": 5,
+            "8": 5
+          },
+          "correct_positions_after_key_sort": {
+            "2": [
+              3,
+              3
+            ],
+            "3": [
+              2,
+              2,
+              2
+            ],
+            "4": [
+              2,
+              2,
+              1,
+              1
+            ],
+            "5": [
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            "6": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "7": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "8": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "noul": {
+          "family_distribution_exactly_matches_v1": true,
+          "candidate_count_distribution_exactly_matches_v1": true,
+          "candidate_counts": {
+            "2": 40
+          },
+          "labels": {
+            "false": 20,
+            "true": 20
+          }
+        },
+        "score": {
+          "family_distribution_exactly_matches_v1": true,
+          "candidate_count_distribution_exactly_matches_v1": true,
+          "candidate_counts": {
+            "4": 20,
+            "5": 17,
+            "3": 3
+          },
+          "stages": {
+            "0": 9,
+            "1": 10,
+            "2": 10,
+            "3": 8,
+            "4": 3
+          }
+        }
+      }
+    }
+  },
+  "peer_review": {
+    "reviewer": "/root/service",
+    "review_scope": "Independent reading of all states, questions, criteria and gold labels in manual 180 and calibration 120",
+    "manual_cases_reviewed": 180,
+    "calibration_cases_reviewed": 120,
+    "model_inference_performed": false,
+    "prediction_results_consulted": false,
+    "ambiguities_found_before_freeze": 1,
+    "ambiguities_resolved_before_freeze": 1,
+    "gold_labels_changed": 0,
+    "unresolved_material_findings": 0,
+    "combined_v2_2520_exact_duplicates": 0,
+    "combined_v2_vs_v1_2520_exact_overlap": 0,
+    "acceptance_test_sha256": "58f5d36e278462d2e48d5ff38c3f97b7df6370ea865389e7f3e016eb6ac7aff6",
+    "calibration_sha256": "53317fc63913164194c51b399050153388112cebe69568d39bdd4f1ee84c7e7b",
+    "conclusion": "Freeze agreed after independent review. No further clear gold-label errors or material ambiguity found. The same abstract skills are intentionally tested in new situations."
+  }
+}

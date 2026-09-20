@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "original_release_zip_sha256": "e34d13b452abb96df84860f1a1fc8216fc6392ac7b4b4a28c5bf0749476c6754",
+  "original_release_preserved": true,
+  "scope": "Public copy only. Frozen model predictions and question data unchanged. These retained records are path-redacted, not byte-identical copies. Original SHA fields inside historical reports still identify original measured files.",
+  "path_redactions": [
+    {
+      "path": "results/baseline.json",
+      "original_sha256": "2d7e3075ec49414425022c015885cdff9fb1db56bc18e659a00827c6fff4c02d",
+      "public_sha256": "13aafcb0f5e21b90f80f5a2a35cca157ee4a82309647a278326828a016930844",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-score-edges/report.json",
+      "original_sha256": "bd0595b4c9e89adf371ec23dfa34fa61776274b65ffe4d22468f24d176f18c19",
+      "public_sha256": "9594e7dc0d1a52fc77140cd9801b543d07bb74790868131d3bf4f6f412308edb",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-score-edges/native.stderr.log",
+      "original_sha256": "ceff729cdaf41c1f49d46ac028c41423939e2ebdf79fa30946c799c0326b4fc2",
+      "public_sha256": "e1ab191d4c120ee4be1664deb7e8b92b2648d93617c9583f0ffbf426be47e6ee",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/qwen-1.5b/baseline.json",
+      "original_sha256": "79ff0b421f5afa0b2d56892605aa965ada91854d42e28dc8b57c71ee4c30d9ee",
+      "public_sha256": "120290d202a67ef7aae13dedbb9e742b9ca29215b21b9baca1af2ce4fb93a327",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-release-validation/engine.stderr.log",
+      "original_sha256": "d8b7938cfc2672d0f4b5e42ec982cc59349334e2c83ae317ffed978aa57d7be2",
+      "public_sha256": "ec693ae94697b9c4e2ca15c1e497f8802dccd18ae64a0fc2dd77e2ac40cf6e8d",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-release-validation/report.json",
+      "original_sha256": "19b34f5903eecf34f6304695d9c6d489fd2280e468040f87bd9017c9f7085913",
+      "public_sha256": "c1617b7a943febeddd03483be853ea4426b3c86e8008a0e61bbeedd7a24a1fa7",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-release-validation/independent-helper.stderr.log",
+      "original_sha256": "72d54a7ce79396a304090d707ae1f85950c6eb71672d587654f2d27b25b23106",
+      "public_sha256": "770170d469d61f6d0d906ef498d01231946aa8d95078703d2b7c5084510caf3e",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/prompt-example-a/baseline.json",
+      "original_sha256": "07bb9785296a34189ff6253e69f2006575f94ee8e0e17f7b8418063a9c0cd4b8",
+      "public_sha256": "1f0eb0011a3c2db6ed3eca0bf0dcdd4e5f68b86bb72155df6169cc36dfefe001",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/head/validation.json",
+      "original_sha256": "c1cee59eeacfa2ed5718d0f92a044f6a0f733aa32183ca585cfbff5d3902f308",
+      "public_sha256": "990836a7ba1270ff03760e253d368a259b35eeb445cab2c55e82340cc098adfa",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-calibration/freeze.json",
+      "original_sha256": "fe242a939da0441a809f2da0946aa087339cf7759b405091eb408e9bab834df0",
+      "public_sha256": "ce4c7f564dd657dc95316c7130bb6779781e0b30e776367187921000ba654eef",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-development/numeric_score_v1.native.log",
+      "original_sha256": "088c286c63323baac6d4627477c3099340cb2b04a27bc143465f42933ccc760a",
+      "public_sha256": "dd80ee1b54e7570d1443bee36e1014cbee5750304e21e9dbd036c06cb4c12325",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-development/repeat_v1_regression.native.log",
+      "original_sha256": "67d9b76586aa3b0f4a991d0d51b96a968c05193d5d23e23edb51206917133609",
+      "public_sha256": "8ee23c00434e7baa20ae52bd0dd483ec45898b03d996666f855946a9d9c0a613",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-development/json_keys.native.log",
+      "original_sha256": "15cee41ddf54d56a5ac0ce65120a062ba8c325479754c9c66553feeaecda1b9a",
+      "public_sha256": "1ad4e56dcb6634d4c29e5177830a809e0edf37c2bd7e4d79102ac5d0d4b00a0e",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-development/repeat.native.log",
+      "original_sha256": "2636f94576266148137cec99287d4f9b1f6a0f5116831ac071df5fdd5dc6b7eb",
+      "public_sha256": "15732b14940a212b8d7f6be9ba89bd939175df427f710893114bf860ce6bc987",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-development/compact.native.log",
+      "original_sha256": "c7bc8a56493c7156dc09d727d143b1eadd954ef613cebb7d002d373629e7d7fd",
+      "public_sha256": "c0c733caeb074abb71d98343a4a5e6aa4e48a4d74b7dd643a37bde19fd7c1401",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-development/with_keys.native.log",
+      "original_sha256": "2eb7fdc3edb989b8a83cbf8ad5554f4a997cd097574fd02a7958f4930c673629",
+      "public_sha256": "6efd28532b1706d61810d51f9bf65a8bc8ed5dd0837a85de3620e1e3a4068464",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/release-calibration-v2/freeze.json",
+      "original_sha256": "7fa80170fb53324df449e6163574eab299fc59685850e75378d05437af3f40cc",
+      "public_sha256": "b8525cf019ca60ebd5f02dafde1692f318ed1181662fd8247435b40f63e9cebe",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/release-acceptance/freeze.json",
+      "original_sha256": "ed97336eeaaefb28f4b9ec5a95aac3d4f24faa78ac37fc139a9204974e4fb2a7",
+      "public_sha256": "ba6576206c07f586ce9f7fb7c641118499d92beb50a2f76946abb838b78e4ac3",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/native-acceptance/freeze.json",
+      "original_sha256": "5cff3a59fe33908e9cf3bc418966a71aa3dcb6a4b2769b8ab76a852d111bce4f",
+      "public_sha256": "9a92ab1142d4695149930c3421d5456710959c815a7e935491e6b463b486a091",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/release-calibration/failure.json",
+      "original_sha256": "8d5ff562ba7b7fab084ef471d03af98f5f756e61eef8b07a0bd723b191a03372",
+      "public_sha256": "c8c551790ca182a10659c81acedd5830ef15f841a1d6c168ec699c98ec65023a",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    },
+    {
+      "path": "results/release-calibration/freeze.json",
+      "original_sha256": "e666f174c0a1af00f4220c952f968d7f8cd68018604c1fe87a9e86008bcf2c97",
+      "public_sha256": "b15b43588ec43b6e6799ec66159d894f754d6711947f7a63b81e92b40cfb303f",
+      "transformation": "replace local project/workspace/home path prefixes with symbolic placeholders; numeric results unchanged"
+    }
+  ],
+  "omitted_native_artifacts": [
+    {
+      "path": "native/bin/libggml-metal.0.24.0.dylib",
+      "sha256": "c539df34eae95dd2d11ab5893d594c49d0b61e9836b6f5ffe78807da3771a135",
+      "bytes": 2219888
+    },
+    {
+      "path": "native/bin/libggml-cpu.0.24.0.dylib",
+      "sha256": "9b4a9ad75b4e5ee2cf241e80dffa8249a7ddfb0539f8ab2abbf471a2432cd62e",
+      "bytes": 1014048
+    },
+    {
+      "path": "native/bin/libggml.0.24.0.dylib",
+      "sha256": "3a70d322c044811189dc8c1513068dd47ea44b1b7a5ce6cc67460e9f33a296fe",
+      "bytes": 77808
+    },
+    {
+      "path": "native/bin/libllama.0.4.1.dylib",
+      "sha256": "4829c7730fb5c0421d0dccdf4c00db108f75df567deaa2cda4c9f05b6aa6e7de",
+      "bytes": 3132656
+    },
+    {
+      "path": "native/bin/libllama-common.0.4.1.dylib",
+      "sha256": "013f400ed10f1f800a31957cea1a60ed9714cbc1aadfffaf3a88f3661cf4e710",
+      "bytes": 4967920
+    },
+    {
+      "path": "native/bin/libllama.0.dylib",
+      "symlink": "libllama.0.4.1.dylib"
+    },
+    {
+      "path": "native/bin/libggml-blas.0.24.0.dylib",
+      "sha256": "9ef0f0c8460d83f0e577a715b5713ede4e339414fa5ab08050686cda08d43ae8",
+      "bytes": 76512
+    },
+    {
+      "path": "native/bin/libggml.dylib",
+      "symlink": "libggml.0.dylib"
+    },
+    {
+      "path": "native/bin/llama-decision-helper",
+      "sha256": "742a76e06b2ff7012c1356353cfc82d51d2642011603db4daa5f20d4470c76dd",
+      "bytes": 260064
+    },
+    {
+      "path": "native/bin/llama-decision-helper.new",
+      "sha256": "e8a9067d1b8c9b6bef9c572de1135e1ae7854d60ebab5c01d3b9bf9b1dd68167",
+      "bytes": 243336
+    },
+    {
+      "path": "native/bin/libggml.0.dylib",
+      "symlink": "libggml.0.24.0.dylib"
+    },
+    {
+      "path": "native/bin/libggml-base.dylib",
+      "symlink": "libggml-base.0.dylib"
+    },
+    {
+      "path": "native/bin/libggml-blas.dylib",
+      "symlink": "libggml-blas.0.dylib"
+    },
+    {
+      "path": "native/bin/libggml-metal.0.dylib",
+      "symlink": "libggml-metal.0.24.0.dylib"
+    },
+    {
+      "path": "native/bin/libllama-common.0.dylib",
+      "symlink": "libllama-common.0.4.1.dylib"
+    },
+    {
+      "path": "native/bin/libllama.dylib",
+      "symlink": "libllama.0.dylib"
+    },
+    {
+      "path": "native/bin/libggml-cpu.dylib",
+      "symlink": "libggml-cpu.0.dylib"
+    },
+    {
+      "path": "native/bin/libggml-metal.dylib",
+      "symlink": "libggml-metal.0.dylib"
+    },
+    {
+      "path": "native/bin/libggml-base.0.24.0.dylib",
+      "sha256": "96a3c9e7f7917775153386b5d12e6f3beb1221c9ee8e10617da78d30ee0a6b49",
+      "bytes": 747040
+    },
+    {
+      "path": "native/bin/libllama-common.dylib",
+      "symlink": "libllama-common.0.dylib"
+    },
+    {
+      "path": "native/bin/libggml-base.0.dylib",
+      "symlink": "libggml-base.0.24.0.dylib"
+    },
+    {
+      "path": "native/bin/libggml-blas.0.dylib",
+      "symlink": "libggml-blas.0.24.0.dylib"
+    },
+    {
+      "path": "native/bin/libggml-cpu.0.dylib",
+      "symlink": "libggml-cpu.0.24.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-metal.0.24.0.dylib",
+      "sha256": "c539df34eae95dd2d11ab5893d594c49d0b61e9836b6f5ffe78807da3771a135",
+      "bytes": 2219888
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-cpu.0.24.0.dylib",
+      "sha256": "9b4a9ad75b4e5ee2cf241e80dffa8249a7ddfb0539f8ab2abbf471a2432cd62e",
+      "bytes": 1014048
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml.0.24.0.dylib",
+      "sha256": "3a70d322c044811189dc8c1513068dd47ea44b1b7a5ce6cc67460e9f33a296fe",
+      "bytes": 77808
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libllama.0.4.1.dylib",
+      "sha256": "4829c7730fb5c0421d0dccdf4c00db108f75df567deaa2cda4c9f05b6aa6e7de",
+      "bytes": 3132656
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libllama-common.0.4.1.dylib",
+      "sha256": "013f400ed10f1f800a31957cea1a60ed9714cbc1aadfffaf3a88f3661cf4e710",
+      "bytes": 4967920
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libllama.0.dylib",
+      "symlink": "libllama.0.4.1.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-blas.0.24.0.dylib",
+      "sha256": "9ef0f0c8460d83f0e577a715b5713ede4e339414fa5ab08050686cda08d43ae8",
+      "bytes": 76512
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml.dylib",
+      "symlink": "libggml.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/llama-decision-helper",
+      "sha256": "742a76e06b2ff7012c1356353cfc82d51d2642011603db4daa5f20d4470c76dd",
+      "bytes": 260064
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/llama-decision-helper.new",
+      "sha256": "e8a9067d1b8c9b6bef9c572de1135e1ae7854d60ebab5c01d3b9bf9b1dd68167",
+      "bytes": 243336
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml.0.dylib",
+      "symlink": "libggml.0.24.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-base.dylib",
+      "symlink": "libggml-base.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-blas.dylib",
+      "symlink": "libggml-blas.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-metal.0.dylib",
+      "symlink": "libggml-metal.0.24.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libllama-common.0.dylib",
+      "symlink": "libllama-common.0.4.1.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libllama.dylib",
+      "symlink": "libllama.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-cpu.dylib",
+      "symlink": "libggml-cpu.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-metal.dylib",
+      "symlink": "libggml-metal.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-base.0.24.0.dylib",
+      "sha256": "96a3c9e7f7917775153386b5d12e6f3beb1221c9ee8e10617da78d30ee0a6b49",
+      "bytes": 747040
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libllama-common.dylib",
+      "symlink": "libllama-common.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-base.0.dylib",
+      "symlink": "libggml-base.0.24.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-blas.0.dylib",
+      "symlink": "libggml-blas.0.24.0.dylib"
+    },
+    {
+      "path": "results/native-acceptance/source-snapshot/native/bin/libggml-cpu.0.dylib",
+      "symlink": "libggml-cpu.0.24.0.dylib"
+    }
+  ],
+  "omission_reason": "Source-only distribution. Rebuild pinned native sources; compiler/OS differences require fresh measurements and calibration."
+}

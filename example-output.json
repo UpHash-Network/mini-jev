@@ -1,0 +1,86 @@
+[
+  {
+    "type": "choice",
+    "label": "technical",
+    "probabilities": {
+      "billing": 2.2373558294930262e-06,
+      "technical": 0.9999579191207886,
+      "sales": 3.980912151746452e-05
+    },
+    "calibrated": false,
+    "probability_semantics": "conditional_on_allowed_label_tokens",
+    "choice": "technical",
+    "candidate_keys": [
+      "billing",
+      "technical",
+      "sales"
+    ],
+    "candidate_logits": [
+      16.572341918945312,
+      29.582515716552734,
+      19.451143264770508
+    ],
+    "candidate_mass": 0.9999885559082031,
+    "input_tokens": 147,
+    "output_tokens": 0,
+    "projection": "full",
+    "batch_size": 3,
+    "model_ms": 276.22604090720415,
+    "latency_ms": 344.7577920742333
+  },
+  {
+    "type": "noul",
+    "label": "false",
+    "probabilities": {
+      "false": 0.9918209314346313,
+      "true": 0.0081791328266263
+    },
+    "calibrated": false,
+    "probability_semantics": "conditional_on_allowed_label_tokens",
+    "noul": 0.0081791328266263,
+    "candidate_keys": [
+      "false",
+      "true"
+    ],
+    "candidate_logits": [
+      28.932239532470703,
+      24.1342830657959
+    ],
+    "candidate_mass": 0.999992311000824,
+    "input_tokens": 116,
+    "output_tokens": 0,
+    "projection": "full",
+    "batch_size": 3,
+    "model_ms": 276.22604090720415,
+    "latency_ms": 344.7577920742333
+  },
+  {
+    "type": "score",
+    "label": "2",
+    "probabilities": {
+      "0": 4.0238348447019234e-05,
+      "1": 0.002899091923609376,
+      "2": 0.9970605969429016
+    },
+    "calibrated": false,
+    "probability_semantics": "conditional_on_allowed_label_tokens",
+    "score": 1.9970202858094126,
+    "candidate_keys": [
+      "0",
+      "1",
+      "2"
+    ],
+    "candidate_logits": [
+      18.580215454101562,
+      22.857547760009766,
+      28.697961807250977
+    ],
+    "candidate_mass": 0.9999904632568359,
+    "input_tokens": 123,
+    "output_tokens": 0,
+    "projection": "full",
+    "batch_size": 3,
+    "model_ms": 276.22604090720415,
+    "latency_ms": 344.7577920742333
+  }
+]

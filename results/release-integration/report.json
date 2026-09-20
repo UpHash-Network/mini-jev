@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "model_reload_exact_match": true,
+  "runs": [
+    {
+      "load_seconds": 4.285479124635458,
+      "health": {
+        "ready": true,
+        "model": "Qwen/Qwen3-4B-Instruct-2507",
+        "pending_requests": 0,
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "max_input_tokens": 2048
+      },
+      "answers": {
+        "next_action": {
+          "type": "choice",
+          "label": "heal",
+          "probabilities": {
+            "attack": 0.009621962538160049,
+            "heal": 0.9752366518973458,
+            "retreat": 0.015141385564494217
+          },
+          "calibrated": false,
+          "probability_semantics": "conditional_on_allowed_label_tokens",
+          "confidence": 0.8793177045736454,
+          "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+          "temperature_calibration_applied": true,
+          "calibration_generalization_validated": false,
+          "choice": "heal"
+        },
+        "need_healing": {
+          "type": "noul",
+          "label": "true",
+          "probabilities": {
+            "false": 0.009106509455341916,
+            "true": 0.990893490544658
+          },
+          "calibrated": false,
+          "probability_semantics": "conditional_on_allowed_label_tokens",
+          "confidence": 0.9251900961804056,
+          "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+          "temperature_calibration_applied": true,
+          "calibration_generalization_validated": false,
+          "noul": 0.990893490544658
+        },
+        "danger_level": {
+          "type": "score",
+          "label": "2",
+          "probabilities": {
+            "0": 0.014748637550744566,
+            "1": 0.054385837116850695,
+            "2": 0.9308655253324047
+          },
+          "calibrated": false,
+          "probability_semantics": "conditional_on_allowed_label_tokens",
+          "confidence": 0.7385525283539458,
+          "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+          "temperature_calibration_applied": true,
+          "calibration_generalization_validated": false,
+          "score": 1.9161168877816601,
+          "legend": {
+            "0": "低: HPが70%以上",
+            "1": "中: HPが30%以上70%未満",
+            "2": "高: HPが30%未満"
+          }
+        }
+      },
+      "sdk_http_exact_match": true,
+      "eight_questions_valid": true,
+      "duplicate_json_rejected": true,
+      "request_latency_ms": 972.2276250831783,
+      "usage": {
+        "input_tokens": 553,
+        "output_tokens": 0,
+        "questions": 3
+      }
+    },
+    {
+      "load_seconds": 4.090168334078044,
+      "health": {
+        "ready": true,
+        "model": "Qwen/Qwen3-4B-Instruct-2507",
+        "pending_requests": 0,
+        "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "max_input_tokens": 2048
+      },
+      "answers": {
+        "next_action": {
+          "type": "choice",
+          "label": "heal",
+          "probabilities": {
+            "attack": 0.009621962538160049,
+            "heal": 0.9752366518973458,
+            "retreat": 0.015141385564494217
+          },
+          "calibrated": false,
+          "probability_semantics": "conditional_on_allowed_label_tokens",
+          "confidence": 0.8793177045736454,
+          "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+          "temperature_calibration_applied": true,
+          "calibration_generalization_validated": false,
+          "choice": "heal"
+        },
+        "need_healing": {
+          "type": "noul",
+          "label": "true",
+          "probabilities": {
+            "false": 0.009106509455341916,
+            "true": 0.990893490544658
+          },
+          "calibrated": false,
+          "probability_semantics": "conditional_on_allowed_label_tokens",
+          "confidence": 0.9251900961804056,
+          "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+          "temperature_calibration_applied": true,
+          "calibration_generalization_validated": false,
+          "noul": 0.990893490544658
+        },
+        "danger_level": {
+          "type": "score",
+          "label": "2",
+          "probabilities": {
+            "0": 0.014748637550744566,
+            "1": 0.054385837116850695,
+            "2": 0.9308655253324047
+          },
+          "calibrated": false,
+          "probability_semantics": "conditional_on_allowed_label_tokens",
+          "confidence": 0.7385525283539458,
+          "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+          "temperature_calibration_applied": true,
+          "calibration_generalization_validated": false,
+          "score": 1.9161168877816601,
+          "legend": {
+            "0": "低: HPが70%以上",
+            "1": "中: HPが30%以上70%未満",
+            "2": "高: HPが30%未満"
+          }
+        }
+      },
+      "sdk_http_exact_match": true,
+      "eight_questions_valid": true,
+      "duplicate_json_rejected": true,
+      "request_latency_ms": 966.6150417178869,
+      "usage": {
+        "input_tokens": 553,
+        "output_tokens": 0,
+        "questions": 3
+      }
+    }
+  ]
+}

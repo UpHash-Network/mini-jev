@@ -1,0 +1,39 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "prompt_fingerprint": "74e566c6d98e466afae35e81592dd043b0ac1d1be17fd5c35a3647635ac1d492",
+  "max_choices": 6,
+  "max_input_tokens": 2048,
+  "feature_fingerprint": "127ebf39497bdc306bf668bad5437d83811c805faa68f5dc0c8e25ec9694b12b",
+  "symbol_ids": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "temperature": 6.309573650360107,
+  "baseline_temperature": 7.356422424316406,
+  "selection": {
+    "lr": 0.003,
+    "penalty": 0.01,
+    "epoch": 120,
+    "dev_nll": 1.7127882242202759
+  },
+  "trainable_parameters": 6,
+  "backbone_frozen": true,
+  "seed": 42,
+  "train_count_augmented": 1024,
+  "bias_only_selection": {
+    "lr": 0.003,
+    "penalty": 0.01,
+    "epoch": 120,
+    "dev_nll": 1.7127882242202759
+  },
+  "fit_dataset_hashes": {
+    "train": "3a74cb69dea667fabe609f36701576eb73dc51e8fda741ac2bef290b9d00691f",
+    "dev": "f155422428dbf041b199a0dd2ac4ab4e19b8ad96007995b82459e7294314120e",
+    "calibration": "aeb44edfdeb82c4728c3f3688a60716f36142983e8c5025ee7c01bc28242fb3f"
+  }
+}

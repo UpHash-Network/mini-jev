@@ -1,0 +1,8 @@
+{
+  "normal_forward_selected_max_logit_difference": 0.0,
+  "normal_forward_selected_max_probability_difference": 1.3552527156068805e-20,
+  "batch_single_max_probability_difference": 0.8979593366384506,
+  "batch_single_labels_equal": false,
+  "fp16_logit_tolerance": 0.1,
+  "fp16_probability_tolerance": 0.02
+}

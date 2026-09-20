@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or its evaluation data, please cite this repository. The accompanying technical report is an empirical note, not peer reviewed."
+type: software
+title: "Mini Jev: Local Typed Decisions from Frozen Language-Model Logits"
+authors:
+  - family-names: "Oshio"
+    given-names: "Yuki"
+    website: "https://github.com/yuki-oshio"
+abstract: "A local typed-decision API, reusable residual-head training workflow, and transparent empirical evaluation. The measured native configuration uses a frozen language model; it is not a reproduction of TypeSafe Jev or RLCD."
+repository-code: "https://github.com/yuki-oshio/mini-jev"
+license: MIT
+keywords:
+  - language-models
+  - classification
+  - typed-decisions
+  - calibration
+  - reproducibility

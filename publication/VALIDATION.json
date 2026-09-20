@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "scope": "Public source build and executable training workflow verification. Toy data are execution fixtures, not quality or generalization evidence. Historical 2400-question result is reported separately.",
+  "cpu_test_suites": {
+    "service_native_packaging": 63,
+    "evaluation_runner": 18,
+    "public_release_checker": 11,
+    "native_service_configuration": 7,
+    "training_cli": 22
+  },
+  "native_rebuild": {
+    "source_commit": "f072b103714dfa1eee531f80b24512faf38e3dd2",
+    "manifest_verified": true,
+    "files": 18,
+    "symlinks": 14,
+    "runtime_fingerprint": "4a18dfa35c8935d8582fdae1eb39455c1533d388e75ff58b14b33b46ee4de875",
+    "model_reload_exact_match": true,
+    "sdk_http_exact_match": true,
+    "graceful_shutdown": true,
+    "calibration_count": 120,
+    "temperature": 1.3489628825916533,
+    "calibration_nll_before": 0.14821288849694564,
+    "calibration_nll_after": 0.13523335402219486
+  },
+  "training_smoke": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "device": "mps",
+    "dtype": "float32",
+    "split_counts": {
+      "train": 12,
+      "dev": 6,
+      "calibration": 6,
+      "test": 6
+    },
+    "checkpoint_reload_exact": true,
+    "checkpoint_unchanged_after_test": true,
+    "separate_process_evaluation_exact": true,
+    "predict_without_gold_count": 3,
+    "cpu_reload_completed": true,
+    "cpu_runtime_exact_match": false,
+    "cuda_tested": false,
+    "note": "Only execution and data-flow validation; the six-item toy test is not an accuracy benchmark."
+  }
+}

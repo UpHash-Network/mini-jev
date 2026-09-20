@@ -1,0 +1,19 @@
+{
+  "state": "プレイヤーのHPは20%。敵が近くに3体いる。回復アイテムを1個持っている。行動ルール: HPが30%未満で回復アイテムがあれば回復を優先する。",
+  "questions": {
+    "next_action": {
+      "type": "choice",
+      "instructions": "行動ルールに従い、次に取る行動を選んでください。",
+      "criteria": {"heal": "回復アイテムを使う", "retreat": "敵から離れる", "attack": "敵を攻撃する"}
+    },
+    "need_healing": {
+      "type": "noul",
+      "instructions": "HPは30%未満で、回復アイテムを持っていますか？"
+    },
+    "danger_level": {
+      "type": "score",
+      "instructions": "現在のHPに対応する危険度の段階を選んでください。",
+      "criteria": ["低: HPが70%以上", "中: HPが30%以上70%未満", "高: HPが30%未満"]
+    }
+  }
+}

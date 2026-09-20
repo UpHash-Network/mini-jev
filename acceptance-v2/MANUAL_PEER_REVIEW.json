@@ -1,0 +1,17 @@
+{
+  "reviewer": "/root/service",
+  "review_scope": "Independent reading of all states, questions, criteria and gold labels in manual 180 and calibration 120",
+  "manual_cases_reviewed": 180,
+  "calibration_cases_reviewed": 120,
+  "model_inference_performed": false,
+  "prediction_results_consulted": false,
+  "ambiguities_found_before_freeze": 1,
+  "ambiguities_resolved_before_freeze": 1,
+  "gold_labels_changed": 0,
+  "unresolved_material_findings": 0,
+  "combined_v2_2520_exact_duplicates": 0,
+  "combined_v2_vs_v1_2520_exact_overlap": 0,
+  "acceptance_test_sha256": "58f5d36e278462d2e48d5ff38c3f97b7df6370ea865389e7f3e016eb6ac7aff6",
+  "calibration_sha256": "53317fc63913164194c51b399050153388112cebe69568d39bdd4f1ee84c7e7b",
+  "conclusion": "Freeze agreed after independent review. No further clear gold-label errors or material ambiguity found. The same abstract skills are intentionally tested in new situations."
+}
