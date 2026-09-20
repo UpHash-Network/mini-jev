@@ -10,6 +10,7 @@ Author: **Yuki Oshio, UPHASH Inc.** Contact: **oshio@uphash.net**.
 - [Live demonstration video](Mini_Jev_Demonstration.mp4): 135 seconds, H.264 MP4, English captions, no audio. It records actual browser interaction and native-model responses, with no replayed or substituted predictions. Caption panels appear beneath the captured screen.
 - [Install and run the demonstration](../../demo/README.md).
 - [LaTeX source](main.tex), [bibliography](references.bib), [style provenance](STYLE_PROVENANCE.json).
+- [Validation record](VALIDATION.json): artifact hashes, PDF/video checks, public download checks, and the limits of installation testing.
 - [Video provenance](VIDEO_PROVENANCE.json), [caption script](VIDEO_SCRIPT.md), and the two recorded [responses](recording/).
 - [Submission checklist](SUBMISSION_CHECKLIST.md), [form draft](FORM_DRAFT.md), [author review guide in Japanese](AUTHOR_REVIEW.ja.md).
 

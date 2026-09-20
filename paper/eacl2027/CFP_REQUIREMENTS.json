@@ -2,7 +2,7 @@
   "schema_version": 1,
   "checked_date": "2026-09-20",
   "venue": "EACL 2027 System Demonstrations",
-  "submission_status": "preparation_only_not_submitted",
+  "submission_status": "materials_prepared_for_author_review_not_submitted",
   "sources": {
     "demo_cfp": "https://2027.eacl.org/calls/demos/",
     "portal": "https://openreview.net/group?id=eacl.org/EACL/2027/Demo",
@@ -36,7 +36,10 @@
     "notification_delivery_time": null,
     "camera_ready_deadline_aoe": "2027-01-06T23:59:00-12:00",
     "camera_ready_deadline_jst": "2027-01-07T20:59:00+09:00",
-    "conference_dates": ["2027-03-09", "2027-03-14"],
+    "conference_dates": [
+      "2027-03-09",
+      "2027-03-14"
+    ],
     "location": "Athens, Greece",
     "rebuttal": false
   },
@@ -45,7 +48,11 @@
     "paper": {
       "format": "PDF",
       "main_pages_max": 6,
-      "additional_unlimited": ["optional ethics/broader impact", "references", "informative appendices"],
+      "additional_unlimited": [
+        "optional ethics/broader impact",
+        "references",
+        "informative appendices"
+      ],
       "accepted_extra_main_pages": 1,
       "technical_visuals_required": true,
       "some_validation_evidence_required": true,
@@ -56,15 +63,22 @@
     "video": {
       "max_seconds": 150,
       "narration": "recommended",
-      "options": ["hosted video link", "MPEG4 supplementary upload"],
+      "options": [
+        "hosted video link",
+        "MPEG4 supplementary upload"
+      ],
       "link_in_pdf_and_form": true,
       "supplement_upload_link_handling": "verify_in_actual_form"
     },
     "demo_access": {
-      "options": ["live website", "downloadable installable package"],
+      "options": [
+        "live website",
+        "downloadable installable package"
+      ],
       "link_in_pdf_and_form": true,
       "special_hardware_exception": "must clearly justify impossibility of sharing a link",
-      "access_and_installation_checked": false
+      "access_and_installation_checked": true,
+      "installation_check_scope": "Public archive contents verified; separate source copy runs CPU tests and real-model browser bridge. Existing verified native runtime and model reused on the same machine."
     },
     "missing_component_consequence": "desk_rejection"
   },
@@ -89,7 +103,12 @@
     "demo_specific_exemption_procedure": null,
     "reviewer_nomination_consent": "pending_user",
     "ethics_source": "ethics",
-    "human_authorship_criteria": ["substantial contribution", "drafting or critical revision", "final approval", "accountability"],
+    "human_authorship_criteria": [
+      "substantial contribution",
+      "drafting or critical revision",
+      "final approval",
+      "accountability"
+    ],
     "generative_tools_as_authors_allowed": false,
     "generative_content_assistance_disclosure": "Acknowledgements; describe actual scope",
     "review_first_draft_generated_by_ai_allowed": false,
@@ -97,7 +116,12 @@
     "human_author_final_review_record": "pending"
   },
   "ai_integrity_scope": {
-    "sources": ["main_cfp", "integrity", "demo_cfp", "ethics"],
+    "sources": [
+      "main_cfp",
+      "integrity",
+      "demo_cfp",
+      "ethics"
+    ],
     "main_cfp_mentions_entirely_ai_generated_papers": true,
     "operational_percentage_or_test_published": false,
     "demo_specific_definition_or_exemption_found": false,
@@ -106,7 +130,10 @@
     "required_local_action": "Author must critically review claims, methods, evidence, citations and limitations; record corrections and final version approval without fabricating completed human review"
   },
   "publication_and_reuse": {
-    "sources": ["demo_cfp", "ethics"],
+    "sources": [
+      "demo_cfp",
+      "ethics"
+    ],
     "archival_companion_proceedings": true,
     "concurrent_refereed_archival_venue_or_arr_review_allowed": false,
     "concurrent_journal_review_allowed": false,
@@ -134,9 +161,14 @@
     "address": null,
     "profile_id": null,
     "profile_active": null,
-    "video_url": null,
-    "installable_demo_url": null,
-    "title_abstract": "synchronized with in-progress main.tex on 2026-09-20; recheck completed main.tex and final PDF"
+    "video_url": "https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/Mini_Jev_Demonstration.mp4",
+    "installable_demo_url": "https://github.com/UpHash-Network/mini-jev/archive/refs/heads/research/eacl2027-demo.zip",
+    "title_abstract": "Synchronized with final review-draft PDF and main.tex; 153-word abstract"
   },
-  "actions_not_taken": ["external submission", "account creation", "email sending", "reviewer consent on behalf of author"]
+  "actions_not_taken": [
+    "external submission",
+    "account creation",
+    "email sending",
+    "reviewer consent on behalf of author"
+  ]
 }

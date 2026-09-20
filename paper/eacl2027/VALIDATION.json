@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-20T11:24:08.244371+00:00",
+  "status": "prepared_for_human_author_review_not_submitted",
+  "author": {
+    "name": "Yuki Oshio",
+    "affiliation": "UPHASH Inc.",
+    "email": "oshio@uphash.net",
+    "count": 1,
+    "confirmed_by_user": true
+  },
+  "evidence_revision": "47aaf5a9ae78b1385ba6044917865afc56a9b969",
+  "source_url": "https://github.com/UpHash-Network/mini-jev/tree/47aaf5a9ae78b1385ba6044917865afc56a9b969",
+  "artifacts": {
+    "EACL2027_Mini_Jev_Draft.pdf": {
+      "bytes": 208729,
+      "sha256": "0fc182d22514f07347e3b81cf6181a587fc66c299605e4df396ea07410ab63ba"
+    },
+    "Mini_Jev_Demonstration.mp4": {
+      "bytes": 2975547,
+      "sha256": "87884e9866ecbfc1baa5f86cd839cab69fa4e127e9f84f0d86872d9a36bb32bf"
+    },
+    "main.tex": {
+      "bytes": 23208,
+      "sha256": "0bf3d35ebf8d1435f95523bd35f1b1533b2b9c897b8e1b993c74e32ffa4adf8a"
+    },
+    "references.bib": {
+      "bytes": 5977,
+      "sha256": "dc32a1a824364c3c6cff5b2cc591ecb213e4c8730f4a086e722f643f5b65330e"
+    },
+    "figures/demo-overview.png": {
+      "bytes": 123956,
+      "sha256": "59e51e58365d8fd1445c40e0e4ea5dd9fbd7035e6907e7d3d7bb0314d7ea7926"
+    }
+  },
+  "pdf": {
+    "pages": 7,
+    "main_content_ends_on_page": 6,
+    "references_begin_on_page": 6,
+    "a4": true,
+    "two_columns": true,
+    "font_pt": 11,
+    "review_line_and_page_numbers": true,
+    "author_visible": true,
+    "abstract_words": 153,
+    "all_15_fonts_embedded": true,
+    "overfull_boxes": 0,
+    "undefined_citations_or_references": 0,
+    "visual_review": "All seven pages rendered and inspected; final first and sixth pages rechecked after publication-link edits."
+  },
+  "video": {
+    "duration_seconds": 135.0,
+    "codec": "h264",
+    "dimensions": [
+      1280,
+      920
+    ],
+    "audio_tracks": 0,
+    "captions": "Original English panels beneath live browser recording",
+    "full_decode_passed": true,
+    "representative_scene_frames_inspected": 6,
+    "live_examples": 2,
+    "prediction_substitution": false
+  },
+  "demo": {
+    "cpu_integration_tests_passed": 8,
+    "independent_ai_code_review": "No critical or high findings",
+    "desktop_and_mobile_browser_checked": true,
+    "browser_script_errors": [],
+    "source_copy_smoke": {
+      "separate_directory": true,
+      "cpu_tests_passed": 8,
+      "real_model_request_completed": true,
+      "typed_answers": {
+        "routing": {
+          "type": "choice",
+          "label": "billing",
+          "choice": "billing"
+        },
+        "urgent": {
+          "type": "noul",
+          "label": "true",
+          "noul": 0.999730808961429
+        },
+        "priority": {
+          "type": "score",
+          "label": "2",
+          "score": 1.9993062105465975
+        }
+      },
+      "horizontal_overflow": false,
+      "scope": "Separate source copy and fresh bridge process using the existing verified native runtime and resident model on the same machine. Full native rebuild/model download on a new machine was not repeated."
+    }
+  },
+  "public_access_checks": [
+    {
+      "url": "https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/EACL2027_Mini_Jev_Draft.pdf",
+      "http_status": 200,
+      "bytes": 208729,
+      "sha256": "0fc182d22514f07347e3b81cf6181a587fc66c299605e4df396ea07410ab63ba",
+      "matches_local": true,
+      "authenticated": false
+    },
+    {
+      "url": "https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/Mini_Jev_Demonstration.mp4",
+      "http_status": 200,
+      "bytes": 2975547,
+      "sha256": "87884e9866ecbfc1baa5f86cd839cab69fa4e127e9f84f0d86872d9a36bb32bf",
+      "matches_local": true,
+      "authenticated": false
+    },
+    {
+      "url": "https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/demo/README.md",
+      "http_status": 200,
+      "bytes": 6859,
+      "sha256": "3f273bbf3dd68923c20d8fc8c5158fec4c2b95298cdb02f36b266e153ea2d8d6",
+      "matches_local": true,
+      "authenticated": false
+    },
+    {
+      "url": "https://github.com/UpHash-Network/mini-jev/tree/research/eacl2027-demo",
+      "http_status": 200,
+      "authenticated": false
+    },
+    {
+      "url": "https://github.com/UpHash-Network/mini-jev/archive/refs/heads/research/eacl2027-demo.zip",
+      "http_status": 200,
+      "authenticated": false,
+      "all_tracked_files_match": true,
+      "file_count": 376,
+      "sha256": "c085e26a7bc027fddc1e0066eb03ed5e37dc8b419a36e9acaad3159c0d2a640e"
+    }
+  ],
+  "public_access_checked_at_revision": "47aaf5a9ae78b1385ba6044917865afc56a9b969",
+  "release_hygiene": {
+    "schema_version": 1,
+    "passed": true,
+    "files_scanned": 376,
+    "bytes_scanned": 133799941,
+    "findings": [],
+    "scope": "Static release hygiene only. Not a comprehensive secret detector, legal review, or model-quality test."
+  },
+  "scientific_review": {
+    "citations_verified": 15,
+    "reviewers": "AI agents; not human peer review",
+    "new_scientific_experiment_claimed_for_two_english_demo_examples": false,
+    "existing_matched_study_changed": false
+  },
+  "remaining": [
+    "Human author critical review and final approval of exact materials",
+    "Active OpenReview profile and authenticated form inspection",
+    "Reviewer nomination consent, conflicts, overlap and actual submission declarations",
+    "Venue submission and receipt verification"
+  ],
+  "full_submission_ready": false,
+  "venue_submission_performed": false
+}

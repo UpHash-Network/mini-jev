@@ -57,7 +57,7 @@ Keywords候補（フォームに欄がある場合のみ）：typed decisions; l
 
 **ライセンス：** Project-authored code/local evaluation material: MIT. Third-party models, runtime components, and external benchmark material retain their respective licenses; JGLUE/JCoLA-derived records follow the repository's CC BY-SA notices. Model weights and benchmark source text are not bundled with the source release. 配布物には既存のライセンス・noticeを保持している。
 
-**評価上の限界：** 1モデル・1端末・1セッション、公開devの事前学習混入不明、同じタスクfamily内の依存、AIによるlocalデータ作成、確率指標のタスク依存を明記する。
+**評価上の限界：** 1モデル・1端末、matched比較は1セッション、公開devの事前学習混入不明、同じタスクfamily内の依存、AIによるlocalデータ作成、確率指標のタスク依存を明記する。
 
 ## 本人の確定が必要な情報
 
