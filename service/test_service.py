@@ -306,15 +306,17 @@ class HTTPTests(unittest.TestCase):
     def _assert_capacity_recovers(self, server, engine):
         # Response receipt and handler teardown can happen on different CPUs.
         # Capacity must return promptly after the occupied request completes.
+        # Probe with the target request itself: a successful health request
+        # would occupy the only slot until its own handler finishes tearing down.
         deadline = time.monotonic() + 1
         while True:
-            status, _ = request(server, method="GET", path="/health")
+            status, body = request(server)
             if status == 200 or time.monotonic() >= deadline:
                 break
             self.assertEqual(status, 503)
+            self.assertEqual(body["error"]["code"], "busy")
             time.sleep(0.005)
         self.assertEqual(status, 200)
-        self.assertEqual(request(server)[0], 200)
         self.assertEqual(len(engine.calls), 2)
 
     def test_connection_rejection_drains_split_headers_and_body(self):
