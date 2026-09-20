@@ -1,10 +1,10 @@
 # Reddit release draft
 
-Status: not posted. Intended venue to investigate: r/LocalLLaMA. Check the current community rules, self-promotion policy, and available flair before posting. The repository URL below is an intended target until public access has been verified.
+Status: not posted. Recommended first venue: r/MachineLearning, with the `[P]` title tag and Project flair if available. This is a technical project discussion, not a research-paper announcement. Check the current posting rules and available flair at submission time. See [POSTING_PLAN.md](POSTING_PLAN.md) for the community-specific reasoning and official rule links. The repository transfer to UpHash-Network is complete and public access to the URL below has been verified. Organization ownership does not imply an institutional research affiliation.
 
 ## Title
 
-I built a local typed-decision API from frozen Qwen logits, with 2,400 Japanese eval items and a failed head-tuning experiment
+[P] Mini Jev: typed decisions from frozen Qwen logits, with 2,400 Japanese eval items and a failed head-tuning experiment
 
 ## Body
 
@@ -28,6 +28,6 @@ The probabilities are conditional on the allowed candidate tokens. They are not 
 
 The source release requires building the pinned native runtime; it does not include model weights or prebuilt native binaries. The current native path is tested on Apple Silicon/macOS, and the training guide separately lists its dependencies and tested devices. Coding, question authoring, checking, and documentation were developed with AI agents under my direction.
 
-Repository: https://github.com/yuki-oshio/mini-jev
+Repository: https://github.com/UpHash-Network/mini-jev
 
 The README links the technical note, raw results, data/model cards, and training guide. I would particularly appreciate suggestions for **external decision benchmarks** and a fair **same-model constrained-generation comparison**. Those are the next experiments needed before making a stronger research claim.

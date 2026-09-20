@@ -7,7 +7,7 @@ authors:
     given-names: "Yuki"
     website: "https://github.com/yuki-oshio"
 abstract: "A local typed-decision API, reusable residual-head training workflow, and transparent empirical evaluation. The measured native configuration uses a frozen language model; it is not a reproduction of TypeSafe Jev or RLCD."
-repository-code: "https://github.com/yuki-oshio/mini-jev"
+repository-code: "https://github.com/UpHash-Network/mini-jev"
 license: MIT
 keywords:
   - language-models
