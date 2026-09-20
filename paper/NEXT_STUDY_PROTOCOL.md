@@ -1,6 +1,8 @@
-# Next controlled study: protocol draft
+# Research extensions and the historical planning protocol
 
-Status: designed after inspecting the published local suite and its retrospective analysis. This is **not** a preregistration of those results. Before new confirmatory inference, freeze a completed configuration and input manifest with hashes and archive the timestamped protocol. The external JNLI pilot has its own earlier, before-inference local manifest; do not retroactively call this document its registration.
+The v0.2 matched study now has its own frozen specification in `matched_study/PROTOCOL.json`, selection and schedule in `matched_study/preparation/`, and separately licensed external-data preparation in `external_expanded/`. Those files define the executed experiment. The text below preserves the broader v0.1 planning scope, including future extensions; it must not be read as the preregistration of v0.2 or as a claim that every proposed experiment was performed. In particular, v0.2 uses a disclosed fixed computation budget, one backbone and device, seven warm-ups per mode, native tie reporting, and label-only HTTP functionality. It does not test learned-head generalization.
+
+Historical planning status: designed after inspecting the published local suite and its retrospective analysis. This is **not** a preregistration of those results. Before new confirmatory inference, freeze a completed configuration and input manifest with hashes and archive the timestamped protocol. The external JNLI pilot has its own earlier, before-inference local manifest; do not retroactively call this document its registration.
 
 ## Research question and falsifiable expectations
 
@@ -55,4 +57,4 @@ Select abstention thresholds using only designated development/calibration data 
 | Practical typed-decision artifact | Runnable source, licenses, model/runtime pins, valid response checks, disclosed failures |
 | Generalized empirical finding | More than one dataset type, backbone, and measurement environment as applicable |
 
-The current draft supports the artifact claim and qualified observations. An empirical workshop or systems demonstration is a plausible format once the core missing comparisons are complete; no venue acceptance, deadline, or novelty guarantee is implied. Final venue choice should be based on the resulting contribution and current official call for papers, rather than adapting claims to a desired title.
+The v0.1 draft supported the artifact claim and qualified observations; v0.2 adds the controlled readout and external-task study specified separately. An empirical workshop or systems demonstration is a plausible format, while broader learning or hardware generalization would need the extensions above; no venue acceptance, deadline, or novelty guarantee is implied. Final venue choice should be based on the resulting contribution and current official call for papers, rather than adapting claims to a desired title.

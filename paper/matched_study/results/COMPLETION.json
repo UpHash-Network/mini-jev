@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-09-20T08:05:25.521658+00:00",
+  "measured_calls": 4050,
+  "counts": {
+    "json": 1350,
+    "direct": 1350,
+    "one_token": 1350
+  },
+  "failures": 0,
+  "warmup_calls": 21,
+  "predictions_sha256": "ba76fa7b67c0711743e66484ea6f42fc1ebdbb248a8581c696a912ce7c9fe7a9"
+}

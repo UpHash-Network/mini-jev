@@ -1,6 +1,8 @@
 # Preserve generated artifact bytes and CSV's standard CRLF record endings.
 *.pdf binary
 analysis/*.csv -text whitespace=cr-at-eol
+matched_study/*.csv -text whitespace=cr-at-eol
 figures/*.svg whitespace=-blank-at-eol
 # Keep the pinned upstream license byte-identical, including its final blank line.
 external_pilot/LICENSE-DATA.txt whitespace=-blank-at-eof
+external_expanded/LICENSE-*.txt whitespace=-blank-at-eof

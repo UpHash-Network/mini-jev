@@ -4,7 +4,7 @@
 
 This repository contains project-authored Japanese decision tasks for implementation checks, model development, and a final local acceptance run. The project owner is Yuki Oshio. AI agents wrote the generation code, individually authored examples, and performed peer checking under the owner's direction. There was no independent human-expert annotation study.
 
-Original authored data is released under the repository's MIT license. Model weights and third-party resources are governed by their own licenses. The original local-suite release did not import an external public benchmark and does not claim representative coverage of real customer data. The later working-paper branch adds a separate JNLI pilot, described below; it does not change the local suite or its historical results.
+Original authored data is released under the repository's MIT license. Model weights and third-party resources are governed by their own licenses. The original local-suite release did not import an external public benchmark and does not claim representative coverage of real customer data. The working paper adds a separate JNLI pilot and a v0.2 study using three further public datasets, described below; these do not change the local suite or its historical results.
 
 ## Primary release: acceptance v2
 
@@ -70,3 +70,23 @@ The original final JSONL SHA-256 is `9c1309168c407360b22f64af771784a216874ad4b12
 ## External pilot added for the working paper
 
 `paper/external_pilot/` records a fixed 300-item, 100-per-class sample of JGLUE JNLI v1.3 public development data. It is Choice-only, externally authored, and not a hidden test or a full benchmark run. The unchanged prompting configuration achieves 243/300 correct. Data provenance, same-sentence overlap, sampling, runtime hashes, before-inference local freeze records, and limits are in the [pilot data and run description](paper/external_pilot/README.md). Original sentences are downloaded outside the source repository and are not redistributed. Dataset-derived selection and result records use **CC BY-SA 4.0**, not the project MIT license; runner/test source remains MIT. Do not combine this pilot with the 2,400-item local suite into a single accuracy claim.
+
+## Expanded external data and matched study for v0.2
+
+The [expanded preparation](paper/external_expanded/README.md) fixes 600 additional public-development examples before model inference. All selected examples have now been evaluated in the completed v0.2 comparison. The [analysis](paper/matched_study/REPORT.md) reports task-specific metrics and full coverage; repeated/multi-mode requests do not increase the number of distinct questions.
+
+| Dataset | Selected examples | Decision type | Evaluation target |
+|---|---:|---|---|
+| JCoLA | 200: 100 in-domain and 100 out-of-domain | Noul | Binary acceptability; MCC primary, with confusion counts and accuracy |
+| JSTS | 200 | Score | Original continuous similarity score in [0,5]; expected-score MAE primary |
+| JCommonsenseQA | 200 | Choice | Original correct alternative; accuracy primary |
+
+Selection uses fixed ID-hash ordering within each source file, with no gold balancing or filtering by content, difficulty, length, or model results. JSTS gold scores are not rounded into stage classes: no stage-label accuracy or categorical NLL/Brier is invented for these continuous targets. The generation comparison additionally measures hard-selected-stage MAE, separately from expected-score MAE.
+
+Together with the earlier JNLI pilot, these cover four named public datasets. They do not constitute four independent source populations: JSTS and JNLI share caption/image origins, and the [overlap audit](paper/external_expanded/AUDIT.json) records cross-task dependence. JCoLA source groups and exact-question groups for JCommonsenseQA are limited proxies for further correlations. The dataset names “in-domain” and “out-of-domain” do not establish that either source is unseen by the base model. Pretraining and post-training overlap are unknown.
+
+The [matched study](paper/matched_study/README.md) also selects 150 existing local questions: three from each of 45 generated families and five individually AI-authored items per decision type. It uses five repetitions per local item and one per external item, each under direct readout, one-token constrained decoding, and grammar-constrained JSON generation. Repeated requests are not new semantic examples. The local subset is public regression material; the external samples are public development data. Do not pool their tasks, repetitions, or distinct target types into a common accuracy.
+
+Only IDs, hashes, gold/group metadata, protocols, and derived records are distributed. Source texts and transformed external inference questions stay in a cache outside the repository. Inference receives only `type`, `state`, `instructions`, and `criteria`; labels and provenance are withheld from the model input. Compiled binaries and model weights are separate downloads/builds.
+
+External dataset-derived metadata, selection, audits, predictions, results, and task protocols/rubrics retain **CC BY-SA 4.0**, with JGLUE or JCoLA attribution as applicable. Mixed local/external prediction or selection files carry this data notice; the original local data retain MIT. Preparation, inference, analysis, tests, and build code remain MIT. See [NOTICE.md](NOTICE.md) and the dataset-specific README/license copies for the full boundaries and transformations.

@@ -1,9 +1,17 @@
-# Working draft: claim-to-evidence map
+# Empirical draft v0.2: claim-to-evidence map
 
 This map distinguishes completed observations from unsupported extensions. It is an editorial control, not an independent replication or peer review.
 
 | Claim in the draft | Evidence | Permitted interpretation / limitation |
 |---|---|---|
+| All 4,050 requests complete, zero invalid outputs | `matched_study/results/COMPLETION.json`, `SUMMARY.json`, `INDEPENDENT_AUDIT.json` | 750 unique items; repeated calls are not new semantic examples |
+| Direct/one-token logits and labels agree in all 1,350 pairs | `matched_study/parity.csv`, full native traces and independent audit | Same prefix and candidates, greedy selection, no observed ties; not a new algorithm |
+| One-token minus direct +0.090 ms [-0.748, +0.845] | Five repetitions/item; 10,000 whole-group bootstrap over 55 groups | Median of 150 paired item means; conditional single-session interval, no formal equivalence claim |
+| JSON minus direct +160.296 ms [138.119, 177.059] | Same measured response schema and timing boundary | JSON prompt differs; instrumented system comparison, not pure sampling overhead or universal speed claim |
+| JCoLA MCC 0.5708 and accuracy 86% | External 200-item fixed public-dev sample | Always-true accuracy 79%; in-domain direct accuracy is below its 88% constant baseline; no full-dev result |
+| JCommonsenseQA direct 190/200, JSON 191/200 | Fixed five-choice external sample | One-item descriptive difference, not proven general JSON advantage |
+| JSTS expected MAE 0.5065; hard MAE 0.548 direct versus 0.565 JSON | Continuous gold, stored logits and independent regression calculation | Expected output and hard stage differ; JSON has no comparable probability vector |
+| External calibration effects vary by metric and split | `matched_study/external_metrics.csv` | JCQA ECE and JCoLA out-of-domain NLL increase even though other point estimates improve |
 | 93.25% local top-label accuracy | `../results/native-acceptance/predictions.jsonl`, `summary.json`; recomputed in `analysis/analysis.json` | Self-authored local-suite performance, not broad domain accuracy |
 | All 2,400 outputs passed checked structure/range conditions | Historical summary and test records | Structural correctness, not semantic correctness |
 | 45-family macro accuracy 93.02%, interval 89.91-95.74% | `analysis/analyze_frozen_run.py`, seed and 20,000 replicates in `analysis.json` | Conditional family-reweighting interval; no external-population coverage claim |
@@ -19,4 +27,4 @@ This map distinguishes completed observations from unsupported extensions. It is
 | Earlier residual head underperforms its frozen control | `../results/head/REPORT.md`, 67/96 versus 73/96 | Separate small model and data; no universal anti-fine-tuning conclusion |
 | Artifact is reproducible from pinned source | Model/runtime manifests, source, build and training instructions | Public rebuild is not necessarily historical byte identity |
 
-The paper does not currently have evidence for a speedup against a fair generation baseline, an externally validated Noul/Score result, a human-audited new test set, or a repeatable improvement from output-head learning. These are explicit future experiments in `NEXT_STUDY_PROTOCOL.md`.
+The completed study supports a measured comparison against the specified native one-token and JSON implementations and external binary/continuous-score observations. It does not establish a speed advantage over all generators, unseen-pretraining generalization, a human-audited new local test set, or a repeatable improvement from output-head learning. Broader model/device replication and learning studies remain extensions in `NEXT_STUDY_PROTOCOL.md`.

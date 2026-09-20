@@ -1,8 +1,8 @@
-# Follow-up study protocol (planned, not completed)
+# Historical follow-up study outline
 
 Research question: when an open causal language model is used as a typed decision function, how do readout, lightweight training, and output generation affect task accuracy, latency, and probability quality?
 
-This protocol describes future work. The current release does not claim these comparisons have been run.
+This outline was written for the initial technical release. The v0.2 paper has a separate executable specification in `matched_study/PROTOCOL.json` and external preparation in `external_expanded/`. Those records, rather than this broad outline, define the new measured study. The prompt ablations, human-audited new families, and replicated head-training experiments below remain future extensions; their completion is not implied by the v0.2 readout study.
 
 ## Matched comparisons
 

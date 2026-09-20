@@ -33,12 +33,12 @@ def inline(text):
 
 def build(source, output):
     content = source.read_text(encoding='utf-8')
-    if re.search(r'<!--\s*(ANALYSIS_RESULTS|CALIBRATION_ANALYSIS|EXTERNAL_RESULTS|REFERENCES)', content):
+    if re.search(r'<!--', content):
         raise ValueError('Unfilled manuscript section; refusing to produce a finished PDF')
     doc = SimpleDocTemplate(str(output), pagesize=A4, leftMargin=22*mm,
                             rightMargin=22*mm, topMargin=20*mm, bottomMargin=20*mm,
                             title='Typed Decisions from Frozen Language Models: Readout, Calibration, and Transfer',
-                            author='Yuki Oshio', subject='Working paper v0.1; not peer reviewed or submitted')
+                            author='Yuki Oshio', subject='Empirical paper v0.2; not peer reviewed or submitted')
     base = getSampleStyleSheet()
     styles = {
         'body': ParagraphStyle('paperbody', fontName='Times-Roman', fontSize=10.2,
@@ -133,7 +133,7 @@ def build(source, output):
         canvas.line(22*mm,15*mm,A4[0]-22*mm,15*mm)
         canvas.setFillColor(colors.HexColor('#52616F'))
         canvas.setFont('Helvetica',7.5)
-        canvas.drawString(22*mm,11*mm,'Mini Jev | Working paper v0.1 | Not peer reviewed')
+        canvas.drawString(22*mm,11*mm,'Mini Jev | Empirical paper v0.2 | Not peer reviewed')
         canvas.drawRightString(A4[0]-22*mm,11*mm,str(document.page))
         canvas.restoreState()
 

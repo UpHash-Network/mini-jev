@@ -2,13 +2,13 @@
 
 **Yuki Oshio**
 
-Working paper v0.1 | September 20, 2026 | Not peer reviewed or submitted
+Empirical paper draft v0.2 | September 20, 2026 | Not peer reviewed or submitted
 
 Code and data: [UpHash-Network/mini-jev](https://github.com/UpHash-Network/mini-jev)
 
 ## Abstract
 
-Applications often require a categorical decision or an ordered score rather than generated prose. We study a reproducible local implementation that turns selected next-token logits of a frozen language model into typed responses. The evaluated system uses quantized Qwen3.6-35B-A3B, explicit single-token label checks, repeated task input, and deterministic response construction. On 2,400 self-authored Japanese questions it obtains 93.25% top-label accuracy; warm engine latency has a 379.1 ms 95th percentile for the 2,291 complete inputs of at most 512 tokens. These measurements are not evidence of a speed advantage over constrained generation. We derive the exact distributional equivalence to single-token masked decoding under matched conditions and examine the distinction between output validity and semantic correctness. A retrospective family-level analysis exposes substantial task heterogeneity. A separately specified, class-balanced 300-item JNLI public-development pilot obtains 81.0% accuracy without result-guided prompt tuning; contradiction recall is 61%. Temperature scaling produces small in-suite probability-loss changes but worsens ordinal expectation error, while an earlier residual-head experiment lowers accuracy. The contribution is an auditable empirical artifact and a set of qualified observations about using language models as decision functions; no new classification objective or replication of Jev's training method is claimed.
+Language models can return typed decisions by normalizing a finite set of next-token logits. This established technique removes the need to generate a structured answer, but does not necessarily outperform a matched one-token generator. We study that distinction with a frozen Qwen3.6-35B-A3B Q4_K_M model on one Apple M5 Pro. A locally frozen protocol compares direct readout, native masked one-token selection, and grammar-constrained JSON over 4,050 requests: 150 local items repeated five times and 600 external Japanese examples. All 1,350 direct/one-token pairs have identical candidate logits and labels. On the 150 local items, the median item-mean latency difference (one-token minus direct) is +0.090 ms, with conditional 95% family/tag interval [-0.748, +0.845]; JSON adds +160.296 ms [138.119, 177.059] under a serialization-specific prompt. External direct readout obtains 0.5708 MCC on JCoLA, 95.0% accuracy on JCommonsenseQA, and 0.5065 expected-score MAE on JSTS. JSON does not consistently improve quality. Historical temperature scaling has metric- and task-dependent effects. Together with a disclosed 2,400-item local evaluation and an earlier 300-item JNLI pilot, these measurements distinguish output validity, semantic quality, and probability utility. The findings support a reproducible single-model systems case study, not a new learning algorithm or a general speed guarantee.
 
 ## 1. Introduction
 
@@ -16,9 +16,9 @@ A workflow may need to choose a route, evaluate a condition, or assign an ordere
 
 We investigate this design in Mini Jev, a local, source-available implementation inspired by the public Choice, Noul, and Score interface of TypeSafe Jev [10]. The inspiration is an interface, not an architectural reproduction. We do not implement Jev's reported reinforcement-learning method, shared-state question processing, or proprietary model. We do not compare against Jev's service. The project's initial hypothesis was that a small output-stage update might improve a frozen model's decisions. An early experiment did not support that hypothesis, and the final evaluated configuration uses an unchanged backbone and vocabulary projection.
 
-This paper asks three narrower questions. First, what quality and operational behavior does an explicit candidate-logit interface exhibit on a disclosed local suite? Second, how do temperature scaling and a small residual head affect different decision metrics? Third, how does the frozen interface transfer to an externally authored Japanese inference task? A separate systems comparison against generation remains necessary before making relative speed claims.
+This paper asks three narrower questions. First, how does direct readout compare with a matched one-token sampler and grammar-constrained JSON generation in prediction and complete-request latency? Second, what task quality and probability behavior does the frozen interface exhibit across local questions and externally authored Japanese categorical, binary, and continuous-score tasks? Third, how does a pre-existing temperature transformation transfer across these metrics? The separate, earlier residual-head experiment records the negative result of the motivating learning hypothesis. All three new inference conditions run through the same measured local HTTP interface.
 
-Our contributions are (1) a released implementation with token-boundary validation, deterministic typed outputs, model and runtime provenance, and reproducible prediction records; (2) a transparent evaluation distinguishing template-correlated regression performance from external transfer; and (3) probability and negative training results that constrain stronger interpretations. The basic readout is established practice. The equivalence argument below explains why comparing it with matched single-token constrained decoding cannot, by itself, demonstrate a new predictive method.
+Our contributions are (1) a reproducible three-path inference harness with common timing boundaries, actual native sampling, output-token accounting, and provenance; (2) paired measurements separating the identical one-token distribution from structured-answer generation; and (3) external categorical, binary, and continuous-score evaluations that distinguish schema guarantees, task quality, and probability utility. The basic readout is established practice. The equivalence argument below explains why comparing it with matched single-token constrained decoding cannot, by itself, demonstrate a new predictive method.
 
 ## 2. Related work
 
@@ -28,7 +28,7 @@ Grammar-constrained decoding restricts language-model outputs to valid structure
 
 Prompt format and verbalizers can introduce biases. Contextual calibration studies prompt-induced label preferences [4], while work on multiple-choice selection bias documents sensitivity to option positions [5]. Mini Jev sorts Choice keys to make dictionary insertion order irrelevant. This is a software property; it neither removes model position bias nor proves robustness to renaming semantic keys. Prompt repetition is also prior work [6]. Our implementation repeats task content and incurs the resulting input-token cost.
 
-Temperature scaling is a standard post-processing method for probability calibration [7]. A scalar temperature preserves the argmax but changes confidence and expected ordinal values. We therefore report several metrics rather than using an improvement in negative log likelihood (NLL) as a synonym for improved decisions. We use JGLUE's JNLI task for an external transfer pilot [8]. It is public development data, so its role here is external authorship, not an assertion that the pretrained model has never encountered it.
+Temperature scaling is a standard post-processing method for probability calibration [7]. A scalar temperature preserves the argmax but changes confidence and expected ordinal values. We therefore report several metrics rather than using an improvement in negative log likelihood (NLL) as a synonym for improved decisions. We use JGLUE's JNLI, JSTS, and JCommonsenseQA tasks [8], and JCoLA's grammatical acceptability judgments [11], for external transfer measurements. These are public development data; external authorship does not establish that the pretrained model has never encountered them.
 
 ## 3. Typed readout and its relation to generation
 
@@ -62,7 +62,7 @@ This identity is an explanatory property, not a novel theorem. A constrained gen
 
 ### 3.3 Runtime and probability semantics
 
-The native helper computes the full vocabulary projection and gathers selected logits. It does not compute only selected output rows. One llama_decode API call processes each question; this describes API accounting, not GPU kernel count or constant computation. The runtime resets model state between questions. Requests containing several questions are evaluated sequentially, with no shared prefill or answer cache. Complete inputs above 2,048 tokens are rejected rather than truncated.
+The native helper computes the full vocabulary projection and gathers selected logits. It does not compute only selected output rows. Direct readout and the matched one-token condition use one llama_decode API call per question; JSON generation uses additional calls. This describes API accounting, not GPU kernel count or constant computation. The runtime resets model state between questions. Requests containing several questions are evaluated sequentially, with no shared prefill or answer cache. Complete inputs above 2,048 tokens are rejected rather than truncated.
 
 The application constructs a JSON response from validated numeric values. Output construction and input validation can enforce schema and range constraints, but they do not enforce semantic correctness. Nor does candidate normalization measure how much unrestricted vocabulary probability supports the response format. An existing numerical fixture assigned roughly 0.01% of unrestricted vocabulary mass to the selected Score digits even though their renormalized probabilities summed to one. The entropy field and candidate probabilities should consequently not be treated as out-of-domain correctness guarantees.
 
@@ -90,15 +90,95 @@ The primary condition uses T=1. A secondary transfer condition applies the histo
 
 Original dataset text is downloaded into a local work directory rather than redistributed in this paper's repository. The release records source attribution, IDs, input hashes, prediction records, scripts, and the applicable upstream license. Public dev data and before-inference local manifests should not be described as private held-out data or an independently registered study.
 
-### 4.4 Metrics and retrospective analysis
+### 4.4 Additional external tasks
 
-Accuracy compares the highest-probability candidate with the gold label. Score accuracy is stage-label accuracy, not rounded expectation accuracy. Score mean absolute error (MAE) compares the continuous expected stage with the gold stage. We report NLL, multiclass Brier score (sum across classes), and ten equal-width-bin expected calibration error (ECE).
+We freeze 600 further public-development examples before inference: 200 JCommonsenseQA five-choice questions, 200 JSTS sentence-similarity pairs, and 200 JCoLA acceptability judgments. JCoLA contributes 100 examples from each official in-domain and out-of-domain validation split. Within each source file, selection uses a fixed ID-hash ordering without gold balancing, difficulty or length filtering, replacement, or outcome-based changes. The count is a computation budget rather than a statistical power calculation. New task instructions are fixed before inference; this is zero-shot task formatting, not a claim that no task-specific instruction was written.
+
+JCoLA maps published binary labels to Noul false/true. Its selected examples contain 158 acceptable and 42 unacceptable sentences, so an always-acceptable rule achieves 79% accuracy. We predeclare Matthews correlation coefficient (MCC) as the primary metric and report both official domains separately; accuracy, balanced accuracy, and confusion counts provide context. The original domain names refer to the dataset's literature-source split, not proven unseen domains for Qwen.
+
+JSTS uses six rubric anchors numbered 0-5, paraphrased from the official annotation guidelines. Its original continuous reference is preserved; 137/200 selected references are nonintegers. Primary MAE compares the probability-weighted expected stage with this continuous gold score. Secondary RMSE, Pearson correlation, and tie-aware Spearman correlation retain the same gold. For like-for-like label-only comparisons we also report the error of the selected integer stage for each mode. We do not invent rounded gold labels, classification accuracy, or a categorical NLL for this task.
+
+JCommonsenseQA preserves its original five answer options and order through semantic keys option_0 through option_4. Only task inputs reach the model; IDs, gold, dataset source, and grouping metadata are excluded. Primary accuracy and probability diagnostics describe this fixed subset, not an official full-dev leaderboard score.
+
+JSTS and JNLI share caption origins. Of the added JSTS rows, six share at least one sentence with the earlier JNLI sample, including three identical ordered sentence pairs; six rows also share a source image. The overlap is recorded, not removed after inspecting results. The new datasets have observable grouping proxies: bibliographic sources for JCoLA, shared sentence/image connected components for JSTS, and exact question hashes for JCommonsenseQA. These do not capture every semantic dependency. Dataset text remains outside the code repository; source commits, hashes, selected IDs, transformations, and licenses are released.
+
+### 4.5 Controlled readout and structured-generation experiment
+
+The comparison uses one resident model and a separate research helper, built against the same pinned llama.cpp revision and verified dynamic libraries. Production inference code remains unchanged. Every valid request clears KV and recurrent state. No candidate-projection optimization, prefix cache, concurrent request, or concurrent GPU workload is used. The runtime computes the full vocabulary projection in each mode.
+
+Direct readout gathers candidate logits, applies T=1 softmax, and returns the argmax. The one-token condition uses the exact same messages, assistant prefix, tokenization, candidate mapping, and prefill, constructs a full-vocabulary distribution with disallowed logits masked, and invokes llama.cpp's greedy sampler. It stops immediately after the selected label, without an unnecessary forward call to generate EOS. Both conditions compute and retain the candidate softmax for parity auditing; a minimal label-only implementation could omit this audit work. We evaluate greedy selection, not a stochastic sampling experiment. Exact ties are reported because direct candidate-order and native vocabulary-order tie-breaking can differ.
+
+The JSON condition uses the same state, instructions, candidate meanings, and task repetition. For Choice and Noul, the final response instruction requests a compact single-property JSON answer instead of a single letter. Score retains its numeric JSON instruction but no assistant JSON prefix is prefilled: the whole object is generated. A native GBNF grammar permits only an allowed answer value. Greedy autoregressive generation stops when a complete permitted object parses, with a 32-token cap and no additional EOS or terminal-token decode. Consequently, JSON is a controlled structured-answer system comparison, not an identical-prompt estimate of sampling overhead. Initial JSON-position logits are not represented as answer probabilities.
+
+Each mode receives the same question through a common loopback HTTP server and returns the same type-and-semantic-label response schema. Full numerical and token traces are kept server-side. Trace-file writes occur outside the measured client interval, but native audit serialization, subprocess pipe transfer, and Python parsing remain inside it. Timing starts before client JSON serialization and ends after HTTP response read and parsing. A persistent connection, TCP_NODELAY, serial workload, and identical Python server logic control transport differences. Native phase timers separately cover rendering, tokenization, reset, synchronized prefill, readout, sampler setup, sampling, further decode, and response preparation. This instrumented research wrapper is not a production-server or remote-network benchmark, and its latency differences are not pure sampler-overhead measurements.
+
+The local systems sample consists of 150 previously published questions: three ID-hash-selected items from each of 45 generation families, plus five individually AI-authored items per type. Each of the three types has 50 items. Five repetitions per local item and one per new external item produce 4,050 measured requests. Within each repetition, item order and each item's three condition orders are deterministically randomized. Seven synthetic Choice warm-ups per mode add 21 excluded requests. Repetitions measure same-session variability; they are not additional independent semantic examples. Model decode API calls are counted separately from requests.
+
+Before inference, manifests bind source, compiled helper, libraries, model, protocol, raw question-file hash, public selection, and full schedule. A synthetic native smoke test verifies both token alphabets and state recovery after an intentional generation-limit error. The study does not revise prompts or sampling after observing outcomes. Any failed selected request remains in the record; there is no substitution or silent truncation.
+
+The primary systems estimand is the median across local items of the per-item mean complete-request latency difference, one-token minus direct. The analogous JSON-minus-direct difference is secondary. A fixed-seed 10,000-replicate whole-family/tag bootstrap preserves all conditions, items, and repetitions within a sampled cluster. Its percentile interval is conditional on the selected observed groups and session, not a hardware-population guarantee. Local semantic metrics use the first repetition, with repeated-label stability reported separately. External metrics use their single observations and remain dataset-specific.
+
+### 4.6 Metrics and retrospective analysis
+
+For the historical local suite, accuracy compares the highest-probability candidate with its gold label. Local Score accuracy is stage-label accuracy, not rounded expectation accuracy; its MAE compares the continuous expected stage with the gold stage. In the matched experiment, label accuracy evaluates each mode's selected candidate on categorical tasks. NLL, multiclass Brier score (sum across classes), and ten equal-width-bin ECE are computed only where categorical gold and a candidate probability vector are available. JSON has no such vector. JSTS retains its continuous gold and regression metrics as specified in Section 4.4.
 
 The family-aware reanalysis was designed after publication of the local-suite outcomes and is explicitly retrospective. Generated-family macro accuracy gives equal weight to each of the 45 observed families. Resampling entire families preserves within-family dependence. The individually AI-authored source is analyzed separately and grouped by its recorded tags when included in a stratified descriptive analysis. Bootstrap intervals quantify sensitivity to reweighting observed groups; they are not confidence guarantees for unobserved domains. Paired temperature comparisons reuse the same sampled groups for both temperatures. No test-set confidence threshold is selected for deployment.
 
 ## 5. Results
 
-### 5.1 Local accuracy and task heterogeneity
+### 5.1 Matched readout and JSON generation
+
+All 4,050 scheduled requests complete with valid responses, with no HTTP failures or checked native-trace invariant violations. The run makes 11,322 measured llama_decode API calls; 21 excluded warm-up requests add 49 calls. All 1,350 paired direct/one-token observations have identical prompt hashes, token hashes, candidate IDs, labels, and candidate logits (maximum absolute difference zero; tolerance 1e-5). No exact maximum-logit tie occurs. This verifies the implemented greedy paths under the matched prefix, without establishing stochastic-sampling behavior or novelty of the readout.
+
+| Comparator minus direct | Median paired item-mean HTTP difference | Conditional 95% interval |
+|---|---:|---:|
+| One token | +0.090 ms | -0.748 to +0.845 ms |
+| JSON | +160.296 ms | +138.119 to +177.059 ms |
+
+The primary comparison supplies no evidence of a material latency advantage over the matched one-token implementation in this session. It is not a formal equivalence test with a predeclared practical margin. Intervals use 10,000 bootstrap draws of the 55 observed family/tag groups, retaining each item's five paired repetitions. They omit between-session and between-device uncertainty. The JSON contrast includes its changed format instruction, prefill length, grammar processing, and autoregressive completion, as well as the instrumented transport described in Section 4.5.
+
+| Local mode, 750 requests each | Mean HTTP | p50 HTTP | p95 HTTP |
+|---|---:|---:|---:|
+| Direct | 284.1 ms | 277.3 ms | 394.3 ms |
+| One token | 283.9 ms | 277.4 ms | 394.9 ms |
+| JSON | 447.9 ms | 437.0 ms | 594.2 ms |
+
+These request-level marginal summaries are distinct from the paired estimand. Local direct/one-token inputs contain 178-633 tokens; JSON inputs contain 192-630. Direct emits zero tokens and one-token emits one, but both use exactly one decode API call. JSON emits 5-8 tokens per local request (mean 6.21) and uses the same number of decode calls as emitted tokens. The native-phase and external-task latency tables are supplied with the analysis.
+
+![Figure 1. Local complete-request latency and paired differences. Each point is one item's mean over five repetitions; boxes show the median and interquartile range, with 1.5-IQR whiskers. All 150 items are displayed. These descriptive boxes are not the family-bootstrap intervals.](figures/matched_latency.png)
+
+On the local sample's first repetition, direct and one-token each classify 139/150 correctly, compared with 140/150 for JSON. By type, direct obtains 46/50 Choice, 48/50 Noul, and 45/50 Score; JSON obtains 48, 47, and 45. Every mode returns a stable label for all 150 items across five repetitions. This demonstrates within-session repeatability, not 750 independent quality examples or universal accuracy superiority of either format.
+
+### 5.2 Expanded external task results
+
+All 600 added external examples produce valid outputs in each mode. Direct and one-token have identical task metrics because their logits and labels agree exactly. The table keeps categorical quality and continuous-score error separate:
+
+| Task and metric | Direct | One token | JSON |
+|---|---:|---:|---:|
+| JCoLA, MCC (higher better) | 0.5708 | 0.5708 | 0.5160 |
+| JCoLA, correct / 200 | 172 | 172 | 164 |
+| JCommonsenseQA, correct / 200 | 190 | 190 | 191 |
+| JSTS, hard-stage MAE (lower better) | 0.5480 | 0.5480 | 0.5650 |
+
+JCoLA direct accuracy is 86.0%, compared with 79.0% for an always-acceptable rule on this sample. Balanced accuracy is 0.7803. Its confusion counts are 27 correctly rejected and 15 incorrectly accepted unacceptable sentences, and 145 correctly accepted and 13 incorrectly rejected acceptable sentences. Direct MCC is 0.3371 in-domain and 0.6610 out-of-domain; JSON MCC is 0.2134 and 0.6634, respectively. Each direct split accuracy is 86.0%; on the imbalanced in-domain subset, this is below the constant rule's 88.0% accuracy, illustrating why accuracy alone is insufficient. Against JSON, direct alone is correct on 11 examples and JSON alone on three. These are descriptive paired counts, without an IID significance claim.
+
+JCommonsenseQA accuracy is 95.0% for direct and 95.5% for JSON. All 190 direct-correct answers are also JSON-correct; the difference is one additional JSON-correct item. This fixed 200-item sample does not establish a general advantage of JSON or a full-benchmark score.
+
+For JSTS, the probability-weighted expected stage has MAE 0.5065, RMSE 0.6688, Pearson correlation 0.9192, and Spearman correlation 0.8892 at T=1. MAE divided by the full five-point scale is 0.1013. The same expectation is available from the one-token path's audited probability vector. Hard-stage MAE is 0.5480 for both primary paths and 0.5650 for JSON. Expected-score and hard-stage errors measure different outputs; JSON does not provide a comparable probability expectation, and no such vector is inferred from its hard answer.
+
+| External probability metric | T=1 | Historical local T |
+|---|---:|---:|
+| JCoLA NLL | 0.349097 | 0.327813 |
+| JCoLA Brier sum | 0.208520 | 0.204197 |
+| JCoLA ECE | 0.072539 | 0.051783 |
+| JCommonsenseQA NLL | 0.132425 | 0.131804 |
+| JCommonsenseQA Brier sum | 0.069600 | 0.066439 |
+| JCommonsenseQA ECE | 0.032618 | 0.035255 |
+| JSTS expected-score MAE | 0.506493 | 0.498362 |
+
+The pre-existing temperature reduces combined JCoLA NLL, Brier, and ECE, and slightly reduces JCommonsenseQA NLL/Brier while increasing its ECE. JCoLA out-of-domain NLL also increases slightly, from 0.2808 to 0.2815, despite the combined improvement. JSTS expected-score MAE decreases, unlike the local Score result in Section 5.4. No external temperature was fitted. These fixed-sample point estimates demonstrate why neither NLL improvement nor one dataset's transfer result should be generalized to every metric or domain.
+
+### 5.3 Local accuracy and task heterogeneity
 
 | Type or source | Correct / total | Accuracy |
 |---|---:|---:|
@@ -115,9 +195,9 @@ Generated-family macro accuracy is 93.02%. The aggregate conceals weaker familie
 
 Across 20,000 whole-family bootstrap replicates (fixed seed 2026092037), generated-family macro accuracy has a conditional 95% percentile interval of 89.91-95.74%. This interval describes reweighting the 45 observed families, not coverage for a new deployment population. The draws are not stratified by decision type, so the type mixture can vary. The wider range than an item-IID calculation would suggest is consistent with the observed heterogeneity.
 
-![Figure 1. Accuracy of the 45 generated task families, sorted after observing outcomes. Bars are descriptive; the dashed line is equal-family macro accuracy. The weakest families are named in the text.](figures/family_accuracy.png)
+![Figure 2. Accuracy of the 45 generated task families, sorted after observing outcomes. Bars are descriptive; the dashed line is equal-family macro accuracy. The weakest families are named in the text.](figures/family_accuracy.png)
 
-### 5.2 Temperature scaling is metric dependent
+### 5.4 Temperature scaling is metric dependent
 
 The separate local calibration split selected T=1.3489628825916533. Positive scalar temperature preserves top-label accuracy. Its effect on other metrics is mixed:
 
@@ -135,9 +215,9 @@ Paired whole-cluster resampling uses 45 generated families and 26 individually a
 
 Ranking local items by fitted maximum candidate probability gives an observed error rate of 17/1,920 (0.89%) at 80% coverage, compared with 162/2,400 (6.75%) when accepting every item. This is a retrospective descriptive curve, not a fitted or validated abstention policy. Two incorrect Score predictions have maximum candidate probability above 0.997, illustrating that high concentration does not prevent mistakes. No operational threshold is recommended from these results.
 
-![Figure 2. Descriptive local risk versus coverage when ranking by maximum candidate probability. Exact ties are accepted together. The curves do not supply a deployment risk guarantee.](figures/risk_coverage.png)
+![Figure 3. Descriptive local risk versus coverage when ranking by maximum candidate probability. Exact ties are accepted together. The curves do not supply a deployment risk guarantee.](figures/risk_coverage.png)
 
-### 5.3 External transfer
+### 5.5 External transfer
 
 The frozen zero-shot interface correctly classifies 243/300 selected JNLI items (81.0%), with macro F1 0.8101. The result is a class-balanced pilot, not a full-dev leaderboard score. Each class has 100 examples:
 
@@ -163,7 +243,7 @@ All complete inputs contain 406-476 tokens. Warm single-question wall-clock late
 
 The 81.0% external result and 93.25% local result are from different task distributions, label counts, and sampling schemes. Their difference is not an estimate of a controlled domain-shift effect, and we do not pool the datasets into an overall score.
 
-### 5.4 Latency and operational scope
+### 5.6 Historical latency and operational scope
 
 | Complete input length | Items | Warm p50 | Warm p95 | Maximum |
 |---|---:|---:|---:|---:|
@@ -172,9 +252,9 @@ The 81.0% external result and 93.25% local result are from different task distri
 
 These historical timings measure a real warm single-question engine call, including complete input content and repetition. They are not cached-feature timings or end-to-end HTTP measurements. The 512-token subset is not the full suite. A separate integration check measured roughly 9.18 seconds for startup including integrity checks with OS file cache already warm, and approximately 579-582 ms for a three-question HTTP request. The latter is a whole-request observation and is not divided by three to claim single-request latency.
 
-There is no matched generation baseline, repeated-device study, or throughput comparison. In particular, the distributional identity in Section 3 neither proves equal implementation overhead nor a speed advantage. The next systems experiment must hold model, quantization, input template, candidate semantics, cache policy, and timing boundaries fixed.
+These historical timings precede the matched experiment in Section 5.1 and are not interchangeable with its client-visible research-HTTP measurements. No repeated-device study or concurrent-throughput comparison is included. The distributional identity in Section 3 does not, by itself, establish equal implementation overhead or a speed advantage.
 
-### 5.5 An earlier residual-head negative result
+### 5.7 An earlier residual-head negative result
 
 An earlier experiment used frozen Qwen2.5-1.5B-Instruct and a residual linear correction to six candidate logits. The correction adds a matrix applied to an RMS-normalized hidden state plus a bias, for 9,222 trainable parameters. A bias-only condition has six parameters. Neither head is used by the final 35B configuration.
 
@@ -192,23 +272,25 @@ The residual head reduced accuracy by six items despite improving some probabili
 
 The API usefully separates numerical and structural requirements from semantic evaluation. It can reject an invalid candidate mapping or construct a correctly typed response while still making a wrong decision. Reporting 100% checked output validity alongside 93.25% local accuracy makes that distinction concrete. Conditional candidate probabilities similarly answer a restricted scoring question, not whether the model would naturally emit the requested format or whether a real-world action is safe.
 
-The local suite has correlated templates, AI authorship, and development exposure at the skill level. A family bootstrap makes one source of dependence visible but cannot repair selection bias or establish generalization to unseen families. JNLI adds external authorship and different task content, but a single balanced public-dev subset is still a pilot. It does not cover all three API types, certify an application, or rule out benchmark contamination. These datasets should not be pooled into a single aggregate accuracy.
+The local suite has correlated templates, AI authorship, and development exposure at the skill level. A family bootstrap makes one source of dependence visible but cannot repair selection bias or establish generalization to unseen families. The four external tasks cover categorical, binary, and continuous-score outputs, but are fixed public-dev samples with unknown pretraining overlap. JNLI and JSTS share some source content, and semantic dependencies remain beyond measured grouping proxies. These samples do not certify an application, establish family-disjoint learning generalization, or support pooling classification and regression into one aggregate accuracy.
 
 Historical comparisons across model size, quantization, runtimes, and prompts are confounded. The improvement from an early small model to the final configuration cannot be attributed to the output scheme alone. Similarly, the residual-head experiment uses a separate backbone and dataset; it is evidence about that experiment, not an ablation of the final 35B runtime.
 
 The current helper computes the full output projection, repeats input content, and resets state per question. Selected-row projection, shared prefill, and concurrent serving are plausible systems extensions but are not implemented results in this paper. Real deployments also require explicit handling of domain shift, ambiguous questions, contradictory instructions, abstention, and asymmetric costs. Our suite is not a comprehensive prompt-injection or safety evaluation.
 
-## 7. Conclusions and next experimental stage
+## 7. Conclusions
 
-Mini Jev provides a reproducible local example of turning a frozen language model into a typed decision interface. Its candidate readout is equivalent to a matched one-token constrained distribution, while software construction gives explicit schema control. The measured evidence supports feasibility on a disclosed Japanese suite, adds an 81.0% external NLI pilot with weak contradiction recall, and exposes metric-dependent calibration effects and an unsuccessful head adaptation. It does not establish a novel predictive algorithm, superiority over constrained generation, or general-purpose reliability.
+Direct candidate readout and a correctly matched one-token greedy generator select the same answers in all 1,350 observed pairs, with no demonstrated material latency gap in this session. Generating an entire grammar-constrained JSON answer adds approximately 160 ms to the primary local paired statistic, but this is a structured-answer system comparison with a changed output prompt. JSON is not uniformly better or worse in task quality: it gains one JCommonsenseQA answer, loses eight JCoLA answers, and increases hard-stage JSTS MAE on these samples. Valid serialization therefore must be separated from semantic success.
 
-The next stage should compare matched generation paths, test all decision types on externally authored or family-disjoint data, and run training controls on multiple backbones and substantive split replications. An explicit protocol and claim-evidence map accompany this draft. Those experiments are submission gates, not results silently assumed by this manuscript.
+The reusable contribution is an auditable inference comparison and a set of qualified task-specific findings. Candidate probabilities support continuous expectations and diagnostics in either primary path, but their calibration and decision utility depend on the metric and domain. The earlier failed residual-head experiment also prevents interpreting the final frozen configuration as evidence for successful output-head learning. Practitioners should match prefixes and output functionality when measuring inference paths, report generation and decode counts separately, and evaluate transferred probabilities against the actual decision loss.
+
+The resulting study is a single-model, single-device empirical case study. Replication on additional backbones and devices, broader external samples, displayed-option permutations, and new training controls remain future extensions rather than implied results. No current finding establishes a generally superior model or a new learning algorithm.
 
 ## Reproducibility, licenses, and authorship
 
 The repository contains model and runtime pins, source, local evaluation data, historical predictions, analysis code, and a reusable experimental head-training workflow. Model weights and native binaries are not redistributed with the source package. A fresh native build needs its own manifest and validation. The historical model SHA-256 is 671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7; the pinned GGUF revision is baec3ebee244827cda0f4557eafa8b28f7545fa6.
 
-Project-authored source and local evaluation data use the repository's MIT license; third-party models, datasets, and software retain their own terms. Dataset-specific provenance and terms are recorded alongside the external pilot. No affiliation with TypeSafe or endorsement by dataset or model authors is claimed.
+Project-authored source and local evaluation data use the repository's MIT license; third-party models, datasets, and software retain their own terms. JGLUE- and JCoLA-derived selections, transformed task material, metadata, and result records retain CC BY-SA 4.0 as documented in the external-data and matched-study notices; the Python and C++ implementation remains MIT. Dataset text is reconstructed locally from pinned official sources. No affiliation with TypeSafe or endorsement by dataset or model authors is claimed.
 
 AI agents assisted implementation, data generation, checking, literature research, analysis, and drafting. AI checking is not independent human annotation or peer review. Yuki Oshio is the project author recorded in the repository. This working draft has not been submitted to a venue or deposited as a formal preprint. No additional human coauthor, institutional affiliation, or external reviewer is inferred from tool use.
 
@@ -233,3 +315,6 @@ AI agents assisted implementation, data generation, checking, literature researc
 [9] Qwen Team. 2026. [Qwen3.6-35B-A3B official model card](https://huggingface.co/Qwen/Qwen3.6-35B-A3B). GGUF artifact: ggml-org, revision baec3ebee244827cda0f4557eafa8b28f7545fa6.
 
 [10] Diogo Almeida / TypeSafe. 2026. [Introducing System One Models & Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), September 15; [TypeSafe API reference](https://docs.typesafe.ai/api). Product documentation, not independently reproduced research evidence.
+
+
+[11] Taiga Someya, Yushi Sugimoto, and Yohei Oseki. 2024. [JCoLA: Japanese Corpus of Linguistic Acceptability](https://aclanthology.org/2024.lrec-main.828/). LREC-COLING, 9477-9488.

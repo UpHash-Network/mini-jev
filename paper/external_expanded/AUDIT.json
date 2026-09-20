@@ -1,0 +1,206 @@
+{
+  "source_summaries": {
+    "jcola-in-valid.json": {
+      "available_count": 865,
+      "selected_count": 100,
+      "selected_overlap": {
+        "rows": 100,
+        "distinct_exact_texts": 100,
+        "repeated_text_values_across_rows": 0,
+        "rows_sharing_text_with_another_row": 0,
+        "text_occurrences_beyond_first": 0,
+        "bibliographic_source_groups": {
+          "06bff9fef3e147878a0e63370f8303363959deceebaf2bc172b965029cd714e4": 7,
+          "1cede1504c70f4527df77dda30c3732285f6c5544bcb90be98e583d518c33e2e": 7,
+          "5d0c39052f6a801a1425bbaee9fdf44b15fe7411e9355d8d2ad8c9d9b25f8a67": 7,
+          "7bfef724caec36e305d771aed445498713e01453271886f1519e8a702a190ca4": 7,
+          "ab4aad86cbc23c2a81968e16cd71adcd9023a0c673b34f6cb73420a5d99e5cea": 5,
+          "b88f0588ee915942ae5d6fc8fb598a628c713f7e919068f3a2942bffa988785b": 2,
+          "d0595cef02e125e2e7204aefc0c86ad9c28e7d6141700981f89916cb91b1f9a5": 2,
+          "e45f968c75385ee71faa38d90da149ccba6521d731d8d9d40639604d159a8d9b": 19,
+          "ed3c8ed3e8d256ce28f826651c12e8326031caf535a4749944e675b6eb4063c5": 19,
+          "ed9018c37a0c5b2d851275eb41432c655e73af85f8eb32f8a1f2fd666dd382cf": 25
+        }
+      },
+      "available_label_counts": {
+        "0": 139,
+        "1": 726
+      },
+      "selected_label_counts": {
+        "0": 12,
+        "1": 88
+      }
+    },
+    "jcola-out-valid.json": {
+      "available_count": 685,
+      "selected_count": 100,
+      "selected_overlap": {
+        "rows": 100,
+        "distinct_exact_texts": 100,
+        "repeated_text_values_across_rows": 0,
+        "rows_sharing_text_with_another_row": 0,
+        "text_occurrences_beyond_first": 0,
+        "bibliographic_source_groups": {
+          "0483f3a58534bd4fb6ead00bac01fa398956f09840120edbe44f2ff8895437e1": 4,
+          "30c032b2283513f49554fa41fb939efb1720fe0d54fd1dd35bc57482ed7de419": 2,
+          "3b6a507c1b95d9df8c4ae5d72d67a4dddd21d55a400e821ca5d3d9f71af1d656": 14,
+          "4035faadef2d106d08697e68fb1839d5738245e3bbf33cc9e93fa1bca5a05ca1": 1,
+          "414909974ceef1f677f26e387f3e00d6c5e58160dbc57bbcf7288977a3fc27a2": 3,
+          "472567c6dcf248587d794e446fe2b8638ef4e1b044a97df39a308234e9cb0349": 8,
+          "507066c585132657a8e5d117f6b49f2777651cbf61f99581e7648e485b3e875d": 1,
+          "586d1d1cb858ed208d3f1d4bd3d810f5ff94bd80d5f89e1c6672bd5fb7df4210": 4,
+          "63ee82e8989972eee7e04e05a8f844dd6050defee600d7d3beacad36611aeee1": 2,
+          "6d245c8c8ce69ebf682ea48d5dee0ac6b8576c3030689c9cadbafa48b09b8f4f": 2,
+          "71a1404ab44510d9308a29ec30710f0d5056cf48c95efbef2b332988f18d24ac": 1,
+          "74509f7a8c7682d0da0e2cacf75231fc81b87366ae6b756289312f04164327f9": 2,
+          "96b4e551202d50d0b788662ca7b26596aec95012082a0e6842a00e9e78822567": 2,
+          "98482f49e507a28da2f71bf20a2cf95da3b0d86c54553959a822ca2fbaab8a9a": 1,
+          "9a448a5e43380a82f40350981607e40edef599dd718ca0283ef6f437b39f9f9a": 6,
+          "aad57ffbfa267a6ec510b9624fe4efa7f9fed2bd5fdd1ad334a426ac941168a9": 1,
+          "b21598c9429c03ab4d3f35fed79afad9645f33c1dd9eb020f38508a65333ea9f": 2,
+          "b852c80fb067939931620c1d231e04bfd35db6f7a11a382c9ac97c72daa17095": 2,
+          "b85f3ae42da7baf5b4ebc24fd55c6398494d864a3a60426bfeb14205e2e8009e": 11,
+          "bc3a71a28de304cca9364492785524843795be5f8a5282f2000bcde78449cbbb": 5,
+          "d4b97620585242dd99110003bf6d08b9ebc79cf570607187331af5170399f0a3": 4,
+          "d9d39745f599ed68ee2ea2e52bd9e78fc29a991b89af8ac6b284744f0bacbfdb": 18,
+          "f3fe0c19eaf77df9c5d0912cd21051b23a3a16a66d50ffa5e696782bc29f1b0e": 2,
+          "f68d86b6fa50c0441bc0989a7636063cbff8b72d16e5e05ce91a96b1cce90925": 2
+        }
+      },
+      "available_label_counts": {
+        "0": 183,
+        "1": 502
+      },
+      "selected_label_counts": {
+        "0": 30,
+        "1": 70
+      }
+    },
+    "jsts-valid.json": {
+      "available_count": 1457,
+      "selected_count": 200,
+      "selected_overlap": {
+        "rows": 200,
+        "distinct_exact_texts": 395,
+        "repeated_text_values_across_rows": 4,
+        "rows_sharing_text_with_another_row": 8,
+        "text_occurrences_beyond_first": 5,
+        "distinct_ordered_sentence_pairs": 200,
+        "distinct_caption_pair_ids": 200,
+        "distinct_source_images": 234,
+        "rows_sharing_source_image": 8
+      },
+      "selected_continuous_gold": {
+        "min": 0.0,
+        "max": 4.8,
+        "mean": 2.285,
+        "noninteger_count": 137
+      }
+    },
+    "jcqa-valid.json": {
+      "available_count": 1119,
+      "selected_count": 200,
+      "selected_overlap": {
+        "rows": 200,
+        "distinct_exact_texts": 200,
+        "repeated_text_values_across_rows": 0,
+        "rows_sharing_text_with_another_row": 0,
+        "text_occurrences_beyond_first": 0
+      },
+      "available_label_counts": {
+        "0": 216,
+        "1": 237,
+        "2": 240,
+        "3": 228,
+        "4": 198
+      },
+      "selected_label_counts": {
+        "0": 37,
+        "1": 42,
+        "2": 44,
+        "3": 44,
+        "4": 33
+      }
+    }
+  },
+  "JSTS_vs_prior_JNLI": {
+    "jsts_rows": 200,
+    "prior_jnli_rows": 300,
+    "jsts_rows_with_any_exact_sentence_in_prior_jnli": 6,
+    "jsts_rows_with_same_ordered_sentence_pair": 3,
+    "jsts_rows_with_same_caption_pair_id": 3,
+    "jsts_rows_sharing_any_source_image": 6,
+    "note": "Overlaps are reported without exclusion or reselection. The two tasks are not independent external data sources."
+  },
+  "JSTS_plus_JNLI_components": {
+    "components": 448,
+    "max_component_rows": 4,
+    "rows_in_non_singleton_components": 97
+  },
+  "JCoLA_combined": {
+    "rows": 200,
+    "distinct_exact_texts": 200,
+    "repeated_text_values_across_rows": 0,
+    "rows_sharing_text_with_another_row": 0,
+    "text_occurrences_beyond_first": 0,
+    "bibliographic_source_groups": {
+      "0483f3a58534bd4fb6ead00bac01fa398956f09840120edbe44f2ff8895437e1": 4,
+      "06bff9fef3e147878a0e63370f8303363959deceebaf2bc172b965029cd714e4": 7,
+      "1cede1504c70f4527df77dda30c3732285f6c5544bcb90be98e583d518c33e2e": 7,
+      "30c032b2283513f49554fa41fb939efb1720fe0d54fd1dd35bc57482ed7de419": 2,
+      "3b6a507c1b95d9df8c4ae5d72d67a4dddd21d55a400e821ca5d3d9f71af1d656": 14,
+      "4035faadef2d106d08697e68fb1839d5738245e3bbf33cc9e93fa1bca5a05ca1": 1,
+      "414909974ceef1f677f26e387f3e00d6c5e58160dbc57bbcf7288977a3fc27a2": 3,
+      "472567c6dcf248587d794e446fe2b8638ef4e1b044a97df39a308234e9cb0349": 8,
+      "507066c585132657a8e5d117f6b49f2777651cbf61f99581e7648e485b3e875d": 1,
+      "586d1d1cb858ed208d3f1d4bd3d810f5ff94bd80d5f89e1c6672bd5fb7df4210": 4,
+      "5d0c39052f6a801a1425bbaee9fdf44b15fe7411e9355d8d2ad8c9d9b25f8a67": 7,
+      "63ee82e8989972eee7e04e05a8f844dd6050defee600d7d3beacad36611aeee1": 2,
+      "6d245c8c8ce69ebf682ea48d5dee0ac6b8576c3030689c9cadbafa48b09b8f4f": 2,
+      "71a1404ab44510d9308a29ec30710f0d5056cf48c95efbef2b332988f18d24ac": 1,
+      "74509f7a8c7682d0da0e2cacf75231fc81b87366ae6b756289312f04164327f9": 2,
+      "7bfef724caec36e305d771aed445498713e01453271886f1519e8a702a190ca4": 7,
+      "96b4e551202d50d0b788662ca7b26596aec95012082a0e6842a00e9e78822567": 2,
+      "98482f49e507a28da2f71bf20a2cf95da3b0d86c54553959a822ca2fbaab8a9a": 1,
+      "9a448a5e43380a82f40350981607e40edef599dd718ca0283ef6f437b39f9f9a": 6,
+      "aad57ffbfa267a6ec510b9624fe4efa7f9fed2bd5fdd1ad334a426ac941168a9": 1,
+      "ab4aad86cbc23c2a81968e16cd71adcd9023a0c673b34f6cb73420a5d99e5cea": 5,
+      "b21598c9429c03ab4d3f35fed79afad9645f33c1dd9eb020f38508a65333ea9f": 2,
+      "b852c80fb067939931620c1d231e04bfd35db6f7a11a382c9ac97c72daa17095": 2,
+      "b85f3ae42da7baf5b4ebc24fd55c6398494d864a3a60426bfeb14205e2e8009e": 11,
+      "b88f0588ee915942ae5d6fc8fb598a628c713f7e919068f3a2942bffa988785b": 2,
+      "bc3a71a28de304cca9364492785524843795be5f8a5282f2000bcde78449cbbb": 5,
+      "d0595cef02e125e2e7204aefc0c86ad9c28e7d6141700981f89916cb91b1f9a5": 2,
+      "d4b97620585242dd99110003bf6d08b9ebc79cf570607187331af5170399f0a3": 4,
+      "d9d39745f599ed68ee2ea2e52bd9e78fc29a991b89af8ac6b284744f0bacbfdb": 18,
+      "e45f968c75385ee71faa38d90da149ccba6521d731d8d9d40639604d159a8d9b": 19,
+      "ed3c8ed3e8d256ce28f826651c12e8326031caf535a4749944e675b6eb4063c5": 19,
+      "ed9018c37a0c5b2d851275eb41432c655e73af85f8eb32f8a1f2fd666dd382cf": 25,
+      "f3fe0c19eaf77df9c5d0912cd21051b23a3a16a66d50ffa5e696782bc29f1b0e": 2,
+      "f68d86b6fa50c0441bc0989a7636063cbff8b72d16e5e05ce91a96b1cce90925": 2
+    }
+  },
+  "question_count": 600,
+  "by_dataset": {
+    "JSTS": 200,
+    "JCommonsenseQA": 200,
+    "JCoLA": 200
+  },
+  "by_type": {
+    "score": 200,
+    "choice": 200,
+    "noul": 200
+  },
+  "group_counts": {
+    "JCoLA": 34,
+    "JSTS": 196,
+    "JCommonsenseQA": 200
+  },
+  "raw_text_publication": "No raw source or transformed question text is written to public metadata",
+  "source_gold_to_score_preserved": true,
+  "JSTS_class_labels_created": false,
+  "inference_calls": 0,
+  "selection_uses_labels": false,
+  "pretraining_contamination": "unknown",
+  "semantic_paraphrase_overlap": "not fully measured"
+}

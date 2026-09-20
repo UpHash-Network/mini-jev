@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-09-20T07:41:02.706391+00:00",
+  "stage": "before_study_model_inference",
+  "protocol": {
+    "version": 1,
+    "study": "Matched direct, one-token and grammar-constrained JSON comparison",
+    "status": "Specification before measured inference; local freeze, not independently registered",
+    "primary_systems_estimand": "Across local items, median of per-item mean complete-loopback-HTTP latency difference, one_token minus direct; 5 repetitions retained within item.",
+    "secondary_systems_estimand": "JSON minus direct paired latency, p50/p95, native phase timings, input/output token counts, decode API calls and failures.",
+    "quality_estimands": "Per dataset classification accuracy for Choice/Noul. JSTS continuous gold: direct expected-stage MAE primary; all-mode hard-selected-stage MAE as a like-for-like secondary, with no fabricated stage classification target. Native one_token probability audit supports the same expectation as direct. No cross-dataset pooled accuracy.",
+    "local_selection": "150 previously published regression items: three per each of 45 generated families and five individually AI-authored items per each type. Hash-rank IDs using mini-jev-matched-v1: salt, independent of correctness. 50 items per type. Not a new held-out semantic test.",
+    "external_selection": "600 prespecified items in external_expanded protocol: JCoLA 200, JSTS 200, JCommonsenseQA 200. Raw text outside repository. Public development data, contamination unknown.",
+    "repetitions": {
+      "local": 5,
+      "external": 1
+    },
+    "schedule": "Seed 2026092053. Shuffle local plus external items in repetition 0, local only in repetitions 1-4. Shuffle all three condition orders independently within each item/repetition. Full schedule archived before inference.",
+    "measured_requests": 4050,
+    "request_count_semantics": "Each request calls the helper once; JSON requests contain multiple llama_decode API calls, recorded separately in native decode_count.",
+    "warmup": "Seven synthetic non-benchmark Choice inputs per mode (21 requests); all excluded from measured data.",
+    "modes": {
+      "direct": "Original repeat_typed_score formatter, candidate logits and stable softmax; no generated tokens.",
+      "one_token": "Identical complete tokenized prefix and candidates to direct; full-vocabulary mask then native greedy sampler, stop after selected label without EOS or another model forward call. Logits/probabilities retained as audit, not additional model work.",
+      "json": "Same state/instructions/options and repetition. Choice/Noul final output instruction replaced with compact JSON answer instruction; Score numeric JSON instruction retained but no prefilled assistant JSON prefix. Native GBNF emits only {answer: allowed string or number} with actual quotes/braces. Stop on completed allowed JSON object, max 32 tokens; no extra EOS decode. Different complete prompts mean this is a structured-answer system comparison, not isolated sampling overhead."
+    },
+    "response_functionality": "Measured HTTP response is identical type+semantic-label schema in every mode. Numerical probabilities and native traces are retained server-side and written after request timing. Direct distribution/ordinal expectation utility is reported separately from hard-label generation.",
+    "temperature": {
+      "native_primary": 1.0,
+      "historical_secondary": 1.3489628825916533,
+      "fitting": "none; no new calibration or prompt tuning"
+    },
+    "parity": "direct/one_token must have identical prompt hashes/token hashes/candidate IDs; compare label equality and logits at absolute tolerance 1e-5. Record violations; do not discard cases. Exact ties with different native tie policy are separately counted.",
+    "timing": "time.perf_counter from client JSON serialization through HTTP body read and parse, single persistent loopback connection with TCP_NODELAY on the server socket, no concurrency. Identical common research server builds prompts and calls a single resident helper. Native stages separately reported. It is not a production-server or remote-network benchmark.",
+    "runtime": "One pinned Qwen3.6-35B-A3B Q4_K_M model, llama.cpp f072b103714dfa1eee531f80b24512faf38e3dd2, M5 Pro 64 GB, Metal, six threads, 2048 token context, state cleared per request, no prompt cache or concurrent GPU workload.",
+    "failure_policy": "Retain every selected request and errors, never replace/exclude/truncate. Structural or transport implementation bugs require an explicitly recorded invalidated attempt and new complete freeze; any result-informed prompt change becomes development and requires fresh test material.",
+    "uncertainty": "Local paired latency: mean 5 repetitions within item then 10000 whole-family/tag bootstrap draws preserving items and conditions; conditional percentile interval, not hardware-population guarantee. External descriptive metrics and paired condition differences only; semantic groups and overlaps disclosed, no IID sample confidence claim.",
+    "limitations": [
+      "Single model, single machine and same-session measurements",
+      "Published local items are regression/development material",
+      "External datasets are public and may be in pretraining",
+      "JSON has a different serialization-specific prompt and no model probability vector",
+      "Head-training effectiveness is outside this controlled-readout study"
+    ]
+  },
+  "sha256": {
+    "runner": "df2078563a8d6d06b30baadff4f7b35b222ed188e1cd8aa13524aa6e1112af73",
+    "protocol": "4db8ed4305b85aa2fc4fc85750ba575425f8280be00945f02b3434dd4a9fa4be",
+    "native_engine": "da45591b932a4cf9576f7f45ad9bd8f0fb817457b67ac8147b1f1562edbc83e9",
+    "helper_source": "d54cde1eb69067cf6fb49f4b5b5b8469b4724a0a852e623d5e5c5ce30cb7039d",
+    "helper_build_manifest": "22ab8d5d214c673eaa1b475064cc3ed0805a791a38b6af6b66c25608d13160da",
+    "helper_binary": "31d2c379e09bf194e833bff8268ff06c8fcef3e8f57671563646c37b97cf86af",
+    "expanded_questions": "4df650133880c935c885668b46b33d8d49c14fdb82b0703b4bf45e0bc297272b",
+    "expanded_protocol": "8378564aa64f8b1124049e00d78f27b189f80decef3d0763349076e47391fa31",
+    "expanded_selection": "17f74b7e333bfb7843f5f6744fa30e6ea11c337bc6d8c1eae350f6996fb700a4",
+    "expanded_preparation": "f78da0b49d71cab8f75d735009d1c97643b24890da53c7887ec6d01f1f4837bb",
+    "local_questions": "9c1309168c407360b22f64af771784a216874ad4b120024b18dc674cc71f04c7"
+  },
+  "selection_sha256": "75ef9c8f08972d4dd73286e802eab4082e3c66cef1b3535f327583d0c54ffba9",
+  "schedule_sha256": "0e513d96b99ceebec081e354f6d400535c48fb1eac2ac74782031e881ffcad8e",
+  "n_items": 750,
+  "n_measured_calls": 4050,
+  "note": "Locally timestamped protocol freeze; not independent public preregistration."
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "8378564aa64f8b1124049e00d78f27b189f80decef3d0763349076e47391fa31",
+  "preparation_script_sha256": "8eaeed29a25369abfb2bc4bc95b0e148300856be420eeb00b4bb818155bae9fa",
+  "prior_JNLI_selection_sha256": "99e9caf13b55de6f3a3eb484242beda53affbe7e10c13cc065a52d2e43744847",
+  "source_sha256": {
+    "jcola-in-valid.json": "677fb021886b6829d6a84e8ca9f62808f6bd479fa829439f49eac4f94f23658c",
+    "jcola-out-valid.json": "029d60eb01a96ef333ffb247468bc3123f7a31a2668fa83757dd57af3ad50237",
+    "jsts-valid.json": "7c0bdcb381179f01096c635d058853d96da1e1248d23fe3f5c2beed5dc2d9b1a",
+    "jcqa-valid.json": "0d8d76f3bfa0d174866939882faccdd01fbc2bcd5a76c43748ba0c40a7b3b8d4",
+    "jnli-valid.json": "ca0353efc7c2eebfb6de4e13f16295053c8b1ee65e7b0849190c90426fbc495f",
+    "LICENSE-JGLUE.txt": "3b2890eacd851373001c4a14623458e3adaf1b1967939aa9c38a318e28d61c00",
+    "LICENSE-JCoLA.txt": "5e436ff8ffbb77d8607220e9bce20c8915d860010feeb6c1ebef5a85688e9b39"
+  },
+  "selection_frozen_before_inference": true,
+  "inference_calls": 0,
+  "note": "Local preparation freeze after source-schema inspection but before selected-row construction and all inference; not an independently registered protocol.",
+  "created_at_utc": "2026-09-20T07:36:45.788824+00:00"
+}

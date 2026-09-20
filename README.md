@@ -2,7 +2,7 @@
 
 **Use a local language model as a typed decision function, without generating answer text.**
 
-[日本語](README.ja.md) · [Technical report](paper/TECHNICAL_REPORT.md) · [Working paper](paper/README.md) · [Train on your data](TRAINING.md) · [Data card](DATA_CARD.md) · [Model card](MODEL_CARD.md)
+[日本語](README.ja.md) · [Technical report](paper/TECHNICAL_REPORT.md) · [Working paper and v0.2 study](paper/README.md) · [Train on your data](TRAINING.md) · [Data card](DATA_CARD.md) · [Model card](MODEL_CARD.md)
 
 Mini Jev turns a state and a question into a choice, a true/false score (`Noul`), or an ordinal score. It reads candidate next-token logits, normalizes them, and constructs the typed response in Python. The released inference configuration uses a **frozen Qwen3.6-35B-A3B Q4_K_M model**, repeated input, and type-specific candidate tokens. It does **not** use a trained decision head.
 
@@ -19,7 +19,7 @@ This independent project is inspired by [TypeSafe's Jev interface](https://docs.
 | Complete input >512 tokens | p95 521.8 ms; 109 questions |
 | Valid typed outputs | 2,400 / 2,400 |
 
-Measured on **Apple M5 Pro, 64 GB, macOS 26.4, Metal**, with the model resident. Timing includes the complete repeated prompt; it is not cold-start time or an HTTP service SLA. Multi-question requests execute questions sequentially. There is no same-model generation baseline establishing a speedup.
+Measured on **Apple M5 Pro, 64 GB, macOS 26.4, Metal**, with the model resident. Timing includes the complete repeated prompt; it is not cold-start time or an HTTP service SLA. Multi-question requests execute questions sequentially. This historical run did not include a same-model generation baseline. A separate [completed v0.2 matched comparison](paper/matched_study/README.md) measures 4,050 requests: direct and one-token labels/logits match in all 1,350 pairs, with no demonstrated material latency gap in this session. JSON adds about 160 ms to the primary local paired statistic under a serialization-specific prompt; quality varies by task. These research-HTTP timings are separate from the historical measurements above.
 
 The suite is **self-authored**: 2,220 programmatically generated items across 45 template families and 180 individually authored by AI agents, with AI peer review. The legacy field `source: manual` does **not** mean human-expert annotation. New v2 instances were held out from final model selection, but authoring had seen some v1 errors and retained related skill families. This is not an external benchmark or a family-disjoint test. See [DATA_CARD.md](DATA_CARD.md).
 
@@ -115,6 +115,8 @@ Each output directory must be new. To serve with the new calibration, run `./run
 
 The API accepts 2–26 candidates, defaults to eight questions (configurable up to 16), and rejects complete inputs beyond 2,048 tokens. Quality evaluation covers 2–8 candidates; 26-candidate testing is functional coverage only. Choice keys are sorted, so reversed-map agreement demonstrates canonicalization, not learned position invariance. Questions do not share prefill or execute in parallel. The server is loopback-only.
 
-AI coding agents contributed implementation, question authoring, review, experiments, and documentation under the owner's direction. Agent review is not independent human review. Useful next contributions include same-model generation baselines, external and family-disjoint evaluations, multi-seed head experiments, and measured runs on other hardware. See the [research plan](paper/TECHNICAL_REPORT.md#what-a-research-paper-still-needs).
+AI coding agents contributed implementation, question authoring, review, experiments, and documentation under the owner's direction. Agent review is not independent human review. The [working-paper package](paper/README.md) contains the completed v0.2 empirical study of one model on one device: direct readout versus one-token and JSON generation, plus [600 external examples](paper/external_expanded/README.md) from JCoLA, JSTS, and JCommonsenseQA. The existing JNLI pilot is separate. These public datasets may have been seen during model training and cannot be pooled into one accuracy. All 4,050 scheduled comparison requests completed without failure. Protocols, traces, analysis, tests, and an independent AI-agent numerical audit are included; this is not human peer review or a submitted paper.
 
-Use [CITATION.cff](CITATION.cff) to cite the software. Original project code and authored data are MIT licensed; third-party code, datasets, and model artifacts retain their own licenses and notices. JNLI-derived records in the working-paper pilot use CC BY-SA 4.0; see [NOTICE.md](NOTICE.md).
+Useful next contributions include family-disjoint evaluations, substantive repeated training experiments, and measured runs on other models and hardware. See the [research plan](paper/TECHNICAL_REPORT.md#what-a-research-paper-still-needs).
+
+Use [CITATION.cff](CITATION.cff) to cite the software. Original project code and local authored data are MIT licensed. External dataset-derived selection, metadata, results, and task protocols/rubrics use CC BY-SA 4.0 with JGLUE/JCoLA attribution; mixed study records retain that data boundary. Third-party code and model artifacts retain their own terms. Original external dataset text, compiled binaries, and model weights are not included. See [NOTICE.md](NOTICE.md).

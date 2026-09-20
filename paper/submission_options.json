@@ -1,0 +1,495 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-20",
+  "checked_timezone": "Asia/Tokyo",
+  "source_policy": "official organizer or publisher sources only",
+  "manuscript_assessed": "paper/MANUSCRIPT.md empirical draft v0.2; completed single-model/single-device comparison",
+  "conversion_rule": "AoE = UTC-12; 23:59 AoE = following day 20:59 JST (UTC+9)",
+  "status_legend": {
+    "open": "official CFP start passed and deadline future",
+    "upcoming": "portal opening date is in future",
+    "deadline_announced": "future exact deadline confirmed; portal status not verified",
+    "rolling": "journal rolling submissions",
+    "not_announced": "event announced but individual/exact paper CFP deadline unverified",
+    "closed_for_new_submission": "mandatory prerequisite deadline passed",
+    "closed": "paper deadline passed"
+  },
+  "candidates": [
+    {
+      "id": "eacl2027-demo",
+      "name": "EACL 2027",
+      "track": "System Demonstrations",
+      "status": "open",
+      "status_ja": "受付中・近締切",
+      "submission_open_date": "2026-08-18",
+      "separate_abstract_deadline": "not_listed_in_cfp",
+      "deadlines": [
+        {
+          "kind": "paper",
+          "date": "2026-09-22",
+          "time": "23:59",
+          "timezone": "AoE (UTC-12)",
+          "iso": "2026-09-22T23:59:00-12:00",
+          "jst": "2026-09-23T20:59:00+09:00",
+          "source_url": "https://2027.eacl.org/calls/demos/"
+        }
+      ],
+      "event": {
+        "start_date": "2027-03-09",
+        "end_date": "2027-03-14",
+        "city": "Athens",
+        "country": "Greece",
+        "presentation": "live demo required; track-specific session date not yet listed"
+      },
+      "fit": "good_artifact_fit_urgent",
+      "fit_ja": "公開研究プロトタイプとして相性がよいが、締切まで短い。原稿・動画・動作する配布物の準備が必要。",
+      "requirements": [
+        "6-page paper",
+        "video <= 2.5 minutes",
+        "live website or installable package",
+        "single-blind",
+        "live demo and author registration if accepted",
+        "no simultaneous ARR review"
+      ],
+      "sources": [
+        {
+          "url": "https://2027.eacl.org/calls/demos/",
+          "supports": "deadline, opening date, requirements, conference dates"
+        },
+        {
+          "url": "https://2027.eacl.org/",
+          "supports": "Athens location"
+        }
+      ]
+    },
+    {
+      "id": "naacl2027-demo",
+      "name": "NAACL 2027",
+      "track": "System Demonstrations",
+      "status": "upcoming",
+      "status_ja": "受付前・締切確定",
+      "submission_open_date": "2026-11-01",
+      "separate_abstract_deadline": "not_listed_in_cfp",
+      "deadlines": [
+        {
+          "kind": "paper",
+          "date": "2026-12-04",
+          "time": "23:59",
+          "timezone": "AoE (UTC-12)",
+          "iso": "2026-12-04T23:59:00-12:00",
+          "jst": "2026-12-05T20:59:00+09:00",
+          "source_url": "https://2027.naacl.org/calls/system_demonstration/"
+        }
+      ],
+      "event": {
+        "start_date": "2027-06-01",
+        "end_date": "2027-06-05",
+        "city": "San Francisco",
+        "country": "United States",
+        "presentation": "live demo expected"
+      },
+      "fit": "recommended_after_evaluation",
+      "fit_ja": "準備期間込みの第1候補。比較実験等の実証を追加する。単なる既存APIラップや既成モデル組合せだけでは不十分。",
+      "requirements": [
+        "6-page paper",
+        "appendix <= 2 pages",
+        "video <= 2.5 minutes",
+        "live website or installable package",
+        "single-blind",
+        "no simultaneous ARR review"
+      ],
+      "sources": [
+        {
+          "url": "https://2027.naacl.org/calls/system_demonstration/",
+          "supports": "all listed track facts"
+        }
+      ]
+    },
+    {
+      "id": "coling2027-main",
+      "name": "COLING 2027",
+      "track": "Main Conference long/short",
+      "status": "deadline_announced",
+      "status_ja": "将来締切・公表済み、投稿画面の受付状態は未検証",
+      "separate_abstract_deadline": "not_listed_in_cfp",
+      "deadlines": [
+        {
+          "kind": "ARR paper",
+          "date": "2026-10-12",
+          "time": "23:59",
+          "timezone": "AoE (UTC-12)",
+          "iso": "2026-10-12T23:59:00-12:00",
+          "jst": "2026-10-13T20:59:00+09:00",
+          "source_url": "https://2027.coling-iccl.org/"
+        },
+        {
+          "kind": "commitment",
+          "date": "2026-12-23",
+          "time": "23:59",
+          "timezone": "AoE (UTC-12)",
+          "iso": "2026-12-23T23:59:00-12:00",
+          "jst": "2026-12-24T20:59:00+09:00",
+          "source_url": "https://2027.coling-iccl.org/"
+        }
+      ],
+      "event": {
+        "start_date": "2027-05-09",
+        "end_date": "2027-05-14",
+        "city": "Macau",
+        "country": "China",
+        "online_event": {
+          "start_date": "2027-05-06",
+          "end_date": "2027-05-07"
+        },
+        "presentation": "main conference in-person; separate virtual conference"
+      },
+      "fit": "research_after_more_controls",
+      "fit_ja": "外部評価・対照実験・一般化の知見を補強して検討。特別テーマへの適合は主張しない。",
+      "requirements": [
+        "ARR reviews and meta-review",
+        "8-page long or 4-page short",
+        "primary commitment to one conference only"
+      ],
+      "sources": [
+        {
+          "url": "https://2027.coling-iccl.org/calls/main_conference_papers/",
+          "supports": "track, dates, formats"
+        },
+        {
+          "url": "https://2027.coling-iccl.org/",
+          "supports": "AoE time and location"
+        },
+        {
+          "url": "https://aclrollingreview.org/dates",
+          "supports": "shared ARR cycle"
+        }
+      ]
+    },
+    {
+      "id": "naacl2027-main",
+      "name": "NAACL 2027",
+      "track": "Main Conference long/short; Findings consideration per conference policy",
+      "status": "deadline_announced",
+      "status_ja": "将来締切・公表済み、投稿画面の受付状態は未検証",
+      "separate_abstract_deadline": "not_listed_in_cfp",
+      "deadlines": [
+        {
+          "kind": "ARR paper",
+          "date": "2026-10-12",
+          "time": "23:59",
+          "timezone": "AoE (UTC-12)",
+          "iso": "2026-10-12T23:59:00-12:00",
+          "jst": "2026-10-13T20:59:00+09:00",
+          "source_url": "https://2027.naacl.org/calls/main_conference_papers/"
+        },
+        {
+          "kind": "commitment",
+          "date": "2026-12-23",
+          "time": "23:59",
+          "timezone": "AoE (UTC-12)",
+          "iso": "2026-12-23T23:59:00-12:00",
+          "jst": "2026-12-24T20:59:00+09:00",
+          "source_url": "https://2027.naacl.org/calls/main_conference_papers/"
+        }
+      ],
+      "event": {
+        "start_date": "2027-06-01",
+        "end_date": "2027-06-05",
+        "city": "San Francisco",
+        "country": "United States",
+        "presentation": "in-person and virtual options"
+      },
+      "fit": "research_after_more_controls",
+      "fit_ja": "評価・再現性・推論時手法の実証論文として補強後の候補。COLINGと同じARR周期。",
+      "requirements": [
+        "ARR reviews and meta-review",
+        "8-page long or 4-page short",
+        "primary commitment to one conference only"
+      ],
+      "sources": [
+        {
+          "url": "https://2027.naacl.org/calls/main_conference_papers/",
+          "supports": "track, deadlines, location, formats, primary-venue policy"
+        },
+        {
+          "url": "https://2027.naacl.org/faq/",
+          "supports": "Findings and COLING relationship"
+        }
+      ],
+      "source_conflicts": [
+        "NAACL reviewer registration 2026-10-12 vs ARR 2026-10-14",
+        "NAACL meta-review release 2026-12-18 vs ARR 2026-12-17"
+      ]
+    },
+    {
+      "id": "tmlr",
+      "name": "Transactions on Machine Learning Research",
+      "track": "Journal research article",
+      "status": "rolling",
+      "status_ja": "随時投稿",
+      "separate_abstract_deadline": "none",
+      "deadlines": [],
+      "event": null,
+      "fit": "recommended_after_research_extension",
+      "fit_ja": "既存手法の丁寧な実証研究として有力。単なる再実装ではなく学べる知見が必要。",
+      "requirements": [
+        "anonymous submission",
+        "active OpenReview profiles",
+        "author quotas apply",
+        "no overlap with archival peer-reviewed papers or parallel submissions"
+      ],
+      "sources": [
+        {
+          "url": "https://jmlr.org/tmlr/",
+          "supports": "rolling journal, no conference location"
+        },
+        {
+          "url": "https://jmlr.org/tmlr/acceptance-criteria.html",
+          "supports": "evidence and interest criteria, novelty not mandatory"
+        },
+        {
+          "url": "https://jmlr.org/tmlr/editorial-policies.html",
+          "supports": "scope, quotas and originality policy"
+        }
+      ]
+    },
+    {
+      "id": "acl2027-main",
+      "name": "ACL 2027",
+      "track": "Main/Findings intended; detailed CFP not verified",
+      "status": "not_announced",
+      "status_ja": "具体的CFP・締切日未公表",
+      "separate_abstract_deadline": "unannounced",
+      "deadlines": [],
+      "announced_submission_month": "2027-01",
+      "announced_submission_month_kind": "final ARR month in official ARR venue table; exact date/time not announced",
+      "event": {
+        "start_date": "2027-08-17",
+        "end_date": "2027-08-22",
+        "city": "Kyoto",
+        "country": "Japan"
+      },
+      "fit": "medium_term_research_target",
+      "fit_ja": "実験を増やす中期目標。2027年1月を日付に展開しない。",
+      "sources": [
+        {
+          "url": "https://2027.aclweb.org/",
+          "supports": "dates and location"
+        },
+        {
+          "url": "https://aclrollingreview.org/dates",
+          "supports": "January 2027 ARR month only"
+        }
+      ]
+    },
+    {
+      "id": "nlp2027",
+      "name": "言語処理学会第33回年次大会 NLP2027",
+      "track": "一般発表を想定、2027 CFP未確認",
+      "status": "not_announced",
+      "status_ja": "発表募集・申込／原稿締切未確認",
+      "separate_abstract_deadline": "unannounced",
+      "deadlines": [],
+      "event": {
+        "start_date": "2027-03-15",
+        "end_date": "2027-03-19",
+        "city": "Fukuoka",
+        "country": "Japan",
+        "venue": "Fukuoka International Congress Center",
+        "mode": "hybrid"
+      },
+      "fit": "domestic_feedback_candidate",
+      "fit_ja": "日本語評価と公開実装について国内で議論を得る候補。2027年の審査・原稿形式は未確認。",
+      "sources": [
+        {
+          "url": "https://www.anlp.jp/guide/nenji.html",
+          "supports": "dates, venue and hybrid mode"
+        }
+      ]
+    },
+    {
+      "id": "iclr2027-workshops",
+      "name": "ICLR 2027 workshops",
+      "track": "Relevant evaluation/calibration/inference workshop not yet selected or announced",
+      "status": "not_announced",
+      "status_ja": "個別ワークショップ・CFP未公表",
+      "separate_abstract_deadline": "unannounced",
+      "deadlines": [],
+      "suggested_date_not_a_deadline": {
+        "date": "2027-02-01",
+        "time": null,
+        "timezone": null,
+        "jst": null,
+        "description": "suggested contribution date in organizer call, not an individual workshop CFP"
+      },
+      "event": {
+        "start_date": "2027-04-29",
+        "end_date": "2027-04-30",
+        "city": "San Francisco",
+        "country": "United States",
+        "presentation": "individual workshop is one day in-person",
+        "venue": null
+      },
+      "fit": "potential_after_individual_cfp",
+      "fit_ja": "評価・確率校正・推論効率に合う採択WSが公表されれば候補。未確定の締切を断定しない。",
+      "sources": [
+        {
+          "url": "https://www.iclr.cc/Conferences/2027/CallForWorkshops",
+          "supports": "location and suggested contribution date"
+        },
+        {
+          "url": "https://iclr.cc/Conferences/2027/Dates",
+          "supports": "2027 workshop date range"
+        },
+        {
+          "url": "https://iclr.cc/Conferences/2027",
+          "supports": "year and overall dates"
+        }
+      ],
+      "source_conflicts": [
+        "Workshop call opening sentence says April 29-30 2026; official 2027 main page and dates table imply 2027. Retain conflict; do not infer building from photo."
+      ]
+    },
+    {
+      "id": "iclr2027-main",
+      "name": "ICLR 2027",
+      "track": "Main Conference",
+      "status": "closed_for_new_submission",
+      "status_ja": "必須抄録締切終了、未登録の新規原稿は不可",
+      "deadlines": [
+        {
+          "kind": "mandatory abstract",
+          "date": "2026-09-18",
+          "time": "23:59",
+          "timezone": "AoE (UTC-12)",
+          "iso": "2026-09-18T23:59:00-12:00",
+          "jst": "2026-09-19T20:59:00+09:00",
+          "source_url": "https://iclr.cc/Conferences/2027/AuthorGuidelines",
+          "status": "closed"
+        },
+        {
+          "kind": "paper",
+          "date": "2026-09-25",
+          "time": "23:59",
+          "timezone": "AoE (UTC-12)",
+          "iso": "2026-09-25T23:59:00-12:00",
+          "jst": "2026-09-26T20:59:00+09:00",
+          "source_url": "https://iclr.cc/Conferences/2027/AuthorGuidelines",
+          "status": "future_only_if_abstract_already_registered"
+        }
+      ],
+      "event": {
+        "start_date": "2027-04-26",
+        "end_date": "2027-04-28",
+        "city": "San Francisco",
+        "country": "United States",
+        "overall_conference": {
+          "start_date": "2027-04-26",
+          "end_date": "2027-04-30"
+        },
+        "venue": null
+      },
+      "fit": "not_recommended_current_version",
+      "fit_ja": "本原稿が事前抄録登録済みという証拠なし。現状の新規性・実験規模からも優先しない。",
+      "sources": [
+        {
+          "url": "https://iclr.cc/Conferences/2027/AuthorGuidelines",
+          "supports": "mandatory abstract, paper deadlines, no exceptions"
+        },
+        {
+          "url": "https://iclr.cc/Conferences/2027/Dates",
+          "supports": "main dates"
+        },
+        {
+          "url": "https://www.iclr.cc/Conferences/2027/CallForWorkshops",
+          "supports": "San Francisco city"
+        }
+      ]
+    },
+    {
+      "id": "neurips2026-odi",
+      "name": "NeurIPS 2026 On-Device Intelligence",
+      "track": "Workshop short paper",
+      "status": "closed",
+      "status_ja": "延長後の締切も終了",
+      "separate_abstract_deadline": "not_listed_in_cfp",
+      "deadlines": [
+        {
+          "kind": "paper",
+          "date": "2026-09-05",
+          "time": "23:59",
+          "timezone": "AoE (UTC-12)",
+          "iso": "2026-09-05T23:59:00-12:00",
+          "jst": "2026-09-06T20:59:00+09:00",
+          "source_url": "https://odi2026.github.io/content/dates.md",
+          "status": "closed"
+        }
+      ],
+      "superseded_deadline": {
+        "date": "2026-08-29",
+        "timezone": "AoE"
+      },
+      "event": {
+        "start_date": "2026-12-12",
+        "end_date": "2026-12-12",
+        "city": "Sydney",
+        "country": "Australia",
+        "venue": "International Convention Centre Sydney, MR C3.6",
+        "mode": "in-person"
+      },
+      "fit": "good_topic_fit_but_closed",
+      "fit_ja": "ローカル推論・評価との相性はよいが今年は受付終了。2027年同名開催は未確認。",
+      "requirements": [
+        "5-page paper",
+        "double-blind",
+        "non-archival"
+      ],
+      "sources": [
+        {
+          "url": "https://odi2026.github.io/",
+          "supports": "official site"
+        },
+        {
+          "url": "https://odi2026.github.io/content/dates.md",
+          "supports": "extended deadline and explicit Closed state"
+        },
+        {
+          "url": "https://odi2026.github.io/content/hero.md",
+          "supports": "exact workshop date and location"
+        },
+        {
+          "url": "https://odi2026.github.io/content/topics.md",
+          "supports": "CFP and non-archival status"
+        },
+        {
+          "url": "https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/",
+          "supports": "official conference acceptance list"
+        }
+      ],
+      "verification_method": "Read official homepage and Markdown resources linked by its own loader; source resources fetched with HTTPS curl because web text extractor returned an empty homepage."
+    }
+  ],
+  "recommendations": {
+    "practical_first": "naacl2027-demo",
+    "research_after_more_experiments": [
+      "tmlr",
+      "coling2027-main",
+      "naacl2027-main"
+    ],
+    "fastest_if_materials_ready": "eacl2027-demo",
+    "domestic_feedback": "nlp2027"
+  },
+  "exclusions": [
+    {
+      "name": "EACL 2027 Main",
+      "reason": "Final ARR submission 2026-08-03 passed; 2026-10-11 commitment is not a new-paper deadline",
+      "source_url": "https://2027.eacl.org/calls/papers/"
+    },
+    {
+      "name": "NeurIPS 2026 Agentic AI for Biological Discovery",
+      "reason": "Future deadline 2026-09-26 AoE but no biological research contribution in current manuscript",
+      "source_url": "https://agenticls.github.io/"
+    }
+  ],
+  "submission_actions_performed": false
+}
