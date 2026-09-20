@@ -1,6 +1,6 @@
 # Reddit release draft
 
-Status: not posted. Recommended first venue: r/MachineLearning, with the `[P]` title tag and Project flair if available. This is a technical project discussion, not a research-paper announcement. Check the current posting rules and available flair at submission time. See [POSTING_PLAN.md](POSTING_PLAN.md) for the community-specific reasoning and official rule links. The repository transfer to UpHash-Network is complete and public access to the URL below has been verified. Organization ownership does not imply an institutional research affiliation.
+Status: **published as a comment**, not a standalone post, in r/MachineLearning's official [Self-Promotion Thread](https://www.reddit.com/r/MachineLearning/comments/1w4xaes/d_selfpromotion_thread/). See the [published comment](https://www.reddit.com/r/MachineLearning/comments/1w4xaes/comment/pawz0ha/), [actual submitted text](REDDIT_COMMENT_EN.md), and [publication receipt](REDDIT_PUBLISHED.json). The standalone title and body below are retained as preparation notes; the new composer rejected the required `[P]` tag and the classic form did not produce a confirmed post URL. The published comment includes the same technical content plus the thread-required free/MIT licensing and pricing statement.
 
 ## Title
 
