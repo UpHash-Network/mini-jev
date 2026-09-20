@@ -4,7 +4,7 @@
 
 This repository contains project-authored Japanese decision tasks for implementation checks, model development, and a final local acceptance run. The project owner is Yuki Oshio. AI agents wrote the generation code, individually authored examples, and performed peer checking under the owner's direction. There was no independent human-expert annotation study.
 
-Original authored data is released under the repository's MIT license. Model weights and third-party resources are governed by their own licenses. This release does not import an external public benchmark and does not claim representative coverage of real customer data.
+Original authored data is released under the repository's MIT license. Model weights and third-party resources are governed by their own licenses. The original local-suite release did not import an external public benchmark and does not claim representative coverage of real customer data. The later working-paper branch adds a separate JNLI pilot, described below; it does not change the local suite or its historical results.
 
 ## Primary release: acceptance v2
 
@@ -66,3 +66,7 @@ The reusable training workflow accepts user-supplied datasets; its own validatio
 Use the published data for reproduction, regression, inspecting failure modes, and building new evaluation protocols. Once results or items guide development, use new held-out data for a new performance claim. For research, separate whole families or domains and add independent annotation. Report family counts and annotation methods, not only raw row counts.
 
 The original final JSONL SHA-256 is `9c1309168c407360b22f64af771784a216874ad4b120024b18dc674cc71f04c7`; CSV SHA-256 is `c4b9d4f5b486a7619088d234a7392589a3a6bfbecac43eab8398109a13ba74d3`. Public release logs have local paths redacted; historical freeze hashes describe original bytes. Consult the publication transformation record when comparing logs or source snapshots. The actual question exports contain no local filesystem paths and retain the listed content hashes unless a later dataset version explicitly changes them.
+
+## External pilot added for the working paper
+
+`paper/external_pilot/` records a fixed 300-item, 100-per-class sample of JGLUE JNLI v1.3 public development data. It is Choice-only, externally authored, and not a hidden test or a full benchmark run. The unchanged prompting configuration achieves 243/300 correct. Data provenance, same-sentence overlap, sampling, runtime hashes, before-inference local freeze records, and limits are in the [pilot data and run description](paper/external_pilot/README.md). Original sentences are downloaded outside the source repository and are not redistributed. Dataset-derived selection and result records use **CC BY-SA 4.0**, not the project MIT license; runner/test source remains MIT. Do not combine this pilot with the 2,400-item local suite into a single accuracy claim.

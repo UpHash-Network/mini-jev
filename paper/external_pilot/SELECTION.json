@@ -1,0 +1,2738 @@
+{
+  "source_count": 2434,
+  "source_label_counts": {
+    "contradiction": 735,
+    "entailment": 349,
+    "neutral": 1350
+  },
+  "selected_overlap": {
+    "n": 300,
+    "distinct_pair_ids": 300,
+    "distinct_exact_sentence_pairs": 300,
+    "distinct_premises": 292,
+    "distinct_hypotheses": 292,
+    "distinct_sentences_across_both_positions": 536,
+    "repeated_sentence_values": 57,
+    "sentence_occurrences_beyond_first": 64,
+    "rows_with_any_shared_sentence": 84,
+    "distinct_yjcaptions_ids": 300,
+    "repeated_yjcaptions_ids": 0,
+    "warning": "Shared text and image/caption origins can correlate examples; distinct pair IDs do not establish independence."
+  },
+  "source_overlap": {
+    "n": 2434,
+    "distinct_pair_ids": 2434,
+    "distinct_exact_sentence_pairs": 2423,
+    "distinct_premises": 2182,
+    "distinct_hypotheses": 2195,
+    "distinct_sentences_across_both_positions": 2458,
+    "repeated_sentence_values": 1923,
+    "sentence_occurrences_beyond_first": 2410,
+    "rows_with_any_shared_sentence": 2181,
+    "distinct_yjcaptions_ids": 2434,
+    "repeated_yjcaptions_ids": 0,
+    "warning": "Shared text and image/caption origins can correlate examples; distinct pair IDs do not establish independence."
+  },
+  "items": [
+    {
+      "sentence_pair_id": "2059",
+      "row_sha256": "56614197b80af4dfc3883d0286e5522f359297af46305802acb7c605e7fc39ee",
+      "sentence_pair_sha256": "7b4c6c85437b089d965fc59e95e12fa2fd23b05a8b698a5250ac4ced7076f1a3",
+      "sentence1_sha256": "3e78cacd51f415ae6d8d67fd143c165ceac9c2b116ca46c4ed82df4fdfd77f7f",
+      "sentence2_sha256": "3e78cacd51f415ae6d8d67fd143c165ceac9c2b116ca46c4ed82df4fdfd77f7f",
+      "sampling_rank_sha256": "003b1cc5f8461363bea4819278374c12a89b33f69c11f334de349008ef0755eb",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "213",
+      "row_sha256": "fb735ac293cb70b72372deec40e20ab85acacffa79f8a9925ce273befb205b8a",
+      "sentence_pair_sha256": "02cf6f49bb9d40523aaa42b6b898490f83afe187f6092612a3432823ec8b6196",
+      "sentence1_sha256": "8220d0752270ff6298f5f2e9a0f7556081a1149ee1406bf40ff6c7dc857dd9db",
+      "sentence2_sha256": "a872aebafe5834cf2e8838d9ea069cbb84592c1f78a088c66b48d7ac92d18fee",
+      "sampling_rank_sha256": "00537ad9e05b5394beda99d2ed8cfbaa8ef1312779572fc6e9c957f101240045",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "532",
+      "row_sha256": "7c6f15b68a85685616643a7e4782cbe16d77da1ec855f2576e73ccd8cdf633a7",
+      "sentence_pair_sha256": "cb51ce1bef17db3361302debdff0de0699ebff447162d3999a2a7c539cabc012",
+      "sentence1_sha256": "c2a7191fc1de0d17da100ec9daa2ae82032cb6cdf873ba2762cee8aceca85e1c",
+      "sentence2_sha256": "880a797cb296dc66322be705848e76e0c556ee588a99bb4ca119f88ff866d506",
+      "sampling_rank_sha256": "0053dda1fbc056426f67d4ab999fccb1884d1935257eb6a2347636be1e4c7f55",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2192",
+      "row_sha256": "fb5bc932c0a3726bb471ba319e4e6a2326af98b53fc89598789d369824c4d48e",
+      "sentence_pair_sha256": "d802fe5a6988dd376a10f6709f843897f0bdf3a3f09ff48cf9c3258c8e96af90",
+      "sentence1_sha256": "5315458419f5beddb11a11acb2398e102afea77d4e3918044405fccc56be5e19",
+      "sentence2_sha256": "2e71075c5ce3f1c66a19d0162c8dc820a3cc2864f17647246d2343625e75bd60",
+      "sampling_rank_sha256": "005723759fc108a1b5f56c680c702ec2ea6480b41e56b005e9b9b9fc51ac85b3",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "124",
+      "row_sha256": "3349ed7314d8c13d3a0fcf1529dce397225f0cf7820d3127ddf773580f1198a2",
+      "sentence_pair_sha256": "d207d444fa11710bf74d65e3ea869e508e3f7e9e9b7b3282162d0f6a590cea3b",
+      "sentence1_sha256": "3cb0e9626d409a89a6a9c4dd8ed635c8520c8a52c6690a187f5ea2291895d8e4",
+      "sentence2_sha256": "0da74b16c1793ae18c9d4bbb326557ffc690f38ca1d4640cd8c039d6975ec2cd",
+      "sampling_rank_sha256": "006aaf80f5240490868088b269f6ae0e659f9f92b75c0251599384d3537f5a03",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1738",
+      "row_sha256": "a8b1981b45e91b53cc4cb3d44ab28c9a7cbd6e4b24058e80579dc55b2df49440",
+      "sentence_pair_sha256": "48d3a8400884944defd15de94c3a889f2070cea5816c400b23ec7acfdff79f87",
+      "sentence1_sha256": "f146fb179c0c24acfc193e2239c21fe4e87094cf13cd668cbac8b7f9a281e1f1",
+      "sentence2_sha256": "3b518fbf4d7b996c06fe3b7dace9fe363079ead28a49f0ee380adb22955121a6",
+      "sampling_rank_sha256": "006e4fcdb023e751e083b742490044891b6f4283b8037ead9913012b32361b2e",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2002",
+      "row_sha256": "29914e127d73733a2c6aad399552499f6ada9e58665b09d388300de39787213a",
+      "sentence_pair_sha256": "a69ba381fbcdf09c49ac127fc97056a5a5758ad490233c194faac3ae19ef1ca2",
+      "sentence1_sha256": "0b0f2ae6f97617bca3f5cd89267f66724e0d830fd8333bc642f2e8890e0e4cfe",
+      "sentence2_sha256": "43d3e1a12bcc0e7a9f678ceb0405ae171cdce2ad917a51465a6883c47df3f3e7",
+      "sampling_rank_sha256": "0078fa322670395570e70144ad68645120b957b0dc83083b61b9c80c3710a7cb",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "620",
+      "row_sha256": "dba5c8da2ba165cc419ad919fe6a14915d5cc4457e859a597e6deeabf02d5c81",
+      "sentence_pair_sha256": "002e57d7ede38fee8e422eed9985e107317033ddcfc85bac8ec3ea6e901c9120",
+      "sentence1_sha256": "aab8df7dfa3c61b914d93c05c447ae8e14c9478cc846c3a49c23b7b36986ce77",
+      "sentence2_sha256": "803174f19ed902132dfed042f19eadd03db5b843367e71d3d0a72cdf8274762c",
+      "sampling_rank_sha256": "00794744c57869fc19d09b84dce7c469a29c5243d990af5ee29f923255af2e3d",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "381",
+      "row_sha256": "86ac9456f671b1163c3d230a88cd795581aab4344d5d817bfd87e8c0c72bc335",
+      "sentence_pair_sha256": "095adb7d5700dbd31ea19a265939d6b347839919741f9b9cfa887069834c25cc",
+      "sentence1_sha256": "3060a6f49d1964c4125ee4c8c0c5aeca1948601197916122fc5e461465a52a61",
+      "sentence2_sha256": "4637af19fbfd4f1fb6b68441ac464ba699fc03f2b7fa6aabc70fa33e20839c63",
+      "sampling_rank_sha256": "00798b772577c028eb23d5d79046928a0a6a0d7053c570ff2d91b1dffff02671",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1681",
+      "row_sha256": "9d8fc3a8d78ca1215176d1e7bfce0dfaa4906f8e080060b6b14fff5421e632d1",
+      "sentence_pair_sha256": "dae02e9a8c33fab3bfc92ca9cdb97fe63a0162a3e3b358cfbdaa149718e46a09",
+      "sentence1_sha256": "7d84ced30901eed4b6b15a6d5fdeb021fd5ca9bd2e243777f7b517a2ab7aa2b5",
+      "sentence2_sha256": "d8e140cb42cfba0f05517df2005ad510bce6409d2e604af8d8b2acdce10ab80a",
+      "sampling_rank_sha256": "00804f2d977d0870ccc3554b8de3a6267c9296a99d35d2668a2e4f9121fe1732",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "991",
+      "row_sha256": "d7ce67e61b802989e4be1f9ecc79f535db9881adfe3ca1cdc5d2aa4fc6b4e72e",
+      "sentence_pair_sha256": "d8572f9bfbad011241d31b0109b66a8960f6575c71b7382a3bd83a2ee6389653",
+      "sentence1_sha256": "73903fc1de8772496e35800d272744243ecf0bd3edf2893a4ec7213dfe0f520f",
+      "sentence2_sha256": "afda9f3441be645cec0d9e1bd79023c3fec278fc594e3ff816de3af97333a39c",
+      "sampling_rank_sha256": "0098154b35cbba582992df5360110e4bbeef9c0f81f6ff96081328a51763af41",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1676",
+      "row_sha256": "62d78bb3d56b8c8ab340a93bccad066473a2832de197ed6dd0294fb8ad7b1bd2",
+      "sentence_pair_sha256": "a46c8fe6b7b5eab472d903665ee3021ac086575a565415cef8f9d9fe9b816a05",
+      "sentence1_sha256": "4a8e45261da38f9bb9e9d685afac239d50c8eecdddb4cae39891ed67ec7a7cbf",
+      "sentence2_sha256": "644e610fed1119e89f630a01f39df02d1637b28b44f1635bd0c35513a4577064",
+      "sampling_rank_sha256": "00dd8a351983d2c0a39e6de630aeba56deb6be1de010ad05b6519d91c9db07d7",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1882",
+      "row_sha256": "5ca571cd56e7fed7877a0aa7e4713d0c061f0d01e20cd9a09706b32f684f448f",
+      "sentence_pair_sha256": "5a0040547a83880cfd9ede30e4e21111e8b55b80a40224422db023b90ee89eb2",
+      "sentence1_sha256": "9fbadc9198e8b6bbe88f24ac5ab6090c93066c978756a9f4898b0a9220019170",
+      "sentence2_sha256": "1399a94be1db034a8ac9e58cfd90750ac7d56cdb179f08634b63c0ebdf9fd45a",
+      "sampling_rank_sha256": "00efbdfc8f3a44ffaaa66187d03565752fe0696ed9ef116f58c161a8b7e113ef",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2206",
+      "row_sha256": "156eac5c61cf9c4274bcfe77591337ab55b1b36898e1f5e23935308cee4c4d8c",
+      "sentence_pair_sha256": "dc3710239248189865d9335703e9f83e70fdc6861b3804feac2d51b7cd828890",
+      "sentence1_sha256": "336f6a2e498a6c70004ab77d222fa734dfe52b2c7473fa48d0d3d90611463b99",
+      "sentence2_sha256": "5e5a7e920d391b0323045f504373bcbacb3677c95bbe231158d92f45af2bc8c3",
+      "sampling_rank_sha256": "0104f7e9946401cd47f269945f953ffcb88ac5f56876d11230a1c602057abc6e",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1848",
+      "row_sha256": "c4de2f08ca23b3d11248406704a8e8fb6167ebc69fd3def53156dd7a136a7b59",
+      "sentence_pair_sha256": "b2b4d97f25a0e9e21144bb3bcdfc5da51f0e8cab9597db4de652d6bf40f686f3",
+      "sentence1_sha256": "05fe822cacde3f38630ae006240e0f8d63d8a63e20711a561dd3a10928df2f6c",
+      "sentence2_sha256": "646e68e54cab7ff616968d3ede9060e21d526028260e50eb51fa31228ef17465",
+      "sampling_rank_sha256": "010e40d7bbc69a54dc175af2d88639a3e7fda21b164ba5f47fd806e1d664ce51",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2093",
+      "row_sha256": "4856c10bacd36c22407dc2ddeaaf543e0ac719076f4bbb178e8afda59616bf6e",
+      "sentence_pair_sha256": "1f8df04ae2f9ce3d2f327c97b978c8f78cda5f11a191c804d5923788701d00e1",
+      "sentence1_sha256": "6eebff032b52107285f902d52ffd164ba74fb5b497e6670a097f4a255e7737c0",
+      "sentence2_sha256": "dfeb1214615d86e9bbfe6b1879b0ce660038abc241618e74e49f53a3a86e0674",
+      "sampling_rank_sha256": "01707ea71411933e849c4d960e4f12829c13def9d73dac56d74fb32a3e5f2561",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1118",
+      "row_sha256": "59017d75cf877126032b064e2f673ef6b2b8c2a07f4ba7cb768afaf2cb092fd3",
+      "sentence_pair_sha256": "558b901a0ff8d50c6081fad4d33e305d09b68b9521b4f1a03b343c3e9b8c82a4",
+      "sentence1_sha256": "588dc45834a6f0809d8955af8c4d7cbfcda34d249639115c748f65ce4189411e",
+      "sentence2_sha256": "6ea5f7a706331ac234546b0097aaf562eb24dee3dbd14537648043ff4e18272a",
+      "sampling_rank_sha256": "01825cd2b4dd08d32c62395f33924f2f833018581e1b4c2c4035198dfc6aea5b",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2427",
+      "row_sha256": "87b8ce33b9ec98d52365ec985f9d319e8bd7340e1f295fb64dae72b50b4369df",
+      "sentence_pair_sha256": "6c1ec4b10a95132168114c20b4feb3fdbedc4b68759f04dce697104cbc7def73",
+      "sentence1_sha256": "6ca7e9d1278e2a2fbc3c5e579cc60c945bf7f26f38266042dd0c7085ab8e1748",
+      "sentence2_sha256": "58cad0aaa4ba6a7a9c7b18f558ca7d37ba2edad7a1cfc71188ca8efe327e7c1a",
+      "sampling_rank_sha256": "01965f5ac0bca22f14d8af9a9721d73fdcd3865a74db3a619fae63a13c3cc585",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1803",
+      "row_sha256": "c01d1566c85f5fa676a513a5aa400423973667f77d7097fb9a2373ea011ce3ae",
+      "sentence_pair_sha256": "2a630f5c3e376ed0d6152c584e5e4b95c72b18d229f34824e1c9a4360900ef80",
+      "sentence1_sha256": "e31e2915f6bd42dbe5de494278d51abe57e75e9cffc1b02f3f3532ad043786c4",
+      "sentence2_sha256": "d33421747a63d62c24a8b72a79a80ffdaaa6577928428e1243e60989f036e1e8",
+      "sampling_rank_sha256": "01b00565f14d059098f3e13767f6a4457f87901c9b632f3b27a4f362995f1ab2",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1870",
+      "row_sha256": "0c3946ae2d09ec547cea4ad040fe82802177face6d5b992dcc03951fa3505ade",
+      "sentence_pair_sha256": "ff5c0d62b962ef0f48eb80101de8d22fdcba3e2aa2c1df942fe024c70c380f6c",
+      "sentence1_sha256": "f33643b9194795369154aa9f3a5f8ff7c7b080df43983dc94900441ab3404367",
+      "sentence2_sha256": "9357ddc38add08764cc5372d3d398eed4fedb9fc70e3fef79d4d74e0cdf679ae",
+      "sampling_rank_sha256": "01b0b3d02c01fea4261b13ebcfff0c7c764c689c2f6ed71bc0ca194a293e8d0e",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "62",
+      "row_sha256": "44c0c0d75618f18cf0bb0376d6f50f6f0f9db42f7ff1a27b94fc342d8ed2dfb5",
+      "sentence_pair_sha256": "eeab66474ec8655248f29462a4db91389e5647e1de0954f8a0ee94e5e65af4cf",
+      "sentence1_sha256": "538e1616e8e8630a62bc688ea0d4a3f49b1b8963affcf894f88072a57ff3771e",
+      "sentence2_sha256": "20686b2d235a4e169b284aca9ef801045617d6688795c93aa305947cd21b393f",
+      "sampling_rank_sha256": "01c8f419325c110bb90b05ad45f8947b80468b8716040d5f19fb91edc7486aad",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "644",
+      "row_sha256": "e62a8b8ed5ca5d33b6bdd3cdb6dc12c492f6d5a81b8fe7dec411bd5ea1d7fac4",
+      "sentence_pair_sha256": "b3c61c298f7c6470199acbc9ef6605c51756d3ec9dbb867c2de938881c5489a7",
+      "sentence1_sha256": "0ab4a2f99a99400582404b50ea7d138897090ae5371976e2d03f3869f6ee4987",
+      "sentence2_sha256": "e5efe858a98bef9a85887bcab70c21022b6ee887b9a99fe0ee588e6b89f10def",
+      "sampling_rank_sha256": "01da6d98ffaf5a887d94c61c459bca88201faf167e3f333409d57b3532901ee5",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2148",
+      "row_sha256": "00cdf63ad1cf7d4a0501e804029a1f521a53ee41f21fd6b3b5b2fd528e8135a9",
+      "sentence_pair_sha256": "795f19aa1fefd5ec336456ecdf5acd1781021e131818e3bc0af782a4f252ec98",
+      "sentence1_sha256": "553eaf96c8363244423d2f9f2e0fa422544280e3f678ca3400cb776ddad0c32e",
+      "sentence2_sha256": "4bd2cdeb2afe4f6b9ca90399ceb2630a5e63d44dedb64ad63a6031f650d1d793",
+      "sampling_rank_sha256": "025215caee8489ebbc82efee18f01340400e3a8a2ca36132a90697c45edfc3fb",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "379",
+      "row_sha256": "0692c4d13b1277b18447dd49ae149eddd63e6c8e31d402ec5adaf125046c52da",
+      "sentence_pair_sha256": "868837e7ec8baff913862de5010f79b3ae976ead76dc3aa56f5d682500c1bb61",
+      "sentence1_sha256": "c53cfca4aaa98fca2f3e15a1bd8cc92e2ef48ff548e4e9246a9f117f5dcb5340",
+      "sentence2_sha256": "3470ff017f81bea8ca4c5374e77313267afff5c6fb28ce6fb1d7cb72dd4de2f6",
+      "sampling_rank_sha256": "02805e4dd490320d9e9ca801e8c7f20f41d0baff5ac1033b1f6414863b5680d5",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "183",
+      "row_sha256": "cb22deb8aa5b50c519e9c574c9f7aaf86a993b153271b5ee31b9b1a05d2a5d16",
+      "sentence_pair_sha256": "d61816fe7a0bc027749ff8d64b57bfa8161efe5e77cb92cf8ba0f4778d9c5dec",
+      "sentence1_sha256": "0c85514835cca2f05047f848d6fa2286ca11e6c1ccc4647c894a1788a5b4765f",
+      "sentence2_sha256": "fc52e59c8ea00a6c68fb888a6313bda2abb0a9261c1941b37a3a3c5a8e039ad1",
+      "sampling_rank_sha256": "02d9c6525c2cdb82386289fe98c252a60ea20f3b996e29f420ee6324ac93db0a",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1201",
+      "row_sha256": "103d09bc1bd5351919b19ec9d669f9b392e65b039ca23b368b928f8eb38c4dfa",
+      "sentence_pair_sha256": "2686c045683dd25096e154fbf8e3de6680d1504bba22bccd9407d933d2cd8aad",
+      "sentence1_sha256": "4f107aca0824920bb66bdb2ccda0cffa5da67a2e3070f27935073d8968501822",
+      "sentence2_sha256": "22736ec16fe03ee3c9f3441c4fb053aa59d334566728a37970c5ef9014acfd70",
+      "sampling_rank_sha256": "02e263ed244e3a7d29bf7494db3701bea0b06bac92a447a1641a650b8b12ddbd",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "583",
+      "row_sha256": "166e5f4a0c1390115a52b7121d4289a4f37d159ad1e44988d863bc88fb5107c7",
+      "sentence_pair_sha256": "877b9ed51118aa32b7bfac44c584d51880f9042fe8a124891869203252d2f4eb",
+      "sentence1_sha256": "8febc8a61bb9935e91f92673ab2b196f71451307a86acd1e71bfc837811c32fa",
+      "sentence2_sha256": "b5c7c4e6ae6f39d2364bb6c34988e823e22ae140c2ab7304006ccd86911697e6",
+      "sampling_rank_sha256": "02f53b2f6827689a21e3083aaa49a7625dd8967bc5c060c1c5ffe90d0e8fff25",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2307",
+      "row_sha256": "3faa11b96968e4ca8465ad34ef5e2145ecce1cbf4441739fc249b3e50072dbad",
+      "sentence_pair_sha256": "497d7c3e2375cec64f04906cb96d78baca5c1fc126a15d834e8b0c90759ce529",
+      "sentence1_sha256": "a3c7836f50681363c9dce71e6f843a543010ef292010fa1aee3a5c886e00e63a",
+      "sentence2_sha256": "62ddb9dcb5b8574a54b829edad99f9b5d2986b550a792d4253a254bbee7360db",
+      "sampling_rank_sha256": "0306a2a3a8f630d1ec8eafcb5807d9172e5bb8f0c5b7d1cb7ee30a2d6b071d51",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1605",
+      "row_sha256": "f68247867959fb2ac735e1c4c0d1b90493953b77c07529e00a5dd67bf385118d",
+      "sentence_pair_sha256": "b127dd79d5fe626e9a8ec25f0814168fa14c2dd5fc1e45c07a79b3dddd8b411b",
+      "sentence1_sha256": "711e5cb8665e635f8f9612beb0a670f03b12f484263c7135c17e94180d0caf77",
+      "sentence2_sha256": "d51f7cd7e6af1ba6a22a6f6ebffe4f61d50218e709d565d25b979d760eaf3e5e",
+      "sampling_rank_sha256": "0344b087fb561261ce22d2bd7dde8f97e9f067d0fcd93bcb863b7d74811a6221",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1548",
+      "row_sha256": "c517d8e66445b4ca8127ebcc351a55b592e9d5fe6dfa372f8560ffb3188e291e",
+      "sentence_pair_sha256": "c94f01c3dc957f4c32f7a498f0ef9de9f011399842df68168d142cf65c49f20a",
+      "sentence1_sha256": "b641ba85dda16f91389c7c6917ca70d6a646279a5cb837a95a33d6dc351601a9",
+      "sentence2_sha256": "7973d83ac1325178ef4a62138cbf78e56e9b636ab7b8b30f245363f712c89065",
+      "sampling_rank_sha256": "035eb7cd630dc8af254621dc84d133f66254babc6aa1e90b8e3cefb201162ca8",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1968",
+      "row_sha256": "1a3b2b685bd502e3b38df9c87fabec07a0f3d7b1107c5cc43414bac48696ac67",
+      "sentence_pair_sha256": "17170b4831c2c175858def466900bd871a965b30f8a22c2e38963fea34f4f3dc",
+      "sentence1_sha256": "63d2d0ce7f29731aef6eb60e8653235d2a36604a1e48fcb495e1a355a5a57370",
+      "sentence2_sha256": "ee231edee6ddfeb5f6d97a550a02f1d8d5def8c4eae157e0bc06e7c32a887e81",
+      "sampling_rank_sha256": "0392d8096c4097b72e5586d2e5678692fcdcc83e4e87d2cd140fc66e3a4c9ade",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2070",
+      "row_sha256": "0fa45f43d96163c4fdcbfcd01cde2cd1de4949101dc5c796aeeb0ecb8a3ad25c",
+      "sentence_pair_sha256": "90fede2dc0cf9866248f6b947f022753bebc57f8aaf83ccaf41a8b1dc56a7d65",
+      "sentence1_sha256": "0677f3a00a653b5f2b7baf97f426ebbb5f0e536e4d824831306455c717d0f09a",
+      "sentence2_sha256": "7701b41b7ef78338d9e201ca624d4678fe05f20a860423f838114bc8c484f96a",
+      "sampling_rank_sha256": "0395b0552a48dd89cbaa139f32a2263e1cdb26acf78e2523ed893d8db79fbfe4",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1096",
+      "row_sha256": "ce06f82e55eff2b494a0c0b2178811f1e8420f90bb50e698c28b2597e60bf120",
+      "sentence_pair_sha256": "f6f5dbc3caf914b770af3f162132df6b3964d25b8b5c2bcefaf4b1776fba5fd9",
+      "sentence1_sha256": "9a40e715dfbeb952bc10d0a3d95c9672d7c722934a2e8e18e53b3d57bffe9990",
+      "sentence2_sha256": "d9c0d710a76cef7cdaa971f1d14ef7a3a78168319e583b0fcb81df771930eafb",
+      "sampling_rank_sha256": "03b91c48b60baa62d7f441dcd206e371e3b69a18c24ea88b84e1cfb507a94e65",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "382",
+      "row_sha256": "a36318e97ff0daa56446bc9ac990c63c8f1630130aff0c8fad8375d2fdd66e31",
+      "sentence_pair_sha256": "2cf3c99d7d726b0419f9891d5298104113911f310791e8c50059088856938ef8",
+      "sentence1_sha256": "14dc647381cd03f4e42400aad65fab5f6ad9da2c52f2394502f420e5edb02c06",
+      "sentence2_sha256": "35fbe24de24fc08da4c2dd7b56ebefadcfdd9bd11cb7e15506edbcf4fd47c082",
+      "sampling_rank_sha256": "03ca2c8aa7cc5d4b1566727c620147f5d16039d2bf1da4f75f1b13065fe2dc36",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1300",
+      "row_sha256": "57dfbfe24d5963dc68a0db675bd339b5dd931d87d433752ea967b6db11415e13",
+      "sentence_pair_sha256": "ff3eaccca963cf52610fda7548bfcb79ce1d08629e0cf504e366ed8ed71b7804",
+      "sentence1_sha256": "502d059faa510a8c19b05d27615db5f8f33b15088e76d9e8bb5c003a187d6460",
+      "sentence2_sha256": "2484c30f023275cfe7cdd6440153ad87c62370ca67bdbe08c2880031ac0b98da",
+      "sampling_rank_sha256": "040ddafa0e648a90176143c9b32edc277f617d498604ea50e9657d54bc22bcbc",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2386",
+      "row_sha256": "793f35251a47b386f81d622cd2081d6a96552af0469750e60cc90744374f24c4",
+      "sentence_pair_sha256": "b882d085e617032ec9f8e796fbfbc18adcba4440ef2904c244c9263616621905",
+      "sentence1_sha256": "20875dbc13a1f801ce080419b784fd016e0f2c4647a88e28400fb88b835c0e15",
+      "sentence2_sha256": "3ca2b9ea79582c6e6e1580df54bbebd791a17607fcabf10540bf251dbee97368",
+      "sampling_rank_sha256": "041b3cc41ba9b7d82602c87d278b666fce28365452c3a54ccbd66bbc291b2d95",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "961",
+      "row_sha256": "7d794c698bf97ac2a9aa9d49dbdfa30f47f95474e9e391d7da6b03130d19da02",
+      "sentence_pair_sha256": "af1e8121ffaa569a41337ed6f698f64376216eec248a39b0cb2879540a3af4d2",
+      "sentence1_sha256": "7bb159467e79f3b14072130a14758c7c54dbae0fbd2abbb1443d5903546ee930",
+      "sentence2_sha256": "605a935186ea6cafe86783a9aa0df57bd3908f64ebf1f90fc992206c72d7cb84",
+      "sampling_rank_sha256": "04404ceb46706e6e9f7e0f62b2761639ad441a13829c225c9b7798454648472e",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1114",
+      "row_sha256": "72c8bc4dbcdb28005c9c5200b7856789717e9d87d1092990c6bcbaeaab24f82f",
+      "sentence_pair_sha256": "773af42c4ee815345dd977c22f3787f094f2c2000b1be03b07d5a982a6f13396",
+      "sentence1_sha256": "8fc65e9c99a2ce295d2cadbba370985d5548e68b7a4c091422f21a870959931c",
+      "sentence2_sha256": "ba80b55086d73c7a8210ca33b44c1ba76aa2dfc62b2242c9f9dcd957306f6453",
+      "sampling_rank_sha256": "045d606e601838a10d3365f942589b85ecb6d71a55a88deecc93cf3e3892ed53",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1491",
+      "row_sha256": "1312f7a811d180f8d19e68654bb187d49378aca083019aa607326555481f8f72",
+      "sentence_pair_sha256": "d73a5cc416f380362893e09d252a463c45a9ce52181b0a08afee2c6297027ca5",
+      "sentence1_sha256": "77024bd25e35f019128feccf554bb05e71019bc4618e11d920fdd044599f1eb1",
+      "sentence2_sha256": "927028a748e4d47d86e0b3d5ead3094ccd3857b1a37850a812a0e0da031584da",
+      "sampling_rank_sha256": "0477f5f29b94af938fbd0d56593d4c359cf571b77901e5c7028be2e8dad6e850",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "802",
+      "row_sha256": "b079c03c39a89ff905897c868889fd5998d0042c6ad7e3e7446c12d6091a9b2b",
+      "sentence_pair_sha256": "7fe287492c69c92d207bad7a06a7dc4d08e4423707735610985147e18b071d05",
+      "sentence1_sha256": "91a0f0b2dbce339e4324670a0e67b2468316d49be1bcdce2060ff7a4381de135",
+      "sentence2_sha256": "6ac2e4dbfb745cf99fa006b5872f1ac8182f988f0d568ef25a903c31e36b80fe",
+      "sampling_rank_sha256": "0493dd2c5cd7aca2e9889ae613eaa51362fe3185905d58d4eb334a146236ed6c",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1591",
+      "row_sha256": "37cbc069ef75ee5f326ae443ed3a05d57846b11ba388010364de9f29280d5773",
+      "sentence_pair_sha256": "a63e6acadddf8bd9f3853fdd5678318bcefab2c08a0818355317792275709379",
+      "sentence1_sha256": "8d63a89227fad098360d68cf4f5effc9265bddd02594db7ef4ddaeddf8900313",
+      "sentence2_sha256": "32b9163c962ec0abf0bd02ce880dccbd3616118fee0f3fc1e130cd555ca7fe3e",
+      "sampling_rank_sha256": "04af76bbe3aa5e03767abdc79e299be1ab3289a6901dd6e5c0fec32d064579b2",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1959",
+      "row_sha256": "75d42080ade32fef807d052481c2a40450674ddfad876190078fd84b91601292",
+      "sentence_pair_sha256": "723db8ee27d99c1f1fd0afde68214a12ccbd3d9e2fd796020d188b253ea40bed",
+      "sentence1_sha256": "b1670f2c91bb49e39302f0e990e2a490035a5e47cab0b1a759a1d018d3b802a6",
+      "sentence2_sha256": "11d2d324848bd24e3efa66bd97ea425e151a1a9b2058da9e4acfc354c20ba417",
+      "sampling_rank_sha256": "04b47122a28c03ed6a429c919d7af95eb9b4b622186201120f8a603632ffaf80",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "125",
+      "row_sha256": "24b757f6c9019abc75303f111169ca333b6888c3ba480d60e7a8faef96a71d4f",
+      "sentence_pair_sha256": "d6be77c2176557242a94def94384a7340b74e82ef3812e105dc97a562f6ca031",
+      "sentence1_sha256": "79e16c17a472d5698c999a6054d9523009dd9dbe6655050c41e969f293c4f465",
+      "sentence2_sha256": "b0be035e5e5cfcd5854a81c1aafc222d74fb994656d385f52a7bd3335d9c5ff1",
+      "sampling_rank_sha256": "04d05b8b7e93f615bbf6ea99d4e07537dbc301b28fa2c7d0b65fb93bae243ead",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1191",
+      "row_sha256": "b417a65ae15a6876a1eae80c5f61d35ffdc744477d8cd7a8299749b86826c86b",
+      "sentence_pair_sha256": "cb5576abff136efe0e8be52f6aca7fef14172c8c829a366625401132e394a975",
+      "sentence1_sha256": "55eca6e10e8a1403c1f477b8ddcb13012842c60250f1a44a49488d871caf2eb7",
+      "sentence2_sha256": "04d3de9ab55342be146c4211a11b166f18fcd62b902b4cbc8b8b57c129a7d479",
+      "sampling_rank_sha256": "04e9e230060a47d85261a7d89e8936546ab6151e8c61721a573dbb609b8a3ce6",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "797",
+      "row_sha256": "22807a478894de16204e1e9b50ff852634028fe88597696fd98e1fa75a9165eb",
+      "sentence_pair_sha256": "f6027b12415a645c715fdaf936378256ac7af1eb4d9d949f0b99ca7419f4ddaf",
+      "sentence1_sha256": "ee34e1cb8c8f304823ad9cbd4f5927724f895919c491f48d8c092b2b88804332",
+      "sentence2_sha256": "800b470e0d0e7042186e96edf08082351da7c65fb6391b1f5e4a8adda6665918",
+      "sampling_rank_sha256": "05139f4b579cbba5cdeb8f601dc18775904822dbf145e105cf92359c00b7a59d",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1306",
+      "row_sha256": "380a785dea15f0b180603696d8660763a37435402fefc6d97082400bf8120f66",
+      "sentence_pair_sha256": "9d8868355e7692788449a34eca24081cf37033e90ee1cd9b9b19f61cb0484b97",
+      "sentence1_sha256": "01f6020b7cfdf53748133ed29d39859489a9107b39d8725a6d8ed2dd936eb8e9",
+      "sentence2_sha256": "a49090f805f57dd23f9247d913c2a6de8dbf4658565a41e04113c4013fe25773",
+      "sampling_rank_sha256": "0519e142d366300940991fb70ffd1baeaeef2e841c883744b8444890607ca4b7",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1637",
+      "row_sha256": "633630e69f4f7f9cec9abb898430821d966545a13a4e62aedf4cd539bac77560",
+      "sentence_pair_sha256": "17984ed26bc6bcb073fbf66b6f07264479f6e74fea32fea0a3b6eabb5b709fda",
+      "sentence1_sha256": "9fac5b594f06945b704150823596b56c910f00dfbe0640d445aa4a97f0f7fd36",
+      "sentence2_sha256": "034ed40413d51af928a575efdd54b63a0b23486c57ddb122ec4c0e5f01a95c38",
+      "sampling_rank_sha256": "051ba692a6bf747f581ab3f0a4d8167e11d63eff71d1199e8b766b711761e61f",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1805",
+      "row_sha256": "3c5ad77581ca0325493e1729d8c9ddc165db41ffbe0283a7401b293501317725",
+      "sentence_pair_sha256": "6508c6d1ccb2299ea53f5e57655365f080d4d2404210dd1421e2af15e27c7843",
+      "sentence1_sha256": "c379a5fec3e6b9184c5ed064782e18fab55c8bee8e12ec2cc20cb49ef8f491e8",
+      "sentence2_sha256": "506885f658897c133430078a762375056ef6ac71664e5f68a2d986143e170865",
+      "sampling_rank_sha256": "05274cadaadb4470b52e32eeef0b3ba72ad4fec232f71767a35d9b4f740ba1ab",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "919",
+      "row_sha256": "b36bef92fe79840cbfaed0eca596f7d900dc06f0690a5bd9e06b70c9e48100d6",
+      "sentence_pair_sha256": "d6eae49008292323bdd17454165c2776b4b90433e246e29ef3ac8f78c064f01e",
+      "sentence1_sha256": "30ed36f8b9d964c791043b5c64414e0b71716898da07f31bc47f2e3d25800247",
+      "sentence2_sha256": "487352c85cb95548ec5711d1580552eb0079b08c525631be920ef37f02892183",
+      "sampling_rank_sha256": "052a52ed90a4b57f84f491f23ed04eedc4b957d28706d8ecfb6ba82fffa237dc",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2057",
+      "row_sha256": "3ab92eff006f8807d1cb0dca0ae06153f20213d68a0f2233dcf4ba6f43a9d6dc",
+      "sentence_pair_sha256": "8bcf840d9129379dc2d18185a04ebedd1955adbfa661376891274eab70546cc0",
+      "sentence1_sha256": "0c42a3c774b15b54b52c4877bd57d7f39a06b6355b3538bf6a181de812df5b1f",
+      "sentence2_sha256": "e1b312e5d6d2d83417e0e1a9f451ca45ec988f2f363609038afcec0226ea8402",
+      "sampling_rank_sha256": "052af18e7f9c205a611d528695ca5e9273cc0b4b441c5b323b3a3539acbf60f2",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "48",
+      "row_sha256": "4ee3cfd83efd044abd47f98a0ff9de9dde00a2ce64338a70e63e68243d864c2f",
+      "sentence_pair_sha256": "8eea8d545a5c678206c8ccebe5b69e7fb36cd6b828b1716cfda4923777c13348",
+      "sentence1_sha256": "f1f14637748c3b07375d752e3a89b2424824dd602f2c1c3b1dca79bca2f24b88",
+      "sentence2_sha256": "502beb09b3ff9b8801836ed3ba5ce133d5c32f6fddd5a897663f855f0eb96887",
+      "sampling_rank_sha256": "054faff76a8436ec5efb96e327ce07e4fbb179241b7c65a30ea02c95c3d69152",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1698",
+      "row_sha256": "fbaa548158b549a84a861017dbdd1b72ab16441c25656699153a566f3b5be0b0",
+      "sentence_pair_sha256": "26c78688251d4710dff94e05352112f9381e68336cb2a98519adb24e4dd0941b",
+      "sentence1_sha256": "f64bc1371d98c710cb5f9d51fbd0b9efb5e3dee37e2c1deb21cabf07ae0201b5",
+      "sentence2_sha256": "e24dd16685fe83276e904f5eaa16e1b030e8c6f56f06287c22322eaf80773fb5",
+      "sampling_rank_sha256": "055522cda9b2e0ba2f4568ae9729e0428fbaa96cdb58d622691057c97c119be6",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2227",
+      "row_sha256": "5d7d1be477e4283b60b0cd2e5b639785698ed653952cf2a0200af85870d31288",
+      "sentence_pair_sha256": "c5ee4d26172ae35059214bd5392c0be4e8cec2d87c40edb178b75a6a2a0e92b4",
+      "sentence1_sha256": "19bef6a29d6fef22abdb635b122e6468d27fb1c6189f893b7a1b5f9a8b2f5d19",
+      "sentence2_sha256": "2e70b15750748f11827f3fecd3ef02583d547ef9f567860fec12a008f3aebe69",
+      "sampling_rank_sha256": "0555eb3c026e41bffb67ec7fe65f6a07405b769f8aacd3d0b7300c2505fff24c",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1519",
+      "row_sha256": "322eb3c686a52a1e73d7203412a17cbdb632749cc8b53dd11272f53df164663e",
+      "sentence_pair_sha256": "59bba23d225e0595ea14d2325b130a8fa0a91c7e3051dad6fabb9301e2964d5a",
+      "sentence1_sha256": "ada09b405d9ed7cd4bcd0153a0171c4bc0d9474e410ed70a35e4b3e146d1d675",
+      "sentence2_sha256": "b1959aa6a39f427c89b99072a700d159eace5d134ab8fb6f52a28453a68bdcfc",
+      "sampling_rank_sha256": "05a3b69f51f1191578c08123a287e48b707b1f07a0b90344f40bda7ff1114182",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1982",
+      "row_sha256": "17ce3265eaecdd0a8a2e06667f820eda7e1c96a14be3d473a090d6d456c80ee8",
+      "sentence_pair_sha256": "675e6db0ef18e031aaba6cdf18238516faccc774ebfba31db3ef10fe966fb198",
+      "sentence1_sha256": "31d686850f0195d5dee64ea67677ea1f2a826221acf4681d9e413ab7646ee718",
+      "sentence2_sha256": "e64a18afa5a1d91ecfc020a108ba07791c75a7c79fd030679ffff71d4d777b20",
+      "sampling_rank_sha256": "060d650a8a4b60a6618a6adfa02e502c4c5e0a227bab057a7e28966c52a964f7",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "593",
+      "row_sha256": "bf61c6d144ec7f70cb8a5db91332916b7fc00817cb142a38affc5d385de2d9cc",
+      "sentence_pair_sha256": "63f3ce22b144836026a5b4f7b57eee414754cb2b8d3f9ba0c155df5bfba97846",
+      "sentence1_sha256": "64e7d8c1524cd49105852d5f20302650e9924d186a8c34ea49939cf535aa2eb9",
+      "sentence2_sha256": "bb9c1810bc34d1968a9e7d606dc22bcfc3e90e8f3e479f7f7af7b10c715c76da",
+      "sampling_rank_sha256": "0634a9201164a8bbd0f42f8c327d5ade52818cc22fd9b105d61607a329157e0f",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2255",
+      "row_sha256": "3a1b9298351f136f818001cf66be8afdea6ef5d6a5a621f6af5e6fd67dca2e56",
+      "sentence_pair_sha256": "82159738b173af6b8f3baa81b3c5b9083af49f46fb430312638fa2537ccda111",
+      "sentence1_sha256": "59047662cf1dc4d7c1493204f302cbc87f478adfbf5f4cc7f5d7d01f8d0d9793",
+      "sentence2_sha256": "3e5bc0cf49e237e5ee517ab4b6cbc991283a0f7de9aebeac2d6b4f9ea96506d9",
+      "sampling_rank_sha256": "0635132917cc5ac03dcf009b405bc2ae0196ed3784bb222791cb382254bd45eb",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2204",
+      "row_sha256": "f946ddc673c193c8c577759d2cdf0d11214ba7aec10b3b943423f3901afd3949",
+      "sentence_pair_sha256": "53353a0b9d98ea628047712d47be76fd16f73fbe62748cfb6ea7451144e84512",
+      "sentence1_sha256": "c14e29d135f942ab53a4059da0aaad16337dfbaaac640a9b99e3120e3fa2fde2",
+      "sentence2_sha256": "294083aba7df3363df8473355bd11a3dbb4b24393511a3aed598fdfa48666bc5",
+      "sampling_rank_sha256": "06569b47f173d43d78e4aa3f9d86135723ad9cb811feb99a34b271063196b441",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1165",
+      "row_sha256": "6e64ac26c7de22b9c88bc85a13da384bda9e656184cfbbcefd90062fc9e7f086",
+      "sentence_pair_sha256": "0cab2d863f7a81fd8465cdfca4f08ce8a42d947a7c81a7fc304e1bc29e330454",
+      "sentence1_sha256": "b7343d85f28a49dc8887943bf6c6f0e8e9c8d6ca26b37f6ca45237cf92089831",
+      "sentence2_sha256": "2ff850dd6573bb6df4161b30b5a89ca24f31d61b1d4fef3f83f4f3fa1fcd7bc8",
+      "sampling_rank_sha256": "065dde77b66fc3b6c9027287f3f176659e72bf66c5a92d50018594ae3e09c9d1",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2298",
+      "row_sha256": "fc812500db446351a0ee66669a809502ea07d6348879b89b73097f4e8cc36c6f",
+      "sentence_pair_sha256": "f375e5b6e1e77f17f12c469ca37e3d764124adb73b80d29c2a638330e45d7276",
+      "sentence1_sha256": "bb9b12d6632c3753460e19b6caee0a6559606d01c8299326d3ee7b96e9076b3c",
+      "sentence2_sha256": "c984fe3242ec042966511370110f570e655d38a73815d34f8d05effa27997ca3",
+      "sampling_rank_sha256": "0683911e44b0e6dc3ca99a8bc90229d2464cdb287f202c6ef42964474d025269",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1936",
+      "row_sha256": "c4b0beb6155ccdfd6fd16960fd397ff428b56f9b6e6842085f4772f8d896b554",
+      "sentence_pair_sha256": "49fb51030f4df2c82686c274713a4501d4e116ba968160ad85ccb069722bd87d",
+      "sentence1_sha256": "f6ba1ed8ad8025766a4d041dc26a2019826a8f0d29b2aa7c2452c28ead02a9df",
+      "sentence2_sha256": "9c65f217eea4733d20cd80d251fb1189cdad9dfc44b4b63e335a15a7c73b25b6",
+      "sampling_rank_sha256": "069a660ed71d3ec02a2acb3abccdd837a1eb4a61769b8c5e1d7b1f6885f1418e",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1256",
+      "row_sha256": "ac586c3e12243b6f3006934492a5782403357db7a712736892995d8debff0f44",
+      "sentence_pair_sha256": "77e2cd2264fe380fd6b72bad4eee504d0d5da3bc9f6a9492813d5447b35ad1c0",
+      "sentence1_sha256": "7a946fb240a8754652ef480ab63c6da03e44b6b12e48dd1a7fe007fe1ce01274",
+      "sentence2_sha256": "33ec30af6af7f4aafa4abdcb5dce9195b74e1bd4d35f69e2cfa7e9040015f7d6",
+      "sampling_rank_sha256": "069ff6e1842207cbe528cc6a8eeef8a39ff11c68efb21e171b273d2cc055807a",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1394",
+      "row_sha256": "325668128032aac220b2bb6d54407cb4ac3eca4b3f4d6b1e8491c7bc9cbcf938",
+      "sentence_pair_sha256": "fdcf706297614e2c49468f378f0ce503e98c785f3130f976658004dc96fd427b",
+      "sentence1_sha256": "d350d0e09f29fa501f5913005d1818ea541d537e095b6b7b132417fd25f30262",
+      "sentence2_sha256": "fa4c57ca9b6e1f3aa9512352412633ca1ed365a0131dc25cb072f1bb98f8df6a",
+      "sampling_rank_sha256": "06a55ee115097b39f00828621a7b9ca92b760fc273db4a68d5fc4cd3223ed0f3",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1716",
+      "row_sha256": "cb4ff949aa0e199ce67357257967d3eb456d28d2d15d1668aef15e634ec18a11",
+      "sentence_pair_sha256": "6784a0096008598bbabf72a79144bde9420a68d8c2f9d731104b9f9510d10055",
+      "sentence1_sha256": "45ab2e300c559071ca4dbe2bc8c18241c9a60b5792cc17544b2a41d7363ad7c9",
+      "sentence2_sha256": "f93df16ee5a3253fa1d2a0e1ee3b2c98434c16f93d8abf1ef0ba93b8488abf2a",
+      "sampling_rank_sha256": "06e9ee0031558585e96920fda2cfc46881dfedade9291ae608526e50e704209b",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2431",
+      "row_sha256": "84493a9210c589a7a3bcaa3b5572dfcb757ede1ca959bb631be2ee725ee31358",
+      "sentence_pair_sha256": "3c9bec7188aeac41da17055da44ce3f83674b033e05e1477071bdafb9311386e",
+      "sentence1_sha256": "ac0a126ffbdde660dc963fd8c709cf47a2cc6a560390895c4be971c8d466fb64",
+      "sentence2_sha256": "0e87152214e55f17601563837118b5fc1ab883dbaeec538974a058778fb161b8",
+      "sampling_rank_sha256": "06f2d489f67d6de80d14d343e84d793e129ed8627e2f89d85f6fb6f4d9f43b77",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "611",
+      "row_sha256": "863eaa6888b212e126c2b41eee2a4c2e2db509c5da692c2a011bf7a6a9de44a0",
+      "sentence_pair_sha256": "f4b72dfda465924c373a045070a0c32a2e0b70ea2e113cfef4701e26aa194cf4",
+      "sentence1_sha256": "45fd648dee9232f7886a5de61763a769f6ed9538a99cf0019d20243fa148e778",
+      "sentence2_sha256": "3c88e4d27f6b9022c3f20713b7e84111074415bf5f70ff5e206c8c492e5fae15",
+      "sampling_rank_sha256": "070ea4a4a9a715ed39f86f102475ba266338551afd835b9e646a041d6597a324",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2287",
+      "row_sha256": "0af0bb87b366ed1c8548933e572ebd69618383b088885ad4ec6f492870c75296",
+      "sentence_pair_sha256": "ccd36c5811f92834728cc37ffe39d01e5bb3288aa40651bce9c7d8cb9c589e83",
+      "sentence1_sha256": "a5b93021c24adc2e7dd17ddf3ee14d1197c7c675aa58b8eda257dd2820a54c48",
+      "sentence2_sha256": "57bae42c1727fd6e474e265f81bfa86e5e3c94f8f2f42aa1c4d96f440e08b0da",
+      "sampling_rank_sha256": "0716f11acf40c62f761447c0fab2239f4e5f06e9141e6cd7952e0ab99f7ad68d",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2276",
+      "row_sha256": "b04e2ad68aeaed2963f857a177f01b4fb209253e0d4ecc7529dc8860f9ee69ed",
+      "sentence_pair_sha256": "ca4dfe2d239da94e7c4add9f9a7701445beda0b89600ab2520506080b5176f9e",
+      "sentence1_sha256": "58047ea3e895a86e8a6568760999192bb900229b451df0218ce23fb9d039d177",
+      "sentence2_sha256": "ef04b59ed61ad0b03bcf24da1e28987c545f48a73477cf3cdf9cdf5f6a0d8506",
+      "sampling_rank_sha256": "071c77e198e6fb31da00de4e589c3f36a0c0a534f597bf189574a7077c54e51e",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2234",
+      "row_sha256": "9a322068e19aeda190fd4c10a5d7cf04d92f9bf67cb4cf3cf7a4586640546a1f",
+      "sentence_pair_sha256": "315b7150f0479b271fcb7433efaa609bec0cae865c625366d86dd6efb2ff78a0",
+      "sentence1_sha256": "a5802c8bd30fd2cdcb4cdd987e6348fc47f9830d6b7a5077ca180853763647f2",
+      "sentence2_sha256": "079b0aea06a0971c71b39fd05ec3a2e6b3581b914d73b290a2bb6f74e28bd411",
+      "sampling_rank_sha256": "07310d78e27a574e8db4addd39c567e598b75d7d028cf326f61d4553b20af5a2",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1818",
+      "row_sha256": "9a2eb9952e486c9e7d7ccec64bcac7a3bc500991ff0a72b2aca66b90bb4aa240",
+      "sentence_pair_sha256": "c3a608dae88f6705fc21a61612e2704f42a90321b8dfa255fdbcfb286ecc88c3",
+      "sentence1_sha256": "2b23333cba79f6f1226422c3db05a60f61b52a050cda3bb20ce1db12b79530a7",
+      "sentence2_sha256": "947f67699699c945cc504384e527e3f6c420618d7c9c49ebb951305c1119489e",
+      "sampling_rank_sha256": "074514f5321e1ad5e87824461ead21781cf80d200aa5568672d896646cd0fcf4",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "989",
+      "row_sha256": "f4ca5943daae4284e905ae6392f2bae6f79789e7f0232de3dcff1cdb1557546b",
+      "sentence_pair_sha256": "bb7bdd80ff66008aaede19bd2bc35e0d71db16b1aaba04661eff9c91a236f004",
+      "sentence1_sha256": "73903fc1de8772496e35800d272744243ecf0bd3edf2893a4ec7213dfe0f520f",
+      "sentence2_sha256": "187c7bb95923fdeed97f10304430a3bff55e1159628dfae7ed1dbe3454317f53",
+      "sampling_rank_sha256": "076dd05fcc92b6d834dac1f071e174a46a73c7cee037e1d1a393ab28938f6c7e",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1920",
+      "row_sha256": "45aa0c00c206eddc5484b8d14fc4815427a99b86d5f5f02a98b39e9f8ceba52d",
+      "sentence_pair_sha256": "831b1cbd030e0dc0cbf9e1215350b3534b41714945edcf453440be760ad7a7ea",
+      "sentence1_sha256": "ac82b0b476f3ce71394281014d12ec03b8f0712795d6302fb1cefcfb5611ae46",
+      "sentence2_sha256": "51f29ba94d43b4d5be6abba89cddb502b2d6625ccf6962e3fd3ec7792446c54b",
+      "sampling_rank_sha256": "07822be7cb619f8419066c282c120661c96dfc90e8521c8c625925d817303dfd",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2113",
+      "row_sha256": "0313304f252c57658c72de118e8721e99bfb39b070acba811f9f59a93edec19a",
+      "sentence_pair_sha256": "889ec3f80566c378832c9c929c025e35ddd85b56d00e969db8d33440ee98519a",
+      "sentence1_sha256": "7612d38a85110cdedd7ad2ec92cc8a709e62a91a86e1da05cd6aabe7ebd81570",
+      "sentence2_sha256": "6e6749201c592104c4d8fe26253a1f71369f7a1578a588a46c5bc09010227552",
+      "sampling_rank_sha256": "07837c3aa788f97b2af029d142345c83aeb04af9a06e43f01ebff937894db5a3",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1679",
+      "row_sha256": "65a5bd34b3870b024943d222b0752de852c4a9d813902d13d6f4aad1d50b1dc2",
+      "sentence_pair_sha256": "c5edc3f43edf6391bb54c9931f393e5dfc36cbb942314f5f5c98f158131ffd65",
+      "sentence1_sha256": "cb2b80765759f67f6edf3d6e2fba1e83e9742146707884bbba14df4f919696a8",
+      "sentence2_sha256": "60e0674e608ff19528dead0ff1625323c9ec6e4c66f690f7fd01e223cb83c977",
+      "sampling_rank_sha256": "078c7b437afd8fcbf9f8351d03bc96f3e4949bfb2cbd450b73bc2530a90c9cdf",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1187",
+      "row_sha256": "9c9bf8e6363db0587f03d6008b11d5d81eac81d4f88826ccea1afe59e1da9aa5",
+      "sentence_pair_sha256": "4b2b4ab4becf939a1355618629761cbf72a687fbe4dc4d3d786582d6e9d71f63",
+      "sentence1_sha256": "29a6f4203627bf4f6a32917a6711f9af1bef17bc18d92d986833c8a19a0b0da5",
+      "sentence2_sha256": "988380be099547fc8815bc00618c025d74e0f2afe2a32764eab6c473c2d2b5c7",
+      "sampling_rank_sha256": "07918ca2771d75a62ea148cfdb637c8ff3f654754784c12cba8eda5c84f27358",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1966",
+      "row_sha256": "a3147e9a73023078c1d9e5adf17680e648845e0ed487baa2d60d78450ee6ef70",
+      "sentence_pair_sha256": "d72105940bf4a1d618274bfc4655330700d682b3354a16fe96aad5b6033ad7de",
+      "sentence1_sha256": "316d4bed81ef0c916f6d4576976ee7321513ccda48e20d95472edb43136ef550",
+      "sentence2_sha256": "ee929717eebd8450fc59ad5e7a3fa62e1888ea8926b54e8130715fcb6d2b1667",
+      "sampling_rank_sha256": "07b7c89168a46e2fade8ad39ff0b931477c437ff9fece01c31eca8cfc278b786",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "197",
+      "row_sha256": "a2971c6dd83f5a6260d079318c430b0bf9d43b7a25475634a4d1f00e5f5bad34",
+      "sentence_pair_sha256": "bcb54426671e96887229fc0a2bc49df6e8c8558901e6a27815addc6f67237272",
+      "sentence1_sha256": "472eea062da8d3ff2f07832936b240119b976f02c6d677bce202895a6444b382",
+      "sentence2_sha256": "849d9227f1c2e1dbaeac7dce4c6492ea25fc7f5bab62dd7e7a82b0513116ee92",
+      "sampling_rank_sha256": "07c2125f160d8197a1c3ad9806eea1af67e9b195261fa97adf36d0740ef9a7a4",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1176",
+      "row_sha256": "1165b798cddb226fcb69ce637e977ae608ed9b0d609e771bced48d38643a9f36",
+      "sentence_pair_sha256": "8f310fb1e9dece694c264d20193bc369a7be33c00b0bbd4e2e90c3e2b3a0cec7",
+      "sentence1_sha256": "378bf1ca05c3263bc7cabeddc245503c224c0f25820d86a4ef3d1f1a5b79ccda",
+      "sentence2_sha256": "69e041d3830b822d35b64b3483b28d6a04363cd64ec63fae0407ba2a74f3ed57",
+      "sampling_rank_sha256": "07d17474406d9e6bf99219b0354fd786f3ef5b0604b365b9316affba6672a707",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1907",
+      "row_sha256": "4380deb27892852a33962278109f8dcaddded29292017d3c423eb8ef030a2c54",
+      "sentence_pair_sha256": "cd9198d3e77757bcee0b2e174417707c151cd724bfe2e00e70fc48b925c13e5a",
+      "sentence1_sha256": "3625201c1299ae07ed42dfe0673fb1fbff7debd68b09753e387fce41e1f0cc95",
+      "sentence2_sha256": "0e770214a686ee12cfa1886f0d478317cfd06a0b91c329cc6b8331e0b88c6ecb",
+      "sampling_rank_sha256": "07e0bd31b07dfabd05b92100e070449c3140e00f597be6ad525f7fdca76072cb",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "782",
+      "row_sha256": "35fa1a170f3410c47eafcf567cacc9ebd284975b4d68569f8146aa388035c186",
+      "sentence_pair_sha256": "21f600d853cea9bf66d9df39b4f0fbe394b428164e91a8d2be6eca9d7f3f9cb0",
+      "sentence1_sha256": "859f45cc258680b00d0f17bb97db86ce4911107d98236f2614b981487247823b",
+      "sentence2_sha256": "d067ab9b74613cb2fc6e7b99ab519169dd401d6140d73bbee52be815c2192bba",
+      "sampling_rank_sha256": "07e223c1d04342644fcac119a2721ae13d62219352ea09d0b3d509411934383a",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1347",
+      "row_sha256": "bf811a5c53de79e164665b4d7bd17f7950e40a4b8e813bbb74e5a9b5ad4287a8",
+      "sentence_pair_sha256": "872aceca6674558cfd05bf479c06da3f893eb8e99ede022f37f771a17693490c",
+      "sentence1_sha256": "7686c2e6fd88bef1c22d7a84b6520fcc743e9e3edc3e29d23f8fc25a712d3add",
+      "sentence2_sha256": "e95ca840a3161c15e3593f51eb16826043c96c0827448f3c4f194f0fee968980",
+      "sampling_rank_sha256": "07f1852c58085cbad1542a5a8e830bb905d8175e92bfd2922b3aa53826fb557b",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "569",
+      "row_sha256": "9442e0b85bb3772a249af245567bd49038d044f6ecf1f9edd33f9785fe0fd70d",
+      "sentence_pair_sha256": "b310c4de3ec0b7e84d4b0d3b7c88a0941b2cf9cd1ea44dab8d53d70adf991b0d",
+      "sentence1_sha256": "e9f287d237eb6bc1e3bcc31012d6f776b69f233c9d84d6a3bc9f92a019eee892",
+      "sentence2_sha256": "9873354c7d9a2d2b43b4f01bccf9588555d8eef08039e88a62913f99fbb9fc6a",
+      "sampling_rank_sha256": "07fa889828db83c6dd9d7cd550570923d8ab6606c067a4a2f9e167e8c862c102",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2383",
+      "row_sha256": "056c84908a56cdef5f2b85651628719651f64001ea617b8710876ec038a43f96",
+      "sentence_pair_sha256": "373b77f05fb0ac64ef06722a38e9e9fd894489743238603e76b99f90ce941bf4",
+      "sentence1_sha256": "2bb32f082979eb33f438d91c9e8cf3e356ba6cecb9aac2801cd14f09925b6948",
+      "sentence2_sha256": "df35f26138a9d4b8b235b6c7b03e01dab167262f96a341c0418db5c4532dd02c",
+      "sampling_rank_sha256": "0820c14f2800c0a285ae9935c8b611f82c23f5f7e1e606202da9dea2760d7031",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "893",
+      "row_sha256": "ec0bd1858e22a3ab360bca385fceba5187039343aa522599cd43d75331c81651",
+      "sentence_pair_sha256": "28d462b409547d770d7d34feac8b171a961b05c588c46f2816c75cb20ee7b694",
+      "sentence1_sha256": "8c2107d832f7f45a5c9ae01f6144f8e7a1aacf1de9d54759ce086cba4c18403a",
+      "sentence2_sha256": "856bc043058033595ac65ce587726315be656636dce15aabbe4e0301386580e8",
+      "sampling_rank_sha256": "0826e950edcc539e5f386ba0e739e8f8179c29909bd459efbf21d1718fe6d196",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "618",
+      "row_sha256": "11d8b265b4241643587b607a2e12fca9f517e7a610b67b966c1733a5af2c77fd",
+      "sentence_pair_sha256": "a91b8310d0e3a675e25c0c2bb7291b436ba2f26d79b6529f9cc8205390a02626",
+      "sentence1_sha256": "00becc7025f64099f54431f418c6e2c3d238fc4a343271223ae347f5c08db109",
+      "sentence2_sha256": "6319c2bd04408297d1aedc690980527384a5bceae34e2c3399091227d6c6ddc2",
+      "sampling_rank_sha256": "08290b7b66cb5db5f8948c4a2d6ab2277fda580b3034585db48b3f8e8eeedf11",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "49",
+      "row_sha256": "f63c4b18f9d5e745a7518c050eb75c1df485c4f55dc34fc09ec3fc55cfcbc28d",
+      "sentence_pair_sha256": "9e316493215fd43de86993f44398c27d2668bf3ea60f10fb23a7cf9f125b5b46",
+      "sentence1_sha256": "f1f14637748c3b07375d752e3a89b2424824dd602f2c1c3b1dca79bca2f24b88",
+      "sentence2_sha256": "af59094e95f1597d3c07804ec7e4675b926b21ea3842f90b6144356099dd472c",
+      "sampling_rank_sha256": "083968c98dcabef38cd0c6c000d4e5ad42c4fb83dd8185b92f0633225359572e",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2293",
+      "row_sha256": "9331919e3e749161c62bafca67e02989dd7dc9f1f685029f56f4dcfba27748a5",
+      "sentence_pair_sha256": "a36d1b037c9cbba76dc705e6df1463c6cb38cfa094186b9dfb0ac421a6583e91",
+      "sentence1_sha256": "ef007127b5fe9b3de9089de38bf34fcbe2166a616c93bee2ed14a49c975025cc",
+      "sentence2_sha256": "a5b93021c24adc2e7dd17ddf3ee14d1197c7c675aa58b8eda257dd2820a54c48",
+      "sampling_rank_sha256": "085e1eadfb532442fa4e1067008d4ba8bf2a1629a87044f4af2ab6b80753f8b3",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1190",
+      "row_sha256": "fcb450f8021e83b89d89c83ef38d6d42506e343ac0b723b3868db2c21a0331c5",
+      "sentence_pair_sha256": "c23dca9d053a174821b398305b7acca6e976422f07fa3800d0276cf10e5615c3",
+      "sentence1_sha256": "1c8851d8e00bb3d925c778de29e1f21a988cbdd0b85b5d5254f62607af568534",
+      "sentence2_sha256": "5aac42b410e7316621b0ddbf81f7c5312417c57e39de8cd1f4d400b62143d8b2",
+      "sampling_rank_sha256": "086c2da97b8bff50d6f92be6b035abcf0a5fdc2223f5d6aa1ad6d4d0130cd579",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1547",
+      "row_sha256": "b5aa3df51668f4869e9b02cb499538add64711e5c63fe55207433621166a4083",
+      "sentence_pair_sha256": "e3dde310bc37e615981bc008b6d8c6b14c3bfb75cc5c3b822f3caf81cec24e72",
+      "sentence1_sha256": "7973d83ac1325178ef4a62138cbf78e56e9b636ab7b8b30f245363f712c89065",
+      "sentence2_sha256": "b641ba85dda16f91389c7c6917ca70d6a646279a5cb837a95a33d6dc351601a9",
+      "sampling_rank_sha256": "086c55f14d328f169818eec296ef8c304143586d74aafbb7cb8603995cb5701c",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "899",
+      "row_sha256": "57e799b3da65e48159804f6527167cb49084d5181b3b232e1e47ece66ba4f744",
+      "sentence_pair_sha256": "6bc81608e12b5641860ca04fe2aa19ca856549e0cd1ce362141b3072120136d3",
+      "sentence1_sha256": "b153654a35956fefe0a16e1d2fbbb94b50fad804767d6a20837058a79f57260d",
+      "sentence2_sha256": "3025f776ca90a2f592e546238d05d575ad51c6f44287f54efef4610c81084ee2",
+      "sampling_rank_sha256": "08a488925ff944d42ff8f611bb755419e2d52c1be33726e66b099f1badf3ccf6",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "574",
+      "row_sha256": "c9fc1a526fc281e7ba9cc22176636a5f80586b965ac79cc07fc71b3e3367832b",
+      "sentence_pair_sha256": "53a4a1ca8f91afd5f1462d777142185447c84d75ae39e4e6454d7c5629ee9fa3",
+      "sentence1_sha256": "6d2bd23440087fa3edffcbd0d4f50ac14ac25842563e556f52668f2cc4a11d26",
+      "sentence2_sha256": "7668b0f69bd47bb75273869f5c25cd41573563d8efac06ec39323070368d3062",
+      "sampling_rank_sha256": "08d3b29a5ea2a5546687792f54ee7acf08fe9d2083f1bf0a139bd7aa2b2517ba",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1541",
+      "row_sha256": "3db65a6c7ffb7a700f0f0051ed85ae8b8d52628a8e124fbdf516397c733c22ec",
+      "sentence_pair_sha256": "c97859acbf6cbe9021ffe0f13aae1e8e76f27117147fb624f944ace0a002fd30",
+      "sentence1_sha256": "2e43b6e16105cdfe17e7880c0b07942c3f991ce8357dcdc57d4a3d2bf896748e",
+      "sentence2_sha256": "63a13b1ad0375599c14a03484e2467ede4a009850e62178e02169b973ab31d19",
+      "sampling_rank_sha256": "08db17d8f03061e8f2ab1a03d87e884f8c05fde81d72fd9e6dd05c3191c4025b",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1401",
+      "row_sha256": "45dafc7fb3e4a2b940a6e73e1ba4491904acbdfd7218f4c4fe75551c963dfe70",
+      "sentence_pair_sha256": "73c005cd40b43b5254e1475abbe8080c8d89506c610b07b00517edf767df129d",
+      "sentence1_sha256": "d20d8878fc82283b534791d9abc61ea5e35b3f21981cf9646fc6cbac501b47f3",
+      "sentence2_sha256": "36a6f9af1c107b16ccc68677c8cf3ec6289601143a31e02081881cc7a9f83307",
+      "sampling_rank_sha256": "08f673a924749f68e0750149cf40997c7de6b4a598a87d28428b7b480ebfb588",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "290",
+      "row_sha256": "b62d7b30f5627a72aa12363791abaff7ff6677af690e5ce623d74848c5074bb8",
+      "sentence_pair_sha256": "c520faa9f254dcdc15b756257fd816bb5a8bd3cd3cc58be1ac825ae0ae883874",
+      "sentence1_sha256": "fc936b34a0ce6a46f40045b1fedc0b49fba90d754ac4d53668f59409f6c6aa9d",
+      "sentence2_sha256": "57f76b096656b4be39cd717dfc4103e9214433cc7601ed8f6e2523836f8d0414",
+      "sampling_rank_sha256": "08f6feea93fdb92b00e10a9f6ef665771b72b350342d7015ac22e75ed828944e",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1214",
+      "row_sha256": "28aa549def42d50b00ade46e1b22ecd38576b4f45f0edee953a9af886f42a5f3",
+      "sentence_pair_sha256": "0270a4d55c3838a3fc2f5830eeb2af2d37b43fcf542b0fb7f3ca85c88460d798",
+      "sentence1_sha256": "e2daeb529eef0238ac056b482c512775fcc45056024a3cb11f9c594b1a569570",
+      "sentence2_sha256": "a7305bbad44a666413abf920a27aae0c18ba95b076a10010516d05db1a296444",
+      "sampling_rank_sha256": "0936b676abd69f3b54b775094d6cb9a1120fa06137648775a5026664e99cf637",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1277",
+      "row_sha256": "8ff69b9be923281f9a713a335f1c771ee65b8966a110a33361fbaba03911af93",
+      "sentence_pair_sha256": "7ab2e85d47a1d96c40c8fdab61e568602bb3379d752e5e0c6da1bd42169f38da",
+      "sentence1_sha256": "c501c5a7f016cdf4623cdfc2d789118df69baa4049c6904c1d1208875a6274c1",
+      "sentence2_sha256": "6f32d225b0146771749c9c52a7af9fa12378d5e37486199dd98d708504060a10",
+      "sampling_rank_sha256": "093ae6cc8a5a14e8adf26d3b7bc76fcffeb94be8975104a49a277888767d72b4",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1648",
+      "row_sha256": "c40cd14808e8b3f32450f24a64ae8af17fed86827eb835b73f0b3c4cdfa6dc99",
+      "sentence_pair_sha256": "fcfff38214a8749a5affb269920b9b7894eed31ba3eaec0c77f21d2f793fc339",
+      "sentence1_sha256": "dfcbd683f933cdb93f991ace0492ee1b85f2e023cffd235a81098b70adf9758c",
+      "sentence2_sha256": "d64ae910c355b62bc7d3c38ac21a837949841ad6ea284b77ad49ce45ad59200c",
+      "sampling_rank_sha256": "0959b8768c1670ad303e76c93d649504052ab15eced1a4ac735165cc128db399",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "47",
+      "row_sha256": "c05aeaff86319c651982544d662600c33d53a06aec01270bd9551776246ca49b",
+      "sentence_pair_sha256": "c63219956faa6bf5bf762e476b9a7eccc34aaf05d21a4b916fd0c8435a83084a",
+      "sentence1_sha256": "e934ddf66f8a8ec4bb4c38339c998c4f0cbc95e5483da17430d52502991e0b32",
+      "sentence2_sha256": "f832dd69bcc4c996a761d3be4eabc0f1be44485a929dee73f5905d3416db2617",
+      "sampling_rank_sha256": "09c82725155d04fee205bf70bad3749cdffe803fcc128266ddc3526abfd64b63",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "679",
+      "row_sha256": "21ec1feb34905b5252e6d021044813ef9f4c9166917a550408312cbfaeceb301",
+      "sentence_pair_sha256": "7d78ac2d9b166981dbfc0100f7d6503851a73a06b443a1c14996baaebf46226c",
+      "sentence1_sha256": "621617b557c9fe0cb7376b7c04dbed4e5705acbfff8e3702cc14aa4ee9221b81",
+      "sentence2_sha256": "4478b67d94f61857cc19315908e7c8cc9b7db23d6d12463ab2c3fced744db312",
+      "sampling_rank_sha256": "09d23ef2f86c6ada08a450cd56a43b0214f9d5dfbdec1b19c7d55be212166905",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "577",
+      "row_sha256": "f7aad94f00e51ed3cccfc8732a4ad1ad4b433a319433287be9aef0f991696a71",
+      "sentence_pair_sha256": "df04adf3c15bdb353aa417d59dc31eb2c2b82104fa3efae5ce404c20ad16903a",
+      "sentence1_sha256": "e8cdcf7e1242eea90c07cb3004ecea37dc32924a360162b582cad2cebf04afde",
+      "sentence2_sha256": "2374fa1ded8d24f0af5a8cca356932855419700332d1520956e10e6027d2adcf",
+      "sampling_rank_sha256": "09ee804ec112d5be2582f75a2edaa4edfcff82a3ba1a68308b05592b8ca708d8",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "416",
+      "row_sha256": "444bfb19d44c6cd386575a15831a234c36e32d0389244f1dfb6b7538bbc2cd23",
+      "sentence_pair_sha256": "5ae0fb2d74d2244b59b57774461528a03841a84f9e9a2f889f0a36ef9c4b5572",
+      "sentence1_sha256": "a4876d39d0f647c7dac786c912a0259f1a68d9935a9161a816c5e344ae24ef1a",
+      "sentence2_sha256": "6a49d282778a859cd741e10742829d1e3873773e5251cee6890b17e8d6663804",
+      "sampling_rank_sha256": "0a27ef6d9c366b31a665a062bb79bad351a07bf7d26f0ae805e816c99a5fc31f",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "699",
+      "row_sha256": "5eac2024903328946491c839cfb8a46675bcd3afa2a25d0151fbee1a015fec0f",
+      "sentence_pair_sha256": "7abfd1ed27d300899517fcfa62ccb7dba2799098bd0f937440d9d1eb57b700b7",
+      "sentence1_sha256": "8b8c5666bbb2a827b99dc0b1daed62d6cdf1eb5d89d149b897fdb2059f34c0bf",
+      "sentence2_sha256": "5e8c51f9eb1c33d2900f225efbd71191979ceb0b1efdfcbc24125a627bdb5a95",
+      "sampling_rank_sha256": "0a2b8568783615245d9cbd1028b6e08b2fec625a3e76cbb8b89ed22a36488f09",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1054",
+      "row_sha256": "24eeff1404ca2f87697b436d9a09d07f9bdcd1b8d84d08e707727f0f738d00ce",
+      "sentence_pair_sha256": "b196ac6c7020518edeb6cb5401c42050c11f03562c089b9f05e4797d1f627c67",
+      "sentence1_sha256": "8d261cf2fd39b64151fd49018064d7f203ba2483abb4a5b85c08ebea385b1732",
+      "sentence2_sha256": "746c12db92298bd7d5e357ad81881b0dd197e6ab136b2cd043812071a07264e8",
+      "sampling_rank_sha256": "0a409380f79220df7d8400201f412ca8687bf0467cc29bef9fc6e92f6ca93684",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1338",
+      "row_sha256": "19fc81e4a055bfd7f9394a84ccd13a3898a90d2782f446228e400244c8bf3dd7",
+      "sentence_pair_sha256": "e198819108095450d91d789e74f5defc6b787152d34a6e9b8437c12328e88159",
+      "sentence1_sha256": "85286868ae5d999b4271b7778b96cebcc5859b537144d7b91cf9ca88c89b5031",
+      "sentence2_sha256": "429983fbc19fcbcbc953c0191b69aaf8ecd4c11530280d7136df60826e85cd4c",
+      "sampling_rank_sha256": "0a70baba16316f8f86067620b316b00bda897646c3c7f358de3008cc1f314075",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1755",
+      "row_sha256": "e6b18af707b5c1792ffb8310d8b9f9cfabc22e8efdad96383326280f0af91e8c",
+      "sentence_pair_sha256": "1a94687850533d74776441559a202f7a4741464b523a37834b306e6a9f776410",
+      "sentence1_sha256": "8cc8371c5ab6d177583a2f6fd61f7858380f0f22a9093e58b9de9ef8a0827c02",
+      "sentence2_sha256": "50da484eb3bacf1d0bd745e2ec699d25f26c2cb3047094785160b5474f673b0a",
+      "sampling_rank_sha256": "0a8221eda7b14d25e56453eca704fcd839bdd96ba31399c6e8947fba1dce739f",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1483",
+      "row_sha256": "bf76e8e7904f89619b425d16c04b624e35832fee95f6c3c1d96a98ea3faa33eb",
+      "sentence_pair_sha256": "4db221014ce342ac4a8ca781928d9e88ef40c483824cb6d5e8852a71de2906d1",
+      "sentence1_sha256": "2dd3bfedac388338e5191fd2bc80ff6dccd915cfd1681d2301be9bf460d3826d",
+      "sentence2_sha256": "7b36dfe72af9db5970fc05363217c2316a5b6b4f3d775ec4d9a718947cbed300",
+      "sampling_rank_sha256": "0a93b539bbe852b5e4202147975cea4efd48b93746f8c0539f81bd305aa4a08f",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "369",
+      "row_sha256": "c93016f51cb9e0646d61927a9762017e3a63274e906babe95e87fb2d198e29d0",
+      "sentence_pair_sha256": "1ea59ab00e647450c1d55e5907cdcac800418f72e5888daf83619bf7cc43c9bd",
+      "sentence1_sha256": "4169a8d90485cce2bb39dd8e27811a75c4b31d529275520965b10008175d53c5",
+      "sentence2_sha256": "f46f6fa73127636ceb15a662c7638eb79dca142bb356e422a1c65aa8b139db47",
+      "sampling_rank_sha256": "0aaf7a925bf9f7a226ce221d92c01d93b87e19122ac0a4a9678a3f5d594e7b85",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1701",
+      "row_sha256": "b56a36478b5544895a055bb40ec4e1fdbb97aa68254a65e5c02b569341020ae9",
+      "sentence_pair_sha256": "1b0fa0a33a5954460d2e348d9ee8ef985e7f14841acff7a878135c7c3d062242",
+      "sentence1_sha256": "24bb7bfe2654476059a98243d80ab48c062a0a364a46460a24675f242dc0e27e",
+      "sentence2_sha256": "52bc5f3b6f5d5313f30c8dca9c769a00082e358c06fe96375e3911aae4da4d80",
+      "sampling_rank_sha256": "0ad215d8d7dc460c8faa35beee670eeaf9c451c5ec82d395fd34b8a9d713b120",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "158",
+      "row_sha256": "d0c31865b9c19009ef9d1171acba99de7c2ab0f219a5c631315f7199a42689da",
+      "sentence_pair_sha256": "aab9a041c1d07c6de396bc4114e33b0e0daa7136f4daadebba5a9673c6ad2258",
+      "sentence1_sha256": "d60f340b5df7b99ee25950bbee222e1e3d36b58055f1aba8d7baada9e1c531b5",
+      "sentence2_sha256": "4816afeb026ff37c31426691917466a5a445cc4c0a770649c8185eeba636c5f3",
+      "sampling_rank_sha256": "0b2d00cbbc1196f2f689b74823e37d1f7cd915ceedc2030617fce16bf869f9a2",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1932",
+      "row_sha256": "9f7d885a57c4358e220ab63c57ebbe2413e61da0d1959df51a5adef29008e653",
+      "sentence_pair_sha256": "8ff409e08aa9fd63e17f0fabcc4be18ac50c06c7e08683028ab075a07d5accac",
+      "sentence1_sha256": "9f32926fe9c9ca334cebeace3f6952315917fab4c29095219e7ff829c36d478b",
+      "sentence2_sha256": "e98eb3c68775cc17a80394f974d0eb9fc1a564b8d616976a66a21d45ed2ff7ee",
+      "sampling_rank_sha256": "0b3f3aa577b2336ef93fc5b4e0997f69b976039d0b06d486cf9af5f7c96cd5af",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "665",
+      "row_sha256": "f3aa6f8e115d1af2c4384ff70badebbc16139dbe42727b346382b232a1377a52",
+      "sentence_pair_sha256": "11c9d9c70b06326b091a5809f963a8cf0370d4b8591b5bf2b141184c40218975",
+      "sentence1_sha256": "ecb256ef23450e8564fdc1d5213860f0cb93a3da69837a6254d3f628536c0516",
+      "sentence2_sha256": "3b0f96564005a2e66b41b42441481343970c10064af10fd7063cc46b2ac52563",
+      "sampling_rank_sha256": "0b480c54e1f4d289d9aa0046fe7cbfd49d06566ca8e887f4c3d66b8235fdb12c",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2421",
+      "row_sha256": "d06e416a0b016602327387625d78977cac91bcafb3894324f747fb4c8868e1bf",
+      "sentence_pair_sha256": "030c2d7b5e0a75632dbac289098697a406178a4de47094d7e48ce1bff05161d0",
+      "sentence1_sha256": "196cd1459f97535cb9186c4f0b5f77bdfbd9bbcb228d392cb39e3ffcab9fac51",
+      "sentence2_sha256": "7f5b40e0a441848a45ea04524838b4a6ca7276e66f9ff09e504c0175454ae6f7",
+      "sampling_rank_sha256": "0b721626c42ac3f05672ffb8f4c5850038bdbcc6383da8f334c48bac161b9a83",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "24",
+      "row_sha256": "582d8b7bb5ab3caa55a6451f331a617fe13a66e742a6575ca61698d790970d9d",
+      "sentence_pair_sha256": "530fd8068d2f66ba53e5df21962fb3741139c4363fd4d3bc4f40b4df129e8bf8",
+      "sentence1_sha256": "d163f6f7ed28afaeb94b6d60920a6c5fc914ccf86d48fb0caf9295d32150c02d",
+      "sentence2_sha256": "95c04458e8f868f1145841c5b8432e3fb5c350d3d265c6f752b5073d4145bfe0",
+      "sampling_rank_sha256": "0b764306023cc48072da3e30f8fb95cf6ae88f1178092814eadeaf5a426a9c52",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1585",
+      "row_sha256": "37e6ed49a30859219b0f9bd5f24da48ab8d8d32575764fd0b1e416f622c01ba4",
+      "sentence_pair_sha256": "0ad9010bfcf97de17546e2e2e2054baea8f0205eea77f483bdc56245041c3fbc",
+      "sentence1_sha256": "a090b0437e25d7f5c0f402212d5c43e609f0e8a34a0e344f486f3554c90799a2",
+      "sentence2_sha256": "ea711d2707c90e023606425bd34797886a6d05c8699c9c0cd0c02e4c5017cccf",
+      "sampling_rank_sha256": "0b85b880dc0f18b45e2792b15c382b851cd7d38e9d1cd44c7d38fcff992b2a0d",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1564",
+      "row_sha256": "5c3e8ac228d8ad4a389a97280bfa1ff46e52a6b142e21d5aa2c4fde5dea340da",
+      "sentence_pair_sha256": "7e658beb16d7c1c04ca0464e265026cae3b59848af0ae6636644c586022571e8",
+      "sentence1_sha256": "a7d0f12a77851e85cadccb48f0ad9dc52da76efd99fe8253dedda5f7f7a79b95",
+      "sentence2_sha256": "5eceb840dd9bef60a645e78c3bd04855ddbba0fa8011940994e1be17c5cef76f",
+      "sampling_rank_sha256": "0b97e97febcf61a4d2f632a48d8b8ab2ad02f4b919281862023b20ac3e2532df",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1560",
+      "row_sha256": "be83acaa9ee5334f865e956b9e73a606a92a6123b77e2054448b32d1924beec0",
+      "sentence_pair_sha256": "02a64dba8e29bc45ef69590a58c4fe740ff3a3b822318ddf280ff41aff50cb29",
+      "sentence1_sha256": "2adf365c00953cde6be195a322715577d0c2a7b0667cf20364c2b4b651da86e4",
+      "sentence2_sha256": "f4947077247cf025fe5a1f317936a79d95806cbd9400f6eb26c5b5ee001075ec",
+      "sampling_rank_sha256": "0bc0f3fa2fe63d30212efa0fd7b9de543ab1107b49036a7431c163bcfccfc09f",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "469",
+      "row_sha256": "621806bae29aed8347cda717874b8c14e0fbef95199f86d0d1bdec1ea13bc72a",
+      "sentence_pair_sha256": "57c9e13ce20a32089f656d2698e75609acb9237e7dc2117f1b2a8a83b6c0d324",
+      "sentence1_sha256": "4b9c78396a10e1013bb6abd4af38d1a7ccce452362f412461ab15444b01198ca",
+      "sentence2_sha256": "7f9b627288d7bce9d2cf5957605fa2f4de129e7749f1415095fc9e17c2014fb5",
+      "sampling_rank_sha256": "0bc161c6b2e8ec3ccb3ad7b6652f92f31c1a2d6854f51a1b64271c1fe2c7d8d7",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1033",
+      "row_sha256": "e39ef68199defb125498db0358d6b81132bd1900abe02196964d2e49cdb41ea4",
+      "sentence_pair_sha256": "6245ea30fa7d28f1bca4b04bf0fcc9937ebcda5deb8320519853e0fcc0eb30bf",
+      "sentence1_sha256": "21399c9c5080ea6107ba0827155221225193fe346b8ab0d35ef7afd2b740b0d1",
+      "sentence2_sha256": "6a9ea0720f2f49598b054d5fb49c767d34661e5f550db73c21ca03b18d2bb9e4",
+      "sampling_rank_sha256": "0bea647c9b4c62ce0175385c9f7a8b79325966535a55ff2e0e0913489b329e47",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "363",
+      "row_sha256": "8c0763eb0002e0fb9d96f525df050c0e761088cc95d6627705ad2062befc1242",
+      "sentence_pair_sha256": "616c96ddbd59c83599888c83cec7d538d0ee5b9c7657399aa4373c93c679e7a5",
+      "sentence1_sha256": "d8651d3e1cb175b1909045370c8849acf8943e0ebe081c2ed3460cd26110718e",
+      "sentence2_sha256": "4a9d8f4134ad976dc10645ba5627faeb6e6e17cc12f9fdcf1da162793de7963f",
+      "sampling_rank_sha256": "0c0ef60d6fa8b314d35508aa5c44592654c7112efd24069f08fc40acdfe92231",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1928",
+      "row_sha256": "889c22f71ed7ad073908a36f526dd9057d535737d1d31229dff3c218bb823347",
+      "sentence_pair_sha256": "819a1cd92fd10a4b7d493ea65f1fa6cce0d30e56d6b489684a0dbdebdabd0b0b",
+      "sentence1_sha256": "7060eddbbda0892a3188406cb7485253245cde838db9b96d3d151c25e0c7056e",
+      "sentence2_sha256": "7a20d0770e1617a2b66d72009ecd807defb0df55f99880a89eb4319ff368e1e0",
+      "sampling_rank_sha256": "0c0fd7f58b381796b7a91780a859252bf990a7c993e3b237e743131a7cd895ac",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "65",
+      "row_sha256": "5f05c6c642c359a4f486d21d73ff56a4c94c1665215d9587cde593a9621f0dbd",
+      "sentence_pair_sha256": "3fc379a384532303a6d22607db9789940d8499566ffaa02c43b7d1f5807d211e",
+      "sentence1_sha256": "562f91a43b5b30ac7445b7bb86e5eec4fe46a268234d255c04903517cec769f5",
+      "sentence2_sha256": "efe92c37e69a96e2415f8624c70a916abf44f9075478108e5798ec84324c0795",
+      "sampling_rank_sha256": "0c22226d5fa561574f04f6dbb5a62407e1730cebb076cb69ab64b713d574ddd2",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "89",
+      "row_sha256": "b7e12ac18b439b68fbf01292401a946cfb8a53a66bf886ed2960ae850bfc6beb",
+      "sentence_pair_sha256": "59e1fc571f6b4135d2cb1d247c46e3907c8f12f7fba57c4b9f3ce4f5304418af",
+      "sentence1_sha256": "3683fcbbdf43a5dfb4d3f1fe124c0aedb90317be06ad3a69245ac60a4305fb67",
+      "sentence2_sha256": "28399c364771cb4817544d39223086b862576c6c2d840ee5702ad9ca416532fa",
+      "sampling_rank_sha256": "0c4acaa6e91fc09eefc568364c51657aa8e62750720ba7d2a6bd4749a17de731",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2143",
+      "row_sha256": "a41b0d156959af8ffd69db76e8cc423baf57ef5c65007280cd44e71c692e47a9",
+      "sentence_pair_sha256": "f7b88dfcf7d6022604d6f56f04d1fb1470884a77d0f9757aee31a4a4a8d5cae6",
+      "sentence1_sha256": "25a276824cbe86b1a89f5a1f1b237c21d113c45ed1ceaa310483138e4e3da1ae",
+      "sentence2_sha256": "f2aa33f322e1041d1b392bc8d710ebeedaa9077edad09a8f53e3ae1a06c4b8e2",
+      "sampling_rank_sha256": "0c82b313db323ae760905c7969da911b4d0cec9ca6ab15b25b9e4d1321c923d1",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1924",
+      "row_sha256": "ee50e50fa9dc7242944c878edd9a654650227315d6124a3ded82fea22236f93f",
+      "sentence_pair_sha256": "f45ba572f947e15a416df816ec88875143f9801bdfbf3d2a7ae65e9a51099bb6",
+      "sentence1_sha256": "f04ea43878e441f0f1befc9fd5494b253c2b400a0e8f36f7dc4caf58d7a79808",
+      "sentence2_sha256": "6d959758fd3fc85df555a96ce83d8195d22092093c1f6b4aed234fe62a79571e",
+      "sampling_rank_sha256": "0c9c15166f57b69865b5286f3c050acb70b231adf7bc04a3446edd1c81e4bb86",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "270",
+      "row_sha256": "4f87336cd1a104a071e3d7fcc8e392d1d9d3eff1428fdbd1a21781917c001472",
+      "sentence_pair_sha256": "888362f52d22b8014fa37bd40a58c2c76133257e26e4eaba32e31c0db9ceb90f",
+      "sentence1_sha256": "8d57e5b5d86b45ec3ae15fa053979e36de9e9045f0c39deb4216fe9e7880c5d2",
+      "sentence2_sha256": "9668c194789206aa71da1a44125f3c11f5e3f96ea8250ceb1fbdd9fa6c154126",
+      "sampling_rank_sha256": "0ccedc53d09e7db73209cf9c6b001e5335defcfe3fdad277daa9cc66f7e965ce",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1563",
+      "row_sha256": "5df6f810c4fffec0fd0b127385d5e610075fb9c897a99ad35fca865d1b6c8e66",
+      "sentence_pair_sha256": "fbde31d5455b660d1fc9b9318cbbc3cdc286c9c6234185d98941bd6b02f55648",
+      "sentence1_sha256": "5eceb840dd9bef60a645e78c3bd04855ddbba0fa8011940994e1be17c5cef76f",
+      "sentence2_sha256": "a7d0f12a77851e85cadccb48f0ad9dc52da76efd99fe8253dedda5f7f7a79b95",
+      "sampling_rank_sha256": "0d26567a704bcf3abf049d79d16f5dabfaa2ba356806c05203c3de6ed7df6ea4",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "741",
+      "row_sha256": "18564fec6380861578aad46f94abe18a349e48faf1bfc70d65336434e83b55b4",
+      "sentence_pair_sha256": "855807b9856c44966a3ef30e2626ba9e7eb74933f57eda816575d58865437be4",
+      "sentence1_sha256": "13ba760704cfe9fdf7fed49cf27a4b61907019cd2290e1da6caa016964e7d343",
+      "sentence2_sha256": "4816afeb026ff37c31426691917466a5a445cc4c0a770649c8185eeba636c5f3",
+      "sampling_rank_sha256": "0d58ec576741394924164ad11de5d1e4a529dcec518b10d429b5ae17ea95cb42",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2199",
+      "row_sha256": "f46463b3ae439c06a33a5d0cfed4e0f66e0249a02c17e18fd0fba06cd9201791",
+      "sentence_pair_sha256": "c740266570346cf8880cf9f27196c5f6866b86343d63ed9432b8f34efb953ca2",
+      "sentence1_sha256": "0f7d59db0d3915bde6e1839c86d498c8ab1d213295405f4176394070ce76914d",
+      "sentence2_sha256": "597fcb5dae9f02f1276b0b54aebcc27ab12579240ec85ab6ff861d803b3baa66",
+      "sampling_rank_sha256": "0d65c0e90e5a63b9ac8b715bce9358b256d20fa28a5d89b994dff2b78b04226e",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1268",
+      "row_sha256": "5ea0dee2a33eea50dbbf5c93bfe097e3b158fcc674e042cfca5a4d0531cc048e",
+      "sentence_pair_sha256": "873b211addb240bba1c841b30dfc1f66c3dc1959cf509b91190f08a07acb30fc",
+      "sentence1_sha256": "a14a6d261b1ed642b7815c40a17adbc4cadf347c3e524fb3340694ffbaefa0d6",
+      "sentence2_sha256": "2ec0452ef436ba3a7411a8e8975a1b557272c0589be675cf40c67b41a0d01d16",
+      "sampling_rank_sha256": "0dc7a39ecdf93627bd7a2ef13081a57fb91c274392bd85aae3278dbce6c8cd4c",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1956",
+      "row_sha256": "34f8a241912dcd4703eb2ef39652b9b4bdd95c229eca1be6aef340200d277215",
+      "sentence_pair_sha256": "020d3335af9e620637b9945c69c658317bfb1f73f23d081049eaa9bd0f34b89b",
+      "sentence1_sha256": "386e77e04ba330165489d0bc847d5e75c341b3269128ed49a32ad1db5c258571",
+      "sentence2_sha256": "11d2d324848bd24e3efa66bd97ea425e151a1a9b2058da9e4acfc354c20ba417",
+      "sampling_rank_sha256": "0dcac5d664ad6626356ba7fd0e7e2105ef397a3938856d8578c66f5c71dc5261",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2001",
+      "row_sha256": "9889ea7f138d37d37319d9fee122e062998909fb96b1dbb3cdd162459501bada",
+      "sentence_pair_sha256": "54b822d8e145433efcceafcf3dd68b8d43377c0b217d1167943df2de2801158a",
+      "sentence1_sha256": "7028c1a61e283ba7030d27fa01e63b67c059246962e9d5068670b034dd493470",
+      "sentence2_sha256": "8da963087fd3813edc32f81afe5a530b8b243fbf8a93876ed139b36a0a694943",
+      "sampling_rank_sha256": "0dd4c3500452916fce14a8de43ceb846b11151d972eae6c840eeb91473bdd264",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "494",
+      "row_sha256": "84baee79c158cddc8a7495c12865f32e2fbf07b820e3ff74a1ba35a06742ab16",
+      "sentence_pair_sha256": "1aef6189bd9e43fa57c43bdf9cd731508b06ba961fa6e533805464ce65e6dc0e",
+      "sentence1_sha256": "958b5df370f8bc763fc2448f2e6565999de4d42692b18746a89ca409c555a3f1",
+      "sentence2_sha256": "2d5929e401c119de5dfff01c9647a2b6ddceca6659413f2d0d3968e0d6348201",
+      "sampling_rank_sha256": "0de5deca2dd6bcc8a189246b42ff29c078794371a462114de0168b1f6b7e030b",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1901",
+      "row_sha256": "8699d22d2fb25bdc1998fcda51bd3b4c6c33861b0199f6599701fe21386f9fec",
+      "sentence_pair_sha256": "e696a7dca17a84b92fba07ba238fb39c034871cfd748fbab956bd08c32016228",
+      "sentence1_sha256": "fb746be484e5902a45f821a444d3dcd28b2afd620feb9c9c1ccf291221ca96ad",
+      "sentence2_sha256": "6729e69207396e61cc2741061fbea64985ba95f70cf0db1fc43a280bbcae8244",
+      "sampling_rank_sha256": "0dec9a45d160a6756d79a55217c4b0f4ef6e29596eabe23b460c7d6cb1548074",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1125",
+      "row_sha256": "651eb35a5a6c4dbccaffd9b33c8980ff9461c54bbc8a98eb0dabfa8019ba7072",
+      "sentence_pair_sha256": "64669809c94ccb7ff3e9d82c9de1b7975390195ff6f39d593afb3b070155d5b0",
+      "sentence1_sha256": "9e262cb1baced16785aa56413742ce41736f2128eec87fda7142e507f8aaec53",
+      "sentence2_sha256": "9e262cb1baced16785aa56413742ce41736f2128eec87fda7142e507f8aaec53",
+      "sampling_rank_sha256": "0df26ef54078676a2411da7512675c63c300663ac8806d9c12d622d0afab021b",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2099",
+      "row_sha256": "e75657070ae7ef636529a0bb98202f18083ea3831e7fe20023cc7a4d9a1d10f4",
+      "sentence_pair_sha256": "d7e587d74ab461b13a65700b6d29dae5e5586ed215ab62e159f49960b4eb3e9e",
+      "sentence1_sha256": "04ac77e4485b431063179e94bda2b04186f3b3fbc64e29a794ae018ef63d6592",
+      "sentence2_sha256": "6eebff032b52107285f902d52ffd164ba74fb5b497e6670a097f4a255e7737c0",
+      "sampling_rank_sha256": "0df47c3cd54dad1e21b2cf42e0b9ec7545724dfcc5be682e6d636b7a11c1f74a",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2097",
+      "row_sha256": "6fba409b78d1d6b73a3310e365b24b0c789b7578b0008596678ca13ee4de8e4b",
+      "sentence_pair_sha256": "435ec8a8e7198900b5173ba35fc20c4302fee2008c70e068a7c40bd5888c6f25",
+      "sentence1_sha256": "dfeb1214615d86e9bbfe6b1879b0ce660038abc241618e74e49f53a3a86e0674",
+      "sentence2_sha256": "6eebff032b52107285f902d52ffd164ba74fb5b497e6670a097f4a255e7737c0",
+      "sampling_rank_sha256": "0dfcd8d32be01648ab2296980fc4014f1946e80ca205f941760106b15f15377d",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2342",
+      "row_sha256": "f3bcf0c8ac003f175a592bf07bc6a8418fe6e11cf379027d68c6fe90c2101c97",
+      "sentence_pair_sha256": "a3ae14c48c747f7707187f5c7be5844e0b03fdeb9609a05c8b2ed8ad2e8a0dc9",
+      "sentence1_sha256": "be7d11cec1c79b96bf8879c0d4d95684375e653b254d46920f49667c87efd2b8",
+      "sentence2_sha256": "33b1a71af245bd8433c7c1fcc716d01d325518a52fa88a8f5b4cadf1011d2bc5",
+      "sampling_rank_sha256": "0dfd7164f440d70376f0b91cb85cd0b791e5b8706f8ab3fe9997d4374a436b1f",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "698",
+      "row_sha256": "1afebfd11175b898263dd6a543ffdc5c9e4591b2fcba2e489abc228aea00ba7c",
+      "sentence_pair_sha256": "09c8b4114337a972d51e8870d80399b8b801b625424d7d370fe687fbdfbd47e2",
+      "sentence1_sha256": "5e8c51f9eb1c33d2900f225efbd71191979ceb0b1efdfcbc24125a627bdb5a95",
+      "sentence2_sha256": "8b8c5666bbb2a827b99dc0b1daed62d6cdf1eb5d89d149b897fdb2059f34c0bf",
+      "sampling_rank_sha256": "0e291e94c0b69c83ebdd82817c4da0a18cbd0110d303f5f84f6a42956846aa49",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "804",
+      "row_sha256": "cbb2ba3d03504f7bfe995ea77418f18f2c2e2fe32b91a251f6183cb453121849",
+      "sentence_pair_sha256": "6942894a5c08a6cbf015795225b007511487f2a6a5251703916ae78b5b7dab6e",
+      "sentence1_sha256": "7697d32560e04d2641672e63d2ec1cd7869bd2d283eb6c650830429059abbbe6",
+      "sentence2_sha256": "d7a0412631d86f54db87c47fce395c4913f10abf939c1182f75b2ec5e9c342ea",
+      "sampling_rank_sha256": "0e3b5c577179becd3ab966d0c194ead31d77617146dcc7cec315b1e9b65e2cf7",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1586",
+      "row_sha256": "bae38e260d4b0db86a4c82269f7425282f705dabcd1080a56c65fe35fb8a5d3d",
+      "sentence_pair_sha256": "459dcd2c88d81673fc33a51f255cd9202921bccb30e4afdfa5d60e341c360bce",
+      "sentence1_sha256": "baa07d58581e39a00faf768ab9854ea320c363d6841cc52f3a0672ef90f435c3",
+      "sentence2_sha256": "7e6cd9f7d55896faa1217a91e09e443a5bbd129615bd381c5ebfa6e4c8be3d8b",
+      "sampling_rank_sha256": "0e788480e9b2d4aed63d45e7bce3b7ea931daf1ad8a77c0103e3352d3a6b265f",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "2141",
+      "row_sha256": "7568b11d090503f516fd35406c9386c2dc9c6839728ba7a4220427bb0d796e17",
+      "sentence_pair_sha256": "b6cf5a915290a0eb4da1a109d6efa78413262d123374d5914fa3f8bb854de395",
+      "sentence1_sha256": "5c41b5e1b478465ac17eb0cf4bd7799a3800a5eee6333f133f5d8a1c732f7f65",
+      "sentence2_sha256": "ac981c8baf57f1f93f5e14e35c306b7b5fa959fbd0baff1dcd0e0492a7f14fd5",
+      "sampling_rank_sha256": "0e870f9da8668b141b6d14ab0fa515d207a65ccd8e93461c7a7d3efaa7133d7a",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1490",
+      "row_sha256": "281a5fea8d43dad984462873ee97ac672981621548038a3cc5aeb9573f1065ed",
+      "sentence_pair_sha256": "f664251c95aaf938c1ded96887d0082200dc9a6c424767680067ba9b234b7a15",
+      "sentence1_sha256": "77024bd25e35f019128feccf554bb05e71019bc4618e11d920fdd044599f1eb1",
+      "sentence2_sha256": "c96e53fe278de65c48b507cea02c411e1e911c7dedf44125aa2e3684ad17ccaa",
+      "sampling_rank_sha256": "0eaa728d499e6d06f04e52c22a4907d0363eb7fbd83ca0d3220e7b314b1f5cba",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "144",
+      "row_sha256": "9cf163837848b7e691e039d4f9fcdf0a78490909abb49e29b3ca802df4d671fa",
+      "sentence_pair_sha256": "5f4ead18dfbbd2a8040378c428139cc5c6932dbbc584407c16eac60b0ae423a0",
+      "sentence1_sha256": "abed183cc4787d4a9cf65f43b737fef495be9c35ce406e83e53ebcc03fa912dc",
+      "sentence2_sha256": "b5f8f013d8facce1a95202d17995e453e5a4658b5cca4b2f00390375076f8589",
+      "sampling_rank_sha256": "0eb00c0e389161025204030653fc736838a897e0e503f90be0708d3a8aba8ef6",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "677",
+      "row_sha256": "167f5825809f4a4a62b261056f4152f73f3f034c9ace2cad86db5eddb2f6d1e4",
+      "sentence_pair_sha256": "eaff64b55902cf631feec110ff4c3e8e4f6ee15c8c8b8265bac0d6efcdbd4017",
+      "sentence1_sha256": "78ca259e46c9957a9407989b6c4917811677539c57b6457147963332fd26c3e0",
+      "sentence2_sha256": "8e97052b84c3e0c94b8486cb9ffb11c56d89c9b00e6fbdf6b5e58503e9ccc2d5",
+      "sampling_rank_sha256": "0eb1148254f82418650eccdd4178a388c0a9b96b270870dae680c3dd467c2160",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2392",
+      "row_sha256": "4387adcbcd2e1d1f17b75a43c09c432bdab8deab88163e4e414788c10c137eed",
+      "sentence_pair_sha256": "b1229828bf086d3497d2212756e1c0e5813f28e149a38b69396de80c9bcbd2d7",
+      "sentence1_sha256": "53e530e5fc0b835bf2c4170aee16318c072e1c86f9f7be0df90d09fd0dee6702",
+      "sentence2_sha256": "d19c3b3d725d698ffee1ea28516fa7c445c99ede73f645abc9b632ade96eefde",
+      "sampling_rank_sha256": "0ec6e26526c5ca69c14e2e47553e1a22a9017623d77a0252a3dd6fa6873a6d6c",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "20",
+      "row_sha256": "ae761e80d2defbd4cfc6c0f51fdcbe546b8a32f1b1a426ee2f31a40dda4e200d",
+      "sentence_pair_sha256": "8b972669a98e1643eb7e907e3b4ab767234d4f6f106863b1154f2cb613ff6907",
+      "sentence1_sha256": "10f3820e494c6498ab14de1893ec4128cc5b9e36ffed0fd881a8d00337d5cbf6",
+      "sentence2_sha256": "dcef6efebc3f313b96c455002e0d2e40f36520fd0ba8792980b11beae95dcd3a",
+      "sampling_rank_sha256": "0eedf0e95828e79a69d38b703e9b31e67b4845ee8a35cfe2deb3a40a222b4122",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "643",
+      "row_sha256": "709090d5f5c6d05e30b887a3d57acc393eabce475fac06d381a41172e20df7e1",
+      "sentence_pair_sha256": "0014fa2fa7e4b1ca27d62d89dd0abf65bbfd723b2e0afb2ce894be2a095d2440",
+      "sentence1_sha256": "f1c4556f6b6798d335ed90ae6333727c75b45ae0b98e7972394cb675de993544",
+      "sentence2_sha256": "a35375647ade881cf3dad87cfecd6ad7d4e1d5e728c4a8b91caaca6441cc768f",
+      "sampling_rank_sha256": "0ef22e30a2e3517d336ec50a29bf32a37526c894b80fb7257c8d7149823fd1ca",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "19",
+      "row_sha256": "46d2eda56b2e0856f0a590039aaa171827db2699171d283b0deb3adf73bf5820",
+      "sentence_pair_sha256": "93b41c549c169f424238fcd924b6250132046e5168f07b3fea5d7cf3e2a6741b",
+      "sentence1_sha256": "dcef6efebc3f313b96c455002e0d2e40f36520fd0ba8792980b11beae95dcd3a",
+      "sentence2_sha256": "10f3820e494c6498ab14de1893ec4128cc5b9e36ffed0fd881a8d00337d5cbf6",
+      "sampling_rank_sha256": "0f163947223c6735ef07ccd882d22ee3d1d47fb5eceee5630a3d0e0f100cdbe2",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2384",
+      "row_sha256": "1bc5be0f51d2e166232434367b993b0f8f5fa73d78c1c7ee27c9fb2d60129b5b",
+      "sentence_pair_sha256": "c1f65f95223b88c510bfe870f87242da89a6f3ce1075dd7e26c6342d19fe5480",
+      "sentence1_sha256": "df35f26138a9d4b8b235b6c7b03e01dab167262f96a341c0418db5c4532dd02c",
+      "sentence2_sha256": "2bb32f082979eb33f438d91c9e8cf3e356ba6cecb9aac2801cd14f09925b6948",
+      "sampling_rank_sha256": "0f1f1446aa4da839a498d2b85858dab717699b4d86168b744a4ca36965c05669",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "426",
+      "row_sha256": "aa77af13600743bb59fefd6f2c7304bc6e25956b45073f66da2601a8ee895d30",
+      "sentence_pair_sha256": "58572b6e5fc68bd122fb7b25e42b4470d7be58b2d468c2e8412b02c35744fcc1",
+      "sentence1_sha256": "933d9775fde658a0ac8895ae6098c8776c0bd20465b83891dfafeee0c964d9f5",
+      "sentence2_sha256": "4a99cfb6f487ba3679582a4914171c0a5492f8543989d86271a9053bdcbd9cd6",
+      "sampling_rank_sha256": "0f2edf48ed6b89307ba10fe3c4efc6e5731642b85b7a070cd6e15d6654be82bd",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "545",
+      "row_sha256": "3a7abe97879994840e061e37a26ede3f62e0a6a801c9b03bc647bf9be15db7ae",
+      "sentence_pair_sha256": "49fe9bf7bc48cdae5cfe04f534f8b9ef7644567e00e32d9e314072522d483752",
+      "sentence1_sha256": "8aa958bffe60448e31c4a5e2ccf75e24056969b6f436f44c46144e659233bfcb",
+      "sentence2_sha256": "78177d63ccbd94db9546354e5bd5805ade34c9db761804ae298872b0c057a8fb",
+      "sampling_rank_sha256": "0f32521c0a06d18cd14cb465ae9fedfcf1b7c62dcf3e77a80d2a25b65c884c88",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "119",
+      "row_sha256": "5d9ee1973d55b8d2a7ed099225c49bbd48cdb8ce5e32564c309f92fd8fc7b15d",
+      "sentence_pair_sha256": "836b7fd4924f7bbffaee79282434768a1a04d2c44798c8dd38e21680d989a463",
+      "sentence1_sha256": "65763778f9a756739ea463e6d5ce096bb7768a3f0b1ac2efd977ea0c5a601394",
+      "sentence2_sha256": "905be6a0e5d308495373fc81eb509f59abfeb5ea9136233ebe19d33e36aaa7f8",
+      "sampling_rank_sha256": "0f4a4f93a2866d6d031467babe673cd27888d581f92d343791e755a220514d44",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "750",
+      "row_sha256": "13f4fb01eb8328dec05ef172600a86b2e88a8b802f936e3ddc42e2a14c3559f9",
+      "sentence_pair_sha256": "3e72214206f84f4a907498be1f9af4af1fc108dfcf672322f39106ef5b44b7f3",
+      "sentence1_sha256": "db1ce0ab52d3312ac52fc47a749b1d65a7e2ae063e05c428e3ba7f1c94ff8410",
+      "sentence2_sha256": "c6f30d92b318c9806e5cb45b33daa32912cdcc9da86a7c6a9b7e1d0e299b97b7",
+      "sampling_rank_sha256": "0f5b6d25e3808ca932008b2e5b0a32fb5ed3184dd7a75d48c4800686bf68848d",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1219",
+      "row_sha256": "6e68dee09942141d85f34fa4c76197fca655d0160bb320ee937d9627059c20b6",
+      "sentence_pair_sha256": "13c5d752afda0d5305729a1abcc1e8232c7a5fadbef46e378f5297bac2c8856c",
+      "sentence1_sha256": "bce1fe9b996bff3576883675d46592339937116e7a72b0ab72580beb8f258c07",
+      "sentence2_sha256": "7753adf30ee2d3682cc5670b950b51c491dbde337f887439b6ddcd720d4e5e5d",
+      "sampling_rank_sha256": "0f6d7fd85be00628bfd0b4bb4900f6d8767a112a8823787edad21efdc883160b",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1816",
+      "row_sha256": "f58591ac879846a931d52a9407493f32f8f39040455bcc7ae7a4477e4fc30145",
+      "sentence_pair_sha256": "2a5260e6f9c7b0bdb7e5ec51c230f9047f4f4bfd12f5402d7b81f82e7a7f616f",
+      "sentence1_sha256": "947f67699699c945cc504384e527e3f6c420618d7c9c49ebb951305c1119489e",
+      "sentence2_sha256": "06f3c02507352f1e0e55f3cc86425ef1eb42fc2b998f2e7953fd8732b8d20176",
+      "sampling_rank_sha256": "0f7119315af12b82591458fcf9f53eccf9d0501368434a0297421cb4eaf66e2c",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1182",
+      "row_sha256": "2f45090b124b1aadf2a9daf7079d160ab82ee6bc6f35fc5ff7654df686c9b5b5",
+      "sentence_pair_sha256": "dc636ad2c89ce5365f6eb7e4318f6bf73b9255ccd5ec1e48da0bb7550353ec37",
+      "sentence1_sha256": "03ff18b1e2067ef559396b62744815a71fb252c12f4e12054a0622cd30b0bbe7",
+      "sentence2_sha256": "378bf1ca05c3263bc7cabeddc245503c224c0f25820d86a4ef3d1f1a5b79ccda",
+      "sampling_rank_sha256": "0fb43956d0709c4d35414522dbd089ba76ea7813362194cb64760ca4310faca6",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2029",
+      "row_sha256": "2ed35e87283f45e254777805473c09651541bfb3b370803ca3a42c23023e2542",
+      "sentence_pair_sha256": "e6f3b37f082acc01a2627d9a173507d6a87e9ac26500ef6c9e2136538c067c48",
+      "sentence1_sha256": "3a52366fd738a2d3c75d21b1886d70e7ba269937c61be88e480d0f02586d3ed0",
+      "sentence2_sha256": "c2b8b445465966cdc25562e983b270c408f26d15e44564dd28e0cbaa57d0dc63",
+      "sampling_rank_sha256": "0fb666d1efdb3f1805db311e952e31d561750eac9bacd07ddde2d57e19a46916",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1677",
+      "row_sha256": "a6f23ebd7661cc7be26a70ae466ed645ed723a3b6ddd35ed9fd2b95c87ab087e",
+      "sentence_pair_sha256": "baa9b68d72df7d3e0e6860e2e18c3997d344af1d525f84d6f737acd9055978c8",
+      "sentence1_sha256": "58e7fc6c1466e708085f31306a0150ff6ae9456f2f2dbba951213494d7086203",
+      "sentence2_sha256": "644e610fed1119e89f630a01f39df02d1637b28b44f1635bd0c35513a4577064",
+      "sampling_rank_sha256": "0fbcd8386d6862a9ae36b294995d74db4f9db90909eda68cf0311e971609dde3",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1868",
+      "row_sha256": "c7d2cc276e54e0c32b239e7cbf066e2e9864881195d68c77e50cc78452c9e92b",
+      "sentence_pair_sha256": "df171f5ea08bc93796bf5172b02a991e6a2605f37b8234dd43680d3d66f7cd8f",
+      "sentence1_sha256": "3c67793f1c931bdc424b61c2a9e3e0cff91c9849f5bc888d16b453d829a605fa",
+      "sentence2_sha256": "16d786951b6fe45e7ff6564c7a72933af9fd330d4c5a3afc7a9b327fe3e05872",
+      "sampling_rank_sha256": "0ffa80804343ab20637cdbdd9d0cb77ba43a7b33969978065ef6a5641bf9b3ad",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1625",
+      "row_sha256": "9491aba9b302fa29421bc43f76038f334d4f3e3d13388c7e10a5b228ea4c23dc",
+      "sentence_pair_sha256": "fd8a60e8951e6354bc6f795bcf054c01323d6093076db8f525df8fe3461e68b4",
+      "sentence1_sha256": "70a8fb204fdbe3dad6264cdf62359989bddbd615896230dfd6233967dafc0ee6",
+      "sentence2_sha256": "4a693ba33540d35649c91b38e55e811382a3ce5efca2055f17097bad944e4562",
+      "sampling_rank_sha256": "10278991a0dd4a03eb826eb1e328b5496d452df554563c9523c9f146816bcde8",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1158",
+      "row_sha256": "79d9e120d8f6812d987c2242e970e312995f672a7fdcbc226f230f45615d17d3",
+      "sentence_pair_sha256": "73d0410f67f7ac2248b6b80a48aae03b766a28dd20c4d66eb59f223f6e30fff9",
+      "sentence1_sha256": "c88354992fc6abc259c4fd68de364f9d78db5cbaea1a0b953ccdd669fdca50fb",
+      "sentence2_sha256": "0fcac41b6eeb1969260ec7073bbfcb6418dd3bae33e78d096ba8bb4f195815e9",
+      "sampling_rank_sha256": "102c96908fae09a7fcd16c5c515b103e325e29d216271757b7ab3cced23024d1",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1025",
+      "row_sha256": "95af9e46fb71ecfa4ff3074529025a989d9ea28eca7915e7b3f14dd665075360",
+      "sentence_pair_sha256": "e80595f5c0438019ea491172a7e8682fc02b295b3b53bd79423c23797540707f",
+      "sentence1_sha256": "0ed050a0508714f1c0762dbe03c4ad44450aa664155dccaaa6e15bcb39d90468",
+      "sentence2_sha256": "b16d3fcfaab64b38314f6209c3059c8804dd13e62c39d7ee0c4be384ab511119",
+      "sampling_rank_sha256": "103e0c03b601619710809fbc4290353227d9d690f4d0004bd13b196742058eff",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1670",
+      "row_sha256": "b93285195f9a304bf39f3df88f463f4b0afd1f12131f022e05266579ac5fd0fd",
+      "sentence_pair_sha256": "535f7fe90cb3ef064e7ef03dc95dafa13f685cf2726f895bc566abf7772ac100",
+      "sentence1_sha256": "644e610fed1119e89f630a01f39df02d1637b28b44f1635bd0c35513a4577064",
+      "sentence2_sha256": "c8617a581246a277ada9f2d1a076c4503f3ff59e308369efb9bf9fb21c4e41e0",
+      "sampling_rank_sha256": "103f5bf13cf1252f4cce301a6ef8d2bc0e2a28315937884575f315ae882150ef",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2318",
+      "row_sha256": "01eb6b63ca00cc0b47cfceb6013693a9c2bf9678593bb54ff3deb07abd2c52c3",
+      "sentence_pair_sha256": "d8774f2a3fb66ffe80f7f39f9a4aba3675b27b95d9ead3feebe156fc57606d7e",
+      "sentence1_sha256": "4a8a7099e891396359fff234ee94ca3f61649ce24640c6a01727c4bb4be624d8",
+      "sentence2_sha256": "09aa1d4ea0dade3e38ad9367afec6ab02666ea25928658789d20597bf8d2463c",
+      "sampling_rank_sha256": "1046043a8d15ed77ebb88dc9207535386400573ebc8c49ca2b28c1bba5fc6d46",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1708",
+      "row_sha256": "897e807217104639fc8b963a0c411dd2893ba551738d09f1aa415b9519a816f6",
+      "sentence_pair_sha256": "2d085e1ea8939565505511a3bff036a0432f5c46fe237938cf579907cf56604a",
+      "sentence1_sha256": "28bf5dabf4ce2488d3ade2b377e62aee92e4f8987daf016fcea533b82f6db7d9",
+      "sentence2_sha256": "7f414547fdbbd71e45e9f5edb1076d94cb88dd52ccd6c3ac027e0b8aa40e7e6e",
+      "sampling_rank_sha256": "1056905ea334a088435b0d9960ed7748bade6b5e56827b8935183bdefab51e96",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1644",
+      "row_sha256": "a45306ea5a69ab06a40288cff97d0dce8c54d25debf79d91fa7ebc50cc1ef70e",
+      "sentence_pair_sha256": "571339b87b9bf930b3e588c6f7edf81ea4a0a8b151f5e143ed94ada19d2dff6d",
+      "sentence1_sha256": "1ba239d6b4f29de2f05dcb9ce23e853a088906e265811ed9309f5ad32998b287",
+      "sentence2_sha256": "6c86fc5d03629b0445729b52569c13147f67191b571fccaca8b95c6ba3c98c61",
+      "sampling_rank_sha256": "1094be6472c8dad323545256f53b30e0601fb9a9129eb61609619621849caab7",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "710",
+      "row_sha256": "91763574fffcd6ec03abe433d9f7c7e2730071216836b0758a7f0d39c8575f81",
+      "sentence_pair_sha256": "d4abf5ea6e35a566ac924ee0d1d1e2cb6182c8a0485f00b48dd2cab3437e4789",
+      "sentence1_sha256": "91936ae99e34db634a71520da2fc00e560052f990bbd1640a319529acedab503",
+      "sentence2_sha256": "233537464e4e833549faca31245480ab2b13cba015750880f344288a50663499",
+      "sampling_rank_sha256": "10a453c6c64c05702a8ff97d168789ce22f42bfe14435132d26b8123ff1e68dc",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1326",
+      "row_sha256": "c9b88182590c7b9a19b916b56d327dcb352429750b539c1d4938551f9e317d5e",
+      "sentence_pair_sha256": "ecef5354ab4bcc94086c43bea2cf25023f02a9c19963fd0530274730075cfce6",
+      "sentence1_sha256": "4852b0cbbbce85ee97b9fb47db17aae272a2379ea391f615c8f269dcd66d50ff",
+      "sentence2_sha256": "b9bd2bfff28f64b1aecd89c0e1ef8a1522be3c217b8da42d11809ad844ae684a",
+      "sampling_rank_sha256": "10d7412f561347f7265c4657670176a75d064115163e502f1f4eefb674078966",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "283",
+      "row_sha256": "3dfcdceb556bfda21225a1199999268c33a81dc43c105a1d6b990f49e5e53154",
+      "sentence_pair_sha256": "6247c439833d3d596ff29c3ffa3b4bb2bf4d3899d62a80b8eccd524309e87370",
+      "sentence1_sha256": "f90dacc1071117f2de5346cac82d3b6b0c53175a52c15007bcad90cd6e38dd79",
+      "sentence2_sha256": "06d4e61cc0e3c981c43bb9ba0db71e4ecd87edf4f2dd415a235d57517a2234a1",
+      "sampling_rank_sha256": "10db2ec9954a2fb5df1577ba50e4948b5ef751f4c81cf0c1dccb23ddb10199d1",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "832",
+      "row_sha256": "c34945555050c6df124d9e7ca9fd67b23ee8e9cbe310f55aede5e3584a9bdc69",
+      "sentence_pair_sha256": "c598e193b045dbdea76d775d9f3dc727d91624be70952c27d7ed8f697ff260e1",
+      "sentence1_sha256": "41ed9a8075655735c10ee8784b18e1fd2b79ae3ae13474f56fb3099cdc9fbf23",
+      "sentence2_sha256": "7dc1cc127f603d93a09d6beeda6cce91da5b74a8f9cbcd988c6587ab0232edd4",
+      "sampling_rank_sha256": "1125ad00b581cd5674b547fd0ecbf455cd199e31674b1797d915eec234cdfa98",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1357",
+      "row_sha256": "17d84f18a3e99a54716b169a1449ba36dc3ed7e33b2b403814734ef9eb849263",
+      "sentence_pair_sha256": "ada99423f4c69c5a1877e2e015a6faec2426db98a2754867896dac2c71f50058",
+      "sentence1_sha256": "26141273c93e5fe4e71fd3f2729f5e4fcc45be5d3a9d3c505bed0a5b4958986d",
+      "sentence2_sha256": "7f07fecf70fb9993e358518f693a75e163b29dda971b0c7df08f2c3745d00721",
+      "sampling_rank_sha256": "11335616ad11fbf8cb01696eb5d9c9519b4ecf1328bc7cabd6231d0e9af64de1",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "380",
+      "row_sha256": "b2781f5d91d479e63f8031120bb733edbde998e95c873ccfff7b39a195ef4697",
+      "sentence_pair_sha256": "31211b524b6a6ee128838a685917db55326dc6861c07b3c80dfc0a6107b3a1c7",
+      "sentence1_sha256": "3470ff017f81bea8ca4c5374e77313267afff5c6fb28ce6fb1d7cb72dd4de2f6",
+      "sentence2_sha256": "c53cfca4aaa98fca2f3e15a1bd8cc92e2ef48ff548e4e9246a9f117f5dcb5340",
+      "sampling_rank_sha256": "1134041516019d3428dc9bbc7ade39bc128391925b43c18014d4c17d75786899",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1319",
+      "row_sha256": "5a928b22a90ff6c6df51b1aa8a0150deb10cf00811c304c4aab69cb035fecc2d",
+      "sentence_pair_sha256": "c81c0db29c4ca1dc631ae3522c2222ecc497576e30abdcc3157f69f0a68ecf5e",
+      "sentence1_sha256": "ba3f62b555cac603847a5177234be42265ddb8e34da703e34ae222b197d21d9b",
+      "sentence2_sha256": "907ea1e9ec3010ecd8f6afc24b29a2e1d89df36bda4586a67dedb526275e408e",
+      "sampling_rank_sha256": "11477766c95ac76436877e185711cd26a9ceef991833992037d605b14b83cf19",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1957",
+      "row_sha256": "3f4e785ebc1c86b8f5dfec7d8ab29abac8c6062cedf47a1658727dbdfa06db87",
+      "sentence_pair_sha256": "b72f7669717f8856747fc90aa20473deb3f3ebc68eae8f2fdf5465112cc5b7ee",
+      "sentence1_sha256": "aae4b897ffe336a73830fc1217783ed0967fe154ca6985045060a317db93aad3",
+      "sentence2_sha256": "11d2d324848bd24e3efa66bd97ea425e151a1a9b2058da9e4acfc354c20ba417",
+      "sampling_rank_sha256": "1150ec8138015feac52b5169dbcd80d43c09e67fc53870d23e4fa04615d494b1",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "850",
+      "row_sha256": "374c391685d9f79f6c7151cef0d00b001ec88b325d15006e878dfc2a6c851cd3",
+      "sentence_pair_sha256": "60d61b752fd978bdade4e6c162d0855faefb325c1fbb84f3a5b565ec808d512f",
+      "sentence1_sha256": "d60935bd25005fc6f0db5ec100f582ad1ab16e9fab2fcbe13b843cbd8fcbec5f",
+      "sentence2_sha256": "aa59b39b514224e5232de49b70bf35cfd5f5d6304829d438030d147424b4038a",
+      "sampling_rank_sha256": "115a507f43fc334209ea285d1a6406fc7720293dc35d851c1f56be74bee4fc82",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1527",
+      "row_sha256": "3acc0e37361f3efe2a71ef10a1d2af55758174936ff9708f4c7ce61e147ee56d",
+      "sentence_pair_sha256": "39116d9545ba9e574301204c18515155a086c6e6118fe665c9e470476c94930e",
+      "sentence1_sha256": "663ca3ed6068dbd0cfb6107f997d429ea038fa8bb28ab966b772463deea74900",
+      "sentence2_sha256": "ee703f28435ea092ba777a06715aac48ad5608097f0d1fa5c03a46093ead2438",
+      "sampling_rank_sha256": "116431b97b19842bb2c2dfdcd847704aa833aa4ffeb9aeafa8c704d2e5838adf",
+      "gold": "neutral"
+    },
+    {
+      "sentence_pair_id": "1890",
+      "row_sha256": "f697adb66f0c1719382f33d9947e1a1c69b9d1c65a68a38bb0f0abe12ac64bae",
+      "sentence_pair_sha256": "5e8a7b44697f0dfa10420fa88b2a3b3dc43658fe333be54887d98b20e7d3fb90",
+      "sentence1_sha256": "598c029e6c2ff6cfb5843002b071282c01fc36a1ec55f02f734b5f7ad1fc8783",
+      "sentence2_sha256": "77033765b208a6545c094e8c92af0e83002f3f75df03ada7dc6157ecf4e04434",
+      "sampling_rank_sha256": "1221195cf04be1c34f24e8550ac2ffc2b456d5547047f51fb112b5ceb361c4d8",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "513",
+      "row_sha256": "686d7012311675af139f5d41937a32edc672fdfeb3b79cc0d76c05055dd198ba",
+      "sentence_pair_sha256": "aaf4bff55a5f3fcaf48572cc382b03d85d61771c3d530e0fe1b39a341edea0e3",
+      "sentence1_sha256": "f269bf1737fbfda46cbfcfd4cb6b869f8f915b0cfb9f7e946226efa180aab2c2",
+      "sentence2_sha256": "b9c9e4003317364e21c47a273d1c473b5cf2cbfb66870807224960624f84d687",
+      "sampling_rank_sha256": "122e2a7dbc8c90839795cd54503708a9bb33d8c979b091e0f2488a1a227f21a0",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "963",
+      "row_sha256": "4e7de76bd6ef4debc44c35969b24cf661d4fc4bc3d13e3017c1e97e512d8e6aa",
+      "sentence_pair_sha256": "7cabae9e0026181b2c56277e4ef45af8ce059f07908214f751e42f6e94e75f78",
+      "sentence1_sha256": "96fa310e174c1b1c79ca0d43c2626ab752e501ff2c4a3d0195151bfb92c4dfa5",
+      "sentence2_sha256": "142806b28f8f4716e08b199e2b4fe100433992733541423f24faf50bb48d5a07",
+      "sampling_rank_sha256": "12ba107550914a8a809d7b72149c35a50cf1644be6b7c834ba6cb1e89a69320c",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2129",
+      "row_sha256": "d9347b9930123ef0a5516735c9a594c52c79292b0bb3479c8f1263e229ebdb77",
+      "sentence_pair_sha256": "d24a01061d7708ffdb1f66388eab5e3769ff10698b6be921f989628700c0d084",
+      "sentence1_sha256": "9c424d9bb1abad9989621e56b01d069396dcc85d4493b36eeb155d5db75716e1",
+      "sentence2_sha256": "efd039d582430bebb89c2d3c79f57007435b793aae74f160a0f6dca24fc94b94",
+      "sampling_rank_sha256": "12bb175631c769f995dff0647456d1aa62ae17ee47c1142873bd0bb8ba29af6b",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "725",
+      "row_sha256": "8f735458a48e21291134f83fdbd1f6c88aa0ab1c8785c030c1af12f9c7d5e4dc",
+      "sentence_pair_sha256": "d9b224f0e074a419e92a97fa322611473d741e2101dbb0b79214c2363985a022",
+      "sentence1_sha256": "f9be0ddf971d9e84c19291b6af56f2f014e9613cb96d169d1f81eb92e9768cce",
+      "sentence2_sha256": "ab2c488f1704b430263df9b2ca9d2ccdce4e61b31837118cc2eca9ed1387627e",
+      "sampling_rank_sha256": "13214cecc16245a159bf2582f69d6d7cc010a8e548baa24713a89f5e44373296",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1543",
+      "row_sha256": "048a705dbdb299dd274167106bc40c182062016bb78247e77e57a70c2cc85dbf",
+      "sentence_pair_sha256": "4c76beb76773f950310955abd8e527336da284228a449cc9797aa11c8a2540a4",
+      "sentence1_sha256": "1691d7f3cce0b54caad22450d5e73114522db260b4ee367a929b33e05f2ce134",
+      "sentence2_sha256": "f383b5381009659c79118dbca31edc4b97b2cf4d560d7fa100524578a194660f",
+      "sampling_rank_sha256": "133bab7748dcfa072c4fc86709870edcf6874702ae1e4c57127b6801e22b83b3",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2321",
+      "row_sha256": "06578af5fe0ae456e528e91147b4682311d10ef4485725fe8201fad426beee53",
+      "sentence_pair_sha256": "5125e4445f99b08d7a2b546c77f99f42aba08fde866a26c8cf679b4db8153efe",
+      "sentence1_sha256": "fdcee9d12fcd2766df7d12b8713249868ce612b2c3c873fac7cac82be9880db0",
+      "sentence2_sha256": "2ae5d470170d7972f3811f5b274da2c59e1727a0a783bdaf90bd8fcdc96e0e1d",
+      "sampling_rank_sha256": "13ede6a9d3ede7c4bd5cab511b4f877b0367c99d9159742c161db1365b8d44b7",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "932",
+      "row_sha256": "75e18c95242e28bd6601e035aaa127b303c6294c896b392a93958036dc636c86",
+      "sentence_pair_sha256": "d47862ab32277125c621382054cf9ae9b251980c1ee58e5b11443b1618b8761d",
+      "sentence1_sha256": "7bf5a01a32d8345c3027c1e7ebdac2759421f6a44275470109b9d48cd1162d90",
+      "sentence2_sha256": "1d637f6a10a9519b3e8f264e7827bb853768f44725eaab86609f62567ee0f873",
+      "sampling_rank_sha256": "1418e6986ce62c92c4addd8b5fb3bc9ecb534a8d7034704b6437d508b3f695d5",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "982",
+      "row_sha256": "fad08e2523e8534e08cb0178979856cb3b41169c5546e07fbaf2526581dcb76f",
+      "sentence_pair_sha256": "de9c14b6fa2d9ed1815273cf6df6532d6ba7950936de8bc863ada0a3bf41440f",
+      "sentence1_sha256": "55d461cef8d9bf2a420d778579f5db0df02972843a26aa79bbbdcdc12f5f30f8",
+      "sentence2_sha256": "b4e524751f91038e503bba156fea71388e805d528ce5af74e920a47814056a3d",
+      "sampling_rank_sha256": "143b9ae30d356fe7197821db1beea6e28c2c56cdf2e050a18ce2e84ac3b2e933",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2290",
+      "row_sha256": "57e3868d5062684f90d0273db9c57f53b725c6671636740309ad26dfb0a840b7",
+      "sentence_pair_sha256": "e0f13f906db98028ec64a7c8beda024a224a16070ca0163a6cb6d3b3b519c0e9",
+      "sentence1_sha256": "a5b93021c24adc2e7dd17ddf3ee14d1197c7c675aa58b8eda257dd2820a54c48",
+      "sentence2_sha256": "50ed48f0e1acb4812bc8475be9121dad54cdff151f661987ca7dbefb76b5e204",
+      "sampling_rank_sha256": "144533de714aea9e2fd02f5c5b2bd5056810aa68367728e3d272061a177eabee",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1373",
+      "row_sha256": "7f6ffd9cce8d2f66c38531592fa9ac9ba00422c70f84c72cdad416bca5df64e2",
+      "sentence_pair_sha256": "7b46cd2c296ecc3a36d4b4e2085076d86f2538da857f7a328409ebafca3b7d09",
+      "sentence1_sha256": "8442dc63ded4f38508c96892fe0fbd241004c466d1408bbb69cd6a89c5f7cb47",
+      "sentence2_sha256": "d238cd82501b8fe4c60517aea15cd97d04741080302ca96e0099d3e872cf1701",
+      "sampling_rank_sha256": "14868d0460911e8daa978a698180648280fe993372ac72aca7861a231aed863d",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2161",
+      "row_sha256": "bd3b106cb725224061d574c02b172e51aa39f415a4a01e751e50fff7100e6da6",
+      "sentence_pair_sha256": "f539260d814fe711e143b9da8bdbc8c45b6e4fa66138384d117159466b91b1d3",
+      "sentence1_sha256": "359de4abbe87f0afe4486a03a09b189e3a3d16b13e3099e19b0fc93a76323685",
+      "sentence2_sha256": "9c756d0f6f7b340a1667c9fa6665499fccd2524170a30cc66f50a91c785122c8",
+      "sampling_rank_sha256": "1587a6b2225e713816a76ed034545ab66cd6c9c756b4091566972a139924a29a",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "908",
+      "row_sha256": "a640139b6f6421da038df7ef14aba25c1533abcc11054058db8f924304dde371",
+      "sentence_pair_sha256": "286fdce4c84d2cc6375ecce79491cc072c5f325cba4bfbad6fd74a9a5d4227ea",
+      "sentence1_sha256": "7eb9b24acd1ac99d899c8f89e5b466ec5cd25e0176dc7b76a1782afb15bbd062",
+      "sentence2_sha256": "fe69fee9d96fc78571cc586384e8a78b7a3ca127cef348df1d12edfa2984352d",
+      "sampling_rank_sha256": "158ff75a5d5bda507d767a796eaca78bb1313c2e67d8f67b0df20af1b5ab049c",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1163",
+      "row_sha256": "15087b6de2db467a765c32c51fe76377c8057f8bc6613b3e9097ac4fbe6f0d8c",
+      "sentence_pair_sha256": "9420657c0a59c7d9918c158d886da56e8e465458dc257394ca399b2d807e594b",
+      "sentence1_sha256": "f27cfb4940ff595efd5dc1d4d023fc5e5bace5426bab14f4062ce5721d136b7f",
+      "sentence2_sha256": "c47db0c54dbe189cd4d6907c1efa853d34e221ce450a051e743a5af59b40873f",
+      "sampling_rank_sha256": "15921e767a7c27045dc71d3bf28f2995f8da2e2f52d859a614d82fb3b2e959ac",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2138",
+      "row_sha256": "9eda2ec98a52db8ee322db0f61562f7f5fe641b08580d823d1d45e2720bb0881",
+      "sentence_pair_sha256": "25ea93b561812354d5ea4a0dda4b3c229bd59b095bbea42e299669e7af6199c6",
+      "sentence1_sha256": "eb6cd65a4b1c94790b8ada1c863b65144f789b7daae06938c6e1854e7a345c9a",
+      "sentence2_sha256": "3826f30cbd07b8c626b4bb492a2de541187205304c94b06b33c4b63811ad0f22",
+      "sampling_rank_sha256": "15dfa8c925b40eec41ecc1d03b4daf1f7cbbecb0416f6464d3be9ec93f717e5d",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "867",
+      "row_sha256": "bae2957f585a75908fd764f670c03dac65bf787f4d1084bac9e17b15e1d5701c",
+      "sentence_pair_sha256": "4dc3b8857e63d4ebedb9e32406e816d5ab09b48f8c57b9134709c6115774d9b4",
+      "sentence1_sha256": "fb1becb2d6873a9c31e7a51842bba61912e65d29fed201c62aa71e258910b345",
+      "sentence2_sha256": "dbcdc9c6d46c66a4df6d950afe390630caf471a1a5b08ac9fe9f1d3180129802",
+      "sampling_rank_sha256": "165100985300d2c7234c90b13ee2d84bc4037f2d7e11fa3e27a09076de3cad8f",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2035",
+      "row_sha256": "10fc89c94286ab1346928deb9de57b9071eabb2e16835f79c4505a49f7d72106",
+      "sentence_pair_sha256": "1ae274b48b96968d088af9c25967cc3a68ea4be01c81a1b417b6a1573e5e393e",
+      "sentence1_sha256": "66de23e22863027fdd38cd1b55fb5256245b52a4a7df241715cc10e4f1e1ebb5",
+      "sentence2_sha256": "c40adf46f2a0c6cf05aba0de591b2dee39ffb2ea4547e2c5e8104035ba86ac53",
+      "sampling_rank_sha256": "16a0f473bc73366fb1b479739f92f77557d159a193121c271a307af9e25ad3f0",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "689",
+      "row_sha256": "8a3a22654b7549f9457a31370678457980624be3bc21eed754b2378dbedd54a7",
+      "sentence_pair_sha256": "11319ed429650534d764b729fc482e75fabc3931c548c0a26f7dfbdfe36bab19",
+      "sentence1_sha256": "4a251ae9f28d3e5357f1cf4b33f0150731e0a4e7937a8949bc4909d11e4fad1d",
+      "sentence2_sha256": "51839f744b90d581ff6076068998e3144833293aca0ec7e152f8e2eb6dddec80",
+      "sampling_rank_sha256": "16a1268342ad00f831fcd4e3263c7b93a09629679d5d458f35fb0d87317f12a6",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2144",
+      "row_sha256": "f40b61545eb98ace2afc9df57dc4376e8a2abd1223d7e9b3658d6e78cc247d26",
+      "sentence_pair_sha256": "1276ad6ea9d8f0f5b7f3a0ca6a9b298116d74c67ec9c445b93f57534341b126f",
+      "sentence1_sha256": "27bb4f10ba053a31d63627b3f507097479fea77cd0e15c22fbb58567730bea7a",
+      "sentence2_sha256": "4bb1b967a3c3c2fe0e3535bb2628b8b1c09a1939a347cd67810f14fc8df28f69",
+      "sampling_rank_sha256": "16a151ac9c05c64452e0363b3513ad3ffc422afc2ca7d7b6d43b46ce669fb00d",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1530",
+      "row_sha256": "372abaf6e3e903115296ac276f6cefa38bbe6abf8287615cbcb5d632cb6c0bf2",
+      "sentence_pair_sha256": "4e305b2b33c5f75865a7a34df94a51701f9db3a59bf368f80f1739072b29fcb4",
+      "sentence1_sha256": "e5e07e02b605c4e42c721d7f720ad8edc1bb378401ca8a7b1b592a331f0973e7",
+      "sentence2_sha256": "8437ed3eadfebd9029003529d6f908f05cb06fd8c5a59e3d061b5f5010c7dfec",
+      "sampling_rank_sha256": "16cf8fdf8fcbec11d4b0fe15ae91c1adbee518c6ac3d0b23f729d512c4e3a0a5",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2268",
+      "row_sha256": "0890e06fd30f686830d79215a28e1df36c3e51ab57aa9bd413b1cd291d97c7ff",
+      "sentence_pair_sha256": "3583550cc5209f99879dbf0f3dd2e113b41af4590b2c41fa8229664ba35e9620",
+      "sentence1_sha256": "2ada12b3087607e957fea1bf3b794f31952317dc129c031b742bb0b8ec53384e",
+      "sentence2_sha256": "3a735ce5ce4d268ba4b53889be21248567faffc662215409dae672321f202955",
+      "sampling_rank_sha256": "16d3627dd5c97742603bc340a12904cfdb9a165c4a55f45169ed628e040c3426",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1293",
+      "row_sha256": "34ead3003df31548ccabeaf6da62e3cca366a908c439eb6e0c5458abfb92233d",
+      "sentence_pair_sha256": "6c3ab2dd36f96b2d0cc1a32dc969cb696aceb416c6a502732e98db3474de4d78",
+      "sentence1_sha256": "390fa441f682300d17ecf76556078e3cf275e415c1170d6c9835b8301e6d8725",
+      "sentence2_sha256": "1a6b769d2c6cbe4848ea5e942cca40aa43ec94c03e70b03617111cdc9d4adee7",
+      "sampling_rank_sha256": "16ef83f05fa4e7c52e19ca0055d80ff03a1f0da5f58f41a3e5a9395b901b7182",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "939",
+      "row_sha256": "1d099d0325d8cd9f708cddc3f21c91669e840756725b619e19e505f99b612e5b",
+      "sentence_pair_sha256": "cf0077b2cf923343a2bdf0a91952f0b618b3dd68385bcc93d5c917be394d3f42",
+      "sentence1_sha256": "d4a5abf51912e80585d3839d728526be0ecd3ffac7dcaef485c3b655195fd552",
+      "sentence2_sha256": "ef0ce0716d3b94f3ab3e3af389cdd85a9937270a2616f11d2db2fc9483dc9ce8",
+      "sampling_rank_sha256": "1741b2e611cd300f35b53fee59add8d19f6532275f801132a402e6fe0c0f7902",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1584",
+      "row_sha256": "09f056b4db6b4ac7cd4deb6b8842baa29795e972dd4df7dfa572696d7847909a",
+      "sentence_pair_sha256": "7c818dcec4d8fb616ae985435133a5d90956b9d074123e91c91a5b07ccdb4f04",
+      "sentence1_sha256": "ea711d2707c90e023606425bd34797886a6d05c8699c9c0cd0c02e4c5017cccf",
+      "sentence2_sha256": "a090b0437e25d7f5c0f402212d5c43e609f0e8a34a0e344f486f3554c90799a2",
+      "sampling_rank_sha256": "187ea05eb038f252e301ef1f630da967246f2ad14bf4febf4cafb0c032226eb2",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "268",
+      "row_sha256": "360f1a2f80aebd252151dd142c1a96241164d6dd9204017d39fc7ac473c6f80a",
+      "sentence_pair_sha256": "c8db4135f8a7285233439086b7685433ad49fcf7f22f94236746a5e7ec6be6c6",
+      "sentence1_sha256": "9668c194789206aa71da1a44125f3c11f5e3f96ea8250ceb1fbdd9fa6c154126",
+      "sentence2_sha256": "8d57e5b5d86b45ec3ae15fa053979e36de9e9045f0c39deb4216fe9e7880c5d2",
+      "sampling_rank_sha256": "18a6ee1bf2276b952af4d5a3005c25b0e01d6670ab2b1536ee5e311048e4286d",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2040",
+      "row_sha256": "c75914d013d63fe9241673228aeb364ed98395f5fc5e27f22c90d6c32a0c41ec",
+      "sentence_pair_sha256": "0ca7fa5fe9f753cd0e465d9459370bf771172014c0de664d97ebd9223b7cb200",
+      "sentence1_sha256": "5cd74ad1400bce54b4a9faf287b36e7499bb2bd91768343a183fbe7607c67114",
+      "sentence2_sha256": "66de23e22863027fdd38cd1b55fb5256245b52a4a7df241715cc10e4f1e1ebb5",
+      "sampling_rank_sha256": "18b25281dd40e7433854c855e3dd5df836c4916257659fbdcf4a2d0cf8e01cfc",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "845",
+      "row_sha256": "1a8c5a7d2e37ce87b15d0d9543da026d9e01627b02a055cfd6377b8bb9994fec",
+      "sentence_pair_sha256": "7af1bd697e83958840965d97d22b1d67b06c788bad6dde26fd94ce239b9ddf0d",
+      "sentence1_sha256": "c9e3aabea6d891129368c4bae5d7b32e5240d163e58517449bbe86e7415e2753",
+      "sentence2_sha256": "f5e5f084b262e023b203ecfb4e9ba1e41f5336a2eeaaf3a3f58273eefc8be0aa",
+      "sampling_rank_sha256": "196ebd1c96f6b764de780cf4d1190c3ef44fd1e6f1a0f3c9e412b9f10610753c",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1709",
+      "row_sha256": "00dc1b96017f601aecceaaca2ab351b487451392a0d518c8ffbad2f27c3add2c",
+      "sentence_pair_sha256": "68fb44c5138d71a7ef20617ead0f94d131dc7052ea037170b29a728edf7c1584",
+      "sentence1_sha256": "a0a2de673682d3b0e1f767d89fdd44f2c0941bbf54fe9399a8eb976480620241",
+      "sentence2_sha256": "fc5b3ded8882822012dfb4e802c3452efd39dcff757b024fccf2d525c90ac5f0",
+      "sampling_rank_sha256": "19bb3ac921f9b55ded70345f2951a0176c6b2b9f2f03c9d92ae68b40b18b3b98",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1413",
+      "row_sha256": "a6d7a89bf764e9b6b2dfc81b9302353ba47b768b99a8cc3d78ab52c4d15bf03f",
+      "sentence_pair_sha256": "94785a3291463cb0c8cb0e09bf98171dd6a857db3ca302fbb7188b371f40122e",
+      "sentence1_sha256": "a9590a5a95148a35e55a3ce3e99456a22646b22784a0a5f6e353422db22da858",
+      "sentence2_sha256": "152b2428bf7fbc5273d2fdcdeea657c3aee453e2bc5a6193426c76b4dbeed15b",
+      "sampling_rank_sha256": "1b13b8f3dbffcd7bf3789d49ee261106de47294fc22e104d173d1f335ec3db9d",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2118",
+      "row_sha256": "f3bc0c319cc584f8b9cfcf80b91fbc0aa43331d1d9a8f7e67b85eba8d871c8e1",
+      "sentence_pair_sha256": "046f701d1e3c1140af0f9ff6df99fde5462f66fb82eef43ec62bdb2daba8c186",
+      "sentence1_sha256": "04b5646ff59f7dc457f94902857a27989b59af5d004c291e3158a5e0a4538960",
+      "sentence2_sha256": "02695cb8d579fa12967fb06b56ce8b55ebe5e66a6ae331808360afa578b0343d",
+      "sampling_rank_sha256": "1b22c43a2cc21dac0c5d6d7f39d4fac4e61f3c30fdd815c54d415bbe61fbbbca",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1875",
+      "row_sha256": "a999cca95543ebb9d6c977cb8e3745f5a5c1ce6d1d196928a5edb73c62464316",
+      "sentence_pair_sha256": "9062e21f580c4908652fbd433754f64fbf254e443789cf5f969e8e6095fc5d2e",
+      "sentence1_sha256": "2d658297fd8211ec4281925f06e466549eef901318166fc850a86c7e77a34224",
+      "sentence2_sha256": "8021e932877588724f03d110f230af91f8bae07a918ebe2111167b47c273629d",
+      "sampling_rank_sha256": "1b733ccbfcca006755cb85655d74faee32e1c38bb3e627e70282311f7d69e6b9",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1766",
+      "row_sha256": "43495399b96851dc49715d3fcdd3a22a1d36a8299b14255980ad7cdcf6073258",
+      "sentence_pair_sha256": "4c9ccf403e94141a1d0db297adfe2a357e35776e9cdc5df5f14a409c1e14bbe7",
+      "sentence1_sha256": "6b5eb380afdfe1542af15269533c6b1150fa3a544d8dea9b2397d7e5369b798e",
+      "sentence2_sha256": "513d2b5c1bb00dd06234dc0d23cdbd7aa69854eb71efb84ea68d26b446df0b64",
+      "sampling_rank_sha256": "1bb46c52afdc20d80b1a73cc0c94eefcb1eb2328216140527f9286daeff6bebd",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2388",
+      "row_sha256": "300e68362ec3f88ecac89748ae19aeb4da53fc45ae21c2d50b4661cb73bc3905",
+      "sentence_pair_sha256": "756ae99a5f3da373eb1f5c21c6553971e5833a8816db4b5aed42ba73ce63386f",
+      "sentence1_sha256": "3ca2b9ea79582c6e6e1580df54bbebd791a17607fcabf10540bf251dbee97368",
+      "sentence2_sha256": "20875dbc13a1f801ce080419b784fd016e0f2c4647a88e28400fb88b835c0e15",
+      "sampling_rank_sha256": "1c1fed18fa321cf4fe83602547b4776c9ca59081b10c4e8563f210ec6395ff5f",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "561",
+      "row_sha256": "b341168f68fab3e83f79d39e25ae6f7dbd11a746b12596a30a1047979d8e79c3",
+      "sentence_pair_sha256": "e9987f4614dcbc19e4622b117aff8d109d14f4f7e59597499a77ff1945779f17",
+      "sentence1_sha256": "9393d120a97117ddaa518aaaff7d250266d1368398302d1e2bd99431aa3065f3",
+      "sentence2_sha256": "41a475c0839eb29e37fea5dc78b215d759915bcaba17a06c545b9fe9063e79d5",
+      "sampling_rank_sha256": "1c237fdad4e727d3d9fd10d23e2f094777469ef4c9fb482e3156e80502f4ad19",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "103",
+      "row_sha256": "1e27d9c723d1c612fe86854b80e29ddcbf109475e042bcd1a914319419129f45",
+      "sentence_pair_sha256": "506782f778a32c9901121cae35d7acc54511aa4f24caa401d0488a441f41cb36",
+      "sentence1_sha256": "b86d96464cda3a813b1ccf63ef890e360cc246f194b2a39d8803f06fbc0c6bd5",
+      "sentence2_sha256": "3dec6a799d72860b993485d285cee533b485bd87f0a9619219066d226ea8740f",
+      "sampling_rank_sha256": "1c330cf31953fd37b351fa37bb9f5fdc9c11059eaa43c83f5bf117807c6d1244",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2271",
+      "row_sha256": "1329ea38dbd11618c508a9f72a4488247f11dac38a2a856f3f3515d36c62697a",
+      "sentence_pair_sha256": "7a0fb40440e3e06ba69da6279ea4ba8c4a06b4ead084b9953cb0f948cf70ebbd",
+      "sentence1_sha256": "bcaa21ba3f2d0ba6d029c3b12ed91fcd7895a80fb60a1518d579efd32bc8d563",
+      "sentence2_sha256": "2ada12b3087607e957fea1bf3b794f31952317dc129c031b742bb0b8ec53384e",
+      "sampling_rank_sha256": "1ca48f325dea2078e83fa5e79ad7fc6d9cf3b3e56c06755080509b5d338c06ac",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2194",
+      "row_sha256": "8f8c7c6cf426d4f36c0c639afebfb3e341bb05c212cd1a1e87e2ba50960f458b",
+      "sentence_pair_sha256": "c3a35ef7edbce951f0e7057a610f1ab8be5f71051a7e8cb6dadf00757298f47b",
+      "sentence1_sha256": "46b1cbc8b309a271675bdad2e6099d18f089bb04e4ef586444bcb70a14e00858",
+      "sentence2_sha256": "5315458419f5beddb11a11acb2398e102afea77d4e3918044405fccc56be5e19",
+      "sampling_rank_sha256": "1cceb162f1c1181c8fcadd5e77f562fe70173a8dcf7aa19c64921e2f0dd8dc21",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "817",
+      "row_sha256": "9b4e7eb033e42d51cba8e2476463ecef21d23e4d6bfbfe5af5e74e11f2a31c46",
+      "sentence_pair_sha256": "17b6dc651eda7ec76290e675d03d4c0debc6e16138129eb5643ecbee396b0ef0",
+      "sentence1_sha256": "22a1e9f67031ea97dc6129989683c060c5d66fcda85d3de2848e2ff67f9c639a",
+      "sentence2_sha256": "25a8ef964270b388115a166565039a18d50aeb56885baddcf3c069669c8e9eb5",
+      "sampling_rank_sha256": "1d4f9dc69b85f8fa3da71d12dd18c00559dffd0396c4a7f416128d35f9825c49",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2391",
+      "row_sha256": "68ff502e5b3fb1d27bace379e6e27530b6872b11ee21bbb8881f8900bdeb014d",
+      "sentence_pair_sha256": "9dc45533151e56f9cb7b9b7af77374a583db509523c1fca7ac711f883da26147",
+      "sentence1_sha256": "37e148e92c0e22193be3a13f2ba08f7ce9b6d8be4edc0cd7bc10a4075a365867",
+      "sentence2_sha256": "e99c77079000ccc1d3ba3268ffbd7f26cdf3a428a12572c8d2dec9f574679f92",
+      "sampling_rank_sha256": "1d59f6d21e383d82b5355b9617d567baed55dba766222be8c5e4654bd09866d4",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "503",
+      "row_sha256": "1ab67018a2288d1c0cbef08090e3a6aac06e1adb2e62509e921ccc29604d48db",
+      "sentence_pair_sha256": "895b2791b8ea54c979db7e8604f6a5506a5e99c4c02079fd5fe96e85dbc7ad63",
+      "sentence1_sha256": "15d103d2fd89b235a6f9a894b050880095e71765faea260496578862a76e7a80",
+      "sentence2_sha256": "c399ee8c72619d34f91ea01cc5267fa9f4c2d6530a88c25227cff23481f3d962",
+      "sampling_rank_sha256": "1db93a56c7b533d3b9ad7c8548e03d87cb1ca4d706aede9201a9dc3cd39bda7f",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "482",
+      "row_sha256": "a5adc4f785dd644fc9078c5b95319206c83e05b60d913514a7d3dd910189ae1a",
+      "sentence_pair_sha256": "0216d65103a445e56a27cb4ab8bc6496eb4da799de6b4c83ca825d31e544e650",
+      "sentence1_sha256": "8615c80cbab473e98f072bd82e8769be331f3af2fdb15a4e87ff0a7513f50b32",
+      "sentence2_sha256": "8615c80cbab473e98f072bd82e8769be331f3af2fdb15a4e87ff0a7513f50b32",
+      "sampling_rank_sha256": "1df14da21e6aceb8031f4e61bae3e597b9c9dafc7f0339c63ae5cbf4159e7e40",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "214",
+      "row_sha256": "70afb1e448ea36da526b8df734934e2a63fe61fd897f21ab29ac2e7bfda7a271",
+      "sentence_pair_sha256": "af67d76f0b74ddef0cd88730b3ad57c1efc95d59d22b315209da9e87342c827f",
+      "sentence1_sha256": "b24b4365b387169500617ba88b917f4b16dc2f6ea013ce83dc0c491b089785ac",
+      "sentence2_sha256": "e49247e9a6ef9ca975cf0692972251ce2bc0d855bda612f5de5cd7ff88c7c8d8",
+      "sampling_rank_sha256": "1e1b2fc73d3dec04f3bc72f5fe6046ef46f3acda1d77b9067ed320a8644c2deb",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "312",
+      "row_sha256": "5fc87bbcb4d49e25b456ea40740d9c7bc713a754404fa71a3756b76288bc9c44",
+      "sentence_pair_sha256": "056d7bfba59007844171dc3ad90d3578bbd15fea8a6d562955f5b2ccb105a5ff",
+      "sentence1_sha256": "b94893f57627ff5668e62c2482116cf8427d2fb82f02c17ec105cbd3620a53cf",
+      "sentence2_sha256": "4e0dfc6c463653b00a72a44996acbfe467f20971762899067f2f4ab34b1b3c49",
+      "sampling_rank_sha256": "1e4881d62cb5d873b1a27d709831157760d77530817d34af5bb4f8d34353fec0",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "180",
+      "row_sha256": "9f032e717701a736f7b45ab818bf524ba76576755aff71f8a1f535542dc59802",
+      "sentence_pair_sha256": "9724fd87cacbe0ba7ffbd6878099283474602ec014b55c941f4c6f4b3268de6c",
+      "sentence1_sha256": "deb387a27ad58547d8e94fdc47fea80f4fcc9b5d68b34821dff1f63b41e8803c",
+      "sentence2_sha256": "a66d374eb7780252f0d805fed58bb8a186eae480ba9eb45bed94f18265dd3eb7",
+      "sampling_rank_sha256": "1eda041256a77978db2ff8702ae9d0bf0dabc600c5eac2ca407e940742940eb0",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "247",
+      "row_sha256": "4dc64d6dde8457334c3a13e3983f71a5e35689821997e1703ad1a55347cacff8",
+      "sentence_pair_sha256": "9199456012fe346bf7b482187c35f68a818f943b76dcb5aff3bc6a05815bbb6c",
+      "sentence1_sha256": "48d3dc94c230d479dfa1ab4bdf0df744af1dc83ced518044f9cf81073f937c9d",
+      "sentence2_sha256": "c421feef25869b1eedfcf8eae2417df1164c2e8992eefd45b192b726a4b867e9",
+      "sampling_rank_sha256": "1f7ba12cff8fb442a17e6765af578c85268f6c3e4049d6b9079198461cc69c2a",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1970",
+      "row_sha256": "54057fe72fc4ae83a57a6b4e86d14430515280477de4e1ff66a110d4ad2a81a2",
+      "sentence_pair_sha256": "2d8bc9f72ac77971634318947a2f130096d9f928eb38c8eb610ec73005c0b55f",
+      "sentence1_sha256": "63d2d0ce7f29731aef6eb60e8653235d2a36604a1e48fcb495e1a355a5a57370",
+      "sentence2_sha256": "d4e115e2cdcc888057934ae37b0495352a060d2deab6d545b47cf78d3ead7996",
+      "sampling_rank_sha256": "20112cf96230d578082a6ee33ef7f63ed00f163c6f6b051e21ced7388cc8b817",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1498",
+      "row_sha256": "d8c34603233420dc064cc1bb3d782d16f4e18189332611ce6de4746dcbaafc9f",
+      "sentence_pair_sha256": "938305df9fa6de597a15da3ff797cc412923eab4b4b4c92aa58c01e793edc62a",
+      "sentence1_sha256": "01308c9677871cad25c4a742d23c0dba1c9afdd5e6ef70970b14429a115930a4",
+      "sentence2_sha256": "5a48b2923e7274505ba237b0f7b34c582f3f5a8a190ef32e3040700668565f40",
+      "sampling_rank_sha256": "2047e14a02758577f3686a6260c2aaa2bf4139795bf3d44b5edea192fef0dc12",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1047",
+      "row_sha256": "173667b5434d8d11fd773701828f99c9e964dde78de3ffd90b4ac3f51b83239d",
+      "sentence_pair_sha256": "31dcaed455631ad6f9e5577e2cd1e48d758278ed91d2211d954d2cfcf1f9a142",
+      "sentence1_sha256": "34fdf7cc8c948fbaff125e572a98ec4b783485d015550c368efc8cea576cadd2",
+      "sentence2_sha256": "876861f2a02d9e55e90db20821409f1c949b13780fb44a28231718404810a1fa",
+      "sampling_rank_sha256": "20534efe691d73451f7f17f6e20784e322050070589491a07fcd3be9b986f199",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "731",
+      "row_sha256": "2e6c567c85e8a8a2b4d12e02f2db62e561b63b710ce56c9a49071c6ebeefa939",
+      "sentence_pair_sha256": "b7c6160d31f571a7fe431910511eee9cb75405cb6227ac279cbcbb542bed08c3",
+      "sentence1_sha256": "46aa124ed361960eed267e5194efed47def7e8b3a6d44e1d61d4d18753f236d7",
+      "sentence2_sha256": "f9be0ddf971d9e84c19291b6af56f2f014e9613cb96d169d1f81eb92e9768cce",
+      "sampling_rank_sha256": "20c7ec66ee80f916afeb30bad4a8581c1177c532a27ab71ca4938cbc0e3c1f43",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "656",
+      "row_sha256": "fd911009c2f6579d88d689d9a91204321b129841ff90be3262e8ee1e04ba121b",
+      "sentence_pair_sha256": "3230f73deea85f452b535f83ca693b4f4a14ae172d5daea1adbdc798f153e6ac",
+      "sentence1_sha256": "fc8318f20d86d12b4667e9f4b5574b62bc67918e54a9ed77f2f13809135c0f15",
+      "sentence2_sha256": "f579a3223f2eb869206da6d55b8363fce38e28779a2fd84307cdd203075bf355",
+      "sampling_rank_sha256": "210ba6470478b1ef26af42eb6aaedf6cba6a85ab9fe23b593c8e760f9a708fa5",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1949",
+      "row_sha256": "24e6a5aa7bb1e38ba6170ce69b2aaedcd43f66a9476d7b8d358ff719487ae0ae",
+      "sentence_pair_sha256": "ebfe7b9855193ffb65ef9c1df7d938d74a93a96cc06baf00644e9a8c8a53d1ec",
+      "sentence1_sha256": "8b7125b2fc7c18a8b021cbb4d33ee347d926c3c24ecd6b6b7d0e4846629c0e97",
+      "sentence2_sha256": "32738e81382b36580d1a319cd71f4b498997433e93789bde5b69fdf149d4cd6f",
+      "sampling_rank_sha256": "2126625972e5d5f4b65863fab0f455c5a004fcd70f8d7d923a8a46bdcea33f23",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2011",
+      "row_sha256": "06c8b57ab2d29ab8a95649766859840936752e5e3a8b44b7650299da57020236",
+      "sentence_pair_sha256": "5c6802a26c838b346453be5559f83f96d1b3a135135b2d40c828ff40d776d4e2",
+      "sentence1_sha256": "eca58c4df8698257fd1c0351e1ce507e3f888b76365ed79ef5a67acf2f6a0254",
+      "sentence2_sha256": "c7e1b9eb97e4bedaba626f98ecb8c63456a0f0310ff196d4bfd2b70759748c72",
+      "sampling_rank_sha256": "21646124c097e7bd3459ae111c3360a1ce93d53cbfa403b5e43841a861ee4a22",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "868",
+      "row_sha256": "719e755d974f9e0a765c5bdfcadfdac355d608c756666ac338c2a09c13640605",
+      "sentence_pair_sha256": "d5a066999946b436792af3b683622c2602628e148e44a401b2f71d627ae6a4c8",
+      "sentence1_sha256": "ff28abaa93b0a1e4d51236d3707b4695242110610b0138f0377a9f28b8c0f5c2",
+      "sentence2_sha256": "dbcdc9c6d46c66a4df6d950afe390630caf471a1a5b08ac9fe9f1d3180129802",
+      "sampling_rank_sha256": "2232f96154ddd083560929e2eb8db2c0a97bbe9c066ac570211664d00c95892e",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2395",
+      "row_sha256": "c90e5087eb88dcb724728c44478cdd349f8cdcfdd2cfa30019a17d399b5473a0",
+      "sentence_pair_sha256": "5efe973b47fce04ecc984b4c50402a6f38d0a2564972fe95e29896b821a6514a",
+      "sentence1_sha256": "074d06ee80f496c860d78865dafcc3962b7625ab089685cbc51cc8a52af9e1da",
+      "sentence2_sha256": "53e530e5fc0b835bf2c4170aee16318c072e1c86f9f7be0df90d09fd0dee6702",
+      "sampling_rank_sha256": "229f0da2d2484f762ff849f3551e85eb81eb5c8de50a2f6c6dff2ba50bd328a9",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "940",
+      "row_sha256": "3dd757942ec68c9f54b0a335142a1d9bb94dc16065cfae116bd53ff192195179",
+      "sentence_pair_sha256": "26178860204fb9ff86ec7d4624d07164044174e03e42c007020646b97efb5192",
+      "sentence1_sha256": "5071c4f6a9bfc20cfcc26f6e1335edec5c9aec8c16f26f7d58a06c2ed3799907",
+      "sentence2_sha256": "ef0ce0716d3b94f3ab3e3af389cdd85a9937270a2616f11d2db2fc9483dc9ce8",
+      "sampling_rank_sha256": "2335f5ed9ed7154684bd14f096cc63022d77084c4a3cc43f3a8e55295ba8c701",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "466",
+      "row_sha256": "d161bc938a066ab453da1899521d98589d16c870b29c674022e712d0b9ffd775",
+      "sentence_pair_sha256": "56e77f0b9b8b554ce58ddf06b2dcac76c35ad50ab576a4834713bcc24a69d4e6",
+      "sentence1_sha256": "55819297bc49693c4130a5f6e777687f3fb7eaa836791a4f3855f5bf0d39e89a",
+      "sentence2_sha256": "cce966976d5956fff1ffdf36604255f4a0fec3ca163b652bb95d5328a35c0f29",
+      "sampling_rank_sha256": "233e523164a3a86451f01271c5a91c3cf6a9ac22850761aadd6138889f93ae06",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2222",
+      "row_sha256": "1dfe42c552c79216c3245b01c242eb0715302ab29de5afbc8255cc22846c3e40",
+      "sentence_pair_sha256": "e65b056c80f852d2412c20d4acedd6b073a6b8a02540fce32d97d7b64d96dbd9",
+      "sentence1_sha256": "3410d7cd43c549443953c0457724e4e32c660664b1843e878cd885307912ea7f",
+      "sentence2_sha256": "5ada5a4af9420873e0b68181f39f328795b84dac3c3de3a110ee8ed886b5c5f8",
+      "sampling_rank_sha256": "23d62e785960556dad0b1ea2a77645687f87a5263f671631fa155cf78f7f0199",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "121",
+      "row_sha256": "6f19afbc757a0cb7a410d9a59da44bde5f68b48fb585773288fb645517012db8",
+      "sentence_pair_sha256": "77651db3caadd5b0d0f1f3738a4c7913aa989e6fb84b80574f88159878bd6d68",
+      "sentence1_sha256": "09476d29cd16f1dfe11e8f77c9787ce7f0968018ff2fdebf96b08888df831b95",
+      "sentence2_sha256": "7d3f845f6e2417d8842618be1acedea7c76e9d61b68bee48e71feb727eceefe1",
+      "sampling_rank_sha256": "2435d383ec0d2bede130ad60b9c7ee3ee9433f53143a3215e5d2bf12345b8868",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "946",
+      "row_sha256": "f851e33b96de79a1c8d63da596f05159db7fdc2461bafe73c4a78bb9d4e32f51",
+      "sentence_pair_sha256": "b5562812b40021346d9999b5309dbe29b7a2bfa3a2eeea61a4378aae142bafde",
+      "sentence1_sha256": "eba0ae5d7f7d0c0ab75f0e03a110299f791efca2d850016ffb87270fc85aee1c",
+      "sentence2_sha256": "8dfb207152a68758d3857fbbbda2e7a7c1f527cc4430af12e514e238c30d6a72",
+      "sampling_rank_sha256": "24411eac61bbe6b4885e0758da11ed757680851f3ac8d9807bbd7e08353a770f",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1272",
+      "row_sha256": "e08d0656b586cf7927164272e388ebc24f4a02cfc33973a7cca8b356992606bf",
+      "sentence_pair_sha256": "aab98b81f5ccf115fb960d2aba18535acc15c32e0d635b8d268c3627428d2559",
+      "sentence1_sha256": "9534076a9725db0cf70841b6e85118036835c20f6f3342384b5a0b94a8144470",
+      "sentence2_sha256": "3468dcb1bf653845199e6dbf040d8ec99ec6749987d954f1370aef9eac290d29",
+      "sampling_rank_sha256": "24c367f1e222b874e7921e66b5d2d5bc7a485388e41e97b0832cdfca45a995c2",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "623",
+      "row_sha256": "590be2a0cc019e6fa625f9669789e950bb18134383d99f0636e072d3a26bf06f",
+      "sentence_pair_sha256": "0092e1e2d0e3628e0b8772760a8de35514f81abfbee1de39a27eb632ff74b29d",
+      "sentence1_sha256": "a2acd71636964d7568e7b93571bc90f65c4854aebd832c3ea0bad39a60311485",
+      "sentence2_sha256": "d3e4a55a7738c61da3fe72fb26f25c2b5aa915c200ccf45e4a5d7e9a7ec66650",
+      "sampling_rank_sha256": "24c7a4d569d7e0d26e9e50375c4134ca473da68563d707bf18e8e0ac68fe6cb5",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2096",
+      "row_sha256": "4ecdcb3153acdf357f3c67bcd194304676a012e0ce9757e9858f119ce1b5d334",
+      "sentence_pair_sha256": "bd4fe17d36555da3cfe5cb7b703de11eedc7a17f1d588e5f34fae28d6d039e4f",
+      "sentence1_sha256": "6eebff032b52107285f902d52ffd164ba74fb5b497e6670a097f4a255e7737c0",
+      "sentence2_sha256": "e11ab0d6f8492cecf5213b83e145284933820ffc023bfe758dd9694b7a83386b",
+      "sampling_rank_sha256": "24f8367dd4e85e1ff4ca58e0010ef13cac4c9da7eba309860f9ecf65264098e0",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "2406",
+      "row_sha256": "0bea2dfad08e70ff245b56e0a234593fdc41ace2236d2d960263f3a86e3f7522",
+      "sentence_pair_sha256": "40622bfe83e2ea7603649572bc0864fdef2850563b83b92df74cb76f965b4505",
+      "sentence1_sha256": "7e0bd55ee6e1852124a268422e95c6aa2a95cc43cef3747b94caa39507cbf80e",
+      "sentence2_sha256": "5ab28ec22e711fc7d52f582516783de522f2f27196021fb4d98d654016f233f3",
+      "sampling_rank_sha256": "253e4affd706da06d83c02ad9db1b898f6bd2e955499b4acdc4340da7b865b33",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1492",
+      "row_sha256": "b6a7635a0785c30dab37ba2620b571de33c928e785e883cf9a776d4cbc9e03fb",
+      "sentence_pair_sha256": "23254f72ba02416443c516c7b1e01b90064854870138df047fa708ec8fe3b370",
+      "sentence1_sha256": "77024bd25e35f019128feccf554bb05e71019bc4618e11d920fdd044599f1eb1",
+      "sentence2_sha256": "3bf7f5ed535c0f5dbdbe67892c3ac594a3ea7cc88189a06416148f73601b36b3",
+      "sampling_rank_sha256": "2547ae7112d40c61f1f832be149054341c2bdb8239b85ba2391edb1939ecc26d",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "752",
+      "row_sha256": "0243ec29b7ea76163f8b7dfdbecde102bfd121f37e0b2c28e26bd6616ffd69f2",
+      "sentence_pair_sha256": "50b4121cf93f58ce1fe8842fb6188f0f2dc205a14a006ba8ec2a97e77fae31ce",
+      "sentence1_sha256": "db1ce0ab52d3312ac52fc47a749b1d65a7e2ae063e05c428e3ba7f1c94ff8410",
+      "sentence2_sha256": "eb72a3e74bfbf9eb0a0f022ecc0ed1d25c601b695c3c5885a5dc43b5e40abb50",
+      "sampling_rank_sha256": "2551dcde448627e3fd76c0b031c73e3a385980df5a770689d5820682ad0a5752",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1846",
+      "row_sha256": "7563233f6586e5521505869a38c7ff477f8412c11c5b0a6407acf913902f2b3b",
+      "sentence_pair_sha256": "074a34247b2d2dc9c8a28b957e3eb3db652e273c061daa45c2b96d4096a1eada",
+      "sentence1_sha256": "a79687f3d41b247f630a2ea8f10f997e83b5da6e89c0f8c16008d67a44f219ba",
+      "sentence2_sha256": "c3c5c3a20ed6a1aa6be3e3e2e7af208eefc0e7df7cc93f4caf79011184ad3685",
+      "sampling_rank_sha256": "256267970c09b6c2ebca63b20721df2e1bff477f0fb7d186661fc3f0a5162fab",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1281",
+      "row_sha256": "0f4d1d356523dcd04576113778dd9e3bae942e5ff2241962edb575d70cdbaaa6",
+      "sentence_pair_sha256": "abbfc2874174099015dc326664c2741c4690bf4d011ce8e25fd107f527000236",
+      "sentence1_sha256": "9f443b4f8381f1be23fa06c9a0dbca3aa3e038d0a086ae7eab0231011a49dbd0",
+      "sentence2_sha256": "ec2caa9635f68ddf3aad88fd02945a483692b179a88c35124223ef0ad3477ab4",
+      "sampling_rank_sha256": "2573fc7efd59adf9a24a406c779c5a0dca8c379aaa9410faa7da3a458b876301",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1397",
+      "row_sha256": "9180a72e386edde7bbc44920f095fc4e46d3c4fe1c5eb9789e5afaf84b657225",
+      "sentence_pair_sha256": "5964289ee755bb689fab679b1d5988a51f2ddb4ca512405b4072360e28e796e8",
+      "sentence1_sha256": "2e82482ccea9bd3b33a0ccc5157d8c45e77bafe969459024701b6404749727e7",
+      "sentence2_sha256": "d350d0e09f29fa501f5913005d1818ea541d537e095b6b7b132417fd25f30262",
+      "sampling_rank_sha256": "25a4dd2bc6dc742d6bf6d8ff9af7cc6ee00efb095338619bda5045aee6055c46",
+      "gold": "contradiction"
+    },
+    {
+      "sentence_pair_id": "1224",
+      "row_sha256": "7f4dd9a2385e1f9f2448c9e88c2d4bceafea68f6cfe4f35a2752aa60d6dc4e68",
+      "sentence_pair_sha256": "b71365c7e66481624c2bc3383ffe1f25cbbd241c0c5c0d90eaf38a69a955e6c0",
+      "sentence1_sha256": "e98f9584884aac953b8f56d91df35ed86c52604967ad5783b9aa4b95519af29b",
+      "sentence2_sha256": "2d898a715c6b544a835586ca3f8968dd4616151a74a4ba3dcc72a904b99d6150",
+      "sampling_rank_sha256": "2652d8b5e5ca95d1b87d01e053653fdea2a2a7302295088387f3ad840750b798",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1407",
+      "row_sha256": "c6b2f52e7e6681de522cd31dd61d91611239a82c56a87eeedef1e9acf43bb267",
+      "sentence_pair_sha256": "2d8e513a6d40c8397a0f44af5c2b63fc4220157a9a6ef481f442d832f57ed8dc",
+      "sentence1_sha256": "43e5eb260979ac32f70da29acc777f5cd6b334ac1f76fa3b29f1c4513df5ba56",
+      "sentence2_sha256": "4fc418b6a7253698b2243c154bc30ab8b5a35e6cf5592165b15950db716576f8",
+      "sampling_rank_sha256": "27c60ac17adb7f500655cada6c904d290015aeb47376418f697712c90bebcca4",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "429",
+      "row_sha256": "a7e1bd70f6aba29add2f3cc047e24be230233c1d103f9cd9d16f8663afd2a66e",
+      "sentence_pair_sha256": "b04f54b15f212d2e4dd0292247e767f51f88ba89e02f9a485fdf8765ad4199cf",
+      "sentence1_sha256": "256aa2579cf78dfdcd131049652172006e5c0a588d4250db666cf484f4cd2d16",
+      "sentence2_sha256": "95222e750778634d35e9a837a9fbe2f971b44d408a098f62aa8189d0f96d2752",
+      "sampling_rank_sha256": "28785357eb0cfcc1a5755ebbcff99fd4ec1cc3d106fee2f2c53cab3a68e431eb",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1471",
+      "row_sha256": "f48553010a0102dfa6a0ddd43237081a6bbb10f693e57ce647c4942b64421c32",
+      "sentence_pair_sha256": "827f05a5d31679e92b2c5604514119ff84036be5dd7fef72630e3327fb4e0972",
+      "sentence1_sha256": "19b3438101a099365c08620f8a3c800b1ca0b96fcf4cd66a061495178fc5b584",
+      "sentence2_sha256": "edef4c1e6654818d0727717727032fb51d2f7a7d9043bf500bc18b4e21aa78a5",
+      "sampling_rank_sha256": "289fa27059c6eb0fd882eb6c674a437bc961f6e0c213de97c27026f7c1a9e535",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1480",
+      "row_sha256": "01834cc19d5f8c98f59834559e620c623264142b82e686bea3b19e4502443b72",
+      "sentence_pair_sha256": "a2d00ed95432c32bab5bc9457ffc2c82ba73e973e9e65afb1875a0b7112f6a8f",
+      "sentence1_sha256": "a0226029817f4893b1d38a7300dabc83ff9a011f9910b379c147597bc359f8d9",
+      "sentence2_sha256": "7f753d370c8a7af9c493c226af97447a1182df7b004751a29238e4671c8190d4",
+      "sampling_rank_sha256": "29020a8a15e041bea813a4f004ab1a8ec47df91f27f57eb955390d3d1afd2520",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "182",
+      "row_sha256": "c5fda346fb88e6c3cfa0f79d0b8a2e4cd1726e9f41871a48fa4905027c519878",
+      "sentence_pair_sha256": "655159cb222ded54fcdb7a8e743c023adc847ab90a0222e0342c5ed6b7f1094e",
+      "sentence1_sha256": "bf4460b7ae5864392f18dff78669fdadd7a0a6ba6c6632a09ebacd3bdf190d43",
+      "sentence2_sha256": "c84c261b9bc3f284af3e9528eb6437efaeb6ea63a72a05c5c939faff7f8c50cf",
+      "sampling_rank_sha256": "2940083eeb6d175900584647947fd511721485007d4de44f7d61c67e7d7978ad",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "427",
+      "row_sha256": "e6e6536c197dec47915f44dd7c2a6cf7985d12fafbe1ec7082e9642df7aae841",
+      "sentence_pair_sha256": "96e1f528533e0ecb4a458c294d3277298cbf6e958d9220026bafdfe35f1088e1",
+      "sentence1_sha256": "4a99cfb6f487ba3679582a4914171c0a5492f8543989d86271a9053bdcbd9cd6",
+      "sentence2_sha256": "933d9775fde658a0ac8895ae6098c8776c0bd20465b83891dfafeee0c964d9f5",
+      "sampling_rank_sha256": "29594de04b9e6af46e7d77bb1bb617f5e8f8c79f5260751321c013b23548f693",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "131",
+      "row_sha256": "4dc8e95e530ec08704f2de7d1d191c01538a50695efb36eb32a3ade4bd9b4a16",
+      "sentence_pair_sha256": "3d75a45edc98fd72457e49f1c327df8f24755474fcff28202e257790a71b1a9e",
+      "sentence1_sha256": "76da49e3622297aab4d7e9e48fb7e2e08ea7d2af8e08b6c5d76a16f809d5f4a6",
+      "sentence2_sha256": "078b274ce70f898cdc2b556f839a5506c00a289b5c01c4a56362d2c80272b268",
+      "sampling_rank_sha256": "29ad5d231786dadc0a80b66cb1a84c99487204aa4971b4a342847a3364c7c0ac",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1532",
+      "row_sha256": "9055758facab268f5e613dd24c9e65d5fca10b62ce4a1d21fd9f6387d00b72ef",
+      "sentence_pair_sha256": "9edc7f914a07184be656c59ab3e119537eb4b3846a4155e7181a1fb7a224d013",
+      "sentence1_sha256": "e6faf1746f5aebcffa3e8331e034e1fa7b49888a4af89c3e87528c35db1cc848",
+      "sentence2_sha256": "6e74e39851a98547109a7ff1663f74301cb13564073ee803eafb8bcbdf7ea22b",
+      "sampling_rank_sha256": "2af0af8f6f7669eb14322fc57b299b71d2168ab355718ec42936d0d9d17ac0f3",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1438",
+      "row_sha256": "f99be7ea575f096226eb17b826fd3e215caae32d27c1f47751be801af857b156",
+      "sentence_pair_sha256": "7c09abdeab027022b79e19c667c183be98a5b0f1e7350fca68ce2c681e657f52",
+      "sentence1_sha256": "70cc1b0fe30af1f9d131786087c9e5525c0dde7567d40d20909d346a34e09e27",
+      "sentence2_sha256": "451cfd87aed8600a3504cf44ddab71659b180413d264ed4f991e43440e4516aa",
+      "sampling_rank_sha256": "2b8d9e7206a6ed2d680c5dd19badd9ed8f8cf80cc7f3d386ce7fe3075d76e8dd",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2151",
+      "row_sha256": "7caaaf70a94fd2d503fb1fa94bd64b77113cc0817557dbfe37416b786ce96a93",
+      "sentence_pair_sha256": "81aaf0fd143b3fbb544c850079fa25eec8e960572168427f6947ddc2934fa4c9",
+      "sentence1_sha256": "860640d83710a0dcc49f75eb058b91e3598c7cbc403127b4583f130af5483ad1",
+      "sentence2_sha256": "34ebef1ffffb835daa88536db5cacd3b0af72ec2c385d4516f7f03852fac013a",
+      "sampling_rank_sha256": "2dc6713f92d8978fb5a2ca5f1664f6c9cdcc5f0aac2401b165cc24e85adf41e5",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2205",
+      "row_sha256": "3a43fead7edd92ebd37c54d0d2114f12e2188b3abec586119c572f770ba5b762",
+      "sentence_pair_sha256": "bfbe03db60f191b8e975454013a21742ae2a26ea9c254be8c1b49be207036988",
+      "sentence1_sha256": "5e5a7e920d391b0323045f504373bcbacb3677c95bbe231158d92f45af2bc8c3",
+      "sentence2_sha256": "336f6a2e498a6c70004ab77d222fa734dfe52b2c7473fa48d0d3d90611463b99",
+      "sampling_rank_sha256": "2e27c1648d6f8c55530af701505824f434bc09324ce4450196d9e2930fdadb8c",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1387",
+      "row_sha256": "82851e3745221c54704dd4e8ada654d3d2c2be5d4debb5294ba7dee0b4aa1fa5",
+      "sentence_pair_sha256": "1cb34886e7d527e99b1a7f5bc2ffcc53ee7e99751b05776a9c4e50095e9f1ad4",
+      "sentence1_sha256": "0e46a4ad38eac92327973485166e584cbb55878cccabbfa253a3c76d57221df0",
+      "sentence2_sha256": "f5b5cff14d24033ed7192a9ecb2a1d8e1a698c800a5deb084523b6b394d660ac",
+      "sampling_rank_sha256": "2e4c5869ae938f93bcce2345362883eed089d14f5a02e0eca559043dcc258929",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "424",
+      "row_sha256": "c632996d9a34c8b06ce26d79d83c0e5c94a209c516bc36b98ff207ff49f1f568",
+      "sentence_pair_sha256": "68759a64ba271de7851a02c1ce4affae1c74439d0cc84212f230921184e3b121",
+      "sentence1_sha256": "0b6e46b844951eb52718c9e6246fedd0a8a9e2962463bae59f2c97637ba2fe3a",
+      "sentence2_sha256": "933d9775fde658a0ac8895ae6098c8776c0bd20465b83891dfafeee0c964d9f5",
+      "sampling_rank_sha256": "2e9b5a4f80d7649586dc16272e847a4d018293b1336dfd5e128731758b258e68",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1430",
+      "row_sha256": "f12a5c541d93eb7c034cd7a12bffc942fcf47aa1b07a97188dab84235708d916",
+      "sentence_pair_sha256": "22eab1ad59057c07e3876c16a4cb0214e4712834956ee4c5a79b893bc3f9aac4",
+      "sentence1_sha256": "0cae3a6c312b89baf4eead12340028d383a5d2872b3bf24258c18081672830c6",
+      "sentence2_sha256": "101ea3ce671d77a4bc90e30c893bf5f4307012cedff0b2f9f2a30471d4fba2d5",
+      "sampling_rank_sha256": "312e6a3ff5f06d4cb78b233388b1802f73599010d55be54285a14de66a71e840",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1186",
+      "row_sha256": "9dc9339bb60f0737e5e7a7dd7ebaa2f16bcc8605981df3ae701a087f40a9b0e5",
+      "sentence_pair_sha256": "28c842cf4b45f86cf5c1a8336a5ac57d7fa3e2864a7335ad5c0787e20eae0be1",
+      "sentence1_sha256": "988380be099547fc8815bc00618c025d74e0f2afe2a32764eab6c473c2d2b5c7",
+      "sentence2_sha256": "29a6f4203627bf4f6a32917a6711f9af1bef17bc18d92d986833c8a19a0b0da5",
+      "sampling_rank_sha256": "31c6831bd6ff762b069e53dddcebed23e23d8d40ab5f295fc493ff5cfd023039",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "98",
+      "row_sha256": "ff197d4143ef1c89844f3e483c32dbea7a51009128160f51511d4b91e89c8242",
+      "sentence_pair_sha256": "cb59843774aa606ce12bafb60d966e524d2425ef3d1c87dba4f343ceafbdbbfb",
+      "sentence1_sha256": "81f505cde43ce96bb95f5fc4069536e989355615728c2fa2ca296af9dfe62042",
+      "sentence2_sha256": "89e5e6b244ac61a8816a86e224c3f2289b0dddf6655e57fe9a464a320760db24",
+      "sampling_rank_sha256": "35e7fbd1469f8d7001da64e14b21fbe5a261ab96b313ce7de700e0b7e4ac0e10",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1774",
+      "row_sha256": "a8b42135567a90834cf89239bee6bc345f03b2c1c4fee8c581f8300e664993f1",
+      "sentence_pair_sha256": "badb356c138c568f400da0433054e62570f8b165c32d16d56018bd9a8ad729a2",
+      "sentence1_sha256": "1b084a8c128ea5c41cf160c8e953632e3bbb3ff20cd150d23984e9226307b4a9",
+      "sentence2_sha256": "928c625299e28154fdcfcfd7412d9d924c218e1f8b41178410644dedff826686",
+      "sampling_rank_sha256": "3723be98961e22cc61f0c8e950470fda133e2a0f3e11746d95f89224a2b5c63d",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "589",
+      "row_sha256": "659d00886188ba63f3d025212f66228e0dc0fdbd755685fb61a89ffc51578902",
+      "sentence_pair_sha256": "22d574c454a3ac582aa0a12965f8f4fcedbef04755b299b7cfbea66d38fbac04",
+      "sentence1_sha256": "68fad4bec65fd7866c3c1a796577ce103e56c78c19b3818c4d20b9014d9ac7e8",
+      "sentence2_sha256": "fa6a0c14ad8c4b4308dd5042575a4e1e6bf2cc6164f9f15d037de03ee541388d",
+      "sampling_rank_sha256": "37e76083f23e4f471fae8ae148a039f3339352c8cdf37733f8643b4cab9b4570",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "576",
+      "row_sha256": "3fa49a7e57611abd5294c978b4b2286281c8b625e27f388bf266e3ee192af830",
+      "sentence_pair_sha256": "c0140f423d72309ffb9719b35678e3b7c4c715aadae9a052bf7ec45f98c18579",
+      "sentence1_sha256": "2374fa1ded8d24f0af5a8cca356932855419700332d1520956e10e6027d2adcf",
+      "sentence2_sha256": "e8cdcf7e1242eea90c07cb3004ecea37dc32924a360162b582cad2cebf04afde",
+      "sampling_rank_sha256": "38529fdc08327e59cb7d87ce54109bfa9ce9781b9461949be60d55bc7d86402c",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2106",
+      "row_sha256": "a04f1cd93367918003dd29368214ccc47a35b8fc40de2f9bf0c4a9fd1d1143a6",
+      "sentence_pair_sha256": "09a2935a88be2e812f29c98dafd4810e69f1370a6438dd977ca9cbeea9c182b9",
+      "sentence1_sha256": "e787da015691a7d21c18ebaeaf608bdb074f3bda6977ece7c9ae9441bbf25088",
+      "sentence2_sha256": "3ecf14ea1e6fcdcb619a5781b52e4b022680d57a8f403a63ce020830e4f5385b",
+      "sampling_rank_sha256": "38c99db2af6548c64b05d7f7a847e01697983f7553e158ad820b7f9c562bde81",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "460",
+      "row_sha256": "653f94dd9bd87aa9894da356c02b0d6d2fad9fe76891768ac0446f4e87726dee",
+      "sentence_pair_sha256": "2636b2fa2fab23e53aeeb6653074bb7ad97b8ddd33edd7a39495637a27521a5a",
+      "sentence1_sha256": "588897349d33c807474ba5472859a82873fd2f78ebca182598ddf934514b3b57",
+      "sentence2_sha256": "588897349d33c807474ba5472859a82873fd2f78ebca182598ddf934514b3b57",
+      "sampling_rank_sha256": "38fa7f58866b4c0ee413aec591793a69f2942b8c7be65524a05e8ab8fae04a49",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1065",
+      "row_sha256": "dc5ae427d978a76557e21b67bb0cec10183971456b8276137317ec8fc28c3760",
+      "sentence_pair_sha256": "43a0c606b275ce0cd8bbcf6a8f549587c63522a51c58b7cd5c44feed16ab017f",
+      "sentence1_sha256": "33b61a01b111852ed9deb26b94b8b57da79173e967b4fc7dcc4ff1bed3d99c8b",
+      "sentence2_sha256": "65195f8358ab866a7527efe3a4f3ceb24a9811c7953f11828064ef27e0b34d05",
+      "sampling_rank_sha256": "397857cf0b0529f0b9be6245b3973d6de7b465a35cb4486a76d924e39749fa69",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "650",
+      "row_sha256": "8e89e46baabb372ec0709681b617204c899ee30e85c65af2cd6ca79a8b6edc94",
+      "sentence_pair_sha256": "17ec6f6b384e95adacdd74f04d9f22c062fa7a10c1f7ffc059139ceb7f3102d4",
+      "sentence1_sha256": "52e59eefb3843fc6ac98252eeb0320a00ac913f74e91114c3bbf20847c4f833f",
+      "sentence2_sha256": "2bcee7bc9a7f8811f9985561b9beca8e545e499c68a20a27ad0c40c9cce065a6",
+      "sampling_rank_sha256": "3a498d50478dae17edca184a65b897c3f8bc51b3c593059aabb1472425067781",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "372",
+      "row_sha256": "0937365f6bd5419f3f23bef159af03e0048dab8d5c614fa0feddbed1ef2614fc",
+      "sentence_pair_sha256": "f5e6952af5c9d7d5c4481c51c6bdd7f75778d94487e1d0645f1d478253fa64a8",
+      "sentence1_sha256": "5a986d5bf82fd29fe0277f8c16b2de0f94b1aa6ecb68d0b3dfd63fe4d9794a78",
+      "sentence2_sha256": "d463a9c165ff80d5042c37474d158d705e03d0400ea734dde89d5d9dc3c06122",
+      "sampling_rank_sha256": "3a4b80c4f5103a4a38586fd04ac44594b15c8170952a72b00d76a51e4c4fdf2c",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "508",
+      "row_sha256": "1351eba23ff1f15777d97444ae49de3b89815403a4f4bc52f4bc1a7b4e083456",
+      "sentence_pair_sha256": "d80c5065a1572eaf7a697424028d438337d8c6071fdcfb78aa2173911dd18ddb",
+      "sentence1_sha256": "e5be8188a3b5fbd42e7bedcfda72d36be5b8a44ac7621d83d35806ac59ef49ce",
+      "sentence2_sha256": "e5be8188a3b5fbd42e7bedcfda72d36be5b8a44ac7621d83d35806ac59ef49ce",
+      "sampling_rank_sha256": "3bbf175ccbdbcf3e2972d9dceba2029f1e9523876980cad09766b6564e1d92d9",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1830",
+      "row_sha256": "8f261ba65b3ef70f49f933fa08ef42d36ae33608ad946ba96d8bf879a521059b",
+      "sentence_pair_sha256": "d856f470b25587d98afb0c617a97e6c30c2514ea834e0d700e83a7ecab38a2e4",
+      "sentence1_sha256": "49b670b20fbfa6c159d8cbb8f152075799cfdbbab16728c1c0ec8fecfa9b3ff1",
+      "sentence2_sha256": "9947f3ed23947de65937022583debb53a034bfd901add18bc67bf90220207474",
+      "sampling_rank_sha256": "3bdeeefb140d1b4280658457cf6a1621aad29a87e1790b45a5b203084171b978",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "895",
+      "row_sha256": "ff904ff340eb1c864279aeddf7c73312262b7ae5708b628a87b45ec1a6e6b488",
+      "sentence_pair_sha256": "47fe19bba8d1ef97741e7526f95c1627fbbaae39794a0f6ea68399b49a07827b",
+      "sentence1_sha256": "061ccad47243e49c4d12765bfa0a2d3b97c8f6a8dbf6a14f6e8198b9689d2fb6",
+      "sentence2_sha256": "65aa74cc8830e0530b7af703cc1ddc7e9eacb86c8b8581714de25fa2db8896c3",
+      "sampling_rank_sha256": "3cc95c1c0ad7eb6e335e75498a5115bd0d8d9b36f71d6eaa444d441cb8c1db3f",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "958",
+      "row_sha256": "49a3a91272693c24188411f88e6e1cba662d9f4972cd2836300d907ad3dd2cb4",
+      "sentence_pair_sha256": "3e6379b3f0c8b862a170cc2acd4617ba1371d2a6a4895f306b7c7aa1468de5ef",
+      "sentence1_sha256": "f0e05fd2605e00c622c4ff514c807e3640ae743cddcb65ff4a6984044633cba9",
+      "sentence2_sha256": "f8e01c6042f35b383fab60dd1d358eb62cff481bd781b4a0d2771a1778ae4e5c",
+      "sampling_rank_sha256": "3d3075601321b17170dcd230ff368eba5aa50efcf5ecadb017be6e735420ed4b",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "838",
+      "row_sha256": "92ad2c4a07668cc848aac86403650996c47a98ed86bd383e60d20ecd8d23a44f",
+      "sentence_pair_sha256": "cd3c2d84479808edcb93a628b9d4508a2a07c7ed75e9c592cfd375b62511bf1c",
+      "sentence1_sha256": "91061edba0b5551de5e41f4971ad0fd907d7013e62e820e7a2af9f9c65473446",
+      "sentence2_sha256": "adbd2eddd534bac60765c6b92a4c7229114d27879f1fe0f71e26a48cc15cc52c",
+      "sampling_rank_sha256": "3d45ef01d17f34d077c233d14b113db26463dafb9afdc35228403fdd62f409da",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "786",
+      "row_sha256": "fcf5ce270b733554399a0f4a74b4d7ceea41cab1d7ea808208f64d3eafa5a3db",
+      "sentence_pair_sha256": "e88e83ec21005c1458f6b80b2a51eef11c1ad3806e5cb5c57ec798ae71c13d67",
+      "sentence1_sha256": "b9e83d1f60ee5bac823aa8847bef2ca1fb0feeba4db6918bb676e29a56bf6e5a",
+      "sentence2_sha256": "3f3d6b79ff23cfa554add5ba2ff3357d668a08227b4e82da8004f5b9bb772c94",
+      "sampling_rank_sha256": "3dce46062da9eb459be865c53299936e4cd23f3e059bf7cc25407d22d253d67a",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1071",
+      "row_sha256": "1a967bb578d2ce95ab165adcd0eee76c0ef31261202ac69b762b9b50f7538ae6",
+      "sentence_pair_sha256": "c8a6377f3866ebf8348f27f212ac9a4c7f7da7793352fd61b5da0c3de37ae98f",
+      "sentence1_sha256": "20ae8240d6afa65bfda5dbbfe6b180ac57b110c799533fc8fd291df33a420925",
+      "sentence2_sha256": "ef8fc1746faa82ef1bc6130bfb1a25de6df33a2214fe49b65bb129235c62a5be",
+      "sampling_rank_sha256": "3e08a50c311bd5331677a3919834219fba87f61e16514e6f738da292e2301d08",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1197",
+      "row_sha256": "a375fbebbbea0efec22e39c161a059759300bdb16b55e8c66758703be2cd8249",
+      "sentence_pair_sha256": "574b2bdef93303f1e4445028f18ad43f48071c19951f263c5f8bcc2d6a84b290",
+      "sentence1_sha256": "046d5a5838501acf40bbee98e5e8a1467c4273a0f5538e38176bcacd6bda368f",
+      "sentence2_sha256": "d748143d472d5ceeef056f230ac456939a640539ae1eedb811b8e69aa21de0ea",
+      "sampling_rank_sha256": "3f8e0bb7099bbaee64260852b99b6962e29efd8233d7dadd1273354b98628c4e",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1102",
+      "row_sha256": "9f4bcb5bbf752ea24be1c850a23c59f3af4c71b880a62a330c49a3d81c5b713b",
+      "sentence_pair_sha256": "b2dab0108fe71c1bfc140b132027d008b0b29b33b89b7d61fddb7f5e5baa5705",
+      "sentence1_sha256": "d0d6ceb55fb293eb518f0e9a2bffb21acd9e14429006e3e73f06202092a62703",
+      "sentence2_sha256": "d07ec766de143a4a2bcbfe9bbec3ad4582e933fce55dba63b89d1aa9455fe47c",
+      "sampling_rank_sha256": "3fa8bb964ecad98c8215783a931d09094732dbdc7dae2ac0100be028eb800d48",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2374",
+      "row_sha256": "f7e9f486ffbb277103fbcd10546642ec5b2d7324738dd5e38fea369c78790966",
+      "sentence_pair_sha256": "d6b8bfb0a7f422127f079428be5e7fa0914031774201d4c73fa379218910102a",
+      "sentence1_sha256": "a68d748055cd5bedabe9074b97fa9462cb35a36c2a3d3a08dcf5a19a107e967c",
+      "sentence2_sha256": "a427cfd853d537e3bbee2360c83ae212271bd06e59f93a20be233ce880d39fe9",
+      "sampling_rank_sha256": "3fc3dfdcfedd4907243f61b137a343848f13025c904ff990e1673238b1290452",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2145",
+      "row_sha256": "80b6baf696c75e4180849e25b5eea9ea5dd027bff82ed77b95c84adf8ec0462b",
+      "sentence_pair_sha256": "1862c3357b3fc97e3fc9c7520fcf8202990bb60304843fa40bf18b2f77330fb4",
+      "sentence1_sha256": "fcb7daee984020c259da4a03d7b9beec79d3576c384924e824297e472cb40b88",
+      "sentence2_sha256": "647860a688fcd7fdd720ccd774faa714725f80150ad4d02995533ed8785367e2",
+      "sampling_rank_sha256": "40edef2b6effa833e8ab3b976bde4063d8ddb987bf9aff24fdc998209c211b4c",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1503",
+      "row_sha256": "9ebbaa916604a91bfeaa473c079d2eabdb099da57df42b0143b0f8cac7a037f4",
+      "sentence_pair_sha256": "ff91e8fdf4e02e960223006ff407234b9f97107642fa8b29541d52461593400e",
+      "sentence1_sha256": "64ff03a3db79ba3e5be20fe21107aad236b2043dcc7137edd225a7e0ed907c46",
+      "sentence2_sha256": "6a0e0dc43c2d48a585883f614bfdee022d93edf07cf2cefdcdb9c7f3f618a7a7",
+      "sampling_rank_sha256": "41bf191e9a6f4650b01f1e7a6308b1eb83105316cabbb7e83245a8c7469e277f",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1227",
+      "row_sha256": "ffbc00fcbc6aa798250c0e686df8e569df52be5df0429c5515837afb8f1df2e8",
+      "sentence_pair_sha256": "2420fddaaeef0bfb0ab16783755aa54672de352a406a289f09dc2f48a37d1497",
+      "sentence1_sha256": "391ed0026991c510646918d99b12dff8ec7bebdb2e6b9aa28f36ab42014746e4",
+      "sentence2_sha256": "391ed0026991c510646918d99b12dff8ec7bebdb2e6b9aa28f36ab42014746e4",
+      "sampling_rank_sha256": "4313c631da0efb5eee573a6e45647c546041ff23bfa347af769f7b0c6d277f63",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1194",
+      "row_sha256": "5eede380a17fdcc2268d5d217d18de22925984c31a772e2f254ef37559d369a7",
+      "sentence_pair_sha256": "3f12f53dbf0d0d520f1cb937604854a14ba2c2d5910fcf753817ddeb7b20c6b8",
+      "sentence1_sha256": "a4ec8f2df80066b3d7ad9101d739d3fb7ba1152f5acb9d21f296923aad518197",
+      "sentence2_sha256": "ae6fc011cff34d3295941b014cc64ba1a7047ff21ddd9fc4223a6cd0f04b002d",
+      "sampling_rank_sha256": "43d79316fff88c463160495aa0aa604ce0ff3e094becc818c85ee6ade0937812",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2409",
+      "row_sha256": "ef0cf0e903d2610e74edb57e5d8ee2bf454b0b68a256eaf8b855024d13af8a2b",
+      "sentence_pair_sha256": "2a19596098677fc462cf3dc2d6cd0d5f7583737db497fc22e31c949a88743faf",
+      "sentence1_sha256": "f82d770463d2e3fe640478128a4c0390128176df6cedf7d0c41fef3980298e6c",
+      "sentence2_sha256": "f82d770463d2e3fe640478128a4c0390128176df6cedf7d0c41fef3980298e6c",
+      "sampling_rank_sha256": "44c464de5aaf780af88386449fd96430936aca8666e8cc1a2cc153dbfe85823d",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "967",
+      "row_sha256": "2ba5b2bcca1fc837218230ea6ad1c5a558b3c894700081b8fd661b373096fa23",
+      "sentence_pair_sha256": "017eb7fc603b3590bf97eb3cd91961c23e24ed247c4ef2309d511a7b97dcb2ff",
+      "sentence1_sha256": "8ad7283d48486dac6f45631ac6cc132a424c2ab2ea39cc9b9fa75dc2d7f20d12",
+      "sentence2_sha256": "a90b33b564b0453af3d1cc9dfd037e747ebb4fe3ba3498bd727583b744eabfba",
+      "sampling_rank_sha256": "457f62cedf0da3c995eed6e60946211fa02febc078bb30bbbfd80fcdacb41ac0",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "999",
+      "row_sha256": "e7b66736344990909a3e0248debfd666c713bdee161ee9b2b28b8ccad7cbfba4",
+      "sentence_pair_sha256": "ed1e25fae84b617d743127ebb969b9fa1976528381de91a6a1d89432de65441b",
+      "sentence1_sha256": "c8af8e2691d62be9f7e79b8f00e960380e32c58a372e968565c112b324ceedbb",
+      "sentence2_sha256": "9b4ba69facb0143634725778f16ec9b123a48c11956021689994959a5c848c72",
+      "sampling_rank_sha256": "45c009c3a6a22f96eea4af94520eecbeb28c3bdf207f6f6400a9f8aa38d0203e",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1796",
+      "row_sha256": "24b1e8bb5124cc75572c3dd1f33fcd7ba3df6161d0ba83835d7cc9040c110a9c",
+      "sentence_pair_sha256": "a476179538987ed58eca1a18c81a8eb3099c6dc37a2cb94c073f96a65bef5b1f",
+      "sentence1_sha256": "0c8a34dc5f453f05643fba0ab38e602caedf051b6ea735b5605e3ba29cbc9c9b",
+      "sentence2_sha256": "34debddc18aa903626b0a14e2a7f45d737572fd74711078008ad5210c7fb6205",
+      "sampling_rank_sha256": "45d72e58d25b1944b47ca6a5cad579978f48e6ef2fe45d89f4c034147239e1eb",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1229",
+      "row_sha256": "987c3b738cc803856a609ae7cb137bc553ab344e7983ff7c53e4e6a80716a99a",
+      "sentence_pair_sha256": "81f892007b34dc2669e9163eef39d358b279e6c27bbeb3f3b482824d7d5df693",
+      "sentence1_sha256": "16b7f8a2e1b89e402f93851c1ffe8e819061417928f2cdedb164769c5e22500b",
+      "sentence2_sha256": "bde2c0743810335a1040766ad4d716002ddca80f45382d7ce887f74b8c527d91",
+      "sampling_rank_sha256": "4732ca1ca4d439151bad9eb22d8b4ed948d975e91978fcab93ca93b8f4f086a9",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "397",
+      "row_sha256": "6e081e22aa89b31417d2558f4853865b9dcecef398955d365de6484ac6bd2bad",
+      "sentence_pair_sha256": "990d0ec41824ea697e7c8cffb25d1c82862ef9642d949fa33357e870eefa907f",
+      "sentence1_sha256": "09376d423b583a975c857ad72311f988e2bcf3556cacd8da40d8aca997a9ca8f",
+      "sentence2_sha256": "55efcd04c9a87132ad69224fbf7edaa91c19fa9c73849f232972634cd8b7b1cb",
+      "sampling_rank_sha256": "4740a405b2adb8428f63dca241ccbf05bda8e0e92fdb69ae193d484292a68058",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2328",
+      "row_sha256": "290344c2f3c520982b533eea9d1d0bf8d966b49d2b411a9643f6bcb8c2acdfe4",
+      "sentence_pair_sha256": "c87ea1f01be3f6398a65547d2f7bf98fa7e91b5d0a17e874787e895c9fc83105",
+      "sentence1_sha256": "b1959aa6a39f427c89b99072a700d159eace5d134ab8fb6f52a28453a68bdcfc",
+      "sentence2_sha256": "ac2ed6b8675fe9823e56fd30a17b75c371480f39a27ed3b267a529c929152026",
+      "sampling_rank_sha256": "476a8322d0a7d62c86ac4c06985599f083169592b41dbc91e2d39f0630942a50",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1106",
+      "row_sha256": "c1c1d11e4625a9722f7208b579edd0ff089ba45b84ae90a3cff4e77a3bbff46f",
+      "sentence_pair_sha256": "915164109f2295b1c3ee8928e72283981569444f024ce8d7a0ce79609e185374",
+      "sentence1_sha256": "b116a739854fcbe7f7346b99a33f5eb3e56b9963919d50d79eae89fa37f87f54",
+      "sentence2_sha256": "212591b503cdb4ea7bd529d9527a94fb2483f8df533940d8bb263685c9bfd097",
+      "sampling_rank_sha256": "4981cdc6f298b3dbaa2013afbc46d52153ece0fd1f38951bbf55aebfb475a933",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1232",
+      "row_sha256": "2597b3c3b9f1ccbe43faa097cb9956d0e305a54dd40e14f43a6d67be35ebd4d1",
+      "sentence_pair_sha256": "684cfb82a64539677da605c548c591e9bc61f3c51938a55cc07876b7023f7509",
+      "sentence1_sha256": "faa3970965aa7d5e7b98962cf446779e443bb3312d6ff4467b98d979c6bd4257",
+      "sentence2_sha256": "66d0644886384ac2d93c177d12023e94f8be358ed4ba6ec555ee0eb5e4b21b3f",
+      "sampling_rank_sha256": "49b3e44b08fcde97d86fa4364151b13092f2d87c1256f95a47e868f0f09eaea6",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1881",
+      "row_sha256": "571735eb06d896674e318d143d1818bf832990aaccede07eaa48f86fe57cbbe1",
+      "sentence_pair_sha256": "f5a988d0ed440a476b5a9a30ca95f9fe5d5417edf4dbbe750e71e1668974682b",
+      "sentence1_sha256": "1399a94be1db034a8ac9e58cfd90750ac7d56cdb179f08634b63c0ebdf9fd45a",
+      "sentence2_sha256": "9fbadc9198e8b6bbe88f24ac5ab6090c93066c978756a9f4898b0a9220019170",
+      "sampling_rank_sha256": "49d32e15fafc29d3ca62ca643bec3e96a6496424ac9546660d8ab91afa674239",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1963",
+      "row_sha256": "a2d2ad9ff89bceadf1bc5db289027a56105a16eddec9662ed868c26b12715733",
+      "sentence_pair_sha256": "332b766336f7559e6191a0d1926db53ff0dd7564bfbab04067ae623645c04054",
+      "sentence1_sha256": "123e5d155591ed0604dfd21d9624b7f77415871d30d23995aebc00fd121bd23a",
+      "sentence2_sha256": "69ce343e7623f07c674773200729aa357e5cbba1f154177d8051b893ece952b7",
+      "sampling_rank_sha256": "4c09f96f554c5bdd315e9c05d907e6fd5f311aa95ff8627dbf72fde0d02218b2",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "1140",
+      "row_sha256": "0af1b40873c277d13d1b885f925440e61e566bc20cea9e25eebca419ea70abd6",
+      "sentence_pair_sha256": "04be551bd8931b82fcd42997c496a54eab84a2b8b3c05bceaba967cc172a99ba",
+      "sentence1_sha256": "44f04819c7c2a91cbab4a1233a24638d7d338dece3eeac0ce978cbc4e2411c64",
+      "sentence2_sha256": "6239ac225040198fbcf4c2660adacececad4257c084c927863789081e6955e4a",
+      "sampling_rank_sha256": "4c0ec7db8d691e83f3f3dcb02ca19a4e21739bfb402435a144595a58453a24dd",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "17",
+      "row_sha256": "ec846cd60e9afb0aeb7d0eecbab0b3d4e430560e72d4d62ffe84ed348df7f545",
+      "sentence_pair_sha256": "b68f5eabbe331b29f750fea5ac641bbb4f8987debc4d778b4ca29c8635320e30",
+      "sentence1_sha256": "c72d9b3a2ecdfbbab93bea579073c44692f068072d43ca216540c210f418b224",
+      "sentence2_sha256": "011800fc2af0443340973d95dfb2665bc73c035963a9ed3c4e1bbdbcd54c262a",
+      "sampling_rank_sha256": "4c87cceaa60cc6a3af3ff8b93197a9379c090ba0ae1c5730b94cdf0e6b240d9a",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "703",
+      "row_sha256": "98e782c8f42bb4dd213779ef383e15f4a36470369accd0fd321e4fdc6fcc958a",
+      "sentence_pair_sha256": "180d00e59ce0aede9266bda060f8ca8e52e3867af4652f4063bad037ab74675d",
+      "sentence1_sha256": "3ab4bdae6ade32609934ee1d8776a4082e16a853f6dadf22622e804857a1908e",
+      "sentence2_sha256": "dcd6d0b5e3467e3cf24d9d880e7ee75b244cd6bf0057469165c9250c63637ec0",
+      "sampling_rank_sha256": "4ca8f214a9e44a9b97e1bbea00928f7fa9ae76f9ff71209c1c344a40ebec2757",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "771",
+      "row_sha256": "24fb43102067f175e8a923c22cbe7ab18485292a3be72bad8ce0765df655d038",
+      "sentence_pair_sha256": "2d507960ca4e22655114056abe01e6aeb682473af5fdd69e963ba819b56bce5c",
+      "sentence1_sha256": "6136a476c541b43496bdb85b180609534cbc6871d9b606ebc552cbf96f042bd1",
+      "sentence2_sha256": "9ec4670e5fb8cfbab120563069939797b904b4292c936927fb3d565db1c2d554",
+      "sampling_rank_sha256": "4cffe9c73d8d753173f059890ad5dc8ebf872f02584cbd43e2e345dd45936c77",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "592",
+      "row_sha256": "6c902ea134332ee62386042924a601cf1dc3350409a5d3b360ce371b9cfd0e02",
+      "sentence_pair_sha256": "80b23cb2e1c4eedb6d1116abcd74b87122fb69a409575485e2423453917a80cb",
+      "sentence1_sha256": "8e3f015507b49721125b4511672ce717923ca4746e462c6a7b0f6634c236c3e9",
+      "sentence2_sha256": "8d2f08c01026fdbb272fe165e5922347bc06114ba994e894293c3e3e3d2f6157",
+      "sampling_rank_sha256": "4d66d83c1925e6ef4cd5f422261ffcda424cb9fd07570e83fbf45fd85b90c14a",
+      "gold": "entailment"
+    },
+    {
+      "sentence_pair_id": "2072",
+      "row_sha256": "4aaf3ba6b4bcf55bce019f2df81806831c64f54ef52a985d75168ae73579bd9b",
+      "sentence_pair_sha256": "518216a5ad51e65dcb9bc6494077c9f98a20989d486ebde1679ec692cc797c71",
+      "sentence1_sha256": "7b6a0743eef538d956ab6837ea4ed6b36eb8bafe768acacf2cba589c7e380f77",
+      "sentence2_sha256": "e16a188d9ec39d75e7b91946e285508ee5e43581944b0a9d3e7017b606587364",
+      "sampling_rank_sha256": "4d8f25d711e57fd22afb6a5dc82cf80b0aeccacd74507e3794b3cd416f3c82f7",
+      "gold": "entailment"
+    }
+  ]
+}

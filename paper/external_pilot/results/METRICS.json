@@ -1,0 +1,141 @@
+{
+  "completed_utc": "2026-09-20T07:18:47.463745+00:00",
+  "n": 300,
+  "warmup_n": 3,
+  "decode_count": 303,
+  "primary_T1": {
+    "temperature": 1.0,
+    "n": 300,
+    "correct": 243,
+    "accuracy": 0.81,
+    "macro_f1": 0.8100754872501148,
+    "nll": 0.5480875935504876,
+    "multiclass_brier_sum": 0.2917335808304595,
+    "ece_10_equal_width": 0.12997841219252104,
+    "confusion_rows_gold_columns_prediction": [
+      [
+        61,
+        1,
+        38
+      ],
+      [
+        1,
+        87,
+        12
+      ],
+      [
+        1,
+        4,
+        95
+      ]
+    ],
+    "label_order": [
+      "contradiction",
+      "entailment",
+      "neutral"
+    ],
+    "per_class": {
+      "contradiction": {
+        "support": 100,
+        "correct": 61,
+        "precision": 0.9682539682539683,
+        "recall": 0.61,
+        "f1": 0.7484662576687117
+      },
+      "entailment": {
+        "support": 100,
+        "correct": 87,
+        "precision": 0.9456521739130435,
+        "recall": 0.87,
+        "f1": 0.90625
+      },
+      "neutral": {
+        "support": 100,
+        "correct": 95,
+        "precision": 0.6551724137931034,
+        "recall": 0.95,
+        "f1": 0.7755102040816326
+      }
+    }
+  },
+  "historical_temperature_transfer": {
+    "temperature": 1.3489628825916533,
+    "n": 300,
+    "correct": 243,
+    "accuracy": 0.81,
+    "macro_f1": 0.8100754872501148,
+    "nll": 0.4613701916746565,
+    "multiclass_brier_sum": 0.2719410971944185,
+    "ece_10_equal_width": 0.0986140112935919,
+    "confusion_rows_gold_columns_prediction": [
+      [
+        61,
+        1,
+        38
+      ],
+      [
+        1,
+        87,
+        12
+      ],
+      [
+        1,
+        4,
+        95
+      ]
+    ],
+    "label_order": [
+      "contradiction",
+      "entailment",
+      "neutral"
+    ],
+    "per_class": {
+      "contradiction": {
+        "support": 100,
+        "correct": 61,
+        "precision": 0.9682539682539683,
+        "recall": 0.61,
+        "f1": 0.7484662576687117
+      },
+      "entailment": {
+        "support": 100,
+        "correct": 87,
+        "precision": 0.9456521739130435,
+        "recall": 0.87,
+        "f1": 0.90625
+      },
+      "neutral": {
+        "support": 100,
+        "correct": 95,
+        "precision": 0.6551724137931034,
+        "recall": 0.95,
+        "f1": 0.7755102040816326
+      }
+    }
+  },
+  "latency_ms": {
+    "p50": 297.04564600251615,
+    "p95": 379.6879626112059,
+    "max": 393.632082734257
+  },
+  "input_tokens": {
+    "min": 406,
+    "max": 476,
+    "n_above_512": 0
+  },
+  "predictions_sha256": "584e3f4dd14711ea4d702042788d4077da03ac4c8b891b5e7e531667a9ddf067",
+  "selection_overlap": {
+    "n": 300,
+    "distinct_pair_ids": 300,
+    "distinct_exact_sentence_pairs": 300,
+    "distinct_premises": 292,
+    "distinct_hypotheses": 292,
+    "distinct_sentences_across_both_positions": 536,
+    "repeated_sentence_values": 57,
+    "sentence_occurrences_beyond_first": 64,
+    "rows_with_any_shared_sentence": 84,
+    "distinct_yjcaptions_ids": 300,
+    "repeated_yjcaptions_ids": 0,
+    "warning": "Shared text and image/caption origins can correlate examples; distinct pair IDs do not establish independence."
+  }
+}

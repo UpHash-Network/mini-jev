@@ -2,7 +2,7 @@
 
 **Use a local language model as a typed decision function, without generating answer text.**
 
-[日本語](README.ja.md) · [Technical report](paper/TECHNICAL_REPORT.md) · [Train on your data](TRAINING.md) · [Data card](DATA_CARD.md) · [Model card](MODEL_CARD.md)
+[日本語](README.ja.md) · [Technical report](paper/TECHNICAL_REPORT.md) · [Working paper](paper/README.md) · [Train on your data](TRAINING.md) · [Data card](DATA_CARD.md) · [Model card](MODEL_CARD.md)
 
 Mini Jev turns a state and a question into a choice, a true/false score (`Noul`), or an ordinal score. It reads candidate next-token logits, normalizes them, and constructs the typed response in Python. The released inference configuration uses a **frozen Qwen3.6-35B-A3B Q4_K_M model**, repeated input, and type-specific candidate tokens. It does **not** use a trained decision head.
 
@@ -117,4 +117,4 @@ The API accepts 2–26 candidates, defaults to eight questions (configurable up 
 
 AI coding agents contributed implementation, question authoring, review, experiments, and documentation under the owner's direction. Agent review is not independent human review. Useful next contributions include same-model generation baselines, external and family-disjoint evaluations, multi-seed head experiments, and measured runs on other hardware. See the [research plan](paper/TECHNICAL_REPORT.md#what-a-research-paper-still-needs).
 
-Use [CITATION.cff](CITATION.cff) to cite the software. Original project code and authored data are MIT licensed; third-party code and model artifacts retain their own licenses and notices.
+Use [CITATION.cff](CITATION.cff) to cite the software. Original project code and authored data are MIT licensed; third-party code, datasets, and model artifacts retain their own licenses and notices. JNLI-derived records in the working-paper pilot use CC BY-SA 4.0; see [NOTICE.md](NOTICE.md).

@@ -28,6 +28,10 @@ jobs:
         run: python -m unittest discover -s tests -p test_native_service_validation.py -v
       - name: Score audit fixtures
         run: python validate_score_edges.py --self-test
+      - name: Paper statistics and external sampling fixtures
+        run: |
+          python -m unittest discover -s paper/analysis -p test_analysis.py -v
+          python -m unittest discover -s paper/external_pilot -p test_pilot.py -v
       - name: Public artifact checks
         run: python scripts/check_public_release.py
       - name: Tracked generated directories must be empty

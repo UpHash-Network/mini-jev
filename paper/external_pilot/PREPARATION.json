@@ -1,0 +1,108 @@
+{
+  "created_utc": "2026-09-20T07:16:54.372479+00:00",
+  "protocol_sha256": "12994c3a6043ccb749260f66851ca83e32f73c0e234fd1dbb4efeb90ce23868a",
+  "source_sha256": "ca0353efc7c2eebfb6de4e13f16295053c8b1ee65e7b0849190c90426fbc495f",
+  "runner_sha256": "5ab4b1dfb81af60929cc17d9bddea4b47912af026a239cec65659a2f03880dd8",
+  "native_engine_sha256": "da45591b932a4cf9576f7f45ad9bd8f0fb817457b67ac8147b1f1562edbc83e9",
+  "stage": "before_source_row_parsing_and_before_model_inference",
+  "protocol": {
+    "schema_version": 1,
+    "experiment": "JNLI v1.3 public-development balanced zero-shot pilot",
+    "source": {
+      "repository": "https://github.com/yahoojapan/JGLUE",
+      "commit": "6f071c09316baae89c3d083a90985b4b1cb9968c",
+      "version": "jnli-v1.3",
+      "split": "valid (public development, not private test)",
+      "url": "https://raw.githubusercontent.com/yahoojapan/JGLUE/6f071c09316baae89c3d083a90985b4b1cb9968c/datasets/jnli-v1.3/valid-v1.3.json",
+      "sha256": "ca0353efc7c2eebfb6de4e13f16295053c8b1ee65e7b0849190c90426fbc495f",
+      "bytes": 632446,
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://github.com/yahoojapan/JGLUE/blob/6f071c09316baae89c3d083a90985b4b1cb9968c/LICENSE",
+      "license_sha256": "3b2890eacd851373001c4a14623458e3adaf1b1967939aa9c38a318e28d61c00",
+      "attribution": "JGLUE: Kentaro Kurihara, Daisuke Kawahara, Tomohide Shibata; Yahoo Japan Corporation and Kawahara Lab, Waseda University; https://aclanthology.org/2022.lrec-1.317/"
+    },
+    "sampling": {
+      "per_class": 100,
+      "maximum_n": 300,
+      "labels": [
+        "contradiction",
+        "entailment",
+        "neutral"
+      ],
+      "salt": "mini-jev-jnli-v1:",
+      "rule": "Within each gold class, select 100 rows ordered by SHA256(salt + string(sentence_pair_id)), breaking ties by string ID. Interleave all selected rows by the same hash ordering. No text/content/performance filtering; no replacement or resampling.",
+      "gold_access": "Preparation program reads gold labels only for stratified sampling. Prompt, sampling, metrics, temperatures, source hash, and runner hash are saved before source rows are parsed. Gold labels are never passed to the model."
+    },
+    "prompt": {
+      "state_template": "文A（前提）: {premise}\n文B（仮説）: {hypothesis}",
+      "instructions": "文Aの内容を前提として、文Bとの推論関係を判断してください。文Aから文Bが必ず成り立つならentailment、文Aと文Bが両立しないならcontradiction、どちらも判断できないならneutralを選んでください。",
+      "criteria": {
+        "contradiction": "矛盾: 文Aが正しい場合、文Bは成り立たない。",
+        "entailment": "含意: 文Aが正しい場合、文Bは必ず成り立つ。",
+        "neutral": "中立: 文Aだけでは文Bが成り立つか判断できない。"
+      },
+      "canonical_order": "NativeEngine sorts semantic keys: A=contradiction, B=entailment, C=neutral. This pilot does not test label-order invariance.",
+      "few_shot_examples": 0,
+      "text_transformation": "UTF-8 original sentence1/sentence2 inserted without normalization, rewriting, or truncation into the state template. Existing NativeEngine repeat_typed_score repeats the complete task."
+    },
+    "engine": {
+      "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+      "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+      "temperature": 1.0,
+      "temperature_config": null,
+      "prompt_style": "repeat_typed_score",
+      "threads": 6,
+      "device": "metal",
+      "dtype": "Q4_K_M",
+      "max_input_tokens": 2048
+    },
+    "secondary_temperature": 1.3489628825916533,
+    "secondary_temperature_rule": "Apply historical self-authored calibration temperature to the same saved logits. Do not fit on JNLI. Positive temperature leaves argmax/accuracy unchanged; report NLL, Brier, ECE transfer without claiming calibration generalizes.",
+    "metrics": [
+      "accuracy",
+      "macro F1",
+      "per-label precision/recall/F1",
+      "confusion matrix",
+      "NLL (log-sum-exp)",
+      "multiclass Brier summed over classes",
+      "ECE with 10 equal-width max-probability bins",
+      "warm serial single-question wall-clock latency p50/p95/max",
+      "complete input token counts",
+      "exact sentence/pair/caption-id sharing counts"
+    ],
+    "metric_details": {
+      "latency_quantile": "linear interpolation at (n-1)*p",
+      "ece": "sum_b n_b/n * abs(mean_correct_b - mean_max_candidate_probability_b); probability 1 belongs to final bin",
+      "independence": "Do not treat 300 rows as independent or claim IID confidence intervals. Report exact sentence sharing; image-origin dependence may remain."
+    },
+    "warmup": [
+      {
+        "sentence1": "赤い箱が机の上にある。",
+        "sentence2": "箱がある。"
+      },
+      {
+        "sentence1": "赤い箱が机の上にある。",
+        "sentence2": "箱は青い。"
+      },
+      {
+        "sentence1": "赤い箱が机の上にある。",
+        "sentence2": "箱の中には本がある。"
+      }
+    ],
+    "hardware": {
+      "machine": "Apple M5 Pro",
+      "memory_gb": 64,
+      "os": "macOS 26.4"
+    },
+    "failure_policy": "No substitution, truncation, or prompt change. If any selected input fails, preserve partial predictions and report incomplete evaluation, rather than silently excluding it.",
+    "limitations": [
+      "Public dev subset, not an unseen private test or a full JGLUE leaderboard run.",
+      "Pretraining or post-training contamination is unknown.",
+      "Balanced 100-per-class sample differs from original dev class prevalence.",
+      "Only Choice natural-language inference is tested; Noul and Score external performance remains untested.",
+      "No prompt or temperature selection on this dataset, and no claims of new algorithm or Jev reproduction.",
+      "The frozen baseline is the current source/native package fingerprint, not an assertion of byte-identical historical runtime."
+    ],
+    "publication_policy": "No source sentences in Git. Publish IDs, hashes, gold labels, predictions and metrics; retain dataset license/attribution for dataset-derived metadata. Raw download remains outside repository."
+  }
+}
