@@ -1,0 +1,11 @@
+{
+  "artifact_version": "naacl-repro-v1-20260925",
+  "archive": "naacl-repro-v1-20260925.zip",
+  "archive_sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+  "archive_bytes": 18060014,
+  "manifest_sha256": "1f3686e5cb65421448304bc78f56055dca3c8abb879e481f863e6c5759eea535",
+  "source_and_record_files": 353,
+  "uncompressed_bytes": 101749383,
+  "status": "assembled_verification_pending",
+  "post_reanalysis_change": "REPRODUCIBILITY.md instructions only: same-directory config copy and explicit background count; source/analyzers/study observations unchanged"
+}

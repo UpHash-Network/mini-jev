@@ -1,0 +1,2 @@
+# Retain the unmodified local diagnostic log; public derivative is separately hashed.
+run_v1/native.log

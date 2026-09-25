@@ -1,0 +1,18 @@
+{
+  "native_verification": {
+    "verified": true,
+    "files": 18,
+    "symlinks": 14,
+    "llama_cpp_commit": "f072b103714dfa1eee531f80b24512faf38e3dd2"
+  },
+  "native_inventory_files": 18,
+  "native_aliases": 14,
+  "pinned_source_license_presence": {
+    "licenses/LICENSE-jsonhpp": true,
+    "vendor/cpp-httplib/LICENSE": true,
+    "vendor/hash/sha256/LICENSE": true,
+    "vendor/hash/xxhash/LICENSE": true,
+    "vendor/hash/rotate-bits/LICENSE.md": true
+  },
+  "coverage_note": "The clean source checkout skips two tests requiring runtime/source in historical relative directories. Equivalent checks are performed here against the newly built external runtime and fresh source clone, without inference."
+}

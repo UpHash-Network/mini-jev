@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-25T09:18:34.831919+00:00",
+  "status": "manuscript_and_artifacts_completed_not_submitted",
+  "artifacts": {
+    "NAACL2027_Mini_Jev.pdf": {
+      "sha256": "32c013069ef362d654c1f721bd30204c9de7d9fe1ccefadace54b43836296093",
+      "bytes": 221405
+    },
+    "main.tex": {
+      "sha256": "b504bd553e32f53144a0e4abc2b9612e673ab79078a61e35558903c059cf46be",
+      "bytes": 26676
+    },
+    "references.bib": {
+      "sha256": "35aac5600ce32f68e75ddca0d7760d8a718dfd468a9d16194d76f9887fd8cb79",
+      "bytes": 10236
+    },
+    "build.py": {
+      "sha256": "2c63d59fd1dfe7f36e5ee9f41413c51d46ffafebd322696a8359e55a4f64b2eb",
+      "bytes": 2007
+    },
+    "figures/demo-presentation.png": {
+      "sha256": "2b137ef1f2c34eae367424ba55d8d4402ebddd9a32d8ff606df82579bd2cf98f",
+      "bytes": 125296
+    },
+    "FIGURE_PROVENANCE.json": {
+      "sha256": "3c4fcf2e3cc20611eef08a4d2255a46533b419a5017965bddc7bb80ff9398c43",
+      "bytes": 547
+    },
+    "reproducibility/naacl-repro-v1-20260925.zip": {
+      "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+      "bytes": 18060014
+    },
+    "reproducibility/VALIDATION.20260925.json": {
+      "sha256": "20ecde1426a1ff56becf3e51326d9b7fa2f948450fa854196894b6571713867c",
+      "bytes": 7592
+    },
+    "comparator_study/ARTIFACT_MANIFEST.json": {
+      "sha256": "6b825926d80cdd8373f2fd8d2cf878c2b8f5d49c150db1441c92a41fcd7fc7e3",
+      "bytes": 2407
+    },
+    "comparator_study/run_v1/SUMMARY.json": {
+      "sha256": "f5cc5df92582d88bf97a3e62108ecb70d4517e613a46549b0067ff2f3a6ffc4c",
+      "bytes": 816
+    },
+    "comparator_study/run_v1/AUDIT.json": {
+      "sha256": "9589fd533809f4534b10aa5686a0c8314e9cca5f812a155857d4499851dbb0ed",
+      "bytes": 74058
+    },
+    "chainforge_integration/results.json": {
+      "sha256": "5c4cbefd77eda7bde5ec366ed126120a4060aa271aee6cef4359c7e6e6abb6f5",
+      "bytes": 21284
+    },
+    "chainforge_integration/protocol.json": {
+      "sha256": "3cf8bf7b1d290d51045c8f040a11713b47c4d303b1445318b088dc5df360ad98",
+      "bytes": 5319
+    }
+  },
+  "layout": {
+    "pdf_pages": 8,
+    "main_limitations_acknowledgements_ethics_last_page": 6,
+    "references_start_page": 7,
+    "appendix_pages": 0,
+    "official_style_unchanged_and_hash_checked_by_builder": true,
+    "rendered_pages_visually_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "visible_clipping_overlap_or_replacement_characters": false,
+    "overfull_boxes": 0,
+    "undefined_citations_or_references": 0,
+    "cited_bib_keys": 25,
+    "ordinary_underfull_warnings": true,
+    "lineno_dependency_utf8_warning_without_visible_corruption": true
+  },
+  "scientific_accounting": {
+    "existing_measured_research_requests": 26050,
+    "local_regression_items": 2400,
+    "local_items_human_authored": false,
+    "journal_extension_new_requests_excluded": 16300,
+    "lmql_diagnostic_decode_calls_separate": 64,
+    "chainforge_diagnostic_http_requests_separate": 8,
+    "chainforge_typed_questions_separate": 16,
+    "installation_smoke_http_requests_separate": 1,
+    "installation_smoke_typed_questions": 3
+  },
+  "verification": {
+    "reanalysis_byte_identical_files": 56,
+    "cpu_tests_discovered": 71,
+    "cpu_tests_passed": 69,
+    "cpu_tests_skipped": 2,
+    "skip_equivalents_checked_on_rebuilt_runtime": true,
+    "fresh_native_build": true,
+    "source_model_cache_reuse_disclosed": true,
+    "same_machine_only": true,
+    "lmql_prefix_and_argmax_matches": 12,
+    "lmql_probability_tolerance": 1e-05,
+    "lmql_probability_tolerance_failures": 3,
+    "lmql_max_probability_difference": 2.6325888176637058e-05,
+    "lmql_integrity_checks_passed": 494,
+    "lmql_custom_backend_disclosed": true,
+    "chainforge_request_pairs": 4,
+    "chainforge_typed_answer_pairs": 8,
+    "chainforge_max_probability_difference": 0.0,
+    "chainforge_invalid_inputs_rejected": 3,
+    "chainforge_browser_editor_tested": false,
+    "human_usability_study_conducted": false
+  },
+  "video": {
+    "source_branch": "research/eacl2027-demo",
+    "sha256": "094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123",
+    "seconds": 144.96,
+    "width": 1920,
+    "height": 1080,
+    "new_recording": false,
+    "existing_captioned_live_interaction_reused": true,
+    "research_integrations_not_claimed_in_recording": true
+  },
+  "review": {
+    "ai_agent_independent_source_review": true,
+    "new_subsection_crosschecked_with_records": true,
+    "human_review_claimed": false
+  },
+  "submission": {
+    "submitted": false,
+    "receipt_id": null,
+    "opens": "2026-11-01",
+    "deadline_aoe": "2026-12-04T23:59:00-12:00",
+    "deadline_jst": "2026-12-05T20:59:00+09:00",
+    "actual_form_checked": false,
+    "account_activation_freshly_verified": false
+  },
+  "publication_note": "This is a local completion receipt; remote publication and downloaded-hash confirmation are recorded separately after push.",
+  "release_scan": {
+    "schema_version": 1,
+    "passed": true,
+    "files_scanned": 437,
+    "bytes_scanned": 159373134,
+    "findings": [],
+    "scope": "Exact staged Git tree exported by checkout-index; local-only journal preparations, mail/status files and original native log excluded. Scanner code is unchanged.",
+    "scanner_unit_tests_passed": 11,
+    "intentional_whitespace_preserved_in": [
+      "official acl_natbib.bst",
+      "frozen RESULTS.csv CRLF",
+      "native.public.log",
+      "NATIVE_BUILD_LOG.txt"
+    ],
+    "remaining_staged_diff_check_passed": true
+  }
+}

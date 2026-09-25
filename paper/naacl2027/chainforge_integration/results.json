@@ -1,0 +1,600 @@
+{
+  "created_at_utc": "2026-09-25T09:10:20.108731+00:00",
+  "scope": "Real ChainForge Flask registration/dispatch + native Mini Jev HTTP API; no browser or human study",
+  "protocol_sha256": "3cf8bf7b1d290d51045c8f040a11713b47c4d303b1445318b088dc5df360ad98",
+  "provider_sha256": "e56d076ec106a4e842d97e38edbb21fd935513a53ce480fd437efd26e4932bd9",
+  "runner_sha256": "9a02a5be71e382084388d127141adc15a518d82b3719dd8b8f5d0b30c296b744",
+  "chainforge_version": "0.3.7.4",
+  "chainforge_dispatch_source_sha256": "be090fa625820cc805300e7a4ee9713cbf237257f5ebc21ded2abe64c7f9fa18",
+  "python": "3.12.14",
+  "health": {
+    "ready": true,
+    "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "pending_requests": 0,
+    "model_revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "max_input_tokens": 2048
+  },
+  "valid_request_pairs": 4,
+  "typed_answer_pairs": 8,
+  "native_http_requests": 8,
+  "native_question_evaluations": 16,
+  "records": [
+    {
+      "id": "typed_batch_routine",
+      "request": {
+        "state": "A customer asks where to find the online user guide. All services work normally.",
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Choose how to handle the synthetic support request.",
+            "criteria": {
+              "respond": "Reply with routine instructions",
+              "review": "Ask a human to review",
+              "urgent": "Escalate immediately"
+            }
+          },
+          "urgent": {
+            "type": "noul",
+            "instructions": "Does the request describe an immediate service outage?",
+            "criteria": {
+              "false": "No immediate outage is described",
+              "true": "An immediate outage is described"
+            }
+          },
+          "priority": {
+            "type": "score",
+            "instructions": "Rate the urgency using the ordered stages.",
+            "criteria": [
+              "Routine request",
+              "Some urgency",
+              "High urgency",
+              "Immediate outage"
+            ]
+          }
+        }
+      },
+      "direct_sdk": {
+        "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+        "answers": {
+          "action": {
+            "type": "choice",
+            "label": "respond",
+            "probabilities": {
+              "respond": 0.9999844584479133,
+              "review": 6.310308371917059e-06,
+              "urgent": 9.2312437147714e-06
+            },
+            "calibrated": false,
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "confidence": 0.9998196690016874,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "temperature_calibration_applied": false,
+            "calibration_generalization_validated": false,
+            "choice": "respond"
+          },
+          "urgent": {
+            "type": "noul",
+            "label": "false",
+            "probabilities": {
+              "false": 0.9997244275645522,
+              "true": 0.0002755724354478064
+            },
+            "calibrated": false,
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "confidence": 0.9963437663705362,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "temperature_calibration_applied": false,
+            "calibration_generalization_validated": false,
+            "noul": 0.0002755724354478064
+          },
+          "priority": {
+            "type": "score",
+            "label": "0",
+            "probabilities": {
+              "0": 0.9994060404635047,
+              "1": 0.0005031109394984893,
+              "2": 2.9435908632556266e-05,
+              "3": 6.141268836432675e-05
+            },
+            "calibrated": false,
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "confidence": 0.9961642728196006,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "temperature_calibration_applied": false,
+            "calibration_generalization_validated": false,
+            "score": 0.000746220821856582,
+            "legend": {
+              "0": "Routine request",
+              "1": "Some urgency",
+              "2": "High urgency",
+              "3": "Immediate outage"
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 625,
+          "output_tokens": 0,
+          "questions": 3
+        },
+        "latency_ms": 507.0952093228698,
+        "request_id": "fe5eaa0233534473bc7eaa93c5f287bb"
+      },
+      "chainforge": {
+        "answers": {
+          "action": {
+            "calibrated": false,
+            "calibration_generalization_validated": false,
+            "choice": "respond",
+            "confidence": 0.9998196690016874,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "label": "respond",
+            "probabilities": {
+              "respond": 0.9999844584479133,
+              "review": 6.310308371917059e-06,
+              "urgent": 9.2312437147714e-06
+            },
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "temperature_calibration_applied": false,
+            "type": "choice"
+          },
+          "priority": {
+            "calibrated": false,
+            "calibration_generalization_validated": false,
+            "confidence": 0.9961642728196006,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "label": "0",
+            "legend": {
+              "0": "Routine request",
+              "1": "Some urgency",
+              "2": "High urgency",
+              "3": "Immediate outage"
+            },
+            "probabilities": {
+              "0": 0.9994060404635047,
+              "1": 0.0005031109394984893,
+              "2": 2.9435908632556266e-05,
+              "3": 6.141268836432675e-05
+            },
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "score": 0.000746220821856582,
+            "temperature_calibration_applied": false,
+            "type": "score"
+          },
+          "urgent": {
+            "calibrated": false,
+            "calibration_generalization_validated": false,
+            "confidence": 0.9963437663705362,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "label": "false",
+            "noul": 0.0002755724354478064,
+            "probabilities": {
+              "false": 0.9997244275645522,
+              "true": 0.0002755724354478064
+            },
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "temperature_calibration_applied": false,
+            "type": "noul"
+          }
+        },
+        "latency_ms": 489.84620813280344,
+        "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+        "request_id": "2d93141fb21342f48f6ee99972029e90",
+        "usage": {
+          "input_tokens": 625,
+          "output_tokens": 0,
+          "questions": 3
+        }
+      },
+      "checks": {
+        "http_ok": true,
+        "request_preserved": true,
+        "schema_valid": true,
+        "same_model": true,
+        "same_usage": true,
+        "same_labels_and_metadata": true,
+        "probabilities_within_tolerance": true,
+        "distinct_request_ids": true
+      },
+      "max_probability_abs_difference": 0.0
+    },
+    {
+      "id": "typed_batch_changed_state",
+      "request": {
+        "state": "The production service is unavailable to every customer and alarms are firing.",
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Choose how to handle the synthetic support request.",
+            "criteria": {
+              "respond": "Reply with routine instructions",
+              "review": "Ask a human to review",
+              "urgent": "Escalate immediately"
+            }
+          },
+          "urgent": {
+            "type": "noul",
+            "instructions": "Does the request describe an immediate service outage?",
+            "criteria": {
+              "false": "No immediate outage is described",
+              "true": "An immediate outage is described"
+            }
+          },
+          "priority": {
+            "type": "score",
+            "instructions": "Rate the urgency using the ordered stages.",
+            "criteria": [
+              "Routine request",
+              "Some urgency",
+              "High urgency",
+              "Immediate outage"
+            ]
+          }
+        }
+      },
+      "direct_sdk": {
+        "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+        "answers": {
+          "action": {
+            "type": "choice",
+            "label": "urgent",
+            "probabilities": {
+              "respond": 0.00013480641196727806,
+              "review": 0.00028864458385760626,
+              "urgent": 0.9995765490041751
+            },
+            "calibrated": false,
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "confidence": 0.9963797457454798,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "temperature_calibration_applied": false,
+            "calibration_generalization_validated": false,
+            "choice": "urgent"
+          },
+          "urgent": {
+            "type": "noul",
+            "label": "true",
+            "probabilities": {
+              "false": 0.00030372071714548595,
+              "true": 0.9996962792828544
+            },
+            "calibrated": false,
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "confidence": 0.9960129236007026,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "temperature_calibration_applied": false,
+            "calibration_generalization_validated": false,
+            "noul": 0.9996962792828544
+          },
+          "priority": {
+            "type": "score",
+            "label": "3",
+            "probabilities": {
+              "0": 1.611389069826535e-05,
+              "1": 5.2326894028067466e-05,
+              "2": 6.91701161274245e-05,
+              "3": 0.9998623890991463
+            },
+            "calibrated": false,
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "confidence": 0.9989224174563042,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "temperature_calibration_applied": false,
+            "calibration_generalization_validated": false,
+            "score": 2.999777834423722,
+            "legend": {
+              "0": "Routine request",
+              "1": "Some urgency",
+              "2": "High urgency",
+              "3": "Immediate outage"
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 607,
+          "output_tokens": 0,
+          "questions": 3
+        },
+        "latency_ms": 480.0473330542445,
+        "request_id": "ef5975cb093d49359cda8680b3430f5d"
+      },
+      "chainforge": {
+        "answers": {
+          "action": {
+            "calibrated": false,
+            "calibration_generalization_validated": false,
+            "choice": "urgent",
+            "confidence": 0.9963797457454798,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "label": "urgent",
+            "probabilities": {
+              "respond": 0.00013480641196727806,
+              "review": 0.00028864458385760626,
+              "urgent": 0.9995765490041751
+            },
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "temperature_calibration_applied": false,
+            "type": "choice"
+          },
+          "priority": {
+            "calibrated": false,
+            "calibration_generalization_validated": false,
+            "confidence": 0.9989224174563042,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "label": "3",
+            "legend": {
+              "0": "Routine request",
+              "1": "Some urgency",
+              "2": "High urgency",
+              "3": "Immediate outage"
+            },
+            "probabilities": {
+              "0": 1.611389069826535e-05,
+              "1": 5.2326894028067466e-05,
+              "2": 6.91701161274245e-05,
+              "3": 0.9998623890991463
+            },
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "score": 2.999777834423722,
+            "temperature_calibration_applied": false,
+            "type": "score"
+          },
+          "urgent": {
+            "calibrated": false,
+            "calibration_generalization_validated": false,
+            "confidence": 0.9960129236007026,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "label": "true",
+            "noul": 0.9996962792828544,
+            "probabilities": {
+              "false": 0.00030372071714548595,
+              "true": 0.9996962792828544
+            },
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "temperature_calibration_applied": false,
+            "type": "noul"
+          }
+        },
+        "latency_ms": 481.41987482085824,
+        "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+        "request_id": "6f33d7017aca4df8956f7f0eba4f8f4b",
+        "usage": {
+          "input_tokens": 607,
+          "output_tokens": 0,
+          "questions": 3
+        }
+      },
+      "checks": {
+        "http_ok": true,
+        "request_preserved": true,
+        "schema_valid": true,
+        "same_model": true,
+        "same_usage": true,
+        "same_labels_and_metadata": true,
+        "probabilities_within_tolerance": true,
+        "distinct_request_ids": true
+      },
+      "max_probability_abs_difference": 0.0
+    },
+    {
+      "id": "unicode_choice",
+      "request": {
+        "state": {
+          "message": "資料の保存先を教えてください。障害は起きていません。"
+        },
+        "questions": {
+          "対応": {
+            "type": "choice",
+            "instructions": "適切な対応を選ぶ。",
+            "criteria": {
+              "案内": "資料の場所を案内する",
+              "確認": "詳しい状況を確認する",
+              "緊急": "障害対応を始める",
+              "保留": "回答を保留する"
+            }
+          }
+        }
+      },
+      "direct_sdk": {
+        "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+        "answers": {
+          "対応": {
+            "type": "choice",
+            "label": "案内",
+            "probabilities": {
+              "保留": 0.0010085133936402998,
+              "案内": 0.9973320906209445,
+              "確認": 0.001589643389447711,
+              "緊急": 6.97525959675768e-05
+            },
+            "calibrated": false,
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "confidence": 0.9851878608202846,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "temperature_calibration_applied": false,
+            "calibration_generalization_validated": false,
+            "choice": "案内"
+          }
+        },
+        "usage": {
+          "input_tokens": 236,
+          "output_tokens": 0,
+          "questions": 1
+        },
+        "latency_ms": 166.95333318784833,
+        "request_id": "994581c8b74f442fb450564cc7d20dbf"
+      },
+      "chainforge": {
+        "answers": {
+          "対応": {
+            "calibrated": false,
+            "calibration_generalization_validated": false,
+            "choice": "案内",
+            "confidence": 0.9851878608202846,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "label": "案内",
+            "probabilities": {
+              "保留": 0.0010085133936402998,
+              "案内": 0.9973320906209445,
+              "確認": 0.001589643389447711,
+              "緊急": 6.97525959675768e-05
+            },
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "temperature_calibration_applied": false,
+            "type": "choice"
+          }
+        },
+        "latency_ms": 165.223625022918,
+        "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+        "request_id": "df27a3048d1942079bb9277e6414d2b2",
+        "usage": {
+          "input_tokens": 236,
+          "output_tokens": 0,
+          "questions": 1
+        }
+      },
+      "checks": {
+        "http_ok": true,
+        "request_preserved": true,
+        "schema_valid": true,
+        "same_model": true,
+        "same_usage": true,
+        "same_labels_and_metadata": true,
+        "probabilities_within_tolerance": true,
+        "distinct_request_ids": true
+      },
+      "max_probability_abs_difference": 0.0
+    },
+    {
+      "id": "ordered_score",
+      "request": {
+        "state": [
+          "The package is three days late.",
+          "Tracking has not updated."
+        ],
+        "questions": {
+          "severity": {
+            "type": "score",
+            "instructions": "Choose the severity on this declared ordered scale.",
+            "criteria": [
+              "Critical",
+              "Major",
+              "Moderate",
+              "Minor",
+              "None"
+            ]
+          }
+        }
+      },
+      "direct_sdk": {
+        "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+        "answers": {
+          "severity": {
+            "type": "score",
+            "label": "2",
+            "probabilities": {
+              "0": 0.0011016695240067497,
+              "1": 0.3050432248143197,
+              "2": 0.3777148238564077,
+              "3": 0.3149857695829553,
+              "4": 0.001154512222310526
+            },
+            "calibrated": false,
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "confidence": 0.3108647401532072,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "temperature_calibration_applied": false,
+            "calibration_generalization_validated": false,
+            "score": 2.010048230165243,
+            "legend": {
+              "0": "Critical",
+              "1": "Major",
+              "2": "Moderate",
+              "3": "Minor",
+              "4": "None"
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 223,
+          "output_tokens": 0,
+          "questions": 1
+        },
+        "latency_ms": 171.2706657126546,
+        "request_id": "5d87a8022e0e4b5c84cffd88222a017d"
+      },
+      "chainforge": {
+        "answers": {
+          "severity": {
+            "calibrated": false,
+            "calibration_generalization_validated": false,
+            "confidence": 0.3108647401532072,
+            "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+            "label": "2",
+            "legend": {
+              "0": "Critical",
+              "1": "Major",
+              "2": "Moderate",
+              "3": "Minor",
+              "4": "None"
+            },
+            "probabilities": {
+              "0": 0.0011016695240067497,
+              "1": 0.3050432248143197,
+              "2": 0.3777148238564077,
+              "3": 0.3149857695829553,
+              "4": 0.001154512222310526
+            },
+            "probability_semantics": "conditional_on_allowed_label_tokens",
+            "score": 2.010048230165243,
+            "temperature_calibration_applied": false,
+            "type": "score"
+          }
+        },
+        "latency_ms": 168.89758314937353,
+        "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+        "request_id": "73645341c6e94f048987868ff9fdc534",
+        "usage": {
+          "input_tokens": 223,
+          "output_tokens": 0,
+          "questions": 1
+        }
+      },
+      "checks": {
+        "http_ok": true,
+        "request_preserved": true,
+        "schema_valid": true,
+        "same_model": true,
+        "same_usage": true,
+        "same_labels_and_metadata": true,
+        "probabilities_within_tolerance": true,
+        "distinct_request_ids": true
+      },
+      "max_probability_abs_difference": 0.0
+    }
+  ],
+  "negative_checks": [
+    {
+      "id": "malformed_json",
+      "rejected": true,
+      "result": {
+        "error": "Error encountered while calling custom provider function: body must contain valid UTF-8 JSON"
+      }
+    },
+    {
+      "id": "empty_questions",
+      "rejected": true,
+      "result": {
+        "error": "Error encountered while calling custom provider function: questions must contain 1 to 8 entries"
+      }
+    },
+    {
+      "id": "chat_history_refused",
+      "rejected": true,
+      "result": {
+        "error": "Error encountered while calling custom provider function: This stateless typed API adapter does not accept chat history"
+      }
+    }
+  ],
+  "failures": [],
+  "max_probability_abs_difference": 0.0
+}

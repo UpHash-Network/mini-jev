@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-09-25T09:17:22.523918+00:00",
+  "status": "passed",
+  "checked_public_files": 22,
+  "absolute_user_paths_found": 0,
+  "user_email_addresses_found": 0,
+  "recognized_credential_patterns_found": 0,
+  "weights_or_compiled_binaries_in_public_files": false,
+  "original_native_log_preserved_locally": true,
+  "original_native_log_gitignored": true,
+  "public_native_log_has_explicit_derivative_provenance": true,
+  "frozen_prerun_manifest_modified": false,
+  "scope": "Text/path/known credential pattern scan plus file inventory review; not a universal secret detector."
+}

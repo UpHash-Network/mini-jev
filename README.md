@@ -25,9 +25,13 @@ The suite is **self-authored**: 2,220 programmatically generated items across 45
 
 Failures remain: delay-from-promised-time 29/49, conditional obligation 31/49, and counts after cancellation 33/49. Temperature scaling slightly improved NLL but worsened ECE and Score expectation MAE. [Full results and limitations](paper/TECHNICAL_REPORT.md#results)
 
+## NAACL 2027 demonstration paper
+
+The [NAACL paper and reproducibility package](paper/naacl2027/README.md) contains the current manuscript, frozen evaluation records and analyzers, clean-directory build verification, and controlled LMQL/ChainForge integration diagnostics. The system uses frozen language models; no trained decision-head gain, one-token speed advantage, or human usability advantage is claimed. The earlier EACL attempt closed without a submission. NAACL materials are **not submitted, accepted, or peer reviewed**.
+
 ## EACL demonstration preparation
 
-The [local decision workbench](demo/README.md) adds an editable browser interface for Choice, Noul, and Score. The [EACL review-draft package](paper/eacl2027/README.md) includes a six-page-body paper, a 135-second captioned live demonstration, and reproducibility material. These materials are **not submitted, accepted, or peer reviewed**.
+The [local decision workbench](demo/README.md) adds an editable browser interface for Choice, Noul, and Score. The [EACL review-draft package](paper/eacl2027/README.md) includes a six-page-body paper, a 145-second captioned live demonstration, and reproducibility material. These materials are **not submitted, accepted, or peer reviewed**.
 
 ## Run the native service
 

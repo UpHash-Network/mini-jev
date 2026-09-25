@@ -1,0 +1,2653 @@
+{
+  "status": "audit_passed",
+  "parity_gate_passed": false,
+  "integrity_checks": 494,
+  "integrity_passed": 494,
+  "parity_checks": 32,
+  "parity_passed": 29,
+  "checks": 526,
+  "passed": 523,
+  "case_count": 12,
+  "native_decode_calls": 64,
+  "max_probability_absolute_error": 2.6325888176637058e-05,
+  "max_typed_readout_absolute_error": 7.181393344257714e-05,
+  "max_native_raw_logit_difference": 0.01061248779296875,
+  "max_between_candidate_vocabulary_logsumexp_range": 0.0,
+  "independent_of_runner": true,
+  "not_independent_model_replication": true,
+  "audit_script_sha256": "3efa1f1a6c92448dba95399cea81b7adefce6cf2dd8bfa7f21a222cec4c5b9c0",
+  "freeze_sha256": "3d6b5a19fe40b7f998c12fa0e53499aeaf9e4ce4056c6d310f8d3fe949576a68",
+  "results_sha256": "7d26f5b873ba8c495573275da470a91d5f87c6b5b04af34c31b70935c57fa9ea",
+  "individual_checks": [
+    {
+      "name": "summary complete real model closed",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "results digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "freeze digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "12 cases complete in fixed order",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 2 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 2 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 2 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 2 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 3 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 3 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 3 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 3 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 4 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 4 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 4 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMTP 4 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-01 frozen probability tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "choice-01 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "choice-02 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 2 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 2 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 2 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 2 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 3 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 3 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 3 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 3 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 4 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 4 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 4 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMTP 4 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-02 frozen probability tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "choice-02 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "choice-03 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 2 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 2 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 2 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 2 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 3 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 3 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 3 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 3 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 4 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 4 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 4 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMTP 4 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-03 frozen probability tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "choice-03 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "choice-04 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 2 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 2 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 2 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 2 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 3 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 3 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 3 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 3 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 4 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 4 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 4 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMTP 4 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "choice-04 frozen probability tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "choice-04 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-01 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-01 frozen probability tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-01 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-01 frozen typed-readout tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-02 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-02 frozen probability tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-02 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-02 frozen typed-readout tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-03 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-03 frozen probability tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-03 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-03 frozen typed-readout tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-04 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "noul-04 frozen probability tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-04 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "noul-04 frozen typed-readout tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "score-01 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 2 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 2 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 2 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 2 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 3 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 3 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 3 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 3 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 4 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 4 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 4 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 4 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 5 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 5 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 5 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMTP 5 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-01 frozen probability tolerance",
+      "passed": false,
+      "category": "parity"
+    },
+    {
+      "name": "score-01 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "score-01 frozen typed-readout tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "score-02 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 2 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 2 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 2 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 2 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 3 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 3 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 3 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 3 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 4 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 4 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 4 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 4 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 5 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 5 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 5 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMTP 5 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-02 frozen probability tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "score-02 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "score-02 frozen typed-readout tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "score-03 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 2 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 2 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 2 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 2 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 3 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 3 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 3 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 3 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 4 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 4 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 4 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 4 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 5 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 5 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 5 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMTP 5 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-03 frozen probability tolerance",
+      "passed": false,
+      "category": "parity"
+    },
+    {
+      "name": "score-03 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "score-03 frozen typed-readout tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "score-04 native prompt exact",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 native prefix and candidate IDs",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 native prefix digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 native candidate digest",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 each continuation one token",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP candidate coverage",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 direct single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 0 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 0 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 0 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 0 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 1 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 1 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 1 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 1 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 2 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 2 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 2 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 2 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 3 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 3 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 3 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 3 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 4 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 4 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 4 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 4 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 5 exact prefix",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 5 full finite scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 5 true vocabulary normalized score",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMTP 5 single clear decode",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMQL actual scores equal LMTP float32 returned scores",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 direct probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 LMQL probability recomputation",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "score-04 frozen probability tolerance",
+      "passed": false,
+      "category": "parity"
+    },
+    {
+      "name": "score-04 argmax equality",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "score-04 frozen typed-readout tolerance",
+      "passed": true,
+      "category": "parity"
+    },
+    {
+      "name": "exactly64 consecutive decodes",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "12 direct 52 LMTP counts",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "runtime reported frozen unchanged",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file outputs/mini-jev-naacl2027/paper/matched_native/llama_matched_helper.cpp",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file outputs/mini-jev-naacl2027/paper/naacl2027/comparator_study/CASES.json",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file outputs/mini-jev-naacl2027/paper/naacl2027/comparator_study/NOTICE.md",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file outputs/mini-jev-naacl2027/paper/naacl2027/comparator_study/PROTOCOL.ja.md",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file outputs/mini-jev-naacl2027/paper/naacl2027/comparator_study/build_native_bridge.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file outputs/mini-jev-naacl2027/paper/naacl2027/comparator_study/freeze.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file outputs/mini-jev-naacl2027/paper/naacl2027/comparator_study/llama_lmql_helper.cpp",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file outputs/mini-jev-naacl2027/paper/naacl2027/comparator_study/make_cases.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file outputs/mini-jev-naacl2027/paper/naacl2027/comparator_study/requirements.lock.txt",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file outputs/mini-jev-naacl2027/paper/naacl2027/comparator_study/run.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/models/qwen3.6-35b-a3b-gguf/Qwen3.6-35B-A3B-Q4_K_M.gguf",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/BUILD.json",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/LICENSE-helper.txt",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/LICENSE-llama-cpp.txt",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/NOTICE.md",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/bin/libggml-base.0.24.0.dylib",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/bin/libggml-blas.0.24.0.dylib",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/bin/libggml-cpu.0.24.0.dylib",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/bin/libggml-metal.0.24.0.dylib",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/bin/libggml.0.24.0.dylib",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/bin/libllama-common.0.4.1.dylib",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/bin/libllama.0.4.1.dylib",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/bin/llama-lmql-helper",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/licenses/LICENSE-Qwen3.6-Apache-2.0.txt",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/licenses/LICENSE-jsonhpp",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/licenses/cpp-httplib-LICENSE",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/licenses/rotate-bits-LICENSE.md",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/licenses/sha256-LICENSE",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/licenses/xxhash-LICENSE",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/native-runtime/llama_lmql_helper.cpp",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/preflight-v5/SUMMARY.json",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/tokenizer/merges.txt",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/tokenizer/tokenizer.json",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/tokenizer/tokenizer_config.json",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/tokenizer/vocab.json",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/algorithms/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/algorithms/cache.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/algorithms/functools.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/api/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/api/inspect.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/api/llm.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/api/queries.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/api/run.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/api/scoring.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/api/serve.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/api/warnings.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/cli.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/demo.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/http.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/language/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/language/compiler.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/language/fragment_parser.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/language/qstrings.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/language/validator.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/actions.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/chat/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/chat/__main__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/chat/chatserver.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/chat/output.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/data.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/prompts/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/prompts/inline_code.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/prompts/inline_use.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/prompts/wiki_prompt.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/types.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/lib/value.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/aliases.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/backends/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/backends/__main__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/backends/llama_cpp_model.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/backends/lmtp_model.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/backends/random_model.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/backends/transformers_model.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/errors.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_async.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_balance.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_client.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_dcinprocess.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_dcmodel.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_inference_server.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_langchain.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_layout.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_multiprocessing.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_programmatic_serve_example.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_replicate_client.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_scheduler.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_serve.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/lmtp_threading.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/lmtp/utils.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/models/model_info.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ops/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ops/booleans.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ops/follow_map.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ops/inline_call.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ops/max_token_hints.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ops/node.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ops/ops.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ops/regex.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ops/token_set.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/output/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/output/http.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/output/sse.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/output/ws.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/bopenai/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/bopenai/batched_openai.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/bopenai/openai_api.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/caching.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/context.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/dclib/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/dclib/dclib_array.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/dclib/dclib_cache.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/dclib/dclib_model.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/dclib/dclib_rewrite.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/dclib/dclib_seq.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/dclib/decoders.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/decorators.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/formatting.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/interpreter.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/interrupt.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/langchain.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/lmql_runtime.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/loop.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/maiohttp.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/masks.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/multi_head_interpretation.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/openai_integration.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/openai_secret.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/output_writer.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/postprocessing/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/postprocessing/conditional_prob.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/postprocessing/group_by.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/program_state.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/stats.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/token_distribution.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/tokenizer.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/tokenizers/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/tokenizers/hf_tokenizer.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/tokenizers/pure_python_tokenizer.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/tokenizers/sentencepiece_tokenizer.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/tokenizers/tiktoken_tokenizer.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/tracing/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/tracing/certificate.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/runtime/tracing/tracer.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ui/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ui/live/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ui/live/live.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ui/live/livelib.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/ui/playground/ref.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/utils/__init__.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/utils/docstring_parser.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/utils/graph.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/utils/nputil.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/naacl-finalization/comparator/venv/lib/python3.12/site-packages/lmql/version.py",
+      "passed": true,
+      "category": "integrity"
+    },
+    {
+      "name": "frozen file work/qwen3.6-tokenizer-metadata/gguf_chat_template.jinja",
+      "passed": true,
+      "category": "integrity"
+    }
+  ]
+}

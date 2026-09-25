@@ -1,0 +1,13 @@
+case_id,task_type,language,candidate_count,lmql_backend_calls,direct_calls,max_probability_absolute_error,probability_tolerance_1e_5_pass,argmax_match,typed_readout_absolute_error,typed_tolerance_1e_4_pass
+choice-01,choice,en,5,5,1,2.292562071293247e-07,True,True,,
+choice-02,choice,en,5,5,1,1.5048072014023361e-06,True,True,,
+choice-03,choice,ja,5,5,1,5.216985308198474e-07,True,True,,
+choice-04,choice,ja,5,5,1,1.0485683806793489e-06,True,True,,
+noul-01,noul,en,2,2,1,1.2697982374220074e-07,True,True,1.2697982365583727e-07,True
+noul-02,noul,en,2,2,1,1.5043247393832157e-06,True,True,1.5043247393832157e-06,True
+noul-03,noul,ja,2,2,1,1.3770884046810202e-07,True,True,1.3770884044195242e-07,True
+noul-04,noul,ja,2,2,1,1.2324188337167502e-07,True,True,1.2324188337167502e-07,True
+score-01,score,en,6,6,1,2.4345846257212145e-05,False,True,5.615034535555452e-05,True
+score-02,score,en,6,6,1,8.94784982763408e-06,True,True,1.41589873649808e-05,True
+score-03,score,ja,6,6,1,2.004717096326658e-05,False,True,1.3239127984121524e-05,True
+score-04,score,ja,6,6,1,2.6325888176637058e-05,False,True,7.181393344257714e-05,True

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "purpose": "Final public diagnostic artifact file hashes; post-run inventory, not prespecification",
+  "prerun_freeze_sha256": "3d6b5a19fe40b7f998c12fa0e53499aeaf9e4ce4056c6d310f8d3fe949576a68",
+  "local_only_excluded": [
+    "run_v1/native.log"
+  ],
+  "files_sha256": {
+    ".gitignore": "cf0c689dbf08f3f30fd31b1cc769e4e5cce926262934710132bd1a2ed10cc180",
+    "CASES.json": "2e428436dad29bac8e2187edb18b7e48dad5a4c1ee5a2678d195e6354e67fc10",
+    "CPU_PREFLIGHT.json": "b8f4506836a3c8f4980c2ed8978f334ef563832c0c5c14d9d71f523a43bf39cf",
+    "FREEZE.json": "3d6b5a19fe40b7f998c12fa0e53499aeaf9e4ce4056c6d310f8d3fe949576a68",
+    "NOTICE.md": "0befc4b9cf7a730d4c5399a6f094f6f8924664493f2836f2fda7f8669dc1035d",
+    "PROTOCOL.ja.md": "52bc5255ecf7f80d0cfcda2b71b60da0e3d8fd933bab011eef7b2d326ead630b",
+    "PUBLICATION_CHECKS.json": "5b7b64ffe2c3f4499b8778c8374e0a23e67c91ba800b244bd5371ac1e143c675",
+    "README.md": "842cde21c2f808ebed9c4e404a4832f61d24d2e2a2a2ee6fb2f9250dedcb7bd6",
+    "REPORT.ja.md": "1a5ed77f141cf4490c35566f70383295bbe0c8a8d871bd6f6d443f8d23015543",
+    "RESULTS.csv": "9f9655c485f4836911de08ac691eca9e1828859fb9697c9b166a3a960dd201f2",
+    "audit.py": "3efa1f1a6c92448dba95399cea81b7adefce6cf2dd8bfa7f21a222cec4c5b9c0",
+    "build_native_bridge.py": "8aeadd3add85b9bfc2c84edecd968687026ce7e43cc3a7f4f27414b7b6d0bcb8",
+    "build_report.py": "9143046d83e8fb2339333630e05d10d52ca3678951efaa29cfbd148fa522b35a",
+    "freeze.py": "37859a3969872c6f7c916ce6f5caa65e6754fdaabab5f0343747c4e9edad9a1a",
+    "llama_lmql_helper.cpp": "f2c4fcae0f3579e50540905f8b2be7c592f6a1e9dca09b82a8e43ede7c1335a7",
+    "make_cases.py": "cbe3d99f8a91415557bc3cdf7a51da0c473cebe7e39a8e05535c7c806cb029b7",
+    "requirements.lock.txt": "c49eee5f662f40199ae7d1fdf945bb46c933e5064191deaa4944ee1af3853018",
+    "run.py": "bc715eeefe13635bf439bff43886a1efcd99c427ff521af6d27cd9da82b22a80",
+    "run_v1/AUDIT.json": "9589fd533809f4534b10aa5686a0c8314e9cca5f812a155857d4499851dbb0ed",
+    "run_v1/NATIVE_LOG_PUBLICATION.json": "09299fb60b76cf54640c9494f473b49b4900d65156dd81b1ebcd8ba9bf659210",
+    "run_v1/SUMMARY.json": "f5cc5df92582d88bf97a3e62108ecb70d4517e613a46549b0067ff2f3a6ffc4c",
+    "run_v1/native.public.log": "fc2ad095cca7d988e095a63b595ea0717d5974282b0cca93f4f4ae6ad9a45425",
+    "run_v1/results.jsonl": "7d26f5b873ba8c495573275da470a91d5f87c6b5b04af34c31b70935c57fa9ea"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "created_at_utc": "2026-09-25T09:09:44.504323+00:00",
+  "scope": "One synthetic SDK smoke request, three sequential typed questions; not a benchmark or usability study",
+  "cached_model_reused": true,
+  "native_runtime_fresh_build": true,
+  "health": {
+    "ready": true,
+    "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "pending_requests": 0,
+    "model_revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "max_input_tokens": 2048
+  },
+  "request": {
+    "state": "プレイヤーのHPは20%。敵が近くに3体いる。回復アイテムを1個持っている。行動ルール: HPが30%未満で回復アイテムがあれば回復を優先する。",
+    "questions": {
+      "next_action": {
+        "type": "choice",
+        "instructions": "行動ルールに従い、次に取る行動を選んでください。",
+        "criteria": {
+          "heal": "回復アイテムを使う",
+          "retreat": "敵から離れる",
+          "attack": "敵を攻撃する"
+        }
+      },
+      "need_healing": {
+        "type": "noul",
+        "instructions": "HPは30%未満で、回復アイテムを持っていますか？"
+      },
+      "danger_level": {
+        "type": "score",
+        "instructions": "現在のHPに対応する危険度の段階を選んでください。",
+        "criteria": [
+          "低: HPが70%以上",
+          "中: HPが30%以上70%未満",
+          "高: HPが30%未満"
+        ]
+      }
+    }
+  },
+  "response": {
+    "model": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "answers": {
+      "next_action": {
+        "type": "choice",
+        "label": "heal",
+        "probabilities": {
+          "attack": 4.014878789921655e-05,
+          "heal": 0.9999530926890788,
+          "retreat": 6.7585230219989036e-06
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "confidence": 0.9995141258230137,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "choice": "heal"
+      },
+      "need_healing": {
+        "type": "noul",
+        "label": "true",
+        "probabilities": {
+          "false": 0.00029680424841614384,
+          "true": 0.9997031957515838
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "confidence": 0.9960938538016537,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "noul": 0.9997031957515838
+      },
+      "danger_level": {
+        "type": "score",
+        "label": "2",
+        "probabilities": {
+          "0": 3.6704027209438444e-05,
+          "1": 0.0001392360731220086,
+          "2": 0.9998240598996686
+        },
+        "calibrated": false,
+        "probability_semantics": "conditional_on_allowed_label_tokens",
+        "confidence": 0.9983733174444086,
+        "confidence_definition": "one_minus_normalized_entropy_not_probability_of_correctness",
+        "temperature_calibration_applied": false,
+        "calibration_generalization_validated": false,
+        "score": 1.9997873558724593,
+        "legend": {
+          "0": "低: HPが70%以上",
+          "1": "中: HPが30%以上70%未満",
+          "2": "高: HPが30%未満"
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 813,
+      "output_tokens": 0,
+      "questions": 3
+    },
+    "latency_ms": 593.1900418363512,
+    "request_id": "69ff725f79454d02a0388ed15735ac4c"
+  },
+  "observed_smoke_wall_seconds": 0.5939941667020321,
+  "checks": {
+    "health_ready": true,
+    "choice_heal": true,
+    "noul_true_label": true,
+    "score_stage2_label": true,
+    "all_three_sdk_typed_answers": true,
+    "zero_generated_output_tokens": true
+  },
+  "check_correction": "Initial receipt tested a nonexistent health.status field; corrected to the actual documented health.ready boolean using the same recorded response. No inference repeated.",
+  "status": "pass"
+}

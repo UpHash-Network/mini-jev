@@ -1,0 +1,20 @@
+{
+  "freeze_sha256": "3d6b5a19fe40b7f998c12fa0e53499aeaf9e4ce4056c6d310f8d3fe949576a68",
+  "frozen_inputs_unchanged": true,
+  "status": "complete",
+  "fixture_only_not_model_evidence": false,
+  "cases_completed": 12,
+  "expected_cases": 12,
+  "backend_calls": 52,
+  "direct_calls": 12,
+  "model_closed": true,
+  "last_total_decode_count": 64,
+  "all_prefix_and_candidate_token_checks_passed": true,
+  "all_probability_checks_passed": false,
+  "max_probability_absolute_error": 2.6325888176637058e-05,
+  "lmql_version": "0.7.3",
+  "custom_backend": true,
+  "results_sha256": "7d26f5b873ba8c495573275da470a91d5f87c6b5b04af34c31b70935c57fa9ea",
+  "cases_sha256": "2e428436dad29bac8e2187edb18b7e48dad5a4c1ee5a2678d195e6354e67fc10",
+  "runner_sha256": "bc715eeefe13635bf439bff43886a1efcd99c427ff521af6d27cd9da82b22a80"
+}

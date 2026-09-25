@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "original_filename": "native.log",
+  "original_sha256": "2a2a26d760bef9c6c717dbbb2fdcc1513589d4d758a5d494ab8f8f0354318769",
+  "original_bytes": 128726,
+  "original_preserved_locally": true,
+  "original_excluded_from_git_by_study_gitignore": true,
+  "public_filename": "native.public.log",
+  "public_sha256": "fc2ad095cca7d988e095a63b595ea0717d5974282b0cca93f4f4ae6ad9a45425",
+  "public_bytes": 128697,
+  "transformation": "Replace the sole absolute workspace prefix with ${WORKSPACE_ROOT}; no other bytes changed.",
+  "replacements": 1,
+  "not_a_change_to_prerun_freeze": true
+}

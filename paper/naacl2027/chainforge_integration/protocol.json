@@ -1,0 +1,148 @@
+{
+  "created_before_inference_utc": "2026-09-25T09:08:15.719474+00:00",
+  "chainforge_version": "0.3.7.4",
+  "absolute_tolerance": 0.0001,
+  "scope": "Engineering integration check of real ChainForge provider routes; synthetic diagnostics, no UI automation, human study, accuracy or speed claim.",
+  "direct_vs_provider_order": "Each direct SDK call immediately followed by ChainForge call using the identical payload.",
+  "statistical_inference": "None. These 4 request pairs and 8 typed-answer pairs are not an independent benchmark.",
+  "valid_cases": [
+    {
+      "id": "typed_batch_routine",
+      "payload": {
+        "state": "A customer asks where to find the online user guide. All services work normally.",
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Choose how to handle the synthetic support request.",
+            "criteria": {
+              "respond": "Reply with routine instructions",
+              "review": "Ask a human to review",
+              "urgent": "Escalate immediately"
+            }
+          },
+          "urgent": {
+            "type": "noul",
+            "instructions": "Does the request describe an immediate service outage?",
+            "criteria": {
+              "false": "No immediate outage is described",
+              "true": "An immediate outage is described"
+            }
+          },
+          "priority": {
+            "type": "score",
+            "instructions": "Rate the urgency using the ordered stages.",
+            "criteria": [
+              "Routine request",
+              "Some urgency",
+              "High urgency",
+              "Immediate outage"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "typed_batch_changed_state",
+      "payload": {
+        "state": "The production service is unavailable to every customer and alarms are firing.",
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Choose how to handle the synthetic support request.",
+            "criteria": {
+              "respond": "Reply with routine instructions",
+              "review": "Ask a human to review",
+              "urgent": "Escalate immediately"
+            }
+          },
+          "urgent": {
+            "type": "noul",
+            "instructions": "Does the request describe an immediate service outage?",
+            "criteria": {
+              "false": "No immediate outage is described",
+              "true": "An immediate outage is described"
+            }
+          },
+          "priority": {
+            "type": "score",
+            "instructions": "Rate the urgency using the ordered stages.",
+            "criteria": [
+              "Routine request",
+              "Some urgency",
+              "High urgency",
+              "Immediate outage"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "unicode_choice",
+      "payload": {
+        "state": {
+          "message": "資料の保存先を教えてください。障害は起きていません。"
+        },
+        "questions": {
+          "対応": {
+            "type": "choice",
+            "instructions": "適切な対応を選ぶ。",
+            "criteria": {
+              "案内": "資料の場所を案内する",
+              "確認": "詳しい状況を確認する",
+              "緊急": "障害対応を始める",
+              "保留": "回答を保留する"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "ordered_score",
+      "payload": {
+        "state": [
+          "The package is three days late.",
+          "Tracking has not updated."
+        ],
+        "questions": {
+          "severity": {
+            "type": "score",
+            "instructions": "Choose the severity on this declared ordered scale.",
+            "criteria": [
+              "Critical",
+              "Major",
+              "Moderate",
+              "Minor",
+              "None"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "invalid_cases": [
+    {
+      "id": "malformed_json",
+      "params": {
+        "prompt": "{invalid"
+      }
+    },
+    {
+      "id": "empty_questions",
+      "params": {
+        "prompt": "{\"state\": \"test\", \"questions\": {}}"
+      }
+    },
+    {
+      "id": "chat_history_refused",
+      "params": {
+        "prompt": "{\"state\": \"A customer asks where to find the online user guide. All services work normally.\", \"questions\": {\"action\": {\"type\": \"choice\", \"instructions\": \"Choose how to handle the synthetic support request.\", \"criteria\": {\"respond\": \"Reply with routine instructions\", \"review\": \"Ask a human to review\", \"urgent\": \"Escalate immediately\"}}, \"urgent\": {\"type\": \"noul\", \"instructions\": \"Does the request describe an immediate service outage?\", \"criteria\": {\"false\": \"No immediate outage is described\", \"true\": \"An immediate outage is described\"}}, \"priority\": {\"type\": \"score\", \"instructions\": \"Rate the urgency using the ordered stages.\", \"criteria\": [\"Routine request\", \"Some urgency\", \"High urgency\", \"Immediate outage\"]}}}",
+        "chat_history": [
+          {
+            "role": "user",
+            "content": "ignored context must not be dropped"
+          }
+        ]
+      }
+    }
+  ]
+}

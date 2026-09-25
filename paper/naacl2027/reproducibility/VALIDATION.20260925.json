@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "created_at_utc": "2026-09-25T09:14:14.384134+00:00",
+  "artifact_version": "naacl-repro-v1-20260925",
+  "archive": "naacl-repro-v1-20260925.zip",
+  "archive_sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+  "archive_bytes": 18060014,
+  "bundle_source_record_files": 353,
+  "archive_members_including_manifest": 354,
+  "archive_crc_file_set_and_all_hashes_verified": true,
+  "extracted_files_equal_archive": true,
+  "measured_requests_reanalyzed": 26050,
+  "analysis_steps": 6,
+  "byte_identical_derived_files": 56,
+  "cpu_tests": [
+    {
+      "log": "cpu-app-tests.log",
+      "discovered": 58,
+      "passed": 57,
+      "skipped": 1,
+      "failed": 0
+    },
+    {
+      "log": "cpu-packaging-tests.log",
+      "discovered": 13,
+      "passed": 12,
+      "skipped": 1,
+      "failed": 0
+    }
+  ],
+  "skipped_checks_covered_against_actual_rebuilt_runtime_and_source": true,
+  "source_change_after_initial_cpu_suite": [
+    "REPRODUCIBILITY.md",
+    "reanalyze.py"
+  ],
+  "final_reanalysis_repeated_after_wrapper_guard": true,
+  "runtime_build": {
+    "fresh_native_compile": true,
+    "cached_pinned_llama_cpp_source_reused": true,
+    "upstream_revision": "f072b103714dfa1eee531f80b24512faf38e3dd2",
+    "old_native_binaries_reused": false,
+    "build_jobs": 2,
+    "package_files_verified": 18,
+    "package_symlinks_verified": 14,
+    "source_libraries_license_presence_verified": true
+  },
+  "live_smoke": {
+    "new_model_process": true,
+    "model_download_repeated": false,
+    "verified_cached_model_reused": true,
+    "model_bytes": 20419565568,
+    "model_sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+    "sdk_http_requests": 1,
+    "typed_questions": 3,
+    "expected_example_labels_verified": true,
+    "input_tokens": 813,
+    "output_tokens": 0,
+    "calibration_applied": false,
+    "ended": true,
+    "service_closed_by_parent_after_additional_separate_integration_checks": true
+  },
+  "environment": {
+    "python": "3.10.5 (v3.10.5:f377153967, Jun  6 2022, 12:36:10) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "machine": "arm64",
+    "same_mac_as_original_experiments": true,
+    "fresh_machine_or_clean_os": false,
+    "python_dependency_install_required_for_reanalysis_service_demo": false
+  },
+  "distribution_checks": {
+    "allowlist_enforced": true,
+    "credential_and_personal_home_path_markers_absent": true,
+    "raw_text_fields_absent_from_measured_prediction_rows": true,
+    "naacl_measured_prediction_rows_scanned": 26050,
+    "background_pilot_rows_scanned_excluded_from_current_total": 300,
+    "model_weights_native_binaries_private_logs_and_mail_excluded": true
+  },
+  "prediction_files": [
+    {
+      "path": "paper/matched_study/results/predictions.jsonl",
+      "measured_rows": 4050,
+      "sha256": "ba76fa7b67c0711743e66484ea6f42fc1ebdbb248a8581c696a912ce7c9fe7a9",
+      "role": "naacl_study"
+    },
+    {
+      "path": "paper/external_pilot/results/predictions.jsonl",
+      "measured_rows": 300,
+      "sha256": "584e3f4dd14711ea4d702042788d4077da03ac4c8b891b5e7e531667a9ddf067",
+      "role": "historical_background_not_current_count"
+    },
+    {
+      "path": "paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl",
+      "measured_rows": 4800,
+      "sha256": "fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0",
+      "role": "naacl_study"
+    },
+    {
+      "path": "paper/order_ensemble/study_v1/results/qwen2.5-0.5b/predictions.jsonl",
+      "measured_rows": 4800,
+      "sha256": "b9e28d5ace53794a58d20f0c710df74bf002b5a7a33ad6a8169355f100c1903d",
+      "role": "naacl_study"
+    },
+    {
+      "path": "paper/order_ensemble/study_v1/results/qwen3.6-35b-a3b/predictions.jsonl",
+      "measured_rows": 4800,
+      "sha256": "c4799f763961f13cf7ffec80c8b2d8e4474a9f12181d9a773b8ac17525a6b392",
+      "role": "naacl_study"
+    },
+    {
+      "path": "paper/journal_robustness/study_v1/results/predictions.jsonl",
+      "measured_rows": 4000,
+      "sha256": "27f91e52078bf67231c95c65005a158020698f67c368fd7273f9b3d98f9f7cf0",
+      "role": "naacl_study"
+    },
+    {
+      "path": "paper/journal_robustness/cross_model/study_v1/results/qwen2.5-1.5b/predictions.jsonl",
+      "measured_rows": 1800,
+      "sha256": "310658568433ae4bf3b68e9138054ea6d63aad4d3c12a7ee48ab60584a545197",
+      "role": "naacl_study"
+    },
+    {
+      "path": "paper/journal_robustness/cross_model/study_v1/results/qwen2.5-0.5b/predictions.jsonl",
+      "measured_rows": 1800,
+      "sha256": "6caf2103d7b4483238618591fde004effc55d87d1e0df7c443c5bbd3256a0c94",
+      "role": "naacl_study"
+    }
+  ],
+  "preparatory_corrections": [
+    "First assembly attempt rejected a credential-pattern literal inside the existing release-check script; scanner corrected to match actual token-shaped values and a fresh archive was created.",
+    "The final reanalysis wrapper additionally rejects a missing expected output; its final full six-stage replay passed.",
+    "An initial shell launch used the workspace directory and exited 127 before loading code/model; relaunch from the extracted application succeeded.",
+    "Initial smoke health check used nonexistent status instead of actual ready; corrected using the same stored health response, with no repeated inference."
+  ],
+  "build_log_redaction": {
+    "original_sha256": "f2c87a377d4358f0c8bc962d70926d4342250dafe271c8608a108fc295eaa8ad",
+    "published_sha256": "4552d2f68e01ac910378779a19f13ac9c778fc2c54a0eb37acc4529b2ab64f50",
+    "transform": "replace reproduction-root and personal home prefixes; no numeric build/runtime result changes"
+  },
+  "limitations": [
+    "No independent-machine experiment or new benchmark",
+    "Only one synthetic three-question installation smoke; no statistical accuracy/latency estimate",
+    "No human usability study",
+    "Existing upstream source and model caches reused; no fresh network download validated",
+    "Historical full-audit environment is not reconstructed by CPU reanalysis",
+    "Git history, journal new studies and current NAACL manuscript/video absent from this focused bundle",
+    "Artifact is prepared locally and not published or formally submitted by this check"
+  ],
+  "artifacts": {
+    "BUNDLE_MANIFEST.json": {
+      "sha256": "1f3686e5cb65421448304bc78f56055dca3c8abb879e481f863e6c5759eea535",
+      "bytes": 88011
+    },
+    "BUNDLE_BUILD_RECEIPT.json": {
+      "sha256": "4f512db46b76e1db01f0c13881725db32ba2dea317b5a37772547049c22b1896",
+      "bytes": 590
+    },
+    "REANALYSIS_CHECKS.json": {
+      "sha256": "6e23392e281cff6b50d1e8f71a92a9c4c8210ae6b2366194af23f7da4abb0db0",
+      "bytes": 17135
+    },
+    "LIVE_SMOKE.json": {
+      "sha256": "18ddca840cb4a07442585ab9dedfa5cfb0a196f64566b612a4ae5123e44fa2a8",
+      "bytes": 4181
+    },
+    "NATIVE_PACKAGE_CHECKS.json": {
+      "sha256": "ca029b016a639ff04c77e940ca1951af9cdb7497cc0ced92abeddc831fc63053",
+      "bytes": 711
+    },
+    "NATIVE_BUILD.json": {
+      "sha256": "f7338ef809d565a0eceabc6316a6a9c8c8795ebcf5399b60ba201ec825a6bdc0",
+      "bytes": 4379
+    },
+    "CPU_APP_TESTS.txt": {
+      "sha256": "b23d0b6334fdf0240d61cb2bd7913982af2c1a2bc1a37123f95b7df72f76676d",
+      "bytes": 626
+    },
+    "CPU_PACKAGING_TESTS.txt": {
+      "sha256": "8e8a293c4d93d3669b3231e8d1ae2906c2fbae996b03cb3b33b754cd9121b29b",
+      "bytes": 124
+    },
+    "NATIVE_BUILD_LOG.txt": {
+      "sha256": "4552d2f68e01ac910378779a19f13ac9c778fc2c54a0eb37acc4529b2ab64f50",
+      "bytes": 19241
+    }
+  }
+}
