@@ -1,5 +1,7 @@
 # Mini Jev
 
+[Project page](https://uphash-network.github.io/mini-jev/) — current manuscript, demonstration video, evaluation evidence, and installation links.
+
 **Use a local language model as a typed decision function, without generating answer text.**
 
 [日本語](README.ja.md) · [Technical report](paper/TECHNICAL_REPORT.md) · [Working paper and v0.2 study](paper/README.md) · [Train on your data](TRAINING.md) · [Data card](DATA_CARD.md) · [Model card](MODEL_CARD.md)

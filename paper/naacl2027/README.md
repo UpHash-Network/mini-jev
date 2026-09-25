@@ -7,6 +7,7 @@ Author: **Yuki Oshio, UPHASH Inc.** Single author; identified for the single-bli
 
 ## Read and run
 
+- [Research project page](https://uphash-network.github.io/mini-jev/) — manuscript, video, findings, and installation links in one place.
 - [Paper PDF](NAACL2027_Mini_Jev.pdf) — 8 pages: 6 pages including limitations,
   acknowledgements and ethics, followed by 2 reference pages.
 - [Download the versioned source and evidence ZIP](https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/naacl2027-demo/paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip)

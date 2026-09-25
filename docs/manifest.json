@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "content_snapshot": "2026-09-25",
+  "evidence_commit": "bd025e8b1d14352a440d289c73b00ae445290935",
+  "assets": [
+    {
+      "path": "assets/Mini_Jev_Manuscript.pdf",
+      "source": "paper/naacl2027/NAACL2027_Mini_Jev.pdf",
+      "bytes": 221405,
+      "sha256": "32c013069ef362d654c1f721bd30204c9de7d9fe1ccefadace54b43836296093"
+    },
+    {
+      "path": "assets/workbench.png",
+      "source": "paper/naacl2027/figures/demo-presentation.png",
+      "bytes": 125296,
+      "sha256": "2b137ef1f2c34eae367424ba55d8d4402ebddd9a32d8ff606df82579bd2cf98f"
+    },
+    {
+      "path": "assets/Mini_Jev_Demonstration.mp4",
+      "source": "paper/eacl2027/Mini_Jev_Demonstration.mp4",
+      "bytes": 9105242,
+      "sha256": "094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123"
+    }
+  ]
+}

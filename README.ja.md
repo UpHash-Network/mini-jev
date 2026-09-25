@@ -1,5 +1,7 @@
 # Mini Jev
 
+[研究紹介ページ](https://uphash-network.github.io/mini-jev/) — 最新原稿・デモ動画・評価結果・再現手順をまとめています。
+
 **ローカルLLMを、文章を生成しない「型付き判断の関数」として使う実装です。**
 
 [English](README.md) · [技術レポート](paper/TECHNICAL_REPORT.md) · [自分のデータで学習](TRAINING.md) · [データカード](DATA_CARD.md) · [モデルカード](MODEL_CARD.md)

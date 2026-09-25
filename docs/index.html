@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mini Jev is an inspectable local interface for typed decisions from frozen language models. Read the manuscript, watch the demo, and reproduce the evaluation.">
+  <meta name="theme-color" content="#edf4fb">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mini Jev — Inspectable typed decisions">
+  <meta property="og:description" content="A local research workbench for Choice, Noul, and Score. Manuscript, demonstration, code, and evaluation artifacts.">
+  <meta property="og:url" content="https://uphash-network.github.io/mini-jev/">
+  <meta property="og:image" content="https://uphash-network.github.io/mini-jev/assets/workbench.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://uphash-network.github.io/mini-jev/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mini Jev — Inspectable typed decisions</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead wrap">
+    <a class="wordmark" href="#main" aria-label="Mini Jev home"><span class="mark" aria-hidden="true">{j}</span> Mini Jev</a>
+    <nav aria-label="Main navigation"><a href="#demo">Demo</a><a href="#evidence">Evidence</a><a href="#run">Run locally</a><a href="https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo">GitHub ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="title">
+      <p class="eyebrow">Open research · Local language models</p>
+      <h1 id="title">Mini Jev</h1>
+      <p class="subtitle">An inspectable local interface for typed decisions from frozen language models</p>
+      <p class="authors">Yuki Oshio <span aria-hidden="true">/</span> UPHASH Inc.</p>
+      <p class="intro">Give a language model a state, explicit criteria, and a set of candidates. Inspect the typed decision, the candidate distribution, and the request that produced it.</p>
+      <div class="actions"><a class="button primary" href="assets/Mini_Jev_Manuscript.pdf">Read the paper <span>PDF · 8 pages</span></a><a class="button" href="#demo">Watch the demo <span>2 min 25 sec</span></a><a class="button" href="https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo">Explore the code <span>GitHub</span></a></div>
+      <p class="status">Research manuscript · 25 September 2026 · Not peer reviewed</p>
+    </section>
+
+    <section class="mechanism wrap" aria-labelledby="mechanism-title">
+      <div class="section-heading"><p class="eyebrow">The interface</p><h2 id="mechanism-title">One model. Three kinds of decision.</h2></div>
+      <div class="pipeline" aria-label="State and criteria are passed to a frozen language model; candidate logits are converted to a typed output.">
+        <div class="pipeline-step"><span class="mono">Input</span><strong>State + criteria</strong><small>Explicit candidate meanings</small></div>
+        <span class="arrow" aria-hidden="true">→</span>
+        <div class="pipeline-step"><span class="mono">Frozen model</span><strong>Candidate logits</strong><small>Read at the next-token position</small></div>
+        <span class="arrow" aria-hidden="true">→</span>
+        <div class="pipeline-step output"><span class="mono">Typed output</span><strong>Choice · Noul · Score</strong><small>Inspect probabilities and JSON</small></div>
+      </div>
+      <dl class="types">
+        <div><dt><span class="type-mark">C</span>Choice</dt><dd>The most likely candidate, returned as its semantic label.</dd></div>
+        <div><dt><span class="type-mark">N</span>Noul</dt><dd>The probability assigned to the <code>true</code> candidate within a false/true pair.</dd></div>
+        <div><dt><span class="type-mark">S</span>Score</dt><dd>The expected zero-based stage index, assuming equally spaced ordinal stages.</dd></div>
+      </dl>
+      <p class="note">The released native system uses a frozen model with no trained decision head. Probabilities are normalized over the supplied candidates; concentration is not the probability of being correct.</p>
+    </section>
+
+    <section id="demo" class="demo-section" aria-labelledby="demo-title">
+      <div class="wrap">
+        <div class="section-heading split"><div><p class="eyebrow">See the system</p><h2 id="demo-title">From message to inspectable decision.</h2></div><a class="text-link" href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/demo/README.md">Interface guide ↗</a></div>
+        <figure class="video-frame">
+          <video controls playsinline preload="none" poster="assets/workbench.png" aria-label="Captioned Mini Jev demonstration, 2 minutes 25 seconds" aria-describedby="video-caption">
+            <source src="assets/Mini_Jev_Demonstration.mp4" type="video/mp4">
+            <p><a href="assets/Mini_Jev_Demonstration.mp4">Download the demonstration video.</a></p>
+          </video>
+          <figcaption id="video-caption">Recorded interaction with the local model · Captions embedded in the video · <a href="assets/Mini_Jev_Demonstration.mp4">Open video directly</a></figcaption>
+        </figure>
+        <p class="note">This earlier recording shows the released interface. Its final caption names the earlier source branch; later research integrations are not shown. English examples illustrate the interface, while published task-quality evaluations use Japanese data. This page hosts the recording; run the application locally for live inference.</p>
+      </div>
+    </section>
+
+    <section id="evidence" class="wrap section" aria-labelledby="evidence-title">
+      <div class="section-heading"><p class="eyebrow">What we measured</p><h2 id="evidence-title">A system you can inspect. Evidence you can check.</h2><p>The contribution is a runnable local workbench and an auditable evaluation of its behavior. Candidate scoring and model-inspection interfaces have prior art, discussed in the paper.</p></div>
+      <div class="findings">
+        <article><p class="finding-number">1,350 / 1,350</p><h3>Matched decision pairs</h3><p>Direct readout and native one-token generation produced identical labels and candidate logits in every matched pair.</p><p class="finding-limit">No latency advantage over native one-token generation was established.</p></article>
+        <article><p class="finding-number">26,050</p><h3>Measured research requests</h3><p>One matched output-mode study, followed by two studies of presentation sensitivity and averaging across three checkpoints.</p><p class="finding-limit">Requests are not independent questions. Reduced order sensitivity can coexist with incorrect or nearly constant predictions.</p></article>
+        <article><p class="finding-number">56 / 56</p><h3>Analysis outputs reproduced</h3><p>CPU-only reanalysis reproduced the derived outputs byte for byte from retained records.</p><p class="finding-limit">This is analysis replay. Native build and smoke checks used the same Mac and verified caches, not an independent replication.</p></article>
+      </div>
+      <details class="limits"><summary>Scope, limitations, and prior work</summary><div><p>Task-quality evidence comes from Japanese public-data subsets on one Apple Silicon Mac. Public-data contamination is unknown. The separate 2,400-item local regression suite is AI-authored. No human usability study or second-machine replication has been completed.</p><p>Probability averaging requires multiple model calls and does not consistently improve accuracy. The model comparisons also differ in runtime and precision, so differences cannot be attributed to model size alone.</p><p>Mini Jev was independently inspired by TypeSafe's Jev. It does not reproduce Jev's architecture, training, calibration, speed, or protocol. The paper situates candidate scoring and inspection alongside prior work including Ma et al., Hanna and Feng, LMQL, ChainForge, and LLM Comparator.</p><p>AI assistance in implementation, analysis, and writing is disclosed in the manuscript. The author is responsible for its content. These materials have not been accepted by or submitted to a conference as of 25 September 2026.</p></div></details>
+      <div class="resources">
+        <a href="https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/naacl2027-demo/paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip"><span>Download source &amp; evidence</span><small>Versioned ZIP · 18.1 MB ↗</small></a>
+        <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/reproducibility/README.md"><span>Reproduce the analysis</span><small>Instructions, scope, and SHA-256 ↗</small></a>
+        <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/comparator_study/README.md"><span>LMQL diagnostic</span><small>12 matching labels; 3 probability-tolerance failures ↗</small></a>
+        <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/chainforge_integration/README.md"><span>ChainForge diagnostic</span><small>4 request pairs; 8 typed-answer pairs matched ↗</small></a>
+      </div>
+      <p class="note">The frozen source/evidence ZIP covers the application and three paper studies. The manuscript, video, and framework diagnostics are provided separately above. Framework diagnostics are not general performance or usability benchmarks.</p>
+    </section>
+
+    <section id="run" class="run-section" aria-labelledby="run-title"><div class="wrap run-layout">
+      <div><p class="eyebrow">Run it yourself</p><h2 id="run-title">Keep inference on your Mac.</h2><p>The browser workbench connects to a resident local model through the Mini Jev API. Inspect each candidate and copy the actual request and response.</p><a class="button primary" href="https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo#run-the-native-service">Installation instructions ↗</a></div>
+      <div class="requirements"><h3>Native setup</h3><dl><div><dt>Hardware</dt><dd>Apple M5 Pro · 64 GB unified memory</dd></div><div><dt>System</dt><dd>macOS 26.4 (tested)</dd></div><div><dt>Required tools</dt><dd>Python 3.10+, Xcode command-line tools, CMake, Git</dd></div><div><dt>Model</dt><dd>Qwen3.6-35B-A3B Q4_K_M · ~20.4 GB download</dd></div></dl><p class="note">Model weights and native binaries are not bundled. Lower-memory machines have not been validated. For CPU-only analysis replay, use the reproduction instructions above.</p></div>
+    </div></section>
+
+    <section id="cite" class="wrap section citation" aria-labelledby="cite-title">
+      <div><p class="eyebrow">Reference</p><h2 id="cite-title">Cite the manuscript</h2><p>This citation points to the current public manuscript. An arXiv identifier will be added after announcement.</p><a class="text-link" href="citation.bib" download>Download BibTeX ↓</a></div>
+      <pre tabindex="0" aria-label="Manuscript BibTeX citation"><code>@misc{oshio2026minijev,
+  title = {Mini Jev: An Inspectable Local Interface
+    for Typed Decisions from Frozen Language Models},
+  author = {Oshio, Yuki},
+  year = {2026},
+  note = {Research manuscript; not peer reviewed},
+  url = {https://uphash-network.github.io/mini-jev/}
+}</code></pre>
+    </section>
+  </main>
+  <footer class="wrap"><p><strong>Mini Jev</strong> · Yuki Oshio · UPHASH Inc.</p><p><a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/LICENSE">Code: MIT</a> · <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/NOTICE.md">Data and third-party notices</a> · <a href="https://github.com/UpHash-Network/mini-jev/issues">Issues &amp; feedback</a></p><p class="note">Research snapshot: 25 September 2026. Dataset-derived material and model weights retain their applicable upstream licenses.</p></footer>
+</body>
+</html>
