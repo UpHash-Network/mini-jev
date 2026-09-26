@@ -1,7 +1,10 @@
 # Mini Jev — NAACL 2027 System Demonstrations manuscript
 
-**Manuscript and reproducibility artifacts completed on 25 September 2026.
-Not submitted, accepted, or peer reviewed.**
+**Conference submission preparation, updated 26 September 2026.**
+The related preprint was submitted to arXiv on 26 September and is awaiting
+moderation; a public arXiv ID is not yet available. This NAACL manuscript is
+**not submitted, accepted, or peer reviewed**. The arXiv submission and this
+continuing conference revision are distinct versions.
 
 Author: **Yuki Oshio, UPHASH Inc.** Single author; identified for the single-blind track.
 
@@ -15,7 +18,9 @@ Author: **Yuki Oshio, UPHASH Inc.** Single author; identified for the single-bli
   `a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053`.
 - [Reproduction instructions and validation](reproducibility/README.md) —
   CPU-only analysis replay; native installation; exact manifests and limitations.
-- [Captioned live demonstration video](https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/Mini_Jev_Demonstration.mp4)
+- [60-second evidence walkthrough](https://uphash-network.github.io/mini-jev/#demo)
+  — an explanation of retained experiment results, not a new live run.
+- [Captioned recorded interface demonstration](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Demonstration.mp4)
   — 144.96 seconds, 1920 × 1080, MPEG4/H.264. This unchanged earlier recording
   demonstrates the same released interface; its closing caption names the
   earlier source branch. It does not demonstrate the later research-only integrations.
@@ -24,7 +29,8 @@ Author: **Yuki Oshio, UPHASH Inc.** Single author; identified for the single-bli
 - [ChainForge integration diagnostic](chainforge_integration/README.md) —
   actual provider registration/dispatch and the released local API, without a
   browser-interface or human usability claim.
-- [Final artifact checks](FINAL_CHECKS.20260925.json).
+- [Current manuscript revision and checks](REVISION.20260926.ja.md) — two added primary-source citations; unchanged measurements.
+- [Original source/evidence artifact checks](FINAL_CHECKS.20260925.json) — historical 25 September snapshot.
 
 The source/evidence ZIP is a frozen composition of the application and the three
 paper studies (26,050 measured research requests). It excludes the current
@@ -70,7 +76,7 @@ The [official call](https://2027.naacl.org/calls/system_demonstration/) opens
 submission **1 November 2026**. Deadline: **4 December 2026, 23:59 AoE**
 (**5 December, 20:59 JST**). The internal target is 20 November JST. The actual
 submission form, account access and current venue requirements must be checked
-when the portal opens. There is no submission ID or receipt yet. The earlier
+when the portal opens. There is no NAACL submission ID or receipt yet. The separate arXiv preprint is awaiting moderation. The earlier
 EACL attempt closed without a submission. No overlapping journal submission has
 been made; the substantive journal extension remains separate.
 

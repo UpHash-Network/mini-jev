@@ -1,0 +1,54 @@
+{
+  "checked_at_utc": "2026-09-26T03:38:09.480577+00:00",
+  "video": {
+    "duration_seconds": 60.0,
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "inspected_frame_times": [
+      2,
+      9,
+      18,
+      31,
+      33,
+      47,
+      50,
+      57
+    ],
+    "primary_content_inside_frame": true,
+    "no_clipping_or_overlap_found": true,
+    "independent_saved_data_reanalysis": {
+      "items": 200,
+      "correct": 158,
+      "errors": 42,
+      "reversal_flips": 0,
+      "illustrative_item": "jcola:in_domain_valid:2827",
+      "probabilities_match": true
+    },
+    "no_new_inference": true,
+    "browser_playback": {
+      "duration": 60,
+      "playing_observed": true,
+      "ready_state": 4,
+      "error": null
+    }
+  },
+  "page": {
+    "desktop_width": 1440,
+    "mobile_width": 390,
+    "mobile_horizontal_overflow": false,
+    "local_link_checks": 90,
+    "duplicate_html_ids": false
+  },
+  "paper": {
+    "pages": 8,
+    "nonreference_pages": "1-6",
+    "references_pages": "7-8",
+    "undefined_citations": false,
+    "overfull_boxes": false,
+    "submitted_arxiv_unchanged": true,
+    "frozen_evidence_unchanged": true
+  },
+  "review_scope": "AI-agent visual and numerical review, not human peer review."
+}

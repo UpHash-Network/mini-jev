@@ -1,0 +1,54 @@
+{
+  "dataset": "JCoLA",
+  "model": "Qwen2.5-1.5B-Instruct",
+  "temperature": 1,
+  "unique_items": 200,
+  "predicted_acceptable": 200,
+  "correct": 158,
+  "incorrect": 42,
+  "display_reversal_label_flips": 0,
+  "illustrative_case_selection": "Highest baseline P(true) among the 42 errors; deliberately illustrative, not a random example.",
+  "illustrative_case": [
+    {
+      "condition": "baseline",
+      "item_id": "jcola:in_domain_valid:2827",
+      "label": "true",
+      "gold_label": "false",
+      "probabilities": {
+        "false": 0.001187697310964115,
+        "true": 0.998812302689036
+      },
+      "concentration": 0.9867459452609441,
+      "request_index": 2466
+    },
+    {
+      "condition": "baseline_repeat",
+      "item_id": "jcola:in_domain_valid:2827",
+      "label": "true",
+      "gold_label": "false",
+      "probabilities": {
+        "false": 0.001187697310964115,
+        "true": 0.998812302689036
+      },
+      "concentration": 0.9867459452609441,
+      "request_index": 2468
+    },
+    {
+      "condition": "display_reverse",
+      "item_id": "jcola:in_domain_valid:2827",
+      "label": "true",
+      "gold_label": "false",
+      "probabilities": {
+        "false": 0.0008193260358669678,
+        "true": 0.999180673964133
+      },
+      "concentration": 0.9904176718302247,
+      "request_index": 2467
+    }
+  ],
+  "source_zip_sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+  "source_member": "mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-1.5b/predictions.jsonl",
+  "source_member_sha256": "310658568433ae4bf3b68e9138054ea6d63aad4d3c12a7ee48ab60584a545197",
+  "no_original_dataset_text_included": true,
+  "not_new_inference": true
+}

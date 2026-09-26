@@ -29,8 +29,9 @@
       <p class="subtitle">An inspectable local interface for typed decisions from frozen language models</p>
       <p class="authors">Yuki Oshio <span aria-hidden="true">/</span> UPHASH Inc.</p>
       <p class="intro">Give a language model a state, explicit criteria, and a set of candidates. Inspect the typed decision, the candidate distribution, and the request that produced it.</p>
-      <div class="actions"><a class="button primary" href="assets/Mini_Jev_Manuscript.pdf">Read the paper <span>PDF · 8 pages</span></a><a class="button" href="#demo">Watch the demo <span>2 min 25 sec</span></a><a class="button" href="https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo">Explore the code <span>GitHub</span></a></div>
-      <p class="status">Research manuscript · 25 September 2026 · Not peer reviewed</p>
+      <div class="actions"><a class="button primary" href="assets/Mini_Jev_Manuscript.pdf">Read the paper <span>PDF · 8 pages</span></a><a class="button" href="#demo">See the evidence <span>60 sec + full demo</span></a><a class="button" href="https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo">Explore the code <span>GitHub</span></a></div>
+      <p class="status">Updated 26 September 2026 · Preprint submitted to arXiv; awaiting moderation · Not peer reviewed</p>
+      <p class="note">The linked PDF is the current conference-preparation revision. NAACL submission is still pending. An arXiv link will appear after the preprint is announced.</p>
     </section>
 
     <section class="mechanism wrap" aria-labelledby="mechanism-title">
@@ -54,13 +55,23 @@
       <div class="wrap">
         <div class="section-heading split"><div><p class="eyebrow">See the system</p><h2 id="demo-title">From message to inspectable decision.</h2></div><a class="text-link" href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/demo/README.md">Interface guide ↗</a></div>
         <figure class="video-frame">
-          <video controls playsinline preload="none" poster="assets/workbench.png" aria-label="Captioned Mini Jev demonstration, 2 minutes 25 seconds" aria-describedby="video-caption">
-            <source src="assets/Mini_Jev_Demonstration.mp4" type="video/mp4">
-            <p><a href="assets/Mini_Jev_Demonstration.mp4">Download the demonstration video.</a></p>
+          <video controls playsinline preload="none" poster="assets/Mini_Jev_60s.jpg" aria-label="Mini Jev evidence walkthrough, 60 seconds" aria-describedby="short-video-caption">
+            <source src="assets/Mini_Jev_60s.mp4" type="video/mp4">
+            <p><a href="assets/Mini_Jev_60s.mp4">Download the 60-second evidence walkthrough.</a></p>
           </video>
-          <figcaption id="video-caption">Recorded interaction with the local model · Captions embedded in the video · <a href="assets/Mini_Jev_Demonstration.mp4">Open video directly</a></figcaption>
+          <figcaption id="short-video-caption">60-second evidence walkthrough · Retained experiment results, not a new live run · <a href="assets/Mini_Jev_60s.mp4">Open short video directly</a> · <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/publication/launch-20260926/video/README.md">Transcript, sources &amp; CC BY-SA license</a></figcaption>
         </figure>
-        <p class="note">This earlier recording shows the released interface. Its final caption names the earlier source branch; later research integrations are not shown. English examples illustrate the interface, while published task-quality evaluations use Japanese data. This page hosts the recording; run the application locally for live inference.</p>
+        <p class="note">A stable decision can still be wrong. This walkthrough explains that observation using retained experiment evidence. Candidate concentration is not a calibrated probability of correctness.</p>
+        <details class="limits"><summary>Watch the full interface recording · 2 min 25 sec</summary><div>
+          <figure class="video-frame">
+            <video controls playsinline preload="none" poster="assets/workbench.png" aria-label="Captioned recorded Mini Jev interface demonstration, 2 minutes 25 seconds" aria-describedby="video-caption">
+              <source src="assets/Mini_Jev_Demonstration.mp4" type="video/mp4">
+              <p><a href="assets/Mini_Jev_Demonstration.mp4">Download the full interface recording.</a></p>
+            </video>
+            <figcaption id="video-caption">Recorded interaction with the local model · Captions embedded in the video · <a href="assets/Mini_Jev_Demonstration.mp4">Open full video directly</a></figcaption>
+          </figure>
+          <p class="note">This earlier recording shows the released interface. Its final caption names the earlier source branch; later research integrations are not shown. English examples illustrate the interface, while published task-quality evaluations use Japanese data. This page hosts recordings; <a href="#run">run the application locally</a> for live inference.</p>
+        </div></details>
       </div>
     </section>
 
@@ -71,7 +82,7 @@
         <article><p class="finding-number">26,050</p><h3>Measured research requests</h3><p>One matched output-mode study, followed by two studies of presentation sensitivity and averaging across three checkpoints.</p><p class="finding-limit">Requests are not independent questions. Reduced order sensitivity can coexist with incorrect or nearly constant predictions.</p></article>
         <article><p class="finding-number">56 / 56</p><h3>Analysis outputs reproduced</h3><p>CPU-only reanalysis reproduced the derived outputs byte for byte from retained records.</p><p class="finding-limit">This is analysis replay. Native build and smoke checks used the same Mac and verified caches, not an independent replication.</p></article>
       </div>
-      <details class="limits"><summary>Scope, limitations, and prior work</summary><div><p>Task-quality evidence comes from Japanese public-data subsets on one Apple Silicon Mac. Public-data contamination is unknown. The separate 2,400-item local regression suite is AI-authored. No human usability study or second-machine replication has been completed.</p><p>Probability averaging requires multiple model calls and does not consistently improve accuracy. The model comparisons also differ in runtime and precision, so differences cannot be attributed to model size alone.</p><p>Mini Jev was independently inspired by TypeSafe's Jev. It does not reproduce Jev's architecture, training, calibration, speed, or protocol. The paper situates candidate scoring and inspection alongside prior work including Ma et al., Hanna and Feng, LMQL, ChainForge, and LLM Comparator.</p><p>AI assistance in implementation, analysis, and writing is disclosed in the manuscript. The author is responsible for its content. These materials have not been accepted by or submitted to a conference as of 25 September 2026.</p></div></details>
+      <details class="limits"><summary>Scope, limitations, and prior work</summary><div><p>Task-quality evidence comes from Japanese public-data subsets on one Apple Silicon Mac. Public-data contamination is unknown. The separate 2,400-item local regression suite is AI-authored. No human usability study or second-machine replication has been completed.</p><p>Probability averaging requires multiple model calls and does not consistently improve accuracy. The model comparisons also differ in runtime and precision, so differences cannot be attributed to model size alone.</p><p>Mini Jev was independently inspired by TypeSafe's Jev. It does not reproduce Jev's architecture, training, calibration, speed, or protocol. The paper situates candidate scoring and inspection alongside prior work including Ma et al., Hanna and Feng, LMQL, ChainForge, and LLM Comparator. Closely related scoring work includes <a href="https://aclanthology.org/2024.naacl-short.31/">Zhuang et al., Beyond Yes and No</a> and <a href="https://arxiv.org/abs/2609.18188">Wang et al., Single-Token Expected-Value Scoring</a>; Mini Jev does not claim to introduce candidate-logit normalization or expected-value scoring.</p><p>AI assistance in implementation, analysis, and writing is disclosed in the manuscript. The author is responsible for its content. As of 26 September 2026, the preprint is submitted to arXiv and awaiting moderation. The continuing conference manuscript has not been submitted or accepted; neither version is peer reviewed.</p></div></details>
       <div class="resources">
         <a href="https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/naacl2027-demo/paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip"><span>Download source &amp; evidence</span><small>Versioned ZIP · 18.1 MB ↗</small></a>
         <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/reproducibility/README.md"><span>Reproduce the analysis</span><small>Instructions, scope, and SHA-256 ↗</small></a>
@@ -98,6 +109,6 @@
 }</code></pre>
     </section>
   </main>
-  <footer class="wrap"><p><strong>Mini Jev</strong> · Yuki Oshio · UPHASH Inc.</p><p><a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/LICENSE">Code: MIT</a> · <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/NOTICE.md">Data and third-party notices</a> · <a href="https://github.com/UpHash-Network/mini-jev/issues">Issues &amp; feedback</a></p><p class="note">Research snapshot: 25 September 2026. Dataset-derived material and model weights retain their applicable upstream licenses.</p></footer>
+  <footer class="wrap"><p><strong>Mini Jev</strong> · Yuki Oshio · UPHASH Inc.</p><p><a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/LICENSE">Code: MIT</a> · <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/NOTICE.md">Data and third-party notices</a> · <a href="https://github.com/UpHash-Network/mini-jev/issues">Issues &amp; feedback</a></p><p class="note">Page updated: 26 September 2026. Numerical evidence frozen: 25 September 2026. Dataset-derived material and model weights retain their applicable upstream licenses.</p></footer>
 </body>
 </html>

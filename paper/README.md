@@ -1,6 +1,16 @@
-# Working-paper package
+# Mini Jev paper and evidence
 
-Version **v0.2**, September 20, 2026. The matched experiment and its independent numerical audit are complete. This is an empirical working draft, not a submitted, accepted, peer-reviewed, or formally deposited paper. It extends the original [technical report](TECHNICAL_REPORT.md), which remains a record of the initial release. The completed run retains all 4,050 scheduled measured requests and 21 warm-ups, with zero failures.
+**Start with the [current manuscript and reproducibility guide](naacl2027/README.md).**
+
+- [Project page](https://uphash-network.github.io/mini-jev/) — paper, 60-second evidence walkthrough, full interface recording, and installation.
+- [Current PDF](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Manuscript.pdf).
+- [Model-free reproduction package](naacl2027/reproducibility/README.md) — 26,050 retained research requests; 56 reproduced analysis outputs.
+
+On **26 September 2026**, a preprint was submitted to arXiv and is awaiting moderation, without a public arXiv ID. The conference manuscript is being prepared for NAACL 2027 System Demonstrations and is not submitted, accepted, or peer reviewed. The material below preserves the earlier v0.2 working paper and its evidence.
+
+## Historical v0.2 working-paper package
+
+Version **v0.2**, September 20, 2026. The matched experiment and its independent numerical audit are complete. This older empirical working draft was not submitted, accepted, peer reviewed, or formally deposited in this form; the later preprint status is stated above. It extends the original [technical report](TECHNICAL_REPORT.md), which remains a record of the initial release. The completed run retains all 4,050 scheduled measured requests and 21 warm-ups, with zero failures.
 
 - [Manuscript, editable Markdown](MANUSCRIPT.md)
 - [Review PDF](Mini_Jev_Working_Paper.pdf)

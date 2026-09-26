@@ -1,0 +1,55 @@
+{
+  "artifact": "docs/assets/Mini_Jev_60s.mp4",
+  "duration_seconds": 60.0,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 25,
+  "audio": false,
+  "captions": "Embedded English explanatory text; Japanese and English transcript supplied separately.",
+  "sha256": "7374d21b2eba977b0ad13f8d9373f66d708b15a9a915bae6ec9c5b77ba6e0551",
+  "bytes": 1418373,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 6,
+      "type": "Introduction"
+    },
+    {
+      "start": 6,
+      "end": 18,
+      "type": "Archival live UI",
+      "source": "paper/eacl2027/Mini_Jev_Demonstration.mp4",
+      "source_start": 34.5,
+      "source_end": 46.5,
+      "modification": "Only earlier 120px caption strip replaced; entire 1920x960 UI retained. Real-time speed."
+    },
+    {
+      "start": 18,
+      "end": 32,
+      "type": "Rendered aggregate study results"
+    },
+    {
+      "start": 32,
+      "end": 48,
+      "type": "Rendered illustrative error records"
+    },
+    {
+      "start": 48,
+      "end": 54,
+      "type": "Interpretation"
+    },
+    {
+      "start": 54,
+      "end": 60,
+      "type": "Project link and attribution"
+    }
+  ],
+  "prior_video_sha256": "094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123",
+  "evidence": "EVIDENCE.json",
+  "selection_limit": "Highest baseline P(true) among the 42 errors; deliberately illustrative, not a random example.",
+  "scope": "JCoLA 200-item panel, not a model-wide accuracy claim. UI excerpt uses a different checkpoint and English interface examples, not this JCoLA run.",
+  "license": "CC BY-SA 4.0 for this composed evidence video and data-derived visuals. Original software code remains MIT.",
+  "attribution": "JCoLA: Taiga Someya, Yushi Sugimoto, Yohei Oseki (2024), https://aclanthology.org/2024.lrec-main.828/ ; https://github.com/osekilab/JCoLA ; https://creativecommons.org/licenses/by-sa/4.0/"
+}

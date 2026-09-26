@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "content_snapshot": "2026-09-25",
+  "content_snapshot": "2026-09-26",
   "evidence_commit": "bd025e8b1d14352a440d289c73b00ae445290935",
   "assets": [
     {
       "path": "assets/Mini_Jev_Manuscript.pdf",
       "source": "paper/naacl2027/NAACL2027_Mini_Jev.pdf",
-      "bytes": 221405,
-      "sha256": "32c013069ef362d654c1f721bd30204c9de7d9fe1ccefadace54b43836296093"
+      "bytes": 222801,
+      "sha256": "5284382999989fefa75d23ebc65d424beef22883915b141b7268b015986d6849"
     },
     {
       "path": "assets/workbench.png",
@@ -20,6 +20,22 @@
       "source": "paper/eacl2027/Mini_Jev_Demonstration.mp4",
       "bytes": 9105242,
       "sha256": "094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123"
+    },
+    {
+      "path": "assets/Mini_Jev_60s.mp4",
+      "source": "publication/launch-20260926/video/build_video.py",
+      "provenance": "publication/launch-20260926/video/PROVENANCE.json",
+      "bytes": 1418373,
+      "sha256": "7374d21b2eba977b0ad13f8d9373f66d708b15a9a915bae6ec9c5b77ba6e0551"
+    },
+    {
+      "path": "assets/Mini_Jev_60s.jpg",
+      "source": "publication/launch-20260926/video/build_video.py",
+      "bytes": 162542,
+      "sha256": "f2ab9f72d7aaa9049efa22532e5a1beea3774c9e1f4b29fadb054ad77dcb7752"
     }
-  ]
+  ],
+  "manuscript_revision": "paper/naacl2027/REVISION.20260926.json",
+  "arxiv_status": "submitted_awaiting_moderation",
+  "arxiv_public_id": null
 }

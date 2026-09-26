@@ -1,0 +1,195 @@
+{
+  "checked_at": "2026-09-26",
+  "source": "https://docs.x.com/fundamentals/counting-characters",
+  "validator": "twitter-text@3.1.0 (official implementation)",
+  "url_placeholder_testing": "Syntactic test URL only; no publication is inferred and no announced release copy is committed.",
+  "post_count": 24,
+  "max_weighted_length": 259,
+  "posts": [
+    {
+      "stage": "now",
+      "language": "ja",
+      "kind": "単独投稿",
+      "weighted_length": 211,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "ja",
+      "kind": "スレッド 1/5",
+      "weighted_length": 185,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "ja",
+      "kind": "スレッド 2/5",
+      "weighted_length": 179,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "ja",
+      "kind": "スレッド 3/5",
+      "weighted_length": 169,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "ja",
+      "kind": "スレッド 4/5",
+      "weighted_length": 166,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "ja",
+      "kind": "スレッド 5/5",
+      "weighted_length": 191,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "en",
+      "kind": "単独投稿",
+      "weighted_length": 234,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "en",
+      "kind": "スレッド 1/5",
+      "weighted_length": 237,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "en",
+      "kind": "スレッド 2/5",
+      "weighted_length": 239,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "en",
+      "kind": "スレッド 3/5",
+      "weighted_length": 227,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "en",
+      "kind": "スレッド 4/5",
+      "weighted_length": 259,
+      "valid": true
+    },
+    {
+      "stage": "now",
+      "language": "en",
+      "kind": "スレッド 5/5",
+      "weighted_length": 246,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "ja",
+      "kind": "単独投稿",
+      "weighted_length": 214,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "ja",
+      "kind": "スレッド 1/5",
+      "weighted_length": 198,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "ja",
+      "kind": "スレッド 2/5",
+      "weighted_length": 179,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "ja",
+      "kind": "スレッド 3/5",
+      "weighted_length": 169,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "ja",
+      "kind": "スレッド 4/5",
+      "weighted_length": 166,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "ja",
+      "kind": "スレッド 5/5",
+      "weighted_length": 191,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "en",
+      "kind": "単独投稿",
+      "weighted_length": 240,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "en",
+      "kind": "スレッド 1/5",
+      "weighted_length": 227,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "en",
+      "kind": "スレッド 2/5",
+      "weighted_length": 239,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "en",
+      "kind": "スレッド 3/5",
+      "weighted_length": 227,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "en",
+      "kind": "スレッド 4/5",
+      "weighted_length": 259,
+      "valid": true
+    },
+    {
+      "stage": "announced",
+      "language": "en",
+      "kind": "スレッド 5/5",
+      "weighted_length": 246,
+      "valid": true
+    }
+  ],
+  "offline_validation": {
+    "invalid_url_cases_rejected": 9,
+    "stages_rendered": 2,
+    "overwriting_existing_directory_rejected": true,
+    "missing_public_page_confirmation_rejected": true,
+    "weights_match_official_implementation": true,
+    "temporary_test_outputs_removed": true,
+    "external_posting_performed": false,
+    "reddit_output": "reddit-machinelearning-update.md",
+    "reddit_destination": "reply to existing pawz0ha comment in official Self-Promotion Thread 1w4xaes",
+    "reddit_official_thread_invitation_verified": "2026-09-26",
+    "reddit_thread_locked": false,
+    "reddit_thread_archived": false,
+    "reddit_thread_stickied": true,
+    "reddit_account_permissions_verified": false,
+    "reddit_moderator_acceptance_guaranteed": false
+  }
+}

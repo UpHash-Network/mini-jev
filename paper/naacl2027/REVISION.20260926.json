@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-26",
+  "status": "next_naacl_manuscript_revised_not_submitted",
+  "scope": "Related-work addition and wording compression; no changed experiments or submitted arXiv files.",
+  "added_references": [
+    "zhuang2024beyond",
+    "wang2026singletoken"
+  ],
+  "sources": [
+    {
+      "url": "https://aclanthology.org/2024.naacl-short.31.pdf",
+      "verified_sections": "3.2-3.3, equations (1)-(3); official ACL metadata",
+      "scope": "Zero-shot fine-grained label log-likelihoods, normalized expected relevance, and separate peak relevance likelihood."
+    },
+    {
+      "url": "https://arxiv.org/html/2609.18188v1",
+      "verified_sections": "3.2-3.3; arXiv v1 metadata",
+      "scope": "Grade-token expected relevance for job-candidate ranking, plus MSE+CE objective and LoRA fine-tuning."
+    }
+  ],
+  "files": {
+    "main.tex": {
+      "sha256": "5808a3e5a4668999951d3b5ccd78d0fc028366fdefe15347d6116e549881c9c5",
+      "bytes": 26622
+    },
+    "references.bib": {
+      "sha256": "e376edc5377b073c4763f2065c3d84c6295d5222f3e3fd213cb2c393d432ff89",
+      "bytes": 11501
+    },
+    "NAACL2027_Mini_Jev.pdf": {
+      "sha256": "5284382999989fefa75d23ebc65d424beef22883915b141b7268b015986d6849",
+      "bytes": 222801
+    }
+  },
+  "previous_pdf_sha256": "32c013069ef362d654c1f721bd30204c9de7d9fe1ccefadace54b43836296093",
+  "validation": {
+    "total_pages": 8,
+    "all_nonreference_content_pages": "1-6",
+    "reference_pages": "7-8",
+    "rendered_and_visually_inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "missing_or_duplicate_citation_keys": false,
+    "undefined_references": false,
+    "overfull_boxes": false,
+    "replacement_characters_or_question_mark_placeholders": false,
+    "official_style_hashes_match": true,
+    "abstract_byte_identical": true,
+    "evidence_section_byte_identical": true,
+    "arxiv_tree_byte_identical": true,
+    "arxiv_files_checked": 15
+  },
+  "warnings": [
+    "Underfull hbox warnings remain; visual inspection found no clipping or overlap.",
+    "Tectonic reports a legacy lineno.sty invalid-UTF-8 input warning; no U+FFFD appears in extracted rendered text.",
+    "inputenc ignored under the UTF-8 based engine; compilation completed."
+  ],
+  "build_command": "python3 paper/naacl2027/build.py --tectonic /path/to/tectonic-0.17.0",
+  "review_limits": "AI-agent review, not independent human peer review; no new ranking benchmark, usability study, or external replication.",
+  "publication": "No new submission or replacement on arXiv performed by this revision."
+}
