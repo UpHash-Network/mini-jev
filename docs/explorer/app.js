@@ -1,4 +1,4 @@
-import {validatePanel,compare,comparisonExport,panelFrequencies} from './core.mjs';
+import {validatePanel,compare,comparisonExport,panelFrequencies} from './core.mjs?v=20260928-2';
 
 const $=id=>document.getElementById(id);
 const state={index:null,panel:null,descriptor:null,item:null,featured:null,load:0,cache:new Map()};
@@ -14,7 +14,7 @@ function percent(n){return number(n*100,6)+'%';}
 function options(id,values,selected){const el=clear(id);for(const [value,text] of values){const o=node('option',text);o.value=value;el.append(o);}if(selected!=null&&values.some(x=>x[0]===selected))el.value=selected;}
 function semantic(key){if(state.panel.dataset==='JCoLA')return key==='true'?'true · acceptable':'false · unacceptable';if(state.panel.type==='score')return 'Stage '+key;return key;}
 function fail(error){$('workspace').hidden=true;status('Evidence could not be loaded or verified. '+error.message+' Reload to retry, or use the downloadable source archive.',true);}
-async function verifiedJSON(url,sha){const res=await fetch(url);if(!res.ok)throw new Error('HTTP '+res.status);const buffer=await res.arrayBuffer();if(sha){if(!crypto.subtle)throw new Error('SHA-256 verification requires HTTPS or localhost.');const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',buffer)),b=>b.toString(16).padStart(2,'0')).join('');if(digest!==sha)throw new Error('Published data hash mismatch.');}return JSON.parse(new TextDecoder().decode(buffer));}
+async function verifiedJSON(url,sha){const res=await fetch(url,{cache:'no-store'});if(!res.ok)throw new Error('HTTP '+res.status);const buffer=await res.arrayBuffer();if(sha){if(!crypto.subtle)throw new Error('SHA-256 verification requires HTTPS or localhost.');const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',buffer)),b=>b.toString(16).padStart(2,'0')).join('');if(digest!==sha)throw new Error('Published data hash mismatch.');}return JSON.parse(new TextDecoder().decode(buffer));}
 function panels(){return state.index.panels;}
 function updatePanelOptions(desired){const available=panels().filter(p=>p.study_id===$('study').value);const unique=[...new Map(available.map(p=>[p.model_key,p])).values()];options('panel',unique.map(p=>[p.model_key,modelTitle(p)]),desired);}
 function modelMetadata(p){return p.model_metadata??state.index.models?.[p.study_id]?.[p.model_key]??null;}
@@ -25,7 +25,7 @@ async function loadPanel(desiredItem=null,conditions=null){
   const request=++state.load,d=descriptor();$('workspace').hidden=true;status('Loading and checking recorded panel…');
   if(!d)throw new Error('This study/model/task combination is unavailable.');
   const path=d.path??d.file;
-  let panel=state.cache.get(path);if(!panel){panel=validatePanel(await verifiedJSON('data/'+path.replace(/^data\//,''),d.sha256));state.cache.set(path,panel);}
+  let panel=state.cache.get(path);if(!panel){panel=validatePanel(await verifiedJSON('data/'+path.replace(/^data\//,'')+'?sha256='+encodeURIComponent(d.sha256),d.sha256));state.cache.set(path,panel);}
   if(request!==state.load)return;
   state.panel=panel;state.descriptor=d;$('search').value='';const metadata=modelMetadata(panel);$('model-summary').textContent=metadata?'Model: '+metadata.name+' · '+metadata.backend+' / '+metadata.precision+' · '+metadata.device:'';
   options('item',panel.items.map(x=>[x.item_id,x.item_id]),desiredItem);

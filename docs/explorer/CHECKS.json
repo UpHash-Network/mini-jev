@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-27T16:48:00.143414+00:00",
+  "checked_at_utc": "2026-09-27T16:51:28.901869+00:00",
   "scope": "Software and evidence-integrity verification by AI operators; zero human participants and zero new model calls.",
   "python_integrity_tests": {
     "passed": 21,
@@ -56,13 +56,13 @@
   "artifacts": [
     {
       "path": "docs/explorer/index.html",
-      "sha256": "cbc14ada5f83d315354ae0ee270f60ce390ce8c0177ffae5636cb7d653af6a0e",
-      "bytes": 5474
+      "sha256": "64e6c2b178b7ee71fdf0a8aff5bba4d2a9b2a07d0817d29029292491fc980529",
+      "bytes": 5487
     },
     {
       "path": "docs/explorer/app.js",
-      "sha256": "eeb25bcf710fcfc57c9db0746e30346ec95394402265ce5a355c0a2e9e46a4c9",
-      "bytes": 18644
+      "sha256": "2a28d2215db2772180b77975fc5413391b109c7051af9fc098b9bb1d323d114c",
+      "bytes": 18716
     },
     {
       "path": "docs/explorer/core.mjs",
@@ -101,6 +101,8 @@
     "fix": "Preserve exact archived values after validation; deterministic Decimal diagnostics; retain strict byte-rebuild test",
     "maximum_numeric_change_from_initial_export": 8.89e-16,
     "original_saved_values_changed": false,
-    "initial_run": "https://github.com/UpHash-Network/mini-jev/actions/runs/36334204373"
-  }
+    "initial_run": "https://github.com/UpHash-Network/mini-jev/actions/runs/36334204373",
+    "linux_ci_passed": "https://github.com/UpHash-Network/mini-jev/actions/runs/36334598568"
+  },
+  "deployment_cache_fix": "Index and panels bypass the browser HTTP cache; panel URLs include the expected SHA-256 and the browser still verifies every fetched panel. In-memory verified panels remain reusable."
 }
