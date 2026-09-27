@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "content_snapshot": "2026-09-27",
+  "content_snapshot": "2026-09-28",
   "evidence_commit": "bd025e8b1d14352a440d289c73b00ae445290935",
   "assets": [
     {
@@ -39,5 +39,14 @@
   "manuscript_revision": "paper/naacl2027/nonhuman_revision_20260927/PUBLICATION_MANIFEST.json",
   "arxiv_status": "submitted_awaiting_moderation",
   "arxiv_public_id": null,
-  "evidence_commit_scope": "Original frozen source/evidence publication; not the current manuscript revision"
+  "evidence_commit_scope": "Original frozen source/evidence publication; not the current manuscript revision",
+  "evidence_explorer": {
+    "added": "2026-09-28",
+    "url": "https://uphash-network.github.io/mini-jev/explorer/",
+    "mode": "saved_records_no_live_inference",
+    "data_index": "explorer/data/index.json",
+    "data_index_sha256": "9bb4523d3e44a72f891b8508fdc9cfa93521b0fabcbd7282258d78d5fb7b3aeb",
+    "checks": "explorer/CHECKS.json",
+    "scope": "Later interface supplement; September 27 manuscript, submitted arXiv package and frozen experiment archive unchanged"
+  }
 }

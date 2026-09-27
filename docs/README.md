@@ -27,6 +27,10 @@ When a preprint is announced, update the paper link, manuscript citation,
 DOI, conference submission, or acceptance. Update the manuscript copy and the
 manifest when the source PDF changes. Existing dataset and model licenses still apply.
 
-All primary content works without JavaScript. No analytics, remote fonts, or
+The overview content works without JavaScript. The optional evidence explorer requires JavaScript and performs SHA-256 checks in the browser. No analytics, remote fonts, or
 external embeds. Videos are loaded only on demand. The full interface recording includes embedded captions;
 the short evidence walkthrough presents its explanation as visible text.
+
+## Saved evidence explorer (28 September 2026)
+
+`explorer/` adds a comparison screen for the retained presentation-sensitivity and probability-averaging panels. It is a later interface supplement, separate from the September 27 manuscript and submitted arXiv source. It performs no inference. The original frozen ZIP is the input to the deterministic exporter; see [data scope and derivation](explorer/DATA.md) and [interface verification](explorer/README.md).

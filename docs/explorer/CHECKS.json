@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-09-27T16:41:01.670583+00:00",
+  "scope": "Software and evidence-integrity verification by AI operators; zero human participants and zero new model calls.",
+  "python_integrity_tests": {
+    "passed": 19,
+    "failed": 0
+  },
+  "javascript_core": {
+    "variant_comparisons": 31000,
+    "item_export_roundtrips": 3600,
+    "passed": true,
+    "corrupt_probabilities_and_cross_item_comparisons_rejected": true
+  },
+  "browser": {
+    "surface": "Codex in-app browser",
+    "featured_examples_verified": 4,
+    "viewports": [
+      [
+        1280,
+        1000
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        360,
+        800
+      ]
+    ],
+    "horizontal_overflow_detected": false,
+    "checks": [
+      "Semantic-key reassignment fixture jcola:in_domain_valid:8388; true probability 0.8363860163 displayed in true row",
+      "Shared-call fixture jcola:in_domain_valid:898; forward/reverse cyclic averages share two of two calls",
+      "Continuous gold, expected stage and mode shown separately",
+      "Full-panel score frequency, range and variance displayed for concentrated-label example",
+      "Source file paths, one-based lines and SHA-256 visible for physical and derived records",
+      "Search including no-result recovery, previous/next, study/model/task/condition controls",
+      "URL selection restored after reload",
+      "Downloaded actual JSON parsed and source references resolved; 5,732-byte shared-call comparison",
+      "Project page link works at 360px; comparison numbers remain within viewport"
+    ],
+    "console_errors_final_load": 0
+  },
+  "original_evidence_preserved": {
+    "paper/naacl2027/NAACL2027_Mini_Jev.pdf": "401cd45ea723c0be68d2df7d9bf1498e393647c203b5f22b46c650133833600d",
+    "paper/naacl2027/main.tex": "cf52d2fd5c730f5ca2053fbb7de211c5ecd3fedf78f3eb163c21615911442d34",
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053"
+  },
+  "artifacts": [
+    {
+      "path": "docs/explorer/index.html",
+      "sha256": "cbc14ada5f83d315354ae0ee270f60ce390ce8c0177ffae5636cb7d653af6a0e",
+      "bytes": 5474
+    },
+    {
+      "path": "docs/explorer/app.js",
+      "sha256": "eeb25bcf710fcfc57c9db0746e30346ec95394402265ce5a355c0a2e9e46a4c9",
+      "bytes": 18644
+    },
+    {
+      "path": "docs/explorer/core.mjs",
+      "sha256": "3acbf8fe183b0df83b8861aeefb4fb65e7b829b18914dd44c66aff65cb48659e",
+      "bytes": 5913
+    },
+    {
+      "path": "docs/explorer/explorer.css",
+      "sha256": "808b52883114d9c2ddd2843a2a8014ca25310e24969ca976955a4e6b55a9ab1e",
+      "bytes": 8722
+    },
+    {
+      "path": "docs/explorer/data/index.json",
+      "sha256": "9bb4523d3e44a72f891b8508fdc9cfa93521b0fabcbd7282258d78d5fb7b3aeb",
+      "bytes": 75062
+    },
+    {
+      "path": "scripts/build_evidence_explorer.py",
+      "sha256": "bea0ebf731b0c530637e17427bad8723b05eaa34acc837789d91ba8edc24835a",
+      "bytes": 30171
+    },
+    {
+      "path": "tests/test_evidence_core.mjs",
+      "sha256": "c63a28c6d19d77bbcc686398cf66e880283a0d35644f03f0b44a09dd4b783f63",
+      "bytes": 4040
+    },
+    {
+      "path": "tests/test_evidence_explorer.py",
+      "sha256": "d2f0941da377c959624b8e5768732b52d3d5cbe8757c31864fc89f19e617e46a",
+      "bytes": 17021
+    }
+  ],
+  "submitted_arxiv_files_unchanged": 15
+}

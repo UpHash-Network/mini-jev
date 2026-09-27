@@ -34,6 +34,12 @@ The [paper package](paper/naacl2027/README.md) includes protocols, retained pred
 
 The September 27 revision adds a comparison appendix and a post-hoc analysis of the same 12 LMQL cases; all three original probability-tolerance failures remain. The public API/UI expose typed values, candidate probabilities, and semantic metadata; candidate token IDs and raw logits are retained internally and in research traces. No new inference or human-study results are added.
 
+## Explore recorded decisions
+
+Open the [evidence explorer](https://uphash-network.github.io/mini-jev/explorer/) to compare two retained conditions for the same study, model, and source item. The view aligns probabilities by semantic answer key, distinguishes expected stage from most likely stage, counts shared physical calls once, and exports source references with the comparison. It reads the frozen records; it does not run a model or establish human usability gains. [Data scope and derivation](docs/explorer/DATA.md).
+
+This September 28 interface addition is separate from the September 27 manuscript and the already submitted arXiv version. Featured examples are deterministic illustrations; the full eligible panels remain browsable.
+
 ## Run the native service
 
 The tested native path requires an Apple Silicon Mac with macOS 26.4+, Python 3.10+, Xcode command-line tools, CMake, and Git. The pinned model download is **20.4 GB**. Model weights and prebuilt native binaries are not included in the source repository. Other platforms are not validated for this native path.

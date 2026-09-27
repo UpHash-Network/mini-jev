@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Compare saved Mini Jev research observations by semantic candidate, with exact values and traceable source records. No live inference.">
+  <meta name="theme-color" content="#edf4fb">
+  <title>Evidence explorer · Mini Jev</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="explorer.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#comparison">Skip to comparison</a>
+  <header class="masthead shell"><a class="brand" href="../"><span aria-hidden="true">{j}</span> Mini Jev</a><nav aria-label="Project"><a href="../#evidence">Paper &amp; findings</a><a href="https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo">Source ↗</a></nav></header>
+  <main class="shell">
+    <div class="mode"><span class="mode-dot" aria-hidden="true"></span><strong>Saved research records</strong><span>No live inference · No new experiment</span></div>
+    <section class="intro" aria-labelledby="title"><p class="eyebrow">Evidence explorer</p><h1 id="title">What changed in the decision?</h1><p>Compare recorded conditions with candidates aligned by meaning. Trace each value back to the frozen experiment.</p></section>
+    <section aria-labelledby="examples-title"><h2 id="examples-title" class="small-heading">Start with an observation</h2><div id="examples" class="examples"></div></section>
+    <div id="status" class="status" role="status" aria-live="polite">Loading the published evidence index…</div>
+    <noscript><p class="error">Enable JavaScript to compare records, or <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/reproducibility/README.md">download the source evidence and analysis</a>.</p></noscript>
+    <section id="workspace" hidden aria-label="Recorded comparison">
+      <section class="filters" aria-labelledby="browse-title">
+        <div class="section-top"><h2 id="browse-title" class="small-heading">Browse the retained items</h2><span id="scope-count" class="quiet"></span></div>
+        <div class="filter-grid"><label>Study<select id="study"></select></label><label>Model and runtime<select id="panel"></select></label><label>Task<select id="dataset"></select></label></div>
+        <p id="model-summary" class="quiet"></p>
+        <div class="item-grid"><label>Find an item<input id="search" type="search" placeholder="Search by source item ID" autocomplete="off"></label><label>Source item<select id="item"></select></label><div class="item-navigation"><button id="previous" type="button" aria-label="Previous item">←</button><button id="next" type="button" aria-label="Next item">→</button></div></div>
+        <p class="scope-note">Both sides always use the same source item, task, and model. Original task text is not included in this artifact; item IDs and source hashes identify it. This is not a model ranking.</p>
+      </section>
+      <section id="comparison" class="comparison" aria-labelledby="comparison-title">
+        <div class="section-top"><div><p id="item-context" class="eyebrow"></p><h2 id="comparison-title">Candidate comparison</h2></div><button id="download" type="button" class="download">Download this comparison ↓</button></div>
+        <p id="featured-note" class="featured-note" hidden></p>
+        <div class="condition-grid"><div class="condition-a"><label><span class="condition-tag">A</span> Recorded condition<select id="condition-a"></select></label><p id="condition-a-note" class="quiet"></p></div><div class="condition-b"><label><span class="condition-tag">B</span> Recorded condition<select id="condition-b"></select></label><p id="condition-b-note" class="quiet"></p></div></div>
+        <div id="outcome" class="outcome"></div>
+        <div class="metrics" id="metrics"></div>
+        <h3 class="small-heading probability-heading">Probability within the candidate set</h3>
+        <p class="quiet">A and B share a 0–100% scale. Δ is B − A in percentage points. Values are aligned by semantic key, even when presentation order changes.</p>
+        <div id="probabilities" class="probabilities"></div>
+        <div id="reference" class="reference"></div>
+        <p class="scope-note">Concentration measures how peaked a candidate distribution is; it is not the probability of being correct. Score expectations assume equally spaced stages. Recorded examples do not establish human usability or a causal model-size effect.</p>
+      </section>
+      <details class="provenance"><summary>Trace this comparison to the source records</summary><div id="provenance"></div></details>
+      <details class="provenance"><summary>Scope, example selection, and reproducibility</summary><div id="methodology"></div></details>
+    </section>
+  </main>
+  <footer class="shell"><p>Mini Jev · Yuki Oshio · UPHASH Inc.</p><p><a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/nonhuman_revision_20260927/REVIEWER_GUIDE.md">Model-free verification guide</a> · <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/NOTICE.md">Data licenses &amp; attribution</a> · <a href="../">Project page</a></p><p>Research manuscript; not peer reviewed. Original experiment records remain frozen.</p></footer>
+</body>
+</html>

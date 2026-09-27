@@ -20,7 +20,7 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="masthead wrap">
     <a class="wordmark" href="#main" aria-label="Mini Jev home"><span class="mark" aria-hidden="true">{j}</span> Mini Jev</a>
-    <nav aria-label="Main navigation"><a href="#demo">Demo</a><a href="#evidence">Evidence</a><a href="#run">Run locally</a><a href="https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo">GitHub ↗</a></nav>
+    <nav aria-label="Main navigation"><a href="#demo">Demo</a><a href="#evidence">Evidence</a><a href="explorer/">Explore records</a><a href="#run">Run locally</a><a href="https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo">GitHub ↗</a></nav>
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="title">
@@ -84,6 +84,7 @@
       </div>
       <details class="limits"><summary>Scope, limitations, and prior work</summary><div><p>Task-quality evidence comes from Japanese public-data subsets on one Apple Silicon Mac. Public-data contamination is unknown. The separate 2,400-item local regression suite is AI-authored. No human usability study or second-machine replication has been completed.</p><p>Probability averaging requires multiple model calls and does not consistently improve accuracy. The model comparisons also differ in runtime and precision, so differences cannot be attributed to model size alone.</p><p>Mini Jev was independently inspired by TypeSafe's Jev. It does not reproduce Jev's architecture, training, calibration, speed, or protocol. The paper situates candidate scoring and inspection alongside prior work including Ma et al., Hanna and Feng, LMQL, ChainForge, LLM Comparator, Langfuse, and Phoenix. Closely related scoring work includes <a href="https://aclanthology.org/2024.naacl-short.31/">Zhuang et al., Beyond Yes and No</a> and <a href="https://arxiv.org/abs/2609.18188">Wang et al., Single-Token Expected-Value Scoring</a>; Mini Jev does not claim to introduce candidate-logit normalization or expected-value scoring.</p><p>AI assistance in implementation, analysis, and writing is disclosed in the manuscript. The author is responsible for its content. As of 27 September 2026, the preprint is submitted to arXiv and awaiting moderation. The continuing conference manuscript has not been submitted or accepted; neither version is peer reviewed.</p></div></details>
       <div class="resources">
+        <a href="explorer/"><span>Compare the recorded decisions</span><small>Interactive saved-evidence explorer · No live inference ↗</small></a>
         <a href="https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/naacl2027-demo/paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip"><span>Download source &amp; evidence</span><small>Versioned ZIP · 18.1 MB ↗</small></a>
         <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/reproducibility/README.md"><span>Reproduce the analysis</span><small>Instructions, scope, and SHA-256 ↗</small></a>
         <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/comparator_study/README.md"><span>LMQL diagnostic</span><small>12 matching labels; 3 probability-tolerance failures ↗</small></a>
