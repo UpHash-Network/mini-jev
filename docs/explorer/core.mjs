@@ -62,6 +62,7 @@ export function comparisonExport(index,panel,item,a,b,result,selection) {
   const mappingIds=[...new Set([...result.aMembers,...result.bMembers].map(v=>v.mapping).filter(Boolean))];
   return {
     schema_version:1,mode:'saved_research_records',new_inference_calls:0,
+    exporter_sha256:index.exporter_sha256,numeric_representation:index.numeric_representation??null,
     study_id:panel.study_id,model_key:panel.model_key,dataset:panel.dataset,type:panel.type,
     item_id:item.item_id,source_question_sha256:item.source_question_sha256,split:item.split,group:item.group,
     canonical_keys:panel.canonical_keys,score_values:panel.score_values??null,

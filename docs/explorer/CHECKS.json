@@ -1,10 +1,15 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-09-27T16:41:01.670583+00:00",
+  "checked_at_utc": "2026-09-27T16:48:00.143414+00:00",
   "scope": "Software and evidence-integrity verification by AI operators; zero human participants and zero new model calls.",
   "python_integrity_tests": {
-    "passed": 19,
-    "failed": 0
+    "passed": 21,
+    "failed": 0,
+    "runtimes": [
+      "macOS Python 3.10.5",
+      "macOS Python 3.12.14"
+    ],
+    "perturbed_libm_rebuild_byte_identical": true
   },
   "javascript_core": {
     "variant_comparisons": 31000,
@@ -38,7 +43,7 @@
       "Source file paths, one-based lines and SHA-256 visible for physical and derived records",
       "Search including no-result recovery, previous/next, study/model/task/condition controls",
       "URL selection restored after reload",
-      "Downloaded actual JSON parsed and source references resolved; 5,732-byte shared-call comparison",
+      "Downloaded actual JSON parsed and source references resolved",
       "Project page link works at 360px; comparison numbers remain within viewport"
     ],
     "console_errors_final_load": 0
@@ -61,8 +66,8 @@
     },
     {
       "path": "docs/explorer/core.mjs",
-      "sha256": "3acbf8fe183b0df83b8861aeefb4fb65e7b829b18914dd44c66aff65cb48659e",
-      "bytes": 5913
+      "sha256": "2e4c6e112eb30ebe83d8824be970c79cc33ca1f2f28bf5f28058cbf75817d4f9",
+      "bytes": 6014
     },
     {
       "path": "docs/explorer/explorer.css",
@@ -71,24 +76,31 @@
     },
     {
       "path": "docs/explorer/data/index.json",
-      "sha256": "9bb4523d3e44a72f891b8508fdc9cfa93521b0fabcbd7282258d78d5fb7b3aeb",
-      "bytes": 75062
+      "sha256": "22ee0270bce871e0c22808b3126f61b17410bdeac709f73f0a3fd6ced4331baa",
+      "bytes": 75351
     },
     {
       "path": "scripts/build_evidence_explorer.py",
-      "sha256": "bea0ebf731b0c530637e17427bad8723b05eaa34acc837789d91ba8edc24835a",
-      "bytes": 30171
+      "sha256": "bd4870a16f055f9bad3927d8c41c1fdb1b6cba2f6c06e3170c4894e047e914b9",
+      "bytes": 32495
     },
     {
       "path": "tests/test_evidence_core.mjs",
-      "sha256": "c63a28c6d19d77bbcc686398cf66e880283a0d35644f03f0b44a09dd4b783f63",
-      "bytes": 4040
+      "sha256": "b7cee0834721eb805c33398e3db64dffb5a5a5bac1706da31cd017ce03da107d",
+      "bytes": 4156
     },
     {
       "path": "tests/test_evidence_explorer.py",
-      "sha256": "d2f0941da377c959624b8e5768732b52d3d5cbe8757c31864fc89f19e617e46a",
-      "bytes": 17021
+      "sha256": "97c12c757e5630ca656c8f1fca7d45351d366f2117bbd2a97f0be99b412f914f",
+      "bytes": 18104
     }
   ],
-  "submitted_arxiv_files_unchanged": 15
+  "submitted_arxiv_files_unchanged": 15,
+  "portability_correction": {
+    "initial_ci_failure": "Linux libm last-bit variation changed newly calculated diagnostics in the first byte-rebuild check",
+    "fix": "Preserve exact archived values after validation; deterministic Decimal diagnostics; retain strict byte-rebuild test",
+    "maximum_numeric_change_from_initial_export": 8.89e-16,
+    "original_saved_values_changed": false,
+    "initial_run": "https://github.com/UpHash-Network/mini-jev/actions/runs/36334204373"
+  }
 }

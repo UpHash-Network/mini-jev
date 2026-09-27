@@ -33,6 +33,17 @@ completion inventories, schedules, physical softmax mappings, and saved derived
 answers. This is a bounded data-integrity check, not a new peer review or a new
 independent assessment of the scientific conclusions.
 
+Archived probability vectors, typed values, physical concentration, and saved
+latencies retain their exact parsed JSON values after independent validation.
+Diagnostics newly created for this explorer (derived concentration and panel
+MAE/variance) use exact binary-float-to-Decimal conversion and a fixed 50-digit
+`ROUND_HALF_EVEN` context. `Decimal.ln` is correctly rounded; these diagnostics
+are serialized at 15 decimal places. This avoids platform `libm` differences
+without rounding original saved measurements. Integer counts/ratios and saved
+extrema use their existing representation. The contract is also recorded in
+`index.numeric_representation`. Tests perturb `math.log` and require identical
+export bytes, in addition to checking every source record and ensemble recipe.
+
 ## Layout and definitions
 
 `data/index.json` is the shared index. Its `panels` array provides each panel's

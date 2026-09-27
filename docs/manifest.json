@@ -45,7 +45,7 @@
     "url": "https://uphash-network.github.io/mini-jev/explorer/",
     "mode": "saved_records_no_live_inference",
     "data_index": "explorer/data/index.json",
-    "data_index_sha256": "9bb4523d3e44a72f891b8508fdc9cfa93521b0fabcbd7282258d78d5fb7b3aeb",
+    "data_index_sha256": "22ee0270bce871e0c22808b3126f61b17410bdeac709f73f0a3fd6ced4331baa",
     "checks": "explorer/CHECKS.json",
     "scope": "Later interface supplement; September 27 manuscript, submitted arXiv package and frozen experiment archive unchanged"
   }

@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter, defaultdict
+from decimal import Context, Decimal, ROUND_HALF_EVEN, localcontext
 import hashlib
 import json
 import math
@@ -31,6 +32,10 @@ DATASETS = {
 ROBUST = "presentation_robustness"
 ENSEMBLE = "order_ensemble"
 METHODS = ("baseline", "reverse_single", "cyclic_forward", "cyclic_reverse", "dihedral")
+# Only diagnostics created by this exporter use this representation. Archived
+# probabilities, typed values, and measured fields retain their original floats.
+DIAGNOSTIC_CONTEXT = Context(prec=50, rounding=ROUND_HALF_EVEN)
+DIAGNOSTIC_QUANTUM = Decimal("0.000000000000001")
 ROBUST_DEFINITIONS = {
     "baseline": ("Original presentation", "The saved original presentation."),
     "baseline_repeat": ("Exact input repeat", "A separate execution of the identical input, providing a numerical variation control."),
@@ -77,6 +82,22 @@ def aligned(probabilities, keys):
     return values
 
 
+def diagnostic_number(value):
+    """A JSON number rounded to 15 decimal places by a fixed decimal context."""
+    with localcontext(DIAGNOSTIC_CONTEXT):
+        result = float(value.quantize(DIAGNOSTIC_QUANTUM))
+    return 0.0 if result == 0 else result
+
+
+def concentration(probabilities):
+    """Correctly rounded Decimal.ln avoids platform libm last-bit variation."""
+    with localcontext(DIAGNOSTIC_CONTEXT):
+        values = [Decimal.from_float(float(p)) for p in probabilities]
+        entropy = -sum((p * p.ln() for p in values if p > 0), Decimal(0))
+        result = Decimal(1) - entropy / Decimal(len(values)).ln()
+        return diagnostic_number(min(Decimal(1), max(Decimal(0), result)))
+
+
 def answer(probabilities, keys, kind, score_values=None):
     p = aligned(probabilities, keys)
     peak = max(p)
@@ -93,11 +114,8 @@ def answer(probabilities, keys, kind, score_values=None):
         value = math.fsum(probabilities[k] * score_values[k] for k in keys)
     else:
         raise ValueError("unknown type")
-    entropy = -math.fsum(v * math.log(v) for v in p if v > 0)
-    # Avoid a negative rounding residue for an exactly uniform distribution.
-    concentration = min(1.0, max(0.0, 1 - entropy / math.log(len(keys))))
     return {"probabilities": p, "label": label, "value": value,
-            "concentration": concentration, "top_tie_keys": ties}
+            "concentration": concentration(p), "top_tie_keys": ties}
 
 
 def recipes(meta):
@@ -219,6 +237,9 @@ def physical(row, keys, source, mappings):
     if row["type"] == "choice": result["value"] = row["label"]
     require(close(result["value"], row["typed_value"]), "raw typed-value mismatch")
     require(close(result["concentration"], row["concentration"]), "raw concentration mismatch")
+    # Validate independently, then preserve the actual archived representations.
+    result["value"] = row["typed_value"]
+    result["concentration"] = row["concentration"]
     require(type(row["input_tokens"]) is int and row["input_tokens"] > 0, "invalid input tokens")
     require(finite(row["latency_ms"]) and row["latency_ms"] >= 0, "invalid saved latency")
     return {"id": row["condition"], "kind": "physical", **result, "calls": 1,
@@ -249,10 +270,15 @@ def variant_summaries(panel):
                  "max_label_share": max(counts.values()) / n,
                  "calls_per_answer": rows[0][1]["calls"]}
         if panel["type"] == "score":
-            values = [v["value"] for _, v in rows]; mean = math.fsum(values) / n
-            value.update(mae=math.fsum(abs(v["value"] - item["gold_score"]) for item, v in rows)/n,
-                         value_variance=math.fsum((v - mean)**2 for v in values)/n,
-                         value_min=min(values), value_max=max(values))
+            values = [v["value"] for _, v in rows]
+            with localcontext(DIAGNOSTIC_CONTEXT):
+                decimals = [Decimal.from_float(float(v)) for v in values]
+                mean = sum(decimals, Decimal(0)) / n
+                mae = sum((abs(Decimal.from_float(float(v["value"])) - Decimal.from_float(float(item["gold_score"])))
+                           for item, v in rows), Decimal(0)) / n
+                variance = sum(((v - mean)**2 for v in decimals), Decimal(0)) / n
+                value.update(mae=diagnostic_number(mae), value_variance=diagnostic_number(variance),
+                             value_min=min(values), value_max=max(values))
         else:
             value["accuracy"] = sum(v["label"] == item["gold_label"] for item, v in rows)/n
         result[key] = value
@@ -382,6 +408,11 @@ def build(zip_path=DEFAULT_ZIP):
                                              ("input_tokens", "input_tokens_sum"), ("latency_ms", "observed_forward_latency_sum_ms")):
                         require(close(calculated[output], saved[original]), f"derived field mismatch: {output}")
                     require(calculated["top_tie_keys"] == saved["tie_keys"], "derived tie mismatch")
+                    # The original analyzer already saved these quantities.
+                    # Keep them exact after independent recipe/number validation.
+                    calculated["probabilities"] = aligned(saved["probabilities"], meta["canonical_key_order"])
+                    calculated["value"] = saved["typed_value"]
+                    calculated["latency_ms"] = saved["observed_forward_latency_sum_ms"]
                     item["structural_orbit_identity"] = meta["structural_orbit_identity"]
                     item["variants"].append({"id": method, "kind": "derived", **calculated, "source": source,
                                              "member_ids": [lookup[i]["condition"] for i in members],
@@ -417,6 +448,10 @@ def build(zip_path=DEFAULT_ZIP):
                          ENSEMBLE: {"label": "Fixed-binding cyclic averaging", "physical_records": 14400, "unique_source_items": 600,
                                     "description": "Another 600 public items across three checkpoints. Binary orientation agreement follows structurally from the same two physical calls."}},
              "models": model_info, "sources": archive.sources, "mappings": mappings.values,
+             "numeric_representation": {
+                 "archived": "Probabilities, typed values, saved physical concentration, and observed time are retained exactly from parsed source JSON numbers after independent validation.",
+                 "new_diagnostics": "Derived concentration and panel MAE/variance use exact binary-float-to-Decimal conversion, 50-digit ROUND_HALF_EVEN arithmetic, correctly rounded Decimal.ln, and rounding to 15 decimal places for JSON. Other counts/ratios use integer arithmetic; extrema retain source values.",
+             },
              "variant_definitions": definitions(), "panels": descriptors,
              "featured": make_featured(list(panels.values())),
              "coverage": {"panels": 18, "study_item_model_records": 3600, "physical_records": physical_count,

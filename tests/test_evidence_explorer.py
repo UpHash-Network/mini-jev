@@ -8,6 +8,7 @@ import math
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -82,7 +83,7 @@ class FullSavedEvidenceTests(unittest.TestCase):
                     self.assertEqual(raw.get("model_key", panel["model_key"]), panel["model_key"])
                     self.assertEqual(variant["probabilities"], [raw["probabilities"][k] for k in keys])
                     self.assertEqual(variant["label"], raw["label"])
-                    self.assertAlmostEqual(variant["value"], raw["typed_value"], places=12) if panel["type"] != "choice" else self.assertEqual(variant["value"], raw["typed_value"])
+                    self.assertEqual(variant["value"], raw["typed_value"])
                     if panel["type"] == "score":
                         self.assertEqual(item["gold_score"], raw["gold_score"])
                         self.assertAlmostEqual(variant["value"], math.fsum(float(k)*p for k, p in zip(keys, variant["probabilities"])), places=12)
@@ -92,6 +93,7 @@ class FullSavedEvidenceTests(unittest.TestCase):
                     entropy = -math.fsum(p*math.log(p) for p in variant["probabilities"] if p)
                     self.assertAlmostEqual(variant["concentration"], max(0., 1-entropy/math.log(len(keys))), places=12)
                     if variant["kind"] == "physical":
+                        self.assertEqual(variant["concentration"], raw["concentration"])
                         self.assertEqual(item["source_question_sha256"], raw["source_question_sha256"])
                         mapping = self.index["mappings"][variant["mapping"]]
                         self.assertEqual(mapping, {"candidate_keys": raw["candidate_keys"], "candidate_tokens": raw["candidate_tokens"], "display_order": raw.get("display_order")})
@@ -208,6 +210,15 @@ class FullSavedEvidenceTests(unittest.TestCase):
         exporter.write_files(self.files, exporter.DEFAULT_OUT, check=True)
         self.assertEqual(self.index["exporter_sha256"], hashlib.sha256(Path(exporter.__file__).read_bytes()).hexdigest())
 
+    def test_export_bytes_do_not_depend_on_platform_log_last_bits(self):
+        original_log = math.log
+        # A libm ulp-scale perturbation made the former exporter change JSON.
+        # Calculated diagnostics now use correctly rounded Decimal operations;
+        # the saved physical diagnostics remain exact source values.
+        with patch.object(exporter.math, "log", side_effect=lambda x: original_log(x) + 4e-16):
+            perturbed = exporter.build()
+        self.assertEqual(self.files, perturbed)
+
 
 class AlgebraAndFailureTests(unittest.TestCase):
     def test_semantic_alignment_not_token_order(self):
@@ -235,6 +246,17 @@ class AlgebraAndFailureTests(unittest.TestCase):
         self.assertEqual(result["label"], "true")
         self.assertEqual(result["top_tie_keys"], ["true", "false"])
         self.assertEqual(result["latency_ms"], 0.)
+
+    def test_decimal_diagnostics_are_fixed_and_independent_of_ambient_context(self):
+        from decimal import localcontext, ROUND_UP
+        expected = exporter.concentration([.9, .1])
+        self.assertEqual(expected, 0.531004406410719)
+        with localcontext() as context:
+            context.prec = 6
+            context.rounding = ROUND_UP
+            self.assertEqual(exporter.concentration([.9, .1]), expected)
+        self.assertEqual(exporter.concentration([.5, .5]), 0.)
+        self.assertEqual(exporter.concentration([1., 0.]), 1.)
 
     def synthetic(self):
         meta = {"model_key": "fixture", "item_id": "item", "dataset": "JCoLA", "type": "noul", "split": "valid", "group": "group", "gold_label": "true", "canonical_key_order": ["false", "true"]}
