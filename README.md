@@ -12,6 +12,7 @@ Mini Jev turns a state and explicit criteria into a categorical **Choice**, the 
 
 | Start here | What you will find |
 |---|---|
+| [Saved evidence explorer](https://uphash-network.github.io/mini-jev/explorer/) | Compare conditions, semantic candidate probabilities, and shared calls; export traceable JSON. Added September 28; no live inference |
 | [Current paper PDF](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Manuscript.pdf) | Manuscript, evidence, related work, and limitations |
 | [60-second evidence walkthrough](https://uphash-network.github.io/mini-jev/#demo) | Explanation of retained experiment results; not a new live inference run |
 | [Full interface recording](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Demonstration.mp4) | 145-second captioned recording of the local workbench; an earlier branch caption is retained |

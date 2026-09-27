@@ -12,6 +12,7 @@
 
 | 入口 | 内容 |
 |---|---|
+| [実験記録の比較画面](https://uphash-network.github.io/mini-jev/explorer/) | 条件・候補確率・共有する推論を比較し、元記録への参照付きJSONを保存。9月28日追加。ライブ推論ではありません |
 | [最新原稿PDF](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Manuscript.pdf) | 手法・評価・先行研究・限界 |
 | [60秒の実験結果解説](https://uphash-network.github.io/mini-jev/#demo) | 保存済み実験記録から説明する短い動画。新たなライブ実行ではありません |
 | [145秒の操作動画](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Demonstration.mp4) | ローカルUIの操作を収録した字幕付き動画。末尾に以前のブランチ名が残っています |
