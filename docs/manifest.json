@@ -1,13 +1,14 @@
 {
   "schema_version": 1,
-  "content_snapshot": "2026-09-26",
+  "content_snapshot": "2026-09-27",
   "evidence_commit": "bd025e8b1d14352a440d289c73b00ae445290935",
   "assets": [
     {
       "path": "assets/Mini_Jev_Manuscript.pdf",
       "source": "paper/naacl2027/NAACL2027_Mini_Jev.pdf",
-      "bytes": 222801,
-      "sha256": "5284382999989fefa75d23ebc65d424beef22883915b141b7268b015986d6849"
+      "bytes": 231279,
+      "sha256": "401cd45ea723c0be68d2df7d9bf1498e393647c203b5f22b46c650133833600d",
+      "pages": 9
     },
     {
       "path": "assets/workbench.png",
@@ -35,7 +36,8 @@
       "sha256": "f2ab9f72d7aaa9049efa22532e5a1beea3774c9e1f4b29fadb054ad77dcb7752"
     }
   ],
-  "manuscript_revision": "paper/naacl2027/REVISION.20260926.json",
+  "manuscript_revision": "paper/naacl2027/nonhuman_revision_20260927/PUBLICATION_MANIFEST.json",
   "arxiv_status": "submitted_awaiting_moderation",
-  "arxiv_public_id": null
+  "arxiv_public_id": null,
+  "evidence_commit_scope": "Original frozen source/evidence publication; not the current manuscript revision"
 }

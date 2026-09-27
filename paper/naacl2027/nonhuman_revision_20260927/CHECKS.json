@@ -1,0 +1,49 @@
+{
+  "checked_at_utc": "2026-09-27T07:46:47.754427+00:00",
+  "status": "local_revision_verified_not_submitted",
+  "cfp_url": "https://2027.naacl.org/calls/system_demonstration/",
+  "cfp_reverified_on_jst": "2026-09-27",
+  "evaluation_route": "systematic comparison and reproducibility; human study optional",
+  "pdf_sha256": "401cd45ea723c0be68d2df7d9bf1498e393647c203b5f22b46c650133833600d",
+  "pdf_bytes": 231279,
+  "source_sha256": "cf52d2fd5c730f5ca2053fbb7de211c5ecd3fedf78f3eb163c21615911442d34",
+  "pdf_pages": 9,
+  "main_text_last_page": 6,
+  "references_pages": [
+    7,
+    8
+  ],
+  "appendix_pages": [
+    9
+  ],
+  "appendix_page_count": 1,
+  "all_pages_visually_checked": true,
+  "undefined_citations_or_references": false,
+  "overfull_boxes": false,
+  "known_nonfatal_warnings": [
+    "underfull boxes",
+    "existing lineno.sty UTF-8 replacement warning; no visible glyph corruption"
+  ],
+  "abstract_unchanged": true,
+  "submitted_arxiv_files_unchanged": 15,
+  "frozen_comparator_files_verified": 23,
+  "frozen_bundle_sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+  "new_inference_calls": 0,
+  "human_participants": 0,
+  "prior_ai_rehearsal_not_used_as_human_evidence": true,
+  "new_analytical_result": "post-hoc decomposition of the same 12 LMQL cases, not a new experiment",
+  "main_study_requests_unchanged": 26050,
+  "push_performed": false,
+  "submission_performed": false,
+  "files_sha256": {
+    "main.tex": "cf52d2fd5c730f5ca2053fbb7de211c5ecd3fedf78f3eb163c21615911442d34",
+    "NAACL2027_Mini_Jev.pdf": "401cd45ea723c0be68d2df7d9bf1498e393647c203b5f22b46c650133833600d",
+    "nonhuman_revision_20260927/check_evidence.py": "321ca72146bd7999702ec241342579a0ef096bf985efea0360c4bcd12b0666d8",
+    "nonhuman_revision_20260927/EVIDENCE_CHECKS.json": "43df8490f99e2c2fff1173619b702bfcd2325b0d2a92ee389079efd494a8fe9d",
+    "nonhuman_revision_20260927/REVIEWER_GUIDE.md": "7a4fec3b7d15b39b3eb4331df52bfb0c0dd5c8e157e70cd63ebe3fc911992456",
+    "nonhuman_revision_20260927/STRATEGY.ja.md": "d2da0245883b4358c8fbc2880a5db03845b50523ab7e407e4ec3098288c783d8",
+    "nonhuman_revision_20260927/CLAIM_AUDIT.ja.md": "7856a126a124b0e5fff23fdf2241b398146464a32cfb7c14dcda0140a171450b",
+    "nonhuman_revision_20260927/lmql_diagnostic/analyze.py": "70977fa1517a0cb9d4da40c67c067e460994aa6a473598c99a8ca617ad8f5077",
+    "nonhuman_revision_20260927/lmql_diagnostic/DIAGNOSTIC.json": "2c1aeb24cf17c0b133a17cfe343d6b06628f0332356ff68e05e5110119091e80"
+  }
+}

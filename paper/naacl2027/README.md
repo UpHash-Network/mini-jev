@@ -1,6 +1,6 @@
 # Mini Jev — NAACL 2027 System Demonstrations manuscript
 
-**Conference submission preparation, updated 26 September 2026.**
+**Conference submission preparation, updated 27 September 2026.**
 The related preprint was submitted to arXiv on 26 September and is awaiting
 moderation; a public arXiv ID is not yet available. This NAACL manuscript is
 **not submitted, accepted, or peer reviewed**. The arXiv submission and this
@@ -11,8 +11,7 @@ Author: **Yuki Oshio, UPHASH Inc.** Single author; identified for the single-bli
 ## Read and run
 
 - [Research project page](https://uphash-network.github.io/mini-jev/) — manuscript, video, findings, and installation links in one place.
-- [Paper PDF](NAACL2027_Mini_Jev.pdf) — 8 pages: 6 pages including limitations,
-  acknowledgements and ethics, followed by 2 reference pages.
+- [Paper PDF](NAACL2027_Mini_Jev.pdf) — 9 pages: main text and disclosures end on page 6; references occupy pages 7–8; Appendix A occupies page 9.
 - [Download the versioned source and evidence ZIP](https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/naacl2027-demo/paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip)
   — 18,060,014 bytes; SHA-256
   `a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053`.
@@ -29,8 +28,11 @@ Author: **Yuki Oshio, UPHASH Inc.** Single author; identified for the single-bli
 - [ChainForge integration diagnostic](chainforge_integration/README.md) —
   actual provider registration/dispatch and the released local API, without a
   browser-interface or human usability claim.
-- [Current manuscript revision and checks](REVISION.20260926.ja.md) — two added primary-source citations; unchanged measurements.
+- [Current revision and checks](nonhuman_revision_20260927/README.md) — evidence-led evaluation without a required human study; comparison scopes and post-hoc LMQL diagnosis.
+- [Reviewer guide](nonhuman_revision_20260927/REVIEWER_GUIDE.md) — standard-library integrity/accounting checks and the separate model-free numerical replay.
 - [Original source/evidence artifact checks](FINAL_CHECKS.20260925.json) — historical 25 September snapshot.
+
+The September 27 manuscript, reviewer guide, and post-hoc diagnostic are distributed together in this revision. Their [publication manifest](nonhuman_revision_20260927/PUBLICATION_MANIFEST.json) records exact file hashes. The published source/evidence ZIP remains unchanged.
 
 The source/evidence ZIP is a frozen composition of the application and the three
 paper studies (26,050 measured research requests). It excludes the current
@@ -67,7 +69,7 @@ python3 paper/naacl2027/build.py --tectonic /path/to/tectonic
 ```
 
 Tested with Tectonic 0.17.0. Official ACL style files are unmodified and checked
-against [their provenance](STYLE_PROVENANCE.json). All eight rendered pages were
+against [their provenance](STYLE_PROVENANCE.json). All nine rendered pages were
 visually checked; there are no undefined citations or overfull boxes. Ordinary
 underfull-box and the style dependency's existing `lineno` UTF-8 warnings remain
 without visible corruption.

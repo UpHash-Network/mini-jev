@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "revision": "2026-09-27",
+  "scope": "Reviewed nine-page manuscript, documentation, and post-hoc saved-record checks; no new inference or human results",
+  "based_on_research_commit": "4409a31a56056ffb80f3528aeed5492cb71be7c0",
+  "identifier_note": "Use the containing Git commit for an immutable publication identifier; this manifest excludes itself. CHECKS.json retains preparation-stage hashes and publication state.",
+  "pdf_pages": 9,
+  "frozen_source_evidence_sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+  "arxiv_submitted_version_changed": false,
+  "files": {
+    "README.md": {
+      "bytes": 13794,
+      "sha256": "9227cf51bde11fbeb972ecb87107976c31520fdd7e8a3a498e881e93d8ec13b7"
+    },
+    "README.ja.md": {
+      "bytes": 12354,
+      "sha256": "f23510f3e284bfdd3708f832c151f4824fbf635e55d4f7dca7934aefd6363da5"
+    },
+    "docs/index.html": {
+      "bytes": 14724,
+      "sha256": "f3c645b1aad1dfc0dd625f0bc372e78a5ff2eb077a2379e551d8103ad0a2cc9d"
+    },
+    "docs/manifest.json": {
+      "bytes": 1658,
+      "sha256": "1a5469f5aa33c96a0ca09b626c561991eaa3d2e9c1589e587fb33f734781c505"
+    },
+    "docs/assets/Mini_Jev_Manuscript.pdf": {
+      "bytes": 231279,
+      "sha256": "401cd45ea723c0be68d2df7d9bf1498e393647c203b5f22b46c650133833600d"
+    },
+    "paper/naacl2027/main.tex": {
+      "bytes": 30999,
+      "sha256": "cf52d2fd5c730f5ca2053fbb7de211c5ecd3fedf78f3eb163c21615911442d34"
+    },
+    "paper/naacl2027/references.bib": {
+      "bytes": 12221,
+      "sha256": "88896cb4fa0fe54a8c1e06891fb98bd87c4ca273ee26084d45a0c7351050ac68"
+    },
+    "paper/naacl2027/NAACL2027_Mini_Jev.pdf": {
+      "bytes": 231279,
+      "sha256": "401cd45ea723c0be68d2df7d9bf1498e393647c203b5f22b46c650133833600d"
+    },
+    "paper/naacl2027/README.md": {
+      "bytes": 5713,
+      "sha256": "192f0da84ab8256431fede84ac2c30d265924284a286efcb3b921efaa16bbea1"
+    },
+    "paper/naacl2027/RELATED_WORK_COMPARISON.20260927.md": {
+      "bytes": 6567,
+      "sha256": "0d6f010789e6a6ea4a6ad1f090231d878106dc984e099c24b090e04a47719cb9"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/CHECKS.json": {
+      "bytes": 2494,
+      "sha256": "8c4d051632b1504a9ee2ad555eb511271ee820a0d172ef9380ff054e008c3503"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/CLAIM_AUDIT.ja.md": {
+      "bytes": 14597,
+      "sha256": "8973177303fd145556e737e2893ec0ac4a14fff43e408b6302ba18d9e85afb61"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/EVIDENCE_CHECKS.json": {
+      "bytes": 2375,
+      "sha256": "43df8490f99e2c2fff1173619b702bfcd2325b0d2a92ee389079efd494a8fe9d"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/README.md": {
+      "bytes": 2128,
+      "sha256": "4f84a53293de27090f44717328ade1502fb6b9c5b07e78119ac41f715374185e"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/REVIEWER_GUIDE.md": {
+      "bytes": 4754,
+      "sha256": "b5f16e3e15d0e136fc6e83a3b97e79c88dd1e2a860fdc87f2c59044a3fdc3f3f"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/REVISION.ja.md": {
+      "bytes": 3522,
+      "sha256": "6cb5e4fb346ba745b101c506c95b109be156e1eeba689f17cda5582a472e85c5"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/STRATEGY.ja.md": {
+      "bytes": 3647,
+      "sha256": "d2da0245883b4358c8fbc2880a5db03845b50523ab7e407e4ec3098288c783d8"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/check_evidence.py": {
+      "bytes": 6079,
+      "sha256": "321ca72146bd7999702ec241342579a0ef096bf985efea0360c4bcd12b0666d8"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/lmql_diagnostic/DIAGNOSTIC.json": {
+      "bytes": 50861,
+      "sha256": "2c1aeb24cf17c0b133a17cfe343d6b06628f0332356ff68e05e5110119091e80"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/lmql_diagnostic/README.md": {
+      "bytes": 1210,
+      "sha256": "9fd3708e1eb0eb12505b05510f14c7853627f3de27d8118e198a1204153f2cd7"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/lmql_diagnostic/SUMMARY.en.md": {
+      "bytes": 4334,
+      "sha256": "c0e9c589de415301c30fd63ad819cbaa055ac0d46c6ee14d812ef89b62284d64"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/lmql_diagnostic/SUMMARY.ja.md": {
+      "bytes": 5000,
+      "sha256": "1056363a1f576904513d991c2d6f9aabcc2744d90ef3ee4a92dbc56754f3d3d9"
+    },
+    "paper/naacl2027/nonhuman_revision_20260927/lmql_diagnostic/analyze.py": {
+      "bytes": 10899,
+      "sha256": "70977fa1517a0cb9d4da40c67c067e460994aa6a473598c99a8ca617ad8f5077"
+    }
+  }
+}

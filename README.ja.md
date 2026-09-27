@@ -6,17 +6,17 @@
 
 [English](README.md) · [最新論文](paper/naacl2027/README.md) · [論文の解析を再現](paper/naacl2027/reproducibility/README.md) · [起動](#起動) · [自分のデータで学習](TRAINING.md)
 
-状態と質問から、選択肢を選ぶChoice、真偽の確率を返すNoul、段階の期待値を返すScoreを計算します。候補の次トークンlogitsを読み出して正規化し、Python側で応答を組み立てます。現行版は**凍結したQwen3.6-35B-A3B Q4_K_M**を使い、入力の繰り返しと型別の候補表現を採用しています。現行の35B版に追加学習は行っていません。
+状態と質問から、選択肢を選ぶChoice、true候補の確率を返すNoul、段階の期待値を返すScoreを計算します。候補の次トークンlogitsを読み出して正規化し、Python側で応答を組み立てます。現行版は**凍結したQwen3.6-35B-A3B Q4_K_M**を使い、入力の繰り返しと型別の候補表現を採用しています。現行の35B版に追加学習は行っていません。
 
 [TypeSafeのJev公開API](https://docs.typesafe.ai/api)を参考にした独立プロジェクトです。TypeSafeとの関係、本家の内部構造・RLCD・校正保証・SDK互換性・速度優位性は主張しません。候補logitsの分類利用や入力の繰り返しには先行研究があり、新規アルゴリズムの発表ではありません。
 
 ## はじめに
 
-**2026年9月26日時点：arXivへ投稿済み、モデレーション待ちです。公開arXiv IDはまだありません。** 現行の学会向け原稿はNAACL 2027 System Demonstrationsへの投稿準備中で、未投稿・未採択・未査読です。以前のEACLへの投稿は成立しませんでした。
+**2026年9月27日時点：arXivへ投稿済み、モデレーション待ちです。公開arXiv IDはまだありません。** 現行の学会向け原稿はNAACL 2027 System Demonstrationsへの投稿準備中で、未投稿・未採択・未査読です。以前のEACLへの投稿は成立しませんでした。
 
 1. **読む：** [最新原稿PDF](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Manuscript.pdf)と[論文・証拠の案内](paper/naacl2027/README.md)。
 2. **見る：** [60秒の実験結果解説](https://uphash-network.github.io/mini-jev/#demo)、続けて[145秒の操作動画](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Demonstration.mp4)。60秒版は保存済み実験記録の解説で、新たなライブ実行ではありません。
-3. **モデルなしで確かめる：** [ソース・証拠ZIPと解析再現手順](paper/naacl2027/reproducibility/README.md)。保存済み記録の再解析はPython標準ライブラリで実行できます。
+3. **モデルなしで確かめる：** [ソース・証拠ZIPと解析再現手順](paper/naacl2027/reproducibility/README.md)。保存済み記録の再解析はPython標準ライブラリで実行できます。[検証ガイド](paper/naacl2027/nonhuman_revision_20260927/REVIEWER_GUIDE.md)には整合性と件数を確認する軽量コマンドもあります。
 4. **Macで実行する：** [起動手順](#起動)でモデルAPIを準備し、[ブラウザUI](demo/README.md#start-the-demo)を立ち上げます。
 
 ## 現行論文で検証したこと
@@ -31,6 +31,8 @@
 合計は**26,050リクエスト**で、独立した26,050問ではありません。後半の2研究は3つのチェックポイントを扱います。モデル比較では実行系・精度も異なるため、差をモデル規模だけに帰属できません。品質評価は1台のApple Silicon Mac上での日本語公開データの部分集合で、学習時のデータ混入は不明です。人間の利用者評価と別の機器での追試は未実施です。
 
 [論文パッケージ](paper/naacl2027/README.md)には実験手順、予測記録、解析コード、LMQL・ChainForgeとの統合確認を収録しています。2,400問のAI自作評価は別の初期評価として後段に残しています。
+
+9月27日の改訂では比較付録と、保存済みLMQL 12例の後解析を追加しました。元の確率公差を超えた3例はそのまま報告しています。公開API・画面で確認できるのは型付き値・候補確率・意味メタデータです。候補token IDと生logitは内部エンジン・研究記録に保持されます。新たな推論結果や人の利用者評価は追加していません。
 
 ## 起動
 

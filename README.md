@@ -12,11 +12,11 @@ This independent project is inspired by [TypeSafe's Jev interface](https://docs.
 
 ## Start here
 
-**Status, 26 September 2026:** the preprint was submitted to arXiv and is awaiting moderation. No public arXiv identifier is available yet. The current conference manuscript is being prepared for NAACL 2027 System Demonstrations; it has not been submitted, accepted, or peer reviewed. The earlier EACL attempt closed without a submission.
+**Status, 27 September 2026:** the preprint was submitted to arXiv and is awaiting moderation. No public arXiv identifier is available yet. The current conference manuscript is being prepared for NAACL 2027 System Demonstrations; it has not been submitted, accepted, or peer reviewed. The earlier EACL attempt closed without a submission.
 
 1. **Read:** [current manuscript PDF](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Manuscript.pdf) and [paper guide](paper/naacl2027/README.md).
 2. **Watch:** [60-second evidence walkthrough](https://uphash-network.github.io/mini-jev/#demo), then the [145-second interface recording](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Demonstration.mp4). The short video explains retained experiment results; it is not a new live run.
-3. **Reproduce without a model:** [download the frozen source/evidence ZIP and replay the analysis](paper/naacl2027/reproducibility/README.md). Python's standard library is sufficient for this replay.
+3. **Reproduce without a model:** [download the frozen source/evidence ZIP and replay the analysis](paper/naacl2027/reproducibility/README.md). Python's standard library is sufficient for this replay. The [reviewer guide](paper/naacl2027/nonhuman_revision_20260927/REVIEWER_GUIDE.md) also provides a quick integrity and accounting check.
 4. **Run live on a Mac:** follow [native installation](#run-the-native-service), then [start the browser workbench](demo/README.md#start-the-demo).
 
 ## Evidence in the current paper
@@ -31,6 +31,8 @@ This independent project is inspired by [TypeSafe's Jev interface](https://docs.
 The three studies total **26,050 measured requests**, not 26,050 independent questions. The latter two span three checkpoints. Model comparisons also differ in runtime and precision; they do not isolate model size. Task-quality evaluations use Japanese public-data subsets on one Apple Silicon Mac, with unknown training-data contamination. There is no human usability study or second-machine replication.
 
 The [paper package](paper/naacl2027/README.md) includes protocols, retained predictions, analyzers, and controlled LMQL/ChainForge integration diagnostics. [Scope and limitations](https://uphash-network.github.io/mini-jev/#evidence) explain what can and cannot be concluded. The original 2,400-item AI-authored regression suite is a separate historical evaluation, documented below.
+
+The September 27 revision adds a comparison appendix and a post-hoc analysis of the same 12 LMQL cases; all three original probability-tolerance failures remain. The public API/UI expose typed values, candidate probabilities, and semantic metadata; candidate token IDs and raw logits are retained internally and in research traces. No new inference or human-study results are added.
 
 ## Run the native service
 

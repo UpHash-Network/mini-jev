@@ -13,6 +13,7 @@
 \usepackage{inconsolata}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{capt-of}
 \usepackage{amsmath}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
@@ -39,9 +40,9 @@ A workflow may need a route, an urgency score, or a stage on an explicit rubric.
 
 \system{} demonstrates this distinction through a local browser interface and an HTTP/Python API. Users edit a shared state and three questions, run the model, and inspect the resulting values alongside candidate distributions. The interface is inspired by TypeSafe's Jev \citep{typesafe2026jev,typesafeapi}; this independent implementation makes no claim to reproduce that system's architecture, training, calibration, compatibility, or performance.
 
-The intended users are developers and researchers inspecting small typed decisions from local frozen models before integrating them into a workflow. The mechanism is conventional: a frozen model scores explicit single-token candidates, a restricted softmax produces a distribution, and ordinary code constructs the typed response. Verbalizers, logit-based candidate selection, and candidate-scoring APIs are established \citep{schick2021pet,ma2025inferring,lmqlscoring}. Our contribution is a runnable interface for inspecting typed readouts and their probability semantics, together with an auditable evaluation of quality, presentation sensitivity, and computation cost. We do not claim a new scoring method or the first model-inspection interface.
+Developers can inspect local typed decisions before integration. The mechanism is conventional: frozen candidate scoring, restricted softmax, and typed response construction. Verbalizers, logit-based selection, and scoring APIs are established \citep{schick2021pet,ma2025inferring,lmqlscoring}. Our contribution combines inspectable local implementation and auditable evaluation of quality, presentation sensitivity, and cost. Neither scoring nor typed probability interfaces are new.
 
-Schema validity, regression checks, task quality, and paired timing answer different questions. Our matched study finds no material latency advantage over native one-token selection. Source, installation, data documentation, and evaluation artifacts: \CodeURL. Video: \DemoVideo.
+Schema validity, regression checks, task quality, and paired timing answer different questions. Our matched study does not establish a latency advantage over native one-token selection. Source, installation, data documentation, and evaluation artifacts: \CodeURL. Video: \DemoVideo.
 
 \section{System and Typed Contract}
 \label{sec:system}
@@ -147,7 +148,7 @@ Cyclic averaging & 14,400 requests & 600 additional external items; 3 checkpoint
 \label{tab:sets}
 \end{table}
 
-The historical local suite contains 2,220 generated items from 45 template families and 180 individually AI-authored items; its legacy \texttt{manual} field does not mean human annotation. Authoring used earlier development errors, so it is regression material rather than a blind external test. All 2,400 outputs were valid, but 162 top labels were wrong: structural validity does not establish correctness. Historical temperature fitting also did not improve all calibration and score-error metrics.
+The historical local suite contains 2,220 generated items from 45 template families and 180 individually AI-authored items; its legacy \texttt{manual} field does not mean human annotation. Authoring used earlier errors, so this is regression material rather than a blind test. All 2,400 outputs were valid, but 162 top labels disagreed with authored reference labels: structural validity does not establish correctness. Temperature fitting did not improve all calibration and score-error metrics.
 
 The expanded sample has 200 public-development examples each from JCoLA \citep{someya2024jcola}, JSTS, and JCommonsenseQA \citep{kurihara2022jglue}. Hash selection and rubrics were frozen before inference, without independent preregistration. Six JSTS rows share text or image provenance with an earlier 300-item JNLI pilot. Public development data may have appeared in model training; these are not independent hidden-test evaluations.
 
@@ -220,7 +221,7 @@ Verbalizers \citep{schick2021pet}, decoding-free selection \citep{ma2025inferrin
 LMQL exposes continuation scoring and selection \citep{lmqlscoring}; multi-token scoring need not equal our single-token readout. Outlines, Guidance, and grammar-constrained decoding support structured generation \citep{outlines,guidance,geng2023grammar}. TypeSafe's adapter maps general LLM outputs to a Jev-style contract \citep{typesafeadapter}; generated probability values differ from token-derived candidate probabilities. Our JSON experiment is a serialization comparison, not a framework benchmark.
 
 \paragraph{Inspection interfaces.}
-ChainForge supports visual prompt experimentation \citep{arawjo2024chainforge}; LLM Comparator supports interactive side-by-side response evaluation \citep{kahng2025comparator}. Thus visualization and local inspection alone are not new. \system{} focuses on a shared Choice/Noul/Score contract with visible candidate probabilities, expected stages, concentration, and request/response JSON. Its live interface does not implement the research harness's cyclic averaging or multi-run comparison. We have not established a usability advantage over these tools.
+ChainForge supports visual prompt experiments \citep{arawjo2024chainforge}; LLM Comparator supports side-by-side response evaluation \citep{kahng2025comparator}. Langfuse's experimental Jev editor is a direct comparator, exposing Choice/Score/Yes--no, distributions, confidence, and raw requests via external inference \citep{langfuse2026jev}. Phoenix JS evals 2.6.0 uses one Choice question and preserves probability metadata \citep{phoenix2026jev}; its GUI distribution display remains unverified here. These are source-based comparisons, not usability or performance experiments. \system{} supplies local frozen-model candidate-probability inspection and auditable evaluation. Its live UI lacks cyclic averaging and multi-run comparison; Appendix~\ref{sec:comparison_scope} separates comparison scopes.
 
 \paragraph{Sensitivity and calibration.}
 Order/token bias and fixed-binding changes are established \citep{wei2024unveiling,zheng2024selectors}. \citet{hanna2026diverge}, a recent preprint, also report that reduced order sensitivity need not improve accuracy; we do not claim that distinction as a new general finding. Our contribution is its concrete examination alongside typed outputs and measured call costs. Temperature scaling \citep{guo2017calibration} differs from contextual label-bias correction \citep{zhao2021calibrate}. Canonical key sorting ensures software equivalence under dictionary insertion changes, not model invariance to option meaning or placement. The frozen 35B configuration establishes neither training gains nor superiority over other typed-output systems.
@@ -237,4 +238,47 @@ AI coding agents accessed through OpenAI Codex assisted under the author's direc
 The demonstration supports model inspection and typed-interface prototyping, with no evidence for high-stakes deployment. Inference is local; users remain responsible for inputs and downstream use. Code and self-authored local data use MIT terms. External-dataset-derived selection metadata, rubrics, protocols, and results separately retain applicable CC BY-SA 4.0 attribution and share-alike terms. Upstream dataset text, model weights, and compiled binaries are not bundled; repository data cards and notices specify acquisition and attribution.
 
 \bibliography{references}
+\clearpage
+\appendix
+\twocolumn[{
+\section{Comparison Scope and Evidence Access}
+\label{sec:comparison_scope}
+
+\begin{minipage}{\textwidth}
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{2.2cm}p{4.4cm}p{4.6cm}p{3.6cm}@{}}
+\toprule
+Comparison & Shared conditions & Recorded observation & Unmeasured or different \\
+\midrule
+Native one-token & Checkpoint, full prefix, candidate IDs/logits, greedy selection & 1,350/1,350 labels match; paired latency interval includes zero & Other machines and independent sessions \\
+\addlinespace[3pt]
+Grammar JSON & Resident model, selected tasks, HTTP timing interval & Validity, task-specific quality and serialization latency & Prompt and generated length differ; no probability-vector parity \\
+\addlinespace[3pt]
+LMQL 0.7.3 & Checkpoint, full prefix, candidate IDs; custom native backend & 12/12 labels match; 3/12 probability comparisons exceed $10^{-5}$ & Native evaluation paths differ; not a stock-backend benchmark \\
+\addlinespace[3pt]
+ChainForge 0.3.7.4 & Same local API, request content and typed-response contract & Eight answer pairs identical; three invalid inputs rejected & Browser flow editor and human performance \\
+\addlinespace[3pt]
+Langfuse / Phoenix & Primary-source feature descriptions only & Typed evaluation and probability inspection/metadata precedents & No matched inference, GUI trial or comparative user outcome \\
+\bottomrule
+\end{tabular}
+\captionof{table}{Evidence tiers, not a capability ranking. Unmeasured properties are not absent capabilities. Integration diagnostics are separate from the three research panels.}
+\label{tab:comparison_scope}
+\end{minipage}
+\vspace{1em}
+}]
+
+\paragraph{Public and internal inspection.}
+The released HTTP response and browser expose semantic labels, typed values, candidate probabilities, concentration, and probability-semantics metadata. Raw candidate token IDs and logits belong to the internal engine and research traces; they are not fields in the public response. Table~\ref{tab:comparison_scope} distinguishes controlled comparisons, integration checks, and source-based related work. These observations do not establish that people work faster or make better decisions with this interface.
+
+\paragraph{Model-free evidence review.}
+The linked repository includes a frozen source/evidence ZIP and a reviewer guide. Its standard-library verification checks the archive and recorded request accounting without weights, network access, or inference. A separate CPU replay executes the six frozen analyses in a new directory and compares all 56 derived files. The three studies contain 26,050 measured requests; 300 earlier pilot predictions are retained as background and excluded from that count. The current manuscript and later framework diagnostics are separate from the frozen ZIP. Replaying recorded data verifies calculations, not the truth of the original observations or their generalization.
+
+\paragraph{Post-hoc LMQL diagnosis.}
+Recomputing the same 12 saved comparisons preserves the three $10^{-5}$ probability-tolerance failures (\texttt{score-01}, \texttt{score-03}, \texttt{score-04}). Maximum Score expectation error is $7.18\times10^{-5}$, within the separate, original $10^{-4}$ typed-value tolerance. All native top-two candidate probability margins exceed 0.9799; matching labels therefore provide no near-boundary test. Candidate softmax over saved LMTP logits reproduces saved LMQL probabilities within $3.64\times10^{-9}$. Recorded native-path logit differences can account for the observed discrepancies; their underlying computational cause remains unisolated. Type, candidate count, and assistant prefix are confounded, so the failures do not identify a Score-specific defect. This analysis adds no inference calls, changes no threshold, and does not convert the failed probability comparisons into passes.
+
+\paragraph{Human evaluation boundary.}
+No human study was conducted. An AI-operated rehearsal of a separate synthetic fixture page checks task wording, response saving and scoring; it is software/material QA, not an evaluation of the released interface's usability. Its answers and timings are excluded from the experimental results. The present evidence targets system behavior and reproducibility. Human task performance, cross-machine replication, and matched competitor-interface evaluation remain open.
+
 \end{document}
