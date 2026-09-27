@@ -6,7 +6,7 @@
 
 状態と明示した基準から、選択肢を返す**Choice**、true候補の確率を返す**Noul**、段階の期待値を返す**Score**を計算します。ブラウザUIで候補分布・確率の集中度・実際のリクエストと応答JSONを確認できます。公開ネイティブ版は凍結モデルを使い、判断用headの追加学習は行っていません。
 
-**2026年9月26日時点：arXivへ投稿済み、モデレーション待ちです。公開arXiv IDはまだありません。** 学会向け原稿はNAACL 2027 System Demonstrationsへの投稿準備中で、未投稿・未採択・未査読です。現行の研究用ソースは **`research/naacl2027-demo`** ブランチにあります。
+**2026年9月27日時点：arXivへ投稿済み、モデレーション待ちです。公開arXiv IDはまだありません。** 学会向け原稿はNAACL 2027 System Demonstrationsへの投稿準備中で、未投稿・未採択・未査読です。現行の研究用ソースは **`research/naacl2027-demo`** ブランチにあります。
 
 ## 読む・見る・再現する
 
@@ -18,6 +18,7 @@
 | [解析再現手順とソース・証拠ZIP](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/reproducibility/README.md) | モデル不要の再解析、ビルド検証記録、成果物のハッシュ |
 | [ネイティブ起動手順](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/README.ja.md#起動) | 実行系のビルド、モデルの取得、API起動 |
 | [ブラウザUIの起動手順](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/demo/README.md) | ライブ推論、型付き出力とJSONの確認 |
+| [検証ガイド](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/nonhuman_revision_20260927/REVIEWER_GUIDE.md) | モデル不要の整合性・件数確認とLMQLの後解析 |
 
 ## 現行論文で分かったこと
 
@@ -27,6 +28,8 @@
 - 保存済み記録からの再解析で**56 / 56の派生ファイルがバイト単位で一致**しました。別の機器での独立した実験の再現ではありません。
 
 品質評価は1台のApple Silicon Mac上での日本語公開データの部分集合です。学習時のデータ混入は不明で、人間の利用者評価は未実施です。別の2,400問のAI自作評価は初期の検証記録です。[論文と評価範囲の案内](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/README.md)をご確認ください。
+
+9月27日の改訂では比較付録と、保存済みLMQL 12例の後解析を追加しました。元の確率公差を超えた3例はそのまま報告しています。公開API・画面で確認できるのは型付き値・候補確率・意味メタデータです。候補token IDと生logitは内部エンジン・研究記録に保持されます。新たな推論結果や人の利用者評価は追加していません。
 
 ## 現行版を動かす
 

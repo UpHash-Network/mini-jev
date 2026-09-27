@@ -6,7 +6,7 @@
 
 Mini Jev turns a state and explicit criteria into a categorical **Choice**, the true-candidate probability (**Noul**), or an expected ordinal stage (**Score**). Its browser workbench exposes the candidate distribution, concentration, and request/response JSON. The released native system uses a frozen local language model with no trained decision head.
 
-**Status — 26 September 2026:** a preprint has been submitted to arXiv and is awaiting moderation. There is no public arXiv identifier yet. The current conference manuscript is being prepared for NAACL 2027 System Demonstrations; it is not submitted, accepted, or peer reviewed. The current research source is on **`research/naacl2027-demo`**; use that branch for the instructions below.
+**Status — 27 September 2026:** a preprint has been submitted to arXiv and is awaiting moderation. There is no public arXiv identifier yet. The current conference manuscript is being prepared for NAACL 2027 System Demonstrations; it is not submitted, accepted, or peer reviewed. The current research source is on **`research/naacl2027-demo`**; use that branch for the instructions below.
 
 ## Read, watch, reproduce
 
@@ -18,6 +18,7 @@ Mini Jev turns a state and explicit criteria into a categorical **Choice**, the 
 | [Reproduction guide and frozen source/evidence ZIP](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/reproducibility/README.md) | CPU-only replay of retained analysis, plus native-build verification and exact artifact hashes |
 | [Native installation](https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo#run-the-native-service) | Build the pinned runtime, download the model, and start the local API |
 | [Browser workbench guide](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/demo/README.md) | Run live inference and inspect typed outputs and JSON |
+| [Reviewer guide](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/nonhuman_revision_20260927/REVIEWER_GUIDE.md) | Model-free integrity/accounting checks and the new LMQL diagnosis |
 
 ## What the current paper shows
 
@@ -27,6 +28,8 @@ Mini Jev turns a state and explicit criteria into a categorical **Choice**, the 
 - **56 / 56 analysis outputs** were reproduced byte for byte from retained records. This is analysis replay, not an independent experiment or second-machine replication.
 
 Task-quality evidence uses Japanese public-data subsets on one Apple Silicon Mac. Training-data contamination is unknown; no human usability study has been performed. A separate 2,400-item AI-authored regression suite is historical background. See the [paper guide](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/README.md) for the full scope.
+
+The September 27 revision adds a comparison appendix and a post-hoc analysis of the same 12 LMQL cases; all three original probability-tolerance failures remain. The public API/UI expose typed values, candidate probabilities, and semantic metadata; candidate token IDs and raw logits are retained internally and in research traces. No new inference or human-study results are added.
 
 ## Run the current version
 
