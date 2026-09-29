@@ -2,7 +2,7 @@
 
 ## Artifact identity
 
-Mini Jev is an inference adapter and experimental training toolkit, not a newly pretrained language model. The measured native configuration uses an unchanged pretrained model plus prompt formatting and temperature scaling.
+LogitTrail is an inference adapter and experimental training toolkit, not a newly pretrained language model. The measured native configuration uses an unchanged pretrained model plus prompt formatting and temperature scaling.
 
 | Field | Evaluated native configuration |
 |---|---|
@@ -19,7 +19,7 @@ Mini Jev is an inference adapter and experimental training toolkit, not a newly 
 | Temperature | 1.3489628825916533, fit on 120 separate authored items |
 | Additional model training | **None for this final configuration** |
 
-The upstream card describes 35B total and 3B active parameters. Model capabilities, pretraining data, and original model limitations should be assessed from the [upstream card](https://huggingface.co/Qwen/Qwen3.6-35B-A3B). Mini Jev did not audit the upstream training corpus. Weights are downloaded from the pinned upstream artifact rather than redistributed in this repository.
+The upstream card describes 35B total and 3B active parameters. Model capabilities, pretraining data, and original model limitations should be assessed from the [upstream card](https://huggingface.co/Qwen/Qwen3.6-35B-A3B). LogitTrail did not audit the upstream training corpus. Weights are downloaded from the pinned upstream artifact rather than redistributed in this repository.
 
 ## Inputs, outputs, and intended use
 

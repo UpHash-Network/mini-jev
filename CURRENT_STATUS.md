@@ -1,6 +1,6 @@
 > Public-release clarification: “manual”, “handwritten”, “手書き”, and “independent reviewer” in these historical records refer to individual writing/review by separate AI agents, not human expert annotation or external independent evaluation. See [DATA_CARD.md](DATA_CARD.md) for scope and provenance.
 
-# Mini Jev 開発状況
+# LogitTrail 開発状況
 
 2026年9月20日。定めた簡易版の完成基準を満たしました。
 

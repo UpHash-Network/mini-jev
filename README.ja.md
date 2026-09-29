@@ -1,4 +1,6 @@
-# Mini Jev
+# LogitTrail
+
+**2026年9月29日：Mini JevからLogitTrailへ改名しました。** [r-ms/mini-jev](https://github.com/r-ms/mini-jev)との混同を避けるためです。URLとAPIの互換性を維持し、提出済みarXivと過去の記録は旧名で保存しています。[改名と版の対応](NAMING.md)。
 
 **凍結したローカルLLMから、型付き判断と候補の確率を取り出して確認するツールです。**
 
@@ -13,7 +15,7 @@
 | 入口 | 内容 |
 |---|---|
 | [実験記録の比較画面](https://uphash-network.github.io/mini-jev/explorer/) | 条件・候補確率・共有する推論を比較し、元記録への参照付きJSONを保存。9月28日追加。ライブ推論ではありません |
-| [最新原稿PDF](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Manuscript.pdf) | 手法・評価・先行研究・限界 |
+| [最新原稿PDF](https://uphash-network.github.io/mini-jev/assets/LogitTrail_Manuscript.pdf) | 手法・評価・先行研究・限界 |
 | [60秒の実験結果解説](https://uphash-network.github.io/mini-jev/#demo) | 保存済み実験記録から説明する短い動画。新たなライブ実行ではありません |
 | [145秒の操作動画](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Demonstration.mp4) | ローカルUIの操作を収録した字幕付き動画。末尾に以前のブランチ名が残っています |
 | [解析再現手順とソース・証拠ZIP](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/reproducibility/README.md) | モデル不要の再解析、ビルド検証記録、成果物のハッシュ |
