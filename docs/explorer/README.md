@@ -1,4 +1,6 @@
-# Saved evidence explorer
+# LogitTrail saved evidence explorer
+
+LogitTrail was formerly named Mini Jev. The display name changed on 29 September 2026; original ZIP paths, saved records, export format, and `mini-jev-` download filenames retain their historical identifiers. The existing URL and shared comparison fragments continue to work.
 
 Open [the published explorer](https://uphash-network.github.io/mini-jev/explorer/), or serve `docs/` locally:
 

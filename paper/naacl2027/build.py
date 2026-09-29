@@ -15,7 +15,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tectonic", default="tectonic", help="Tectonic executable (tested: 0.17.0)")
     parser.add_argument("--build-dir", type=Path, default=here.parents[1] / ".build" / "naacl2027-paper")
-    parser.add_argument("--output", type=Path, default=here / "NAACL2027_Mini_Jev.pdf")
+    parser.add_argument("--output", type=Path, default=here / "NAACL2027_LogitTrail.pdf")
     args = parser.parse_args()
     for record in json.loads((here / "STYLE_PROVENANCE.json").read_text())["files"]:
         observed = hashlib.sha256((here / record["file"]).read_bytes()).hexdigest()

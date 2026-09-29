@@ -1,6 +1,8 @@
-# Mini Jev: local decision workbench
+# LogitTrail: local decision workbench
 
-A browser interface for the existing Mini Jev HTTP API. Enter one support message, edit three questions, and inspect a **Choice**, **Noul**, and **Score** from the live resident model. There are no stored answers, mock mode, or replay path in the application. Fake engines exist only in the CPU tests.
+Formerly **Mini Jev**. The project was renamed on 29 September 2026; the repository URL, Python identifiers, and existing API protocol remain compatible. Earlier recordings retain the former name. This is the UPHASH project, distinct from the related [r-ms/mini-jev](https://github.com/r-ms/mini-jev) project.
+
+A browser interface for the existing LogitTrail HTTP API. Enter one support message, edit three questions, and inspect a **Choice**, **Noul**, and **Score** from the live resident model. There are no stored answers, mock mode, or replay path in the application. Fake engines exist only in the CPU tests.
 
 The interface and bridge use static HTML/CSS/JavaScript and Python 3.10+ standard-library code. No package manager, remote font, analytics, CDN, or frontend build is needed.
 

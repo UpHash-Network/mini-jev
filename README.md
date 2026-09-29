@@ -1,4 +1,6 @@
-# Mini Jev
+# LogitTrail
+
+**29 September 2026: Mini Jev is now LogitTrail.** The new name avoids confusion with the distinct [r-ms/mini-jev](https://github.com/r-ms/mini-jev) project. Existing URLs and API identifiers remain compatible. The submitted arXiv version and historical records retain their original names. [Name and version mapping](NAMING.md).
 
 [Project page](https://uphash-network.github.io/mini-jev/) — current manuscript, demonstration video, evaluation evidence, and installation links.
 
@@ -6,7 +8,7 @@
 
 [日本語](README.ja.md) · [Current paper](paper/naacl2027/README.md) · [Reproduce the paper](paper/naacl2027/reproducibility/README.md) · [Install](#run-the-native-service) · [Train on your data](TRAINING.md)
 
-Mini Jev turns a state and a question into a choice, a true/false score (`Noul`), or an ordinal score. It reads candidate next-token logits, normalizes them, and constructs the typed response in Python. The released inference configuration uses a **frozen Qwen3.6-35B-A3B Q4_K_M model**, repeated input, and type-specific candidate tokens. It does **not** use a trained decision head.
+LogitTrail turns a state and a question into a choice, a true/false score (`Noul`), or an ordinal score. It reads candidate next-token logits, normalizes them, and constructs the typed response in Python. The released inference configuration uses a **frozen Qwen3.6-35B-A3B Q4_K_M model**, repeated input, and type-specific candidate tokens. It does **not** use a trained decision head.
 
 This independent project is inspired by [TypeSafe's Jev interface](https://docs.typesafe.ai/api). It is not affiliated with TypeSafe and does not reproduce Jev's architecture, RLCD, calibration guarantees, SDK compatibility, or reported speedups. Candidate-logit classification and prompt repetition have prior work; this release contributes an inspectable implementation and empirical record, not a claim of a new algorithm.
 
@@ -14,7 +16,7 @@ This independent project is inspired by [TypeSafe's Jev interface](https://docs.
 
 **Status, 27 September 2026:** the preprint was submitted to arXiv and is awaiting moderation. No public arXiv identifier is available yet. The current conference manuscript is being prepared for NAACL 2027 System Demonstrations; it has not been submitted, accepted, or peer reviewed. The earlier EACL attempt closed without a submission.
 
-1. **Read:** [current manuscript PDF](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Manuscript.pdf) and [paper guide](paper/naacl2027/README.md).
+1. **Read:** [current manuscript PDF](https://uphash-network.github.io/mini-jev/assets/LogitTrail_Manuscript.pdf) and [paper guide](paper/naacl2027/README.md).
 2. **Watch:** [60-second evidence walkthrough](https://uphash-network.github.io/mini-jev/#demo), then the [145-second interface recording](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Demonstration.mp4). The short video explains retained experiment results; it is not a new live run.
 3. **Reproduce without a model:** [download the frozen source/evidence ZIP and replay the analysis](paper/naacl2027/reproducibility/README.md). Python's standard library is sufficient for this replay. The [reviewer guide](paper/naacl2027/nonhuman_revision_20260927/REVIEWER_GUIDE.md) also provides a quick integrity and accounting check.
 4. **Run live on a Mac:** follow [native installation](#run-the-native-service), then [start the browser workbench](demo/README.md#start-the-demo).

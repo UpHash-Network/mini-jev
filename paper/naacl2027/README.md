@@ -1,6 +1,8 @@
-# Mini Jev — NAACL 2027 System Demonstrations manuscript
+# LogitTrail — NAACL 2027 System Demonstrations manuscript
 
-**Conference submission preparation, updated 27 September 2026.**
+**29 September 2026: renamed from Mini Jev to LogitTrail.** The submitted arXiv version retains its original Mini Jev title; this is a later conference-preparation revision. [Name and version mapping](../../NAMING.md).
+
+**Conference submission preparation, updated 29 September 2026.**
 The related preprint was submitted to arXiv on 26 September and is awaiting
 moderation; a public arXiv ID is not yet available. This NAACL manuscript is
 **not submitted, accepted, or peer reviewed**. The arXiv submission and this
@@ -11,7 +13,7 @@ Author: **Yuki Oshio, UPHASH Inc.** Single author; identified for the single-bli
 ## Read and run
 
 - [Research project page](https://uphash-network.github.io/mini-jev/) — manuscript, video, findings, and installation links in one place.
-- [Paper PDF](NAACL2027_Mini_Jev.pdf) — 9 pages: main text and disclosures end on page 6; references occupy pages 7–8; Appendix A occupies page 9.
+- [Paper PDF](NAACL2027_LogitTrail.pdf) — 9 pages: main text and disclosures end on page 6; references occupy pages 7–8; Appendix A occupies page 9.
 - [Download the versioned source and evidence ZIP](https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/naacl2027-demo/paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip)
   — 18,060,014 bytes; SHA-256
   `a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053`.
@@ -28,11 +30,11 @@ Author: **Yuki Oshio, UPHASH Inc.** Single author; identified for the single-bli
 - [ChainForge integration diagnostic](chainforge_integration/README.md) —
   actual provider registration/dispatch and the released local API, without a
   browser-interface or human usability claim.
-- [Current revision and checks](nonhuman_revision_20260927/README.md) — evidence-led evaluation without a required human study; comparison scopes and post-hoc LMQL diagnosis.
+- [September 27 revision and checks](nonhuman_revision_20260927/README.md) — evidence-led evaluation without a required human study; comparison scopes and post-hoc LMQL diagnosis.
 - [Reviewer guide](nonhuman_revision_20260927/REVIEWER_GUIDE.md) — standard-library integrity/accounting checks and the separate model-free numerical replay.
 - [Original source/evidence artifact checks](FINAL_CHECKS.20260925.json) — historical 25 September snapshot.
 
-The September 27 manuscript, reviewer guide, and post-hoc diagnostic are distributed together in this revision. Their [publication manifest](nonhuman_revision_20260927/PUBLICATION_MANIFEST.json) records exact file hashes. The published source/evidence ZIP remains unchanged.
+The September 29 name revision preserves the numerical results and adds the distinct r-ms/mini-jev implementation to related work. [Rename revision and checks](rename_20260929/README.md). The September 27 manuscript remains available as [a historical PDF](NAACL2027_Mini_Jev.pdf). Its reviewer guide and post-hoc diagnostic remain applicable. Their [publication manifest](nonhuman_revision_20260927/PUBLICATION_MANIFEST.json) records exact file hashes. The published source/evidence ZIP remains unchanged.
 
 The source/evidence ZIP is a frozen composition of the application and the three
 paper studies (26,050 measured research requests). It excludes the current

@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-29",
+  "project_name": "LogitTrail",
+  "former_name": "Mini Jev",
+  "prior_commit": "45a8dca24a4420d216335cdbf3ab10e77b96d269",
+  "scope": "Name revision and attribution of the distinct r-ms implementation; no new measurements or altered experimental conclusions.",
+  "arxiv_submitted_title": "Mini Jev: An Inspectable Local Interface for Typed Decisions from Frozen Language Models",
+  "arxiv_package_replaced": false,
+  "paper": {
+    "pages": 9,
+    "main_and_disclosures_pages": 6,
+    "reference_pages": [
+      7,
+      8
+    ],
+    "appendix_pages": [
+      9
+    ],
+    "all_pages_visually_reviewed": true,
+    "layout_issues": []
+  },
+  "files": [
+    {
+      "path": "paper/naacl2027/main.tex",
+      "bytes": 31014,
+      "sha256": "d31a1145a0a25edfb20db3afe685d24122856cefbb4773a57929928246be32eb"
+    },
+    {
+      "path": "paper/naacl2027/references.bib",
+      "bytes": 12469,
+      "sha256": "000525114351bde0a89be17086f1909a68d9167de1945db30f456a7cfe847c8a"
+    },
+    {
+      "path": "paper/naacl2027/NAACL2027_LogitTrail.pdf",
+      "bytes": 232105,
+      "sha256": "5bab8d9e5492059815d53d0b1433af5f4d13f2b439a03643c8e7abc4e93b2f73"
+    },
+    {
+      "path": "docs/assets/LogitTrail_Manuscript.pdf",
+      "bytes": 232105,
+      "sha256": "5bab8d9e5492059815d53d0b1433af5f4d13f2b439a03643c8e7abc4e93b2f73"
+    }
+  ],
+  "preserved": [
+    {
+      "path": "paper/naacl2027/NAACL2027_Mini_Jev.pdf",
+      "sha256": "401cd45ea723c0be68d2df7d9bf1498e393647c203b5f22b46c650133833600d",
+      "identical_to_prior_commit": true
+    },
+    {
+      "path": "docs/assets/Mini_Jev_Manuscript.pdf",
+      "sha256": "401cd45ea723c0be68d2df7d9bf1498e393647c203b5f22b46c650133833600d",
+      "identical_to_prior_commit": true
+    },
+    {
+      "path": "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip",
+      "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+      "identical_to_prior_commit": true
+    },
+    {
+      "path": "docs/assets/Mini_Jev_Demonstration.mp4",
+      "sha256": "094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123",
+      "identical_to_prior_commit": true
+    },
+    {
+      "path": "docs/assets/Mini_Jev_60s.mp4",
+      "sha256": "7374d21b2eba977b0ad13f8d9373f66d708b15a9a915bae6ec9c5b77ba6e0551",
+      "identical_to_prior_commit": true
+    },
+    {
+      "path": "docs/explorer/data/index.json",
+      "sha256": "22ee0270bce871e0c22808b3126f61b17410bdeac709f73f0a3fd6ced4331baa",
+      "identical_to_prior_commit": true
+    },
+    {
+      "path": "scripts/build_evidence_explorer.py",
+      "sha256": "bd4870a16f055f9bad3927d8c41c1fdb1b6cba2f6c06e3170c4894e047e914b9",
+      "identical_to_prior_commit": true
+    }
+  ]
+}

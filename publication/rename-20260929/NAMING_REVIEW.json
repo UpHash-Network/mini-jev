@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-29",
+  "selected_name": "LogitTrail",
+  "japanese_reading": "ロジットトレイル",
+  "brief": "Describe inspection of candidate scores and traceable typed-decision records for an international research audience, without implying correctness guarantees.",
+  "candidates": [
+    {
+      "name": "LogitTrail",
+      "assessment": "Preferred: candidate scoring and evidence traceability; no exact software name found in focused web and GitHub name searches."
+    },
+    {
+      "name": "LogitView",
+      "assessment": "Alternative: readable but suggests visualization more narrowly; no GitHub name match returned."
+    },
+    {
+      "name": "ChoiceTrace",
+      "assessment": "Rejected: existing AI decision/reflection app uses this exact name.",
+      "source": "https://apps.apple.com/us/app/choicetrace/id6792975751"
+    }
+  ],
+  "search_scope": {
+    "web_queries": [
+      "\"LogitTrail\"",
+      "\"LogitView\"",
+      "\"ChoiceTrace\" AI"
+    ],
+    "github_name_searches": [
+      "LogitTrail in:name",
+      "LogitView in:name"
+    ]
+  },
+  "limitations": "Focused name-collision screening only; not trademark clearance, exhaustive worldwide search, domain/handle reservation, company registration, or a native-speaker panel. No domain purchase or company rename.",
+  "compatibility_decision": "Keep repository/Pages URL mini-jev, history, API identifiers and archive member paths; update current display branding and artifacts.",
+  "github_pages_basis": "https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository"
+}

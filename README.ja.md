@@ -1,4 +1,6 @@
-# Mini Jev
+# LogitTrail
+
+**2026年9月29日：Mini JevからLogitTrailへ改名しました。** [r-ms/mini-jev](https://github.com/r-ms/mini-jev)との名称の混同を避けるためです。既存URLとAPI識別子は互換性のため維持します。提出済みarXivと過去の記録は旧名のまま保存しています。[改名と版の対応](NAMING.md)。
 
 [研究紹介ページ](https://uphash-network.github.io/mini-jev/) — 最新原稿・デモ動画・評価結果・再現手順をまとめています。
 
@@ -14,7 +16,7 @@
 
 **2026年9月27日時点：arXivへ投稿済み、モデレーション待ちです。公開arXiv IDはまだありません。** 現行の学会向け原稿はNAACL 2027 System Demonstrationsへの投稿準備中で、未投稿・未採択・未査読です。以前のEACLへの投稿は成立しませんでした。
 
-1. **読む：** [最新原稿PDF](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Manuscript.pdf)と[論文・証拠の案内](paper/naacl2027/README.md)。
+1. **読む：** [最新原稿PDF](https://uphash-network.github.io/mini-jev/assets/LogitTrail_Manuscript.pdf)と[論文・証拠の案内](paper/naacl2027/README.md)。
 2. **見る：** [60秒の実験結果解説](https://uphash-network.github.io/mini-jev/#demo)、続けて[145秒の操作動画](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Demonstration.mp4)。60秒版は保存済み実験記録の解説で、新たなライブ実行ではありません。
 3. **モデルなしで確かめる：** [ソース・証拠ZIPと解析再現手順](paper/naacl2027/reproducibility/README.md)。保存済み記録の再解析はPython標準ライブラリで実行できます。[検証ガイド](paper/naacl2027/nonhuman_revision_20260927/REVIEWER_GUIDE.md)には整合性と件数を確認する軽量コマンドもあります。
 4. **Macで実行する：** [起動手順](#起動)でモデルAPIを準備し、[ブラウザUI](demo/README.md#start-the-demo)を立ち上げます。

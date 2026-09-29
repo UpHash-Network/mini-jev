@@ -1,0 +1,46 @@
+{
+  "checked_at_utc": "2026-09-29T03:02:32.954290+00:00",
+  "scope": "Renamed, code-rendered LogitTrail walkthrough. No model calls, new measurement, or changes to historical assets.",
+  "python_executable": "python3",
+  "python_version": "3.12.14",
+  "pillow_version": "12.3.0",
+  "ffmpeg_executable": "/opt/homebrew/bin/ffmpeg",
+  "ffprobe_executable": "/opt/homebrew/bin/ffprobe",
+  "ffmpeg_version": "ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "build_command": "python3 publication/rename-20260929/video/build_video.py --work-dir .runs/logittrail-video",
+  "build_result": "exit 0",
+  "text_bounds": "All rendered text passed canvas-bound assertions; brand-to-section separation explicitly asserted at greater than 50 pixels.",
+  "visual_review": {
+    "scenes_checked": [
+      "01.png",
+      "03.png",
+      "05.png",
+      "06.png",
+      "encoded MP4 at 8 seconds",
+      "encoded MP4 at 34 seconds"
+    ],
+    "result": "No clipped text or overlaps observed. New name appears on cards and end title; archival UI retains original Mini Jev name with explicit former-name caption. Original source URL remains visible for compatibility."
+  },
+  "decode_check": {
+    "command": "/opt/homebrew/bin/ffmpeg -v error -i docs/assets/LogitTrail_60s.mp4 -f null -",
+    "result": "exit 0; no decode errors"
+  },
+  "frozen_evidence": {
+    "same_bytes_as": "publication/launch-20260926/video/EVIDENCE.json",
+    "sha256": "54ca609bc500be4e82902a444e057f483f77eff6e80338f28c86f2c0f1ffc3a8",
+    "unique_items": 200,
+    "incorrect": 42,
+    "display_reversal_label_flips": 0
+  },
+  "historical_files_verified_byte_identical_to_HEAD": [
+    "publication/launch-20260926/video/build_video.py",
+    "publication/launch-20260926/video/README.md",
+    "publication/launch-20260926/video/PROVENANCE.json",
+    "publication/launch-20260926/video/EVIDENCE.json",
+    "docs/assets/Mini_Jev_60s.mp4",
+    "docs/assets/Mini_Jev_60s.jpg",
+    "docs/assets/Mini_Jev_Demonstration.mp4",
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip"
+  ],
+  "failures": []
+}

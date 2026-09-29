@@ -1,4 +1,4 @@
-"""Serve the Mini Jev browser demo on loopback; never load or simulate a model."""
+"""Serve the LogitTrail browser demo on loopback; never load or simulate a model."""
 from __future__ import annotations
 
 import argparse
@@ -259,7 +259,7 @@ def main(argv=None):
         server = DemoServer(args.port, api_url=args.api_url, api_timeout=args.api_timeout)
     except (ValueError, OSError) as error:
         parser.error(str(error))
-    print(f'Mini Jev demo: http://127.0.0.1:{server.server_port}/', flush=True)
+    print(f'LogitTrail demo: http://127.0.0.1:{server.server_port}/', flush=True)
     print('Live API only. Start the model service separately; Ctrl+C stops this UI.', flush=True)
     try:
         server.serve_forever()

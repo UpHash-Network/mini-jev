@@ -18,12 +18,12 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
 
-\newcommand{\system}{Mini Jev}
+\newcommand{\system}{LogitTrail}
 \newcommand{\CodeURL}{\href{https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo}{github.com/UpHash-Network/mini-jev}}
 % Public recording URL is verified against the published branch before delivery.
 \newcommand{\DemoVideo}{\href{https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/Mini_Jev_Demonstration.mp4}{approximately 145-second captioned live recording}}
 
-\title{Mini Jev: An Inspectable Local Interface for Typed Decisions\newline from Frozen Language Models}
+\title{LogitTrail: An Inspectable Local Interface for Typed Decisions\newline from Frozen Language Models}
 \author{Yuki Oshio \\
   UPHASH Inc. \\
   \texttt{oshio@uphash.net}}
@@ -38,7 +38,7 @@ Many language-model applications need a small typed decision rather than free-fo
 \section{Introduction}
 A workflow may need a route, an urgency score, or a stage on an explicit rubric. Returning a paragraph and then recovering that value creates an interface problem: the application must validate a result whose useful content is small. A typed interface makes the contract explicit, but a valid type alone says nothing about whether the decision is right. Similarly, a model can assign almost all candidate probability to an incorrect answer.
 
-\system{} demonstrates this distinction through a local browser interface and an HTTP/Python API. Users edit a shared state and three questions, run the model, and inspect the resulting values alongside candidate distributions. The interface is inspired by TypeSafe's Jev \citep{typesafe2026jev,typesafeapi}; this independent implementation makes no claim to reproduce that system's architecture, training, calibration, compatibility, or performance.
+\system{} (formerly Mini Jev) demonstrates this distinction through a local browser interface and an HTTP/Python API. Users edit a shared state and three questions, run the model, and inspect the resulting values alongside candidate distributions. The interface is inspired by TypeSafe's Jev \citep{typesafe2026jev,typesafeapi}; this independent implementation makes no claim to reproduce that system's architecture, training, calibration, compatibility, or performance.
 
 Developers can inspect local typed decisions before integration. The mechanism is conventional: frozen candidate scoring, restricted softmax, and typed response construction. Verbalizers, logit-based selection, and scoring APIs are established \citep{schick2021pet,ma2025inferring,lmqlscoring}. Our contribution combines inspectable local implementation and auditable evaluation of quality, presentation sensitivity, and cost. Neither scoring nor typed probability interfaces are new.
 
@@ -116,7 +116,7 @@ The page also displays entropy concentration, elapsed time, and copyable request
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/demo-presentation.png}
-\caption{Live browser demonstration in presentation view: an editable state, all three typed outputs, and their candidate distributions. The question editors continue below the displayed results. This English example illustrates the interface; it is not an evaluation item or evidence of English task quality.}
+\caption{Recorded browser demonstration under the former Mini Jev name: an editable state, all three typed outputs, and their candidate distributions. Editors continue below the results. This English example illustrates the interface, not English task quality.}
 \label{fig:demo}
 \end{figure*}}{}
 
@@ -221,7 +221,7 @@ Verbalizers \citep{schick2021pet}, decoding-free selection \citep{ma2025inferrin
 LMQL exposes continuation scoring and selection \citep{lmqlscoring}; multi-token scoring need not equal our single-token readout. Outlines, Guidance, and grammar-constrained decoding support structured generation \citep{outlines,guidance,geng2023grammar}. TypeSafe's adapter maps general LLM outputs to a Jev-style contract \citep{typesafeadapter}; generated probability values differ from token-derived candidate probabilities. Our JSON experiment is a serialization comparison, not a framework benchmark.
 
 \paragraph{Inspection interfaces.}
-ChainForge supports visual prompt experiments \citep{arawjo2024chainforge}; LLM Comparator supports side-by-side response evaluation \citep{kahng2025comparator}. Langfuse's experimental Jev editor is a direct comparator, exposing Choice/Score/Yes--no, distributions, confidence, and raw requests via external inference \citep{langfuse2026jev}. Phoenix JS evals 2.6.0 uses one Choice question and preserves probability metadata \citep{phoenix2026jev}; its GUI distribution display remains unverified here. These are source-based comparisons, not usability or performance experiments. \system{} supplies local frozen-model candidate-probability inspection and auditable evaluation. Its live UI lacks cyclic averaging and multi-run comparison; Appendix~\ref{sec:comparison_scope} separates comparison scopes.
+Rakutko's distinct mini-jev project compares frozen letter-logit scoring with constrained JSON and provides an inspection bench \citep{rakutko2026minijev}; our rename avoids name confusion. ChainForge supports visual prompt experiments \citep{arawjo2024chainforge}; LLM Comparator supports response comparisons \citep{kahng2025comparator}. Langfuse's Jev editor exposes typed questions, distributions, confidence, and requests via external inference \citep{langfuse2026jev}. Phoenix preserves Choice probability metadata \citep{phoenix2026jev}; its GUI display remains unverified. These source-based comparisons establish neither usability nor performance differences. \system{} supplies local inspection and auditable evaluation; its live UI lacks cyclic averaging and multi-run comparison. Appendix~\ref{sec:comparison_scope} separates scopes.
 
 \paragraph{Sensitivity and calibration.}
 Order/token bias and fixed-binding changes are established \citep{wei2024unveiling,zheng2024selectors}. \citet{hanna2026diverge}, a recent preprint, also report that reduced order sensitivity need not improve accuracy; we do not claim that distinction as a new general finding. Our contribution is its concrete examination alongside typed outputs and measured call costs. Temperature scaling \citep{guo2017calibration} differs from contextual label-bias correction \citep{zhao2021calibrate}. Canonical key sorting ensures software equivalence under dictionary insertion changes, not model invariance to option meaning or placement. The frozen 35B configuration establishes neither training gains nor superiority over other typed-output systems.

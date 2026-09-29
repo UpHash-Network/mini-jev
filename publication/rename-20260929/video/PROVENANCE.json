@@ -1,0 +1,62 @@
+{
+  "artifact": "docs/assets/LogitTrail_60s.mp4",
+  "title": "LogitTrail: Stable answers can still be wrong",
+  "generator": "publication/rename-20260929/video/build_video.py",
+  "rebuild_command": "python3 publication/rename-20260929/video/build_video.py --work-dir .runs/logittrail-video",
+  "poster": "docs/assets/LogitTrail_60s.jpg",
+  "poster_sha256": "e504deee77233d53ac3a8cf2fe6ec9d76b095d81348cc563a6d1ff7d1f443bf7",
+  "former_name": "Mini Jev",
+  "naming_change": "New explanatory cards and media title use LogitTrail; archival UI retains the original Mini Jev branding. The project URL is retained for compatibility.",
+  "duration_seconds": 60.0,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 25,
+  "audio": false,
+  "captions": "Embedded English explanatory text; Japanese and English transcript supplied separately.",
+  "sha256": "33850be769721ea94d5fada2e6a0152bf2f7daea1e3954e9da4443619da3ab7d",
+  "bytes": 1423370,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 6,
+      "type": "Introduction"
+    },
+    {
+      "start": 6,
+      "end": 18,
+      "type": "Archival live UI",
+      "source": "docs/assets/Mini_Jev_Demonstration.mp4",
+      "source_start": 34.5,
+      "source_end": 46.5,
+      "modification": "Only earlier 120px caption strip replaced with an explicit former-name archival caption; entire 1920x960 UI retained without branding alteration. Real-time speed."
+    },
+    {
+      "start": 18,
+      "end": 32,
+      "type": "Rendered aggregate study results"
+    },
+    {
+      "start": 32,
+      "end": 48,
+      "type": "Rendered illustrative error records"
+    },
+    {
+      "start": 48,
+      "end": 54,
+      "type": "Interpretation"
+    },
+    {
+      "start": 54,
+      "end": 60,
+      "type": "Project link and attribution"
+    }
+  ],
+  "prior_video_sha256": "094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123",
+  "evidence": "EVIDENCE.json",
+  "selection_limit": "Highest baseline P(true) among the 42 errors; deliberately illustrative, not a random example.",
+  "scope": "JCoLA 200-item panel, not a model-wide accuracy claim. UI excerpt uses a different checkpoint and English interface examples, not this JCoLA run.",
+  "license": "CC BY-SA 4.0 for this composed evidence video and data-derived visuals. Original software code remains MIT.",
+  "attribution": "JCoLA: Taiga Someya, Yushi Sugimoto, Yohei Oseki (2024), https://aclanthology.org/2024.lrec-main.828/ ; https://github.com/osekilab/JCoLA ; https://creativecommons.org/licenses/by-sa/4.0/"
+}

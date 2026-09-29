@@ -1,6 +1,6 @@
 > Public-release clarification: “manual”, “handwritten”, “手書き”, and “independent reviewer” in these historical records refer to individual writing/review by separate AI agents, not human expert annotation or external independent evaluation. See [DATA_CARD.md](DATA_CARD.md) for scope and provenance.
 
-# Mini Jev の判断経路
+# LogitTrail の判断経路
 
 日本語の状態・質問・候補を、固定したローカル言語モデルの候補スコアへ変換します。
 Qwen3.6-35B-A3BのQ4_K_M量子化モデルをllama.cpp/Metalで常駐させます。
