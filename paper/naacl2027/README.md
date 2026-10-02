@@ -2,7 +2,7 @@
 
 **29 September 2026: renamed from Mini Jev to LogitTrail.** The submitted arXiv version retains its original Mini Jev title; this is a later conference-preparation revision. [Name and version mapping](../../NAMING.md).
 
-**Conference submission preparation, updated 2 October 2026.**
+**Conference submission preparation, updated 3 October 2026 (JST).**
 The related preprint was submitted to arXiv on 26 September and is awaiting
 moderation; a public arXiv ID is not yet available. This NAACL manuscript is
 **not submitted, accepted, or peer reviewed**. The arXiv submission and this
@@ -14,10 +14,12 @@ The October 2 revision integrates the saved-evidence Explorer, complete-record f
 
 A subsequent [matched saved-evidence workflow check](workflow_comparison_20261002/README.md) runs six hash-selected cases in the Explorer, complete JSON, and the published ChainForge 0.3.7.6 GUI. All retain the supplied information; the comparison does not establish a human-performance advantage. [Current revision checks](revision_20261002_workflows/README.md) and [unrun Explorer pilot materials](explorer_user_evaluation_20261002/README.md) are separate from the frozen research experiments.
 
+The [raw-record follow-up](raw_workflow_20261002/README.md) executes custom JavaScript in the unmodified ChainForge Processor, reconstructing 2,400 conditions from 6,000 archived logit records. The actual GUI export matches independent Python arithmetic within the frozen 1e-12 tolerance. This establishes competitor feasibility with custom code; neither human advantage nor new model performance is claimed. [Latest revision checks](revision_20261003_raw/README.md) cover this addition.
+
 ## Read and run
 
 - [Research project page](https://uphash-network.github.io/mini-jev/) — manuscript, video, findings, and installation links in one place.
-- [Paper PDF](NAACL2027_LogitTrail.pdf) — 10 pages: main text, limitations, and acknowledgements end on page 6; ethics and references occupy pages 7–8; Appendix A occupies pages 9–10.
+- [Paper PDF](NAACL2027_LogitTrail.pdf) — 10 pages: main text, limitations, and acknowledgements end on page 6; ethics begins on page 6 and references end on page 8; Appendix A occupies pages 9–10.
 - [Download the versioned source and evidence ZIP](https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/naacl2027-demo/paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip)
   — 18,060,014 bytes; SHA-256
   `a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053`.
@@ -38,6 +40,7 @@ A subsequent [matched saved-evidence workflow check](workflow_comparison_2026100
   browser-interface or human usability claim.
 - [September 27 revision and checks](nonhuman_revision_20260927/README.md) — evidence-led evaluation without a required human study; comparison scopes and post-hoc LMQL diagnosis.
 - [Reviewer guide](reviewer_20261002/README.md) — standard-library integrity/accounting checks and the separate model-free numerical replay.
+- [External replication handoff](external_replication_20261002/README.md) — pinned source, CPU preflight, separate second-Mac native smoke and blank operator log; no external result yet.
 - [Original source/evidence artifact checks](FINAL_CHECKS.20260925.json) — historical 25 September snapshot.
 
 The September 29 name revision preserves the numerical results and adds the distinct r-ms/mini-jev implementation to related work. [Rename revision and checks](rename_20260929/README.md). The September 27 manuscript remains available as [a historical PDF](NAACL2027_Mini_Jev.pdf). Its reviewer guide and post-hoc diagnostic remain applicable. Their [publication manifest](nonhuman_revision_20260927/PUBLICATION_MANIFEST.json) records exact file hashes. The published source/evidence ZIP remains unchanged.

@@ -1,0 +1,12 @@
+{
+  "scope": "Author-side AI review resolution, not independent human validation",
+  "finding": "Python equality accepted boolean/float substitutes for integers",
+  "resolution": "Checker now requires exact JSON integer/Boolean types. Explicit substitute probes rejected; identical correct values passed. Unchanged Node/native GUI outputs rechecked successfully.",
+  "checker_sha256": "bdc5d2095cde26656b6fc6577febc2fbd48839ceb15a721952bc57ae5ec35404",
+  "preserved_initial_reports": "initial_checker/",
+  "final_reports": [
+    "NODE_CHECK.json",
+    "CHAINFORGE_CHECK.json"
+  ],
+  "frozen_input_processor_protocol_changed": false
+}

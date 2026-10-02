@@ -1,0 +1,25 @@
+{
+  "status": "prepared_local_preflight_passed",
+  "source_commit": "3ac8c7b482f93df78e66d3936680bc4bf6194eb2",
+  "external_human_operators": 0,
+  "external_machines_tested": 0,
+  "linux_execution_completed": false,
+  "windows_execution_completed": false,
+  "new_native_build_this_packet": false,
+  "new_native_inference_this_packet": false,
+  "new_model_download_this_packet": false,
+  "local_preflight_completed": true,
+  "local_preflight_receipt": "verification/PREFLIGHT_RECEIPT.json",
+  "past_reanalysis_receipt": "../reviewer_20261002/verification/REANALYSIS_CHECKS.json",
+  "past_reanalysis_repeated": false,
+  "historical_native_smoke": "../reproducibility/LIVE_SMOKE.json",
+  "planned_next_step": "External operator selects source-only route or real native Mac route and fills blank machine/operator log. No invitation sent.",
+  "windows_scope": "Native Windows preflight designed but unexecuted; strict 56-file replay assigned to Linux/WSL because frozen text writers can translate LF to CRLF.",
+  "material_source_review_findings": [
+    "At pinned commit 3ac8c7b, service/README.md has stale bundled-native-package wording; the parent task corrected the current documentation after that pin.",
+    "Frozen text writers imply native Windows newline risk for byte-identical replay; untested on Windows."
+  ],
+  "transport_failure_verification": "verification/transport_20261003/TRANSPORT_CHECK.json",
+  "transport_failure_checks_passed": 5,
+  "transport_scope": "Synthetic loopback HTTP fixtures, no native inference; prior preflight and analysis receipts unchanged."
+}

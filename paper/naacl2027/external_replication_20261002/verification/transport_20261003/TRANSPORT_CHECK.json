@@ -1,0 +1,67 @@
+{
+  "status": "pass",
+  "checked_at_utc": "2026-10-02T15:04:04.335155+00:00",
+  "scope": "Five targeted transport failure checks with ephemeral stdlib HTTP fixtures; not live native inference",
+  "smoke_contract_sha256": "e408c618f4ce8a3b268e07cf61ce0dd326dc002b20375f503f5833a274d82c61",
+  "check_transport_sha256": "0bdfcbf0cdf4e4111cc388132c2e7c0936240861438f0ebe0317ffff53458da4",
+  "checks": [
+    {
+      "fixture": "malformed_json",
+      "status": "pass",
+      "method": "GET",
+      "path": "/health",
+      "http_status": 200,
+      "raw_prefix_exact": true,
+      "captured_bytes": 13,
+      "body_truncated": false,
+      "valid_inference_requests": 0
+    },
+    {
+      "fixture": "http_500",
+      "status": "pass",
+      "method": "GET",
+      "path": "/health",
+      "http_status": 500,
+      "raw_prefix_exact": true,
+      "captured_bytes": 71,
+      "body_truncated": false,
+      "valid_inference_requests": 0
+    },
+    {
+      "fixture": "invalid_utf8",
+      "status": "pass",
+      "method": "GET",
+      "path": "/health",
+      "http_status": 200,
+      "raw_prefix_exact": true,
+      "captured_bytes": 13,
+      "body_truncated": false,
+      "valid_inference_requests": 0
+    },
+    {
+      "fixture": "oversized_response",
+      "status": "pass",
+      "method": "GET",
+      "path": "/health",
+      "http_status": 200,
+      "raw_prefix_exact": true,
+      "captured_bytes": 1048576,
+      "body_truncated": true,
+      "valid_inference_requests": 0
+    },
+    {
+      "fixture": "connection_refused",
+      "status": "pass",
+      "http_status": null,
+      "method": "GET",
+      "path": "/health",
+      "transport_error_retained": true,
+      "response_body_received": false,
+      "valid_inference_requests": 0
+    }
+  ],
+  "new_model_calls": 0,
+  "full_analysis_replayed": false,
+  "preflight_rerun": false,
+  "human_participants": 0
+}

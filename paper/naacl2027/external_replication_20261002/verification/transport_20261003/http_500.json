@@ -1,0 +1,29 @@
+{
+  "status": "fail",
+  "mode": "actual_loopback_http_three_type_smoke",
+  "checked_at_utc": "2026-10-02T15:03:55.522183+00:00",
+  "error": "ValueError: Service not ready; no inference sent",
+  "observed_http_exchanges": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "payload": null,
+      "status": 500,
+      "capture_limit_bytes": 1048576,
+      "content_type": "application/json",
+      "raw_body_base64": "eyJlcnJvciI6eyJjb2RlIjoiZml4dHVyZV9mYWlsdXJlIiwibWVzc2FnZSI6InN5bnRoZXRpYyBzZXJ2ZXIgZXJyb3IifX0=",
+      "raw_body_sha256": "f0a54fdcdffde339e5b428827cafe53c3c82412b9327d0fb444738babc1b1e56",
+      "captured_bytes": 71,
+      "body_truncated": false,
+      "raw_body_utf8": "{\"error\":{\"code\":\"fixture_failure\",\"message\":\"synthetic server error\"}}",
+      "body": {
+        "error": {
+          "code": "fixture_failure",
+          "message": "synthetic server error"
+        }
+      }
+    }
+  ],
+  "no_success_claim": true,
+  "test_context": "Synthetic loopback HTTP fixture; no native service, model inference or human participant."
+}

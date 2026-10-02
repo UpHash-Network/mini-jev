@@ -1,0 +1,23 @@
+{
+  "status": "fail",
+  "mode": "actual_loopback_http_three_type_smoke",
+  "checked_at_utc": "2026-10-02T15:03:56.028764+00:00",
+  "error": "ValueError: Response exceeded capture limit; retained prefix was not parsed",
+  "observed_http_exchanges": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "payload": null,
+      "status": 200,
+      "capture_limit_bytes": 1048576,
+      "content_type": "text/plain",
+      "raw_body_sha256": "8f990ba0b577b51cf009ea049368c16bbda1b21e1b93be07a824758bb253c39b",
+      "captured_bytes": 1048576,
+      "body_truncated": true,
+      "decode_error": "Response exceeded capture limit; retained prefix was not parsed",
+      "receipt_note": "The full prefix was compared in memory; only hash, length and truncation proof retained here."
+    }
+  ],
+  "no_success_claim": true,
+  "test_context": "Synthetic loopback HTTP fixture; no native service, model inference or human participant."
+}

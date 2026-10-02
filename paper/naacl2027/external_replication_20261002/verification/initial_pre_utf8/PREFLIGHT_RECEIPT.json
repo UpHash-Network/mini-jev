@@ -1,0 +1,219 @@
+{
+  "status": "pass",
+  "scope": "Same-machine fresh source/venv handoff validation, not external replication",
+  "started_utc": "2026-10-02T14:51:08.741617+00:00",
+  "source_commit": "3ac8c7b482f93df78e66d3936680bc4bf6194eb2",
+  "selected_source_sha256": {
+    "README.md": "a40b8fab44957e35ecbf83ec740a0d5cee402a734b4451a80c547d803e7590d4",
+    "NATIVE_BUILD.md": "2c69efc2ad09ec5a09b85e991f093c98930cf2e72e3ea38535735675a74f579a",
+    "native_config.json": "8f37c0f8a2b08d804af468cbe3a8d7edbe80cfd2aee7677105217e137c4cfdf7",
+    "native_model.json": "506286b90b296c7ae1979794d29e2993e9ce9eabc821ccd07e9b86b0a7c09c27",
+    "fetch_native_model.py": "f6b2f584feb03683cf4a53fb7c4f75568fc6ba2aca0542437347b720a9d97632",
+    "build_native.sh": "0929f14853502dcdb19047690c14cc0990df0ef02b81d120815297c6522160fc",
+    "run_native_service.py": "eea1f38891128ad01e39342d3c9a8058cce127e8282ebc2b04810b9665a94fea",
+    "native_engine.py": "da45591b932a4cf9576f7f45ad9bd8f0fb817457b67ac8147b1f1562edbc83e9",
+    "service/schema.py": "43f95551eb8772cab93bff09265be417def573e3370a374ad6ef99daafd8b515",
+    "service/server.py": "94c14215db7b6752ab15e71781517a09653ae3238c9d80c91e67b6b1b05b6b19",
+    "service/client.py": "af5bf45a4333bd4d6d3583fd2c0d8c0343778623a50b1cc1e9f5f8472970b275",
+    "paper/naacl2027/reviewer_20261002/README.md": "38d453171b81da3f70cd1fb7809a47a9272e31eec110953a1a26fbd824db7ec7",
+    "paper/naacl2027/reviewer_20261002/verification/safe_extract.py": "4394ccbcdffae4d2070d74b2489ab55895354c456bfb5a5ec15455997a54714e",
+    "paper/naacl2027/nonhuman_revision_20260927/check_evidence.py": "321ca72146bd7999702ec241342579a0ef096bf985efea0360c4bcd12b0666d8",
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "paper/naacl2027/reproducibility/LIVE_SMOKE.json": "18ddca840cb4a07442585ab9dedfa5cfb0a196f64566b612a4ae5123e44fa2a8",
+    "paper/naacl2027/reviewer_20261002/verification/REANALYSIS_CHECKS.json": "31da0046c40d4a5cb793edc2e61259484c25501808a320448257439bb535daa8"
+  },
+  "source_gguf_count": 0,
+  "commands": [
+    {
+      "name": "create_no_pip_venv",
+      "argv": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+        "-I",
+        "-B",
+        "-m",
+        "venv",
+        "--without-pip",
+        "{OUTPUT}/venv"
+      ],
+      "cwd": "{SOURCE}",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "wall_seconds": 0.024715290870517492,
+      "log": "create_no_pip_venv.log.txt",
+      "expected_text": null,
+      "pass": true
+    },
+    {
+      "name": "stdlib_environment",
+      "argv": [
+        "{OUTPUT}/venv/bin/python",
+        "-I",
+        "-B",
+        "-c",
+        "import json,importlib.metadata,importlib.util,sys; print(json.dumps({\"python\":sys.version,\"isolated\":sys.flags.isolated,\"third_party_distributions\":[d.metadata[\"Name\"] for d in importlib.metadata.distributions()],\"pip_available\":importlib.util.find_spec(\"pip\") is not None}))"
+      ],
+      "cwd": "{SOURCE}",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "wall_seconds": 0.03351225005462766,
+      "log": "stdlib_environment.log.txt",
+      "expected_text": null,
+      "pass": true
+    },
+    {
+      "name": "integrity_accounting",
+      "argv": [
+        "{OUTPUT}/venv/bin/python",
+        "-I",
+        "-B",
+        "{SOURCE}/paper/naacl2027/nonhuman_revision_20260927/check_evidence.py",
+        "--output",
+        "{OUTPUT}/EVIDENCE_CHECKS.json"
+      ],
+      "cwd": "{SOURCE}",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "wall_seconds": 0.4302832502871752,
+      "log": "integrity_accounting.log.txt",
+      "expected_text": null,
+      "pass": true
+    },
+    {
+      "name": "existing_receipt_rejected",
+      "argv": [
+        "{OUTPUT}/venv/bin/python",
+        "-I",
+        "-B",
+        "{SOURCE}/paper/naacl2027/nonhuman_revision_20260927/check_evidence.py",
+        "--output",
+        "{OUTPUT}/EVIDENCE_CHECKS.json"
+      ],
+      "cwd": "{SOURCE}",
+      "returncode": 2,
+      "expected_returncode": 2,
+      "wall_seconds": 0.02164612477645278,
+      "log": "existing_receipt_rejected.log.txt",
+      "expected_text": "Output exists",
+      "pass": true
+    },
+    {
+      "name": "model_metadata_only",
+      "argv": [
+        "{OUTPUT}/venv/bin/python",
+        "-I",
+        "-B",
+        "{SOURCE}/fetch_native_model.py",
+        "--info"
+      ],
+      "cwd": "{SOURCE}",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "wall_seconds": 0.043745999690145254,
+      "log": "model_metadata_only.log.txt",
+      "expected_text": null,
+      "pass": true
+    },
+    {
+      "name": "missing_model_rejected",
+      "argv": [
+        "{OUTPUT}/venv/bin/python",
+        "-I",
+        "-B",
+        "{SOURCE}/fetch_native_model.py",
+        "--verify-only",
+        "--output",
+        "{OUTPUT}/absent.gguf"
+      ],
+      "cwd": "{SOURCE}",
+      "returncode": 1,
+      "expected_returncode": 1,
+      "wall_seconds": 0.029976584017276764,
+      "log": "missing_model_rejected.log.txt",
+      "expected_text": "completed model file is missing",
+      "pass": true
+    },
+    {
+      "name": "wrong_size_model_rejected",
+      "argv": [
+        "{OUTPUT}/venv/bin/python",
+        "-I",
+        "-B",
+        "{SOURCE}/fetch_native_model.py",
+        "--verify-only",
+        "--output",
+        "{OUTPUT}/invalid-test-file.gguf"
+      ],
+      "cwd": "{SOURCE}",
+      "returncode": 1,
+      "expected_returncode": 1,
+      "wall_seconds": 0.029793749563395977,
+      "log": "wrong_size_model_rejected.log.txt",
+      "expected_text": "size mismatch",
+      "pass": true
+    },
+    {
+      "name": "native_config_no_load",
+      "argv": [
+        "{OUTPUT}/venv/bin/python",
+        "-B",
+        "{SOURCE}/run_native_service.py",
+        "--without-calibration",
+        "--print-config"
+      ],
+      "cwd": "{SOURCE}",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "wall_seconds": 0.057867624796926975,
+      "log": "native_config_no_load.log.txt",
+      "expected_text": null,
+      "pass": true
+    },
+    {
+      "name": "independent_smoke_scorer",
+      "argv": [
+        "{OUTPUT}/venv/bin/python",
+        "-I",
+        "-B",
+        "{PACKET}/smoke_contract.py",
+        "--self-check",
+        "{SOURCE}",
+        "--output",
+        "{OUTPUT}/SCORER_CHECK.json"
+      ],
+      "cwd": "{SOURCE}",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "wall_seconds": 0.03324395790696144,
+      "log": "independent_smoke_scorer.log.txt",
+      "expected_text": null,
+      "pass": true
+    }
+  ],
+  "new_model_calls": 0,
+  "network_operations_requested": 0,
+  "network_isolation": "No network operation is invoked by the checked commands; this is not an OS-enforced network sandbox.",
+  "six_analysis_replay_executed": false,
+  "human_operator_validation": false,
+  "environment": {
+    "system": "Darwin",
+    "release": "25.4.0",
+    "machine": "arm64",
+    "python_launcher": "3.10.5 (v3.10.5:f377153967, Jun  6 2022, 12:36:10) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "other_operating_systems_executed": false,
+    "venv": {
+      "python": "3.10.5 (v3.10.5:f377153967, Jun  6 2022, 12:36:10) [Clang 13.0.0 (clang-1300.0.29.30)]",
+      "isolated": 1,
+      "third_party_distributions": [],
+      "pip_available": false
+    }
+  },
+  "completed_utc": "2026-10-02T14:51:09.454392+00:00",
+  "selected_source_files_unchanged": true,
+  "verified_manifest_files": 353,
+  "main_measured_request_rows": 26050,
+  "background_rows_excluded": 300,
+  "negative_controls_rejected": 9,
+  "model_downloaded": false,
+  "native_build_executed": false,
+  "native_inference_executed": false
+}

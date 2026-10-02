@@ -1,0 +1,84 @@
+{
+  "status": "pass",
+  "mode": "historical_receipt_and_in_memory_negative_controls",
+  "scored_historical_receipt": {
+    "contract_status": "pass",
+    "question_checks": [
+      {
+        "question_id": "next_action",
+        "contract_pass": true,
+        "label": "heal",
+        "historical_smoke_label": "heal",
+        "historical_label_match": true
+      },
+      {
+        "question_id": "need_healing",
+        "contract_pass": true,
+        "label": "true",
+        "historical_smoke_label": "true",
+        "historical_label_match": true
+      },
+      {
+        "question_id": "danger_level",
+        "contract_pass": true,
+        "label": "2",
+        "historical_smoke_label": "2",
+        "historical_label_match": true
+      }
+    ],
+    "historical_labels_all_match": true,
+    "exact_probability_match_required": false,
+    "input_token_count_expected_only_as_historical_reference": 813,
+    "scope": "One synthetic three-type interface smoke. No accuracy rate, cross-machine numerical parity or timing equivalence is established."
+  },
+  "negative_controls": [
+    {
+      "mutation": "false_readiness",
+      "rejected": true,
+      "reason": "health.ready must be true"
+    },
+    {
+      "mutation": "wrong_revision",
+      "rejected": true,
+      "reason": "health revision differs"
+    },
+    {
+      "mutation": "missing_candidate",
+      "rejected": true,
+      "reason": "next_action: missing or extra candidates"
+    },
+    {
+      "mutation": "nonnormalized_probabilities",
+      "rejected": true,
+      "reason": "next_action: probabilities do not sum to one"
+    },
+    {
+      "mutation": "noul_not_true_probability",
+      "rejected": true,
+      "reason": "need_healing: Noul is not P(true)"
+    },
+    {
+      "mutation": "score_not_expectation",
+      "rejected": true,
+      "reason": "danger_level: Score is not the candidate expectation"
+    },
+    {
+      "mutation": "false_correctness_probability_claim",
+      "rejected": true,
+      "reason": "need_healing: probability semantics differs"
+    },
+    {
+      "mutation": "generated_tokens",
+      "rejected": true,
+      "reason": "output token count must be zero"
+    },
+    {
+      "mutation": "nonfinite_probability",
+      "rejected": true,
+      "reason": "need_healing: invalid probability"
+    }
+  ],
+  "new_model_calls": 0,
+  "new_http_requests": 0,
+  "not_new_inference": true
+}

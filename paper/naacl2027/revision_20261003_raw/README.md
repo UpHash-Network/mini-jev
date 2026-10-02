@@ -1,0 +1,14 @@
+# Raw-record comparison and replication handoff revision
+
+This conference-preparation revision adds an executed competitor reconstruction check and an external-replication handoff. It remains an unsubmitted, unreviewed NAACL manuscript; the separately submitted arXiv version and frozen research archive are unchanged.
+
+- **Fairer comparison:** unmodified ChainForge 0.3.7.6 executes disclosed custom JavaScript through its native GUI Processor. Six panels supply 6,000 archived physical logit records and 2,400 A/B condition instances, with no precomputed predictions or diagnostic summaries. Gold references and physical-member recipes are supplied. The actual export agrees with separately coded Python arithmetic within the frozen 1e-12 tolerance. Six tuple-reversal controls preserve results and eight invalid inputs are rejected. [Protocol, files, receipts and limitations](../raw_workflow_20261002/README.md).
+- **More precise claim:** the manuscript explicitly reports competitor feasibility with custom code. Our Explorer uses preprocessed records and does not natively consume the new raw fixture. Neither this computation nor the earlier saved-evidence import establishes a human-performance or setup-effort advantage.
+- **Portable handoff:** a pinned-source CPU preflight, exact success criteria, independent three-type HTTP smoke checker and blank operator log separate evidence replay from second-Mac inference. Fresh same-Mac CPU checks pass; no external operator or new inference is claimed. Failure responses are preserved, including malformed JSON, HTTP errors and transport failures. [Handoff packet](../external_replication_20261002/README.md).
+- **Presentation and instructions:** Figure 1 is recaptured from the same real saved comparison to include its full right edge. The local API guide now correctly says model weights and compiled binaries are not included. The project page links both new evidence packets, and CI reruns the finite raw-logit reconstruction without models.
+
+AI review found a type-strictness gap in the first Python checker. The checker now rejects Boolean/float substitutes for integers, and the unchanged Node and native exports passed again. Earlier receipts remain available; protocol, inputs, processor, tolerance and saved data did not change. AI implementation checks are not independent human validation.
+
+The current paper PDF and public copy are identical. Final checks and file hashes are recorded in this directory. Historical visual reviews remain untouched; a later visual review found a small right-edge crop in the earlier figure and this revision corrects it.
+
+The remaining practical-evidence gaps are genuine target-user observations, documented deployment benefit and independent second-machine inference. The prepared user pilot has zero participants or observations. Adding software checks alone does not establish these outcomes.

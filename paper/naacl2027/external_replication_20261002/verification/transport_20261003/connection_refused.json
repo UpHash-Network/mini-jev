@@ -1,0 +1,18 @@
+{
+  "status": "fail",
+  "mode": "actual_loopback_http_three_type_smoke",
+  "checked_at_utc": "2026-10-02T15:04:04.334893+00:00",
+  "error": "URLError: <urlopen error [Errno 60] Operation timed out>",
+  "observed_http_exchanges": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "payload": null,
+      "status": null,
+      "capture_limit_bytes": 1048576,
+      "transport_error": "URLError: <urlopen error [Errno 60] Operation timed out>"
+    }
+  ],
+  "no_success_claim": true,
+  "test_context": "Reserved non-listening loopback port; no service, model inference or human participant."
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "review_type": "Independent AI adversarial read-only review; not human validation",
+  "reviewed_at_utc": "2026-10-02T15:02:35.571606+00:00",
+  "scope": "Only protocol, input builder, frozen raw inputs, processor, case builder, Node runner, checker and Node result artifacts. No competitor directory audit or GUI execution claim.",
+  "overall": "No blocking discrepancy in current saved reconstruction; minor oracle type-strictness and evidence-scope limitations.",
+  "reviewed_sha256": {
+    "paper/naacl2027/raw_workflow_20261002/protocol.json": "367691c071d2e353f8968bac5a031ed0a239a435667752480508fd1501f56f53",
+    "paper/naacl2027/raw_workflow_20261002/build_inputs.py": "196d8e28981e124f19aaf2811f13491aa268e93d240ea9e3860b12a4fa4a1aa8",
+    "paper/naacl2027/raw_workflow_20261002/raw_inputs.json": "9c2d01cecf4c5ce06d8d0497db03a17f55a164cec3ae5ee4ef2815c02e4fd5a1",
+    "paper/naacl2027/raw_workflow_20261002/process.js": "7de19273b487cf45ae2da3b6fb12392758f7904f40acb82ed9b1d6e354533055",
+    "paper/naacl2027/raw_workflow_20261002/make_cases.py": "291dd3b2c6c8e2e82b3a77cd11f96c1697f3e1a9be8fca78440c42b4ada93fd8",
+    "paper/naacl2027/raw_workflow_20261002/run_node.cjs": "5c14bf19e05693ae05cc3d7f28a624aca850746fce66741ae78e0602fc23bb05",
+    "paper/naacl2027/raw_workflow_20261002/check_results.py": "5ca15f257e5e9e66f998233598015879824341bcca64ff22a86fcf5bbe66f425",
+    "work/raw-workflow-20261002/node-results.json": "8c94dc9c342837015ed6e155e444298e81566c512db6f21e655cb0f1a4d70b4e"
+  },
+  "observations": {
+    "deterministic_builder_check": "passed; archive and JSONL member hashes authenticated by original builder",
+    "case_count": 6,
+    "physical_records": 6000,
+    "condition_instances": 2400,
+    "input_leakage": "No precomputed probabilities, selected labels, typed predictions, differences, unions, or panel summary fields. Gold/reference labels and scores are explicit supplied reference inputs; do not claim there are no answers of any kind.",
+    "math": "Stable candidate softmax; equal mean of member probabilities; type-specific readout; entropy concentration; physical-source set intersections/unions are consistent for these fixtures.",
+    "ties_in_original_physical_rows": 0,
+    "ties_in_original_condition_outputs": 0,
+    "supplemental_posthoc_node_probes": [
+      {
+        "name": "single physical logit tie uses preserved tie_order",
+        "actual": "option_4",
+        "expected": "option_4",
+        "status": "pass"
+      },
+      {
+        "name": "mean probabilities tie uses canonical order",
+        "actual_a": "option_0",
+        "actual_b": "option_0",
+        "expected": "option_0",
+        "status": "pass"
+      },
+      {
+        "name": "selected derived union source identity",
+        "actual": 10,
+        "expected": 10,
+        "status": "pass"
+      }
+    ],
+    "integer_type_audit": {
+      "integer_fields_checked": 36782,
+      "failures": []
+    }
+  },
+  "findings": [
+    {
+      "severity": "low",
+      "target": "check_results.py Check.same",
+      "finding": "Python equality allows True vs expected 1, False vs expected 0, or 1.0 vs expected integer 1. The checker therefore does not enforce integer type despite an exact-integers contract. Supplemental direct probes confirm no failure is reported.",
+      "impact": "No current artifact integer-type mismatch found in separate audit; not evidence of a wrong published numeric value.",
+      "action": "If exact means JSON type as well as value, use a separately documented checker revision that requires type(a) is int for integer expectations; preserve prior reports."
+    },
+    {
+      "severity": "scope",
+      "target": "protocol.json / result reporting",
+      "finding": "Existing 20 cases contain no physical maximum-logit or derived maximum-probability ties. Tuple reversal tests key alignment but not tie selection on archived rows.",
+      "action": "Keep the new tie probes labeled posthoc synthetic Node checks; do not count them among preregistered controls, human observations, or model runs."
+    },
+    {
+      "severity": "scope",
+      "target": "Python oracle and provenance claims",
+      "finding": "Python arithmetic is separately implemented and uses math.fsum but shares the supplied recipes, references, semantics and selected data with JavaScript. Gold correctness and recipe-design correctness are not established independently. GUI trusts projected source identity metadata; archive authentication occurs offline.",
+      "action": "State bounded reconstruction consistency/custom-code feasibility; avoid independent researcher replication, end-user benefit, built-in ChainForge feature, new inference or cryptographic browser verification claims."
+    }
+  ],
+  "frozen_files_edited": false,
+  "competitor_directory_touched": false
+}

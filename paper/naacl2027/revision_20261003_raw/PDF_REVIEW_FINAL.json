@@ -1,0 +1,117 @@
+{
+  "reviewed_at": "2026-10-02T15:14:47.311299+00:00",
+  "reviewer": "arxiv_render_review",
+  "pdf_path": "paper/naacl2027/NAACL2027_LogitTrail.pdf",
+  "pdf_sha256": "bd170ff0ae6a2e03b64de39e99a326a68a2d04c0f1ee760fab31663fced436f3",
+  "page_count": 10,
+  "status": "pass",
+  "previous_review_preserved": "work/raw-workflow-20261002/PDF_VISUAL_REVIEW.json",
+  "coverage": "Compared all ten final renders against previously visually inspected renders. Only page 4 changed; inspected page 4 and recaptured source figure at original resolution.",
+  "page_comparison": [
+    {
+      "page": 1,
+      "initial_render_sha256": "98e34cf11b61637c972d576be8daee7f2f57f1fe0d209265b5658681a4cfd32d",
+      "final_render_sha256": "98e34cf11b61637c972d576be8daee7f2f57f1fe0d209265b5658681a4cfd32d",
+      "byte_identical": true,
+      "inspection": "previous full-page visual inspection retained by byte identity"
+    },
+    {
+      "page": 2,
+      "initial_render_sha256": "e9dd0c63143c285974350ad6629215c4eb6de32fcfd9c4ac7880c4b9f025f782",
+      "final_render_sha256": "e9dd0c63143c285974350ad6629215c4eb6de32fcfd9c4ac7880c4b9f025f782",
+      "byte_identical": true,
+      "inspection": "previous full-page visual inspection retained by byte identity"
+    },
+    {
+      "page": 3,
+      "initial_render_sha256": "515cfda09b76cf751ec6d6d53b0e3dd00dad5fb7011f09297f93db3880bb2ed0",
+      "final_render_sha256": "515cfda09b76cf751ec6d6d53b0e3dd00dad5fb7011f09297f93db3880bb2ed0",
+      "byte_identical": true,
+      "inspection": "previous full-page visual inspection retained by byte identity"
+    },
+    {
+      "page": 4,
+      "initial_render_sha256": "7aa539b51cd1b7e3b1709317b54cdd8f5f791fa96f0cb77419347dc49540b931",
+      "final_render_sha256": "86154545932e0d0d478b4feba439e08eb772dd617c0ce4a62ce9f8fbc2432c84",
+      "byte_identical": false,
+      "inspection": "new full-page visual inspection plus source-asset inspection"
+    },
+    {
+      "page": 5,
+      "initial_render_sha256": "a4d4c681196669c8d1555ec22ef83ab273550d7bc1108c6b0533cb545e3fbec9",
+      "final_render_sha256": "a4d4c681196669c8d1555ec22ef83ab273550d7bc1108c6b0533cb545e3fbec9",
+      "byte_identical": true,
+      "inspection": "previous full-page visual inspection retained by byte identity"
+    },
+    {
+      "page": 6,
+      "initial_render_sha256": "86a1f966d2f1e6df977e769ee52da2efb9427629449d486431272c9e226f3eb7",
+      "final_render_sha256": "86a1f966d2f1e6df977e769ee52da2efb9427629449d486431272c9e226f3eb7",
+      "byte_identical": true,
+      "inspection": "previous full-page visual inspection retained by byte identity"
+    },
+    {
+      "page": 7,
+      "initial_render_sha256": "9a8b883a8d68ba11c264453c7af347f39556c9717857fea88bc9e2d903f08da1",
+      "final_render_sha256": "9a8b883a8d68ba11c264453c7af347f39556c9717857fea88bc9e2d903f08da1",
+      "byte_identical": true,
+      "inspection": "previous full-page visual inspection retained by byte identity"
+    },
+    {
+      "page": 8,
+      "initial_render_sha256": "fe9a9cfcf1b892beb95091df19dffb60ec86a08a719f59f16282d34bea5985ed",
+      "final_render_sha256": "fe9a9cfcf1b892beb95091df19dffb60ec86a08a719f59f16282d34bea5985ed",
+      "byte_identical": true,
+      "inspection": "previous full-page visual inspection retained by byte identity"
+    },
+    {
+      "page": 9,
+      "initial_render_sha256": "b348d623d8fc781067f0481c29a5a7cde1bef5cc42d6b40c2a354e42ca19d70f",
+      "final_render_sha256": "b348d623d8fc781067f0481c29a5a7cde1bef5cc42d6b40c2a354e42ca19d70f",
+      "byte_identical": true,
+      "inspection": "previous full-page visual inspection retained by byte identity"
+    },
+    {
+      "page": 10,
+      "initial_render_sha256": "01d711a3d2e90c394fb22131ed1eec9bc183be0ac86b44bea5b237a13e22e057",
+      "final_render_sha256": "01d711a3d2e90c394fb22131ed1eec9bc183be0ac86b44bea5b237a13e22e057",
+      "byte_identical": true,
+      "inspection": "previous full-page visual inspection retained by byte identity"
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "figure-1-right-edge",
+      "status": "resolved",
+      "detail": "Both +7.384769 and -7.384769 candidate deltas and the full Delta percentage points labels now lie within the source image with visible right-side padding. The recaptured example, labels, probabilities, concentration, physical-call counts, bars, reference statement, and caveat remain fully visible."
+    }
+  ],
+  "layout_checks": {
+    "body_ends_on_page": 6,
+    "limitations_start_page": 6,
+    "acknowledgements_start_page": 6,
+    "ethics_starts_page": 6,
+    "ethics_continues_page": 7,
+    "references_start_page": 7,
+    "appendix_pages": [
+      9,
+      10
+    ],
+    "body_and_appendix_clipping": "none found",
+    "text_overlap": "none found",
+    "table_layout": "all four tables pass",
+    "figure_1": "pass after recapture",
+    "unresolved_double_question_marks": 0,
+    "unicode_replacement_characters": 0
+  },
+  "new_chainforge_content": "Page 6 paragraph, page 9 comparison table, and page 10 raw reconstruction/human evaluation boundary remain byte-identical to already reviewed passing renders.",
+  "limitations": [
+    "Visual audit and unresolved-glyph checks only; no independent validation of experimental data or bibliography in this review.",
+    "Venue-specific page-limit exclusions are not reinterpreted by this visual review."
+  ],
+  "manuscript_or_asset_edits_made": false,
+  "public_transformation": {
+    "source_sha256": "8a8cf776c1975ae50af725b2f656911a9ceea1a522b4cefe715e9d78bf256a66",
+    "change": "Repository absolute path prefix removed; findings unchanged."
+  }
+}

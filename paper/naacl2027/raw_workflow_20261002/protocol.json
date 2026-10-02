@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "frozen_at_utc": "2026-10-02T14:46:59.709605+00:00",
+  "objective": "Reconstruct saved typed-decision diagnostics from archived candidate logits and physical-member recipes, actually executing disclosed JavaScript inside unmodified ChainForge0.3.7.6. Compare with independently implemented Python arithmetic and unchanged published saved results. No human, inference, or superiority experiment.",
+  "input_design": "Allowlisted text-free projection of original physical JSONL rows and original derived membership recipes. No probabilities, chosen labels, typed values, expected answers, precomputed deltas, call unions or panel summaries in input. Candidate keys/logits/temperature, score rubric, source identity and gold references are inputs, not inferred. Archive and member hashes checked by offline builder; browser does not authenticate wholeZIPbytes.",
+  "cases": [
+    {
+      "id": "W01",
+      "selection": {
+        "id": "W01",
+        "panel_id": "presentation_robustness--qwen2.5-0.5b--jcommonsenseqa",
+        "study": "presentation_robustness",
+        "model": "qwen2.5-0.5b",
+        "dataset": "JCommonsenseQA",
+        "type": "choice",
+        "item": "jcommonsenseqa:valid:9925",
+        "a": "baseline",
+        "b": "display_reverse",
+        "item_hash": "0216db43ab9140a5e14e6702cf742d77d4adfe8169b4654f90424154625d0355",
+        "eligible_items": 200,
+        "all_eligible_id_hashes_sha256": "ebada1b5c52b597e08b69685c67284426fb9c1825a5f05e1ae3c3b083307dbe0"
+      }
+    },
+    {
+      "id": "W02",
+      "selection": {
+        "id": "W02",
+        "panel_id": "presentation_robustness--qwen2.5-1.5b--jcola",
+        "study": "presentation_robustness",
+        "model": "qwen2.5-1.5b",
+        "dataset": "JCoLA",
+        "type": "noul",
+        "item": "jcola:out_of_domain_valid:8744",
+        "a": "baseline",
+        "b": "display_reverse",
+        "item_hash": "008d7bf5cc97925201d7e96af31a1c8f2ca2bafcf5c16e82d0ba39297c6652fa",
+        "eligible_items": 200,
+        "all_eligible_id_hashes_sha256": "24c966bcf04ac5a1f02bb7edf9436e0a0e841b53275c081c01cc6b8446578411"
+      }
+    },
+    {
+      "id": "W03",
+      "selection": {
+        "id": "W03",
+        "panel_id": "presentation_robustness--qwen3.6-35b-a3b--jsts",
+        "study": "presentation_robustness",
+        "model": "qwen3.6-35b-a3b",
+        "dataset": "JSTS",
+        "type": "score",
+        "item": "jsts:valid:969",
+        "a": "baseline",
+        "b": "display_reverse",
+        "item_hash": "009f4d43d768614ef42187c3846a68b6922c5223cad0d3324597c0c12329533c",
+        "eligible_items": 200,
+        "all_eligible_id_hashes_sha256": "3fcc3b1ae917b56476afd2c62a87359b74806fae3063082e5224e5eef39fe604"
+      }
+    },
+    {
+      "id": "W04",
+      "selection": {
+        "id": "W04",
+        "panel_id": "order_ensemble--qwen2.5-1.5b--jcommonsenseqa",
+        "study": "order_ensemble",
+        "model": "qwen2.5-1.5b",
+        "dataset": "JCommonsenseQA",
+        "type": "choice",
+        "item": "jcommonsenseqa:valid:8952",
+        "a": "cyclic_forward",
+        "b": "dihedral",
+        "item_hash": "0029f73e628e372d73c7669722e5022d9e1c91b11934f9645882c3654a8df5c7",
+        "eligible_items": 200,
+        "all_eligible_id_hashes_sha256": "09d0294ab9f552ca6a9b19a9e8fb661a42ac60f5060b7d5d810505382064ea1f"
+      }
+    },
+    {
+      "id": "W05",
+      "selection": {
+        "id": "W05",
+        "panel_id": "order_ensemble--qwen3.6-35b-a3b--jcola",
+        "study": "order_ensemble",
+        "model": "qwen3.6-35b-a3b",
+        "dataset": "JCoLA",
+        "type": "noul",
+        "item": "jcola:out_of_domain_valid:8653",
+        "a": "cyclic_forward",
+        "b": "dihedral",
+        "item_hash": "0074f332c69d7535e60932421eabe5a734be19b069fc760d407f8795a7714c81",
+        "eligible_items": 200,
+        "all_eligible_id_hashes_sha256": "505cb617b7d7af3a59ea74cd038feb9171fc82a477e5a57820306e6b46321774"
+      }
+    },
+    {
+      "id": "W06",
+      "selection": {
+        "id": "W06",
+        "panel_id": "order_ensemble--qwen2.5-0.5b--jsts",
+        "study": "order_ensemble",
+        "model": "qwen2.5-0.5b",
+        "dataset": "JSTS",
+        "type": "score",
+        "item": "jsts:valid:1437",
+        "a": "cyclic_forward",
+        "b": "dihedral",
+        "item_hash": "00067977e00bdcada5dcaed88609470f999e8ee4f56f2f1cd68fa464934bd538",
+        "eligible_items": 200,
+        "all_eligible_id_hashes_sha256": "84a9c86e00fc0e960cc158c80cd95da245700be3619b96e6a2ad0ecaba6aa462"
+      }
+    }
+  ],
+  "original_task_sha256": "d629475e55bdc8c5d35cfb813a982925e65485a6a21b27d0a34e0c4fefc829a7",
+  "archive_sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+  "computation": [
+    "Stable candidate softmax at recordedtemperature, aligned bysemantic keys",
+    "Equal probability mean over explicit physical memberrecipes, notmeanlogits",
+    "Type-specific values, originalvector tieorder forphysical;canonicaltieorder forderived",
+    "SelectedA/B semanticdeltas andreferenceerrors",
+    "Physicalsource intersection/union andmember traces",
+    "EveryitemA/B values and200itemlabeldistributions;Scorerange/populationvariance"
+  ],
+  "numerical_contract": {
+    "floats": "math.isclose(rel_tol=1e-12,abs_tol=1e-12); reportmaxabsoluteerrors",
+    "labels_integers_sources": "exact",
+    "retained_archived_fields": "Not overwritten; newlyrecomputed numbersliveinnewartifact"
+  },
+  "controls": {
+    "metamorphic": "Reverse each physical candidate key/logit/token tuple order while preserving originaltie_order metadata;6cases expectedidenticalwithin tolerance. Syntheticrepresentationcontrol,notsixnewmodelruns.",
+    "invalid": [
+      {
+        "id": "missing_member",
+        "base": "W04",
+        "change": "Remove one physical record referenced by an averaging recipe",
+        "expected_error": "missing_member"
+      },
+      {
+        "id": "duplicate_source",
+        "base": "W01",
+        "change": "Append an exact duplicate physical source row",
+        "expected_error": "duplicate_source"
+      },
+      {
+        "id": "cross_item_member",
+        "base": "W04",
+        "change": "Redirect selectedA member to anotheritem physicalrecord",
+        "expected_error": "cross_item_member"
+      },
+      {
+        "id": "duplicate_candidate",
+        "base": "W01",
+        "change": "Replace secondcandidatekey withfirst",
+        "expected_error": "candidate_keys"
+      },
+      {
+        "id": "nonfinite_logit",
+        "base": "W01",
+        "change": "Replace firstlogit by string NaN",
+        "expected_error": "invalid_logits"
+      },
+      {
+        "id": "nonpositive_temperature",
+        "base": "W02",
+        "change": "Set first physicaltemperature to0",
+        "expected_error": "temperature"
+      },
+      {
+        "id": "invalid_source_line",
+        "base": "W03",
+        "change": "Set firstphysical source line to0",
+        "expected_error": "source_identity"
+      },
+      {
+        "id": "empty_recipe",
+        "base": "W06",
+        "change": "Empty selectedA memberlist",
+        "expected_error": "empty_recipe"
+      }
+    ]
+  },
+  "execution": "NativeChainForgeProcessor outputcache emptybeforeRun; openactualGUIRun; exportcomputedoutputsafterRun. Sharedrawinputs and disclosedcustomcode. Python is arithmeticreference; existingLogitTrailUI consumes its publishedpreprocesseddata and is not claimed to natively ingestthese rawfixtures.",
+  "prior_knowledge": "Same6previouslypublishedcases known; design notblinded andnot external preregistration. Fixedcasesandcontrols beforeexecution; nooutcomebasedreselection.",
+  "reporting": "Recordfailures and customcode/preparation. No AIactiontime translatedtohuman effort. No feature-absence or UI-superiority inference. Atmost boundedtechnicalfeasibility andexactness.",
+  "resources": {
+    "new_model_calls": 0,
+    "human_participants": 0,
+    "paid_api_calls": 0
+  },
+  "freeze_rule": "Do not edit this protocol after execution. Store corrections/deviations separately."
+}

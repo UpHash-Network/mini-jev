@@ -1,0 +1,8 @@
+{
+  "source_commit": "3ac8c7b482f93df78e66d3936680bc4bf6194eb2",
+  "archive_sha256": "cae39c09be18a70239866b43be80cbfed48ef625ca7015e6a21788211369dd66",
+  "archive_bytes": 219791360,
+  "tracked_file_count": 663,
+  "source_acquisition": "local git archive; no new source download; no weights",
+  "preparation_note": "First extraction attempt stopped before extraction because macOS /var symlink normalization differed; canonicalized scratch path for successful extraction, without modifying source."
+}

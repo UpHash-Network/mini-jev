@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "case_count": 20,
+  "cases_sha256": "e7257296df2348b2ae5abba60f213b1eabf1da153514ca927952149433219137",
+  "processor_sha256": "7de19273b487cf45ae2da3b6fb12392758f7904f40acb82ed9b1d6e354533055",
+  "fixture_sha256": "9de3defab59a1dd43303a7f6d8d36c90c1f2fb70703d5a6811b93fd9ab63772f",
+  "flow_json_sha256": "78b4a41b15b0ea5358a4d34a567ccfa8123d79f4d5c8cd12ab87167fe41becd6",
+  "fixture_bytes": 1660947,
+  "flow_json_bytes": 19370836,
+  "input_fields": [
+    {
+      "case_id": "W01",
+      "raw_text_sha256": "8dc9246d5c945896b4d80d4764d62eb05c9c47d976eda614dd3a3b8541c96925",
+      "raw_text_bytes": 445902
+    },
+    {
+      "case_id": "W02",
+      "raw_text_sha256": "2503543244450c5463976e40b32ad35ba5ec37d72ec82a2a8067b617d6a5d140",
+      "raw_text_bytes": 383577
+    },
+    {
+      "case_id": "W03",
+      "raw_text_sha256": "d16ca824b3fa2f954d0bd34d34818252eae7f5ed0e475e4f64aaceeca34f0b7e",
+      "raw_text_bytes": 408726
+    },
+    {
+      "case_id": "W04",
+      "raw_text_sha256": "49a7f54629b4792c167bf7e3a8345a7affd3bd6b2937c0131b457a3ade71777b",
+      "raw_text_bytes": 1637127
+    },
+    {
+      "case_id": "W05",
+      "raw_text_sha256": "fc53d0d62ce498b0abc28f92bb6e944fa7928964709eb445b1ff936b44a7a096",
+      "raw_text_bytes": 379989
+    },
+    {
+      "case_id": "W06",
+      "raw_text_sha256": "cc7d9d98947666e00258dadcbed365ed83b2c801e48d7ac86bace482f0ae9e01",
+      "raw_text_bytes": 1789308
+    },
+    {
+      "case_id": "W01-tuple-reversed",
+      "raw_text_sha256": "e2b399ab7c3bf46da93b72b5629c795e7d11b09cfeda8a1ccf6828dfb045513c",
+      "raw_text_bytes": 445917
+    },
+    {
+      "case_id": "W02-tuple-reversed",
+      "raw_text_sha256": "829d3a8c5e97b2985124615ccb8b58fbc31874974ad320745e5a007d89c1f8d2",
+      "raw_text_bytes": 383592
+    },
+    {
+      "case_id": "W03-tuple-reversed",
+      "raw_text_sha256": "0b6c432e586baf630f958dd46b71898fd22a7e9f86fab6ccd05da02a5a5c8708",
+      "raw_text_bytes": 408741
+    },
+    {
+      "case_id": "W04-tuple-reversed",
+      "raw_text_sha256": "a9d6f588a834d7fa6f391cfdfcae2298db8822975f3f79cd24caf6d66ee90c92",
+      "raw_text_bytes": 1637142
+    },
+    {
+      "case_id": "W05-tuple-reversed",
+      "raw_text_sha256": "79a84b176f4a7c34c0c5d09467a803294cdd8f618b87df2a6f6a6043111928cd",
+      "raw_text_bytes": 380004
+    },
+    {
+      "case_id": "W06-tuple-reversed",
+      "raw_text_sha256": "0e7ece4372eb473f534f906d56eed0646dfda4a9dd85969100145d722c0b853c",
+      "raw_text_bytes": 1789323
+    },
+    {
+      "case_id": "W04-missing_member",
+      "raw_text_sha256": "4c28b4e8605d5de463cb0bb2e8b1050da266bdf12cb03693b0491f0d8df75c0c",
+      "raw_text_bytes": 1636409
+    },
+    {
+      "case_id": "W01-duplicate_source",
+      "raw_text_sha256": "a46fdbe516c8d86e87ccf85b0931e835c2618bdfadf18947164ef3d7b5b99f88",
+      "raw_text_bytes": 446667
+    },
+    {
+      "case_id": "W04-cross_item_member",
+      "raw_text_sha256": "d038a1d2e6cc1afe8f1db3d3e5f765483e2a9d830d1130905b8392fab267e7a4",
+      "raw_text_bytes": 1637145
+    },
+    {
+      "case_id": "W01-duplicate_candidate",
+      "raw_text_sha256": "7c7cae94374c31fc5ba51ca4bce457b6ad3a57200d6ddcc94480a1d0a94218e6",
+      "raw_text_bytes": 445922
+    },
+    {
+      "case_id": "W01-nonfinite_logit",
+      "raw_text_sha256": "698dfa8b0b081d981cb27f1e76845ba948f9f3179eee07a7c53b491a28cbad42",
+      "raw_text_bytes": 445905
+    },
+    {
+      "case_id": "W02-nonpositive_temperature",
+      "raw_text_sha256": "12bf673343480ed264f960f44f5a106fa02bf5b4b741565ff84fa655bbb70e27",
+      "raw_text_bytes": 383599
+    },
+    {
+      "case_id": "W03-invalid_source_line",
+      "raw_text_sha256": "29f4820f572a1bb671c508c2c4aba53aeffbeaff4b6521b88ef0dab8f361b960",
+      "raw_text_bytes": 408743
+    },
+    {
+      "case_id": "W06-empty_recipe",
+      "raw_text_sha256": "a016f68f867a7714a731d92367a2307dc9b31f67017de509d82501ee6e1e81c1",
+      "raw_text_bytes": 1789262
+    }
+  ],
+  "preseeded_output_cache": false,
+  "preseeded_output_fields": false,
+  "cache_keys": [
+    "__s"
+  ],
+  "raw_inputs_roundtrip_exact": true,
+  "transformation": "JSON serialization of case.input only; case identifier metadata. No oracle answers, expected_status, derived diagnostics or output cache are imported.",
+  "execution_path": "Native JavaScript Processor Run; process(response) receives raw text through data.fields via responseBatch, then writes compute_raw.json. Code is supplied by the experiment, not a built-in domain-specific diagnostic."
+}

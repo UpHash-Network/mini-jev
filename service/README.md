@@ -4,7 +4,7 @@
 
 ## 起動
 
-`mini-jev` ディレクトリで実行します。Python 3.10 以上と、同梱の macOS ARM64 用 native package、検証済みモデルファイルが必要です。モデル取得・ビルドの条件は [NATIVE_BUILD.md](../NATIVE_BUILD.md) を参照してください。
+`mini-jev` ディレクトリで実行します。Python 3.10 以上と、自分の Mac でビルドした macOS ARM64 用 native package、検証済みモデルファイルが必要です。モデル重みとコンパイル済みバイナリはリポジトリに含まれません。モデル取得・ビルドの条件は [NATIVE_BUILD.md](../NATIVE_BUILD.md) を参照してください。
 
 ```bash
 ./run.sh

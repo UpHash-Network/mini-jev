@@ -1,0 +1,187 @@
+{
+  "status": "pass",
+  "checked_at_utc": "2026-10-02T15:00:51.532298+00:00",
+  "execution": "chainforge",
+  "outputs_sha256": "e08b903391f003aded4ce9f03d1e758e3032f75d52f154eb8458f285d6a540bd",
+  "input_sha256": "9c2d01cecf4c5ce06d8d0497db03a17f55a164cec3ae5ee4ef2815c02e4fd5a1",
+  "protocol_sha256": "367691c071d2e353f8968bac5a031ed0a239a435667752480508fd1501f56f53",
+  "processor_sha256": "7de19273b487cf45ae2da3b6fb12392758f7904f40acb82ed9b1d6e354533055",
+  "cases": [
+    {
+      "id": "W01",
+      "kind": "original",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W02",
+      "kind": "original",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W03",
+      "kind": "original",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W04",
+      "kind": "original",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W05",
+      "kind": "original",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W06",
+      "kind": "original",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W01-tuple-reversed",
+      "kind": "synthetic_representation",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W02-tuple-reversed",
+      "kind": "synthetic_representation",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W03-tuple-reversed",
+      "kind": "synthetic_representation",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W04-tuple-reversed",
+      "kind": "synthetic_representation",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W05-tuple-reversed",
+      "kind": "synthetic_representation",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W06-tuple-reversed",
+      "kind": "synthetic_representation",
+      "status": "pass",
+      "expected_status": "ok"
+    },
+    {
+      "id": "W04-missing_member",
+      "kind": "synthetic_invalid",
+      "status": "pass",
+      "expected_status": "rejected"
+    },
+    {
+      "id": "W01-duplicate_source",
+      "kind": "synthetic_invalid",
+      "status": "pass",
+      "expected_status": "rejected"
+    },
+    {
+      "id": "W04-cross_item_member",
+      "kind": "synthetic_invalid",
+      "status": "pass",
+      "expected_status": "rejected"
+    },
+    {
+      "id": "W01-duplicate_candidate",
+      "kind": "synthetic_invalid",
+      "status": "pass",
+      "expected_status": "rejected"
+    },
+    {
+      "id": "W01-nonfinite_logit",
+      "kind": "synthetic_invalid",
+      "status": "pass",
+      "expected_status": "rejected"
+    },
+    {
+      "id": "W02-nonpositive_temperature",
+      "kind": "synthetic_invalid",
+      "status": "pass",
+      "expected_status": "rejected"
+    },
+    {
+      "id": "W03-invalid_source_line",
+      "kind": "synthetic_invalid",
+      "status": "pass",
+      "expected_status": "rejected"
+    },
+    {
+      "id": "W06-empty_recipe",
+      "kind": "synthetic_invalid",
+      "status": "pass",
+      "expected_status": "rejected"
+    }
+  ],
+  "original_cases": 6,
+  "synthetic_representation_controls": 6,
+  "synthetic_invalid_controls": 8,
+  "original_physical_records": 6000,
+  "archived_conditions_checked": 2400,
+  "processor_vs_python": {
+    "numeric_comparisons": 101376,
+    "max_absolute_difference": 1.7763568394002505e-15,
+    "max_by_field": {
+      "option_0": 2.220446049250313e-16,
+      "option_1": 3.3306690738754696e-16,
+      "option_2": 2.220446049250313e-16,
+      "option_3": 2.220446049250313e-16,
+      "option_4": 2.220446049250313e-16,
+      "concentration": 3.3306690738754696e-16,
+      "recorded_latency_sum_ms": 0,
+      "a": 4.440892098500626e-16,
+      "b": 3.3306690738754696e-16,
+      "delta": 5.551115123125783e-16,
+      "maximum_label_share": 0,
+      "false": 1.1102230246251565e-16,
+      "true": 5.551115123125783e-17,
+      "typed_value": 1.7763568394002505e-15,
+      "0": 4.440892098500626e-16,
+      "1": 2.220446049250313e-16,
+      "2": 2.220446049250313e-16,
+      "3": 2.220446049250313e-16,
+      "4": 3.3306690738754696e-16,
+      "5": 2.220446049250313e-16,
+      "value": 0,
+      "a_error": 1.7763568394002505e-15,
+      "b_error": 1.7763568394002505e-15,
+      "value_min": 4.440892098500626e-16,
+      "value_max": 8.881784197001252e-16,
+      "value_population_variance": 8.881784197001252e-16
+    },
+    "failures": []
+  },
+  "python_recomputation_vs_unchanged_published_saved_data": {
+    "numeric_comparisons": 12000,
+    "max_absolute_difference": 0.0,
+    "max_by_field": {
+      "probabilities": 0,
+      "typed_value": 0
+    },
+    "failures": []
+  },
+  "tolerance": {
+    "relative": 1e-12,
+    "absolute": 1e-12
+  },
+  "python": "3.10.5",
+  "system": "Darwin",
+  "human_participants": 0,
+  "new_model_calls": 0,
+  "scope": "Finite raw-logit reconstruction/custom-code feasibility; not native built-in functionality, human benefit, new model outcomes or independent human replication."
+}

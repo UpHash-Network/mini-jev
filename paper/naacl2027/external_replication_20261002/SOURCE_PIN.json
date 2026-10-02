@@ -1,0 +1,25 @@
+{
+  "source_commit": "3ac8c7b482f93df78e66d3936680bc4bf6194eb2",
+  "source_repository": "https://github.com/UpHash-Network/mini-jev",
+  "source_branch_at_preparation": "research/naacl2027-demo",
+  "files_sha256": {
+    "README.md": "a40b8fab44957e35ecbf83ec740a0d5cee402a734b4451a80c547d803e7590d4",
+    "NATIVE_BUILD.md": "2c69efc2ad09ec5a09b85e991f093c98930cf2e72e3ea38535735675a74f579a",
+    "native_config.json": "8f37c0f8a2b08d804af468cbe3a8d7edbe80cfd2aee7677105217e137c4cfdf7",
+    "native_model.json": "506286b90b296c7ae1979794d29e2993e9ce9eabc821ccd07e9b86b0a7c09c27",
+    "fetch_native_model.py": "f6b2f584feb03683cf4a53fb7c4f75568fc6ba2aca0542437347b720a9d97632",
+    "build_native.sh": "0929f14853502dcdb19047690c14cc0990df0ef02b81d120815297c6522160fc",
+    "run_native_service.py": "eea1f38891128ad01e39342d3c9a8058cce127e8282ebc2b04810b9665a94fea",
+    "native_engine.py": "da45591b932a4cf9576f7f45ad9bd8f0fb817457b67ac8147b1f1562edbc83e9",
+    "service/schema.py": "43f95551eb8772cab93bff09265be417def573e3370a374ad6ef99daafd8b515",
+    "service/server.py": "94c14215db7b6752ab15e71781517a09653ae3238c9d80c91e67b6b1b05b6b19",
+    "service/client.py": "af5bf45a4333bd4d6d3583fd2c0d8c0343778623a50b1cc1e9f5f8472970b275",
+    "paper/naacl2027/reviewer_20261002/README.md": "38d453171b81da3f70cd1fb7809a47a9272e31eec110953a1a26fbd824db7ec7",
+    "paper/naacl2027/reviewer_20261002/verification/safe_extract.py": "4394ccbcdffae4d2070d74b2489ab55895354c456bfb5a5ec15455997a54714e",
+    "paper/naacl2027/nonhuman_revision_20260927/check_evidence.py": "321ca72146bd7999702ec241342579a0ef096bf985efea0360c4bcd12b0666d8",
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "paper/naacl2027/reproducibility/LIVE_SMOKE.json": "18ddca840cb4a07442585ab9dedfa5cfb0a196f64566b612a4ae5123e44fa2a8",
+    "paper/naacl2027/reviewer_20261002/verification/REANALYSIS_CHECKS.json": "31da0046c40d4a5cb793edc2e61259484c25501808a320448257439bb535daa8"
+  },
+  "scope": "Selected input hashes verified against exact published commit; not a claim that every file in any supplied directory is identical."
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "archive": "native-processor-evidence.zip",
+  "scope": "Exact native UI exports and recorded execution receipts; custom code feasibility, not human validation or superiority.",
+  "archive_construction": "Entries sorted lexically, fixed ZIP timestamp 2026-10-02T00:00:00, DEFLATE level 9, Unix regular file mode 0644.",
+  "omitted_redundant_outputs": "computed_outputs.json can be reconstructed from actual/after.cforge cache compute_raw.json; the same parsed JSON equality and original byte hash were verified before packaging.",
+  "entries": [
+    {
+      "path": "actual/CHAINFORGE_CHECK.json",
+      "bytes": 5166,
+      "sha256": "5c082e1e3a5b101b97df6854deba215946153c43c173196999dada4cc2117759"
+    },
+    {
+      "path": "actual/NATIVE_PROCESSOR_RUN.json",
+      "bytes": 2534,
+      "sha256": "297e25ca0af5546b7e3612296edf91894eb03c42b25d30c56029616f767b7149"
+    },
+    {
+      "path": "actual/after.cforge",
+      "bytes": 37451103,
+      "sha256": "e08b903391f003aded4ce9f03d1e758e3032f75d52f154eb8458f285d6a540bd"
+    },
+    {
+      "path": "actual/before.cforge",
+      "bytes": 19371347,
+      "sha256": "536914b71afa6ca7b2ca78f582bc89bace2f81bb61fcd608c3f63447ce9d98a2"
+    },
+    {
+      "path": "actual/computed-results.png",
+      "bytes": 114024,
+      "sha256": "83ad2aefbf454d3001cb65735ea8c2b90e0f858e310bf177336f67e721551a02"
+    },
+    {
+      "path": "synthetic/PROOF.json",
+      "bytes": 2161,
+      "sha256": "0479ef3f433410d06d46f1617b9c8fb38d19516946ed4dc1eff18b2f2e336ebe"
+    },
+    {
+      "path": "synthetic/after.cforge",
+      "bytes": 8622,
+      "sha256": "9b36d4da922f6a930ecf9175d8f53e43bc4c6fa528166b75ce41a8c2db927b9a"
+    },
+    {
+      "path": "synthetic/after.png",
+      "bytes": 120181,
+      "sha256": "27741f20a22463d78779cb6e34a5f3ef20750aafcd573bc56da5d421c39285f2"
+    },
+    {
+      "path": "synthetic/before.cforge",
+      "bytes": 5730,
+      "sha256": "e12c0326bf3f16774db151b6a66442f2cfc566f152829f94eb306d4c19f9e5a3"
+    },
+    {
+      "path": "synthetic/input.cfzip",
+      "bytes": 1412,
+      "sha256": "b865b77be63e08a6266178421e645420a8ee180d3bddd4618a14334cebca8c94"
+    },
+    {
+      "path": "synthetic/process.js",
+      "bytes": 1074,
+      "sha256": "8fa2f7e4bb6a67e086ff248a24c1c254194d654d55b2d11afc59bc4aec28957d"
+    },
+    {
+      "path": "MANIFEST.json",
+      "bytes": 2325,
+      "sha256": "f2ba5966b22c8600d14364bc01beccbdccf3ad8f5a8d9dc5bf7bcd6046af5072"
+    }
+  ],
+  "archive_bytes": 4960405,
+  "archive_sha256": "d72d74e17801d333700c3a8281ff3ed58dafd6bb4e71b16111b447f8e81e3137",
+  "all_member_hashes_verified": true,
+  "repeat_pack_bytes_identical": true,
+  "actual_export_receipt_hashes_verified": true,
+  "synthetic_fixture_and_code_receipt_hashes_verified": true,
+  "computed_output_parsed_equality_verified": true
+}

@@ -1,0 +1,2 @@
+usage: check_evidence.py [-h] [--root ROOT] [--output OUTPUT]
+check_evidence.py: error: Output exists; choose a new file to preserve earlier checks.

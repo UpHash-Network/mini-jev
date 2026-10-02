@@ -1,0 +1,24 @@
+{
+  "status": "fail",
+  "mode": "actual_loopback_http_three_type_smoke",
+  "checked_at_utc": "2026-10-02T15:03:55.520813+00:00",
+  "error": "ValueError: Response JSON decode failed; raw bytes retained",
+  "observed_http_exchanges": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "payload": null,
+      "status": 200,
+      "capture_limit_bytes": 1048576,
+      "content_type": "application/json",
+      "raw_body_base64": "eyJyZWFkeSI6IHRydQ==",
+      "raw_body_sha256": "83145c7894e9804d6f86d186fcb829a00af26bd9c6b061a813a5ae3a8ddc7790",
+      "captured_bytes": 13,
+      "body_truncated": false,
+      "raw_body_utf8": "{\"ready\": tru",
+      "decode_error": "JSONDecodeError: Expecting value: line 1 column 11 (char 10)"
+    }
+  ],
+  "no_success_claim": true,
+  "test_context": "Synthetic loopback HTTP fixture; no native service, model inference or human participant."
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-02T15:15:49.736939+00:00",
+  "scope": "Author-side artifact consistency and actual custom competitor execution; no human benefit or independent inference result",
+  "pdf_sha256": "bd170ff0ae6a2e03b64de39e99a326a68a2d04c0f1ee760fab31663fced436f3",
+  "main_tex_sha256": "8c46729d2e8b4caeaf72d1907959bfce5cb831d132ac5d235badb4f0aadc7d5e",
+  "public_pdf_identical": true,
+  "pages": 10,
+  "body_ends_page": 6,
+  "appendix_pages": [
+    9,
+    10
+  ],
+  "visual_review": "PDF_REVIEW_FINAL.json",
+  "overfull_boxes": 0,
+  "unresolved_citations": 0,
+  "raw_reconstruction": {
+    "original_panels": 6,
+    "physical_records": 6000,
+    "condition_instances": 2400,
+    "tuple_reversal_controls": 6,
+    "invalid_controls": 8,
+    "native_chainforge_version": "0.3.7.6",
+    "browser": "Firefox153.0",
+    "python_numeric_max_abs_difference": 1.7763568394002505e-15,
+    "frozen_tolerance": 1e-12,
+    "failures": 0,
+    "human_participants": 0,
+    "new_model_calls": 0,
+    "final_receipt": "../raw_workflow_20261002/verification/CHAINFORGE_CHECK.json"
+  },
+  "external_handoff": {
+    "prepared": true,
+    "fresh_same_mac_cpu_validation": true,
+    "external_operator_or_machine_executed": false,
+    "inference_executed": false,
+    "transport_negative_checks": 5
+  },
+  "public_hygiene_scan": {
+    "schema_version": 1,
+    "passed": true,
+    "files_scanned": 727,
+    "bytes_scanned": 231085277,
+    "findings": [],
+    "scope": "Static release hygiene only. Not a comprehensive secret detector, legal review, or model-quality test."
+  },
+  "publication_test_fixtures": 11,
+  "home_viewport_widths_checked": [
+    1440,
+    390
+  ],
+  "home_horizontal_overflow": false,
+  "github_ci": "Run on publication commit; publication receipt maintained outside repository after push.",
+  "protected_artifact_sha256": {
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "paper/arxiv/source/main.tex": "74f8f7c64ae4a1a057cd49c2921a32eae51377cc9185a13138c436fe085a733a",
+    "paper/arxiv/mini-jev-arxiv-source-20260925.zip": "0fc7ea4ffc83f80bef88405e6f3a9f6cd57a56db1224ac8e810db7dd09768d1d"
+  }
+}

@@ -42,6 +42,12 @@ jobs:
           node tests/test_evidence_core.mjs
       - name: Public artifact checks
         run: python scripts/check_public_release.py
+      - name: Archived raw-logit reconstruction (no inference)
+        run: |
+          python paper/naacl2027/raw_workflow_20261002/build_inputs.py --check
+          python paper/naacl2027/raw_workflow_20261002/make_cases.py --output "$RUNNER_TEMP/raw-cases.json"
+          node paper/naacl2027/raw_workflow_20261002/run_node.cjs --cases "$RUNNER_TEMP/raw-cases.json" --out "$RUNNER_TEMP/raw-results.json"
+          python paper/naacl2027/raw_workflow_20261002/check_results.py "$RUNNER_TEMP/raw-results.json" --report "$RUNNER_TEMP/raw-check.json" --execution node
       - name: Tracked generated directories must be empty
         run: |
           python - <<'PY'

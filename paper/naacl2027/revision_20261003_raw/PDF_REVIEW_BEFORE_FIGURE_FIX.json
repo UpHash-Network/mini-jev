@@ -1,0 +1,88 @@
+{
+  "reviewed_at": "2026-10-02T15:07:47.597938+00:00",
+  "reviewer": "arxiv_render_review",
+  "mode": "read-only manuscript review; review JSON written only",
+  "pdf_path": "paper/naacl2027/NAACL2027_LogitTrail.pdf",
+  "sha256": "458cbc9223948d49b21618b503e82019e27b5a660025a2927aa9da66c858af33",
+  "page_count": 10,
+  "status": "minor_visual_fix_recommended",
+  "main_text_and_new_revision": "pass",
+  "submission_blocking_content_defects_found": false,
+  "zero_clipping_visual_gate": "not_passed_existing_figure_1_edge_clipping",
+  "method": {
+    "all_pages_visually_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "render_directory": "work/raw-workflow-20261002/pdf-render",
+    "additional_asset_inspection": "paper/naacl2027/figures/evidence-explorer.png",
+    "text_extraction_checks": {
+      "unresolved_double_question_marks": 0,
+      "unicode_replacement_characters": 0
+    }
+  },
+  "main_text_limit": {
+    "body_ends_on_page": 6,
+    "limitations_start_page": 6,
+    "acknowledgements_start_page": 6,
+    "ethics_start_page": 6,
+    "ethics_continues_page": 7,
+    "references_start_page": 7,
+    "appendix_starts_page": 9,
+    "assessment": "Research body fits six pages. Formal venue-specific exclusions for Limitations, Acknowledgements and Ethics are outside this visual audit."
+  },
+  "new_content": [
+    {
+      "location": "page 6, Inspection interfaces paragraph",
+      "result": "pass",
+      "detail": "ChainForge GUI and native Processor text, 2,400 conditions, 6,000 archived logit records, and 10^-12 tolerance are readable and fit the column. No inspection-superiority assertion."
+    },
+    {
+      "location": "page 9, Table 4",
+      "result": "pass",
+      "detail": "Four columns and all rows fit. ChainForge 0.3.7.6 GUI row wraps without overlap or clipping; custom code and no human-performance boundary are visible."
+    },
+    {
+      "location": "page 10, Reconstruction from raw records",
+      "result": "pass",
+      "detail": "Entire paragraph fits the left column including 1.78 x 10^-15, six tuple-reversal controls, eight malformed inputs, and no measured practical advantage. Human evaluation boundary fits the right column."
+    }
+  ],
+  "findings": [
+    {
+      "id": "figure-1-right-edge",
+      "severity": "minor",
+      "page": 4,
+      "asset": "paper/naacl2027/figures/evidence-explorer.png",
+      "description": "The screenshot’s rightmost candidate-delta numbers and the terminal characters of the Delta percentage points labels extend to / are partly cut by the image boundary. This is in the source image, not a new LaTeX column overflow. The sentence above the chart preserves the 7.384769 percentage-point change.",
+      "recommended_action": "Capture the same figure with the entire rightmost delta column inside the frame, then rebuild and recheck page 4 and pagination. Do not stretch or invent missing image content."
+    }
+  ],
+  "other_visual_checks": {
+    "page_numbers_and_line_numbers": "pass",
+    "title_author_affiliation": "pass",
+    "body_fonts_and_glyphs": "pass",
+    "equations": "pass",
+    "tables_1_through_4": "pass",
+    "references": "pass",
+    "paragraph_overlap": "none found",
+    "body_text_clipping": "none found"
+  },
+  "notes": [
+    "All 10 pages inspected, including references and appendix.",
+    "No manuscript or figure edits made.",
+    "This review does not independently verify experimental numbers or bibliographic factual accuracy."
+  ],
+  "public_transformation": {
+    "source_sha256": "f0018e14096c63070b7d7c7769d1fa6e8a2542f54b24ff8fd676613e2a7ad578",
+    "change": "Repository absolute path prefix removed; findings unchanged."
+  }
+}

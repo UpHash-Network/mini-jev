@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-10-02T15:12:15.870Z",
+  "selection": {
+    "study": "presentation_robustness",
+    "model": "qwen3.6-35b-a3b",
+    "dataset": "JCoLA",
+    "item": "jcola:in_domain_valid:1030",
+    "a": "baseline",
+    "b": "display_reverse"
+  },
+  "source_url": "http://127.0.0.1:18884/explorer/#study=presentation_robustness&model=qwen3.6-35b-a3b&dataset=JCoLA&item=jcola%3Ain_domain_valid%3A1030&a=baseline&b=display_reverse",
+  "method": "Actual Playwright browser screenshot of unchanged local docs. Clip contains comparison element and every visible descendant rectangle and text range, with 12 CSS px horizontal and 6 px bottom margin. Hidden content in closed details is excluded.",
+  "viewport": {
+    "width": 1600,
+    "height": 1400,
+    "device_scale_factor": 2
+  },
+  "clip": {
+    "x": 228,
+    "y": 963,
+    "width": 1147,
+    "height": 930
+  },
+  "geometry": {
+    "root": {
+      "x": 240,
+      "y": 963.09375,
+      "width": 1120,
+      "height": 923.609375,
+      "right": 1360,
+      "bottom": 1886.703125
+    },
+    "content": {
+      "left": 240,
+      "top": 963.09375,
+      "right": 1362.328125,
+      "bottom": 1886.703125
+    },
+    "rectangles": 136,
+    "deltas": [
+      {
+        "text": "+7.384769\nΔ percentage points",
+        "rect": {
+          "x": 1265,
+          "y": 1613.828125,
+          "width": 95,
+          "height": 29,
+          "right": 1360,
+          "bottom": 1642.828125
+        }
+      },
+      {
+        "text": "-7.384769\nΔ percentage points",
+        "rect": {
+          "x": 1265,
+          "y": 1690.828125,
+          "width": 95,
+          "height": 29,
+          "right": 1360,
+          "bottom": 1719.828125
+        }
+      }
+    ],
+    "document_width": 1600,
+    "viewport_width": 1600
+  },
+  "source_files": {
+    "docs/explorer/index.html": "9a544e02c23c6814e2b091623b9f6c8955191a68f74c3b9d8e553051daf58792",
+    "docs/explorer/app.js": "b77cb04b56517126668b609290c9e9848c0b519d9718630ab8adf6eeb9be4c4a",
+    "docs/explorer/explorer.css": "808b52883114d9c2ddd2843a2a8014ca25310e24969ca976955a4e6b55a9ab1e"
+  },
+  "previous_figure_sha256": "2a42b38d6b173a6ae7aabbacc7ebc57b0f546a7ed1fdfb32a9bb54002880c0bd",
+  "output": "paper/naacl2027/figures/evidence-explorer.png",
+  "output_sha256": "ccc81aaf5a56dabefd58f396a7254d6666b6e7a562be81e24211e1564b465a4e",
+  "png_pixels": {
+    "width": 2294,
+    "height": 1860
+  },
+  "screenshot_script": "paper/naacl2027/revision_20261003_raw/capture_figure.cjs",
+  "script_sha256": "a40f63a6fce75358cc293d6863a9a219e1392918d5f0eccea50f2c2443aad34c",
+  "browser_version": "151.0.7922.34",
+  "home_checks": [
+    {
+      "viewport": 1440,
+      "document_width": 1440,
+      "horizontal_overflow": false,
+      "public_links": [
+        {
+          "text": "Explore records",
+          "href": "explorer/"
+        },
+        {
+          "text": "Download the earlier interface recording.",
+          "href": "assets/Mini_Jev_Demonstration.mp4"
+        },
+        {
+          "text": "Compare the recorded decisionsInteractive saved-evidence explorer · No live inference ↗",
+          "href": "explorer/"
+        },
+        {
+          "text": "Matched saved-evidence workflows6 cases in Explorer, complete JSON and ChainForge 0.3.7.6; no human-performance result ↗",
+          "href": "https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/workflow_comparison_20261002/README.md"
+        },
+        {
+          "text": "Raw-logit reconstructionCustom ChainForge Processor reconstructs 2,400 saved conditions; no human-advantage claim ↗",
+          "href": "https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/raw_workflow_20261002/README.md"
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "document_width": 390,
+      "horizontal_overflow": false,
+      "public_links": [
+        {
+          "text": "Explore records",
+          "href": "explorer/"
+        },
+        {
+          "text": "Download the earlier interface recording.",
+          "href": "assets/Mini_Jev_Demonstration.mp4"
+        },
+        {
+          "text": "Compare the recorded decisionsInteractive saved-evidence explorer · No live inference ↗",
+          "href": "explorer/"
+        },
+        {
+          "text": "Matched saved-evidence workflows6 cases in Explorer, complete JSON and ChainForge 0.3.7.6; no human-performance result ↗",
+          "href": "https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/workflow_comparison_20261002/README.md"
+        },
+        {
+          "text": "Raw-logit reconstructionCustom ChainForge Processor reconstructs 2,400 saved conditions; no human-advantage claim ↗",
+          "href": "https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/raw_workflow_20261002/README.md"
+        }
+      ]
+    }
+  ],
+  "page_errors": [],
+  "image_edited": false,
+  "ui_or_data_changed": false,
+  "new_model_calls": 0,
+  "scope": "Recorded observation re-captured without clipping; not a new model observation or human usability check."
+}
