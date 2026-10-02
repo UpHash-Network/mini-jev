@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-02T14:21:14.370338+00:00",
+  "reviewer": "Separate AI-agent review of frozen task construction, adapter and completed root-operated browser reports; not an independent human study",
+  "status": "pass_with_scoped_interpretation",
+  "frozen_protocol_and_tasks_unchanged": true,
+  "input_sha256": {
+    "protocol.json": "237ce0e6dc1dea51a0928d43a5167441e4b1dbf21d2438e806f80622d8d8bad0",
+    "tasks.json": "d629475e55bdc8c5d35cfb813a982925e65485a6a21b27d0a34e0c4fefc829a7",
+    "generate_tasks.py": "bbfa2c98bffc5c63dc1914def484a018343aea58232aa60672d00b0622bcaf51",
+    "check_browser.cjs": "e5d32d17dd7a3a3f8cb48711d9c26ed0933254cbc6f60eaec8382bdc7ed1827d",
+    "check_chainforge.cjs": "9037186ef26bad11a33873e61075946a03f94617b8cba7b55d1df966eb3078d6",
+    "competitor/build_chainforge_flow.py": "bb02756594a625aa6bc3654da84620e429cab26312727e52c975b9ca7da8f64b",
+    "competitor/IMPORT_MANIFEST.json": "5ae4aca7d3d4331f2dd1f6eacc4669329f2bfd81a622f1e66dfae265d2675323",
+    "competitor/VERSION_PROVENANCE.json": "369b710707f4259d6bd406f5801f11bfe03af5386ead71dca1c57044d003a9d5"
+  },
+  "browser_reports": {
+    "logittrail-run02": {
+      "original_path_relative_to_workspace": "work/workflow-comparison-20261002/logittrail-run02/BROWSER_RESULTS.json",
+      "sha256": "e73befa5f9732a2041a9224ea5a5d18e2c8adc11d9110249cec849a4f187ad13",
+      "status": "pass",
+      "portable_path": "evidence/logittrail/BROWSER_RESULTS.json"
+    },
+    "chainforge-run02": {
+      "original_path_relative_to_workspace": "work/workflow-comparison-20261002/chainforge-run02/CHAINFORGE_RESULTS.json",
+      "sha256": "0c5ae6f4ab613c737ac0875c6ba1b9728ce858c96e78d0eb1ecdea470b1c734f",
+      "status": "pass",
+      "role": "superseded by final run03 with actual response-lightbox checks; retained as review history"
+    },
+    "chainforge-run03": {
+      "original_path_relative_to_workspace": "work/workflow-comparison-20261002/chainforge-run03/CHAINFORGE_RESULTS.json",
+      "sha256": "2f8d7b05f028afb0ca39b71dcab1a203b694ed155d4c33d4fb8c99bfb14abe10",
+      "portable_path": "evidence/chainforge/CHAINFORGE_RESULTS.json",
+      "status": "pass"
+    }
+  },
+  "findings": [
+    {
+      "id": "information_equivalence",
+      "status": "supported",
+      "evidence": "All6 full competitor strings checked byteexact against task evidence;12 compact rows checked for exact copied condition/probability/call/source fields. Actual root GUI flow export repeats complete6 string equality."
+    },
+    {
+      "id": "native_vs_prepared",
+      "status": "required_distinction",
+      "evidence": "ChainForge presents native tables/filters/named score columns, but candidate scores, labels, expectations, semantic alignment/deltas and member/union counts are copied/prepared by adapter, not computed by ChainForge inference or specialized call accounting."
+    },
+    {
+      "id": "question_count",
+      "status": "qualified",
+      "evidence": "32 counts prespecified question instances. Completed browser reports verify selected visible fields, data blocks and exports; not every question is separately scored as a GUI success."
+    },
+    {
+      "id": "browser_differences",
+      "status": "limitation",
+      "evidence": "Headless Playwright Chromium151 versus headed installedChrome154. No comparative elapsed time or performance inference."
+    },
+    {
+      "id": "source_trace",
+      "status": "supported_narrowly",
+      "evidence": "Root script checksphysicalmemberpaths/lines/hashes; separate read-only review finds A/B memberpath,line andmemberhash in captured Explorertext all6cases. OriginalZIPidentity/values are oracle computations."
+    },
+    {
+      "id": "spreadsheet_and_fulltext",
+      "status": "supported",
+      "evidence": "Final run03 opened12 actual native response lightboxes with exact compact condition/source JSON; spreadsheet report and separate standard-library XLSX/XML review verify12 exact compact records plus52 exact candidate-probability numeric cells. Full6payload strings rechecked in actual final flowexport."
+    },
+    {
+      "id": "prior_knowledge",
+      "status": "disclosed",
+      "evidence": "No outcome sampling, no featuredIDoverlap; existing data, earlieraudit and implementation alreadyknown. Internalfreeze, notblindstudy."
+    }
+  ],
+  "not_measured": [
+    "human participants",
+    "human tasktime/success/preference",
+    "new inference",
+    "Ollama decisionprovider runtime",
+    "independent researcher replication",
+    "general GUI superiority"
+  ],
+  "manuscript_suggestions": [
+    {
+      "file": "paper/naacl2027/main.tex",
+      "line_at_review": 96,
+      "action": "append after fullrecordaudit summary",
+      "suggested_text": "A separate functional browser check uses six hash-selected cases across both studies and all three types. Information-equivalent inputs are inspected in the Explorer, complete JSON, and unmodified ChainForge 0.3.7.6 through a disclosed import adapter. All six complete evidence strings survive ChainForge flow export unchanged; its native filters and named scores expose supplied fields. This checks access and preservation, not human performance."
+    },
+    {
+      "file": "paper/naacl2027/main.tex",
+      "line_at_review": 199,
+      "action": "preserve historical0.3.7.4 backendtest boundary; optionallyadd separate0.3.7.6 workflowparagraph",
+      "suggested_text": "The later 0.3.7.6 GUI import check is a separate, model-free workflow exercise; it does not extend the older backend test into a claim about Ollama decision inference."
+    },
+    {
+      "file": "paper/naacl2027/main.tex",
+      "line_at_review": 209,
+      "action": "replace overlybroad packagedGUIunverified clause",
+      "suggested_text": "We separately exercised the unmodified 0.3.7.6 GUI using frozen evidence and a format adapter; Ollama decision inference remains untested. The imported semantic differences and call unions were precomputed, not reconstructed by ChainForge."
+    },
+    {
+      "file": "paper/naacl2027/main.tex",
+      "line_at_review": 246,
+      "action": "keepoldrow andadd separateevidencetierrow",
+      "suggested_text": "ChainForge 0.3.7.6 GUI | Same complete frozen evidence; disclosed import adapter | Six case filters, 12 response lightboxes, 52 spreadsheet probability cells and 6 full-payload exports preserved | Native Ollama inference, human performance and general superiority"
+    },
+    {
+      "file": "paper/naacl2027/main.tex",
+      "line_at_review": 272,
+      "action": "narrow remainingunverifiedscope",
+      "suggested_text": "A separate six-case check exercises actual Explorer, complete-JSON, and ChainForge interfaces with identical saved evidence; these are functional access observations. Human comparative task performance and cross-machine replication remain open."
+    }
+  ],
+  "files_written": [
+    "README.md",
+    "RESULT_MATRIX.md",
+    "REVIEW.json"
+  ],
+  "manuscript_modified": false,
+  "frozen_data_modified": false,
+  "spreadsheet_check": {
+    "original_path_relative_to_workspace": "work/workflow-comparison-20261002/chainforge-run03/SPREADSHEET_CHECK.json",
+    "sha256": "b63d0e696f1f4663145929b6d2e407eeedde43c6d1ddccc439722467053ef864",
+    "portable_path": "evidence/chainforge/SPREADSHEET_CHECK.json",
+    "xlsx_sha256": "4bf4bfe728aa39b3413c61857058287e3e633897184604140267fdf212201802",
+    "independent_review_method": "Python standard-library ZIP/XML reader directly parsed worksheet cells and compact response JSON; compared52 probability floats and12response records to frozen evidence. Rechecked six complete strings in final actual exported.cforge.",
+    "candidate_numeric_cells_exact": 52,
+    "compact_response_records_exact": 12,
+    "final_full_flow_payloads_exact": 6
+  },
+  "actual_chainforge_export_sha256": "63aa03e4149ffbbdc508fed8846ca0d3e45d6e6d0137737a9745b69492a9d385"
+}

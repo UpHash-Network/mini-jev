@@ -39,6 +39,8 @@ The [paper package](paper/naacl2027/README.md) includes protocols, retained pred
 
 The September 27 revision adds a comparison appendix and a post-hoc analysis of the same 12 LMQL cases; all three original probability-tolerance failures remain. The public API/UI expose typed values, candidate probabilities, and semantic metadata; candidate token IDs and raw logits are retained internally and in research traces. No new inference or human-study results are added.
 
+The [October 2 matched workflow check](paper/naacl2027/workflow_comparison_20261002/README.md) gives the Explorer, a [complete JSON view](https://uphash-network.github.io/mini-jev/explorer/json/), and unmodified ChainForge 0.3.7.6 the same six hash-selected saved cases. ChainForge's native search, full-text responses and exports retain all supplied evidence: 12 condition records, 52 exact spreadsheet probability values, and six exact full-payload flow exports. The adapter supplies derived alignment and call counts; this establishes information retention, not human efficiency or LogitTrail superiority. [A pilot packet for the actual Explorer](paper/naacl2027/explorer_user_evaluation_20261002/README.md) is prepared; no human observations have been collected.
+
 ## Explore recorded decisions
 
 Open the [evidence explorer](https://uphash-network.github.io/mini-jev/explorer/) to compare two retained conditions for the same study, model, and source item. The view aligns probabilities by semantic answer key, distinguishes expected stage from most likely stage, counts shared physical calls once, and exports source references with the comparison. It reads the frozen records; it does not run a model or establish human usability gains. [Data scope and derivation](docs/explorer/DATA.md).

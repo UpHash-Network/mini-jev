@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "mode": "saved_research_records",
+  "new_inference_calls": 0,
+  "exporter_sha256": "bd4870a16f055f9bad3927d8c41c1fdb1b6cba2f6c06e3170c4894e047e914b9",
+  "numeric_representation": {
+    "archived": "Probabilities, typed values, saved physical concentration, and observed time are retained exactly from parsed source JSON numbers after independent validation.",
+    "new_diagnostics": "Derived concentration and panel MAE/variance use exact binary-float-to-Decimal conversion, 50-digit ROUND_HALF_EVEN arithmetic, correctly rounded Decimal.ln, and rounding to 15 decimal places for JSON. Other counts/ratios use integer arithmetic; extrema retain source values."
+  },
+  "study_id": "presentation_robustness",
+  "model_key": "qwen3.6-35b-a3b",
+  "dataset": "JSTS",
+  "type": "score",
+  "item_id": "jsts:valid:969",
+  "source_question_sha256": "834d57e896b2da8e4c98ba9a819515d9a89831be13cf4bd44b6d5fef90ee29a6",
+  "split": "valid",
+  "group": "caption-component:d531fdf8aa35981b0999dcb2078d33c597397ce505fa8526833396427ba26546",
+  "canonical_keys": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "score_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "reference": {
+    "kind": "continuous",
+    "value": 0,
+    "aError": 0.0022629151779861097,
+    "bError": 0.010955787743708138
+  },
+  "conditions": {
+    "a": {
+      "id": "baseline",
+      "kind": "physical",
+      "probabilities": [
+        0.9985513344150969,
+        0.0010301833218840466,
+        0.00018455502123399038,
+        0.00013382368538465868,
+        0.000038367024521762286,
+        0.00006173653187861145
+      ],
+      "label": "0",
+      "value": 0.0022629151779861097,
+      "concentration": 0.9931340960450215,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 463,
+      "latency_ms": 419.4864579476416,
+      "source": [
+        "s11",
+        3500
+      ],
+      "mapping": "m00"
+    },
+    "b": {
+      "id": "display_reverse",
+      "kind": "physical",
+      "probabilities": [
+        0.9919036625415976,
+        0.00567480675415564,
+        0.0021132364898162025,
+        0.000227226605176332,
+        0.00003250985188063703,
+        0.00004855775737370986
+      ],
+      "label": "0",
+      "value": 0.010955787743708138,
+      "concentration": 0.9703346726232378,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 463,
+      "latency_ms": 419.20837480574846,
+      "source": [
+        "s11",
+        3501
+      ],
+      "mapping": "m00"
+    }
+  },
+  "physical_members": [
+    {
+      "id": "baseline",
+      "kind": "physical",
+      "probabilities": [
+        0.9985513344150969,
+        0.0010301833218840466,
+        0.00018455502123399038,
+        0.00013382368538465868,
+        0.000038367024521762286,
+        0.00006173653187861145
+      ],
+      "label": "0",
+      "value": 0.0022629151779861097,
+      "concentration": 0.9931340960450215,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 463,
+      "latency_ms": 419.4864579476416,
+      "source": [
+        "s11",
+        3500
+      ],
+      "mapping": "m00"
+    },
+    {
+      "id": "display_reverse",
+      "kind": "physical",
+      "probabilities": [
+        0.9919036625415976,
+        0.00567480675415564,
+        0.0021132364898162025,
+        0.000227226605176332,
+        0.00003250985188063703,
+        0.00004855775737370986
+      ],
+      "label": "0",
+      "value": 0.010955787743708138,
+      "concentration": 0.9703346726232378,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 463,
+      "latency_ms": 419.20837480574846,
+      "source": [
+        "s11",
+        3501
+      ],
+      "mapping": "m00"
+    }
+  ],
+  "candidate_comparison": [
+    {
+      "key": "0",
+      "a": 0.9985513344150969,
+      "b": 0.9919036625415976,
+      "delta": -0.00664767187349935
+    },
+    {
+      "key": "1",
+      "a": 0.0010301833218840466,
+      "b": 0.00567480675415564,
+      "delta": 0.004644623432271593
+    },
+    {
+      "key": "2",
+      "a": 0.00018455502123399038,
+      "b": 0.0021132364898162025,
+      "delta": 0.0019286814685822121
+    },
+    {
+      "key": "3",
+      "a": 0.00013382368538465868,
+      "b": 0.000227226605176332,
+      "delta": 0.00009340291979167333
+    },
+    {
+      "key": "4",
+      "a": 0.000038367024521762286,
+      "b": 0.00003250985188063703,
+      "delta": -0.000005857172641125254
+    },
+    {
+      "key": "5",
+      "a": 0.00006173653187861145,
+      "b": 0.00004855775737370986,
+      "delta": -0.000013178774504901587
+    }
+  ],
+  "shared_physical_calls": 0,
+  "unique_physical_calls": 2,
+  "sources": {
+    "s11": {
+      "member": "mini-jev/paper/journal_robustness/study_v1/results/predictions.jsonl",
+      "sha256": "27f91e52078bf67231c95c65005a158020698f67c368fd7273f9b3d98f9f7cf0",
+      "bytes": 4746194,
+      "format": "jsonl"
+    },
+    "s10": {
+      "member": "mini-jev/paper/journal_robustness/study_v1/results/RUNTIME.json",
+      "sha256": "84989b890baaee5e5743e236a44c8f477829b2e1f95a2a6a7c0b383f11fc4945",
+      "bytes": 3155,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m00": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": null
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "backend": "llama.cpp",
+    "precision": "Q4_K_M",
+    "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "revision_kind": "GGUF_distribution_revision",
+    "model_sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+    "device": "metal",
+    "source": "s10"
+  },
+  "selection": {
+    "mode": "user_selected"
+  },
+  "limitations": [
+    "Recorded-data inspection, not new inference or a human usability study.",
+    "Candidate probabilities are conditional on the supplied set, not correctness probabilities.",
+    "Continuous reference scores are not rounded into labels.",
+    "Calls shared by conditions are counted once in the union.",
+    "Source task text is not distributed in this artifact."
+  ],
+  "panel_sha256": "d87b13bcae07d9820ccbf23cd02cfaf157dd2f313ce10dd33c22190021a0a020",
+  "model_metadata": {
+    "name": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "backend": "llama.cpp",
+    "precision": "Q4_K_M",
+    "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "revision_kind": "GGUF_distribution_revision",
+    "model_sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+    "device": "metal",
+    "source": "s10"
+  }
+}

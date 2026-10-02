@@ -17,7 +17,7 @@
 **2026年9月27日時点：arXivへ投稿済み、モデレーション待ちです。公開arXiv IDはまだありません。** 現行の学会向け原稿はNAACL 2027 System Demonstrationsへの投稿準備中で、未投稿・未採択・未査読です。以前のEACLへの投稿は成立しませんでした。
 
 1. **読む：** [最新原稿PDF](https://uphash-network.github.io/mini-jev/assets/LogitTrail_Manuscript.pdf)と[論文・証拠の案内](paper/naacl2027/README.md)。
-2. **見る：** [60秒の実験結果解説](https://uphash-network.github.io/mini-jev/#demo)、続けて[145秒の操作動画](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Demonstration.mp4)。60秒版は保存済み実験記録の解説で、新たなライブ実行ではありません。
+2. **見る：** [10月2日改訂の127秒デモ](https://uphash-network.github.io/mini-jev/assets/LogitTrail_Demo_20261002.mp4)。保存済みExplorerの操作と、明示した過去のローカル推論映像で構成しています。
 3. **モデルなしで確かめる：** [ソース・証拠ZIPと解析再現手順](paper/naacl2027/reproducibility/README.md)。保存済み記録の再解析はPython標準ライブラリで実行できます。[検証ガイド](paper/naacl2027/nonhuman_revision_20260927/REVIEWER_GUIDE.md)には整合性と件数を確認する軽量コマンドもあります。
 4. **Macで実行する：** [起動手順](#起動)でモデルAPIを準備し、[ブラウザUI](demo/README.md#start-the-demo)を立ち上げます。
 
@@ -40,7 +40,9 @@
 
 [実験記録の比較画面](https://uphash-network.github.io/mini-jev/explorer/)では、同じ研究・モデル・問題の2条件を比較できます。回答の識別子を揃えた確率、期待段階と最尤段階、共有分を除いたモデル呼出し数を表示し、元記録への参照付きJSONを書き出せます。保存済みの観測を閲覧する機能で、新しい推論や人の使いやすさの評価ではありません。[対象データと導出手順](docs/explorer/DATA.md)。
 
-9月28日に追加した画面です。9月27日の原稿と提出済みarXiv版とは区別しています。入口の例は固定規則で選び、対象パネルの全問題を切り替えて確認できます。
+現行の10月2日改訂原稿に含まれる画面です。提出済みarXiv版とは区別しています。入口の例は固定規則で選び、対象パネルの全問題を切り替えて確認できます。
+
+[同一保存データによる比較](paper/naacl2027/workflow_comparison_20261002/README.md)では、IDハッシュで選んだ6ケースをExplorer、[完全JSON表示](https://uphash-network.github.io/mini-jev/explorer/json/)、現行ChainForge 0.3.7.6で確認しました。競合側でも12条件・52個の確率セル・6件の全文データを正確に保持できました。意味の対応や呼出し数はアダプターで提供しており、人の使いやすさやLogitTrailの優位性は未実証です。[実画面を使う予備評価資料](paper/naacl2027/explorer_user_evaluation_20261002/README.md)を用意しましたが、人の参加・回答はまだありません。
 
 ## 起動
 

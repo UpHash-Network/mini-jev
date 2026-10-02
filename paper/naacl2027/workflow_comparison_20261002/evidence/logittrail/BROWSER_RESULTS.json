@@ -1,0 +1,229 @@
+{
+  "status": "pass",
+  "date": "2026-10-02T14:00:30.632Z",
+  "protocol_sha256": "237ce0e6dc1dea51a0928d43a5167441e4b1dbf21d2438e806f80622d8d8bad0",
+  "tasks_sha256": "d629475e55bdc8c5d35cfb813a982925e65485a6a21b27d0a34e0c4fefc829a7",
+  "browser_version": "151.0.7922.34",
+  "browser_kind": "Playwright Chromium headless for LogitTrail and formattedJSON only",
+  "case_count": 6,
+  "question_inventory_count": 32,
+  "results": [
+    {
+      "id": "W01",
+      "questions": [
+        "basic_typed_decision",
+        "semantic_alignment",
+        "physical_call_accounting",
+        "source_trace",
+        "full_panel_distribution"
+      ],
+      "presenters": {
+        "logittrail": {
+          "export_exact": true,
+          "visible_probability_rounding_verified": true,
+          "visible_labels_and_call_counts_verified": true,
+          "full_panel_counts_verified": true,
+          "source_member_line_hash_verified": true,
+          "rounding": "6 decimal places in displayed percentages; exact JSON export retained",
+          "scope": "No task-time, human correctness, or superiority result. Score expectation-mode gap requires subtraction; maximum label share/used-label count are in complete metadata or require arithmetic."
+        },
+        "formatted_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        },
+        "public_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        }
+      }
+    },
+    {
+      "id": "W02",
+      "questions": [
+        "basic_typed_decision",
+        "semantic_alignment",
+        "physical_call_accounting",
+        "source_trace",
+        "full_panel_distribution"
+      ],
+      "presenters": {
+        "logittrail": {
+          "export_exact": true,
+          "visible_probability_rounding_verified": true,
+          "visible_labels_and_call_counts_verified": true,
+          "full_panel_counts_verified": true,
+          "source_member_line_hash_verified": true,
+          "rounding": "6 decimal places in displayed percentages; exact JSON export retained",
+          "scope": "No task-time, human correctness, or superiority result. Score expectation-mode gap requires subtraction; maximum label share/used-label count are in complete metadata or require arithmetic."
+        },
+        "formatted_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        },
+        "public_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        }
+      }
+    },
+    {
+      "id": "W03",
+      "questions": [
+        "basic_typed_decision",
+        "score_expectation_mode",
+        "semantic_alignment",
+        "physical_call_accounting",
+        "source_trace",
+        "full_panel_distribution"
+      ],
+      "presenters": {
+        "logittrail": {
+          "export_exact": true,
+          "visible_probability_rounding_verified": true,
+          "visible_labels_and_call_counts_verified": true,
+          "full_panel_counts_verified": true,
+          "source_member_line_hash_verified": true,
+          "rounding": "6 decimal places in displayed percentages; exact JSON export retained",
+          "scope": "No task-time, human correctness, or superiority result. Score expectation-mode gap requires subtraction; maximum label share/used-label count are in complete metadata or require arithmetic."
+        },
+        "formatted_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        },
+        "public_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        }
+      }
+    },
+    {
+      "id": "W04",
+      "questions": [
+        "basic_typed_decision",
+        "semantic_alignment",
+        "physical_call_accounting",
+        "source_trace",
+        "full_panel_distribution"
+      ],
+      "presenters": {
+        "logittrail": {
+          "export_exact": true,
+          "visible_probability_rounding_verified": true,
+          "visible_labels_and_call_counts_verified": true,
+          "full_panel_counts_verified": true,
+          "source_member_line_hash_verified": true,
+          "rounding": "6 decimal places in displayed percentages; exact JSON export retained",
+          "scope": "No task-time, human correctness, or superiority result. Score expectation-mode gap requires subtraction; maximum label share/used-label count are in complete metadata or require arithmetic."
+        },
+        "formatted_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        },
+        "public_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        }
+      }
+    },
+    {
+      "id": "W05",
+      "questions": [
+        "basic_typed_decision",
+        "semantic_alignment",
+        "physical_call_accounting",
+        "source_trace",
+        "full_panel_distribution"
+      ],
+      "presenters": {
+        "logittrail": {
+          "export_exact": true,
+          "visible_probability_rounding_verified": true,
+          "visible_labels_and_call_counts_verified": true,
+          "full_panel_counts_verified": true,
+          "source_member_line_hash_verified": true,
+          "rounding": "6 decimal places in displayed percentages; exact JSON export retained",
+          "scope": "No task-time, human correctness, or superiority result. Score expectation-mode gap requires subtraction; maximum label share/used-label count are in complete metadata or require arithmetic."
+        },
+        "formatted_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        },
+        "public_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        }
+      }
+    },
+    {
+      "id": "W06",
+      "questions": [
+        "basic_typed_decision",
+        "score_expectation_mode",
+        "semantic_alignment",
+        "physical_call_accounting",
+        "source_trace",
+        "full_panel_distribution"
+      ],
+      "presenters": {
+        "logittrail": {
+          "export_exact": true,
+          "visible_probability_rounding_verified": true,
+          "visible_labels_and_call_counts_verified": true,
+          "full_panel_counts_verified": true,
+          "source_member_line_hash_verified": true,
+          "rounding": "6 decimal places in displayed percentages; exact JSON export retained",
+          "scope": "No task-time, human correctness, or superiority result. Score expectation-mode gap requires subtraction; maximum label share/used-label count are in complete metadata or require arithmetic."
+        },
+        "formatted_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        },
+        "public_json": {
+          "export_exact": true,
+          "complete_panel_exact": true,
+          "complete_index_exact": true,
+          "all_condition_summaries_exact": true,
+          "scope": "Native formatted-JSON access; mathematical interpretation or externally supplied derived fields are not human outcomes."
+        }
+      }
+    }
+  ],
+  "page_errors": [],
+  "public_json_mobile_overflow": false,
+  "human_participants": 0,
+  "new_model_calls": 0,
+  "interpretation": "These are functional browser access and fidelity observations, not32 independent usability successes or superiority findings. ChainForge is checked in a separate actualChrome script."
+}

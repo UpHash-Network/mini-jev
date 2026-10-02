@@ -1,0 +1,503 @@
+Browse the retained items
+200 source items in this panel
+Study
+Presentation sensitivity
+Probability averaging
+Model and runtime
+qwen3.6-35b-a3b · llama.cpp / Q4_K_M
+qwen2.5-0.5b · transformers / float32
+qwen2.5-1.5b · transformers / float32
+Task
+JCoLA
+JCommonsenseQA
+JSTS
+
+Model: Qwen/Qwen2.5-1.5B-Instruct · transformers / float32 · mps
+
+Find an item
+Source item
+jcommonsenseqa:valid:10000
+jcommonsenseqa:valid:10012
+jcommonsenseqa:valid:10020
+jcommonsenseqa:valid:10021
+jcommonsenseqa:valid:10026
+jcommonsenseqa:valid:10031
+jcommonsenseqa:valid:10032
+jcommonsenseqa:valid:10033
+jcommonsenseqa:valid:10053
+jcommonsenseqa:valid:10056
+jcommonsenseqa:valid:8941
+jcommonsenseqa:valid:8944
+jcommonsenseqa:valid:8945
+jcommonsenseqa:valid:8946
+jcommonsenseqa:valid:8948
+jcommonsenseqa:valid:8949
+jcommonsenseqa:valid:8950
+jcommonsenseqa:valid:8952
+jcommonsenseqa:valid:8957
+jcommonsenseqa:valid:8965
+jcommonsenseqa:valid:8968
+jcommonsenseqa:valid:8969
+jcommonsenseqa:valid:8974
+jcommonsenseqa:valid:8975
+jcommonsenseqa:valid:8985
+jcommonsenseqa:valid:8995
+jcommonsenseqa:valid:9003
+jcommonsenseqa:valid:9007
+jcommonsenseqa:valid:9010
+jcommonsenseqa:valid:9021
+jcommonsenseqa:valid:9024
+jcommonsenseqa:valid:9029
+jcommonsenseqa:valid:9032
+jcommonsenseqa:valid:9036
+jcommonsenseqa:valid:9046
+jcommonsenseqa:valid:9051
+jcommonsenseqa:valid:9052
+jcommonsenseqa:valid:9060
+jcommonsenseqa:valid:9067
+jcommonsenseqa:valid:9070
+jcommonsenseqa:valid:9088
+jcommonsenseqa:valid:9091
+jcommonsenseqa:valid:9094
+jcommonsenseqa:valid:9126
+jcommonsenseqa:valid:9129
+jcommonsenseqa:valid:9132
+jcommonsenseqa:valid:9136
+jcommonsenseqa:valid:9142
+jcommonsenseqa:valid:9150
+jcommonsenseqa:valid:9152
+jcommonsenseqa:valid:9166
+jcommonsenseqa:valid:9168
+jcommonsenseqa:valid:9180
+jcommonsenseqa:valid:9183
+jcommonsenseqa:valid:9191
+jcommonsenseqa:valid:9193
+jcommonsenseqa:valid:9199
+jcommonsenseqa:valid:9201
+jcommonsenseqa:valid:9209
+jcommonsenseqa:valid:9213
+jcommonsenseqa:valid:9228
+jcommonsenseqa:valid:9232
+jcommonsenseqa:valid:9235
+jcommonsenseqa:valid:9243
+jcommonsenseqa:valid:9256
+jcommonsenseqa:valid:9266
+jcommonsenseqa:valid:9273
+jcommonsenseqa:valid:9292
+jcommonsenseqa:valid:9295
+jcommonsenseqa:valid:9297
+jcommonsenseqa:valid:9298
+jcommonsenseqa:valid:9300
+jcommonsenseqa:valid:9302
+jcommonsenseqa:valid:9306
+jcommonsenseqa:valid:9309
+jcommonsenseqa:valid:9310
+jcommonsenseqa:valid:9313
+jcommonsenseqa:valid:9334
+jcommonsenseqa:valid:9338
+jcommonsenseqa:valid:9339
+jcommonsenseqa:valid:9341
+jcommonsenseqa:valid:9343
+jcommonsenseqa:valid:9349
+jcommonsenseqa:valid:9355
+jcommonsenseqa:valid:9360
+jcommonsenseqa:valid:9368
+jcommonsenseqa:valid:9376
+jcommonsenseqa:valid:9379
+jcommonsenseqa:valid:9383
+jcommonsenseqa:valid:9384
+jcommonsenseqa:valid:9385
+jcommonsenseqa:valid:9386
+jcommonsenseqa:valid:9398
+jcommonsenseqa:valid:9415
+jcommonsenseqa:valid:9425
+jcommonsenseqa:valid:9428
+jcommonsenseqa:valid:9432
+jcommonsenseqa:valid:9436
+jcommonsenseqa:valid:9442
+jcommonsenseqa:valid:9450
+jcommonsenseqa:valid:9459
+jcommonsenseqa:valid:9463
+jcommonsenseqa:valid:9467
+jcommonsenseqa:valid:9470
+jcommonsenseqa:valid:9471
+jcommonsenseqa:valid:9487
+jcommonsenseqa:valid:9493
+jcommonsenseqa:valid:9503
+jcommonsenseqa:valid:9509
+jcommonsenseqa:valid:9519
+jcommonsenseqa:valid:9524
+jcommonsenseqa:valid:9527
+jcommonsenseqa:valid:9532
+jcommonsenseqa:valid:9541
+jcommonsenseqa:valid:9542
+jcommonsenseqa:valid:9550
+jcommonsenseqa:valid:9573
+jcommonsenseqa:valid:9576
+jcommonsenseqa:valid:9577
+jcommonsenseqa:valid:9582
+jcommonsenseqa:valid:9587
+jcommonsenseqa:valid:9588
+jcommonsenseqa:valid:9598
+jcommonsenseqa:valid:9602
+jcommonsenseqa:valid:9610
+jcommonsenseqa:valid:9614
+jcommonsenseqa:valid:9615
+jcommonsenseqa:valid:9619
+jcommonsenseqa:valid:9629
+jcommonsenseqa:valid:9630
+jcommonsenseqa:valid:9633
+jcommonsenseqa:valid:9635
+jcommonsenseqa:valid:9646
+jcommonsenseqa:valid:9652
+jcommonsenseqa:valid:9656
+jcommonsenseqa:valid:9670
+jcommonsenseqa:valid:9671
+jcommonsenseqa:valid:9680
+jcommonsenseqa:valid:9682
+jcommonsenseqa:valid:9683
+jcommonsenseqa:valid:9687
+jcommonsenseqa:valid:9691
+jcommonsenseqa:valid:9708
+jcommonsenseqa:valid:9710
+jcommonsenseqa:valid:9714
+jcommonsenseqa:valid:9721
+jcommonsenseqa:valid:9729
+jcommonsenseqa:valid:9732
+jcommonsenseqa:valid:9736
+jcommonsenseqa:valid:9738
+jcommonsenseqa:valid:9741
+jcommonsenseqa:valid:9742
+jcommonsenseqa:valid:9768
+jcommonsenseqa:valid:9787
+jcommonsenseqa:valid:9789
+jcommonsenseqa:valid:9796
+jcommonsenseqa:valid:9805
+jcommonsenseqa:valid:9807
+jcommonsenseqa:valid:9808
+jcommonsenseqa:valid:9815
+jcommonsenseqa:valid:9828
+jcommonsenseqa:valid:9831
+jcommonsenseqa:valid:9834
+jcommonsenseqa:valid:9836
+jcommonsenseqa:valid:9837
+jcommonsenseqa:valid:9844
+jcommonsenseqa:valid:9845
+jcommonsenseqa:valid:9850
+jcommonsenseqa:valid:9856
+jcommonsenseqa:valid:9859
+jcommonsenseqa:valid:9862
+jcommonsenseqa:valid:9874
+jcommonsenseqa:valid:9889
+jcommonsenseqa:valid:9890
+jcommonsenseqa:valid:9899
+jcommonsenseqa:valid:9900
+jcommonsenseqa:valid:9901
+jcommonsenseqa:valid:9903
+jcommonsenseqa:valid:9906
+jcommonsenseqa:valid:9912
+jcommonsenseqa:valid:9914
+jcommonsenseqa:valid:9921
+jcommonsenseqa:valid:9923
+jcommonsenseqa:valid:9929
+jcommonsenseqa:valid:9946
+jcommonsenseqa:valid:9949
+jcommonsenseqa:valid:9950
+jcommonsenseqa:valid:9952
+jcommonsenseqa:valid:9955
+jcommonsenseqa:valid:9958
+jcommonsenseqa:valid:9961
+jcommonsenseqa:valid:9964
+jcommonsenseqa:valid:9966
+jcommonsenseqa:valid:9972
+jcommonsenseqa:valid:9973
+jcommonsenseqa:valid:9976
+jcommonsenseqa:valid:9982
+jcommonsenseqa:valid:9986
+jcommonsenseqa:valid:9993
+jcommonsenseqa:valid:9999
+←
+→
+
+Both sides always use the same source item, task, and model. Original task text is not included in this artifact; item IDs and source hashes identify it. This is not a model ranking.
+
+JCOMMONSENSEQA / QWEN2.5-1.5B / JCOMMONSENSEQA:VALID:8952
+
+Candidate comparison
+Download this comparison ↓
+A Recorded condition
+Original single call
+Reversed single call
+Forward cyclic average
+Reverse cyclic average
+Both-orientation average
+Forward rotation 0
+Forward rotation 1
+Forward rotation 2
+Forward rotation 3
+Forward rotation 4
+Reverse rotation 0
+Reverse rotation 1
+Reverse rotation 2
+Reverse rotation 3
+Reverse rotation 4
+
+Equal-weight average of K semantic probability vectors, not an average of logits.
+
+B Recorded condition
+Original single call
+Reversed single call
+Forward cyclic average
+Reverse cyclic average
+Both-orientation average
+Forward rotation 0
+Forward rotation 1
+Forward rotation 2
+Forward rotation 3
+Forward rotation 4
+Reverse rotation 0
+Reverse rotation 1
+Reverse rotation 2
+Reverse rotation 3
+Reverse rotation 4
+
+Average the union of physical calls: 2 for binary, 10 for five-choice, and 12 for six-stage items.
+
+The most likely answer stays the same. Largest candidate probability change: 5.889366 percentage points.
+Most likely semantic answer
+A option_0
+B option_0
+
+Recorded tie handling is preserved.
+
+Typed choice
+A option_0
+B option_0
+
+Identifier; original option text is withheld.
+
+Concentration
+A 0.3717
+B 0.4324
+
+0 = uniform · 1 = peaked; not accuracy.
+
+Model calls per result
+A 5
+B 10
+
+5 shared; 10 distinct calls across A and B.
+
+Probability within the candidate set
+
+A and B share a 0–100% scale. Δ is B − A in percentage points. Values are aligned by semantic key, even when presentation order changes.
+
+option_0
+key: option_0
+A
+49.918269%
+B
+54.235561%
++4.317293
+Δ percentage points
+option_1
+key: option_1
+A
+12.965605%
+B
+7.076239%
+-5.889366
+Δ percentage points
+option_2
+key: option_2
+A
+0.347667%
+B
+0.353889%
++0.006221
+Δ percentage points
+option_3
+key: option_3
+A
+36.578155%
+B
+38.237025%
++1.65887
+Δ percentage points
+option_4
+key: option_4
+A
+0.190305%
+B
+0.097286%
+-0.093019
+Δ percentage points
+Dataset reference label: option_0. A matches; B matches. This is one recorded item, not a new accuracy estimate.
+Answer frequencies across this full panel
+
+All retained items for this task and model, including those hidden by the item search. These counts describe selected labels, not accuracy.
+
+option_0 — A: 29/200; B: 28/200
+
+option_1 — A: 43/200; B: 45/200
+
+option_2 — A: 44/200; B: 44/200
+
+option_3 — A: 43/200; B: 43/200
+
+option_4 — A: 41/200; B: 40/200
+
+Concentration measures how peaked a candidate distribution is; it is not the probability of being correct. Score expectations assume equally spaced stages. Recorded examples do not establish human usability or a causal model-size effect.
+
+Trace this comparison to the source records
+
+Source item: jcommonsenseqa:valid:8952
+
+Source question SHA-256:
+
+351dbd8a637997012295c9e71bf6b0b6eb8eb3d81cc02287891ecda1a508c0db
+
+Original task and option text are not distributed here. Candidate keys identify the original semantic answers; they are not reconstructed explanations.
+
+A · Forward cyclic average
+
+Derived probability average. Each member below is an original physical request.
+
+Retained derived result: mini-jev/paper/order_ensemble/study_v1/analysis/qwen2.5-1.5b/derived_answers.jsonl · line 783
+
+File SHA-256: 9e9b98e5daad3ecb7986661fd6999f937eff2abdfc3a06e8e40cdb52bfcdbdc2
+forward_0 · line 1209
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_0","option_1","option_2","option_3","option_4"]}
+
+forward_1 · line 1212
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_1","option_2","option_3","option_4","option_0"]}
+
+forward_2 · line 1207
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_2","option_3","option_4","option_0","option_1"]}
+
+forward_3 · line 1208
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_3","option_4","option_0","option_1","option_2"]}
+
+forward_4 · line 1205
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_4","option_0","option_1","option_2","option_3"]}
+
+Exact recorded / derived values
+B · Both-orientation average
+
+Derived probability average. Each member below is an original physical request.
+
+Retained derived result: mini-jev/paper/order_ensemble/study_v1/analysis/qwen2.5-1.5b/derived_answers.jsonl · line 785
+
+File SHA-256: 9e9b98e5daad3ecb7986661fd6999f937eff2abdfc3a06e8e40cdb52bfcdbdc2
+forward_0 · line 1209
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_0","option_1","option_2","option_3","option_4"]}
+
+forward_1 · line 1212
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_1","option_2","option_3","option_4","option_0"]}
+
+forward_2 · line 1207
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_2","option_3","option_4","option_0","option_1"]}
+
+forward_3 · line 1208
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_3","option_4","option_0","option_1","option_2"]}
+
+forward_4 · line 1205
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_4","option_0","option_1","option_2","option_3"]}
+
+reverse_0 · line 1214
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_4","option_3","option_2","option_1","option_0"]}
+
+reverse_1 · line 1211
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_3","option_2","option_1","option_0","option_4"]}
+
+reverse_2 · line 1210
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_2","option_1","option_0","option_4","option_3"]}
+
+reverse_3 · line 1206
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_1","option_0","option_4","option_3","option_2"]}
+
+reverse_4 · line 1213
+
+mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":["option_0","option_4","option_3","option_2","option_1"]}
+
+Exact recorded / derived values
+Download the original frozen source/evidence ZIP
+
+ZIP SHA-256: a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053
+
+Model, runtime, and panel metadata
+Scope, example selection, and reproducibility

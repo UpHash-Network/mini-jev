@@ -1,0 +1,7 @@
+{
+  "file": "exported.cforge",
+  "bytes": 10802470,
+  "sha256": "63aa03e4149ffbbdc508fed8846ca0d3e45d6e6d0137737a9745b69492a9d385",
+  "retained_local_run": "work/workflow-comparison-20261002/chainforge-run03",
+  "note": "Original exported file retained locally; recreate with check_chainforge.cjs. Payloads checked against frozen tasks.json in CHAINFORGE_RESULTS.json."
+}

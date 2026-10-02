@@ -1,0 +1,176 @@
+{
+  "status": "pass",
+  "checked_at_utc": "2026-10-02T14:15:21.079Z",
+  "browser_version": "154.0.8037.93",
+  "browser": "Installed Google Chrome, headed, fresh profile",
+  "fixture": "logittrail-frozen-evidence.cfzip",
+  "fixture_sha256": "d34d1f9c0bdbbe49a6e33a0402d519e5e7c2424202d54fab010544c6c3b05589",
+  "tasks_sha256": "d629475e55bdc8c5d35cfb813a982925e65485a6a21b27d0a34e0c4fefc829a7",
+  "cases": [
+    {
+      "id": "W01",
+      "search_filtered_actual_inspector": true,
+      "matching_item_and_two_conditions_visible": true,
+      "probability_named_scores_present": true,
+      "exact_response_text_available": true,
+      "lightbox_checks": [
+        {
+          "side": "a",
+          "complete_compact_response_json_exact": true
+        },
+        {
+          "side": "b",
+          "complete_compact_response_json_exact": true
+        }
+      ],
+      "notes": "Native table/filter with adapter-supplied labels, typed values, named candidate scores and compact fullprecision response text. Derived differences/call unions were supplied, not recomputed by ChainForge."
+    },
+    {
+      "id": "W02",
+      "search_filtered_actual_inspector": true,
+      "matching_item_and_two_conditions_visible": true,
+      "probability_named_scores_present": true,
+      "exact_response_text_available": true,
+      "lightbox_checks": [
+        {
+          "side": "a",
+          "complete_compact_response_json_exact": true
+        },
+        {
+          "side": "b",
+          "complete_compact_response_json_exact": true
+        }
+      ],
+      "notes": "Native table/filter with adapter-supplied labels, typed values, named candidate scores and compact fullprecision response text. Derived differences/call unions were supplied, not recomputed by ChainForge."
+    },
+    {
+      "id": "W03",
+      "search_filtered_actual_inspector": true,
+      "matching_item_and_two_conditions_visible": true,
+      "probability_named_scores_present": true,
+      "exact_response_text_available": true,
+      "lightbox_checks": [
+        {
+          "side": "a",
+          "complete_compact_response_json_exact": true
+        },
+        {
+          "side": "b",
+          "complete_compact_response_json_exact": true
+        }
+      ],
+      "notes": "Native table/filter with adapter-supplied labels, typed values, named candidate scores and compact fullprecision response text. Derived differences/call unions were supplied, not recomputed by ChainForge."
+    },
+    {
+      "id": "W04",
+      "search_filtered_actual_inspector": true,
+      "matching_item_and_two_conditions_visible": true,
+      "probability_named_scores_present": true,
+      "exact_response_text_available": true,
+      "lightbox_checks": [
+        {
+          "side": "a",
+          "complete_compact_response_json_exact": true
+        },
+        {
+          "side": "b",
+          "complete_compact_response_json_exact": true
+        }
+      ],
+      "notes": "Native table/filter with adapter-supplied labels, typed values, named candidate scores and compact fullprecision response text. Derived differences/call unions were supplied, not recomputed by ChainForge."
+    },
+    {
+      "id": "W05",
+      "search_filtered_actual_inspector": true,
+      "matching_item_and_two_conditions_visible": true,
+      "probability_named_scores_present": true,
+      "exact_response_text_available": true,
+      "lightbox_checks": [
+        {
+          "side": "a",
+          "complete_compact_response_json_exact": true
+        },
+        {
+          "side": "b",
+          "complete_compact_response_json_exact": true
+        }
+      ],
+      "notes": "Native table/filter with adapter-supplied labels, typed values, named candidate scores and compact fullprecision response text. Derived differences/call unions were supplied, not recomputed by ChainForge."
+    },
+    {
+      "id": "W06",
+      "search_filtered_actual_inspector": true,
+      "matching_item_and_two_conditions_visible": true,
+      "probability_named_scores_present": true,
+      "exact_response_text_available": true,
+      "lightbox_checks": [
+        {
+          "side": "a",
+          "complete_compact_response_json_exact": true
+        },
+        {
+          "side": "b",
+          "complete_compact_response_json_exact": true
+        }
+      ],
+      "notes": "Native table/filter with adapter-supplied labels, typed values, named candidate scores and compact fullprecision response text. Derived differences/call unions were supplied, not recomputed by ChainForge."
+    }
+  ],
+  "complete_payload_flow_export": [
+    {
+      "id": "W01",
+      "sha256": "867973e21085298a4db65a6c59d29329e7f757b5133509dbf6fc4cfcb6900572",
+      "exact": true
+    },
+    {
+      "id": "W02",
+      "sha256": "32418caf5156472f4956b827af7873049087f3230bd591b08cd088d9891466d2",
+      "exact": true
+    },
+    {
+      "id": "W03",
+      "sha256": "91a11bb60babd8d38fb31edbcbf488bac1ddbb82db8f3031edca89261f64b590",
+      "exact": true
+    },
+    {
+      "id": "W04",
+      "sha256": "b062a45d7487ed70a62b86f950f10bcaeceae6f30203d06b48fd25e0828fc37f",
+      "exact": true
+    },
+    {
+      "id": "W05",
+      "sha256": "844a32ea6820baa1e72200a5cd11c97224b5de07664e15bfc66f228ceaf42347",
+      "exact": true
+    },
+    {
+      "id": "W06",
+      "sha256": "495e6c8bb74a18c319301dcc4c18dffbd5b1ef15537f5d3f390c5e08ecc26119",
+      "exact": true
+    }
+  ],
+  "compact_records_exact": 12,
+  "spreadsheet_downloaded": true,
+  "spreadsheet_numeric_verification": "See separately generated SPREADSHEET_CHECK.json",
+  "page_errors": [],
+  "non_get_requests": [
+    {
+      "url": "http://127.0.0.1:18881/app/loadCachedCustomProviders",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:18881/app/fetchEnvironAPIKeys",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:18881/api/importFlowBundle",
+      "method": "POST"
+    },
+    {
+      "url": "http://127.0.0.1:18881/api/getUniqueFlowFilename",
+      "method": "PUT"
+    }
+  ],
+  "human_participants": 0,
+  "new_model_calls": 0,
+  "scope": "Finite imported frozen-evidence workflow. This does not test Ollama decision inference or establish GUI superiority/human efficiency. Generic import/visualization is real; adapter-derived values are not native computation. Full evidence is accessed through flow export/common payload rather than inferred from visible compact rows."
+}

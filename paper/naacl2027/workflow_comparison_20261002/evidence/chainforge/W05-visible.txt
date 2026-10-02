@@ -1,0 +1,449 @@
+🔍 Conditions: probabilities, metadata, export
+Export data✕
+
+Columns
+condition
+dataset
+item_id
+model
+selected_label
+side
+study
+task_id
+typed_value
+LLM
+Scores
+condition
+dataset
+item_id
+model
+selected_label
+side
+study
+task_id
+typed_value
+LLM
+Response
+P(false)
+P(true)
+recorded_calls
+recorded_input_tokens
+recorded_latency_ms
+cyclic_forward
+JCoLA
+jcola:out_of_domain_valid:8653
+qwen3.6-35b-a3b
+false
+a
+order_ensemble
+W05
+0.16140670061610185
+A (frozen condition)
+{
+  "import_notice": "These values were supplied by the frozen-evidence format adapter, not generated or independently computed by ChainForge.",
+  "task_id": "W05",
+  "side": "a",
+  "selection": {
+    "id": "W05",
+    "panel_id": "order_ensemble--qwen3.6-35b-a3b--jcola",
+    "study": "order_ensemble",
+    "model": "qwen3.6-35b-a3b",
+    "dataset": "JCoLA",
+    "type": "noul",
+    "item": "jcola:out_of_domain_valid:8653",
+    "a": "cyclic_forward",
+    "b": "dihedral",
+    "item_hash": "0074f332c69d7535e60932421eabe5a734be19b069fc760d407f8795a7714c81",
+    "eligible_items": 200,
+    "all_eligible_id_hashes_sha256": "505cb617b7d7af3a59ea74cd038feb9171fc82a477e5a57820306e6b46321774"
+  },
+  "canonical_keys": [
+    "false",
+    "true"
+  ],
+  "score_values": null,
+  "condition": {
+    "id": "cyclic_forward",
+    "kind": "derived",
+    "probabilities": [
+      0.8385932993838981,
+      0.16140670061610185
+    ],
+    "label": "false",
+    "value": 0.16140670061610185,
+    "concentration": 0.362335766475279,
+    "top_tie_keys": [
+      "false"
+    ],
+    "calls": 2,
+    "input_tokens": 580,
+    "latency_ms": 573.3769997023046,
+    "source": [
+      "s37",
+      563
+    ],
+    "member_ids": [
+      "forward_0",
+      "forward_1"
+    ],
+    "member_sources": [
+      [
+        "s32",
+        869
+      ],
+      [
+        "s32",
+        870
+      ]
+    ]
+  },
+  "candidate_comparison": [
+    {
+      "key": "false",
+      "a": 0.8385932993838981,
+      "b": 0.8385932993838981,
+      "delta": 0
+    },
+    {
+      "key": "true",
+      "a": 0.16140670061610185,
+      "b": 0.16140670061610185,
+      "delta": 0
+    }
+  ],
+  "reference": {
+    "kind": "label",
+    "value": "false",
+    "aMatch": true,
+    "bMatch": true
+  },
+  "physical_members": [
+    {
+      "id": "forward_0",
+      "kind": "physical",
+      "probabilities": [
+        0.9193379694300802,
+        0.08066203056991982
+      ],
+      "label": "false",
+      "value": 0.08066203056991982,
+      "concentration": 0.5954923888838155,
+      "top_tie_keys": [
+        "false"
+      ],
+      "calls": 1,
+      "input_tokens": 290,
+      "latency_ms": 295.030249748379,
+      "source": [
+        "s32",
+        869
+      ],
+      "mapping": "m06"
+    },
+    {
+      "id": "forward_1",
+      "kind": "physical",
+      "probabilities": [
+        0.7578486293377161,
+        0.24215137066228387
+      ],
+      "label": "false",
+      "value": 0.24215137066228387,
+      "concentration": 0.20140033342068808,
+      "top_tie_keys": [
+        "false"
+      ],
+      "calls": 1,
+      "input_tokens": 290,
+      "latency_ms": 278.3467499539256,
+      "source": [
+        "s32",
+        870
+      ],
+      "mapping": "m05"
+    }
+  ],
+  "shared_physical_calls": 2,
+  "unique_physical_calls": 2,
+  "sources": {
+    "s37": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/analysis/qwen3.6-35b-a3b/derived_answers.jsonl",
+      "sha256": "66f8a1f0db1700a9c3f25f391868ac631de3eface1b408e4f9b7a843dab83cc3",
+      "bytes": 2537678,
+      "format": "jsonl"
+    },
+    "s32": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen3.6-35b-a3b/predictions.jsonl",
+      "sha256": "c4799f763961f13cf7ffec80c8b2d8e4474a9f12181d9a773b8ac17525a6b392",
+      "bytes": 6773528,
+      "format": "jsonl"
+    },
+    "s31": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen3.6-35b-a3b/RUNTIME.json",
+      "sha256": "c39b0152e1ad937b49d9977f3fc4507d011dfaca9916a639832c7838c0fa4a50",
+      "bytes": 3016,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m06": {
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B"
+      ],
+      "display_order": [
+        "false",
+        "true"
+      ]
+    },
+    "m05": {
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B"
+      ],
+      "display_order": [
+        "true",
+        "false"
+      ]
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "backend": "llama.cpp",
+    "precision": "Q4_K_M",
+    "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "revision_kind": "GGUF_distribution_revision",
+    "model_sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+    "device": "metal",
+    "source": "s31"
+  },
+  "complete_evidence_sha256": "844a32ea6820baa1e72200a5cd11c97224b5de07664e15bfc66f228ceaf42347"
+}
+0.84
+0.16
+2
+580
+573.38
+dihedral
+JCoLA
+jcola:out_of_domain_valid:8653
+qwen3.6-35b-a3b
+false
+b
+order_ensemble
+W05
+0.16140670061610185
+B (frozen condition)
+{
+  "import_notice": "These values were supplied by the frozen-evidence format adapter, not generated or independently computed by ChainForge.",
+  "task_id": "W05",
+  "side": "b",
+  "selection": {
+    "id": "W05",
+    "panel_id": "order_ensemble--qwen3.6-35b-a3b--jcola",
+    "study": "order_ensemble",
+    "model": "qwen3.6-35b-a3b",
+    "dataset": "JCoLA",
+    "type": "noul",
+    "item": "jcola:out_of_domain_valid:8653",
+    "a": "cyclic_forward",
+    "b": "dihedral",
+    "item_hash": "0074f332c69d7535e60932421eabe5a734be19b069fc760d407f8795a7714c81",
+    "eligible_items": 200,
+    "all_eligible_id_hashes_sha256": "505cb617b7d7af3a59ea74cd038feb9171fc82a477e5a57820306e6b46321774"
+  },
+  "canonical_keys": [
+    "false",
+    "true"
+  ],
+  "score_values": null,
+  "condition": {
+    "id": "dihedral",
+    "kind": "derived",
+    "probabilities": [
+      0.8385932993838981,
+      0.16140670061610185
+    ],
+    "label": "false",
+    "value": 0.16140670061610185,
+    "concentration": 0.362335766475279,
+    "top_tie_keys": [
+      "false"
+    ],
+    "calls": 2,
+    "input_tokens": 580,
+    "latency_ms": 573.3769997023046,
+    "source": [
+      "s37",
+      565
+    ],
+    "member_ids": [
+      "forward_0",
+      "forward_1"
+    ],
+    "member_sources": [
+      [
+        "s32",
+        869
+      ],
+      [
+        "s32",
+        870
+      ]
+    ]
+  },
+  "candidate_comparison": [
+    {
+      "key": "false",
+      "a": 0.8385932993838981,
+      "b": 0.8385932993838981,
+      "delta": 0
+    },
+    {
+      "key": "true",
+      "a": 0.16140670061610185,
+      "b": 0.16140670061610185,
+      "delta": 0
+    }
+  ],
+  "reference": {
+    "kind": "label",
+    "value": "false",
+    "aMatch": true,
+    "bMatch": true
+  },
+  "physical_members": [
+    {
+      "id": "forward_0",
+      "kind": "physical",
+      "probabilities": [
+        0.9193379694300802,
+        0.08066203056991982
+      ],
+      "label": "false",
+      "value": 0.08066203056991982,
+      "concentration": 0.5954923888838155,
+      "top_tie_keys": [
+        "false"
+      ],
+      "calls": 1,
+      "input_tokens": 290,
+      "latency_ms": 295.030249748379,
+      "source": [
+        "s32",
+        869
+      ],
+      "mapping": "m06"
+    },
+    {
+      "id": "forward_1",
+      "kind": "physical",
+      "probabilities": [
+        0.7578486293377161,
+        0.24215137066228387
+      ],
+      "label": "false",
+      "value": 0.24215137066228387,
+      "concentration": 0.20140033342068808,
+      "top_tie_keys": [
+        "false"
+      ],
+      "calls": 1,
+      "input_tokens": 290,
+      "latency_ms": 278.3467499539256,
+      "source": [
+        "s32",
+        870
+      ],
+      "mapping": "m05"
+    }
+  ],
+  "shared_physical_calls": 2,
+  "unique_physical_calls": 2,
+  "sources": {
+    "s37": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/analysis/qwen3.6-35b-a3b/derived_answers.jsonl",
+      "sha256": "66f8a1f0db1700a9c3f25f391868ac631de3eface1b408e4f9b7a843dab83cc3",
+      "bytes": 2537678,
+      "format": "jsonl"
+    },
+    "s32": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen3.6-35b-a3b/predictions.jsonl",
+      "sha256": "c4799f763961f13cf7ffec80c8b2d8e4474a9f12181d9a773b8ac17525a6b392",
+      "bytes": 6773528,
+      "format": "jsonl"
+    },
+    "s31": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen3.6-35b-a3b/RUNTIME.json",
+      "sha256": "c39b0152e1ad937b49d9977f3fc4507d011dfaca9916a639832c7838c0fa4a50",
+      "bytes": 3016,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m06": {
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B"
+      ],
+      "display_order": [
+        "false",
+        "true"
+      ]
+    },
+    "m05": {
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B"
+      ],
+      "display_order": [
+        "true",
+        "false"
+      ]
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "backend": "llama.cpp",
+    "precision": "Q4_K_M",
+    "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "revision_kind": "GGUF_distribution_revision",
+    "model_sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+    "device": "metal",
+    "source": "s31"
+  },
+  "complete_evidence_sha256": "844a32ea6820baa1e72200a5cd11c97224b5de07664e15bfc66f228ceaf42347"
+}
+0.84
+0.16
+2
+580
+573.38
+Rows per page
+1-2 of 2

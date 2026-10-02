@@ -1,0 +1,339 @@
+Browse the retained items
+200 source items in this panel
+Study
+Presentation sensitivity
+Probability averaging
+Model and runtime
+qwen3.6-35b-a3b · llama.cpp / Q4_K_M
+qwen2.5-0.5b · transformers / float32
+qwen2.5-1.5b · transformers / float32
+Task
+JCoLA
+JCommonsenseQA
+JSTS
+
+Model: Qwen/Qwen2.5-1.5B-Instruct · transformers / float32 · mps
+
+Find an item
+Source item
+jcola:in_domain_valid:1030
+jcola:in_domain_valid:1032
+jcola:in_domain_valid:1070
+jcola:in_domain_valid:1175
+jcola:in_domain_valid:1435
+jcola:in_domain_valid:1460
+jcola:in_domain_valid:1578
+jcola:in_domain_valid:1887
+jcola:in_domain_valid:1931
+jcola:in_domain_valid:1985
+jcola:in_domain_valid:20
+jcola:in_domain_valid:2025
+jcola:in_domain_valid:2227
+jcola:in_domain_valid:2253
+jcola:in_domain_valid:2273
+jcola:in_domain_valid:2281
+jcola:in_domain_valid:2295
+jcola:in_domain_valid:2353
+jcola:in_domain_valid:2356
+jcola:in_domain_valid:2654
+jcola:in_domain_valid:2658
+jcola:in_domain_valid:2739
+jcola:in_domain_valid:2827
+jcola:in_domain_valid:2902
+jcola:in_domain_valid:2992
+jcola:in_domain_valid:3022
+jcola:in_domain_valid:3037
+jcola:in_domain_valid:313
+jcola:in_domain_valid:3291
+jcola:in_domain_valid:3319
+jcola:in_domain_valid:3426
+jcola:in_domain_valid:3430
+jcola:in_domain_valid:3690
+jcola:in_domain_valid:3824
+jcola:in_domain_valid:3835
+jcola:in_domain_valid:3843
+jcola:in_domain_valid:3847
+jcola:in_domain_valid:3879
+jcola:in_domain_valid:3919
+jcola:in_domain_valid:4010
+jcola:in_domain_valid:4025
+jcola:in_domain_valid:4028
+jcola:in_domain_valid:4034
+jcola:in_domain_valid:42
+jcola:in_domain_valid:4269
+jcola:in_domain_valid:4344
+jcola:in_domain_valid:450
+jcola:in_domain_valid:4644
+jcola:in_domain_valid:4729
+jcola:in_domain_valid:4740
+jcola:in_domain_valid:4743
+jcola:in_domain_valid:4847
+jcola:in_domain_valid:4862
+jcola:in_domain_valid:5302
+jcola:in_domain_valid:5349
+jcola:in_domain_valid:5373
+jcola:in_domain_valid:5493
+jcola:in_domain_valid:5515
+jcola:in_domain_valid:5677
+jcola:in_domain_valid:5685
+jcola:in_domain_valid:5741
+jcola:in_domain_valid:5836
+jcola:in_domain_valid:584
+jcola:in_domain_valid:5860
+jcola:in_domain_valid:6016
+jcola:in_domain_valid:6427
+jcola:in_domain_valid:646
+jcola:in_domain_valid:6504
+jcola:in_domain_valid:6834
+jcola:in_domain_valid:6875
+jcola:in_domain_valid:6974
+jcola:in_domain_valid:7018
+jcola:in_domain_valid:7084
+jcola:in_domain_valid:7088
+jcola:in_domain_valid:7163
+jcola:in_domain_valid:7193
+jcola:in_domain_valid:7197
+jcola:in_domain_valid:7204
+jcola:in_domain_valid:721
+jcola:in_domain_valid:727
+jcola:in_domain_valid:7272
+jcola:in_domain_valid:7468
+jcola:in_domain_valid:7501
+jcola:in_domain_valid:7588
+jcola:in_domain_valid:7635
+jcola:in_domain_valid:7645
+jcola:in_domain_valid:7757
+jcola:in_domain_valid:7803
+jcola:in_domain_valid:7846
+jcola:in_domain_valid:7890
+jcola:in_domain_valid:7898
+jcola:in_domain_valid:795
+jcola:in_domain_valid:8076
+jcola:in_domain_valid:8159
+jcola:in_domain_valid:8232
+jcola:in_domain_valid:8341
+jcola:in_domain_valid:8388
+jcola:in_domain_valid:8563
+jcola:in_domain_valid:8584
+jcola:in_domain_valid:940
+jcola:out_of_domain_valid:10003
+jcola:out_of_domain_valid:8651
+jcola:out_of_domain_valid:8667
+jcola:out_of_domain_valid:8720
+jcola:out_of_domain_valid:8733
+jcola:out_of_domain_valid:8736
+jcola:out_of_domain_valid:8744
+jcola:out_of_domain_valid:8746
+jcola:out_of_domain_valid:8767
+jcola:out_of_domain_valid:8771
+jcola:out_of_domain_valid:8795
+jcola:out_of_domain_valid:8803
+jcola:out_of_domain_valid:8805
+jcola:out_of_domain_valid:8841
+jcola:out_of_domain_valid:8848
+jcola:out_of_domain_valid:8871
+jcola:out_of_domain_valid:8874
+jcola:out_of_domain_valid:8892
+jcola:out_of_domain_valid:8906
+jcola:out_of_domain_valid:8911
+jcola:out_of_domain_valid:8933
+jcola:out_of_domain_valid:8934
+jcola:out_of_domain_valid:8945
+jcola:out_of_domain_valid:8946
+jcola:out_of_domain_valid:8968
+jcola:out_of_domain_valid:8976
+jcola:out_of_domain_valid:8981
+jcola:out_of_domain_valid:8988
+jcola:out_of_domain_valid:9001
+jcola:out_of_domain_valid:9022
+jcola:out_of_domain_valid:9033
+jcola:out_of_domain_valid:9042
+jcola:out_of_domain_valid:9049
+jcola:out_of_domain_valid:9054
+jcola:out_of_domain_valid:9059
+jcola:out_of_domain_valid:9071
+jcola:out_of_domain_valid:9081
+jcola:out_of_domain_valid:9087
+jcola:out_of_domain_valid:9108
+jcola:out_of_domain_valid:9129
+jcola:out_of_domain_valid:9136
+jcola:out_of_domain_valid:9150
+jcola:out_of_domain_valid:9156
+jcola:out_of_domain_valid:9189
+jcola:out_of_domain_valid:9204
+jcola:out_of_domain_valid:9226
+jcola:out_of_domain_valid:9317
+jcola:out_of_domain_valid:9325
+jcola:out_of_domain_valid:9338
+jcola:out_of_domain_valid:9342
+jcola:out_of_domain_valid:9349
+jcola:out_of_domain_valid:9350
+jcola:out_of_domain_valid:9371
+jcola:out_of_domain_valid:9373
+jcola:out_of_domain_valid:9382
+jcola:out_of_domain_valid:9395
+jcola:out_of_domain_valid:9419
+jcola:out_of_domain_valid:9464
+jcola:out_of_domain_valid:9515
+jcola:out_of_domain_valid:9517
+jcola:out_of_domain_valid:9525
+jcola:out_of_domain_valid:9528
+jcola:out_of_domain_valid:9536
+jcola:out_of_domain_valid:9546
+jcola:out_of_domain_valid:9549
+jcola:out_of_domain_valid:9552
+jcola:out_of_domain_valid:9587
+jcola:out_of_domain_valid:9597
+jcola:out_of_domain_valid:9612
+jcola:out_of_domain_valid:9618
+jcola:out_of_domain_valid:9636
+jcola:out_of_domain_valid:9638
+jcola:out_of_domain_valid:9646
+jcola:out_of_domain_valid:9651
+jcola:out_of_domain_valid:9652
+jcola:out_of_domain_valid:9654
+jcola:out_of_domain_valid:9661
+jcola:out_of_domain_valid:9664
+jcola:out_of_domain_valid:9668
+jcola:out_of_domain_valid:9726
+jcola:out_of_domain_valid:9741
+jcola:out_of_domain_valid:9756
+jcola:out_of_domain_valid:9763
+jcola:out_of_domain_valid:9776
+jcola:out_of_domain_valid:9798
+jcola:out_of_domain_valid:9819
+jcola:out_of_domain_valid:9833
+jcola:out_of_domain_valid:9873
+jcola:out_of_domain_valid:9886
+jcola:out_of_domain_valid:9898
+jcola:out_of_domain_valid:9900
+jcola:out_of_domain_valid:9905
+jcola:out_of_domain_valid:9910
+jcola:out_of_domain_valid:9916
+jcola:out_of_domain_valid:9918
+jcola:out_of_domain_valid:9919
+jcola:out_of_domain_valid:9928
+jcola:out_of_domain_valid:9931
+jcola:out_of_domain_valid:9939
+jcola:out_of_domain_valid:9980
+←
+→
+
+Both sides always use the same source item, task, and model. Original task text is not included in this artifact; item IDs and source hashes identify it. This is not a model ranking.
+
+JCOLA / QWEN2.5-1.5B / JCOLA:OUT_OF_DOMAIN_VALID:8744
+
+Candidate comparison
+Download this comparison ↓
+A Recorded condition
+Original presentation
+Exact input repeat
+Reversed candidate rows
+
+The saved original presentation.
+
+B Recorded condition
+Original presentation
+Exact input repeat
+Reversed candidate rows
+
+Reverse only the displayed rows, preserving answer-token, key, and meaning bindings.
+
+The most likely answer stays the same. Largest candidate probability change: 0.1821 percentage points.
+Most likely semantic answer
+A true
+B true
+
+Recorded tie handling is preserved.
+
+True-candidate probability
+A 0.996954
+B 0.998775
+
+Within the false/true candidate pair.
+
+Concentration
+A 0.9702
+B 0.9864
+
+0 = uniform · 1 = peaked; not accuracy.
+
+Model calls per result
+A 1
+B 1
+
+0 shared; 2 distinct calls across A and B.
+
+Probability within the candidate set
+
+A and B share a 0–100% scale. Δ is B − A in percentage points. Values are aligned by semantic key, even when presentation order changes.
+
+false · unacceptable
+key: false
+A
+0.304567%
+B
+0.122467%
+-0.1821
+Δ percentage points
+true · acceptable
+key: true
+A
+99.695433%
+B
+99.877533%
++0.1821
+Δ percentage points
+Dataset reference label: true. A matches; B matches. This is one recorded item, not a new accuracy estimate.
+Answer frequencies across this full panel
+
+All retained items for this task and model, including those hidden by the item search. These counts describe selected labels, not accuracy.
+
+false · unacceptable — A: 0/200; B: 0/200
+
+true · acceptable — A: 200/200; B: 200/200
+
+Concentration measures how peaked a candidate distribution is; it is not the probability of being correct. Score expectations assume equally spaced stages. Recorded examples do not establish human usability or a causal model-size effect.
+
+Trace this comparison to the source records
+
+Source item: jcola:out_of_domain_valid:8744
+
+Source question SHA-256:
+
+6e54d1dd8dd6d9c91e1723cccd7d3badbf8b1aa2db7c95a8c2c79029c11e4001
+
+Original task and option text are not distributed here. Candidate keys identify the original semantic answers; they are not reconstructed explanations.
+
+A · Original presentation
+
+Original physical request.
+
+baseline · line 340
+
+mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: 310658568433ae4bf3b68e9138054ea6d63aad4d3c12a7ee48ab60584a545197
+
+Recorded candidate mapping: {"candidate_keys":["false","true"],"candidate_tokens":["A","B"],"display_order":null}
+
+Exact recorded / derived values
+B · Reversed candidate rows
+
+Original physical request.
+
+display_reverse · line 341
+
+mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-1.5b/predictions.jsonl
+
+File SHA-256: 310658568433ae4bf3b68e9138054ea6d63aad4d3c12a7ee48ab60584a545197
+
+Recorded candidate mapping: {"candidate_keys":["false","true"],"candidate_tokens":["A","B"],"display_order":null}
+
+Exact recorded / derived values
+Download the original frozen source/evidence ZIP
+
+ZIP SHA-256: a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053
+
+Model, runtime, and panel metadata
+Scope, example selection, and reproducibility

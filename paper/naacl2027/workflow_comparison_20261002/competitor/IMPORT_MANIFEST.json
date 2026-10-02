@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "tasks_sha256": "d629475e55bdc8c5d35cfb813a982925e65485a6a21b27d0a34e0c4fefc829a7",
+  "protocol_sha256": "237ce0e6dc1dea51a0928d43a5167441e4b1dbf21d2438e806f80622d8d8bad0",
+  "flow_sha256": "32ece16bf27229eb4a9894611552cc02fa34b2330e8803d97eed62a8f93f8bfe",
+  "cfzip_sha256": "d34d1f9c0bdbbe49a6e33a0402d519e5e7c2424202d54fab010544c6c3b05589",
+  "flow_bytes": 10801732,
+  "cfzip_bytes": 1137985,
+  "full_evidence_rows": 6,
+  "condition_rows": 12,
+  "new_inference_calls": 0,
+  "complete_strings_roundtrip_equal": true,
+  "evidence": [
+    {
+      "task_id": "W01",
+      "evidence_sha256": "867973e21085298a4db65a6c59d29329e7f757b5133509dbf6fc4cfcb6900572",
+      "bytes_utf8": 633874
+    },
+    {
+      "task_id": "W02",
+      "evidence_sha256": "32418caf5156472f4956b827af7873049087f3230bd591b08cd088d9891466d2",
+      "bytes_utf8": 571852
+    },
+    {
+      "task_id": "W03",
+      "evidence_sha256": "91a11bb60babd8d38fb31edbcbf488bac1ddbb82db8f3031edca89261f64b590",
+      "bytes_utf8": 1103692
+    },
+    {
+      "task_id": "W04",
+      "evidence_sha256": "b062a45d7487ed70a62b86f950f10bcaeceae6f30203d06b48fd25e0828fc37f",
+      "bytes_utf8": 2885014
+    },
+    {
+      "task_id": "W05",
+      "evidence_sha256": "844a32ea6820baa1e72200a5cd11c97224b5de07664e15bfc66f228ceaf42347",
+      "bytes_utf8": 1285663
+    },
+    {
+      "task_id": "W06",
+      "evidence_sha256": "495e6c8bb74a18c319301dcc4c18dffbd5b1ef15537f5d3f390c5e08ecc26119",
+      "bytes_utf8": 3330048
+    }
+  ],
+  "adapter_boundary": "Complete evidence strings preserved verbatim. Compact fields and named numeric scores are deterministic extraction from supplied comparison_export, not ChainForge-computed task answers. No expected_answers read.",
+  "native_features_to_check": [
+    "Inspect Table",
+    "Inspect List",
+    "Inspect Grid",
+    "group by",
+    "column pivot",
+    "search",
+    "Export data (xlsx)"
+  ]
+}

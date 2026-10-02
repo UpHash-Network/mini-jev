@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "study_kind": "nonhuman_finite_workflow_capability_and_evidence_access_check",
+  "date": "2026-10-02",
+  "freeze_created_utc": "2026-10-02T13:51:20.504484+00:00",
+  "freeze_statement": "Written before these six cases are executed in the comparator GUIs. Authors and agents already know the saved data, featured examples, prior functional audit and expected capabilities. This is not blinded, independent human evaluation, preregistration on an external registry, or a prospective model-quality experiment.",
+  "objective": "Record how six deterministically selected frozen comparisons and their evidence can be reached in the actual LogitTrail saved Explorer, complete formatted JSON, and a pinned current ChainForge GUI. Separate native presentation from information availability and custom computation.",
+  "archive": {
+    "path": "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053"
+  },
+  "input_sha256": {
+    "docs/explorer/core.mjs": "2e4c6e112eb30ebe83d8824be970c79cc33ca1f2f28bf5f28058cbf75817d4f9",
+    "docs/explorer/data/index.json": "22ee0270bce871e0c22808b3126f61b17410bdeac709f73f0a3fd6ced4331baa",
+    "paper/naacl2027/inspection_audit_20261002/protocol.json": "da0b8af3a46597e780eba8f3b85b9d61e03ed28a3986e9851d210273a941e8b2",
+    "paper/naacl2027/inspection_audit_20261002/results.json": "651d96448dda4edea110843d2f381d89073694fac8d2d000802203e8230b5607"
+  },
+  "sampling": {
+    "seed": "logittrail-workflow-comparison-v1-20261002",
+    "population": "Each chosen published panel contains 200 retained items. All 200 are eligible, including known featured IDs; there are no outcome-based exclusions or replacement samples.",
+    "cells": [
+      {
+        "study": "presentation_robustness",
+        "type": "choice",
+        "dataset": "JCommonsenseQA",
+        "model": "qwen2.5-0.5b"
+      },
+      {
+        "study": "presentation_robustness",
+        "type": "noul",
+        "dataset": "JCoLA",
+        "model": "qwen2.5-1.5b"
+      },
+      {
+        "study": "presentation_robustness",
+        "type": "score",
+        "dataset": "JSTS",
+        "model": "qwen3.6-35b-a3b"
+      },
+      {
+        "study": "order_ensemble",
+        "type": "choice",
+        "dataset": "JCommonsenseQA",
+        "model": "qwen2.5-1.5b"
+      },
+      {
+        "study": "order_ensemble",
+        "type": "noul",
+        "dataset": "JCoLA",
+        "model": "qwen3.6-35b-a3b"
+      },
+      {
+        "study": "order_ensemble",
+        "type": "score",
+        "dataset": "JSTS",
+        "model": "qwen2.5-0.5b"
+      }
+    ],
+    "model_balance": "Three models each appear exactly twice; 2 studies x 3 output types are represented. Fixed Latin-cycle assignment is structural, not outcome selected.",
+    "item_rule": "For each fixed panel select the minimum lexicographic (SHA256(UTF-8(seed + newline + panel.id + newline + item.item_id)), item.item_id). Hash all eligible IDs before consulting outcomes.",
+    "condition_rule": {
+      "presentation_robustness": [
+        "baseline",
+        "display_reverse"
+      ],
+      "order_ensemble": [
+        "cyclic_forward",
+        "dihedral"
+      ]
+    },
+    "condition_rationale": "Fixed presentation reversal and nested recorded-call pools exercise alignment and shared physical-call accounting. Noul may have equal pools by construction; equality is a valid answer. Conditions are selected by study structure before consulting selected-item probabilities or labels.",
+    "no_reselection": "Unexpected, trivial, unchanged, equal-pool, or failed cases remain in the six-case report."
+  },
+  "information_equivalence": {
+    "canonical_evidence": [
+      "comparison_export from unchanged docs/explorer/core.mjs",
+      "complete selected item with every condition",
+      "complete selected 200-item panel with every condition",
+      "complete panel descriptor and all full-panel summaries",
+      "complete original Explorer index containing source definitions, mappings, model provenance, archive information, all panel descriptors and limitations"
+    ],
+    "policy": "Every presenter receives byte-equivalent canonical evidence JSON for each case, including all summaries, provenance and source definitions; no competing input loses fields. The frozen ZIP is locally available to all for optional member retrieval. Expected-answer keys are an assessor file, not extra presenter input.",
+    "presenters": {
+      "logittrail": "Use the existing saved Explorer deep link with the matching case plus access to the canonical evidence payload. Do not alter core.mjs or source data.",
+      "formatted_json": "Use complete pretty-printed canonical evidence with browser search/expand facilities; the preexisting complete JSON viewer may additionally navigate the same original panel/index. No fields are removed.",
+      "chainforge": "Pin actual installed package/upstream commit and record import transformations. Import one complete canonical evidence JSON string per task, or losslessly split its fields into table columns if required. Keep exact nested values and a reconstructible byte-equivalent payload. Use the real GUI for inspection; label custom parsing/code separately. Do not infer absence solely from missing documented controls."
+    }
+  },
+  "questions": [
+    {
+      "id": "basic_typed_decision",
+      "applies": "all six",
+      "request": "For A and B identify the semantic label, typed value and the complete candidate probability vector. For Noul state the probability of true. These are probabilities conditional on supplied candidates, not probabilities of correctness."
+    },
+    {
+      "id": "score_expectation_mode",
+      "applies": "Score cells only (2)",
+      "request": "For A and B report expected numeric score, modal stage, their absolute gap and the unchanged continuous reference score; do not round the reference into a label."
+    },
+    {
+      "id": "semantic_alignment",
+      "applies": "all six",
+      "request": "Compare A and B by canonical semantic key, report each B-minus-A probability difference and whether the semantic label changed; inspect each physical member candidate-token mapping and saved display order. Null display order means not recorded in the compact mapping, not proof of no reversal."
+    },
+    {
+      "id": "physical_call_accounting",
+      "applies": "all six",
+      "request": "Report calls for A and B, shared and union counts, whether the physical pools match, and the original source-row identities counted. Shared calls count once."
+    },
+    {
+      "id": "source_trace",
+      "applies": "all six",
+      "request": "Find each A/B source ZIP member, one-based JSONL line and member SHA-256; resolve the union of underlying physical-member sources and model revision. Check the original source row identity and saved values against the frozen ZIP when using the common archive."
+    },
+    {
+      "id": "full_panel_distribution",
+      "applies": "all six",
+      "request": "For each selected condition report all 200 retained items: canonical-key label counts, maximum label share and number of used labels; for Score also report expected-value min/max and population variance. Do not diagnose collapse from a single selected case."
+    }
+  ],
+  "reference_answers": "Independently read original ZIP members using a Python standard-library oracle patterned on the previous audit. Resolve order-ensemble physical_member_indices against archived request_index, not from GUI member_ids. Validate unchanged core export against oracle; recompute label distributions from all original rows.",
+  "numeric_contract": {
+    "copied_fields": "exact parsed JSON equality",
+    "integers_labels_sources": "exact equality",
+    "derived_arithmetic": "absolute and relative tolerance 1e-12; report GUI rounding separately without treating rounding as source corruption"
+  },
+  "observation_contract": {
+    "record_per_case_and_question": [
+      "presenter/version",
+      "question_id",
+      "answer_correctness_or_not_verified",
+      "native_field_or_visualization",
+      "complete_payload_reachable",
+      "manual_arithmetic_or_custom_code_needed",
+      "evidence_location_or_screenshot",
+      "blocker_and_attempted_path"
+    ],
+    "capability_labels": [
+      "native_semantic_presentation",
+      "complete_payload_access",
+      "manual_or_custom_computation",
+      "not_verified_due_to_blocker"
+    ],
+    "interpretation": "These labels are descriptive and may co-occur; they are not a ranked score. A generic JSON cell can preserve all evidence even when it lacks a dedicated semantic view. Record failures, equal functionality and unsupported advantages. Distinguish complete source preservation from how much is visible initially.",
+    "run_order": "Use case order W01 through W06 and the same questions for all three presenters. No timing or action-count performance estimates; software smoke checks alone do not establish usability. Record deviations explicitly and preserve this frozen protocol."
+  },
+  "prior_knowledge": [
+    "Published outcome-selected featured examples in docs/explorer/data/index.json were already known. Save their IDs in tasks.json and report any selected overlap instead of excluding them.",
+    "The earlier audit had 172200 condition-pair checks, 31000 conditions, 18 panels and zero reported discrepancies. This is reused data and known engineering evidence, not independent confirmation.",
+    "Existing ChainForge source review and LogitTrail implementation were known. Comparator GUI support must be observed directly rather than inferred from the earlier source-only assessment."
+  ],
+  "prohibited_inferences": [
+    "human usability or preference",
+    "human accuracy or task completion time",
+    "general GUI superiority",
+    "independent researcher replication",
+    "new model accuracy or calibration",
+    "new scientific sample size of 6 independent experiments",
+    "unsupported missing capability across all ChainForge configurations"
+  ],
+  "resources": {
+    "new_model_calls": 0,
+    "human_participants": 0,
+    "paid_services": 0
+  },
+  "output_files": [
+    "protocol.json",
+    "tasks.json",
+    "TASK_DESIGN.md",
+    "generate_tasks.py"
+  ],
+  "freeze_rule": "Record SHA-256 of protocol.json and tasks.json before root/comparator GUI execution. Later observations belong in separate root-owned result files; never edit frozen tasks to fit observations."
+}

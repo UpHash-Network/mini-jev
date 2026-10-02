@@ -1,0 +1,389 @@
+Browse the retained items
+200 source items in this panel
+Study
+Presentation sensitivity
+Probability averaging
+Model and runtime
+qwen3.6-35b-a3b · llama.cpp / Q4_K_M
+qwen2.5-0.5b · transformers / float32
+qwen2.5-1.5b · transformers / float32
+Task
+JCoLA
+JCommonsenseQA
+JSTS
+
+Model: ggml-org/Qwen3.6-35B-A3B-GGUF · llama.cpp / Q4_K_M · metal
+
+Find an item
+Source item
+jsts:valid:10
+jsts:valid:100
+jsts:valid:1005
+jsts:valid:1007
+jsts:valid:1016
+jsts:valid:1021
+jsts:valid:1037
+jsts:valid:1044
+jsts:valid:1045
+jsts:valid:1048
+jsts:valid:1054
+jsts:valid:1066
+jsts:valid:107
+jsts:valid:1071
+jsts:valid:1080
+jsts:valid:1082
+jsts:valid:1086
+jsts:valid:1087
+jsts:valid:1098
+jsts:valid:1100
+jsts:valid:1111
+jsts:valid:1116
+jsts:valid:1120
+jsts:valid:1126
+jsts:valid:1140
+jsts:valid:1149
+jsts:valid:115
+jsts:valid:1151
+jsts:valid:116
+jsts:valid:1160
+jsts:valid:1167
+jsts:valid:1174
+jsts:valid:1176
+jsts:valid:1191
+jsts:valid:1206
+jsts:valid:1210
+jsts:valid:1225
+jsts:valid:1226
+jsts:valid:1231
+jsts:valid:1236
+jsts:valid:1240
+jsts:valid:1248
+jsts:valid:1249
+jsts:valid:1253
+jsts:valid:127
+jsts:valid:1272
+jsts:valid:1298
+jsts:valid:1314
+jsts:valid:1315
+jsts:valid:1318
+jsts:valid:1325
+jsts:valid:1327
+jsts:valid:1330
+jsts:valid:1337
+jsts:valid:1352
+jsts:valid:1357
+jsts:valid:1359
+jsts:valid:1365
+jsts:valid:1366
+jsts:valid:1367
+jsts:valid:1376
+jsts:valid:1377
+jsts:valid:1390
+jsts:valid:1394
+jsts:valid:1396
+jsts:valid:140
+jsts:valid:1402
+jsts:valid:1416
+jsts:valid:1422
+jsts:valid:1434
+jsts:valid:1446
+jsts:valid:145
+jsts:valid:1451
+jsts:valid:147
+jsts:valid:149
+jsts:valid:177
+jsts:valid:181
+jsts:valid:185
+jsts:valid:188
+jsts:valid:191
+jsts:valid:197
+jsts:valid:203
+jsts:valid:204
+jsts:valid:205
+jsts:valid:21
+jsts:valid:214
+jsts:valid:222
+jsts:valid:229
+jsts:valid:233
+jsts:valid:234
+jsts:valid:250
+jsts:valid:254
+jsts:valid:267
+jsts:valid:270
+jsts:valid:276
+jsts:valid:280
+jsts:valid:29
+jsts:valid:3
+jsts:valid:302
+jsts:valid:33
+jsts:valid:337
+jsts:valid:340
+jsts:valid:348
+jsts:valid:350
+jsts:valid:356
+jsts:valid:363
+jsts:valid:364
+jsts:valid:370
+jsts:valid:376
+jsts:valid:391
+jsts:valid:395
+jsts:valid:399
+jsts:valid:400
+jsts:valid:402
+jsts:valid:416
+jsts:valid:42
+jsts:valid:438
+jsts:valid:449
+jsts:valid:456
+jsts:valid:458
+jsts:valid:475
+jsts:valid:48
+jsts:valid:489
+jsts:valid:500
+jsts:valid:510
+jsts:valid:516
+jsts:valid:519
+jsts:valid:520
+jsts:valid:523
+jsts:valid:524
+jsts:valid:530
+jsts:valid:55
+jsts:valid:554
+jsts:valid:558
+jsts:valid:56
+jsts:valid:560
+jsts:valid:564
+jsts:valid:566
+jsts:valid:57
+jsts:valid:580
+jsts:valid:581
+jsts:valid:589
+jsts:valid:590
+jsts:valid:592
+jsts:valid:599
+jsts:valid:601
+jsts:valid:619
+jsts:valid:621
+jsts:valid:622
+jsts:valid:64
+jsts:valid:647
+jsts:valid:656
+jsts:valid:672
+jsts:valid:677
+jsts:valid:681
+jsts:valid:688
+jsts:valid:691
+jsts:valid:692
+jsts:valid:702
+jsts:valid:704
+jsts:valid:728
+jsts:valid:729
+jsts:valid:734
+jsts:valid:742
+jsts:valid:748
+jsts:valid:751
+jsts:valid:763
+jsts:valid:768
+jsts:valid:778
+jsts:valid:78
+jsts:valid:781
+jsts:valid:789
+jsts:valid:794
+jsts:valid:803
+jsts:valid:804
+jsts:valid:816
+jsts:valid:84
+jsts:valid:843
+jsts:valid:852
+jsts:valid:855
+jsts:valid:862
+jsts:valid:866
+jsts:valid:87
+jsts:valid:875
+jsts:valid:877
+jsts:valid:880
+jsts:valid:894
+jsts:valid:897
+jsts:valid:917
+jsts:valid:92
+jsts:valid:929
+jsts:valid:936
+jsts:valid:943
+jsts:valid:954
+jsts:valid:962
+jsts:valid:969
+jsts:valid:973
+jsts:valid:976
+jsts:valid:980
+jsts:valid:997
+←
+→
+
+Both sides always use the same source item, task, and model. Original task text is not included in this artifact; item IDs and source hashes identify it. This is not a model ranking.
+
+JSTS / QWEN3.6-35B-A3B / JSTS:VALID:969
+
+Candidate comparison
+Download this comparison ↓
+A Recorded condition
+Original presentation
+Exact input repeat
+Reversed candidate rows
+Rotated candidate rows
+Reworded instruction
+Reworded definitions
+
+The saved original presentation.
+
+B Recorded condition
+Original presentation
+Exact input repeat
+Reversed candidate rows
+Rotated candidate rows
+Reworded instruction
+Reworded definitions
+
+Reverse only the displayed rows, preserving answer-token, key, and meaning bindings.
+
+The most likely answer stays the same. Largest candidate probability change: 0.664767 percentage points.
+Most likely semantic answer
+A 0
+B 0
+
+Recorded tie handling is preserved.
+
+Expected stage
+A 0.002263
+B 0.010956
+
+Expectation and mode can differ.
+
+Concentration
+A 0.9931
+B 0.9703
+
+0 = uniform · 1 = peaked; not accuracy.
+
+Model calls per result
+A 1
+B 1
+
+0 shared; 2 distinct calls across A and B.
+
+Probability within the candidate set
+
+A and B share a 0–100% scale. Δ is B − A in percentage points. Values are aligned by semantic key, even when presentation order changes.
+
+Stage 0
+key: 0
+A
+99.855133%
+B
+99.190366%
+-0.664767
+Δ percentage points
+Stage 1
+key: 1
+A
+0.103018%
+B
+0.567481%
++0.464462
+Δ percentage points
+Stage 2
+key: 2
+A
+0.018456%
+B
+0.211324%
++0.192868
+Δ percentage points
+Stage 3
+key: 3
+A
+0.013382%
+B
+0.022723%
++0.00934
+Δ percentage points
+Stage 4
+key: 4
+A
+0.003837%
+B
+0.003251%
+-0.000586
+Δ percentage points
+Stage 5
+key: 5
+A
+0.006174%
+B
+0.004856%
+-0.001318
+Δ percentage points
+Continuous reference score: 0. Absolute error of expected stage — A: 0.002263; B: 0.010956. The reference is not rounded into a class label.
+Answer frequencies across this full panel
+
+All retained items for this task and model, including those hidden by the item search. These counts describe selected labels, not accuracy.
+
+Stage 0 — A: 40/200; B: 40/200
+
+Stage 1 — A: 20/200; B: 30/200
+
+Stage 2 — A: 16/200; B: 14/200
+
+Stage 3 — A: 51/200; B: 51/200
+
+Stage 4 — A: 59/200; B: 54/200
+
+Stage 5 — A: 14/200; B: 11/200
+
+A expected-stage range: 0.000751–4.998504; population variance: 2.446589128.
+
+B expected-stage range: 0.000564–4.99871; population variance: 2.30061145.
+
+Concentration measures how peaked a candidate distribution is; it is not the probability of being correct. Score expectations assume equally spaced stages. Recorded examples do not establish human usability or a causal model-size effect.
+
+Trace this comparison to the source records
+
+Source item: jsts:valid:969
+
+Source question SHA-256:
+
+834d57e896b2da8e4c98ba9a819515d9a89831be13cf4bd44b6d5fef90ee29a6
+
+Original task and option text are not distributed here. Candidate keys identify the original semantic answers; they are not reconstructed explanations.
+
+A · Original presentation
+
+Original physical request.
+
+baseline · line 3500
+
+mini-jev/paper/journal_robustness/study_v1/results/predictions.jsonl
+
+File SHA-256: 27f91e52078bf67231c95c65005a158020698f67c368fd7273f9b3d98f9f7cf0
+
+Recorded candidate mapping: {"candidate_keys":["0","1","2","3","4","5"],"candidate_tokens":["0","1","2","3","4","5"],"display_order":null}
+
+Exact recorded / derived values
+B · Reversed candidate rows
+
+Original physical request.
+
+display_reverse · line 3501
+
+mini-jev/paper/journal_robustness/study_v1/results/predictions.jsonl
+
+File SHA-256: 27f91e52078bf67231c95c65005a158020698f67c368fd7273f9b3d98f9f7cf0
+
+Recorded candidate mapping: {"candidate_keys":["0","1","2","3","4","5"],"candidate_tokens":["0","1","2","3","4","5"],"display_order":null}
+
+Exact recorded / derived values
+Download the original frozen source/evidence ZIP
+
+ZIP SHA-256: a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053
+
+Model, runtime, and panel metadata
+Scope, example selection, and reproducibility

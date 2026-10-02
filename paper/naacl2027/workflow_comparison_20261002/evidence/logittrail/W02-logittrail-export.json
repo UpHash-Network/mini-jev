@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "mode": "saved_research_records",
+  "new_inference_calls": 0,
+  "exporter_sha256": "bd4870a16f055f9bad3927d8c41c1fdb1b6cba2f6c06e3170c4894e047e914b9",
+  "numeric_representation": {
+    "archived": "Probabilities, typed values, saved physical concentration, and observed time are retained exactly from parsed source JSON numbers after independent validation.",
+    "new_diagnostics": "Derived concentration and panel MAE/variance use exact binary-float-to-Decimal conversion, 50-digit ROUND_HALF_EVEN arithmetic, correctly rounded Decimal.ln, and rounding to 15 decimal places for JSON. Other counts/ratios use integer arithmetic; extrema retain source values."
+  },
+  "study_id": "presentation_robustness",
+  "model_key": "qwen2.5-1.5b",
+  "dataset": "JCoLA",
+  "type": "noul",
+  "item_id": "jcola:out_of_domain_valid:8744",
+  "source_question_sha256": "6e54d1dd8dd6d9c91e1723cccd7d3badbf8b1aa2db7c95a8c2c79029c11e4001",
+  "split": "out_of_domain_valid",
+  "group": "jcola-source:d4b97620585242dd99110003bf6d08b9ebc79cf570607187331af5170399f0a3",
+  "canonical_keys": [
+    "false",
+    "true"
+  ],
+  "score_values": null,
+  "reference": {
+    "kind": "label",
+    "value": "true",
+    "aMatch": true,
+    "bMatch": true
+  },
+  "conditions": {
+    "a": {
+      "id": "baseline",
+      "kind": "physical",
+      "probabilities": [
+        0.003045666794388332,
+        0.9969543332056116
+      ],
+      "label": "true",
+      "value": 0.9969543332056116,
+      "concentration": 0.9701539212666018,
+      "top_tie_keys": [
+        "true"
+      ],
+      "calls": 1,
+      "input_tokens": 321,
+      "latency_ms": 228.6953330039978,
+      "source": [
+        "s26",
+        340
+      ],
+      "mapping": "m03"
+    },
+    "b": {
+      "id": "display_reverse",
+      "kind": "physical",
+      "probabilities": [
+        0.00122466891050713,
+        0.9987753310894928
+      ],
+      "label": "true",
+      "value": 0.9987753310894928,
+      "concentration": 0.986387555492053,
+      "top_tie_keys": [
+        "true"
+      ],
+      "calls": 1,
+      "input_tokens": 321,
+      "latency_ms": 226.04354191571474,
+      "source": [
+        "s26",
+        341
+      ],
+      "mapping": "m03"
+    }
+  },
+  "physical_members": [
+    {
+      "id": "baseline",
+      "kind": "physical",
+      "probabilities": [
+        0.003045666794388332,
+        0.9969543332056116
+      ],
+      "label": "true",
+      "value": 0.9969543332056116,
+      "concentration": 0.9701539212666018,
+      "top_tie_keys": [
+        "true"
+      ],
+      "calls": 1,
+      "input_tokens": 321,
+      "latency_ms": 228.6953330039978,
+      "source": [
+        "s26",
+        340
+      ],
+      "mapping": "m03"
+    },
+    {
+      "id": "display_reverse",
+      "kind": "physical",
+      "probabilities": [
+        0.00122466891050713,
+        0.9987753310894928
+      ],
+      "label": "true",
+      "value": 0.9987753310894928,
+      "concentration": 0.986387555492053,
+      "top_tie_keys": [
+        "true"
+      ],
+      "calls": 1,
+      "input_tokens": 321,
+      "latency_ms": 226.04354191571474,
+      "source": [
+        "s26",
+        341
+      ],
+      "mapping": "m03"
+    }
+  ],
+  "candidate_comparison": [
+    {
+      "key": "false",
+      "a": 0.003045666794388332,
+      "b": 0.00122466891050713,
+      "delta": -0.001820997883881202
+    },
+    {
+      "key": "true",
+      "a": 0.9969543332056116,
+      "b": 0.9987753310894928,
+      "delta": 0.0018209978838812368
+    }
+  ],
+  "shared_physical_calls": 0,
+  "unique_physical_calls": 2,
+  "sources": {
+    "s26": {
+      "member": "mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-1.5b/predictions.jsonl",
+      "sha256": "310658568433ae4bf3b68e9138054ea6d63aad4d3c12a7ee48ab60584a545197",
+      "bytes": 3344346,
+      "format": "jsonl"
+    },
+    "s25": {
+      "member": "mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-1.5b/RUNTIME.json",
+      "sha256": "ea9dbc9b96d22d6f82809b455e79d631fb25e71843ebbf046f3738824a19ed3f",
+      "bytes": 1562,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m03": {
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B"
+      ],
+      "display_order": null
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "backend": "transformers",
+    "precision": "float32",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "revision_kind": "checkpoint_repository_revision",
+    "device": "mps",
+    "source": "s25"
+  },
+  "selection": {
+    "mode": "user_selected"
+  },
+  "limitations": [
+    "Recorded-data inspection, not new inference or a human usability study.",
+    "Candidate probabilities are conditional on the supplied set, not correctness probabilities.",
+    "Continuous reference scores are not rounded into labels.",
+    "Calls shared by conditions are counted once in the union.",
+    "Source task text is not distributed in this artifact."
+  ],
+  "panel_sha256": "97e56e8672f349e46cfef6f3590d3e80fc15bcc3e61f547ee990b133a67391d6",
+  "model_metadata": {
+    "name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "backend": "transformers",
+    "precision": "float32",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "revision_kind": "checkpoint_repository_revision",
+    "device": "mps",
+    "source": "s25"
+  }
+}

@@ -1,0 +1,456 @@
+🔍 Conditions: probabilities, metadata, export
+Export data✕
+
+Columns
+condition
+dataset
+item_id
+model
+selected_label
+side
+study
+task_id
+typed_value
+LLM
+Scores
+condition
+dataset
+item_id
+model
+selected_label
+side
+study
+task_id
+typed_value
+LLM
+Response
+P(option_0)
+P(option_1)
+P(option_2)
+P(option_3)
+P(option_4)
+recorded_calls
+recorded_input_tokens
+recorded_latency_ms
+baseline
+JCommonsenseQA
+jcommonsenseqa:valid:9925
+qwen2.5-0.5b
+option_3
+a
+presentation_robustness
+W01
+option_3
+A (frozen condition)
+{
+  "import_notice": "These values were supplied by the frozen-evidence format adapter, not generated or independently computed by ChainForge.",
+  "task_id": "W01",
+  "side": "a",
+  "selection": {
+    "id": "W01",
+    "panel_id": "presentation_robustness--qwen2.5-0.5b--jcommonsenseqa",
+    "study": "presentation_robustness",
+    "model": "qwen2.5-0.5b",
+    "dataset": "JCommonsenseQA",
+    "type": "choice",
+    "item": "jcommonsenseqa:valid:9925",
+    "a": "baseline",
+    "b": "display_reverse",
+    "item_hash": "0216db43ab9140a5e14e6702cf742d77d4adfe8169b4654f90424154625d0355",
+    "eligible_items": 200,
+    "all_eligible_id_hashes_sha256": "ebada1b5c52b597e08b69685c67284426fb9c1825a5f05e1ae3c3b083307dbe0"
+  },
+  "canonical_keys": [
+    "option_0",
+    "option_1",
+    "option_2",
+    "option_3",
+    "option_4"
+  ],
+  "score_values": null,
+  "condition": {
+    "id": "baseline",
+    "kind": "physical",
+    "probabilities": [
+      0.17540762156373654,
+      0.057235189638301126,
+      0.12250144378198578,
+      0.45119798424816243,
+      0.19365776076781413
+    ],
+    "label": "option_3",
+    "value": "option_3",
+    "concentration": 0.12810402217310746,
+    "top_tie_keys": [
+      "option_3"
+    ],
+    "calls": 1,
+    "input_tokens": 309,
+    "latency_ms": 59.75608294829726,
+    "source": [
+      "s18",
+      1122
+    ],
+    "mapping": "m01"
+  },
+  "candidate_comparison": [
+    {
+      "key": "option_0",
+      "a": 0.17540762156373654,
+      "b": 0.3740688052725605,
+      "delta": 0.19866118370882394
+    },
+    {
+      "key": "option_1",
+      "a": 0.057235189638301126,
+      "b": 0.08048143679896144,
+      "delta": 0.023246247160660316
+    },
+    {
+      "key": "option_2",
+      "a": 0.12250144378198578,
+      "b": 0.10323323737213128,
+      "delta": -0.019268206409854507
+    },
+    {
+      "key": "option_3",
+      "a": 0.45119798424816243,
+      "b": 0.11235246159252046,
+      "delta": -0.33884552265564194
+    },
+    {
+      "key": "option_4",
+      "a": 0.19365776076781413,
+      "b": 0.3298640589638263,
+      "delta": 0.13620629819601218
+    }
+  ],
+  "reference": {
+    "kind": "label",
+    "value": "option_4",
+    "aMatch": false,
+    "bMatch": false
+  },
+  "physical_members": [
+    {
+      "id": "baseline",
+      "kind": "physical",
+      "probabilities": [
+        0.17540762156373654,
+        0.057235189638301126,
+        0.12250144378198578,
+        0.45119798424816243,
+        0.19365776076781413
+      ],
+      "label": "option_3",
+      "value": "option_3",
+      "concentration": 0.12810402217310746,
+      "top_tie_keys": [
+        "option_3"
+      ],
+      "calls": 1,
+      "input_tokens": 309,
+      "latency_ms": 59.75608294829726,
+      "source": [
+        "s18",
+        1122
+      ],
+      "mapping": "m01"
+    },
+    {
+      "id": "display_reverse",
+      "kind": "physical",
+      "probabilities": [
+        0.3740688052725605,
+        0.08048143679896144,
+        0.10323323737213128,
+        0.11235246159252046,
+        0.3298640589638263
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.119881171032033,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 309,
+      "latency_ms": 68.40483378618956,
+      "source": [
+        "s18",
+        1120
+      ],
+      "mapping": "m01"
+    }
+  ],
+  "shared_physical_calls": 0,
+  "unique_physical_calls": 2,
+  "sources": {
+    "s18": {
+      "member": "mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-0.5b/predictions.jsonl",
+      "sha256": "6caf2103d7b4483238618591fde004effc55d87d1e0df7c443c5bbd3256a0c94",
+      "bytes": 3336086,
+      "format": "jsonl"
+    },
+    "s17": {
+      "member": "mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-0.5b/RUNTIME.json",
+      "sha256": "a60b09ea0f9ae71e17f5fe327ddd90f42a5ad5301aa484f5192aea3aa596ecac",
+      "bytes": 1561,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m01": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": null
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "backend": "transformers",
+    "precision": "float32",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "revision_kind": "checkpoint_repository_revision",
+    "device": "mps",
+    "source": "s17"
+  },
+  "complete_evidence_sha256": "867973e21085298a4db65a6c59d29329e7f757b5133509dbf6fc4cfcb6900572"
+}
+0.18
+0.06
+0.12
+0.45
+0.19
+1
+309
+59.76
+display_reverse
+JCommonsenseQA
+jcommonsenseqa:valid:9925
+qwen2.5-0.5b
+option_0
+b
+presentation_robustness
+W01
+option_0
+B (frozen condition)
+{
+  "import_notice": "These values were supplied by the frozen-evidence format adapter, not generated or independently computed by ChainForge.",
+  "task_id": "W01",
+  "side": "b",
+  "selection": {
+    "id": "W01",
+    "panel_id": "presentation_robustness--qwen2.5-0.5b--jcommonsenseqa",
+    "study": "presentation_robustness",
+    "model": "qwen2.5-0.5b",
+    "dataset": "JCommonsenseQA",
+    "type": "choice",
+    "item": "jcommonsenseqa:valid:9925",
+    "a": "baseline",
+    "b": "display_reverse",
+    "item_hash": "0216db43ab9140a5e14e6702cf742d77d4adfe8169b4654f90424154625d0355",
+    "eligible_items": 200,
+    "all_eligible_id_hashes_sha256": "ebada1b5c52b597e08b69685c67284426fb9c1825a5f05e1ae3c3b083307dbe0"
+  },
+  "canonical_keys": [
+    "option_0",
+    "option_1",
+    "option_2",
+    "option_3",
+    "option_4"
+  ],
+  "score_values": null,
+  "condition": {
+    "id": "display_reverse",
+    "kind": "physical",
+    "probabilities": [
+      0.3740688052725605,
+      0.08048143679896144,
+      0.10323323737213128,
+      0.11235246159252046,
+      0.3298640589638263
+    ],
+    "label": "option_0",
+    "value": "option_0",
+    "concentration": 0.119881171032033,
+    "top_tie_keys": [
+      "option_0"
+    ],
+    "calls": 1,
+    "input_tokens": 309,
+    "latency_ms": 68.40483378618956,
+    "source": [
+      "s18",
+      1120
+    ],
+    "mapping": "m01"
+  },
+  "candidate_comparison": [
+    {
+      "key": "option_0",
+      "a": 0.17540762156373654,
+      "b": 0.3740688052725605,
+      "delta": 0.19866118370882394
+    },
+    {
+      "key": "option_1",
+      "a": 0.057235189638301126,
+      "b": 0.08048143679896144,
+      "delta": 0.023246247160660316
+    },
+    {
+      "key": "option_2",
+      "a": 0.12250144378198578,
+      "b": 0.10323323737213128,
+      "delta": -0.019268206409854507
+    },
+    {
+      "key": "option_3",
+      "a": 0.45119798424816243,
+      "b": 0.11235246159252046,
+      "delta": -0.33884552265564194
+    },
+    {
+      "key": "option_4",
+      "a": 0.19365776076781413,
+      "b": 0.3298640589638263,
+      "delta": 0.13620629819601218
+    }
+  ],
+  "reference": {
+    "kind": "label",
+    "value": "option_4",
+    "aMatch": false,
+    "bMatch": false
+  },
+  "physical_members": [
+    {
+      "id": "baseline",
+      "kind": "physical",
+      "probabilities": [
+        0.17540762156373654,
+        0.057235189638301126,
+        0.12250144378198578,
+        0.45119798424816243,
+        0.19365776076781413
+      ],
+      "label": "option_3",
+      "value": "option_3",
+      "concentration": 0.12810402217310746,
+      "top_tie_keys": [
+        "option_3"
+      ],
+      "calls": 1,
+      "input_tokens": 309,
+      "latency_ms": 59.75608294829726,
+      "source": [
+        "s18",
+        1122
+      ],
+      "mapping": "m01"
+    },
+    {
+      "id": "display_reverse",
+      "kind": "physical",
+      "probabilities": [
+        0.3740688052725605,
+        0.08048143679896144,
+        0.10323323737213128,
+        0.11235246159252046,
+        0.3298640589638263
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.119881171032033,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 309,
+      "latency_ms": 68.40483378618956,
+      "source": [
+        "s18",
+        1120
+      ],
+      "mapping": "m01"
+    }
+  ],
+  "shared_physical_calls": 0,
+  "unique_physical_calls": 2,
+  "sources": {
+    "s18": {
+      "member": "mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-0.5b/predictions.jsonl",
+      "sha256": "6caf2103d7b4483238618591fde004effc55d87d1e0df7c443c5bbd3256a0c94",
+      "bytes": 3336086,
+      "format": "jsonl"
+    },
+    "s17": {
+      "member": "mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-0.5b/RUNTIME.json",
+      "sha256": "a60b09ea0f9ae71e17f5fe327ddd90f42a5ad5301aa484f5192aea3aa596ecac",
+      "bytes": 1561,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m01": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": null
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "backend": "transformers",
+    "precision": "float32",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "revision_kind": "checkpoint_repository_revision",
+    "device": "mps",
+    "source": "s17"
+  },
+  "complete_evidence_sha256": "867973e21085298a4db65a6c59d29329e7f757b5133509dbf6fc4cfcb6900572"
+}
+0.37
+0.08
+0.1
+0.11
+0.33
+1
+309
+68.4
+Rows per page
+1-2 of 2

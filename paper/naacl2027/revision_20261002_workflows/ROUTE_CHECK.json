@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "base": "http://127.0.0.1:18880/docs/",
+  "checked_at_utc": "2026-10-02T14:22:38.429Z",
+  "checks": [
+    {
+      "width": 1440,
+      "case": "W03",
+      "selection_preserved_both_directions": true,
+      "comparison_fields_exact": true,
+      "json_horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "case": "W06",
+      "selection_preserved_both_directions": true,
+      "comparison_fields_exact": true,
+      "json_horizontal_overflow": false
+    }
+  ],
+  "page_errors": []
+}

@@ -1,0 +1,499 @@
+🔍 Conditions: probabilities, metadata, export
+Export data✕
+
+Columns
+condition
+dataset
+item_id
+model
+selected_label
+side
+study
+task_id
+typed_value
+LLM
+Scores
+condition
+dataset
+item_id
+model
+selected_label
+side
+study
+task_id
+typed_value
+LLM
+Response
+P(0)
+P(1)
+P(2)
+P(3)
+P(4)
+P(5)
+recorded_calls
+recorded_input_tokens
+recorded_latency_ms
+baseline
+JSTS
+jsts:valid:969
+qwen3.6-35b-a3b
+0
+a
+presentation_robustness
+W03
+0.0022629151779861097
+A (frozen condition)
+{
+  "import_notice": "These values were supplied by the frozen-evidence format adapter, not generated or independently computed by ChainForge.",
+  "task_id": "W03",
+  "side": "a",
+  "selection": {
+    "id": "W03",
+    "panel_id": "presentation_robustness--qwen3.6-35b-a3b--jsts",
+    "study": "presentation_robustness",
+    "model": "qwen3.6-35b-a3b",
+    "dataset": "JSTS",
+    "type": "score",
+    "item": "jsts:valid:969",
+    "a": "baseline",
+    "b": "display_reverse",
+    "item_hash": "009f4d43d768614ef42187c3846a68b6922c5223cad0d3324597c0c12329533c",
+    "eligible_items": 200,
+    "all_eligible_id_hashes_sha256": "3fcc3b1ae917b56476afd2c62a87359b74806fae3063082e5224e5eef39fe604"
+  },
+  "canonical_keys": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "score_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "condition": {
+    "id": "baseline",
+    "kind": "physical",
+    "probabilities": [
+      0.9985513344150969,
+      0.0010301833218840466,
+      0.00018455502123399038,
+      0.00013382368538465868,
+      3.8367024521762286e-05,
+      6.173653187861145e-05
+    ],
+    "label": "0",
+    "value": 0.0022629151779861097,
+    "concentration": 0.9931340960450215,
+    "top_tie_keys": [
+      "0"
+    ],
+    "calls": 1,
+    "input_tokens": 463,
+    "latency_ms": 419.4864579476416,
+    "source": [
+      "s11",
+      3500
+    ],
+    "mapping": "m00"
+  },
+  "candidate_comparison": [
+    {
+      "key": "0",
+      "a": 0.9985513344150969,
+      "b": 0.9919036625415976,
+      "delta": -0.00664767187349935
+    },
+    {
+      "key": "1",
+      "a": 0.0010301833218840466,
+      "b": 0.00567480675415564,
+      "delta": 0.004644623432271593
+    },
+    {
+      "key": "2",
+      "a": 0.00018455502123399038,
+      "b": 0.0021132364898162025,
+      "delta": 0.0019286814685822121
+    },
+    {
+      "key": "3",
+      "a": 0.00013382368538465868,
+      "b": 0.000227226605176332,
+      "delta": 9.340291979167333e-05
+    },
+    {
+      "key": "4",
+      "a": 3.8367024521762286e-05,
+      "b": 3.250985188063703e-05,
+      "delta": -5.857172641125254e-06
+    },
+    {
+      "key": "5",
+      "a": 6.173653187861145e-05,
+      "b": 4.855775737370986e-05,
+      "delta": -1.3178774504901587e-05
+    }
+  ],
+  "reference": {
+    "kind": "continuous",
+    "value": 0,
+    "aError": 0.0022629151779861097,
+    "bError": 0.010955787743708138
+  },
+  "physical_members": [
+    {
+      "id": "baseline",
+      "kind": "physical",
+      "probabilities": [
+        0.9985513344150969,
+        0.0010301833218840466,
+        0.00018455502123399038,
+        0.00013382368538465868,
+        3.8367024521762286e-05,
+        6.173653187861145e-05
+      ],
+      "label": "0",
+      "value": 0.0022629151779861097,
+      "concentration": 0.9931340960450215,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 463,
+      "latency_ms": 419.4864579476416,
+      "source": [
+        "s11",
+        3500
+      ],
+      "mapping": "m00"
+    },
+    {
+      "id": "display_reverse",
+      "kind": "physical",
+      "probabilities": [
+        0.9919036625415976,
+        0.00567480675415564,
+        0.0021132364898162025,
+        0.000227226605176332,
+        3.250985188063703e-05,
+        4.855775737370986e-05
+      ],
+      "label": "0",
+      "value": 0.010955787743708138,
+      "concentration": 0.9703346726232378,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 463,
+      "latency_ms": 419.20837480574846,
+      "source": [
+        "s11",
+        3501
+      ],
+      "mapping": "m00"
+    }
+  ],
+  "shared_physical_calls": 0,
+  "unique_physical_calls": 2,
+  "sources": {
+    "s11": {
+      "member": "mini-jev/paper/journal_robustness/study_v1/results/predictions.jsonl",
+      "sha256": "27f91e52078bf67231c95c65005a158020698f67c368fd7273f9b3d98f9f7cf0",
+      "bytes": 4746194,
+      "format": "jsonl"
+    },
+    "s10": {
+      "member": "mini-jev/paper/journal_robustness/study_v1/results/RUNTIME.json",
+      "sha256": "84989b890baaee5e5743e236a44c8f477829b2e1f95a2a6a7c0b383f11fc4945",
+      "bytes": 3155,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m00": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": null
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "backend": "llama.cpp",
+    "precision": "Q4_K_M",
+    "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "revision_kind": "GGUF_distribution_revision",
+    "model_sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+    "device": "metal",
+    "source": "s10"
+  },
+  "complete_evidence_sha256": "91a11bb60babd8d38fb31edbcbf488bac1ddbb82db8f3031edca89261f64b590"
+}
+1
+0
+0
+0
+0
+0
+1
+463
+419.49
+display_reverse
+JSTS
+jsts:valid:969
+qwen3.6-35b-a3b
+0
+b
+presentation_robustness
+W03
+0.010955787743708138
+B (frozen condition)
+{
+  "import_notice": "These values were supplied by the frozen-evidence format adapter, not generated or independently computed by ChainForge.",
+  "task_id": "W03",
+  "side": "b",
+  "selection": {
+    "id": "W03",
+    "panel_id": "presentation_robustness--qwen3.6-35b-a3b--jsts",
+    "study": "presentation_robustness",
+    "model": "qwen3.6-35b-a3b",
+    "dataset": "JSTS",
+    "type": "score",
+    "item": "jsts:valid:969",
+    "a": "baseline",
+    "b": "display_reverse",
+    "item_hash": "009f4d43d768614ef42187c3846a68b6922c5223cad0d3324597c0c12329533c",
+    "eligible_items": 200,
+    "all_eligible_id_hashes_sha256": "3fcc3b1ae917b56476afd2c62a87359b74806fae3063082e5224e5eef39fe604"
+  },
+  "canonical_keys": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "score_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "condition": {
+    "id": "display_reverse",
+    "kind": "physical",
+    "probabilities": [
+      0.9919036625415976,
+      0.00567480675415564,
+      0.0021132364898162025,
+      0.000227226605176332,
+      3.250985188063703e-05,
+      4.855775737370986e-05
+    ],
+    "label": "0",
+    "value": 0.010955787743708138,
+    "concentration": 0.9703346726232378,
+    "top_tie_keys": [
+      "0"
+    ],
+    "calls": 1,
+    "input_tokens": 463,
+    "latency_ms": 419.20837480574846,
+    "source": [
+      "s11",
+      3501
+    ],
+    "mapping": "m00"
+  },
+  "candidate_comparison": [
+    {
+      "key": "0",
+      "a": 0.9985513344150969,
+      "b": 0.9919036625415976,
+      "delta": -0.00664767187349935
+    },
+    {
+      "key": "1",
+      "a": 0.0010301833218840466,
+      "b": 0.00567480675415564,
+      "delta": 0.004644623432271593
+    },
+    {
+      "key": "2",
+      "a": 0.00018455502123399038,
+      "b": 0.0021132364898162025,
+      "delta": 0.0019286814685822121
+    },
+    {
+      "key": "3",
+      "a": 0.00013382368538465868,
+      "b": 0.000227226605176332,
+      "delta": 9.340291979167333e-05
+    },
+    {
+      "key": "4",
+      "a": 3.8367024521762286e-05,
+      "b": 3.250985188063703e-05,
+      "delta": -5.857172641125254e-06
+    },
+    {
+      "key": "5",
+      "a": 6.173653187861145e-05,
+      "b": 4.855775737370986e-05,
+      "delta": -1.3178774504901587e-05
+    }
+  ],
+  "reference": {
+    "kind": "continuous",
+    "value": 0,
+    "aError": 0.0022629151779861097,
+    "bError": 0.010955787743708138
+  },
+  "physical_members": [
+    {
+      "id": "baseline",
+      "kind": "physical",
+      "probabilities": [
+        0.9985513344150969,
+        0.0010301833218840466,
+        0.00018455502123399038,
+        0.00013382368538465868,
+        3.8367024521762286e-05,
+        6.173653187861145e-05
+      ],
+      "label": "0",
+      "value": 0.0022629151779861097,
+      "concentration": 0.9931340960450215,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 463,
+      "latency_ms": 419.4864579476416,
+      "source": [
+        "s11",
+        3500
+      ],
+      "mapping": "m00"
+    },
+    {
+      "id": "display_reverse",
+      "kind": "physical",
+      "probabilities": [
+        0.9919036625415976,
+        0.00567480675415564,
+        0.0021132364898162025,
+        0.000227226605176332,
+        3.250985188063703e-05,
+        4.855775737370986e-05
+      ],
+      "label": "0",
+      "value": 0.010955787743708138,
+      "concentration": 0.9703346726232378,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 463,
+      "latency_ms": 419.20837480574846,
+      "source": [
+        "s11",
+        3501
+      ],
+      "mapping": "m00"
+    }
+  ],
+  "shared_physical_calls": 0,
+  "unique_physical_calls": 2,
+  "sources": {
+    "s11": {
+      "member": "mini-jev/paper/journal_robustness/study_v1/results/predictions.jsonl",
+      "sha256": "27f91e52078bf67231c95c65005a158020698f67c368fd7273f9b3d98f9f7cf0",
+      "bytes": 4746194,
+      "format": "jsonl"
+    },
+    "s10": {
+      "member": "mini-jev/paper/journal_robustness/study_v1/results/RUNTIME.json",
+      "sha256": "84989b890baaee5e5743e236a44c8f477829b2e1f95a2a6a7c0b383f11fc4945",
+      "bytes": 3155,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m00": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": null
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "backend": "llama.cpp",
+    "precision": "Q4_K_M",
+    "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "revision_kind": "GGUF_distribution_revision",
+    "model_sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+    "device": "metal",
+    "source": "s10"
+  },
+  "complete_evidence_sha256": "91a11bb60babd8d38fb31edbcbf488bac1ddbb82db8f3031edca89261f64b590"
+}
+0.99
+0.01
+0
+0
+0
+0
+1
+463
+419.21
+Rows per page
+1-2 of 2

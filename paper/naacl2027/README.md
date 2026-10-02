@@ -12,6 +12,8 @@ Author: **Yuki Oshio, UPHASH Inc.** Single author; identified for the single-bli
 
 The October 2 revision integrates the saved-evidence Explorer, complete-record functional audit, current related work, and a new 127-second demonstration. The frozen experiment archive and arXiv submission are unchanged. [Revision evidence](revision_20261002/README.md).
 
+A subsequent [matched saved-evidence workflow check](workflow_comparison_20261002/README.md) runs six hash-selected cases in the Explorer, complete JSON, and the published ChainForge 0.3.7.6 GUI. All retain the supplied information; the comparison does not establish a human-performance advantage. [Current revision checks](revision_20261002_workflows/README.md) and [unrun Explorer pilot materials](explorer_user_evaluation_20261002/README.md) are separate from the frozen research experiments.
+
 ## Read and run
 
 - [Research project page](https://uphash-network.github.io/mini-jev/) — manuscript, video, findings, and installation links in one place.

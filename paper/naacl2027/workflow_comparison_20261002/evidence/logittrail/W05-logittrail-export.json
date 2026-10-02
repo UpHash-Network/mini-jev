@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "mode": "saved_research_records",
+  "new_inference_calls": 0,
+  "exporter_sha256": "bd4870a16f055f9bad3927d8c41c1fdb1b6cba2f6c06e3170c4894e047e914b9",
+  "numeric_representation": {
+    "archived": "Probabilities, typed values, saved physical concentration, and observed time are retained exactly from parsed source JSON numbers after independent validation.",
+    "new_diagnostics": "Derived concentration and panel MAE/variance use exact binary-float-to-Decimal conversion, 50-digit ROUND_HALF_EVEN arithmetic, correctly rounded Decimal.ln, and rounding to 15 decimal places for JSON. Other counts/ratios use integer arithmetic; extrema retain source values."
+  },
+  "study_id": "order_ensemble",
+  "model_key": "qwen3.6-35b-a3b",
+  "dataset": "JCoLA",
+  "type": "noul",
+  "item_id": "jcola:out_of_domain_valid:8653",
+  "source_question_sha256": "c0fc01fba21c2989671ad0a8514806d2fd6fc6161ee6665bdc59a22ea0f26e42",
+  "split": "out_of_domain_valid",
+  "group": "jcola-source:b21598c9429c03ab4d3f35fed79afad9645f33c1dd9eb020f38508a65333ea9f",
+  "canonical_keys": [
+    "false",
+    "true"
+  ],
+  "score_values": null,
+  "reference": {
+    "kind": "label",
+    "value": "false",
+    "aMatch": true,
+    "bMatch": true
+  },
+  "conditions": {
+    "a": {
+      "id": "cyclic_forward",
+      "kind": "derived",
+      "probabilities": [
+        0.8385932993838981,
+        0.16140670061610185
+      ],
+      "label": "false",
+      "value": 0.16140670061610185,
+      "concentration": 0.362335766475279,
+      "top_tie_keys": [
+        "false"
+      ],
+      "calls": 2,
+      "input_tokens": 580,
+      "latency_ms": 573.3769997023046,
+      "source": [
+        "s37",
+        563
+      ],
+      "member_ids": [
+        "forward_0",
+        "forward_1"
+      ],
+      "member_sources": [
+        [
+          "s32",
+          869
+        ],
+        [
+          "s32",
+          870
+        ]
+      ]
+    },
+    "b": {
+      "id": "dihedral",
+      "kind": "derived",
+      "probabilities": [
+        0.8385932993838981,
+        0.16140670061610185
+      ],
+      "label": "false",
+      "value": 0.16140670061610185,
+      "concentration": 0.362335766475279,
+      "top_tie_keys": [
+        "false"
+      ],
+      "calls": 2,
+      "input_tokens": 580,
+      "latency_ms": 573.3769997023046,
+      "source": [
+        "s37",
+        565
+      ],
+      "member_ids": [
+        "forward_0",
+        "forward_1"
+      ],
+      "member_sources": [
+        [
+          "s32",
+          869
+        ],
+        [
+          "s32",
+          870
+        ]
+      ]
+    }
+  },
+  "physical_members": [
+    {
+      "id": "forward_0",
+      "kind": "physical",
+      "probabilities": [
+        0.9193379694300802,
+        0.08066203056991982
+      ],
+      "label": "false",
+      "value": 0.08066203056991982,
+      "concentration": 0.5954923888838155,
+      "top_tie_keys": [
+        "false"
+      ],
+      "calls": 1,
+      "input_tokens": 290,
+      "latency_ms": 295.030249748379,
+      "source": [
+        "s32",
+        869
+      ],
+      "mapping": "m06"
+    },
+    {
+      "id": "forward_1",
+      "kind": "physical",
+      "probabilities": [
+        0.7578486293377161,
+        0.24215137066228387
+      ],
+      "label": "false",
+      "value": 0.24215137066228387,
+      "concentration": 0.20140033342068808,
+      "top_tie_keys": [
+        "false"
+      ],
+      "calls": 1,
+      "input_tokens": 290,
+      "latency_ms": 278.3467499539256,
+      "source": [
+        "s32",
+        870
+      ],
+      "mapping": "m05"
+    }
+  ],
+  "candidate_comparison": [
+    {
+      "key": "false",
+      "a": 0.8385932993838981,
+      "b": 0.8385932993838981,
+      "delta": 0
+    },
+    {
+      "key": "true",
+      "a": 0.16140670061610185,
+      "b": 0.16140670061610185,
+      "delta": 0
+    }
+  ],
+  "shared_physical_calls": 2,
+  "unique_physical_calls": 2,
+  "sources": {
+    "s37": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/analysis/qwen3.6-35b-a3b/derived_answers.jsonl",
+      "sha256": "66f8a1f0db1700a9c3f25f391868ac631de3eface1b408e4f9b7a843dab83cc3",
+      "bytes": 2537678,
+      "format": "jsonl"
+    },
+    "s32": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen3.6-35b-a3b/predictions.jsonl",
+      "sha256": "c4799f763961f13cf7ffec80c8b2d8e4474a9f12181d9a773b8ac17525a6b392",
+      "bytes": 6773528,
+      "format": "jsonl"
+    },
+    "s31": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen3.6-35b-a3b/RUNTIME.json",
+      "sha256": "c39b0152e1ad937b49d9977f3fc4507d011dfaca9916a639832c7838c0fa4a50",
+      "bytes": 3016,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m06": {
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B"
+      ],
+      "display_order": [
+        "false",
+        "true"
+      ]
+    },
+    "m05": {
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B"
+      ],
+      "display_order": [
+        "true",
+        "false"
+      ]
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "backend": "llama.cpp",
+    "precision": "Q4_K_M",
+    "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "revision_kind": "GGUF_distribution_revision",
+    "model_sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+    "device": "metal",
+    "source": "s31"
+  },
+  "selection": {
+    "mode": "user_selected"
+  },
+  "limitations": [
+    "Recorded-data inspection, not new inference or a human usability study.",
+    "Candidate probabilities are conditional on the supplied set, not correctness probabilities.",
+    "Continuous reference scores are not rounded into labels.",
+    "Calls shared by conditions are counted once in the union.",
+    "Source task text is not distributed in this artifact."
+  ],
+  "panel_sha256": "a124f109f36d155cb0c707e11d7e4e6d38767060cd037df5c98a02fff241ec52",
+  "model_metadata": {
+    "name": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+    "backend": "llama.cpp",
+    "precision": "Q4_K_M",
+    "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+    "revision_kind": "GGUF_distribution_revision",
+    "model_sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+    "device": "metal",
+    "source": "s31"
+  }
+}

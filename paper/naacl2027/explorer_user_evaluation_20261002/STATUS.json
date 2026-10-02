@@ -1,0 +1,19 @@
+{
+  "status": "planned_not_started",
+  "human_participants_enrolled": 0,
+  "human_sessions_completed": 0,
+  "responses_collected": 0,
+  "planned_participants": 2,
+  "planned_case_presentations": 12,
+  "planned_question_instances": 64,
+  "confirmatory_preregistration": false,
+  "freeze_status": "editable_formative_pilot_draft",
+  "selection_source": "../workflow_comparison_20261002/tasks.json",
+  "selection_sha256": "d629475e55bdc8c5d35cfb813a982925e65485a6a21b27d0a34e0c4fefc829a7",
+  "human_results_available": false,
+  "pending_before_recruitment": [
+    "Confirm applicable institutional ethics process and record actual approval/exemption/not-required rationale; none is claimed.",
+    "Fill compensation, retention period and withdrawal cutoff in consent draft.",
+    "Confirm participant availability, publish/test both UI routes and freeze actual versions at session start."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "xlsx_sha256": "4bf4bfe728aa39b3413c61857058287e3e633897184604140267fdf212201802",
+  "rows": 12,
+  "response_json_conditions_and_sources_exact": 12,
+  "candidate_numeric_cells_checked": 52,
+  "candidate_numeric_cells_exact": 52,
+  "max_numeric_cell_absolute_difference": 0.0,
+  "numeric_cell_differences": [],
+  "interpretation": "Compact Response JSON retains exact recorded values; numeric spreadsheet cells are checked separately. This checks export fidelity, not human task performance. Full multi-megabyte evidence uses the flow export, not XLSX cells."
+}

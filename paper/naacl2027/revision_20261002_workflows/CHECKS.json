@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-10-02T14:26:39.837315+00:00",
+  "status": "pass",
+  "pdf_sha256": "f1281341e3c7e7bab9bf071ff12828ab51f7dbf90345b1c3aee937e1346318cc",
+  "main_tex_sha256": "bee4e59b669324e5b443508f3a1108c7021871baaaafabcebc3f4ccab44d417e",
+  "pdf_pages": 10,
+  "main_text_limitations_acknowledgements_pages": 6,
+  "ethics_references_pages": [
+    7,
+    8
+  ],
+  "appendix_pages": [
+    9,
+    10
+  ],
+  "all_pages_rendered_and_visually_reviewed": true,
+  "rendering_observation": "No clipping, overlap, missing glyphs or overflowing tables observed at 105dpi; official ACL style unchanged.",
+  "tex_overfull_warnings": 0,
+  "tex_undefined_references_or_citations": 0,
+  "protected_artifact_sha256": {
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "paper/arxiv/source/main.tex": "74f8f7c64ae4a1a057cd49c2921a32eae51377cc9185a13138c436fe085a733a",
+    "paper/arxiv/mini-jev-arxiv-source-20260925.zip": "0fc7ea4ffc83f80bef88405e6f3a9f6cd57a56db1224ac8e810db7dd09768d1d"
+  },
+  "workflow_evidence": "../workflow_comparison_20261002/README.md",
+  "public_route_check": "ROUTE_CHECK.json",
+  "human_participants": 0,
+  "new_model_calls": 0,
+  "scope": "Publication and functional evidence checks; not human validation, acceptance guarantee, or conference submission.",
+  "precommit_release_hygiene": {
+    "schema_version": 1,
+    "passed": true,
+    "files_scanned": 663,
+    "bytes_scanned": 219218056,
+    "findings": [],
+    "scope": "Static release hygiene only. Not a comprehensive secret detector, legal review, or model-quality test."
+  },
+  "git_diff_cached_check": "pass"
+}

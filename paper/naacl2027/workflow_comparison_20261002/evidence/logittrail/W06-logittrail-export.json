@@ -1,0 +1,912 @@
+{
+  "schema_version": 1,
+  "mode": "saved_research_records",
+  "new_inference_calls": 0,
+  "exporter_sha256": "bd4870a16f055f9bad3927d8c41c1fdb1b6cba2f6c06e3170c4894e047e914b9",
+  "numeric_representation": {
+    "archived": "Probabilities, typed values, saved physical concentration, and observed time are retained exactly from parsed source JSON numbers after independent validation.",
+    "new_diagnostics": "Derived concentration and panel MAE/variance use exact binary-float-to-Decimal conversion, 50-digit ROUND_HALF_EVEN arithmetic, correctly rounded Decimal.ln, and rounding to 15 decimal places for JSON. Other counts/ratios use integer arithmetic; extrema retain source values."
+  },
+  "study_id": "order_ensemble",
+  "model_key": "qwen2.5-0.5b",
+  "dataset": "JSTS",
+  "type": "score",
+  "item_id": "jsts:valid:1437",
+  "source_question_sha256": "ecd9cd5d38c8b239dd8c5741995bc67b83df70588e0aff7ec9a7f18cc9fe78b4",
+  "split": "valid",
+  "group": "caption-component:a47b8523def89dc7b23c9a8a6091995e0d07348356101333ce4ffd9c01d8282e",
+  "canonical_keys": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "score_values": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "reference": {
+    "kind": "continuous",
+    "value": 4.8,
+    "aError": 2.2412457992114794,
+    "bError": 2.2291457121269036
+  },
+  "conditions": {
+    "a": {
+      "id": "cyclic_forward",
+      "kind": "derived",
+      "probabilities": [
+        0.2387794218063746,
+        0.08052557045112514,
+        0.07453635210481198,
+        0.18744159051973705,
+        0.3267541710211958,
+        0.0919628940967554
+      ],
+      "label": "4",
+      "value": 2.5587542007885204,
+      "concentration": 0.086288144583911,
+      "top_tie_keys": [
+        "4"
+      ],
+      "calls": 6,
+      "input_tokens": 3312,
+      "latency_ms": 750.2215844579041,
+      "source": [
+        "s44",
+        193
+      ],
+      "member_ids": [
+        "forward_0",
+        "forward_1",
+        "forward_2",
+        "forward_3",
+        "forward_4",
+        "forward_5"
+      ],
+      "member_sources": [
+        [
+          "s40",
+          305
+        ],
+        [
+          "s40",
+          298
+        ],
+        [
+          "s40",
+          308
+        ],
+        [
+          "s40",
+          300
+        ],
+        [
+          "s40",
+          307
+        ],
+        [
+          "s40",
+          299
+        ]
+      ]
+    },
+    "b": {
+      "id": "dihedral",
+      "kind": "derived",
+      "probabilities": [
+        0.23367437303288072,
+        0.08268396039832752,
+        0.0789661850994423,
+        0.18243679135509014,
+        0.328265867360683,
+        0.09397282275357632
+      ],
+      "label": "4",
+      "value": 2.5708542878730962,
+      "concentration": 0.082141286160565,
+      "top_tie_keys": [
+        "4"
+      ],
+      "calls": 12,
+      "input_tokens": 6624,
+      "latency_ms": 1487.630918622017,
+      "source": [
+        "s44",
+        195
+      ],
+      "member_ids": [
+        "forward_0",
+        "forward_1",
+        "forward_2",
+        "forward_3",
+        "forward_4",
+        "forward_5",
+        "reverse_0",
+        "reverse_1",
+        "reverse_2",
+        "reverse_3",
+        "reverse_4",
+        "reverse_5"
+      ],
+      "member_sources": [
+        [
+          "s40",
+          305
+        ],
+        [
+          "s40",
+          298
+        ],
+        [
+          "s40",
+          308
+        ],
+        [
+          "s40",
+          300
+        ],
+        [
+          "s40",
+          307
+        ],
+        [
+          "s40",
+          299
+        ],
+        [
+          "s40",
+          297
+        ],
+        [
+          "s40",
+          302
+        ],
+        [
+          "s40",
+          301
+        ],
+        [
+          "s40",
+          303
+        ],
+        [
+          "s40",
+          304
+        ],
+        [
+          "s40",
+          306
+        ]
+      ]
+    }
+  },
+  "physical_members": [
+    {
+      "id": "forward_0",
+      "kind": "physical",
+      "probabilities": [
+        0.017867432306631948,
+        0.07028363049007158,
+        0.07783673894039225,
+        0.2523173373837417,
+        0.4259307203842027,
+        0.15576414049495974
+      ],
+      "label": "4",
+      "value": 3.4654527045336905,
+      "concentration": 0.18634757089164278,
+      "top_tie_keys": [
+        "4"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 121.46733421832323,
+      "source": [
+        "s40",
+        305
+      ],
+      "mapping": "m18"
+    },
+    {
+      "id": "forward_1",
+      "kind": "physical",
+      "probabilities": [
+        0.5264071646845165,
+        0.08972836390340584,
+        0.050688694880376056,
+        0.08909965717775359,
+        0.16091023177363867,
+        0.08316588758030935
+      ],
+      "label": "0",
+      "value": 1.51787509019352,
+      "concentration": 0.20663922629051779,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 125.27499999850988,
+      "source": [
+        "s40",
+        298
+      ],
+      "mapping": "m10"
+    },
+    {
+      "id": "forward_2",
+      "kind": "physical",
+      "probabilities": [
+        0.3847254797513334,
+        0.10478862723584184,
+        0.09923203343798902,
+        0.1258270844179612,
+        0.21900017991230514,
+        0.0664265952445694
+      ],
+      "label": "0",
+      "value": 1.888867643237771,
+      "concentration": 0.10329695533352123,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 126.23637495562434,
+      "source": [
+        "s40",
+        308
+      ],
+      "mapping": "m09"
+    },
+    {
+      "id": "forward_3",
+      "kind": "physical",
+      "probabilities": [
+        0.27776661107711104,
+        0.09072969923355062,
+        0.07580757349876367,
+        0.23012425049808669,
+        0.27352466213745813,
+        0.052047203555029814
+      ],
+      "label": "0",
+      "value": 2.2870522640503195,
+      "concentration": 0.09831455727775029,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 129.24529192969203,
+      "source": [
+        "s40",
+        300
+      ],
+      "mapping": "m15"
+    },
+    {
+      "id": "forward_4",
+      "kind": "physical",
+      "probabilities": [
+        0.09912334840914636,
+        0.07605764301158495,
+        0.07468000890059105,
+        0.24741366961848038,
+        0.4183429940577327,
+        0.08438233600246456
+      ],
+      "label": "4",
+      "value": 3.062942325911462,
+      "concentration": 0.1418647146853803,
+      "top_tie_keys": [
+        "4"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 122.15045839548111,
+      "source": [
+        "s40",
+        307
+      ],
+      "mapping": "m11"
+    },
+    {
+      "id": "forward_5",
+      "kind": "physical",
+      "probabilities": [
+        0.1267864946095083,
+        0.051565458832296025,
+        0.06897306297075985,
+        0.17986754402239868,
+        0.46281623786183756,
+        0.1099912017031995
+      ],
+      "label": "4",
+      "value": 3.1303351768043597,
+      "concentration": 0.15887533970827228,
+      "top_tie_keys": [
+        "4"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 125.8471249602735,
+      "source": [
+        "s40",
+        299
+      ],
+      "mapping": "m17"
+    },
+    {
+      "id": "reverse_0",
+      "kind": "physical",
+      "probabilities": [
+        0.3564757747982895,
+        0.15966897346434955,
+        0.07513031677858943,
+        0.10425630082902032,
+        0.23541575169395543,
+        0.06905288243579577
+      ],
+      "label": "0",
+      "value": 1.9096259284633899,
+      "concentration": 0.09814648588268227,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 132.32537498697639,
+      "source": [
+        "s40",
+        297
+      ],
+      "mapping": "m12"
+    },
+    {
+      "id": "reverse_1",
+      "kind": "physical",
+      "probabilities": [
+        0.3147997633041175,
+        0.06674866267236133,
+        0.05902999456289998,
+        0.15309872260697321,
+        0.33809919014323914,
+        0.06822366671040891
+      ],
+      "label": "4",
+      "value": 2.337619913744082,
+      "concentration": 0.13565396906548,
+      "top_tie_keys": [
+        "4"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 118.00395790487528,
+      "source": [
+        "s40",
+        302
+      ],
+      "mapping": "m14"
+    },
+    {
+      "id": "reverse_2",
+      "kind": "physical",
+      "probabilities": [
+        0.3907883872557633,
+        0.045803246758136865,
+        0.06217661638526036,
+        0.18884410383993852,
+        0.2576837016103012,
+        0.054703944150599676
+      ],
+      "label": "0",
+      "value": 2.040943318242676,
+      "concentration": 0.16044573516518168,
+      "top_tie_keys": [
+        "0"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 124.4118339382112,
+      "source": [
+        "s40",
+        301
+      ],
+      "mapping": "m13"
+    },
+    {
+      "id": "reverse_3",
+      "kind": "physical",
+      "probabilities": [
+        0.1663438658864576,
+        0.05184596233442165,
+        0.09865148923654914,
+        0.20925709584775856,
+        0.38068248043040037,
+        0.09321910626441256
+      ],
+      "label": "4",
+      "value": 2.86574568139446,
+      "concentration": 0.1089939984243189,
+      "top_tie_keys": [
+        "4"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 119.69783389940858,
+      "source": [
+        "s40",
+        303
+      ],
+      "mapping": "m08"
+    },
+    {
+      "id": "reverse_4",
+      "kind": "physical",
+      "probabilities": [
+        0.12356126306478117,
+        0.05365605937270817,
+        0.10509174272737136,
+        0.19876149533648957,
+        0.3833662264459012,
+        0.13556321305274863
+      ],
+      "label": "4",
+      "value": 3.0714050018842673,
+      "concentration": 0.10050978787167186,
+      "top_tie_keys": [
+        "4"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 121.75554223358631,
+      "source": [
+        "s40",
+        304
+      ],
+      "mapping": "m07"
+    },
+    {
+      "id": "reverse_5",
+      "kind": "physical",
+      "probabilities": [
+        0.01944689124691191,
+        0.13133119747120187,
+        0.10029594887376549,
+        0.2103742346824792,
+        0.3834180318772235,
+        0.15513369584841796
+      ],
+      "label": "4",
+      "value": 3.272386406017154,
+      "concentration": 0.13020675270445725,
+      "top_tie_keys": [
+        "4"
+      ],
+      "calls": 1,
+      "input_tokens": 552,
+      "latency_ms": 121.21479120105505,
+      "source": [
+        "s40",
+        306
+      ],
+      "mapping": "m16"
+    }
+  ],
+  "candidate_comparison": [
+    {
+      "key": "0",
+      "a": 0.2387794218063746,
+      "b": 0.23367437303288072,
+      "delta": -0.005105048773493881
+    },
+    {
+      "key": "1",
+      "a": 0.08052557045112514,
+      "b": 0.08268396039832752,
+      "delta": 0.0021583899472023826
+    },
+    {
+      "key": "2",
+      "a": 0.07453635210481198,
+      "b": 0.0789661850994423,
+      "delta": 0.004429832994630317
+    },
+    {
+      "key": "3",
+      "a": 0.18744159051973705,
+      "b": 0.18243679135509014,
+      "delta": -0.0050047991646469114
+    },
+    {
+      "key": "4",
+      "a": 0.3267541710211958,
+      "b": 0.328265867360683,
+      "delta": 0.0015116963394871674
+    },
+    {
+      "key": "5",
+      "a": 0.0919628940967554,
+      "b": 0.09397282275357632,
+      "delta": 0.002009928656820925
+    }
+  ],
+  "shared_physical_calls": 6,
+  "unique_physical_calls": 12,
+  "sources": {
+    "s44": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/analysis/qwen2.5-0.5b/derived_answers.jsonl",
+      "sha256": "ebe6e6fae8aee90e09c8d8f7146983afea78896aa94d0bfb1bf7f5a483108644",
+      "bytes": 2513950,
+      "format": "jsonl"
+    },
+    "s40": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-0.5b/predictions.jsonl",
+      "sha256": "b9e28d5ace53794a58d20f0c710df74bf002b5a7a33ad6a8169355f100c1903d",
+      "bytes": 9447125,
+      "format": "jsonl"
+    },
+    "s39": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-0.5b/RUNTIME.json",
+      "sha256": "a60b09ea0f9ae71e17f5fe327ddd90f42a5ad5301aa484f5192aea3aa596ecac",
+      "bytes": 1561,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m18": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "m10": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "0"
+      ]
+    },
+    "m09": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "0",
+        "1"
+      ]
+    },
+    "m15": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "3",
+        "4",
+        "5",
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "m11": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "4",
+        "5",
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "m17": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "5",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "m12": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "5",
+        "4",
+        "3",
+        "2",
+        "1",
+        "0"
+      ]
+    },
+    "m14": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "4",
+        "3",
+        "2",
+        "1",
+        "0",
+        "5"
+      ]
+    },
+    "m13": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "3",
+        "2",
+        "1",
+        "0",
+        "5",
+        "4"
+      ]
+    },
+    "m08": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "2",
+        "1",
+        "0",
+        "5",
+        "4",
+        "3"
+      ]
+    },
+    "m07": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "1",
+        "0",
+        "5",
+        "4",
+        "3",
+        "2"
+      ]
+    },
+    "m16": {
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_tokens": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "display_order": [
+        "0",
+        "5",
+        "4",
+        "3",
+        "2",
+        "1"
+      ]
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "backend": "transformers",
+    "precision": "float32",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "revision_kind": "checkpoint_repository_revision",
+    "device": "mps",
+    "source": "s39"
+  },
+  "selection": {
+    "mode": "user_selected"
+  },
+  "limitations": [
+    "Recorded-data inspection, not new inference or a human usability study.",
+    "Candidate probabilities are conditional on the supplied set, not correctness probabilities.",
+    "Continuous reference scores are not rounded into labels.",
+    "Calls shared by conditions are counted once in the union.",
+    "Source task text is not distributed in this artifact."
+  ],
+  "panel_sha256": "27fee0db529596a675810409c272ba9b06046a04b043f17a9bc88f4e700c12e6",
+  "model_metadata": {
+    "name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "backend": "transformers",
+    "precision": "float32",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "revision_kind": "checkpoint_repository_revision",
+    "device": "mps",
+    "source": "s39"
+  }
+}

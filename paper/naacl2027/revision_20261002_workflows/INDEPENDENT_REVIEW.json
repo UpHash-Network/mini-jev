@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-02T14:22:42.349530+00:00",
+  "reviewer": "Separate AI agent, read-only manuscript/evidence review; reviewer also prepared ChainForge import adapter, so this is not fully independent system development or human peer review.",
+  "status": "pass_with_minor_provenance_wording_note",
+  "scope": "Current TeX and new matched-workflow evidence/README claim scope. Final PDF layout/render review remains with parent.",
+  "input_sha256": {
+    "paper/naacl2027/main.tex": "bee4e59b669324e5b443508f3a1108c7021871baaaafabcebc3f4ccab44d417e",
+    "README.md": "a40b8fab44957e35ecbf83ec740a0d5cee402a734b4451a80c547d803e7590d4",
+    "docs/index.html": "06ccd7dcb81191c743c748c5598d22bdd7b9d6f86a1b11927650cbb94c9a5283",
+    "paper/naacl2027/workflow_comparison_20261002/README.md": "371ae486631b5cd3180999d021765637022464c60d6f452f1fa8a8a81cc48a80",
+    "paper/naacl2027/workflow_comparison_20261002/RESULT_MATRIX.md": "37073c266d30c46026be16990756bdfe33d49307f8d4740a5057b857fbf02998",
+    "paper/naacl2027/workflow_comparison_20261002/protocol.json": "237ce0e6dc1dea51a0928d43a5167441e4b1dbf21d2438e806f80622d8d8bad0",
+    "paper/naacl2027/workflow_comparison_20261002/tasks.json": "d629475e55bdc8c5d35cfb813a982925e65485a6a21b27d0a34e0c4fefc829a7",
+    "paper/naacl2027/workflow_comparison_20261002/competitor/IMPORT_MANIFEST.json": "5ae4aca7d3d4331f2dd1f6eacc4669329f2bfd81a622f1e66dfae265d2675323",
+    "paper/naacl2027/workflow_comparison_20261002/competitor/VERSION_PROVENANCE.json": "369b710707f4259d6bd406f5801f11bfe03af5386ead71dca1c57044d003a9d5",
+    "paper/naacl2027/workflow_comparison_20261002/evidence/chainforge/CHAINFORGE_RESULTS.json": "2f8d7b05f028afb0ca39b71dcab1a203b694ed155d4c33d4fb8c99bfb14abe10",
+    "paper/naacl2027/workflow_comparison_20261002/evidence/chainforge/SPREADSHEET_CHECK.json": "b63d0e696f1f4663145929b6d2e407eeedde43c6d1ddccc439722467053ef864",
+    "paper/naacl2027/workflow_comparison_20261002/evidence/chainforge/conditions.xlsx": "4bf4bfe728aa39b3413c61857058287e3e633897184604140267fdf212201802",
+    "paper/naacl2027/workflow_comparison_20261002/evidence/logittrail/BROWSER_RESULTS.json": "e73befa5f9732a2041a9224ea5a5d18e2c8adc11d9110249cec849a4f187ad13"
+  },
+  "checks": [
+    {
+      "id": "historical_vs_new_framework_checks",
+      "status": "pass",
+      "evidence": "main.tex keeps the 0.3.7.4 registration/dispatch provider diagnostic separate from the published 0.3.7.6 GUI cache import. Ollama decision inference remains explicitly untested."
+    },
+    {
+      "id": "numeric_claims",
+      "status": "pass",
+      "evidence": "Final run03 reports six case filters, 12 exact response lightboxes, 12 compact records and six exact complete flow exports. The separate spreadsheet report has 52 exact probability cells. This reviewer independently read XLSX ZIP/XML: 13 worksheet rows including the header, 52/52 probability floats equal to the fixture, and 12 compact texts equal after spreadsheet literal-newline normalization."
+    },
+    {
+      "id": "evidence_parity",
+      "status": "pass",
+      "evidence": "Frozen task SHA-256 d629475e55bdc8c5d35cfb813a982925e65485a6a21b27d0a34e0c4fefc829a7 matches the final GUI report and fixture. Complete context is preserved through full flow export; visible compact fields are not presented as answers to all 32 questions."
+    },
+    {
+      "id": "native_computation_boundary",
+      "status": "pass",
+      "evidence": "Main lines 209 and 274 explicitly attribute aligned vectors, deltas and call unions to supplied adapter fields. Generic JSON/export access is not claimed as specialized native computation."
+    },
+    {
+      "id": "human_benefit_and_superiority",
+      "status": "pass",
+      "evidence": "Main lines 96, 215, 220, 274 and 277, and README line 42 distinguish software checks from human performance. There are no participants or new model calls, and no superiority or efficiency claim."
+    },
+    {
+      "id": "historical_failures_and_blinding",
+      "status": "pass",
+      "evidence": "Prior knowledge and the internal freeze are disclosed. Original LMQL tolerance failures are preserved. GUI automation selector failures are not interpreted as missing ChainForge capabilities."
+    },
+    {
+      "id": "public_claim_scope",
+      "status": "pass",
+      "evidence": "Repository README and project page describe a finite six-case comparison and explicitly deny a human performance result. The matrix distinguishes native presentation, supplied fields and exported panel context."
+    }
+  ],
+  "minor_notes": [
+    {
+      "file": "paper/naacl2027/workflow_comparison_20261002/competitor/README.md",
+      "issue": "The package upload timestamp 00:48:11.913850Z is the source-distribution upload, while the served wheel provenance records 00:47:55.674312Z. Both artifacts are release 0.3.7.6; this is not a version contradiction.",
+      "recommended_change": "Label the timestamp as source-distribution upload or use the servedwheel timestamp.",
+      "severity": "low",
+      "parent_notified": true
+    }
+  ],
+  "manuscript_modified": false,
+  "frozen_data_modified": false,
+  "files_written": [
+    "paper/naacl2027/revision_20261002_workflows/INDEPENDENT_REVIEW.json"
+  ],
+  "public_excerpt_note": "Internal acceptance-planning judgment is maintained outside the public repository; substantive scientific review above is unchanged.",
+  "parent_resolution": {
+    "minor_timestamp_note": "Corrected competitor README to wheel upload 2026-10-01T00:47:55.674312Z; provenance JSON and all measured results unchanged."
+  }
+}

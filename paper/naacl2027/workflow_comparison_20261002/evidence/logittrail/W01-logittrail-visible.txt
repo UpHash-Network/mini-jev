@@ -1,0 +1,369 @@
+Browse the retained items
+200 source items in this panel
+Study
+Presentation sensitivity
+Probability averaging
+Model and runtime
+qwen3.6-35b-a3b · llama.cpp / Q4_K_M
+qwen2.5-0.5b · transformers / float32
+qwen2.5-1.5b · transformers / float32
+Task
+JCoLA
+JCommonsenseQA
+JSTS
+
+Model: Qwen/Qwen2.5-0.5B-Instruct · transformers / float32 · mps
+
+Find an item
+Source item
+jcommonsenseqa:valid:10002
+jcommonsenseqa:valid:10003
+jcommonsenseqa:valid:10004
+jcommonsenseqa:valid:10006
+jcommonsenseqa:valid:10016
+jcommonsenseqa:valid:10019
+jcommonsenseqa:valid:10024
+jcommonsenseqa:valid:10027
+jcommonsenseqa:valid:10041
+jcommonsenseqa:valid:10043
+jcommonsenseqa:valid:10051
+jcommonsenseqa:valid:8939
+jcommonsenseqa:valid:8940
+jcommonsenseqa:valid:8947
+jcommonsenseqa:valid:8959
+jcommonsenseqa:valid:8961
+jcommonsenseqa:valid:8978
+jcommonsenseqa:valid:8996
+jcommonsenseqa:valid:8998
+jcommonsenseqa:valid:9009
+jcommonsenseqa:valid:9011
+jcommonsenseqa:valid:9026
+jcommonsenseqa:valid:9031
+jcommonsenseqa:valid:9038
+jcommonsenseqa:valid:9040
+jcommonsenseqa:valid:9041
+jcommonsenseqa:valid:9043
+jcommonsenseqa:valid:9047
+jcommonsenseqa:valid:9049
+jcommonsenseqa:valid:9054
+jcommonsenseqa:valid:9057
+jcommonsenseqa:valid:9059
+jcommonsenseqa:valid:9065
+jcommonsenseqa:valid:9066
+jcommonsenseqa:valid:9071
+jcommonsenseqa:valid:9075
+jcommonsenseqa:valid:9080
+jcommonsenseqa:valid:9084
+jcommonsenseqa:valid:9097
+jcommonsenseqa:valid:9098
+jcommonsenseqa:valid:9102
+jcommonsenseqa:valid:9118
+jcommonsenseqa:valid:9119
+jcommonsenseqa:valid:9120
+jcommonsenseqa:valid:9124
+jcommonsenseqa:valid:9140
+jcommonsenseqa:valid:9156
+jcommonsenseqa:valid:9158
+jcommonsenseqa:valid:9171
+jcommonsenseqa:valid:9177
+jcommonsenseqa:valid:9178
+jcommonsenseqa:valid:9179
+jcommonsenseqa:valid:9196
+jcommonsenseqa:valid:9198
+jcommonsenseqa:valid:9202
+jcommonsenseqa:valid:9215
+jcommonsenseqa:valid:9220
+jcommonsenseqa:valid:9230
+jcommonsenseqa:valid:9236
+jcommonsenseqa:valid:9238
+jcommonsenseqa:valid:9258
+jcommonsenseqa:valid:9262
+jcommonsenseqa:valid:9270
+jcommonsenseqa:valid:9275
+jcommonsenseqa:valid:9286
+jcommonsenseqa:valid:9291
+jcommonsenseqa:valid:9321
+jcommonsenseqa:valid:9324
+jcommonsenseqa:valid:9337
+jcommonsenseqa:valid:9347
+jcommonsenseqa:valid:9348
+jcommonsenseqa:valid:9354
+jcommonsenseqa:valid:9358
+jcommonsenseqa:valid:9363
+jcommonsenseqa:valid:9374
+jcommonsenseqa:valid:9381
+jcommonsenseqa:valid:9388
+jcommonsenseqa:valid:9393
+jcommonsenseqa:valid:9396
+jcommonsenseqa:valid:9404
+jcommonsenseqa:valid:9405
+jcommonsenseqa:valid:9407
+jcommonsenseqa:valid:9409
+jcommonsenseqa:valid:9411
+jcommonsenseqa:valid:9413
+jcommonsenseqa:valid:9419
+jcommonsenseqa:valid:9421
+jcommonsenseqa:valid:9422
+jcommonsenseqa:valid:9426
+jcommonsenseqa:valid:9433
+jcommonsenseqa:valid:9437
+jcommonsenseqa:valid:9439
+jcommonsenseqa:valid:9440
+jcommonsenseqa:valid:9447
+jcommonsenseqa:valid:9456
+jcommonsenseqa:valid:9457
+jcommonsenseqa:valid:9458
+jcommonsenseqa:valid:9461
+jcommonsenseqa:valid:9465
+jcommonsenseqa:valid:9473
+jcommonsenseqa:valid:9477
+jcommonsenseqa:valid:9481
+jcommonsenseqa:valid:9489
+jcommonsenseqa:valid:9490
+jcommonsenseqa:valid:9491
+jcommonsenseqa:valid:9499
+jcommonsenseqa:valid:9502
+jcommonsenseqa:valid:9510
+jcommonsenseqa:valid:9513
+jcommonsenseqa:valid:9514
+jcommonsenseqa:valid:9522
+jcommonsenseqa:valid:9528
+jcommonsenseqa:valid:9534
+jcommonsenseqa:valid:9535
+jcommonsenseqa:valid:9538
+jcommonsenseqa:valid:9540
+jcommonsenseqa:valid:9544
+jcommonsenseqa:valid:9547
+jcommonsenseqa:valid:9551
+jcommonsenseqa:valid:9562
+jcommonsenseqa:valid:9567
+jcommonsenseqa:valid:9578
+jcommonsenseqa:valid:9583
+jcommonsenseqa:valid:9584
+jcommonsenseqa:valid:9589
+jcommonsenseqa:valid:9595
+jcommonsenseqa:valid:9600
+jcommonsenseqa:valid:9601
+jcommonsenseqa:valid:9603
+jcommonsenseqa:valid:9606
+jcommonsenseqa:valid:9612
+jcommonsenseqa:valid:9616
+jcommonsenseqa:valid:9624
+jcommonsenseqa:valid:9627
+jcommonsenseqa:valid:9634
+jcommonsenseqa:valid:9639
+jcommonsenseqa:valid:9641
+jcommonsenseqa:valid:9649
+jcommonsenseqa:valid:9650
+jcommonsenseqa:valid:9651
+jcommonsenseqa:valid:9655
+jcommonsenseqa:valid:9666
+jcommonsenseqa:valid:9667
+jcommonsenseqa:valid:9675
+jcommonsenseqa:valid:9679
+jcommonsenseqa:valid:9681
+jcommonsenseqa:valid:9685
+jcommonsenseqa:valid:9688
+jcommonsenseqa:valid:9696
+jcommonsenseqa:valid:9699
+jcommonsenseqa:valid:9711
+jcommonsenseqa:valid:9716
+jcommonsenseqa:valid:9717
+jcommonsenseqa:valid:9718
+jcommonsenseqa:valid:9719
+jcommonsenseqa:valid:9720
+jcommonsenseqa:valid:9730
+jcommonsenseqa:valid:9734
+jcommonsenseqa:valid:9739
+jcommonsenseqa:valid:9749
+jcommonsenseqa:valid:9752
+jcommonsenseqa:valid:9756
+jcommonsenseqa:valid:9761
+jcommonsenseqa:valid:9774
+jcommonsenseqa:valid:9795
+jcommonsenseqa:valid:9798
+jcommonsenseqa:valid:9803
+jcommonsenseqa:valid:9816
+jcommonsenseqa:valid:9818
+jcommonsenseqa:valid:9823
+jcommonsenseqa:valid:9827
+jcommonsenseqa:valid:9832
+jcommonsenseqa:valid:9833
+jcommonsenseqa:valid:9839
+jcommonsenseqa:valid:9840
+jcommonsenseqa:valid:9853
+jcommonsenseqa:valid:9863
+jcommonsenseqa:valid:9867
+jcommonsenseqa:valid:9868
+jcommonsenseqa:valid:9872
+jcommonsenseqa:valid:9892
+jcommonsenseqa:valid:9902
+jcommonsenseqa:valid:9904
+jcommonsenseqa:valid:9910
+jcommonsenseqa:valid:9922
+jcommonsenseqa:valid:9925
+jcommonsenseqa:valid:9927
+jcommonsenseqa:valid:9932
+jcommonsenseqa:valid:9935
+jcommonsenseqa:valid:9937
+jcommonsenseqa:valid:9938
+jcommonsenseqa:valid:9948
+jcommonsenseqa:valid:9959
+jcommonsenseqa:valid:9965
+jcommonsenseqa:valid:9968
+jcommonsenseqa:valid:9969
+jcommonsenseqa:valid:9971
+jcommonsenseqa:valid:9975
+jcommonsenseqa:valid:9980
+jcommonsenseqa:valid:9990
+←
+→
+
+Both sides always use the same source item, task, and model. Original task text is not included in this artifact; item IDs and source hashes identify it. This is not a model ranking.
+
+JCOMMONSENSEQA / QWEN2.5-0.5B / JCOMMONSENSEQA:VALID:9925
+
+Candidate comparison
+Download this comparison ↓
+A Recorded condition
+Original presentation
+Exact input repeat
+Reversed candidate rows
+
+The saved original presentation.
+
+B Recorded condition
+Original presentation
+Exact input repeat
+Reversed candidate rows
+
+Reverse only the displayed rows, preserving answer-token, key, and meaning bindings.
+
+The most likely answer changes. Largest candidate probability change: 33.884552 percentage points.
+Most likely semantic answer
+A option_3
+B option_0
+
+Recorded tie handling is preserved.
+
+Typed choice
+A option_3
+B option_0
+
+Identifier; original option text is withheld.
+
+Concentration
+A 0.1281
+B 0.1199
+
+0 = uniform · 1 = peaked; not accuracy.
+
+Model calls per result
+A 1
+B 1
+
+0 shared; 2 distinct calls across A and B.
+
+Probability within the candidate set
+
+A and B share a 0–100% scale. Δ is B − A in percentage points. Values are aligned by semantic key, even when presentation order changes.
+
+option_0
+key: option_0
+A
+17.540762%
+B
+37.406881%
++19.866118
+Δ percentage points
+option_1
+key: option_1
+A
+5.723519%
+B
+8.048144%
++2.324625
+Δ percentage points
+option_2
+key: option_2
+A
+12.250144%
+B
+10.323324%
+-1.926821
+Δ percentage points
+option_3
+key: option_3
+A
+45.119798%
+B
+11.235246%
+-33.884552
+Δ percentage points
+option_4
+key: option_4
+A
+19.365776%
+B
+32.986406%
++13.62063
+Δ percentage points
+Dataset reference label: option_4. A does not match; B does not match. This is one recorded item, not a new accuracy estimate.
+Answer frequencies across this full panel
+
+All retained items for this task and model, including those hidden by the item search. These counts describe selected labels, not accuracy.
+
+option_0 — A: 6/200; B: 15/200
+
+option_1 — A: 23/200; B: 26/200
+
+option_2 — A: 12/200; B: 48/200
+
+option_3 — A: 152/200; B: 38/200
+
+option_4 — A: 7/200; B: 73/200
+
+Concentration measures how peaked a candidate distribution is; it is not the probability of being correct. Score expectations assume equally spaced stages. Recorded examples do not establish human usability or a causal model-size effect.
+
+Trace this comparison to the source records
+
+Source item: jcommonsenseqa:valid:9925
+
+Source question SHA-256:
+
+860189a6c744c2eaf736660b9353f8c0071b9d39a8656dd48e7142fb63dfe006
+
+Original task and option text are not distributed here. Candidate keys identify the original semantic answers; they are not reconstructed explanations.
+
+A · Original presentation
+
+Original physical request.
+
+baseline · line 1122
+
+mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-0.5b/predictions.jsonl
+
+File SHA-256: 6caf2103d7b4483238618591fde004effc55d87d1e0df7c443c5bbd3256a0c94
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":null}
+
+Exact recorded / derived values
+B · Reversed candidate rows
+
+Original physical request.
+
+display_reverse · line 1120
+
+mini-jev/paper/journal_robustness/cross_model/study_v1/results/qwen2.5-0.5b/predictions.jsonl
+
+File SHA-256: 6caf2103d7b4483238618591fde004effc55d87d1e0df7c443c5bbd3256a0c94
+
+Recorded candidate mapping: {"candidate_keys":["option_0","option_1","option_2","option_3","option_4"],"candidate_tokens":["A","B","C","D","E"],"display_order":null}
+
+Exact recorded / derived values
+Download the original frozen source/evidence ZIP
+
+ZIP SHA-256: a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053
+
+Model, runtime, and panel metadata
+Scope, example selection, and reproducibility

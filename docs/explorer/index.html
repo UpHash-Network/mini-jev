@@ -8,7 +8,7 @@
   <title>Evidence explorer · LogitTrail</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="explorer.css">
-  <script src="app.js?v=20260928-2" type="module"></script>
+  <script src="app.js?v=20261002-json" type="module"></script>
 </head>
 <body>
   <a class="skip" href="#comparison">Skip to comparison</a>
@@ -29,6 +29,7 @@
       </section>
       <section id="comparison" class="comparison" aria-labelledby="comparison-title">
         <div class="section-top"><div><p id="item-context" class="eyebrow"></p><h2 id="comparison-title">Candidate comparison</h2></div><button id="download" type="button" class="download">Download this comparison ↓</button></div>
+        <p class="quiet"><a id="json-view" href="json/">Open complete JSON for this selection</a> · Includes the selected comparison, full panel, and source index.</p>
         <p id="featured-note" class="featured-note" hidden></p>
         <div class="condition-grid"><div class="condition-a"><label><span class="condition-tag">A</span> Recorded condition<select id="condition-a"></select></label><p id="condition-a-note" class="quiet"></p></div><div class="condition-b"><label><span class="condition-tag">B</span> Recorded condition<select id="condition-b"></select></label><p id="condition-b-note" class="quiet"></p></div></div>
         <div id="outcome" class="outcome"></div>

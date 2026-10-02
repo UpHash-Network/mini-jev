@@ -1,0 +1,1375 @@
+🔍 Conditions: probabilities, metadata, export
+Export data✕
+
+Columns
+condition
+dataset
+item_id
+model
+selected_label
+side
+study
+task_id
+typed_value
+LLM
+Scores
+condition
+dataset
+item_id
+model
+selected_label
+side
+study
+task_id
+typed_value
+LLM
+Response
+P(option_0)
+P(option_1)
+P(option_2)
+P(option_3)
+P(option_4)
+recorded_calls
+recorded_input_tokens
+recorded_latency_ms
+cyclic_forward
+JCommonsenseQA
+jcommonsenseqa:valid:8952
+qwen2.5-1.5b
+option_0
+a
+order_ensemble
+W04
+option_0
+A (frozen condition)
+{
+  "import_notice": "These values were supplied by the frozen-evidence format adapter, not generated or independently computed by ChainForge.",
+  "task_id": "W04",
+  "side": "a",
+  "selection": {
+    "id": "W04",
+    "panel_id": "order_ensemble--qwen2.5-1.5b--jcommonsenseqa",
+    "study": "order_ensemble",
+    "model": "qwen2.5-1.5b",
+    "dataset": "JCommonsenseQA",
+    "type": "choice",
+    "item": "jcommonsenseqa:valid:8952",
+    "a": "cyclic_forward",
+    "b": "dihedral",
+    "item_hash": "0029f73e628e372d73c7669722e5022d9e1c91b11934f9645882c3654a8df5c7",
+    "eligible_items": 200,
+    "all_eligible_id_hashes_sha256": "09d0294ab9f552ca6a9b19a9e8fb661a42ac60f5060b7d5d810505382064ea1f"
+  },
+  "canonical_keys": [
+    "option_0",
+    "option_1",
+    "option_2",
+    "option_3",
+    "option_4"
+  ],
+  "score_values": null,
+  "condition": {
+    "id": "cyclic_forward",
+    "kind": "derived",
+    "probabilities": [
+      0.49918268613726,
+      0.12965604652449766,
+      0.0034766743061046697,
+      0.3657815459837387,
+      0.0019030470483988944
+    ],
+    "label": "option_0",
+    "value": "option_0",
+    "concentration": 0.371723076874053,
+    "top_tie_keys": [
+      "option_0"
+    ],
+    "calls": 5,
+    "input_tokens": 1615,
+    "latency_ms": 1177.1616260521114,
+    "source": [
+      "s51",
+      783
+    ],
+    "member_ids": [
+      "forward_0",
+      "forward_1",
+      "forward_2",
+      "forward_3",
+      "forward_4"
+    ],
+    "member_sources": [
+      [
+        "s47",
+        1209
+      ],
+      [
+        "s47",
+        1212
+      ],
+      [
+        "s47",
+        1207
+      ],
+      [
+        "s47",
+        1208
+      ],
+      [
+        "s47",
+        1205
+      ]
+    ]
+  },
+  "candidate_comparison": [
+    {
+      "key": "option_0",
+      "a": 0.49918268613726,
+      "b": 0.5423556113302537,
+      "delta": 0.04317292519299365
+    },
+    {
+      "key": "option_1",
+      "a": 0.12965604652449766,
+      "b": 0.07076239151000162,
+      "delta": -0.058893655014496046
+    },
+    {
+      "key": "option_2",
+      "a": 0.0034766743061046697,
+      "b": 0.0035388873266890284,
+      "delta": 6.221302058435864e-05
+    },
+    {
+      "key": "option_3",
+      "a": 0.3657815459837387,
+      "b": 0.3823702493418639,
+      "delta": 0.016588703358125234
+    },
+    {
+      "key": "option_4",
+      "a": 0.0019030470483988944,
+      "b": 0.0009728604911917315,
+      "delta": -0.000930186557207163
+    }
+  ],
+  "reference": {
+    "kind": "label",
+    "value": "option_0",
+    "aMatch": true,
+    "bMatch": true
+  },
+  "physical_members": [
+    {
+      "id": "forward_0",
+      "kind": "physical",
+      "probabilities": [
+        9.594661237805608e-05,
+        3.743852963383577e-05,
+        0.00019021196743940864,
+        0.9996299217282358,
+        4.648116231277906e-05
+      ],
+      "label": "option_3",
+      "value": "option_3",
+      "concentration": 0.9976807934949807,
+      "top_tie_keys": [
+        "option_3"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 230.89466663077474,
+      "source": [
+        "s47",
+        1209
+      ],
+      "mapping": "m21"
+    },
+    {
+      "id": "forward_1",
+      "kind": "physical",
+      "probabilities": [
+        0.22828299832780108,
+        0.0028269816413519873,
+        0.0025071239666784473,
+        0.7573025689348966,
+        0.00908032712927186
+      ],
+      "label": "option_3",
+      "value": "option_3",
+      "concentration": 0.613508584534843,
+      "top_tie_keys": [
+        "option_3"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 214.0112090855837,
+      "source": [
+        "s47",
+        1212
+      ],
+      "mapping": "m23"
+    },
+    {
+      "id": "forward_2",
+      "kind": "physical",
+      "probabilities": [
+        0.9672283703873567,
+        0.024966958706245972,
+        0.003049791916744262,
+        0.0043998330163360026,
+        0.0003550459733171463
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.895166618658935,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 242.4759161658585,
+      "source": [
+        "s47",
+        1207
+      ],
+      "mapping": "m19"
+    },
+    {
+      "id": "forward_3",
+      "kind": "physical",
+      "probabilities": [
+        0.9989029812984442,
+        0.0006198535745803122,
+        0.00021737917125589534,
+        0.0002528177652666368,
+        6.9681904528817055e-06
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.9939824891164453,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 240.8824171870947,
+      "source": [
+        "s47",
+        1208
+      ],
+      "mapping": "m28"
+    },
+    {
+      "id": "forward_4",
+      "kind": "physical",
+      "probabilities": [
+        0.30140313406032015,
+        0.6198290001706762,
+        0.011418864508405334,
+        0.06732258847395851,
+        2.6412786639804864e-05
+      ],
+      "label": "option_1",
+      "value": "option_1",
+      "concentration": 0.4464221487491825,
+      "top_tie_keys": [
+        "option_1"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 248.89741698279977,
+      "source": [
+        "s47",
+        1205
+      ],
+      "mapping": "m22"
+    },
+    {
+      "id": "reverse_0",
+      "kind": "physical",
+      "probabilities": [
+        0.9427423194578735,
+        0.04509799776144741,
+        0.009331453285034362,
+        0.0027962794180035415,
+        3.1950077641213985e-05
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.8411052804982485,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 225.73183430358768,
+      "source": [
+        "s47",
+        1214
+      ],
+      "mapping": "m20"
+    },
+    {
+      "id": "reverse_1",
+      "kind": "physical",
+      "probabilities": [
+        0.9910696122844637,
+        0.006492462231392654,
+        0.001544326074625299,
+        0.0008171358373586032,
+        7.646357215976438e-05
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.9638850853945015,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 215.59820789843798,
+      "source": [
+        "s47",
+        1211
+      ],
+      "mapping": "m24"
+    },
+    {
+      "id": "reverse_2",
+      "kind": "physical",
+      "probabilities": [
+        0.9935256901399089,
+        0.004049438330598608,
+        0.0003679676949336568,
+        0.001981837321703499,
+        7.506651285535966e-05
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.9722142569141029,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 222.5675000809133,
+      "source": [
+        "s47",
+        1210
+      ],
+      "mapping": "m26"
+    },
+    {
+      "id": "reverse_3",
+      "kind": "physical",
+      "probabilities": [
+        0.00017341463157050354,
+        0.0003081201324253366,
+        0.0003565894154558547,
+        0.9991451280368775,
+        1.6747783670742815e-05
+      ],
+      "label": "option_3",
+      "value": "option_3",
+      "concentration": 0.9951147411466474,
+      "top_tie_keys": [
+        "option_3"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 238.2403751835227,
+      "source": [
+        "s47",
+        1206
+      ],
+      "mapping": "m25"
+    },
+    {
+      "id": "reverse_4",
+      "kind": "physical",
+      "probabilities": [
+        0.0001316461024202941,
+        0.003395664021663873,
+        0.006405165266317765,
+        0.9900543828860023,
+        1.3141723595761592e-05
+      ],
+      "label": "option_3",
+      "value": "option_3",
+      "concentration": 0.9609332651692672,
+      "top_tie_keys": [
+        "option_3"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 212.41849986836314,
+      "source": [
+        "s47",
+        1213
+      ],
+      "mapping": "m27"
+    }
+  ],
+  "shared_physical_calls": 5,
+  "unique_physical_calls": 10,
+  "sources": {
+    "s51": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/analysis/qwen2.5-1.5b/derived_answers.jsonl",
+      "sha256": "9e9b98e5daad3ecb7986661fd6999f937eff2abdfc3a06e8e40cdb52bfcdbdc2",
+      "bytes": 2525831,
+      "format": "jsonl"
+    },
+    "s47": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl",
+      "sha256": "fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0",
+      "bytes": 9468442,
+      "format": "jsonl"
+    },
+    "s46": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/RUNTIME.json",
+      "sha256": "ea9dbc9b96d22d6f82809b455e79d631fb25e71843ebbf046f3738824a19ed3f",
+      "bytes": 1562,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m21": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ]
+    },
+    "m23": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_0"
+      ]
+    },
+    "m19": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_0",
+        "option_1"
+      ]
+    },
+    "m28": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_3",
+        "option_4",
+        "option_0",
+        "option_1",
+        "option_2"
+      ]
+    },
+    "m22": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_4",
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3"
+      ]
+    },
+    "m20": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_4",
+        "option_3",
+        "option_2",
+        "option_1",
+        "option_0"
+      ]
+    },
+    "m24": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_3",
+        "option_2",
+        "option_1",
+        "option_0",
+        "option_4"
+      ]
+    },
+    "m26": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_2",
+        "option_1",
+        "option_0",
+        "option_4",
+        "option_3"
+      ]
+    },
+    "m25": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_1",
+        "option_0",
+        "option_4",
+        "option_3",
+        "option_2"
+      ]
+    },
+    "m27": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_0",
+        "option_4",
+        "option_3",
+        "option_2",
+        "option_1"
+      ]
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "backend": "transformers",
+    "precision": "float32",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "revision_kind": "checkpoint_repository_revision",
+    "device": "mps",
+    "source": "s46"
+  },
+  "complete_evidence_sha256": "b062a45d7487ed70a62b86f950f10bcaeceae6f30203d06b48fd25e0828fc37f"
+}
+0.5
+0.13
+0
+0.37
+0
+5
+1615
+1177.16
+dihedral
+JCommonsenseQA
+jcommonsenseqa:valid:8952
+qwen2.5-1.5b
+option_0
+b
+order_ensemble
+W04
+option_0
+B (frozen condition)
+{
+  "import_notice": "These values were supplied by the frozen-evidence format adapter, not generated or independently computed by ChainForge.",
+  "task_id": "W04",
+  "side": "b",
+  "selection": {
+    "id": "W04",
+    "panel_id": "order_ensemble--qwen2.5-1.5b--jcommonsenseqa",
+    "study": "order_ensemble",
+    "model": "qwen2.5-1.5b",
+    "dataset": "JCommonsenseQA",
+    "type": "choice",
+    "item": "jcommonsenseqa:valid:8952",
+    "a": "cyclic_forward",
+    "b": "dihedral",
+    "item_hash": "0029f73e628e372d73c7669722e5022d9e1c91b11934f9645882c3654a8df5c7",
+    "eligible_items": 200,
+    "all_eligible_id_hashes_sha256": "09d0294ab9f552ca6a9b19a9e8fb661a42ac60f5060b7d5d810505382064ea1f"
+  },
+  "canonical_keys": [
+    "option_0",
+    "option_1",
+    "option_2",
+    "option_3",
+    "option_4"
+  ],
+  "score_values": null,
+  "condition": {
+    "id": "dihedral",
+    "kind": "derived",
+    "probabilities": [
+      0.5423556113302537,
+      0.07076239151000162,
+      0.0035388873266890284,
+      0.3823702493418639,
+      0.0009728604911917315
+    ],
+    "label": "option_0",
+    "value": "option_0",
+    "concentration": 0.432374259108239,
+    "top_tie_keys": [
+      "option_0"
+    ],
+    "calls": 10,
+    "input_tokens": 3230,
+    "latency_ms": 2291.718043386936,
+    "source": [
+      "s51",
+      785
+    ],
+    "member_ids": [
+      "forward_0",
+      "forward_1",
+      "forward_2",
+      "forward_3",
+      "forward_4",
+      "reverse_0",
+      "reverse_1",
+      "reverse_2",
+      "reverse_3",
+      "reverse_4"
+    ],
+    "member_sources": [
+      [
+        "s47",
+        1209
+      ],
+      [
+        "s47",
+        1212
+      ],
+      [
+        "s47",
+        1207
+      ],
+      [
+        "s47",
+        1208
+      ],
+      [
+        "s47",
+        1205
+      ],
+      [
+        "s47",
+        1214
+      ],
+      [
+        "s47",
+        1211
+      ],
+      [
+        "s47",
+        1210
+      ],
+      [
+        "s47",
+        1206
+      ],
+      [
+        "s47",
+        1213
+      ]
+    ]
+  },
+  "candidate_comparison": [
+    {
+      "key": "option_0",
+      "a": 0.49918268613726,
+      "b": 0.5423556113302537,
+      "delta": 0.04317292519299365
+    },
+    {
+      "key": "option_1",
+      "a": 0.12965604652449766,
+      "b": 0.07076239151000162,
+      "delta": -0.058893655014496046
+    },
+    {
+      "key": "option_2",
+      "a": 0.0034766743061046697,
+      "b": 0.0035388873266890284,
+      "delta": 6.221302058435864e-05
+    },
+    {
+      "key": "option_3",
+      "a": 0.3657815459837387,
+      "b": 0.3823702493418639,
+      "delta": 0.016588703358125234
+    },
+    {
+      "key": "option_4",
+      "a": 0.0019030470483988944,
+      "b": 0.0009728604911917315,
+      "delta": -0.000930186557207163
+    }
+  ],
+  "reference": {
+    "kind": "label",
+    "value": "option_0",
+    "aMatch": true,
+    "bMatch": true
+  },
+  "physical_members": [
+    {
+      "id": "forward_0",
+      "kind": "physical",
+      "probabilities": [
+        9.594661237805608e-05,
+        3.743852963383577e-05,
+        0.00019021196743940864,
+        0.9996299217282358,
+        4.648116231277906e-05
+      ],
+      "label": "option_3",
+      "value": "option_3",
+      "concentration": 0.9976807934949807,
+      "top_tie_keys": [
+        "option_3"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 230.89466663077474,
+      "source": [
+        "s47",
+        1209
+      ],
+      "mapping": "m21"
+    },
+    {
+      "id": "forward_1",
+      "kind": "physical",
+      "probabilities": [
+        0.22828299832780108,
+        0.0028269816413519873,
+        0.0025071239666784473,
+        0.7573025689348966,
+        0.00908032712927186
+      ],
+      "label": "option_3",
+      "value": "option_3",
+      "concentration": 0.613508584534843,
+      "top_tie_keys": [
+        "option_3"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 214.0112090855837,
+      "source": [
+        "s47",
+        1212
+      ],
+      "mapping": "m23"
+    },
+    {
+      "id": "forward_2",
+      "kind": "physical",
+      "probabilities": [
+        0.9672283703873567,
+        0.024966958706245972,
+        0.003049791916744262,
+        0.0043998330163360026,
+        0.0003550459733171463
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.895166618658935,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 242.4759161658585,
+      "source": [
+        "s47",
+        1207
+      ],
+      "mapping": "m19"
+    },
+    {
+      "id": "forward_3",
+      "kind": "physical",
+      "probabilities": [
+        0.9989029812984442,
+        0.0006198535745803122,
+        0.00021737917125589534,
+        0.0002528177652666368,
+        6.9681904528817055e-06
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.9939824891164453,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 240.8824171870947,
+      "source": [
+        "s47",
+        1208
+      ],
+      "mapping": "m28"
+    },
+    {
+      "id": "forward_4",
+      "kind": "physical",
+      "probabilities": [
+        0.30140313406032015,
+        0.6198290001706762,
+        0.011418864508405334,
+        0.06732258847395851,
+        2.6412786639804864e-05
+      ],
+      "label": "option_1",
+      "value": "option_1",
+      "concentration": 0.4464221487491825,
+      "top_tie_keys": [
+        "option_1"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 248.89741698279977,
+      "source": [
+        "s47",
+        1205
+      ],
+      "mapping": "m22"
+    },
+    {
+      "id": "reverse_0",
+      "kind": "physical",
+      "probabilities": [
+        0.9427423194578735,
+        0.04509799776144741,
+        0.009331453285034362,
+        0.0027962794180035415,
+        3.1950077641213985e-05
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.8411052804982485,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 225.73183430358768,
+      "source": [
+        "s47",
+        1214
+      ],
+      "mapping": "m20"
+    },
+    {
+      "id": "reverse_1",
+      "kind": "physical",
+      "probabilities": [
+        0.9910696122844637,
+        0.006492462231392654,
+        0.001544326074625299,
+        0.0008171358373586032,
+        7.646357215976438e-05
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.9638850853945015,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 215.59820789843798,
+      "source": [
+        "s47",
+        1211
+      ],
+      "mapping": "m24"
+    },
+    {
+      "id": "reverse_2",
+      "kind": "physical",
+      "probabilities": [
+        0.9935256901399089,
+        0.004049438330598608,
+        0.0003679676949336568,
+        0.001981837321703499,
+        7.506651285535966e-05
+      ],
+      "label": "option_0",
+      "value": "option_0",
+      "concentration": 0.9722142569141029,
+      "top_tie_keys": [
+        "option_0"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 222.5675000809133,
+      "source": [
+        "s47",
+        1210
+      ],
+      "mapping": "m26"
+    },
+    {
+      "id": "reverse_3",
+      "kind": "physical",
+      "probabilities": [
+        0.00017341463157050354,
+        0.0003081201324253366,
+        0.0003565894154558547,
+        0.9991451280368775,
+        1.6747783670742815e-05
+      ],
+      "label": "option_3",
+      "value": "option_3",
+      "concentration": 0.9951147411466474,
+      "top_tie_keys": [
+        "option_3"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 238.2403751835227,
+      "source": [
+        "s47",
+        1206
+      ],
+      "mapping": "m25"
+    },
+    {
+      "id": "reverse_4",
+      "kind": "physical",
+      "probabilities": [
+        0.0001316461024202941,
+        0.003395664021663873,
+        0.006405165266317765,
+        0.9900543828860023,
+        1.3141723595761592e-05
+      ],
+      "label": "option_3",
+      "value": "option_3",
+      "concentration": 0.9609332651692672,
+      "top_tie_keys": [
+        "option_3"
+      ],
+      "calls": 1,
+      "input_tokens": 323,
+      "latency_ms": 212.41849986836314,
+      "source": [
+        "s47",
+        1213
+      ],
+      "mapping": "m27"
+    }
+  ],
+  "shared_physical_calls": 5,
+  "unique_physical_calls": 10,
+  "sources": {
+    "s51": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/analysis/qwen2.5-1.5b/derived_answers.jsonl",
+      "sha256": "9e9b98e5daad3ecb7986661fd6999f937eff2abdfc3a06e8e40cdb52bfcdbdc2",
+      "bytes": 2525831,
+      "format": "jsonl"
+    },
+    "s47": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/predictions.jsonl",
+      "sha256": "fb27fb7a2dc3f55df75a9212bdd5bb01b7b94185dcc5fd9b543fcb8a7eef3be0",
+      "bytes": 9468442,
+      "format": "jsonl"
+    },
+    "s46": {
+      "member": "mini-jev/paper/order_ensemble/study_v1/results/qwen2.5-1.5b/RUNTIME.json",
+      "sha256": "ea9dbc9b96d22d6f82809b455e79d631fb25e71843ebbf046f3738824a19ed3f",
+      "bytes": 1562,
+      "format": "json"
+    }
+  },
+  "mappings": {
+    "m21": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ]
+    },
+    "m23": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_0"
+      ]
+    },
+    "m19": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_2",
+        "option_3",
+        "option_4",
+        "option_0",
+        "option_1"
+      ]
+    },
+    "m28": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_3",
+        "option_4",
+        "option_0",
+        "option_1",
+        "option_2"
+      ]
+    },
+    "m22": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_4",
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3"
+      ]
+    },
+    "m20": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_4",
+        "option_3",
+        "option_2",
+        "option_1",
+        "option_0"
+      ]
+    },
+    "m24": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_3",
+        "option_2",
+        "option_1",
+        "option_0",
+        "option_4"
+      ]
+    },
+    "m26": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_2",
+        "option_1",
+        "option_0",
+        "option_4",
+        "option_3"
+      ]
+    },
+    "m25": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_1",
+        "option_0",
+        "option_4",
+        "option_3",
+        "option_2"
+      ]
+    },
+    "m27": {
+      "candidate_keys": [
+        "option_0",
+        "option_1",
+        "option_2",
+        "option_3",
+        "option_4"
+      ],
+      "candidate_tokens": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "display_order": [
+        "option_0",
+        "option_4",
+        "option_3",
+        "option_2",
+        "option_1"
+      ]
+    }
+  },
+  "archive": {
+    "filename": "naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "artifact_version": "naacl-repro-v1-20260925"
+  },
+  "model": {
+    "name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "backend": "transformers",
+    "precision": "float32",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "revision_kind": "checkpoint_repository_revision",
+    "device": "mps",
+    "source": "s46"
+  },
+  "complete_evidence_sha256": "b062a45d7487ed70a62b86f950f10bcaeceae6f30203d06b48fd25e0828fc37f"
+}
+0.54
+0.07
+0
+0.38
+0
+10
+3230
+2291.72
+Rows per page
+1-2 of 2
