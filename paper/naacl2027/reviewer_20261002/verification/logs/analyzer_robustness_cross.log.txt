@@ -1,0 +1,1 @@
+{"scheduled_requests": 3600, "observed_prediction_rows": 3600, "unique_source_items": 600, "model_item_pairs": 1200, "valid_requests": 3600, "unknown_model_prediction_rows": 0, "failure_records": 0, "failure_code_counts": {}, "unavailable_scheduled_requests": 0}

@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-02",
+  "checked_at_utc": "2026-10-02T11:03:03.329372+00:00",
+  "browser": "Codex in-app browser, CUA DOM observations",
+  "scope": "bounded functional smoke check, not participant data or exhaustive UI verification",
+  "source_sha256": {
+    "json_baseline.html": "a596ae64878c6d0bcf457bacadc5c6ff18fd4167e41f0bc883a3b06f76fbf200",
+    "json_baseline.mjs": "d85bec05a4c4cd1c28ef38d040c51dbbb4b7ac0665e5cb2e2797944b53b7dfc8"
+  },
+  "observations": [
+    {
+      "task": "initial load",
+      "panel": "presentation_robustness--qwen3.6-35b-a3b--jcola",
+      "status": "Panel SHA-256 verified. Same saved information as the Explorer; zero new inference calls."
+    },
+    {
+      "task": "binary shared physical pool",
+      "panel": "order_ensemble--qwen2.5-0.5b--jcola",
+      "item": "jcola:in_domain_valid:1",
+      "a": "cyclic_forward",
+      "b": "cyclic_reverse",
+      "calls_a": 2,
+      "calls_b": 2,
+      "shared": 2,
+      "union": 2
+    },
+    {
+      "task": "Score expectation vs mode",
+      "panel": "presentation_robustness--qwen3.6-35b-a3b--jsts",
+      "item": "jsts:valid:229",
+      "a": "baseline",
+      "mode": "4",
+      "expectation": 3.517086994033014,
+      "reference": 3.6,
+      "full_panel_variance_present": true
+    },
+    {
+      "task": "reload restores fragment",
+      "item_after_reload": "jsts:valid:229",
+      "status": "verified"
+    },
+    {
+      "task": "identical Explorer link",
+      "item": "jsts:valid:229",
+      "a": "baseline",
+      "b": "baseline_repeat",
+      "visible_explorer_expected_stage": "3.517087",
+      "visible_explorer_mode": "4",
+      "visible_reference": "3.6",
+      "visible_expected_stage_absolute_error": "0.082913",
+      "visible_union_calls": 2,
+      "visible_shared_calls": 0
+    }
+  ],
+  "not_tested": [
+    "download file persistence",
+    "all 18 panels in browser",
+    "human task time or accuracy",
+    "ChainForge GUI"
+  ],
+  "benign_browser_request": "The baseline server returned 404 for automatic favicon.ico only; module/data requests succeeded.",
+  "status": "pass",
+  "new_model_calls": 0,
+  "human_participants": 0
+}

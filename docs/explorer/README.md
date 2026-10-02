@@ -29,4 +29,4 @@ node tests/test_evidence_core.mjs
 
 The Python tests compare exported records and aggregates with the frozen archive. The JavaScript checks validate every retained condition, semantic comparison arithmetic, shared-call accounting, export round trips, and rejection of corrupt or cross-item comparisons. These are software and evidence-integrity checks, not human usability results.
 
-This interface was added on September 28, 2026, after the current manuscript snapshot. No source experiment, submitted arXiv package, or manuscript PDF was changed to add it.
+This interface was added on September 28, 2026. The October 2 conference-preparation manuscript now describes it. The original experiment archive and submitted arXiv package remain unchanged. See the [current reviewer guide](../../paper/naacl2027/reviewer_20261002/README.md) and [full inspection audit](../../paper/naacl2027/inspection_audit_20261002/README.md).

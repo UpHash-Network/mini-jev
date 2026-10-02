@@ -1,0 +1,82 @@
+{
+  "status": "pass_no_factual_or_page_limit_blocker_found",
+  "checked_at_utc": "2026-10-02T11:07:17.322699+00:00",
+  "reviewer": "Codex manuscript agent; separate final read-only pass; AI-assisted review, not independent human review",
+  "scope": "Check revised source/PDF text against saved functional audit, source metadata, protected hashes, numeric tables and official page limits. No manuscript/PDF edits; no new inference or human study; no rerun of the functional audit.",
+  "artifact_sha256": {
+    "paper/naacl2027/main.tex": "4fba64bb0fa31723541bd78c849477835bf2e73f2b7478f1d31278dfdb6a5b26",
+    "paper/naacl2027/NAACL2027_LogitTrail.pdf": "6a864f9a095a759648e9dada28cc315e146c8f88ad83166d7a38244167eabe09",
+    "paper/naacl2027/references.bib": "fa88d6c11a3161b3347b728364fdac2b2f1e344c035074149a5f8acb55737c1c",
+    "paper/naacl2027/inspection_audit_20261002/results.json": "651d96448dda4edea110843d2f381d89073694fac8d2d000802203e8230b5607"
+  },
+  "page_limit_check": {
+    "source": "https://2027.naacl.org/calls/system_demonstration/",
+    "source_retrieved_date": "2026-10-02",
+    "pdf_pages": 10,
+    "main_limitations_acknowledgements_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "ethics_and_references_pages": [
+      7,
+      8
+    ],
+    "appendix_pages": [
+      9,
+      10
+    ],
+    "main_max": 6,
+    "appendix_max": 2,
+    "result": "within stated limits; pages after six before appendix contain ethics/license discussion and references"
+  },
+  "inspection_claims": {
+    "condition_pairs": 172200,
+    "saved_condition_source_rows": 31000,
+    "score_conditions": 12600,
+    "panel_condition_distributions": 155,
+    "saved_result_status": "pass",
+    "saved_failed_checks": 0,
+    "all_saved_input_hashes_match": true,
+    "scope_preserved": "Derived functional checks explicitly distinguished from independent questions, model calls, human performance and competing GUI superiority. Source-reader calculations do not import exporter or Explorer core; the JS side runs actual core."
+  },
+  "protected_artifacts": {
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": {
+      "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+      "unchanged": true
+    },
+    "paper/arxiv/source/main.tex": {
+      "sha256": "74f8f7c64ae4a1a057cd49c2921a32eae51377cc9185a13138c436fe085a733a",
+      "unchanged": true
+    },
+    "paper/arxiv/mini-jev-arxiv-source-20260925.zip": {
+      "sha256": "0fc7ea4ffc83f80bef88405e6f3a9f6cd57a56db1224ac8e810db7dd09768d1d",
+      "unchanged": true
+    }
+  },
+  "numeric_tables_unchanged_vs_head": {
+    "sets": true,
+    "latency": true,
+    "orientation": true
+  },
+  "related_work": {
+    "verified_primary_sources": [
+      "https://arxiv.org/abs/2609.38827v1",
+      "https://arxiv.org/html/2609.38827v1",
+      "https://arxiv.org/abs/2609.29769v2",
+      "https://arxiv.org/html/2609.29769v2",
+      "https://github.com/ianarawjo/ChainForge/commit/94faf02cc403c3e54cf4d1c658d02f9a73b8f066",
+      "https://docs.ollama.com/capabilities/decision"
+    ],
+    "result": "Recent papers are described as preprints with bounded overlap. ChainForge source capabilities are separated from older measured custom-provider diagnostics; Ollama local typed probabilities are documented, not newly measured."
+  },
+  "blocking_findings": [],
+  "limitations_of_review": [
+    "Root performed full visual PDF inspection; this pass verified page text and section boundaries, not a second independent rendering inspection.",
+    "Public site deployment and video availability are parent-task release checks.",
+    "This evidence does not establish human usability or acceptance probability."
+  ]
+}

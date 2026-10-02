@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LogitTrail complete JSON inspection baseline</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;max-width:1100px;margin:2rem auto;padding:0 1rem;color:#182533;background:#fafbfc}h1{font-size:1.6rem}fieldset{display:flex;gap:1rem;flex-wrap:wrap;padding:1rem}label{display:grid;gap:.35rem}select,button{font:inherit;padding:.45rem;max-width:95vw}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #cad3dc;padding:1rem;font-size:13px}details{margin:1rem 0}summary{font-weight:600;cursor:pointer}#status{min-height:1.5em}a{color:#075cac}
+</style>
+<h1>Complete JSON inspection baseline</h1>
+<p>This baseline uses the same complete saved index and panels as LogitTrail's Explorer. The selected comparison includes all exact probabilities, references, shared-call accounting, source definitions and physical members. Full-panel summaries and records are also available below. Nothing is inferred live.</p>
+<p>This artifact supports a nonhuman functional audit. No user task time or usability advantage has been measured.</p>
+<fieldset><legend>Choose the same records in either interface</legend>
+<label>Study / model / dataset<select id="panel"></select></label>
+<label>Source item<select id="item"></select></label>
+<label>Condition A<select id="a"></select></label>
+<label>Condition B<select id="b"></select></label>
+</fieldset>
+<p id="status" role="status">Loading saved data…</p>
+<p><a id="explorer" href="../../../docs/explorer/">Open identical selection in Explorer</a> · <button id="download" disabled>Download complete comparison JSON</button></p>
+<h2>Selected comparison — complete formatted JSON</h2><pre id="comparison"></pre>
+<details open><summary>Full-panel summary, every condition</summary><pre id="summary"></pre></details>
+<details><summary>Complete selected panel, including every source item</summary><pre id="all-items"></pre></details>
+<details><summary>Complete shared index, including all source definitions</summary><pre id="index"></pre></details>
+<script type="module" src="json_baseline.mjs"></script>
+</html>

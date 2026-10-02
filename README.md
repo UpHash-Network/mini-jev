@@ -6,20 +6,23 @@
 
 **Use a local language model as a typed decision function, without generating answer text.**
 
-[日本語](README.ja.md) · [Current paper](paper/naacl2027/README.md) · [Reproduce the paper](paper/naacl2027/reproducibility/README.md) · [Install](#run-the-native-service) · [Train on your data](TRAINING.md)
+[日本語](README.ja.md) · [Current paper](paper/naacl2027/README.md) · [Reviewer quick start](paper/naacl2027/reviewer_20261002/README.md) · [Optional live setup](#run-the-native-service) · [Train on your data](TRAINING.md)
 
 LogitTrail turns a state and a question into a choice, a true/false score (`Noul`), or an ordinal score. It reads candidate next-token logits, normalizes them, and constructs the typed response in Python. The released inference configuration uses a **frozen Qwen3.6-35B-A3B Q4_K_M model**, repeated input, and type-specific candidate tokens. It does **not** use a trained decision head.
 
 This independent project is inspired by [TypeSafe's Jev interface](https://docs.typesafe.ai/api). It is not affiliated with TypeSafe and does not reproduce Jev's architecture, RLCD, calibration guarantees, SDK compatibility, or reported speedups. Candidate-logit classification and prompt repetition have prior work; this release contributes an inspectable implementation and empirical record, not a claim of a new algorithm.
 
-## Start here
+## Start here — no model required
 
-**Status, 27 September 2026:** the preprint was submitted to arXiv and is awaiting moderation. No public arXiv identifier is available yet. The current conference manuscript is being prepared for NAACL 2027 System Demonstrations; it has not been submitted, accepted, or peer reviewed. The earlier EACL attempt closed without a submission.
+**Reviewer entry updated 2 October 2026.** Begin with the saved evidence; installation of a language model is optional. The continuing NAACL 2027 System Demonstrations manuscript has not been submitted, accepted, or peer reviewed. The earlier arXiv submission and historical audits remain separate, unchanged artifacts. The recorded arXiv status on 27 September was awaiting moderation; this guide does not verify a newer moderation status.
 
-1. **Read:** [current manuscript PDF](https://uphash-network.github.io/mini-jev/assets/LogitTrail_Manuscript.pdf) and [paper guide](paper/naacl2027/README.md).
-2. **Watch:** [60-second evidence walkthrough](https://uphash-network.github.io/mini-jev/#demo), then the [145-second interface recording](https://uphash-network.github.io/mini-jev/assets/Mini_Jev_Demonstration.mp4). The short video explains retained experiment results; it is not a new live run.
-3. **Reproduce without a model:** [download the frozen source/evidence ZIP and replay the analysis](paper/naacl2027/reproducibility/README.md). Python's standard library is sufficient for this replay. The [reviewer guide](paper/naacl2027/nonhuman_revision_20260927/REVIEWER_GUIDE.md) also provides a quick integrity and accounting check.
-4. **Run live on a Mac:** follow [native installation](#run-the-native-service), then [start the browser workbench](demo/README.md#start-the-demo).
+1. **Explore saved decisions in your browser:** [open the evidence Explorer](https://uphash-network.github.io/mini-jev/explorer/). Select one item and compare two recorded conditions, semantic probabilities, typed values, shared physical-call counts, and source references. There is no model, API key, inference service, or installation to start this hosted view.
+2. **Verify and recompute with Python:** follow the [standalone reviewer guide](paper/naacl2027/reviewer_20261002/README.md). It separates a quick integrity/accounting check from the six frozen analyses and their 56 expected output files. Python 3.10+ and its standard library suffice; no pip packages or weights are required. The frozen analysis archive is **18,060,014 bytes**. Fresh same-Mac isolated-environment commands, timings, and results are included in the guide.
+3. **Optionally run live on a Mac:** use [native installation](#run-the-native-service), then [start the browser workbench](demo/README.md#start-the-demo). This separate path builds a native runtime and downloads a **20.4 GB** model; the measured hardware had **64 GB** unified memory. It is not needed for steps 1–2.
+
+[Read the current manuscript PDF](docs/assets/LogitTrail_Manuscript.pdf) · [Watch the current LogitTrail demonstration](docs/assets/LogitTrail_Demo_20261002.mp4) (127.08 seconds; [transcript](publication/revision-20261002/video/TRANSCRIPT.en.md)) · [Reviewer commands and actual verification receipts](paper/naacl2027/reviewer_20261002/README.md).
+
+The current video shows saved-Explorer interaction plus a clearly labeled 16-second archival live-interface excerpt, with silent embedded English captions. It adds no new inference. Earlier recordings remain available: [60-second evidence walkthrough](docs/assets/LogitTrail_60s.mp4), which explains retained results, and [145-second Mini Jev interface recording](docs/assets/Mini_Jev_Demonstration.mp4), captured under the former name. Neither adds new experimental measurements.
 
 ## Evidence in the current paper
 
@@ -40,7 +43,7 @@ The September 27 revision adds a comparison appendix and a post-hoc analysis of 
 
 Open the [evidence explorer](https://uphash-network.github.io/mini-jev/explorer/) to compare two retained conditions for the same study, model, and source item. The view aligns probabilities by semantic answer key, distinguishes expected stage from most likely stage, counts shared physical calls once, and exports source references with the comparison. It reads the frozen records; it does not run a model or establish human usability gains. [Data scope and derivation](docs/explorer/DATA.md).
 
-This September 28 interface addition is separate from the September 27 manuscript and the already submitted arXiv version. Featured examples are deterministic illustrations; the full eligible panels remain browsable.
+The Explorer was introduced on September 28; the October 2 reviewer entry connects it to lightweight checks and the retained analyses. The already submitted arXiv files remain unchanged. Featured examples are deterministic illustrations; the full eligible panels remain browsable.
 
 ## Run the native service
 

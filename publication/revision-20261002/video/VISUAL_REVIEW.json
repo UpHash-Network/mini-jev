@@ -1,0 +1,21 @@
+{
+  "artifact": "docs/assets/LogitTrail_Demo_20261002.mp4",
+  "sha256": "38cba92b7ef97ed374594ceef4cc445c3a2baeb1de12e9922adfc965cade96fd",
+  "status": "pass",
+  "reviewer": "AI assistant, not human evaluation",
+  "reviewed": "15 scene midpoints from final output; actual screenshots and caption-strip layout; problematic Score transition and next-item full-panel expansion recaptured. Final two changed captions inspected at69.6s and93.7s.",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "duration_seconds": 127.08,
+  "scope_labels": "Saved data and archival live UI explicitly distinguished; no fresh inference.",
+  "corrections": [
+    "Await Score selected panel before recording its view",
+    "Reopen full-panel frequencies after changing item",
+    "Caption says selected item changes, not that its reference necessarily changes",
+    "Score caption only names visible expected and modal stages"
+  ],
+  "limit": "Source paths/hashes are dense; exact values remain downloadable. Silent English captions, no narration.",
+  "decode_check": "Final caption composition decoded completely with ffmpeg -v error -i VIDEO -f null -; exit 0."
+}

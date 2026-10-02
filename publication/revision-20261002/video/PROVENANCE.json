@@ -1,0 +1,162 @@
+{
+  "artifact": "docs/assets/LogitTrail_Demo_20261002.mp4",
+  "duration_seconds": 127.08,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 25,
+  "audio": false,
+  "captions": "Embedded English text; transcript supplied separately.",
+  "sha256": "38cba92b7ef97ed374594ceef4cc445c3a2baeb1de12e9922adfc965cade96fd",
+  "bytes": 5563474,
+  "raw_capture_sha256": "7d0b85ab975e341b18bd3afbaab5ad23278c70f7499af55b43078c7781db268e",
+  "archival_source_sha256": "094c759f7b6d10af1bdac427bd121a5671cc7e2122857863cd1aa9526b378123",
+  "evidence_index_sha256": "22ee0270bce871e0c22808b3126f61b17410bdeac709f73f0a3fd6ced4331baa",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 6,
+      "kind": "title_card",
+      "title": "Inspect the decision. Trace the evidence."
+    },
+    {
+      "start": 6,
+      "end": 13.102780541,
+      "kind": "actual_explorer_interaction",
+      "name": "overview",
+      "title": "SAVED EVIDENCE EXPLORER  |  No model or API key",
+      "caption": "Choose a recorded observation. All eligible panel items remain available.",
+      "source_start": 0.09159900000000004,
+      "source_end": 7.194379541
+    },
+    {
+      "start": 13.102780541,
+      "end": 22.172625832999998,
+      "kind": "actual_explorer_interaction",
+      "name": "order-comparison",
+      "title": "1 / FOLLOW A DECISION CHANGE  |  Illustrative saved example",
+      "caption": "Reversing the displayed options changes the selected semantic answer.",
+      "source_start": 7.194379541,
+      "source_end": 16.264224833
+    },
+    {
+      "start": 22.172625832999998,
+      "end": 31.238389790999996,
+      "kind": "actual_explorer_interaction",
+      "name": "order-probabilities",
+      "title": "COMPARE THE SAME CANDIDATES",
+      "caption": "A and B use one probability scale. Compare the answer with its reference.",
+      "source_start": 16.264224833,
+      "source_end": 25.329988790999998
+    },
+    {
+      "start": 31.238389790999996,
+      "end": 41.285278416000004,
+      "kind": "actual_explorer_interaction",
+      "name": "averaging-comparison",
+      "title": "2 / ACCOUNT FOR SHARED EXECUTIONS",
+      "caption": "One call versus five calls; one is shared. The union is five, not six.",
+      "source_start": 25.329988790999998,
+      "source_end": 35.376877416000006
+    },
+    {
+      "start": 41.285278416000004,
+      "end": 49.347263,
+      "kind": "actual_explorer_interaction",
+      "name": "averaging-reference",
+      "title": "MORE CALLS DO NOT GUARANTEE A BETTER ANSWER",
+      "caption": "This selected example changes from correct to incorrect after averaging.",
+      "source_start": 35.376877416000006,
+      "source_end": 43.438862
+    },
+    {
+      "start": 49.347263,
+      "end": 59.436794375,
+      "kind": "actual_explorer_interaction",
+      "name": "source-trace",
+      "title": "3 / TRACE THE EVIDENCE",
+      "caption": "Expand original members, one-based JSONL lines, mappings, and hashes.",
+      "source_start": 43.438862,
+      "source_end": 53.528393375
+    },
+    {
+      "start": 59.436794375,
+      "end": 64.518186,
+      "kind": "actual_explorer_interaction",
+      "name": "export",
+      "title": "EXPORT EXACT COMPARISON JSON",
+      "caption": "Download preserves probabilities and source definitions; no new inference.",
+      "source_start": 53.528393375,
+      "source_end": 58.609785
+    },
+    {
+      "start": 64.518186,
+      "end": 74.62111862500001,
+      "kind": "actual_explorer_interaction",
+      "name": "score",
+      "title": "4 / SEPARATE EXPECTATION FROM THE MODE",
+      "caption": "The expected stage differs from the most likely stage in both conditions.",
+      "source_start": 58.609785,
+      "source_end": 68.71271762500001
+    },
+    {
+      "start": 74.62111862500001,
+      "end": 80.633579875,
+      "kind": "actual_explorer_interaction",
+      "name": "collapse-comparison",
+      "title": "5 / CHECK THE FULL PANEL",
+      "caption": "A single item cannot establish collapse. Inspect every retained item.",
+      "source_start": 68.71271762500001,
+      "source_end": 74.725178875
+    },
+    {
+      "start": 80.633579875,
+      "end": 90.719370208,
+      "kind": "actual_explorer_interaction",
+      "name": "full-panel",
+      "title": "FULL-PANEL FREQUENCIES AND SCORE RANGE",
+      "caption": "These 200-item counts remain independent of the selected source item.",
+      "source_start": 74.725178875,
+      "source_end": 84.810969208
+    },
+    {
+      "start": 90.719370208,
+      "end": 96.775473041,
+      "kind": "actual_explorer_interaction",
+      "name": "next-item-same-panel",
+      "title": "MOVE TO ANOTHER ITEM",
+      "caption": "The selected item changes; full-panel frequencies retain the same scope.",
+      "source_start": 84.810969208,
+      "source_end": 90.867072041
+    },
+    {
+      "start": 96.775473041,
+      "end": 102.803678791,
+      "kind": "actual_explorer_interaction",
+      "name": "scope",
+      "title": "KNOW WHAT THE RECORDS SUPPORT",
+      "caption": "Examples are outcome-selected; interface checks are not a user study.",
+      "source_start": 90.867072041,
+      "source_end": 96.895277791
+    },
+    {
+      "start": 102.803678791,
+      "end": 118.803678791,
+      "kind": "archival_live_ui",
+      "source_start": 34.5,
+      "source_end": 50.5,
+      "caption_replaced_only": true
+    },
+    {
+      "start": 118.803678791,
+      "end": 126.803678791,
+      "kind": "title_card",
+      "title": "Try it without downloading a model."
+    }
+  ],
+  "scope": "Recorded interactions with frozen data, plus 16 seconds of previously recorded local inference. Neither human evaluation nor a fresh model run. Actual UI pixels are scaled uniformly; caption strip is outside the Explorer viewport. Archival excerpt only replaces its original caption strip.",
+  "selection": "Four pre-existing deterministic outcome-selected illustrations; not representative sampling. See docs/explorer/DATA.md.",
+  "license": "CC BY-SA 4.0 for composed video and data-derived visuals; software remains MIT.",
+  "data_attribution": "JGLUE (Kurihara et al., 2022; https://github.com/yahoojapan/JGLUE); JCoLA (Someya et al., 2024; https://github.com/osekilab/JCoLA). See NOTICE.md."
+}

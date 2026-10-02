@@ -1,0 +1,121 @@
+{
+  "status": "pass",
+  "run_date_utc": "2026-10-02",
+  "started_utc": "2026-10-02T10:57:07.373208+00:00",
+  "finished_utc": "2026-10-02T10:57:37.248761+00:00",
+  "elapsed_seconds": 29.875409,
+  "scope": "Fresh CPU-only same-Mac verification of tracked source and recorded observations; no new inference and no second-machine reproduction.",
+  "source_commit": "5cca79ad6284e441ccb59931ad2e1bfd5b1aa253",
+  "source_snapshot": "SOURCE_SNAPSHOT.json",
+  "environment": "ENVIRONMENT.json",
+  "commands": "COMMANDS.json",
+  "archive_sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+  "archive_bytes": 18060014,
+  "quick_integrity_and_accounting": {
+    "status": "pass",
+    "manifest_files": 353,
+    "main_request_rows": 26050,
+    "background_rows_excluded": 300,
+    "lmql_retained_tolerance_failures": [
+      "score-01",
+      "score-03",
+      "score-04"
+    ],
+    "chainforge_request_pairs": 4,
+    "receipt": "EVIDENCE_CHECKS.json"
+  },
+  "bundle_verification_before": {
+    "status": "pass",
+    "verified_files": 353,
+    "errors": []
+  },
+  "bundle_verification_after": {
+    "status": "pass",
+    "verified_files": 353,
+    "errors": []
+  },
+  "reanalysis": {
+    "status": "pass",
+    "analysis_executions": 6,
+    "byte_identical_derived_files": 56,
+    "measured_request_rows": 26050,
+    "receipt": "REANALYSIS_CHECKS.json",
+    "logs": "logs/analyzer_*.txt"
+  },
+  "explorer": {
+    "builder_check": {
+      "passed": true,
+      "files": 19,
+      "bytes": 12985578,
+      "physical_records": 22000,
+      "derived_records": 9000,
+      "check_only": true
+    },
+    "python_tests": {
+      "status": "pass",
+      "tests": 21,
+      "skipped": 0
+    },
+    "node_tests": {
+      "status": "pass",
+      "actual_variant_comparisons": 31000,
+      "actual_item_export_roundtrips": 3600,
+      "invalid_cross_item_and_corrupt_probability_cases_rejected": true,
+      "shared_calls_counted_once": true,
+      "continuous_reference_not_rounded": true
+    }
+  },
+  "immutability": {
+    "tracked_source_snapshot_files_unchanged": 522,
+    "frozen_extracted_bundle_files_unchanged": 354,
+    "working_tree_existing_files_modified_by_this_run": false
+  },
+  "disk": {
+    "tracked_source_snapshot": {
+      "regular_files": 522,
+      "logical_bytes": 185843522,
+      "allocated_bytes_from_st_blocks": 187023360
+    },
+    "extracted_bundle": {
+      "regular_files": 354,
+      "logical_bytes": 101837394,
+      "allocated_bytes_from_st_blocks": 102633472
+    },
+    "reanalysis_including_isolated_copy": {
+      "regular_files": 410,
+      "logical_bytes": 119435825,
+      "allocated_bytes_from_st_blocks": 120369152
+    },
+    "virtual_environment": {
+      "regular_files": 5,
+      "logical_bytes": 14287,
+      "allocated_bytes_from_st_blocks": 28672
+    },
+    "scratch_total": {
+      "regular_files": 1308,
+      "logical_bytes": 593434674,
+      "allocated_bytes_from_st_blocks": 596410368
+    }
+  },
+  "resources": {
+    "measurements": "Per-command elapsed wall time, CPU time and wait4 ru_maxrss are in COMMANDS.json. macOS reports ru_maxrss in bytes; these are observed costs, not minimum requirements or performance comparisons.",
+    "execution": "Commands and frozen analyzers were run sequentially. No accelerator, model/service call, model download, pip install or native build was run."
+  },
+  "isolation_boundary": "Verification entry points use -I -B. A separate child-style environment probe intentionally omits -I. Unmodified reanalyze.py does not propagate -I to its child processes. Children use the same fresh no-pip virtual environment, sanitized environment, and its explicit analysis-source cwd for module lookup. The virtual environment excludes system site-packages and user site-packages; no third-party distributions are installed. This is environment isolation, not a network or OS security sandbox.",
+  "path_placeholders": {
+    "{REPO}": "Existing Git repository used only as tracked snapshot input and destination for new verification files.",
+    "{SOURCE}": "Fresh git-archive source snapshot.",
+    "{WORK}": "Fresh scratch run directory.",
+    "{VENV}": "Fresh --without-pip virtual environment.",
+    "{BUNDLE}": "Safely extracted pinned historical mini-jev bundle.",
+    "{REPLAY}": "New replay output directory outside the frozen bundle.",
+    "{VERIFICATION}": "New reviewer verification receipt directory.",
+    "{HOST_HOME}": "Sanitized host-home prefix, when present in toolchain paths."
+  },
+  "limits": [
+    "Existing host Python and optional Node executables were reused; this is not a fresh machine or cross-platform validation.",
+    "Numerical replay reuses historical observations and does not establish measurement validity, model generalization, or human usability.",
+    "Runtime, model and native packaging tests are outside this CPU-only scope.",
+    "No package installation, external network/service operation, model loading or inference was part of these commands. Network access was not disabled at OS level."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "status": "pass",
+  "checked_at_utc": "2026-10-02T11:06:53.866015+00:00",
+  "scope": "Reviewer entry/document link integrity and local static HTTP smoke; no model/API access and no claim of new browser interaction testing.",
+  "files": {
+    "README.md": {
+      "sha256": "ee57dd82bef58aa0fabf3847645a585f356f409779e9ac51fbae3dc1a35636ca",
+      "bytes": 16127
+    },
+    "docs/index.html": {
+      "sha256": "4ab810d999f00d80fcb22227a78f6c2075ff034a424949d668b637cc9ca8eb8d",
+      "bytes": 18731
+    },
+    "paper/naacl2027/reviewer_20261002/README.md": {
+      "sha256": "38d453171b81da3f70cd1fb7809a47a9272e31eec110953a1a26fbd824db7ec7",
+      "bytes": 14369
+    }
+  },
+  "html": {
+    "unique_ids": 16,
+    "missing_fragments": [],
+    "missing_local_assets": []
+  },
+  "markdown_file_links": [
+    {
+      "file": "README.md",
+      "links": 44,
+      "missing": []
+    },
+    {
+      "file": "paper/naacl2027/reviewer_20261002/README.md",
+      "links": 18,
+      "missing": []
+    }
+  ],
+  "static_http_checks": [
+    {
+      "route": "/",
+      "http_status": 200,
+      "bytes": 18346,
+      "content_type": "text/html"
+    },
+    {
+      "route": "/styles.css",
+      "http_status": 200,
+      "bytes": 8344,
+      "content_type": "text/css"
+    },
+    {
+      "route": "/explorer/",
+      "http_status": 200,
+      "bytes": 5622,
+      "content_type": "text/html"
+    },
+    {
+      "route": "/explorer/app.js",
+      "http_status": 200,
+      "bytes": 18716,
+      "content_type": "text/javascript"
+    },
+    {
+      "route": "/explorer/data/index.json",
+      "http_status": 200,
+      "bytes": 75351,
+      "content_type": "application/json"
+    },
+    {
+      "route": "/explorer/data/panels/presentation_robustness--qwen3.6-35b-a3b--jcola.json",
+      "http_status": 200,
+      "bytes": 476258,
+      "matches_index_sha256": true
+    }
+  ],
+  "verification_sha256sums_passed": true,
+  "current_media_paths": [
+    "docs/assets/LogitTrail_Demo_20261002.mp4",
+    "docs/assets/LogitTrail_Manuscript.pdf",
+    "docs/assets/LogitTrail_Demo_20261002.jpg",
+    "publication/revision-20261002/video/TRANSCRIPT.en.md"
+  ],
+  "media_check_scope": "Link target existence only; media production, full decoding and final content review belong to the parent task.",
+  "independent_guide_review": "Read-only AI-agent check found no material command/result/scope mismatch; not human peer review.",
+  "final_media_description_source": "Parent production report: 127.08-second current saved-Explorer interaction plus clearly labeled 16-second archival live-interface segment; silent embedded English captions."
+}

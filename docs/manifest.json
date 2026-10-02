@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "content_snapshot": "2026-09-29",
+  "content_snapshot": "2026-10-02",
   "evidence_commit": "bd025e8b1d14352a440d289c73b00ae445290935",
   "assets": [
     {
@@ -43,10 +43,10 @@
     {
       "path": "assets/LogitTrail_Manuscript.pdf",
       "source": "paper/naacl2027/NAACL2027_LogitTrail.pdf",
-      "bytes": 232105,
-      "sha256": "5bab8d9e5492059815d53d0b1433af5f4d13f2b439a03643c8e7abc4e93b2f73",
+      "bytes": 374794,
+      "sha256": "6a864f9a095a759648e9dada28cc315e146c8f88ad83166d7a38244167eabe09",
       "status": "current",
-      "pages": 9
+      "pages": 10
     },
     {
       "path": "assets/LogitTrail_60s.mp4",
@@ -62,9 +62,25 @@
       "bytes": 163698,
       "sha256": "e504deee77233d53ac3a8cf2fe6ec9d76b095d81348cc563a6d1ff7d1f443bf7",
       "status": "current"
+    },
+    {
+      "path": "assets/LogitTrail_Demo_20261002.mp4",
+      "source": "publication/revision-20261002/video/build_video.py",
+      "provenance": "publication/revision-20261002/video/PROVENANCE.json",
+      "bytes": 5563474,
+      "sha256": "38cba92b7ef97ed374594ceef4cc445c3a2baeb1de12e9922adfc965cade96fd",
+      "status": "current"
+    },
+    {
+      "path": "assets/LogitTrail_Demo_20261002.jpg",
+      "source": "publication/revision-20261002/video/build_video.py",
+      "provenance": "publication/revision-20261002/video/PROVENANCE.json",
+      "bytes": 153643,
+      "sha256": "b6515f3ae901f998097c6049207e2e1cf74a9be8d994d030a5248f9ce30d9bcb",
+      "status": "current"
     }
   ],
-  "manuscript_revision": "paper/naacl2027/rename_20260929/MANIFEST.json",
+  "manuscript_revision": "paper/naacl2027/revision_20261002/MANIFEST.json",
   "arxiv_status": "submitted_awaiting_moderation",
   "arxiv_public_id": null,
   "evidence_commit_scope": "Original frozen source/evidence publication; not the current manuscript revision",
@@ -75,7 +91,7 @@
     "data_index": "explorer/data/index.json",
     "data_index_sha256": "22ee0270bce871e0c22808b3126f61b17410bdeac709f73f0a3fd6ced4331baa",
     "checks": "explorer/CHECKS.json",
-    "scope": "Later interface supplement; September 27 manuscript, submitted arXiv package and frozen experiment archive unchanged"
+    "scope": "Included in October 2 conference-preparation manuscript; submitted arXiv package and frozen experiment archive unchanged"
   },
   "project_name": "LogitTrail",
   "former_name": "Mini Jev",

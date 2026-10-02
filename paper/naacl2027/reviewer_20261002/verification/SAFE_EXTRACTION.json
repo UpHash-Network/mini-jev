@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "archive_sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+  "archive_bytes": 18060014,
+  "archive_members": 354,
+  "manifest_files_verified": 353,
+  "extracted_logical_bytes": 101837394,
+  "safe_paths": true,
+  "crc": "pass",
+  "exact_inventory": "pass",
+  "new_destination_only": true
+}

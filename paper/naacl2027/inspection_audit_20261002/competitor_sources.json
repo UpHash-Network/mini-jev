@@ -1,0 +1,107 @@
+{
+  "checked_at_utc": "2026-10-02T10:58:10.728736+00:00",
+  "chainforge_commit": "641fd577442daf43b45064e7aae86c983f03f85d",
+  "source_only": true,
+  "gui_executed": false,
+  "local_inference_executed": false,
+  "new_model_calls": 0,
+  "retrieval_note": "System Python urllib lacked a trusted root certificate; retried using curl with normal TLS verification. No verification bypass.",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/ianarawjo/ChainForge/641fd577442daf43b45064e7aae86c983f03f85d/chainforge/react-server/src/backend/scorerFormat.ts",
+      "path": "chainforge/react-server/src/backend/scorerFormat.ts",
+      "bytes": 20923,
+      "sha256": "7281b077e6dd93ab11b48e1e7ea77e4887fb4390ef7b44e1cf10589c9ac230d7",
+      "selected_term_lines": {
+        "decisionQuestion": [
+          446
+        ],
+        "judgeAgreement": [
+          254
+        ],
+        "findDisagreements": [
+          362
+        ],
+        "reliability": [
+          536,
+          562
+        ]
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ianarawjo/ChainForge/641fd577442daf43b45064e7aae86c983f03f85d/chainforge/react-server/src/backend/utils.ts",
+      "path": "chainforge/react-server/src/backend/utils.ts",
+      "bytes": 163866,
+      "sha256": "d605aee6c00a48ba1375ee671a89aa30d22ae96cda0fd238b83016ed6146465a",
+      "selected_term_lines": {
+        "/v1/systemone": [
+          2765,
+          2812
+        ],
+        "probabilities": [
+          1185
+        ],
+        "includes_load": [
+          2888
+        ]
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ianarawjo/ChainForge/641fd577442daf43b45064e7aae86c983f03f85d/chainforge/react-server/src/backend/backend.ts",
+      "path": "chainforge/react-server/src/backend/backend.ts",
+      "bytes": 87368,
+      "sha256": "d5a6f7e02c58fe4d67369439e692bc84c987e10a19905b73660e817c7ca27b1f",
+      "selected_term_lines": {
+        "decisionQuestion": [
+          62,
+          1436
+        ],
+        "probabilities": [
+          1821
+        ]
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ianarawjo/ChainForge/641fd577442daf43b45064e7aae86c983f03f85d/chainforge/react-server/src/LLMEvalNode.tsx",
+      "path": "chainforge/react-server/src/LLMEvalNode.tsx",
+      "bytes": 38665,
+      "sha256": "e257336eee01d54f8513522f7a9c6831214bfc2a488fbce98c68ae684c0e82cd",
+      "selected_term_lines": {
+        "judgeAgreement": [
+          83,
+          798
+        ],
+        "findDisagreements": [
+          81,
+          757
+        ],
+        "reliability": [
+          84,
+          767,
+          782,
+          1039
+        ],
+        "probabilities": [
+          766
+        ]
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ianarawjo/ChainForge/641fd577442daf43b45064e7aae86c983f03f85d/setup.py",
+      "path": "setup.py",
+      "bytes": 3706,
+      "sha256": "3701ad375b1648f44fbd1b0b1ac44d47ac73a7c4a27620c0f2dfee4002c44181",
+      "selected_term_lines": {
+        "0.3.7.6": [
+          37
+        ]
+      }
+    },
+    {
+      "url": "https://docs.ollama.com/capabilities/decision",
+      "bytes": 297661,
+      "sha256": "d8cae974378556c7fec97046fe57d1ee34b8ad045e74c78dc064b5e0d3e129fa",
+      "scope": "Official documentation inspected; examples are documentation, not executed local inference."
+    }
+  ]
+}

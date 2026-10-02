@@ -1,0 +1,305 @@
+[
+  {
+    "id": "source_commit",
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "{REPO}",
+    "started_utc": "2026-10-02T10:57:07.373387+00:00",
+    "elapsed_seconds": 0.016692,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/source_commit.txt",
+    "user_cpu_seconds": 0.005732999999999999,
+    "system_cpu_seconds": 0.006227,
+    "maximum_resident_set_bytes_darwin": 5406720
+  },
+  {
+    "id": "source_archive",
+    "argv": [
+      "git",
+      "archive",
+      "--format=tar",
+      "--output",
+      "{WORK}/tracked-source.tar",
+      "5cca79ad6284e441ccb59931ad2e1bfd5b1aa253"
+    ],
+    "cwd": "{REPO}",
+    "started_utc": "2026-10-02T10:57:07.390256+00:00",
+    "elapsed_seconds": 0.593318,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/source_archive.txt",
+    "user_cpu_seconds": 0.21789599999999998,
+    "system_cpu_seconds": 0.143486,
+    "maximum_resident_set_bytes_darwin": 171606016
+  },
+  {
+    "id": "create_venv",
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.10/bin/python3",
+      "-I",
+      "-B",
+      "-m",
+      "venv",
+      "--without-pip",
+      "{VENV}"
+    ],
+    "cwd": "{WORK}",
+    "started_utc": "2026-10-02T10:57:08.404393+00:00",
+    "elapsed_seconds": 0.029288,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/create_venv.txt",
+    "user_cpu_seconds": 0.015139,
+    "system_cpu_seconds": 0.007475,
+    "maximum_resident_set_bytes_darwin": 16957440
+  },
+  {
+    "id": "isolated_python_environment",
+    "argv": [
+      "{VENV}/bin/python",
+      "-I",
+      "-B",
+      "-c",
+      "import importlib.metadata,importlib.util,json,site,sys;print(json.dumps({\"python\":sys.version,\"prefix\":sys.prefix,\"base_prefix\":sys.base_prefix,\"isolated\":sys.flags.isolated,\"ignore_environment\":sys.flags.ignore_environment,\"no_user_site\":sys.flags.no_user_site,\"enable_user_site\":site.ENABLE_USER_SITE,\"sys_path\":sys.path,\"installed_distributions\":[d.metadata[\"Name\"] for d in importlib.metadata.distributions()],\"pip_available\":importlib.util.find_spec(\"pip\") is not None},indent=2))"
+    ],
+    "cwd": "{SOURCE}",
+    "started_utc": "2026-10-02T10:57:08.433904+00:00",
+    "elapsed_seconds": 0.048399,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/isolated_python_environment.txt",
+    "user_cpu_seconds": 0.021729,
+    "system_cpu_seconds": 0.008197,
+    "maximum_resident_set_bytes_darwin": 19562496
+  },
+  {
+    "id": "child_python_environment",
+    "argv": [
+      "{VENV}/bin/python",
+      "-B",
+      "-c",
+      "import importlib.metadata,importlib.util,json,site,sys;print(json.dumps({\"python\":sys.version,\"prefix\":sys.prefix,\"base_prefix\":sys.base_prefix,\"isolated\":sys.flags.isolated,\"ignore_environment\":sys.flags.ignore_environment,\"no_user_site\":sys.flags.no_user_site,\"enable_user_site\":site.ENABLE_USER_SITE,\"sys_path\":sys.path,\"installed_distributions\":[d.metadata[\"Name\"] for d in importlib.metadata.distributions()],\"pip_available\":importlib.util.find_spec(\"pip\") is not None},indent=2))"
+    ],
+    "cwd": "{SOURCE}",
+    "started_utc": "2026-10-02T10:57:08.482703+00:00",
+    "elapsed_seconds": 0.034911,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/child_python_environment.txt",
+    "user_cpu_seconds": 0.021865,
+    "system_cpu_seconds": 0.008844,
+    "maximum_resident_set_bytes_darwin": 19218432
+  },
+  {
+    "id": "operating_system",
+    "argv": [
+      "sw_vers"
+    ],
+    "cwd": "{WORK}",
+    "started_utc": "2026-10-02T10:57:08.517879+00:00",
+    "elapsed_seconds": 0.010663,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/operating_system.txt",
+    "user_cpu_seconds": 0.002095,
+    "system_cpu_seconds": 0.004020999999999999,
+    "maximum_resident_set_bytes_darwin": 4767744
+  },
+  {
+    "id": "hardware",
+    "argv": [
+      "sysctl",
+      "-n",
+      "hw.memsize",
+      "hw.logicalcpu",
+      "hw.physicalcpu"
+    ],
+    "cwd": "{WORK}",
+    "started_utc": "2026-10-02T10:57:08.528841+00:00",
+    "elapsed_seconds": 0.004945,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/hardware.txt",
+    "user_cpu_seconds": 0.000489,
+    "system_cpu_seconds": 0.002228,
+    "maximum_resident_set_bytes_darwin": 1294336
+  },
+  {
+    "id": "node_version",
+    "argv": [
+      "{HOST_HOME}/.nodebrew/current/bin/node",
+      "--version"
+    ],
+    "cwd": "{SOURCE}",
+    "started_utc": "2026-10-02T10:57:08.534172+00:00",
+    "elapsed_seconds": 0.128602,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/node_version.txt",
+    "user_cpu_seconds": 0.046318,
+    "system_cpu_seconds": 0.019941,
+    "maximum_resident_set_bytes_darwin": 21426176
+  },
+  {
+    "id": "evidence_accounting",
+    "argv": [
+      "{VENV}/bin/python",
+      "-I",
+      "-B",
+      "{SOURCE}/paper/naacl2027/nonhuman_revision_20260927/check_evidence.py",
+      "--root",
+      "{SOURCE}"
+    ],
+    "cwd": "{SOURCE}",
+    "started_utc": "2026-10-02T10:57:08.663315+00:00",
+    "elapsed_seconds": 0.476323,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/evidence_accounting.txt",
+    "user_cpu_seconds": 0.401232,
+    "system_cpu_seconds": 0.06712699999999999,
+    "maximum_resident_set_bytes_darwin": 235569152
+  },
+  {
+    "id": "safe_extraction",
+    "argv": [
+      "{VENV}/bin/python",
+      "-I",
+      "-B",
+      "{VERIFICATION}/safe_extract.py",
+      "--archive",
+      "{SOURCE}/paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip",
+      "--output",
+      "{WORK}/extracted"
+    ],
+    "cwd": "{WORK}",
+    "started_utc": "2026-10-02T10:57:09.140170+00:00",
+    "elapsed_seconds": 0.385189,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/safe_extraction.txt",
+    "user_cpu_seconds": 0.231213,
+    "system_cpu_seconds": 0.095204,
+    "maximum_resident_set_bytes_darwin": 154566656
+  },
+  {
+    "id": "verify_bundle_before",
+    "argv": [
+      "{VENV}/bin/python",
+      "-I",
+      "-B",
+      "{BUNDLE}/verify_bundle.py"
+    ],
+    "cwd": "{BUNDLE}",
+    "started_utc": "2026-10-02T10:57:09.574325+00:00",
+    "elapsed_seconds": 0.068777,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/verify_bundle_before.txt",
+    "user_cpu_seconds": 0.043095,
+    "system_cpu_seconds": 0.02115,
+    "maximum_resident_set_bytes_darwin": 87064576
+  },
+  {
+    "id": "frozen_reanalysis",
+    "argv": [
+      "{VENV}/bin/python",
+      "-I",
+      "-B",
+      "{BUNDLE}/reanalyze.py",
+      "--output",
+      "{REPLAY}"
+    ],
+    "cwd": "{BUNDLE}",
+    "started_utc": "2026-10-02T10:57:09.643489+00:00",
+    "elapsed_seconds": 6.112436,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/frozen_reanalysis.txt",
+    "user_cpu_seconds": 5.746907,
+    "system_cpu_seconds": 0.264082,
+    "maximum_resident_set_bytes_darwin": 193691648
+  },
+  {
+    "id": "verify_bundle_after",
+    "argv": [
+      "{VENV}/bin/python",
+      "-I",
+      "-B",
+      "{BUNDLE}/verify_bundle.py"
+    ],
+    "cwd": "{BUNDLE}",
+    "started_utc": "2026-10-02T10:57:15.757389+00:00",
+    "elapsed_seconds": 0.077662,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/verify_bundle_after.txt",
+    "user_cpu_seconds": 0.045696999999999995,
+    "system_cpu_seconds": 0.020968,
+    "maximum_resident_set_bytes_darwin": 77070336
+  },
+  {
+    "id": "explorer_builder_check",
+    "argv": [
+      "{VENV}/bin/python",
+      "-I",
+      "-B",
+      "{SOURCE}/scripts/build_evidence_explorer.py",
+      "--check"
+    ],
+    "cwd": "{SOURCE}",
+    "started_utc": "2026-10-02T10:57:15.835478+00:00",
+    "elapsed_seconds": 6.448464,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/explorer_builder_check.txt",
+    "user_cpu_seconds": 6.367293,
+    "system_cpu_seconds": 0.06462,
+    "maximum_resident_set_bytes_darwin": 323338240
+  },
+  {
+    "id": "explorer_python_tests",
+    "argv": [
+      "{VENV}/bin/python",
+      "-I",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_evidence_explorer.py",
+      "-v"
+    ],
+    "cwd": "{SOURCE}",
+    "started_utc": "2026-10-02T10:57:22.284418+00:00",
+    "elapsed_seconds": 14.256757,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/explorer_python_tests.txt",
+    "user_cpu_seconds": 14.057377,
+    "system_cpu_seconds": 0.163147,
+    "maximum_resident_set_bytes_darwin": 669761536
+  },
+  {
+    "id": "explorer_node_tests",
+    "argv": [
+      "{HOST_HOME}/.nodebrew/current/bin/node",
+      "{SOURCE}/tests/test_evidence_core.mjs"
+    ],
+    "cwd": "{SOURCE}",
+    "started_utc": "2026-10-02T10:57:36.541797+00:00",
+    "elapsed_seconds": 0.579159,
+    "exit_code": 0,
+    "status": "pass",
+    "stdout_stderr_log": "logs/explorer_node_tests.txt",
+    "user_cpu_seconds": 0.614074,
+    "system_cpu_seconds": 0.114551,
+    "maximum_resident_set_bytes_darwin": 133345280
+  }
+]

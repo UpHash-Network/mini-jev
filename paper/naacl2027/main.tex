@@ -20,8 +20,9 @@
 
 \newcommand{\system}{LogitTrail}
 \newcommand{\CodeURL}{\href{https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo}{github.com/UpHash-Network/mini-jev}}
-% Public recording URL is verified against the published branch before delivery.
-\newcommand{\DemoVideo}{\href{https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/eacl2027-demo/paper/eacl2027/Mini_Jev_Demonstration.mp4}{approximately 145-second captioned live recording}}
+\newcommand{\ExplorerURL}{\href{https://uphash-network.github.io/mini-jev/explorer/}{saved-evidence explorer}}
+% Public recording URL is verified against the published site before delivery.
+\newcommand{\DemoVideo}{\href{https://uphash-network.github.io/mini-jev/assets/LogitTrail_Demo_20261002.mp4}{captioned demonstration}}
 
 \title{LogitTrail: An Inspectable Local Interface for Typed Decisions\newline from Frozen Language Models}
 \author{Yuki Oshio \\
@@ -32,17 +33,17 @@
 \maketitle
 
 \begin{abstract}
-Many language-model applications need a small typed decision rather than free-form text. \system{} is an open-source local interface that maps a state and explicit criteria to a categorical choice, a true-candidate probability, or an expected ordinal stage. It uses candidate next-token logits from a frozen language model, with no trained decision head. A browser demonstration exposes typed values, candidate distributions, probability semantics, and request/response JSON. A 4,050-request matched comparison finds identical direct-readout and native one-token outputs in all 1,350 pairs, without an established latency advantage. Two subsequent studies across three checkpoints use 7,600 and 14,400 requests to examine presentation sensitivity and probability averaging. Reduced sensitivity can coexist with incorrect or nearly constant predictions, while averaging costs multiple model calls. The contribution is a runnable demonstration and auditable system evaluation, with explicit distinctions among type validity, candidate concentration, task quality, and computation cost.
+Many language-model applications need a small typed decision rather than free-form text. \system{} maps a state and criteria to a categorical choice, a true-candidate probability, or an expected ordinal stage using frozen next-token logits, with no trained decision head. Its local browser exposes typed values and distributions; a separate model-free explorer aligns saved conditions by candidate meaning and traces results to source records and physical calls. A 4,050-request matched comparison finds identical direct-readout and native one-token outputs in all 1,350 pairs, without an established latency advantage. Two subsequent studies across three checkpoints use 7,600 and 14,400 requests to examine presentation sensitivity and probability averaging. Reduced sensitivity can coexist with incorrect or nearly constant predictions, while averaging costs multiple model calls. The contribution is a runnable inspection workflow and auditable system evaluation separating type validity, candidate concentration, task quality, and computation cost.
 \end{abstract}
 
 \section{Introduction}
-A workflow may need a route, an urgency score, or a stage on an explicit rubric. Returning a paragraph and then recovering that value creates an interface problem: the application must validate a result whose useful content is small. A typed interface makes the contract explicit, but a valid type alone says nothing about whether the decision is right. Similarly, a model can assign almost all candidate probability to an incorrect answer.
+Applications may need a route, an urgency score, or a rubric stage. Typed interfaces make these contracts explicit, but valid types and concentrated candidate probabilities do not establish correct decisions.
 
-\system{} (formerly Mini Jev) demonstrates this distinction through a local browser interface and an HTTP/Python API. Users edit a shared state and three questions, run the model, and inspect the resulting values alongside candidate distributions. The interface is inspired by TypeSafe's Jev \citep{typesafe2026jev,typesafeapi}; this independent implementation makes no claim to reproduce that system's architecture, training, calibration, compatibility, or performance.
+\system{} (formerly Mini Jev) demonstrates this distinction through a local browser interface, an HTTP/Python API, and a saved-evidence explorer. Users can run typed questions locally or inspect recorded comparisons without downloading a model. The interface is inspired by TypeSafe's Jev \citep{typesafe2026jev,typesafeapi}; this independent implementation does not reproduce its architecture, training, calibration, compatibility, or performance.
 
-Developers can inspect local typed decisions before integration. The mechanism is conventional: frozen candidate scoring, restricted softmax, and typed response construction. Verbalizers, logit-based selection, and scoring APIs are established \citep{schick2021pet,ma2025inferring,lmqlscoring}. Our contribution combines inspectable local implementation and auditable evaluation of quality, presentation sensitivity, and cost. Neither scoring nor typed probability interfaces are new.
+Developers need to determine what changed in a decision, whether the change improved it, and which executions support that conclusion. Our workflow connects semantic candidate comparisons to reference outcomes, panel frequencies, and source provenance. Its mechanism---frozen candidate scoring, restricted softmax, and typed response construction---is conventional \citep{schick2021pet,ma2025inferring,lmqlscoring}. Neither scoring nor typed probability interfaces are new.
 
-Schema validity, regression checks, task quality, and paired timing answer different questions. Our matched study does not establish a latency advantage over native one-token selection. Source, installation, data documentation, and evaluation artifacts: \CodeURL. Video: \DemoVideo.
+Schema validity, task quality, and paired timing answer different questions. Our matched study does not establish a latency advantage over native one-token selection. Source and artifacts: \CodeURL. Browser access: \ExplorerURL. Video: \DemoVideo.
 
 \section{System and Typed Contract}
 \label{sec:system}
@@ -80,24 +81,6 @@ The prompt repeats the task twice, following the use of repetition for non-reaso
 
 A multi-question request executes its questions sequentially. Model state is cleared between questions: they share the supplied state text, but not a cached prefill. Complete inputs exceeding 2,048 tokens are rejected rather than silently truncated. Schema validation and deterministic response construction prevent free-form output from crossing the API boundary; these software properties do not prevent semantic errors.
 
-\begin{figure}[t]
-\centering
-\begin{tikzpicture}[
-  box/.style={draw,rounded corners=2pt,align=center,text width=3.03cm,minimum height=.72cm,font=\small},
-  arr/.style={-{Latex[length=2mm]},thick},node distance=.32cm]
-\node[box] (ui) {Local browser\\state, instructions, criteria};
-\node[box,below=of ui] (api) {Validated typed API\\Python client / loopback HTTP};
-\node[box,below=of api] (lm) {Frozen language model\\prefill $\rightarrow$ candidate logits};
-\node[box,below=of lm] (readout) {Restricted softmax\\typed values + metadata};
-\draw[arr] (ui)--(api);
-\draw[arr] (api)--(lm);
-\draw[arr] (lm)--(readout);
-\draw[arr] (readout.east)--++(.42,0)|-(ui.east);
-\end{tikzpicture}
-\caption{The live demonstration uses the released typed API. It displays model-derived candidate distributions and typed values; no generated explanation or simulated prediction is inserted.}
-\label{fig:architecture}
-\end{figure}
-
 \subsection{Relationship to one-token decoding}
 Restricted softmax readout has the same mathematical candidate distribution as a sampler that masks all non-candidates, provided the model prefix, logits, candidate IDs, temperature, and other processors match. Greedy labels then agree unless tie-breaking differs; stochastic sampling agrees in distribution, not necessarily in realized samples. This is an equivalence under specified conditions, not a new inference theorem or learning method.
 
@@ -105,24 +88,26 @@ In particular, selecting a first token after prefill need not require another mo
 
 \section{Demonstration and Access}
 \label{sec:demo}
-The browser runs locally and connects through a small Python bridge to the existing model API. It requires no cloud inference service. A user starts with a shared state and three editable questions: routing through Choice, urgency through Noul, and priority through Score. The question instructions and criteria are visible, making the decision contract available for inspection before inference.
+\subsection{Inspect saved evidence without a model}
+The static \ExplorerURL{} requires only a browser. It contains all eligible records from the presentation and averaging studies: 22,000 physical calls and 9,000 derived answers in 18 panels. Their 3,600 study/item/model combinations represent 1,200 distinct source items, reused across checkpoints. These are recorded observations, not new inference.
 
-The user defines the state and criteria and selects \emph{Run decisions}. Candidate probabilities distinguish a hard label from its distribution; Score's expected and most likely stages can differ. Rerunning after edits explores behavior, but changes the input and is not a controlled accuracy experiment.
+Users choose a study, checkpoint, task, item, and two conditions. Both sides retain the same item and model; probabilities align by semantic key on a common 0--100\% scale even when token bindings or row order differ. The display separates the selected label, typed value, concentration, and reference. Full-panel label frequencies remain visible independently of item selection. This permits inspection of an order flip, a correct answer lost after averaging, or a nearly constant predictor. Four outcome-selected examples illustrate these cases; they do not estimate prevalence.
 
-The page also displays entropy concentration, elapsed time, and copyable request/response JSON. The bars show relative candidate mass, the JSON exposes the contract, and elapsed time describes the live request; none is a reference answer. Editing marks prior results stale. There is no replay mode: an unavailable model API produces an error, not a canned prediction.
+The explorer also distinguishes executions from derived results. An averaged answer lists its physical members, and a comparison counts their union rather than double-counting shared calls. Source details identify archive members, one-based JSONL lines, mappings, and hashes. SHA-256 checks protect loaded panels; exported comparison JSON retains exact values and source definitions. Original task and option text is not redistributed. A URL fragment shares the selected comparison. A deterministic functional audit compares 172,200 within-item condition pairs with independent calculations from the raw archive, with no discrepancy. It also checks 31,000 saved condition/source rows, 12,600 Score conditions, and 155 full-panel distributions. Complete formatted JSON retains the same information. These are derived cases, not independent questions or human-performance results.
 
-% The figure is a captured live demonstration, not a synthetic mockup.
-\IfFileExists{figures/demo-presentation.png}{%
+% The figure is a captured browser view, not a synthetic mockup.
+\IfFileExists{figures/evidence-explorer.png}{%
 \begin{figure*}[t]
 \centering
-\includegraphics[width=\textwidth]{figures/demo-presentation.png}
-\caption{Recorded browser demonstration under the former Mini Jev name: an editable state, all three typed outputs, and their candidate distributions. Editors continue below the results. This English example illustrates the interface, not English task quality.}
+\includegraphics[width=.92\textwidth]{figures/evidence-explorer.png}
+\caption{The saved-evidence explorer aligns recorded candidate probabilities by meaning. Users inspect labels, typed values, references, and physical-call costs, then trace or export the comparison. The displayed example is an illustration, not a representative performance sample or a live model execution.}
 \label{fig:demo}
 \end{figure*}}{}
 
-Installation begins with the repository's native build script and pinned model downloader. Users build the helper with \texttt{build\_native.sh}, download the model with \texttt{fetch\_native\_model.py}, and start the API with \texttt{./run.sh --without-calibration}. Starting \texttt{python3 -m demo.server --port 8766} then opens access at \url{http://127.0.0.1:8766/}. The repository supplies complete commands and a Python client example. Fresh builds start at $T=1$; historical calibration artifacts are bound to their recorded runtime and should not silently transfer to a different build.
+\subsection{Run local typed decisions}
+The separate live browser connects through a Python bridge to the local model API. Users edit a shared state, instructions, and criteria for Choice, Noul, and Score, then select \emph{Run decisions}. Results expose candidate probabilities, concentration, elapsed time, and request/response JSON. Editing marks prior results stale. The live UI has no replay or cyclic-averaging mode: an unavailable API produces an error. Input edits explore behavior, not controlled accuracy.
 
-The tested environment is an Apple M5 Pro with 64\,GB unified memory and macOS 26.4, using Metal and Accelerate. The model file is approximately 20.4\,GB, in addition to runtime memory. This is a local workstation demonstration, not a claim of lightweight deployment or a demonstrated minimum-memory requirement. Source is distributed; model weights and compiled native binaries are not bundled.
+A linked \href{https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/reviewer_20261002/README.md}{reviewer guide} proceeds from the explorer to model-free verification and optional live installation. The tested live environment is a 64\,GB Apple M5 Pro; its model file is approximately 20.4\,GB. Appendix~\ref{sec:comparison_scope} gives installation and verification boundaries. The static explorer has no model, API-key, or build requirement.
 
 \section{Evidence Behind the Demonstration}
 \label{sec:evidence}
@@ -221,10 +206,10 @@ Verbalizers \citep{schick2021pet}, decoding-free selection \citep{ma2025inferrin
 LMQL exposes continuation scoring and selection \citep{lmqlscoring}; multi-token scoring need not equal our single-token readout. Outlines, Guidance, and grammar-constrained decoding support structured generation \citep{outlines,guidance,geng2023grammar}. TypeSafe's adapter maps general LLM outputs to a Jev-style contract \citep{typesafeadapter}; generated probability values differ from token-derived candidate probabilities. Our JSON experiment is a serialization comparison, not a framework benchmark.
 
 \paragraph{Inspection interfaces.}
-Rakutko's distinct mini-jev project compares frozen letter-logit scoring with constrained JSON and provides an inspection bench \citep{rakutko2026minijev}; our rename avoids name confusion. ChainForge supports visual prompt experiments \citep{arawjo2024chainforge}; LLM Comparator supports response comparisons \citep{kahng2025comparator}. Langfuse's Jev editor exposes typed questions, distributions, confidence, and requests via external inference \citep{langfuse2026jev}. Phoenix preserves Choice probability metadata \citep{phoenix2026jev}; its GUI display remains unverified. These source-based comparisons establish neither usability nor performance differences. \system{} supplies local inspection and auditable evaluation; its live UI lacks cyclic averaging and multi-run comparison. Appendix~\ref{sec:comparison_scope} separates scopes.
+Rakutko's distinct mini-jev compares frozen letter-logit scoring with constrained JSON in an inspection bench \citep{rakutko2026minijev}; our rename avoids confusion. Ollama documents local Choice/Noul/Score probabilities \citep{ollama2026decision}; ChainForge adds an Ollama decision provider to its visual experiments \citep{arawjo2024chainforge,chainforge2026decision}. That path is separate from our older custom-provider test; its packaged GUI behavior is unverified. LLM Comparator supports response comparisons \citep{kahng2025comparator}. Langfuse's Jev editor exposes typed distributions and requests \citep{langfuse2026jev}; Phoenix preserves Choice probability metadata \citep{phoenix2026jev}. Typed or local inspection alone is therefore not our distinction. Our explorer connects complete saved panels, semantic alignment, shared-call accounting, and archive-line provenance. No matched interface study establishes superiority (Appendix~\ref{sec:comparison_scope}).
 
 \paragraph{Sensitivity and calibration.}
-Order/token bias and fixed-binding changes are established \citep{wei2024unveiling,zheng2024selectors}. \citet{hanna2026diverge}, a recent preprint, also report that reduced order sensitivity need not improve accuracy; we do not claim that distinction as a new general finding. Our contribution is its concrete examination alongside typed outputs and measured call costs. Temperature scaling \citep{guo2017calibration} differs from contextual label-bias correction \citep{zhao2021calibrate}. Canonical key sorting ensures software equivalence under dictionary insertion changes, not model invariance to option meaning or placement. The frozen 35B configuration establishes neither training gains nor superiority over other typed-output systems.
+Order/token bias and fixed-binding changes are established \citep{wei2024unveiling,zheng2024selectors}. Recent preprints distinguish reduced order sensitivity from accuracy \citep{hanna2026diverge}, and compressed ordinal hard-label distributions from per-item probability concentration in JEV/KEV \citep{gao2026ordinal}. These overlap our stability and collapse observations; our frozen-model cyclic study is not a reproduction of their experiments. \citet{rao2026rubric} report correlated judge errors limiting confidence cascades in saved-verdict replay; we do not test such routing. We make these distinctions inspectable alongside measured call costs, without claiming them as new general findings. Temperature scaling \citep{guo2017calibration} differs from contextual label-bias correction \citep{zhao2021calibrate}; canonical sorting does not establish invariance to option meaning or placement.
 
 \section*{Limitations}
 Presentation studies cover three checkpoints on one Apple Silicon device; matched parity/latency covers one native quantized model in one session. Architecture, precision, and backend differences prevent model-size attribution. Japanese public subsets have unknown training contamination and source dependence; the English interface example does not establish English task quality. Local data are AI-authored and development-related, without independent human reference validation. No user study establishes usability or downstream decision quality.
@@ -232,7 +217,7 @@ Presentation studies cover three checkpoints on one Apple Silicon device; matche
 Candidate probabilities vary with prompts, labels, coverage, and temperature. Concentrated wrong answers occur; type validity and entropy concentration cannot replace application-specific validation before consequential actions. Score assumes equally spaced stages; Noul is a relative candidate probability, not a verified truth frequency. Questions run sequentially on a large model; other operating systems and lower-memory configurations remain unvalidated. Live-demo timings are not directly comparable with the research harness's controlled interval.
 
 \section*{Acknowledgements}
-AI coding agents accessed through OpenAI Codex assisted under the author's direction with implementation, question authoring, software checks, experiments, analysis, literature organization, and drafting. The independent numerical audit used another AI agent, not independent human review. AI-authored evaluation items have no claimed human-expert validation. The author is responsible for this manuscript and its claims.
+OpenAI Codex agents assisted implementation, question authoring, checks, experiments, analysis, literature organization, and drafting under the author's direction. Independent audit code was AI-assisted, not independent human review; AI-authored items lack human-expert validation. The author is responsible for all claims.
 
 \section*{Ethics and Availability}
 The demonstration supports model inspection and typed-interface prototyping, with no evidence for high-stakes deployment. Inference is local; users remain responsible for inputs and downstream use. Code and self-authored local data use MIT terms. External-dataset-derived selection metadata, rubrics, protocols, and results separately retain applicable CC BY-SA 4.0 attribution and share-alike terms. Upstream dataset text, model weights, and compiled binaries are not bundled; repository data cards and notices specify acquisition and attribution.
@@ -274,6 +259,11 @@ The released HTTP response and browser expose semantic labels, typed values, can
 
 \paragraph{Model-free evidence review.}
 The linked repository includes a frozen source/evidence ZIP and a reviewer guide. Its standard-library verification checks the archive and recorded request accounting without weights, network access, or inference. A separate CPU replay executes the six frozen analyses in a new directory and compares all 56 derived files. The three studies contain 26,050 measured requests; 300 earlier pilot predictions are retained as background and excluded from that count. The current manuscript and later framework diagnostics are separate from the frozen ZIP. Replaying recorded data verifies calculations, not the truth of the original observations or their generalization.
+
+The explorer is a later static view of the two presentation studies, not an alteration of their frozen records. Its exporter verifies the archive, internal hashes, completion inventories, physical candidate mappings, and saved aggregation recipes. Original numeric values remain unchanged. The underlying cyclic and dihedral variants average semantic probabilities, not logits. Binary forward/reverse cyclic pools share their two physical calls, so identical outputs there are structural. Software checks cover every exported record, comparison arithmetic, shared-call accounting, and JSON export round trips; they are not human task results.
+
+\paragraph{Live installation.}
+The repository supplies native build and pinned-model acquisition commands: \texttt{build\_native.sh}, \texttt{fetch\_native\_model.py}, and \texttt{./run.sh --without-calibration}. Running \texttt{python3 -m demo.server --port 8766} serves the interface at \url{http://127.0.0.1:8766/}. Fresh builds use $T=1$; historical calibration artifacts are bound to their recorded runtime. The tested Mac uses macOS 26.4, Metal, and Accelerate. The 20.4\,GB model requires additional runtime memory; this is not a demonstrated minimum-memory requirement. We distribute source, not model weights or compiled binaries. The static explorer can instead be served from \texttt{docs/} with Python's HTTP server; HTTPS or localhost enables browser hash verification.
 
 \paragraph{Post-hoc LMQL diagnosis.}
 Recomputing the same 12 saved comparisons preserves the three $10^{-5}$ probability-tolerance failures (\texttt{score-01}, \texttt{score-03}, \texttt{score-04}). Maximum Score expectation error is $7.18\times10^{-5}$, within the separate, original $10^{-4}$ typed-value tolerance. All native top-two candidate probability margins exceed 0.9799; matching labels therefore provide no near-boundary test. Candidate softmax over saved LMTP logits reproduces saved LMQL probabilities within $3.64\times10^{-9}$. Recorded native-path logit differences can account for the observed discrepancies; their underlying computational cause remains unisolated. Type, candidate count, and assistant prefix are confounded, so the failures do not identify a Score-specific defect. This analysis adds no inference calls, changes no threshold, and does not convert the failed probability comparisons into passes.

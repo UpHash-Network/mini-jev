@@ -12,7 +12,7 @@ Preview with `python3 -m http.server 8788 --bind 127.0.0.1 --directory docs`.
 
 - Scientific content: `paper/naacl2027/main.tex` and `paper/naacl2027/README.md`,
   numerical evidence frozen at commit `bd025e8b1d14352a440d289c73b00ae445290935`.
-  Current naming and entry copy were updated on 29 September 2026.
+  Current manuscript, reviewer entry, and demonstration were updated on 2 October 2026.
   The separately submitted arXiv preprint is awaiting moderation; the public PDF
   here follows the continuing conference-preparation revision.
 - `assets/LogitTrail_Manuscript.pdf`: byte-identical copy of `paper/naacl2027/NAACL2027_LogitTrail.pdf`, the current renamed conference-preparation manuscript. The Mini Jev manuscript and the submitted arXiv package remain historical artifacts; this is not a replacement arXiv upload.
@@ -34,4 +34,8 @@ the short evidence walkthrough presents its explanation as visible text.
 
 ## Saved evidence explorer (28 September 2026)
 
-`explorer/` adds a comparison screen for the retained presentation-sensitivity and probability-averaging panels. It is a later interface supplement, separate from the September 27 manuscript and submitted arXiv source. It performs no inference. The original frozen ZIP is the input to the deterministic exporter; see [data scope and derivation](explorer/DATA.md) and [interface verification](explorer/README.md).
+`explorer/` adds a comparison screen for the retained presentation-sensitivity and probability-averaging panels. It is included in the October 2 conference-preparation manuscript; the submitted arXiv source remains unchanged. It performs no inference. The original frozen ZIP is the input to the deterministic exporter; see [data scope and derivation](explorer/DATA.md) and [interface verification](explorer/README.md).
+
+## Current demonstration (2 October 2026)
+
+`assets/LogitTrail_Demo_20261002.mp4` contains actual browser interactions with the saved-evidence Explorer and a clearly labeled 16-second excerpt of the earlier local-inference recording. English captions are embedded outside the Explorer viewport; no new inference is claimed. See `publication/revision-20261002/video/` for capture/build scripts, transcript, provenance, and visual verification. The paper figure is a separate unmodified element screenshot of the JCoLA comparison, not a synthetic mockup.

@@ -1,0 +1,62 @@
+{
+  "os": "Darwin",
+  "release": "25.4.0",
+  "architecture": "arm64",
+  "macos": "ProductName:\t\tmacOS\nProductVersion:\t\t26.4\nBuildVersion:\t\t25E246\n",
+  "host_memory_bytes": 68719476736,
+  "host_logical_cpus": 18,
+  "host_physical_cpus": 18,
+  "python_top_level": {
+    "python": "3.10.5 (v3.10.5:f377153967, Jun  6 2022, 12:36:10) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "prefix": "{VENV}",
+    "base_prefix": "/Library/Frameworks/Python.framework/Versions/3.10",
+    "isolated": 1,
+    "ignore_environment": 1,
+    "no_user_site": 1,
+    "enable_user_site": false,
+    "sys_path": [
+      "/Library/Frameworks/Python.framework/Versions/3.10/lib/python310.zip",
+      "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10",
+      "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload",
+      "{VENV}/lib/python3.10/site-packages"
+    ],
+    "installed_distributions": [],
+    "pip_available": false
+  },
+  "node_version": "v23.0.0",
+  "node_scope": "Optional Explorer JavaScript tests; only this installed version was tested.",
+  "environment": {
+    "construction": "Explicit allowlist; PATH retained for executable discovery; HOME and TMPDIR set to fresh scratch directories.",
+    "preserved_variables": [
+      "PATH"
+    ],
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "absent",
+    "PYTHONHOME": "absent",
+    "NODE_PATH": "absent",
+    "LANG": "en_US.UTF-8",
+    "LC_ALL": "en_US.UTF-8",
+    "VIRTUAL_ENV": "{VENV}"
+  },
+  "isolation_boundary": "Verification entry points use -I -B. A separate child-style environment probe intentionally omits -I. Unmodified reanalyze.py does not propagate -I to its child processes. Children use the same fresh no-pip virtual environment, sanitized environment, and its explicit analysis-source cwd for module lookup. The virtual environment excludes system site-packages and user site-packages; no third-party distributions are installed. This is environment isolation, not a network or OS security sandbox.",
+  "python_child_style_environment_probe": {
+    "python": "3.10.5 (v3.10.5:f377153967, Jun  6 2022, 12:36:10) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "prefix": "{VENV}",
+    "base_prefix": "/Library/Frameworks/Python.framework/Versions/3.10",
+    "isolated": 0,
+    "ignore_environment": 0,
+    "no_user_site": 1,
+    "enable_user_site": false,
+    "sys_path": [
+      "",
+      "/Library/Frameworks/Python.framework/Versions/3.10/lib/python310.zip",
+      "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10",
+      "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload",
+      "{VENV}/lib/python3.10/site-packages"
+    ],
+    "installed_distributions": [],
+    "pip_available": false,
+    "scope": "Separate interpreter probe using the same executable and sanitized environment as frozen subprocesses; not instrumentation inside each analyzer."
+  }
+}

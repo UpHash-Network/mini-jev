@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "study_kind": "nonhuman_functional_inspection_audit",
+  "date": "2026-10-02",
+  "freeze_statement": "This protocol is written before executing this audit. Existing Explorer examples and earlier integrity checks are already known; this is not a prospectively blinded scientific experiment.",
+  "objective": "Check whether five concrete inspection tasks expose and preserve identical answers in the actual saved-evidence Explorer computation and a complete formatted-JSON baseline, against an independently implemented reader of the frozen original records.",
+  "archive": {
+    "path": "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip",
+    "sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053"
+  },
+  "population": "All 18 published panels, every retained item and condition. Pair tasks enumerate every unordered pair of distinct conditions within an item and panel. No outcome-based exclusions or added predictions.",
+  "conditions": {
+    "explorer": "Import the published docs/explorer/core.mjs validatePanel, compare, comparisonExport and panelFrequencies functions without modification. Fields directly rendered from saved records are checked as record values, not falsely attributed to these functions.",
+    "formatted_json": "Use precisely the same complete index and complete panel JSON, plus the complete selected comparison export. All probabilities, semantic keys, typed values, references, physical membership, provenance, model metadata, and full-panel summaries remain accessible. This is an information-equivalent JSON presentation, not an intentionally impoverished baseline.",
+    "independent_reference": "Python standard-library reader resolves each ZIP member and one-based JSONL line; task answers are computed from archived semantic probabilities, typed values, source identities and full-panel source rows. It does not import the Explorer exporter or core functions."
+  },
+  "tasks": [
+    {"id": "semantic_comparison", "unit": "every unordered condition pair", "outputs": ["both semantic labels", "label-change flag", "per-semantic-key probability difference", "maximum probability difference", "continuous error or label match against the unchanged reference"]},
+    {"id": "score_expectation_mode", "unit": "every Score condition", "outputs": ["expected stage", "most likely stage", "absolute expectation-mode gap", "unchanged continuous reference"]},
+    {"id": "physical_call_accounting", "unit": "every unordered condition pair", "outputs": ["individual call counts", "intersection of physical source-row identities", "union of physical source-row identities", "same-pool flag"]},
+    {"id": "trace_to_archive", "unit": "every saved condition and every pair export", "outputs": ["original ZIP member and one-based line", "member SHA-256", "original item/model/dataset identity", "exact semantic probabilities and typed value", "complete physical member source definitions in the comparison export"]},
+    {"id": "full_panel_distribution", "unit": "every panel/condition", "outputs": ["all-item label counts", "maximum label share", "number of selected labels", "Score expected-value range and population variance"], "interpretation": "Report distributions without introducing a new threshold for collapse. These are descriptions of the frozen observations, not new model-quality results."}
+  ],
+  "numeric_contract": {
+    "copied_saved_fields": "Exact parsed JSON equality",
+    "counts_labels_source_ids": "Exact equality",
+    "recomputed_arithmetic": "absolute tolerance 1e-12 and relative tolerance 1e-12",
+    "panel_variance": "absolute tolerance 1e-12 and relative tolerance 1e-12"
+  },
+  "negative_controls": "Recheck at least one actual pair with a deliberately false change flag, an incorrect shared-call union, and a false source line; the independent oracle must reject each corrupted task answer. Mutants exist only in memory and never alter source files.",
+  "outputs": ["results.json with task counts and failures", "README.md with commands and scoped interpretation", "complete JSON baseline viewer", "ChainForge current-source scope assessment with pinned upstream URLs"],
+  "prohibited_inferences": ["human success rate", "human task time", "usability superiority", "new inference accuracy", "calibration", "independent scientific replication", "GUI functionality of ChainForge without running its GUI"],
+  "resources": {"new_model_calls": 0, "human_participants": 0, "paid_services": 0}
+}

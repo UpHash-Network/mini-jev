@@ -1,0 +1,26 @@
+test_decimal_diagnostics_are_fixed_and_independent_of_ambient_context (test_evidence_explorer.AlgebraAndFailureTests) ... ok
+test_incomplete_duplicate_or_cross_model_pool_rejected (test_evidence_explorer.AlgebraAndFailureTests) ... ok
+test_output_immutability_and_tamper_detection (test_evidence_explorer.AlgebraAndFailureTests) ... ok
+test_physical_tie_retains_observed_vector_order (test_evidence_explorer.AlgebraAndFailureTests) ... ok
+test_probability_mean_not_mean_logits (test_evidence_explorer.AlgebraAndFailureTests) ... ok
+test_semantic_alignment_not_token_order (test_evidence_explorer.AlgebraAndFailureTests) ... ok
+test_ties_zeros_nulls_and_expected_score (test_evidence_explorer.AlgebraAndFailureTests) ... ok
+test_unpinned_archive_rejected (test_evidence_explorer.AlgebraAndFailureTests) ... ok
+test_actual_binary_orbit_union_two_calls (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_actual_score_expectation_mode_and_continuous_gold (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_actual_semantic_label_swap (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_all_derived_means_members_costs_and_model_scope (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_all_eligible_records_exactly_once_with_complete_sources (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_all_record_semantic_probabilities_values_and_metadata (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_checked_in_export_matches_deterministic_rebuild (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_every_source_hash_and_panel_hash (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_export_bytes_do_not_depend_on_platform_log_last_bits (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_featured_rules_full_population_and_scope (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_full_panel_summaries_include_every_item (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_model_metadata_is_bound_to_runtime_per_study (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+test_no_benchmark_text_or_model_input_fields (test_evidence_explorer.FullSavedEvidenceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 13.940s
+
+OK

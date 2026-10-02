@@ -1,0 +1,17 @@
+{
+  "python": "3.10.5 (v3.10.5:f377153967, Jun  6 2022, 12:36:10) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "prefix": "{VENV}",
+  "base_prefix": "/Library/Frameworks/Python.framework/Versions/3.10",
+  "isolated": 1,
+  "ignore_environment": 1,
+  "no_user_site": 1,
+  "enable_user_site": false,
+  "sys_path": [
+    "/Library/Frameworks/Python.framework/Versions/3.10/lib/python310.zip",
+    "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10",
+    "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/lib-dynload",
+    "{VENV}/lib/python3.10/site-packages"
+  ],
+  "installed_distributions": [],
+  "pip_available": false
+}

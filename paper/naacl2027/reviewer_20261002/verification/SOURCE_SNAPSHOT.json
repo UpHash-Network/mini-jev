@@ -1,0 +1,12 @@
+{
+  "commit": "5cca79ad6284e441ccb59931ad2e1bfd5b1aa253",
+  "snapshot_method": "git archive HEAD of tracked files; working-tree/untracked files excluded",
+  "archive_sha256": "e0cc5980398ea44d491ce5e6540afa564bfaca33a511edff795de1284cab4104",
+  "archive_bytes": 186296320,
+  "extracted_files": 522,
+  "extracted_sizes": {
+    "regular_files": 522,
+    "logical_bytes": 185843522,
+    "allocated_bytes_from_st_blocks": 187023360
+  }
+}

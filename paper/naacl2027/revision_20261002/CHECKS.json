@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-02",
+  "status": "pass",
+  "pdf_pages": 10,
+  "main_including_limitations_acknowledgements_pages": [
+    1,
+    6
+  ],
+  "ethics_references_pages": [
+    7,
+    8
+  ],
+  "appendix_pages": [
+    9,
+    10
+  ],
+  "visual_review": "All ten final pages rendered at1500px and inspected. No clipping, overlap, undefined citations or overfull boxes. Figure1 actual binary comparison screenshot; Appendix within2pages.",
+  "unchanged_tabular_blocks": 4,
+  "protected_sha256": {
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "paper/arxiv/source/main.tex": "74f8f7c64ae4a1a057cd49c2921a32eae51377cc9185a13138c436fe085a733a",
+    "paper/arxiv/mini-jev-arxiv-source-20260925.zip": "0fc7ea4ffc83f80bef88405e6f3a9f6cd57a56db1224ac8e810db7dd09768d1d"
+  },
+  "video_seconds": 127.08,
+  "new_model_calls": 0,
+  "human_participants": 0,
+  "conference_submission": "not submitted; portal scheduled to open 2026-11-01",
+  "scope": "NAACL preparation revision, not an arXiv replacement or acceptance claim"
+}

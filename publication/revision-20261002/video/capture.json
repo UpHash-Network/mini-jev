@@ -1,0 +1,64 @@
+{
+  "viewport": [
+    1280,
+    640
+  ],
+  "events": [
+    {
+      "name": "overview",
+      "seconds": 0.09159900000000004
+    },
+    {
+      "name": "order-comparison",
+      "seconds": 7.194379541
+    },
+    {
+      "name": "order-probabilities",
+      "seconds": 16.264224833
+    },
+    {
+      "name": "averaging-comparison",
+      "seconds": 25.329988790999998
+    },
+    {
+      "name": "averaging-reference",
+      "seconds": 35.376877416000006
+    },
+    {
+      "name": "source-trace",
+      "seconds": 43.438862
+    },
+    {
+      "name": "export",
+      "seconds": 53.528393375
+    },
+    {
+      "name": "score",
+      "seconds": 58.609785
+    },
+    {
+      "name": "collapse-comparison",
+      "seconds": 68.71271762500001
+    },
+    {
+      "name": "full-panel",
+      "seconds": 74.725178875
+    },
+    {
+      "name": "next-item-same-panel",
+      "seconds": 84.810969208
+    },
+    {
+      "name": "scope",
+      "seconds": 90.867072041
+    },
+    {
+      "name": "end",
+      "seconds": 96.895277791
+    }
+  ],
+  "errors": [],
+  "video": "page@af14047f7ebbe3cb0a39c4766b9078ed.webm",
+  "download": "comparison.json",
+  "scope": "Real browser interactions with saved records; no new inference; illustrative outcome-selected examples, not a user study."
+}

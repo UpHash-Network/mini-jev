@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "files_scanned": 580,
+  "bytes_scanned": 192330715,
+  "findings": [],
+  "scope": "Static release hygiene only. Not a comprehensive secret detector, legal review, or model-quality test.",
+  "scope_note": "Scanned explicit staged public tree, excluding unrelated untracked/private research and scratch files. Transcript whitespace cleanup and this receipt are later nonsemantic additions.",
+  "public_release_tests": "11 passed",
+  "git_diff_check": "pass after transcript whitespace cleanup"
+}
