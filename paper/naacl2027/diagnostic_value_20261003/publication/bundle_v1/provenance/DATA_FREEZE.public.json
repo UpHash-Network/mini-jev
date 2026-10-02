@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-02T16:35:45.418070+00:00",
+  "stage": "before_selecting_IDs_and_before_any_confirmation_model_inference",
+  "n_items": 240,
+  "eligible_items": 517,
+  "salt": "logittrail-diagnostic-confirmation-20261003-v1:",
+  "selection_uses_gold_or_predictions": false,
+  "input_sha256": {
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/EXCLUSION_FREEZE.json": "fdd334c5e8b93b9ce1fa457114fc7c9d7ff3feebfb1163b7cc671fbdf062a4ec",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/JCQA_UNUSED_INVENTORY.json": "d2dc7020553933ebc65cd14de32161c7960af289ba317a32c3278a547d3af645",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/SUPPLEMENTARY_MENTIONS.json": "a6bfe872d28d01d44558cd042b9fa952d578d2c619c411b42109f9fe36741f7f",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/supplement_inventory.py": "e0ca8c1fdf8b405c458cb27e22af1fbdb152ec58a71e360534a238d8e6769717",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/audit_v2/AUDIT.json": "7e3f69dbb5da5d77525eb0748405917094d6d495fd6059ad48adfaba55961c9b",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/audit_v2/CANDIDATE_INVENTORY.json": "b50cc5558b400868d8837f83af757c1833d6953ec641d0937fc8249a4d2130d9",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/audit_v2/HISTORY_INVENTORY.json": "fa638322ce4c7fcdb546ffabd6d89e7b2e8c108fb6a9eee2a7df5928ce440da0",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/audit_v2/REPRODUCE.json": "7025af31f86009750c19d17f338f7c95a96b371e4a09f2090c5916fb1f705ac1",
+    "{REPOSITORY}/paper/jnlp/equal_call_v1/SELECTION.json": "3a92a39d508c502deb0a246c62bb98d53eb3a25f3d1ca981ee3f4e54c70e5ae8",
+    "{REPOSITORY}/paper/jnlp/score_controls_v1/SELECTION.json": "b35f637054ed9bae337c8277abc24e3064c91b1cf7decf2e26b015f877dab96a",
+    "{WORKSPACE}/work/paper-external-expanded/raw/LICENSE-JGLUE.txt": "3b2890eacd851373001c4a14623458e3adaf1b1967939aa9c38a318e28d61c00",
+    "{WORKSPACE}/work/paper-external-expanded/raw/LICENSE-JCoLA.txt": "5e436ff8ffbb77d8607220e9bce20c8915d860010feeb6c1ebef5a85688e9b39",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/PROTOCOL.json": "d8c434f89800266b27749c9a59bff032eaf693978aa410cdc268952a125c948f",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/select_data.py": "acee3936132671482233e6852f59ab52bc6692d3e1698001b818127e279f30a4",
+    "{WORKSPACE}/work/paper-external-expanded/raw/jcqa-valid.json": "0d8d76f3bfa0d174866939882faccdd01fbc2bcd5a76c43748ba0c40a7b3b8d4",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/PROVENANCE.json": "041e4cc06c27465188ccd6010277517fb8295e73b7828e0baa39ae4aad6c4bbe",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/native_engine.py": "da45591b932a4cf9576f7f45ad9bd8f0fb817457b67ac8147b1f1562edbc83e9",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/native_model.json": "506286b90b296c7ae1979794d29e2993e9ce9eabc821ccd07e9b86b0a7c09c27",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/__init__.py": "9e770c30e52d018d5a17a8f2cc1bb773446743f9721bb700f999bd8f08b898e0",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/external_expanded/PROTOCOL.json": "8378564aa64f8b1124049e00d78f27b189f80decef3d0763349076e47391fa31",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/external_expanded/__init__.py": "9e770c30e52d018d5a17a8f2cc1bb773446743f9721bb700f999bd8f08b898e0",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/external_expanded/prepare.py": "8eaeed29a25369abfb2bc4bc95b0e148300856be420eeb00b4bb818155bae9fa",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/journal_robustness/__init__.py": "9e770c30e52d018d5a17a8f2cc1bb773446743f9721bb700f999bd8f08b898e0",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/journal_robustness/conditions.py": "c25265f1daafff5e9b1fd2cddf9ee36460951841a6ca2a24dcf8c1e6997301c6",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/journal_robustness/cross_model/__init__.py": "9e770c30e52d018d5a17a8f2cc1bb773446743f9721bb700f999bd8f08b898e0",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/journal_robustness/cross_model/engine.py": "e26f56fc85312c5d6efeb34b7a1e8baaf9297e8457646044fe61c41225ed2321",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/journal_robustness/run.py": "2734fbf9f4340fa94bee74a71071e347e7791dd2c0a131fd7932b8ded1e20ee7"
+  },
+  "raw_source": {
+    "file": "jcqa-valid.json",
+    "dataset": "JCommonsenseQA",
+    "split": "valid",
+    "sample_n": 200,
+    "id_field": "q_id",
+    "url": "https://raw.githubusercontent.com/yahoojapan/JGLUE/6f071c09316baae89c3d083a90985b4b1cb9968c/datasets/jcommonsenseqa-v1.3/valid-v1.3.json",
+    "bytes": 235633,
+    "sha256": "0d8d76f3bfa0d174866939882faccdd01fbc2bcd5a76c43748ba0c40a7b3b8d4"
+  },
+  "licenses": {
+    "LICENSE-JGLUE.txt": {
+      "file": "LICENSE-JGLUE.txt",
+      "url": "https://raw.githubusercontent.com/yahoojapan/JGLUE/6f071c09316baae89c3d083a90985b4b1cb9968c/LICENSE",
+      "bytes": 20138,
+      "sha256": "3b2890eacd851373001c4a14623458e3adaf1b1967939aa9c38a318e28d61c00"
+    },
+    "LICENSE-JCoLA.txt": {
+      "file": "LICENSE-JCoLA.txt",
+      "url": "https://raw.githubusercontent.com/osekilab/JCoLA/736d9eef3af04bb17e4cf59adf01325973234ff9/LICENSE",
+      "bytes": 20137,
+      "sha256": "5e436ff8ffbb77d8607220e9bce20c8915d860010feeb6c1ebef5a85688e9b39"
+    }
+  },
+  "model_calls": 0,
+  "registration": "Local timestamped freeze only; not independent public preregistration."
+}

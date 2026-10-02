@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-02T16:36:24.752743+00:00",
+  "reviewer": "independent subagent /root/naacl_lmql_comparison",
+  "verdict": "No unresolved blocking finding in reviewed analysis source at recorded hashes; ready for pre-inference source freeze.",
+  "scope": "Read-only source/protocol review and synthetic arithmetic tests. No confirmation outcomes reviewed, no inference, no selection or model/service launch by reviewer.",
+  "reviewed_source_sha256": {
+    "paper/naacl2027/diagnostic_value_20261003/confirmation/PROTOCOL.json": "d8c434f89800266b27749c9a59bff032eaf693978aa410cdc268952a125c948f",
+    "paper/naacl2027/diagnostic_value_20261003/confirmation/analyze.py": "28b088b027c916d7004382fa19691d52e8762ae18456c8fb1ba21b058492b06f",
+    "paper/naacl2027/diagnostic_value_20261003/confirmation/test_analysis.py": "31aa992cced1319d7d24649a32b7fe4b2780c6ff438b0df8829067e5266229f5",
+    "paper/naacl2027/diagnostic_value_20261003/confirmation/run.py": "25ac2fb08495fc18e64a7a160dddb0924dd31cb0ab9f693bb9080b6d5f40c747",
+    "paper/naacl2027/diagnostic_value_20261003/exploratory/analyze.py": "49c34d963c0ddff94a9e8d266c9ba0d5d6a738b777955b638df2554cb4c06e46",
+    "paper/naacl2027/diagnostic_value_20261003/exploratory/SPECIFICATION.json": "983d04ebe7cbb3aea0371da9f8dc0077a11987eb566990aefca3eeb3d8770152"
+  },
+  "closed_findings": [
+    {
+      "id": "P1-freeze-and-schedule-binding",
+      "finding": "Originally analysis did not bind each measurement to the pre-inference frozen schedule or attempt freeze.",
+      "resolution": "Main checks canonical SCHEDULE hash, every expected row metadata field and physical index, ATTEMPT.freeze_sha256, complete receipt/prediction-file hash, identical model panel identities, and frozen analyzer/protocol/helper hashes."
+    },
+    {
+      "id": "P2-probability-reconstruction",
+      "finding": "Originally stored probabilities were not reconstructed from raw candidate logits.",
+      "resolution": "Each physical row must have canonical candidate_keys, five finite logits, temperature exactly 1, and probabilities within 1e-12 of max-shifted T=1 softmax; normalization and semantic label are checked."
+    }
+  ],
+  "reviewed_properties": {
+    "gate_information": "Features read replica0 or replicas0+1 probabilities only. Allocation reads scores/IDs, never gold, later replicas or full-mean label. Full-mean outcomes are consulted only after fixed allocation.",
+    "paid_cost": "First policy starts with one paid member; pair policies with two. Selected questions complete five total. Unique physical request membership, input tokens and recorded serial latency are summed; no free probe.",
+    "exact_budgets": "For N=240 and budgets2,2.5,3,4,5: pair selected0,40,80,160,240; first selected60,90,120,180,240. Infeasible fractional allocations fail rather than round.",
+    "A_primary": "Primary checkpoint qwen2.5-1.5b; primary target pair_mean_label_error; primary contrast pair_entropy_tv_rank minus pair_mean_entropy; primary metric tie-aware threshold AP. AUROC is secondary, and high score means suspected error.",
+    "A_intervals": "2000 paired whole-question bootstrap draws using fixed outcome-free cohort ranks. Percentile95 intervals are descriptive conditional estimates, with undefined draws counted. No multiplicity-adjusted confirmatory significance or winner claim.",
+    "B_primary": "Primary checkpoint qwen2.5-1.5b; pair_entropy_tv_rank minus pair_mean_entropy accuracy at 720 paid logical calls (3N). All budgets and policies retained.",
+    "B_intervals": "2000 paired whole-question bootstrap draws of fixed chosen policy predictions; allocation is not refit in each resample. Inference is conditional on realized batch allocation, not overall policy optimality.",
+    "runtime_interpretation": "Retrospective batch replay of a measured1200-call pool per model. Recorded serial latency sums are bookkeeping, not measured online wall-time or causal speedup.",
+    "source_freeze": "Runner source_hashes includes confirmation analyzer/protocol/tests and exploratory analyzer/SPECIFICATION; analyzer requires actual pre-inference freeze entries for protocol, analyzer and metric helper.",
+    "freshness_limits": "517 inventory candidates are project-unused after ID and exact-question-text exclusions. This does not establish absence from pretraining or semantic independence."
+  },
+  "executed_checks": {
+    "analysis_unittest": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 <clean-runtime-python> -m unittest -v test_analysis",
+      "working_directory": "paper/naacl2027/diagnostic_value_20261003/confirmation",
+      "tests": 10,
+      "passed": true,
+      "exit_code": 0
+    },
+    "independent_metric_reference": {
+      "receipt": "paper/naacl2027/diagnostic_value_20261003/data_inventory/METRIC_INDEPENDENT_CHECKS.json",
+      "sha256": "49a8f4a3a9a991a14a42e1941eb9edb3c6af726abc34f23d7f5f25afb2e85eb9",
+      "combinations": 1296,
+      "passed": true,
+      "absolute_tolerance": 1e-14
+    }
+  },
+  "boundaries": [
+    "Actual study FREEZE and completed inference artifacts must still pass the runtime analyzer.",
+    "No guarantee against implementation defects outside the reviewed scope.",
+    "Any change to recorded source requires a new audit or explicit delta review before inference."
+  ],
+  "model_calls": 0,
+  "models_loaded": 0,
+  "external_requests": 0
+}

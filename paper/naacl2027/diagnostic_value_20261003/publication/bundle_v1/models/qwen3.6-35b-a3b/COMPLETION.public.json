@@ -1,0 +1,23 @@
+{
+  "model_key": "qwen3.6-35b-a3b",
+  "started_at": "2026-10-02T16:40:47.717377+00:00",
+  "finished_at": "2026-10-02T16:45:19.378734+00:00",
+  "status": "completed",
+  "expected_requests": 1200,
+  "recorded_requests": 1200,
+  "failed_requests": 0,
+  "fatal_error_type": null,
+  "last_observed_cumulative_call_count": 1203,
+  "actual_calls_including_gate_and_warmup": 1203,
+  "expected_excluded_calls": 3,
+  "model_closed_before_receipt": true,
+  "source_unchanged": true,
+  "file_sha256": {
+    "RUNTIME.json": "c39b0152e1ad937b49d9977f3fc4507d011dfaca9916a639832c7838c0fa4a50",
+    "predictions.jsonl": "6d7e452d7f175cf1f87dac42ef581bae252faae9235feb51a5d7c419e2db53f5",
+    "ATTEMPT.json": "7d547e47d481323df218f92a7693e926ead0d63e25dd1770e9204aa3022cc823",
+    "warmup.jsonl": "1c9f274276966020873c13ac34f537233387fc4584c77c3ef52f4b297dc2c3e6"
+  },
+  "failure_policy": "No retry, replacement, overwrite or implicit resume.",
+  "counter_caveat": "A failed unacknowledged native invocation might not be observable in the last successful counter."
+}

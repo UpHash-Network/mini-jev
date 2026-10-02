@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "status": "exploratory_analysis_specified_before_this_extraction; earlier_aggregate_results_already_known",
+  "created_utc": "2026-10-02T16:17:11.342281+00:00",
+  "timestamp_note": "Local clock timestamp; no independent preregistration or blindness.",
+  "source": "paper/jnlp/equal_call_v1/study_v1/results/{model}/predictions.jsonl",
+  "models": [
+    "qwen2.5-1.5b",
+    "qwen3.6-35b-a3b"
+  ],
+  "expected_items_per_model": 200,
+  "selection": "All existing equal_call_v1 items; fixed_cyclic method, canonical anchor, replicate 0 and replicate 1 only. No outcome-based selection.",
+  "target": {
+    "primary": "pair_mean_label_error: semantic argmax of the first two probability vectors averaged, versus gold",
+    "secondary": "first_label_error: semantic argmax of replicate 0 versus gold"
+  },
+  "scores": {
+    "first_maxprob_uncertainty": "1 - max(p_first), 1 paid call",
+    "first_margin_uncertainty": "1 - (largest(p_first) - second_largest(p_first)), 1 paid call",
+    "first_entropy": "-sum(p*ln(p))/ln(5), 1 paid call",
+    "order_flip": "1 if first and second semantic argmax differ else 0, 2 paid calls",
+    "order_tv": "0.5 * sum(abs(p_first - p_second)), 2 paid calls",
+    "pair_mean_entropy": "Normalized entropy of (p_first+p_second)/2, 2 paid calls",
+    "first_entropy_tv_rank": "Mean of outcome-free cohort midranks of first_entropy and order_tv, 2 paid calls",
+    "pair_entropy_tv_rank": "Mean of outcome-free cohort midranks of pair_mean_entropy and order_tv, 2 paid calls"
+  },
+  "rank_note": "Midrank = (number lower + 0.5*number tied)/n; computed separately within each model using no gold. Cohort ranking is exploratory and is not a deployable per-item risk predictor. Bootstrap holds these fitted unlabeled cohort ranks fixed.",
+  "metrics": [
+    "error_count",
+    "error_prevalence",
+    "tie-aware average precision",
+    "AUROC",
+    "errors_found_at_nominal_top_20_with_all_boundary_ties"
+  ],
+  "average_precision": "At each distinct descending score threshold, delta_recall * precision; all exact-score ties enter together. Constant-score AP equals error prevalence. AP/AUROC undefined if no positive; AUROC also undefined if no negative.",
+  "paired_differences": [
+    [
+      "first_entropy_tv_rank",
+      "first_entropy"
+    ],
+    [
+      "first_entropy_tv_rank",
+      "first_maxprob_uncertainty"
+    ],
+    [
+      "first_entropy_tv_rank",
+      "first_margin_uncertainty"
+    ],
+    [
+      "pair_entropy_tv_rank",
+      "pair_mean_entropy"
+    ]
+  ],
+  "uncertainty": "2000 paired whole-question bootstrap resamples per model, seed 2026100301; same sampled IDs for every score. Two-sided 95% percentile intervals; report invalid resamples. Unadjusted exploratory intervals conditional on observed cohort ranks; no significance/winner declaration or power claim.",
+  "cost": "First-only features may read only replicate 0; all other features pay for replicate 0 and replicate 1. Report logical calls, input-token sum, and measured serial latency sum. Never count diagnostic second call as free. These are saved-record replay costs, not newly measured serving performance. Pair-mean target itself requires two prediction calls; evaluating a first-only score against that target does not turn the predictor into a one-call system.",
+  "scope": "No new inference, training, human performance, hidden holdout, or external replication. Existing results have been inspected. Public development data do not establish absence of pretraining contamination. Both model results, all prespecified scores and contrasts are retained. The 400 model-item observations are 200 shared questions, not 400 independent questions.",
+  "primary_contrast": [
+    "pair_entropy_tv_rank",
+    "pair_mean_entropy"
+  ],
+  "primary_model": "qwen2.5-1.5b"
+}

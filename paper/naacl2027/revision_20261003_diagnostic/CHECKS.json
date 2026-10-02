@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-02T17:00:41.199776+00:00",
+  "pdf_sha256": "f6e834395f732ece5b7d1f05025bf291b4c9dd1bcdc2ce91aeff728b58ba4364",
+  "main_tex_sha256": "8d05c10f9ffb81dab0d8d807d797b20da682555564e1bb47a5947c255e6d6085",
+  "pages": 10,
+  "body_and_acknowledgements_end_page": 6,
+  "ethics_and_references_pages": [
+    7,
+    8
+  ],
+  "appendix_pages": [
+    9,
+    10
+  ],
+  "overfull_boxes": 0,
+  "unresolved_references": 0,
+  "public_pdf_identical": true,
+  "new_measured_calls": 2400,
+  "shared_quality_items": 240,
+  "models": 2,
+  "failed_measured_calls": 0,
+  "excluded_synthetic_calls": 30,
+  "new_human_participants": 0,
+  "independent_machine_inference": false,
+  "public_cpu_replay_exact_equal": true,
+  "independent_numerical_review": "NUMERICAL_REVIEW.json",
+  "content_review": "CLAIM_REVIEW.json",
+  "post_content_review_change": "Removed one redundant arithmetic-versus-human-performance sentence in Appendix A to remove a single orphaned line. No result or substantive claim changed. Final PDF visual review follows this edit.",
+  "visual_review": "PDF_REVIEW_FINAL.json",
+  "protected_artifact_sha256": {
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "paper/arxiv/source/main.tex": "74f8f7c64ae4a1a057cd49c2921a32eae51377cc9185a13138c436fe085a733a",
+    "paper/arxiv/mini-jev-arxiv-source-20260925.zip": "0fc7ea4ffc83f80bef88405e6f3a9f6cd57a56db1224ac8e810db7dd09768d1d"
+  },
+  "scope": "No error-detection or same-budget quality advantage established for the primary entropy-plus-TV comparison. Browser importer is a software capability; no usability benefit established.",
+  "public_hygiene_scan": {
+    "source_tree": {
+      "schema_version": 1,
+      "passed": true,
+      "files_scanned": 773,
+      "bytes_scanned": 240509021,
+      "findings": [],
+      "scope": "Static release hygiene only. Not a comprehensive secret detector, legal review, or model-quality test."
+    },
+    "observation_folder": {
+      "schema_version": 1,
+      "passed": true,
+      "files_scanned": 6,
+      "bytes_scanned": 4204822,
+      "findings": [],
+      "scope": "Static release hygiene only. Not a comprehensive secret detector, legal review, or model-quality test."
+    }
+  },
+  "fresh_index_snapshot_replay": {
+    "passed": true,
+    "exact_equal": true,
+    "max_absolute_difference": 0.0,
+    "model_item_records": 480,
+    "new_model_calls": 0
+  }
+}

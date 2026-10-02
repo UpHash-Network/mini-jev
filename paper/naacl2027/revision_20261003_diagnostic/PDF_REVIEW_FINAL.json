@@ -1,0 +1,45 @@
+{
+  "reviewed_pdf": "work/diagnostic-value-20261003/pdf-build/main.pdf",
+  "sha256": "f6e834395f732ece5b7d1f05025bf291b4c9dd1bcdc2ce91aeff728b58ba4364",
+  "pages": 10,
+  "status": "pass",
+  "coverage": "All ten pages covered by independent visual inspection plus render-hash comparison. Changed pages 5, 9 and 10 re-inspected; other seven pages are byte-identical to previously inspected renders.",
+  "resolved_findings": [
+    {
+      "id": "appendix-table-reference",
+      "result": "Page 5 now reads Appendix A, Table 5."
+    },
+    {
+      "id": "one-line-column-widow",
+      "result": "The isolated right-column continuation line on page 9 is gone; Live installation now starts the right column. The subsequent Matched saved-evidence workflow heading has three text lines before the page break."
+    }
+  ],
+  "clarification": "Page 10 now explicitly specifies 11 primary-target 35B AP resamples without errors.",
+  "layout": {
+    "main_text_limitations_acknowledgements_pages": "1-6",
+    "ethics_page": 7,
+    "references_pages": "7-8",
+    "appendix_pages": "9-10",
+    "figure_1_edges": "pass",
+    "all_five_tables": "pass",
+    "body_text_clipping_or_overlap": "none found",
+    "unresolved_double_question_marks": 0,
+    "unicode_replacement_characters": 0,
+    "overfull_box_warnings": 0
+  },
+  "visible_numbers": {
+    "primary_1_5b_ap_difference": -0.024,
+    "primary_1_5b_interval": [
+      -0.092,
+      0.067
+    ],
+    "native_ap_difference": -0.102,
+    "native_interval": [
+      -0.464,
+      0.124
+    ],
+    "primary_720_call_correctness": "197/240 for 1.5B and 235/240 for 35B; equality across the two stated policies is described in the text"
+  },
+  "outstanding_visual_findings": [],
+  "scope_limit": "Visual and reference-label audit; experimental numbers and bibliography were not independently revalidated in this audit."
+}

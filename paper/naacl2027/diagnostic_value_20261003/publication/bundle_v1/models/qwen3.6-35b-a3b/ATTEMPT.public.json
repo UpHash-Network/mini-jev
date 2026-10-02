@@ -1,0 +1,7 @@
+{
+  "model_key": "qwen3.6-35b-a3b",
+  "started_at": "2026-10-02T16:40:47.717377+00:00",
+  "status": "started_not_completed",
+  "expected_requests": 1200,
+  "freeze_sha256": "9ff28049d202cca1d9f65778c63ab16fa1b8f6ebbd2a4d4c63a6edb780a51ee6"
+}

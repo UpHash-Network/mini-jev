@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-02T16:58:08.945917+00:00",
+  "status": "pass",
+  "review_type": "Bounded content/claim consistency review; no manuscript edits, inference, or PDF-layout review.",
+  "reviewer": "Separate task agent; previously implemented the local importer and competitor adapter, so this is not external or human validation.",
+  "base_head": "b91dc5a664edb5406ad5689b84450168c0cc64f1",
+  "reviewed_sha256": {
+    "paper/naacl2027/main.tex": "8d05c10f9ffb81dab0d8d807d797b20da682555564e1bb47a5947c255e6d6085",
+    "paper/naacl2027/diagnostic_value_20261003/publication/REPORT.ja.md": "ebbcda6fcc8c246e2663feb01fa36aab70feda3651c56b4d95aa9f983dbe0d5c",
+    "paper/naacl2027/diagnostic_value_20261003/publication/bundle_v1/reference/RESULTS.public.json": "826ecd289a119a964a5829358418c16ea5ccc7020ad2f06762e8d1f780c6777d",
+    "paper/naacl2027/diagnostic_value_20261003/publication/bundle_v1/frozen/confirmation/PROTOCOL.json": "d8c434f89800266b27749c9a59bff032eaf693978aa410cdc268952a125c948f",
+    "paper/naacl2027/diagnostic_value_20261003/publication/bundle_v1/frozen/confirmation/analyze.py": "28b088b027c916d7004382fa19691d52e8762ae18456c8fb1ba21b058492b06f",
+    "docs/explorer/import/core.mjs": "59e24d92a921dd98896c446387d52f74de3bb2a356f91bb9a450347e800dc178",
+    "docs/explorer/import/README.md": "6081892c80f3faf718f78ec183ce89b805bd2ed4a88ed003af65561f183a00da"
+  },
+  "checks": [
+    {
+      "check": "sample_and_call_accounting",
+      "status": "pass",
+      "evidence": {
+        "shared_questions": 240,
+        "models": 2,
+        "measured_per_model": 1200,
+        "measured_total": 2400,
+        "excluded_checks_and_warmups": 30,
+        "total_counter_including_excluded": 2430,
+        "not_independent_examples": 2400
+      }
+    },
+    {
+      "check": "primary_AP_and_primary_B_claims",
+      "status": "pass",
+      "evidence": {
+        "qwen2.5-1.5b": {
+          "primary_pair_errors": 52,
+          "primary_entropy_ap": 0.4426118448885583,
+          "primary_entropy_tv_ap": 0.41894620688456397,
+          "primary_ap_contrast": {
+            "difference": -0.02366563800399435,
+            "ci95": {
+              "low": -0.09186848666049376,
+              "high": 0.06730440059918749,
+              "valid_resamples": 2000,
+              "invalid_resamples": 0
+            }
+          },
+          "primary_budget_calls": 720,
+          "pair_policy_correct": 197,
+          "entropy_policy_correct": 197,
+          "first_entropy_reference_correct": 200,
+          "per_item_primary_correctness_identical": true,
+          "primary_accuracy_difference": 0.0,
+          "primary_accuracy_interval": [
+            0.0,
+            0.0
+          ],
+          "primary_selected_items": 80,
+          "first_entropy_selected_items": 120,
+          "secondary_target_undefined_ap_resamples": 0
+        },
+        "qwen3.6-35b-a3b": {
+          "primary_pair_errors": 5,
+          "primary_entropy_ap": 0.21208969024503008,
+          "primary_entropy_tv_ap": 0.11047967424477015,
+          "primary_ap_contrast": {
+            "difference": -0.10161001600025993,
+            "ci95": {
+              "low": -0.464499998251849,
+              "high": 0.12440559440559439,
+              "valid_resamples": 1989,
+              "invalid_resamples": 11
+            }
+          },
+          "primary_budget_calls": 720,
+          "pair_policy_correct": 235,
+          "entropy_policy_correct": 235,
+          "first_entropy_reference_correct": 235,
+          "per_item_primary_correctness_identical": true,
+          "primary_accuracy_difference": 0.0,
+          "primary_accuracy_interval": [
+            0.0,
+            0.0
+          ],
+          "primary_selected_items": 80,
+          "first_entropy_selected_items": 120,
+          "secondary_target_undefined_ap_resamples": 17
+        }
+      }
+    },
+    {
+      "check": "Japanese_report_all_budget_rows",
+      "status": "pass",
+      "evidence": {
+        "rows_verified": 40,
+        "policies_per_model": 4,
+        "budgets_per_policy": 5,
+        "values": "selected count, correct count, calls, token sum, rounded recorded latency sum"
+      }
+    },
+    {
+      "check": "undefined_bootstrap_scope",
+      "status": "pass",
+      "evidence": {
+        "primary_target_35B_invalid": 11,
+        "secondary_target_35B_invalid": 17,
+        "manuscript_scope_explicit": true
+      }
+    },
+    {
+      "check": "inference_and_cost_scope",
+      "status": "pass",
+      "evidence": {
+        "conditional_bootstrap": "Fixed observed cohort ranks and allocation; no population equivalence claim from [0,0].",
+        "all_pool_calls": "Collection pays 5 calls per item; 720-call policy uses a subset.",
+        "gate": "Frozen source allocation uses only allowed feature scores and IDs; reference and future members determine evaluation only.",
+        "negative_retention": "Eight scores, two targets, four policies, five budgets retained. Primary 1.5B result not replaced by favorable secondary findings."
+      }
+    },
+    {
+      "check": "Rao_related_work_scope",
+      "status": "pass",
+      "evidence": {
+        "source": "https://arxiv.org/html/2609.29769v2",
+        "basis": "Sections 6 and Appendix K describe confidence-based Jev-first cascades with oracle/cross-fitted thresholds; manuscript distinguishes its within-checkpoint batch replay instead of claiming reproduction."
+      }
+    },
+    {
+      "check": "local_import_contract",
+      "status": "pass",
+      "evidence": {
+        "physical_only": true,
+        "logits_or_declared_full_probabilities": true,
+        "unknown_reference_and_latency": "Explicitly retained as unknown",
+        "source_authenticity": "Not verified",
+        "derived_member_fixture": "Not accepted by importer; saved explorer and competitor custom recipe reconstruction remain distinct",
+        "validation_scope": "Synthetic and one hash-selected archived item are software compatibility checks, not user benefit."
+      }
+    },
+    {
+      "check": "historical_and_new_packages",
+      "status": "pass",
+      "evidence": {
+        "historical_measured_requests": 26050,
+        "diagnostic_measured_requests": 2400,
+        "scope": "Historical frozen ZIP remains unchanged; the later diagnostic replay is linked as a separate package. No human study or independent inference replication is claimed."
+      }
+    }
+  ],
+  "closed_findings": [
+    {
+      "id": "undefined_AP_target_scope",
+      "initial_wording": "11 native AP resamples",
+      "finding": "The 11 undefined resamples concern the 35B primary target; the retained secondary target has 17.",
+      "resolution": "Manuscript now explicitly says 11 primary-target 35B AP resamples.",
+      "status": "resolved"
+    }
+  ],
+  "blocking_findings": [],
+  "limitations": [
+    "Numeric assertions were cross-checked against the public result, completion receipts, retained policy outcomes and frozen source; this receipt is not a fresh full bootstrap rerun.",
+    "Original private-byte authenticity and model-training contamination cannot be established from public hash witnesses.",
+    "CFP/page-layout compliance is outside this bounded review and is being checked separately.",
+    "No estimate of user efficiency, general routing optimality, cross-machine replication, or acceptance probability follows from this audit."
+  ]
+}

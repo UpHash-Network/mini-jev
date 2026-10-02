@@ -1,0 +1,24 @@
+{
+  "model_key": "qwen2.5-1.5b",
+  "started_at": "2026-10-02T16:36:42.456306+00:00",
+  "finished_at": "2026-10-02T16:40:03.745333+00:00",
+  "status": "completed",
+  "expected_requests": 1200,
+  "recorded_requests": 1200,
+  "failed_requests": 0,
+  "fatal_error_type": null,
+  "last_observed_cumulative_call_count": 1227,
+  "actual_calls_including_gate_and_warmup": 1227,
+  "expected_excluded_calls": 27,
+  "model_closed_before_receipt": true,
+  "source_unchanged": true,
+  "file_sha256": {
+    "RUNTIME.json": "ea9dbc9b96d22d6f82809b455e79d631fb25e71843ebbf046f3738824a19ed3f",
+    "predictions.jsonl": "b1531f01c015c04338594f28aded66e046013aaa35958a9f23f6808036efe7a4",
+    "PARITY_GATE.json": "e42bc2c02b8c29d25cc19eb478f98799cf28b9c19919728a89613f0bbcdda094",
+    "ATTEMPT.json": "bd35e8a7597aa743152de32b4a84192c208fd118656798649c636980ae46f874",
+    "warmup.jsonl": "474ab9571ce1f9c07e98a72abde65ac616953ea916ecb05978ecb3cd9a3de84e"
+  },
+  "failure_policy": "No retry, replacement, overwrite or implicit resume.",
+  "counter_caveat": "A failed unacknowledged native invocation might not be observable in the last successful counter."
+}

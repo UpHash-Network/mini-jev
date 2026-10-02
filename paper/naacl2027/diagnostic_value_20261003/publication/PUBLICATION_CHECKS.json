@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-10-02T16:48:52.028505+00:00",
+  "status": "portable replay passed; original frozen inputs unchanged",
+  "bundle": "bundle_v1",
+  "bundle_manifest_sha256": "3f5bae6afbc0c9517bcc60e16e7a6df046f63bcb39a76cacf627000f83e2ae9c",
+  "public_files_excluding_manifest": 18,
+  "public_bundle_bytes": 9375317,
+  "prediction_rows": {
+    "qwen2.5-1.5b": 1200,
+    "qwen3.6-35b-a3b": 1200
+  },
+  "shared_questions": 240,
+  "model_item_records": 480,
+  "original_results_sha256": "3a7ff8694f90d201a37484ee08d27cfe8b8b929759fe1ff07326d418b19416c7",
+  "replay_validation_sha256": "e7b6267b67fa7a3b7e7ef8c24235571f2fc5cb848e6bc6c5d7349db1971dbd9f",
+  "comparison": {
+    "passed": true,
+    "exact_equal": true,
+    "absolute_float_tolerance": 1e-12,
+    "max_absolute_difference": 0.0
+  },
+  "tests": {
+    "count": 8,
+    "passed": true,
+    "scope": "privacy path substitution, prediction allowlist, structural/numeric mismatch rejection, real pending bundle integrity, pending result refusal, tampered bytes and model closure rejection"
+  },
+  "privacy": {
+    "private_user_paths_found": false,
+    "prediction_original_token_id_fields_found": false,
+    "raw_question_or_criteria_or_prompt_fields_found": false,
+    "omitted_field_names_remain_as_manifest_documentation": true
+  },
+  "original_frozen_source_files_checked": 37,
+  "all_original_frozen_source_files_unchanged": true,
+  "source_sha256": {
+    "build_bundle.py": "6c8d069c96afc196b50ea60bf68d9f6fe01221f8091d781b9d5dbcfbf6c2c2be",
+    "replay.py": "5c6d9f0aae53c476b5500297f022b6f525ccafbc697fd611de0b643cc1c89609",
+    "test_publication.py": "e6126132159b69ec15a3a1781e86d52086f04298586bbb94cd2a2dd49ae9ed80",
+    "README.md": "454185c3c9d9f432aad6f02f1bb957bec5e9f25d619ef3e5d6e62aed4b6b063b"
+  },
+  "report_copy": {
+    "source": "confirmation/analysis_v1/REPORT.ja.md",
+    "sha256": "ebbcda6fcc8c246e2663feb01fa36aab70feda3651c56b4d95aa9f983dbe0d5c",
+    "byte_identical": true,
+    "inside_bundle_manifest": false
+  },
+  "pending_bundle": "bundle_pending_v1 is local-only and ignored by Git; do not publish.",
+  "limitations": "Saved-record numerical reproducibility only; not independent inference replication or proof of private original provenance.",
+  "new_model_calls_by_publication_task": 0,
+  "presentation_update": {
+    "updated_at": "2026-10-02T16:59:13.248194+00:00",
+    "change": "Added fresh-checkout quick-start commands to the outer README after bundle verification. Immutable bundle and numerical outputs unchanged.",
+    "original_readme_sha256": "26fab7389c156d5d69fdaaf7a76e0490c72a8686897354a8fec3cfbec3386602"
+  }
+}

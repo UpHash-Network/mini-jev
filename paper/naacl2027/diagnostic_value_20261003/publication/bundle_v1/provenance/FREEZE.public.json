@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-02T16:36:05.299659+00:00",
+  "stage": "before_any_new_study_model_forward",
+  "source_sha256": {
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/PROTOCOL.json": "d8c434f89800266b27749c9a59bff032eaf693978aa410cdc268952a125c948f",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/SELECTION.json": "0e5a0596eb13287799e02129cbdf76ef16850ba499631ee88783ea5ba41e4304",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/DATA_FREEZE.json": "8fa9072306493ac45a9f26f04a20689b8b7dfca6ffe0c96c7f23f27f6ba6e0f2",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/run.py": "25ac2fb08495fc18e64a7a160dddb0924dd31cb0ab9f693bb9080b6d5f40c747",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/select_data.py": "acee3936132671482233e6852f59ab52bc6692d3e1698001b818127e279f30a4",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/conditions.py": "69422c5c3d29721a6b0c098c81fe5e56c179f51acc8d2ae4b004985c1dd3d095",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/test_conditions.py": "10db4c15895f1486ae3e3c013ff20aa4131d167e2aee985274f48002d476c690",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/analyze.py": "28b088b027c916d7004382fa19691d52e8762ae18456c8fb1ba21b058492b06f",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/test_analysis.py": "31aa992cced1319d7d24649a32b7fe4b2780c6ff438b0df8829067e5266229f5",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/exploratory/analyze.py": "49c34d963c0ddff94a9e8d266c9ba0d5d6a738b777955b638df2554cb4c06e46",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/exploratory/SPECIFICATION.json": "983d04ebe7cbb3aea0371da9f8dc0077a11987eb566990aefca3eeb3d8770152",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/PROVENANCE.json": "041e4cc06c27465188ccd6010277517fb8295e73b7828e0baa39ae4aad6c4bbe",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/native_engine.py": "da45591b932a4cf9576f7f45ad9bd8f0fb817457b67ac8147b1f1562edbc83e9",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/native_model.json": "506286b90b296c7ae1979794d29e2993e9ce9eabc821ccd07e9b86b0a7c09c27",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/__init__.py": "9e770c30e52d018d5a17a8f2cc1bb773446743f9721bb700f999bd8f08b898e0",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/external_expanded/PROTOCOL.json": "8378564aa64f8b1124049e00d78f27b189f80decef3d0763349076e47391fa31",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/external_expanded/__init__.py": "9e770c30e52d018d5a17a8f2cc1bb773446743f9721bb700f999bd8f08b898e0",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/external_expanded/prepare.py": "8eaeed29a25369abfb2bc4bc95b0e148300856be420eeb00b4bb818155bae9fa",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/journal_robustness/__init__.py": "9e770c30e52d018d5a17a8f2cc1bb773446743f9721bb700f999bd8f08b898e0",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/journal_robustness/conditions.py": "c25265f1daafff5e9b1fd2cddf9ee36460951841a6ca2a24dcf8c1e6997301c6",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/journal_robustness/cross_model/__init__.py": "9e770c30e52d018d5a17a8f2cc1bb773446743f9721bb700f999bd8f08b898e0",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/journal_robustness/cross_model/engine.py": "e26f56fc85312c5d6efeb34b7a1e8baaf9297e8457646044fe61c41225ed2321",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/runtime_source/paper/journal_robustness/run.py": "2734fbf9f4340fa94bee74a71071e347e7791dd2c0a131fd7932b8ded1e20ee7",
+    "{WORKSPACE}/work/diagnostic-value-20261003/questions.jsonl": "574f132dddb70899bd78593c116e2c09b1120ff97d6e1fb158fd83e62c28cac7",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/EXCLUSION_FREEZE.json": "fdd334c5e8b93b9ce1fa457114fc7c9d7ff3feebfb1163b7cc671fbdf062a4ec",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/JCQA_UNUSED_INVENTORY.json": "d2dc7020553933ebc65cd14de32161c7960af289ba317a32c3278a547d3af645",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/SUPPLEMENTARY_MENTIONS.json": "a6bfe872d28d01d44558cd042b9fa952d578d2c619c411b42109f9fe36741f7f",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/supplement_inventory.py": "e0ca8c1fdf8b405c458cb27e22af1fbdb152ec58a71e360534a238d8e6769717",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/audit_v2/AUDIT.json": "7e3f69dbb5da5d77525eb0748405917094d6d495fd6059ad48adfaba55961c9b",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/audit_v2/CANDIDATE_INVENTORY.json": "b50cc5558b400868d8837f83af757c1833d6953ec641d0937fc8249a4d2130d9",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/audit_v2/HISTORY_INVENTORY.json": "fa638322ce4c7fcdb546ffabd6d89e7b2e8c108fb6a9eee2a7df5928ce440da0",
+    "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/audit_v2/REPRODUCE.json": "7025af31f86009750c19d17f338f7c95a96b371e4a09f2090c5916fb1f705ac1",
+    "{REPOSITORY}/paper/jnlp/equal_call_v1/SELECTION.json": "3a92a39d508c502deb0a246c62bb98d53eb3a25f3d1ca981ee3f4e54c70e5ae8",
+    "{REPOSITORY}/paper/jnlp/score_controls_v1/SELECTION.json": "b35f637054ed9bae337c8277abc24e3064c91b1cf7decf2e26b015f877dab96a",
+    "{WORKSPACE}/work/paper-external-expanded/raw/LICENSE-JGLUE.txt": "3b2890eacd851373001c4a14623458e3adaf1b1967939aa9c38a318e28d61c00",
+    "{WORKSPACE}/work/paper-external-expanded/raw/LICENSE-JCoLA.txt": "5e436ff8ffbb77d8607220e9bce20c8915d860010feeb6c1ebef5a85688e9b39",
+    "{WORKSPACE}/work/paper-external-expanded/raw/jcqa-valid.json": "0d8d76f3bfa0d174866939882faccdd01fbc2bcd5a76c43748ba0c40a7b3b8d4"
+  },
+  "n_items": 240,
+  "measured_requests_per_model": 1200,
+  "models": [
+    "qwen2.5-1.5b",
+    "qwen3.6-35b-a3b"
+  ],
+  "model_loads": 0,
+  "model_forwards": 0,
+  "schedule_sha256": "8328dd4e2dade2c7e4fa601a7c98aa4c2126ac335e7f6ed0cae179ae423ce80b",
+  "item_maps_sha256": "1a042cafccdc814d6a3c01c87df658a4018db262c467ee4211d73b1b27d242ac",
+  "tokenization_sha256": "6b3ceeeb9c7668f0c22b6fd0c53fc384fd884f09158460c61e91013c397dbd7e",
+  "small_model_artifacts": {
+    "model_key": "qwen2.5-1.5b",
+    "repo_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "model_type": "qwen2",
+    "file_sha256": {
+      "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+      "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+    },
+    "file_bytes": {
+      "generation_config.json": 242,
+      "tokenizer_config.json": 7305,
+      "tokenizer.json": 7031645,
+      "merges.txt": 1671839,
+      "vocab.json": 2776833,
+      "config.json": 660,
+      "model.safetensors": 3087467144
+    },
+    "verification": "All required artifacts fully SHA-256 verified, then stat/target identities checked."
+  },
+  "native_artifacts": {
+    "model_pin": {
+      "repo_id": "ggml-org/Qwen3.6-35B-A3B-GGUF",
+      "revision": "baec3ebee244827cda0f4557eafa8b28f7545fa6",
+      "filename": "Qwen3.6-35B-A3B-Q4_K_M.gguf",
+      "bytes": 20419565568,
+      "sha256": "671e47e0ec53c665d048b98c3ecbfd5236b5ca9c3e02ed19fc8f81f7b85140c7",
+      "quantization": "Q4_K_M",
+      "format": "gguf",
+      "role": "decision_model"
+    },
+    "manifest_sha256": "51fdfc2349a2956dabc35c331f06fe7af2667bc05bf521f9ee3e20b3d06f3a66",
+    "files_sha256": {
+      "LICENSE-helper.txt": "a96d01e3df84097df7dd4b3c5e5ff589d70bbb4b7195b3574073ce537fe296df",
+      "LICENSE-llama-cpp.txt": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "bin/libggml-base.0.24.0.dylib": "96a3c9e7f7917775153386b5d12e6f3beb1221c9ee8e10617da78d30ee0a6b49",
+      "bin/libggml-blas.0.24.0.dylib": "9ef0f0c8460d83f0e577a715b5713ede4e339414fa5ab08050686cda08d43ae8",
+      "bin/libggml-cpu.0.24.0.dylib": "9b4a9ad75b4e5ee2cf241e80dffa8249a7ddfb0539f8ab2abbf471a2432cd62e",
+      "bin/libggml-metal.0.24.0.dylib": "c539df34eae95dd2d11ab5893d594c49d0b61e9836b6f5ffe78807da3771a135",
+      "bin/libggml.0.24.0.dylib": "3a70d322c044811189dc8c1513068dd47ea44b1b7a5ce6cc67460e9f33a296fe",
+      "bin/libllama-common.0.4.1.dylib": "013f400ed10f1f800a31957cea1a60ed9714cbc1aadfffaf3a88f3661cf4e710",
+      "bin/libllama.0.4.1.dylib": "4829c7730fb5c0421d0dccdf4c00db108f75df567deaa2cda4c9f05b6aa6e7de",
+      "bin/llama-decision-helper": "742a76e06b2ff7012c1356353cfc82d51d2642011603db4daa5f20d4470c76dd",
+      "bin/llama-decision-helper.new": "e8a9067d1b8c9b6bef9c572de1135e1ae7854d60ebab5c01d3b9bf9b1dd68167",
+      "licenses/LICENSE-Qwen3.6-Apache-2.0.txt": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+      "licenses/LICENSE-jsonhpp": "c0d068392ea65358b798b8c165103560f06e9e3b38c4ab4e2d8810a7b931af86",
+      "licenses/cpp-httplib-LICENSE": "4b45cbe16d7b71b89ae6127e26e0d90a029198ca5e958ad8e3d0b8bbed364d8b",
+      "licenses/rotate-bits-LICENSE.md": "ca0b44aec101afb6b46f4c39b23369fa06a64fb9c0add37c2689d702156fee55",
+      "licenses/sha256-LICENSE": "b81d0022ca6367918c67b57e9647d3513ee58809fd4b0ef0b3492f1356bced25",
+      "licenses/xxhash-LICENSE": "6ffedbc0f7878612d2b23589f1ff2ab15633e1df7963a5d9fc750ec5500c7e7a",
+      "link-check.json": "23e6493119e2ace65dce97b31219ecfd634c844171e73d8b8e8c948de6b545a5",
+      "llama_decision_helper.cpp": "d3f1a5749d4aa8e0dfa4c91b42ea7625b0bf8b763e4e2558afbc1817291bea04",
+      "package_runtime.py": "7a28447704f837981fd33f3dc0a24d02fc701188b85bbd5fabaec40d84b1890f",
+      "test_packaging.py": "c720f2450f073a30cdb1708bf32491e23040b745c411690b30f83e5a0aa23e51"
+    },
+    "aliases": {
+      "bin/libllama.0.dylib": "libllama.0.4.1.dylib",
+      "bin/libggml.dylib": "libggml.0.dylib",
+      "bin/libggml.0.dylib": "libggml.0.24.0.dylib",
+      "bin/libggml-base.dylib": "libggml-base.0.dylib",
+      "bin/libggml-blas.dylib": "libggml-blas.0.dylib",
+      "bin/libggml-metal.0.dylib": "libggml-metal.0.24.0.dylib",
+      "bin/libllama-common.0.dylib": "libllama-common.0.4.1.dylib",
+      "bin/libllama.dylib": "libllama.0.dylib",
+      "bin/libggml-cpu.dylib": "libggml-cpu.0.dylib",
+      "bin/libggml-metal.dylib": "libggml-metal.0.dylib",
+      "bin/libllama-common.dylib": "libllama-common.0.dylib",
+      "bin/libggml-base.0.dylib": "libggml-base.0.24.0.dylib",
+      "bin/libggml-blas.0.dylib": "libggml-blas.0.24.0.dylib",
+      "bin/libggml-cpu.0.dylib": "libggml-cpu.0.24.0.dylib"
+    },
+    "llama_cpp_commit": "f072b103714dfa1eee531f80b24512faf38e3dd2"
+  },
+  "implementation_manifest": {
+    "python": "3.10.5",
+    "executable": "{ABSOLUTE_PATH_SHA256}/44a9cdcbdccbf05a880e90d2e6fe72470baab4d1b82472d890be0596ed887a6b",
+    "platform": "macOS-26.4-arm64-arm-64bit",
+    "machine": "arm64",
+    "versions": {
+      "torch": "2.12.1",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "safetensors": "0.7.0",
+      "jinja2": "3.1.6"
+    },
+    "implementation_files": {
+      "torch/_C.cpython-310-darwin.so": {
+        "sha256": "983be17be4795eb8ac9eb63fd55379667486e78f5610fdff670351121a3c0d3d",
+        "bytes": 50232
+      },
+      "torch/__init__.py": {
+        "sha256": "d9dfff4b75d46e4c75572200a3466b70231d05b0318e38ac1bd121789165fb49",
+        "bytes": 109312
+      },
+      "torch/autograd/grad_mode.py": {
+        "sha256": "462fb7096ef9bac949d544aa08ae5c50571d46279a85d4165696941cd80de244",
+        "bytes": 14650
+      },
+      "torch/lib/libc10.dylib": {
+        "sha256": "935940fedf52ad9d3aa40f1570ec4e6529b6be7d860bf0daaced344927d7e657",
+        "bytes": 1072704
+      },
+      "torch/lib/libomp.dylib": {
+        "sha256": "6256bee09e93c28d71c65711cc69224d69994c6965648b628b70a22772fe98d4",
+        "bytes": 856096
+      },
+      "torch/lib/libshm.dylib": {
+        "sha256": "43e8d43211fdbc270a2a5a6d580ed0344f74f5f15cf34f8abe5da6f958323dfe",
+        "bytes": 64016
+      },
+      "torch/lib/libtorch.dylib": {
+        "sha256": "4eab0bfaef1b14044359cefebb0030f1dcc5ad5f757d514a2aa7fff6dd08b032",
+        "bytes": 16752
+      },
+      "torch/lib/libtorch_cpu.dylib": {
+        "sha256": "791f549846676c37c778a6bb043b6fafae54d3d32112a782a388be4ba6e6d52f",
+        "bytes": 248507328
+      },
+      "torch/lib/libtorch_global_deps.dylib": {
+        "sha256": "63504e19a4f955eb4abe956a3f90578e343b033be75f26aa168aa4991db437fd",
+        "bytes": 16760
+      },
+      "torch/lib/libtorch_python.dylib": {
+        "sha256": "7cad7028dd38277f1c9a49b2d75b05156addc22d9f51fee5d7d4fa49c5f33e18",
+        "bytes": 29604152
+      },
+      "torch/nn/modules/linear.py": {
+        "sha256": "1961ad1a1f650e104b3c7f78d19af2d21bf977e7af6c3fdf2420aad563c9e202",
+        "bytes": 12376
+      },
+      "torch/nn/modules/module.py": {
+        "sha256": "56a1fa39f332238e3bad87f431903a875965abef92547afee6356c1390f2b713",
+        "bytes": 127992
+      },
+      "torch/utils/_contextlib.py": {
+        "sha256": "f22c21a037c4b26a431112138fa66a5108c5e9cfe4c9169e732c1d15ea7a8406",
+        "bytes": 6402
+      },
+      "transformers/__init__.py": {
+        "sha256": "aa8cb54da488cf43ba37b9955bb6c0d84d2000db0306f6a5f1c20b6842482d04",
+        "bytes": 47000
+      },
+      "transformers/modeling_utils.py": {
+        "sha256": "bf1c6b2a43cf7c36fb79f37c981424dd6ae78eb863fcaa5d2a37e76c9828611d",
+        "bytes": 308964
+      },
+      "transformers/models/qwen2/configuration_qwen2.py": {
+        "sha256": "2b9d0a03feeef734ae451eee381ad15deefc02ab4b8b957d87803fb5894e9bd3",
+        "bytes": 11400
+      },
+      "transformers/models/qwen2/modeling_qwen2.py": {
+        "sha256": "a59fa06524227361fb401baf4d177124a27aec146bc01ec931235a9abbab17cb",
+        "bytes": 21621
+      },
+      "transformers/models/qwen2/tokenization_qwen2_fast.py": {
+        "sha256": "1025a3b86526283bd86a447f0fe2d991d09775b32d3fdcc233c9e447b0611049",
+        "bytes": 5210
+      },
+      "transformers/tokenization_utils_base.py": {
+        "sha256": "a2d62f7e5d58f908b3a2d0b24ce6329e1e52c815082cedde29a5c007a23e7e83",
+        "bytes": 217915
+      },
+      "transformers/tokenization_utils_fast.py": {
+        "sha256": "558e454ee6850e90e8bc5d1782e35878dfda1da9bfdf997ae113fa7ff771a0f3",
+        "bytes": 41383
+      },
+      "transformers/utils/chat_template_utils.py": {
+        "sha256": "a61d29d984494999a0f1a280143422e2846964727a4cc66f72e12cff1d992ee2",
+        "bytes": 22775
+      },
+      "tokenizers/__init__.py": {
+        "sha256": "148ecb122f3fee03be9abb1fe213dd85fbc691bf2ad2b437ff531533781a6a3a",
+        "bytes": 2639
+      },
+      "tokenizers/tokenizers.abi3.so": {
+        "sha256": "899b244f19f1ddd6506c45ea0f7163f38952f2a552272a687a6ef4b9ddcc7327",
+        "bytes": 8261072
+      },
+      "safetensors/__init__.py": {
+        "sha256": "c1bcca66501582702c8c79aaaf2b922428800efa4367134609f8fc57363402dd",
+        "bytes": 194
+      },
+      "safetensors/_safetensors_rust.abi3.so": {
+        "sha256": "9f8c6553b8fa7a5286d3baa9e5ce3a75e0567e441557d35c61c43e25414e0ab3",
+        "bytes": 1006688
+      },
+      "safetensors/torch.py": {
+        "sha256": "53469c6556a12ecc6fa8f6b51a2b4c462681caee9755b9a20484c6b6ece70446",
+        "bytes": 18610
+      },
+      "jinja2/compiler.py": {
+        "sha256": "f51a42425e57f3c0479652623ec1cf876f791e1d2e029bf0149350baeb542de3",
+        "bytes": 74131
+      },
+      "jinja2/environment.py": {
+        "sha256": "f6786b3fb0a1f8d6c65f4d30bf2af8cb2fae84d1ead8e09ceb48201ab9e2fdf9",
+        "bytes": 61513
+      },
+      "jinja2/lexer.py": {
+        "sha256": "2d88988a8e9bafe4dea7d9cf72ea565ec3c4b6396ec37a75994fa534155151f9",
+        "bytes": 29786
+      },
+      "jinja2/parser.py": {
+        "sha256": "94b385cb7b0498773921a1074621f5b1056721dda6a14433872789653b5d637d",
+        "bytes": 40383
+      }
+    },
+    "model_loads": 0
+  },
+  "synthetic_gate_sha256": "8f34aa13507784cbd655067d1b571f1d80eb9710a306c6891f5f38d82c44a935",
+  "warmups_sha256": "ad60e8cca758d9e49ba418ad1fc990cfe7891cdb06416fb3035b63519e1a2128",
+  "registration": "Local timestamped freeze, not independent public preregistration.",
+  "raw_benchmark_text_published": false
+}

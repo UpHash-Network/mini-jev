@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-02T16:46:51.166759+00:00",
+  "status": "complete_reference_available",
+  "scope": "Portable saved-record replay, not inference reproduction or independent replication.",
+  "original_freeze_sha256": "9ff28049d202cca1d9f65778c63ab16fa1b8f6ebbd2a4d4c63a6edb780a51ee6",
+  "original_results_sha256": "3a7ff8694f90d201a37484ee08d27cfe8b8b929759fe1ff07326d418b19416c7",
+  "original_selection_sha256": "0e5a0596eb13287799e02129cbdf76ef16850ba499631ee88783ea5ba41e4304",
+  "n_shared_questions": 240,
+  "expected_measured_predictions": 2400,
+  "models": {
+    "qwen2.5-1.5b": {
+      "status": "completed",
+      "published_predictions": 1200,
+      "original_predictions_sha256": "b1531f01c015c04338594f28aded66e046013aaa35958a9f23f6808036efe7a4",
+      "original_attempt_sha256": "bd35e8a7597aa743152de32b4a84192c208fd118656798649c636980ae46f874"
+    },
+    "qwen3.6-35b-a3b": {
+      "status": "completed",
+      "published_predictions": 1200,
+      "original_predictions_sha256": "6d7e452d7f175cf1f87dac42ef581bae252faae9235feb51a5d7c419e2db53f5",
+      "original_attempt_sha256": "7d547e47d481323df218f92a7693e926ead0d63e25dd1770e9204aa3022cc823"
+    }
+  },
+  "frozen_sources": [
+    {
+      "published_path": "frozen/confirmation/PROTOCOL.json",
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/PROTOCOL.json",
+      "original_sha256": "d8c434f89800266b27749c9a59bff032eaf693978aa410cdc268952a125c948f"
+    },
+    {
+      "published_path": "frozen/confirmation/analyze.py",
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/analyze.py",
+      "original_sha256": "28b088b027c916d7004382fa19691d52e8762ae18456c8fb1ba21b058492b06f"
+    },
+    {
+      "published_path": "frozen/exploratory/analyze.py",
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/exploratory/analyze.py",
+      "original_sha256": "49c34d963c0ddff94a9e8d266c9ba0d5d6a738b777955b638df2554cb4c06e46"
+    },
+    {
+      "published_path": "frozen/exploratory/SPECIFICATION.json",
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/exploratory/SPECIFICATION.json",
+      "original_sha256": "983d04ebe7cbb3aea0371da9f8dc0077a11987eb566990aefca3eeb3d8770152"
+    }
+  ],
+  "audited_sources": [
+    {
+      "audit_identifier": "paper/naacl2027/diagnostic_value_20261003/confirmation/PROTOCOL.json",
+      "original_sha256": "d8c434f89800266b27749c9a59bff032eaf693978aa410cdc268952a125c948f"
+    },
+    {
+      "audit_identifier": "paper/naacl2027/diagnostic_value_20261003/confirmation/analyze.py",
+      "original_sha256": "28b088b027c916d7004382fa19691d52e8762ae18456c8fb1ba21b058492b06f"
+    },
+    {
+      "audit_identifier": "paper/naacl2027/diagnostic_value_20261003/exploratory/analyze.py",
+      "original_sha256": "49c34d963c0ddff94a9e8d266c9ba0d5d6a738b777955b638df2554cb4c06e46"
+    }
+  ],
+  "original_file_witnesses": {
+    "frozen/confirmation/PROTOCOL.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/PROTOCOL.json",
+      "original_sha256": "d8c434f89800266b27749c9a59bff032eaf693978aa410cdc268952a125c948f",
+      "transformation": "byte-identical"
+    },
+    "frozen/confirmation/analyze.py": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/analyze.py",
+      "original_sha256": "28b088b027c916d7004382fa19691d52e8762ae18456c8fb1ba21b058492b06f",
+      "transformation": "byte-identical"
+    },
+    "frozen/exploratory/analyze.py": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/exploratory/analyze.py",
+      "original_sha256": "49c34d963c0ddff94a9e8d266c9ba0d5d6a738b777955b638df2554cb4c06e46",
+      "transformation": "byte-identical"
+    },
+    "frozen/exploratory/SPECIFICATION.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/exploratory/SPECIFICATION.json",
+      "original_sha256": "983d04ebe7cbb3aea0371da9f8dc0077a11987eb566990aefca3eeb3d8770152",
+      "transformation": "byte-identical"
+    },
+    "provenance/CONFIRMATION_ANALYSIS_AUDIT.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/data_inventory/CONFIRMATION_ANALYSIS_AUDIT.json",
+      "original_sha256": "ad6080d516152ae21f8c87c8ca4d321f1890015547edce153876bc24a2282c1d",
+      "transformation": "byte-identical"
+    },
+    "data/SELECTION.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/SELECTION.json",
+      "original_sha256": "0e5a0596eb13287799e02129cbdf76ef16850ba499631ee88783ea5ba41e4304",
+      "transformation": "byte-identical"
+    },
+    "data/SCHEDULE.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/study_v1/SCHEDULE.json",
+      "original_sha256": "cde73fd8d73caa94c1d848928ffde122ac0b5413a45413f81d27ce1c2c6b5046",
+      "transformation": "byte-identical"
+    },
+    "provenance/FREEZE.public.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/study_v1/FREEZE.json",
+      "original_sha256": "9ff28049d202cca1d9f65778c63ab16fa1b8f6ebbd2a4d4c63a6edb780a51ee6",
+      "transformation": "recursive absolute-path identifier substitution; original bytes retained only by SHA256 witness"
+    },
+    "provenance/DATA_FREEZE.public.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/DATA_FREEZE.json",
+      "original_sha256": "8fa9072306493ac45a9f26f04a20689b8b7dfca6ffe0c96c7f23f27f6ba6e0f2",
+      "transformation": "recursive absolute-path identifier substitution; original bytes retained only by SHA256 witness"
+    },
+    "replay.py": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/publication/replay.py",
+      "original_sha256": "5c6d9f0aae53c476b5500297f022b6f525ccafbc697fd611de0b643cc1c89609",
+      "transformation": "byte-identical"
+    },
+    "README.md": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/publication/README.md",
+      "original_sha256": "26fab7389c156d5d69fdaaf7a76e0490c72a8686897354a8fec3cfbec3386602",
+      "transformation": "byte-identical"
+    },
+    "models/qwen2.5-1.5b/predictions.jsonl": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/study_v1/results/qwen2.5-1.5b/predictions.jsonl",
+      "original_sha256": "b1531f01c015c04338594f28aded66e046013aaa35958a9f23f6808036efe7a4",
+      "transformation": "allowlisted physical scoring metadata only; row order and all retained numeric values unchanged",
+      "dropped_fields": [
+        "candidate_ids"
+      ]
+    },
+    "models/qwen2.5-1.5b/ATTEMPT.public.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/study_v1/results/qwen2.5-1.5b/ATTEMPT.json",
+      "original_sha256": "bd35e8a7597aa743152de32b4a84192c208fd118656798649c636980ae46f874",
+      "transformation": "recursive absolute-path identifier substitution"
+    },
+    "models/qwen2.5-1.5b/COMPLETION.public.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/study_v1/results/qwen2.5-1.5b/COMPLETION.json",
+      "original_sha256": "035734302d48c7eb8e4f5518507e808e1b3f57c60448eec63422a5589191e18c",
+      "transformation": "recursive absolute-path identifier substitution; file_sha256 still refers to ORIGINAL files"
+    },
+    "models/qwen3.6-35b-a3b/predictions.jsonl": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/study_v1/results/qwen3.6-35b-a3b/predictions.jsonl",
+      "original_sha256": "6d7e452d7f175cf1f87dac42ef581bae252faae9235feb51a5d7c419e2db53f5",
+      "transformation": "allowlisted physical scoring metadata only; row order and all retained numeric values unchanged",
+      "dropped_fields": [
+        "candidate_ids",
+        "exact_top_logit_tie_keys",
+        "native_total_decode_count",
+        "thinking_enabled"
+      ]
+    },
+    "models/qwen3.6-35b-a3b/ATTEMPT.public.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/study_v1/results/qwen3.6-35b-a3b/ATTEMPT.json",
+      "original_sha256": "7d547e47d481323df218f92a7693e926ead0d63e25dd1770e9204aa3022cc823",
+      "transformation": "recursive absolute-path identifier substitution"
+    },
+    "models/qwen3.6-35b-a3b/COMPLETION.public.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/study_v1/results/qwen3.6-35b-a3b/COMPLETION.json",
+      "original_sha256": "ec9901898e798263b6a216b07a8bc697d6e05b9a3464e8abdd4d69370305f958",
+      "transformation": "recursive absolute-path identifier substitution; file_sha256 still refers to ORIGINAL files"
+    },
+    "reference/RESULTS.public.json": {
+      "source_identifier": "{REPOSITORY}/paper/naacl2027/diagnostic_value_20261003/confirmation/analysis_v1/RESULTS.json",
+      "original_sha256": "3a7ff8694f90d201a37484ee08d27cfe8b8b929759fe1ff07326d418b19416c7",
+      "transformation": "recursive absolute-path identifier substitution; numerical models object unchanged"
+    }
+  },
+  "prediction_transformations": [
+    {
+      "model": "qwen2.5-1.5b",
+      "dropped_prediction_fields": [
+        "candidate_ids"
+      ]
+    },
+    {
+      "model": "qwen3.6-35b-a3b",
+      "dropped_prediction_fields": [
+        "candidate_ids",
+        "exact_top_logit_tie_keys",
+        "native_total_decode_count",
+        "thinking_enabled"
+      ]
+    }
+  ],
+  "path_transformation": "Recursive keys and values: repository/workspace/home absolute prefixes become {REPOSITORY}/{WORKSPACE}/{HOME}; other absolute paths become {ABSOLUTE_PATH_SHA256}/hash. No reverse mapping published.",
+  "omitted": "Raw questions/answers text, input token IDs, candidate token IDs, tokenization artifacts, weights, runtime binaries, logs and credentials are not included. Gold labels option_0..4 remain necessary for outcome metrics.",
+  "wrapper_timing": "build_bundle.py and replay.py were created after inference started. They are not part of the pre-inference freeze. Copied analysis functions and metric helper retain exact pre-inference bytes.",
+  "publication_is_derivative": true,
+  "independent_public_preregistration": false,
+  "numerical_comparison": "Structure, identities and integers exact; finite floats absolute tolerance1e-12; exact equality and maximum deviation reported.",
+  "files_sha256": {
+    "README.md": "26fab7389c156d5d69fdaaf7a76e0490c72a8686897354a8fec3cfbec3386602",
+    "data/SCHEDULE.json": "cde73fd8d73caa94c1d848928ffde122ac0b5413a45413f81d27ce1c2c6b5046",
+    "data/SELECTION.json": "0e5a0596eb13287799e02129cbdf76ef16850ba499631ee88783ea5ba41e4304",
+    "frozen/confirmation/PROTOCOL.json": "d8c434f89800266b27749c9a59bff032eaf693978aa410cdc268952a125c948f",
+    "frozen/confirmation/analyze.py": "28b088b027c916d7004382fa19691d52e8762ae18456c8fb1ba21b058492b06f",
+    "frozen/exploratory/SPECIFICATION.json": "983d04ebe7cbb3aea0371da9f8dc0077a11987eb566990aefca3eeb3d8770152",
+    "frozen/exploratory/analyze.py": "49c34d963c0ddff94a9e8d266c9ba0d5d6a738b777955b638df2554cb4c06e46",
+    "models/qwen2.5-1.5b/ATTEMPT.public.json": "bd35e8a7597aa743152de32b4a84192c208fd118656798649c636980ae46f874",
+    "models/qwen2.5-1.5b/COMPLETION.public.json": "035734302d48c7eb8e4f5518507e808e1b3f57c60448eec63422a5589191e18c",
+    "models/qwen2.5-1.5b/predictions.jsonl": "7e55b76e109447dd824bde45266eab44f19f594abfd2db1828ae8c92bf0c7f6c",
+    "models/qwen3.6-35b-a3b/ATTEMPT.public.json": "7d547e47d481323df218f92a7693e926ead0d63e25dd1770e9204aa3022cc823",
+    "models/qwen3.6-35b-a3b/COMPLETION.public.json": "ec9901898e798263b6a216b07a8bc697d6e05b9a3464e8abdd4d69370305f958",
+    "models/qwen3.6-35b-a3b/predictions.jsonl": "0c72f26ec34f9cf29ce39fb881257fb9a2f08e993e4c486e4c702aad24359fb4",
+    "provenance/CONFIRMATION_ANALYSIS_AUDIT.json": "ad6080d516152ae21f8c87c8ca4d321f1890015547edce153876bc24a2282c1d",
+    "provenance/DATA_FREEZE.public.json": "5c29ebc03cbc75456dd906a381b2ece4a7117200761d89655c1a109df386d768",
+    "provenance/FREEZE.public.json": "a94a7916e2cbd1b62a049b66c1876bc9d11441000927ff50aa718446a5e4d12c",
+    "reference/RESULTS.public.json": "826ecd289a119a964a5829358418c16ea5ccc7020ad2f06762e8d1f780c6777d",
+    "replay.py": "5c6d9f0aae53c476b5500297f022b6f525ccafbc697fd611de0b643cc1c89609"
+  }
+}

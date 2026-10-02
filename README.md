@@ -45,6 +45,8 @@ The [raw-logit follow-up](paper/naacl2027/raw_workflow_20261002/README.md) execu
 
 The [local JSONL importer](https://uphash-network.github.io/mini-jev/explorer/import/) accepts your own physical decision records using a [documented v1 format](docs/explorer/import/README.md). It aligns semantic candidates, shows typed values and optional references, and exports exact source records. Files stay in the browser tab; missing references and latency remain unknown. This general-purpose import route is a software addition, not new evidence of usability or diagnostic superiority.
 
+A [new diagnostic and fixed-budget replay](paper/naacl2027/diagnostic_value_20261003/publication/README.md) adds 2,400 measured calls on 240 further JCQA questions shared by two checkpoints. Adding order total variation to entropy does not establish added error-detection value. At the primary 720-call budget, both allocations have identical per-item correctness (197/240 for 1.5B; 235/240 for 35B). All scores, budgets, negative findings, source witnesses, and CPU-only replay are retained; this is neither online timing nor independent human/machine validation.
+
 ## Explore recorded decisions
 
 Open the [evidence explorer](https://uphash-network.github.io/mini-jev/explorer/) to compare two retained conditions for the same study, model, and source item. The view aligns probabilities by semantic answer key, distinguishes expected stage from most likely stage, counts shared physical calls once, and exports source references with the comparison. It reads the frozen records; it does not run a model or establish human usability gains. [Data scope and derivation](docs/explorer/DATA.md).
