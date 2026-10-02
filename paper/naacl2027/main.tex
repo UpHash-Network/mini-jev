@@ -43,7 +43,7 @@ Applications may need a route, an urgency score, or a rubric stage. Typed interf
 
 Developers need to determine what changed in a decision, whether the change improved it, and which executions support that conclusion. Our workflow connects semantic candidate comparisons to reference outcomes, panel frequencies, and source provenance. Its mechanism---frozen candidate scoring, restricted softmax, and typed response construction---is conventional \citep{schick2021pet,ma2025inferring,lmqlscoring}. Neither scoring nor typed probability interfaces are new.
 
-Schema validity, task quality, and paired timing answer different questions. Our matched study does not establish a latency advantage over native one-token selection. Source and artifacts: \CodeURL. Browser access: \ExplorerURL. Video: \DemoVideo.
+Source and artifacts: \CodeURL. Browser access: \ExplorerURL. Video: \DemoVideo.
 
 \section{System and Typed Contract}
 \label{sec:system}
@@ -130,9 +130,10 @@ Matched runtime & 4,050 requests & 150 local $\times$ 5 repetitions, plus 600 ex
 Presentation study & 7,600 requests & Same 600 external items; 3 checkpoints \\
 Cyclic averaging & 14,400 requests & 600 additional external items; 3 checkpoints \\
 Diagnostic replay & 2,400 requests & 240 further JCQA items; 2 checkpoints \\
+Scope extension & 4,800 requests & 240 new JCQA + 240 English items; 2 families \\
 \bottomrule
 \end{tabular}
-\caption{Evaluation accounting. Presentation and averaging use 1,200 source items in total; diagnostic replay adds 240. Measured counts exclude synthetic checks and warm-ups. JCQA abbreviates JCommonsenseQA.}
+\caption{Evaluation accounting. The original panels use 1,200 items; two later diagnostic studies add 240 and 480. Measured counts exclude synthetic checks and warm-ups. JCQA abbreviates JCommonsenseQA.}
 \label{tab:sets}
 \end{table}
 
@@ -168,7 +169,7 @@ Table~\ref{tab:latency} uses 10,000 whole-family/tag percentile bootstraps, cond
 \subsection{External task-specific results}
 Direct readout and one-token selection have identical external labels. JCoLA reached 86.0\% accuracy and MCC 0.5708; JSON reached 82.0\% and MCC 0.5160. The selected sample contains 158 acceptable sentences, so an always-acceptable rule already achieves 79.0\% accuracy and has undefined MCC. Reporting only accuracy would obscure this imbalance.
 
-JCommonsenseQA accuracy was 95.0\% for direct/one-token and 95.5\% for JSON, a difference of one example. JSTS retains its continuous reference scores in $[0,5]$: direct expected-stage MAE at $T=1$ was 0.5065. JSON has no comparable probability vector, so we do not assign it an expected-stage metric. The separate hard-stage comparison gives MAE 0.5480 for direct/one-token and 0.5650 for JSON. We do not round the gold scores into invented classes or pool these tasks into one accuracy.
+JCommonsenseQA accuracy was 95.0\% for direct/one-token and 95.5\% for JSON, a difference of one example. JSTS retains its continuous reference scores in $[0,5]$: direct expected-stage MAE at $T=1$ was 0.5065. JSON has no comparable probability vector, so we do not assign it an expected-stage metric. The separate hard-stage comparison gives MAE 0.5480 for direct/one-token and 0.5650 for JSON. We neither round gold scores into classes nor pool task metrics.
 
 \subsection{Presentation sensitivity and averaging}
 Two subsequent studies add Qwen2.5-0.5B-Instruct and Qwen2.5-1.5B-Instruct to the native 35B checkpoint. The first uses 7,600 requests on the same 600 external items. All 1,800 exact-input repeat pairs have identical logits and probabilities, yet display reversal changes native JCQA labels on 11/200 items. Conversely, the 1.5B checkpoint has zero JCoLA flips while always predicting acceptable: stability alone is insufficient.
@@ -197,7 +198,7 @@ Qwen3.6 35B-A3B & $98.5\to98.0$ & $4.5\to1.5$ \\
 \end{table}
 
 \paragraph{Diagnostic value.}
-A later, frozen 240-question JCQA panel adds 2,400 measured calls across 1.5B and 35B. An equal-rank combination of two-call entropy and order-induced total variation did not establish added error-detection value over entropy alone. At the primary 720-call budget, their allocation policies give identical per-item correctness: 197/240 for 1.5B and 235/240 for 35B. All budgets and null results are retained in a separate replay package (Appendix~\ref{sec:comparison_scope}, Table~\ref{tab:diagnostic}).
+A frozen 240-question JCQA panel adds 2,400 calls across Qwen 1.5B and 35B. Adding order-induced total variation (TV) to entropy did not establish added error-detection value; at 720 calls, the two policies have identical per-item correctness. A separate scope extension adds 4,800 calls on 240 new JCQA and 240 English CommonsenseQA items \citep{talmor2019commonsenseqa}, shared by Qwen 1.5B and Phi-4-mini \citep{microsoft2025phi4mini}. The extension also does not establish added order-TV value: the primary Phi-English AP difference is $-0.051$; at 720 calls, both policies return 174/240 correct answers. Full intervals and all budgets are retained (Appendix~\ref{sec:comparison_scope}, Table~\ref{tab:diagnostic}).
 
 \subsection{Reproduction and framework integration}
 The versioned source/evidence package at \CodeURL{} records the three studies' 26,050 requests, protocols, selections, hashes, analyzers, and AI-agent audits. Clean-directory CPU reanalysis reproduced all 56 derived files byte-for-byte. A fresh native build served all three types using a cached, hash-verified model on the same Mac. This validates reconstruction with source/model cache reuse, not a second-machine or fresh-download replication.
@@ -215,16 +216,17 @@ LMQL exposes continuation scoring and selection \citep{lmqlscoring}; multi-token
 Rakutko's distinct mini-jev compares frozen letter-logit scoring with constrained JSON in an inspection bench \citep{rakutko2026minijev}; our rename avoids confusion. Ollama documents local Choice/Noul/Score probabilities \citep{ollama2026decision}; ChainForge adds an Ollama decision provider \citep{arawjo2024chainforge,chainforge2026decision}. Its inference path remains untested here. ChainForge 0.3.7.6's GUI retains six matched saved-evidence cases; its native Processor also executes our custom JavaScript to reconstruct 2,400 conditions from 6,000 archived logit records within $10^{-12}$ tolerance. This supports competitor feasibility, not inspection superiority (Appendix~\ref{sec:comparison_scope}). LLM Comparator supports response comparisons \citep{kahng2025comparator}; Langfuse exposes typed distributions \citep{langfuse2026jev}, and Phoenix preserves Choice metadata \citep{phoenix2026jev}. Our distinction concerns connecting complete panels, semantic alignment, shared calls, and archive-line provenance in one workflow, not typed inspection alone.
 
 \paragraph{Sensitivity and calibration.}
-Order/token bias and fixed-binding changes are established \citep{wei2024unveiling,zheng2024selectors}. Recent preprints distinguish reduced order sensitivity from accuracy \citep{hanna2026diverge}, and compressed ordinal hard-label distributions from per-item probability concentration in JEV/KEV \citep{gao2026ordinal}. These overlap our stability and collapse observations; our frozen-model cyclic study is not a reproduction of their experiments. \citet{rao2026rubric} report correlated judge errors limiting confidence cascades in saved-verdict replay; our small batch replay does not reproduce their cascade design. We make these distinctions inspectable alongside measured call costs, without claiming them as new general findings. Temperature scaling \citep{guo2017calibration} differs from contextual label-bias correction \citep{zhao2021calibrate}; canonical sorting does not establish invariance to option meaning or placement.
+Order/token bias and fixed-binding changes are established \citep{wei2024unveiling,zheng2024selectors}. Preprints separate order stability from accuracy \citep{hanna2026diverge}, ordinal hard-label collapse from concentration \citep{gao2026ordinal}, and correlated judge errors from confidence-cascade savings \citep{rao2026rubric}. These overlap our observations; our studies are not reproductions or claims of new general phenomena. Temperature scaling \citep{guo2017calibration} differs from contextual label-bias correction \citep{zhao2021calibrate}; canonical sorting does not establish semantic or position invariance.
 
 \section*{Limitations}
-Presentation studies cover three checkpoints on one Apple Silicon device; matched parity/latency covers one native quantized model in one session. Architecture, precision, and backend differences prevent model-size attribution. Japanese public subsets have unknown training contamination and source dependence; the English interface example does not establish English task quality. Local data are AI-authored and development-related, without independent human reference validation. No user study establishes usability or downstream decision quality.
+Presentation studies cover three checkpoints on one Apple Silicon device; matched parity/latency covers one native quantized model in one session. Architecture, precision, and backend differences prevent model-size attribution. Public subsets have unknown training contamination and source dependence. The English extension covers one five-choice task; model sizes and languages are confounded with family and dataset. Local data are AI-authored and development-related, without independent human reference validation. No user study establishes usability or downstream decision quality.
 
 Candidate probabilities vary with prompts, labels, coverage, and temperature. Concentrated wrong answers occur; type validity and entropy concentration cannot replace application-specific validation before consequential actions. Score assumes equally spaced stages; Noul is a relative candidate probability, not a verified truth frequency. Questions run sequentially on a large model; other operating systems and lower-memory configurations remain unvalidated. Live-demo timings are not directly comparable with the research harness's controlled interval.
 
 \section*{Acknowledgements}
 OpenAI Codex agents assisted implementation, question authoring, checks, experiments, analysis, literature organization, and drafting under the author's direction. Independent audit code was AI-assisted, not independent human review; AI-authored items lack human-expert validation. The author is responsible for all claims.
 
+\clearpage
 \section*{Ethics and Availability}
 The demonstration supports model inspection and typed-interface prototyping, with no evidence for high-stakes deployment. Inference is local; users remain responsible for inputs and downstream use. Code and self-authored local data use MIT terms. External-dataset-derived selection metadata, rubrics, protocols, and results separately retain applicable CC BY-SA 4.0 attribution and share-alike terms. Upstream dataset text, model weights, and compiled binaries are not bundled; repository data cards and notices specify acquisition and attribution.
 
@@ -266,9 +268,7 @@ Langfuse / Phoenix & Primary-source feature descriptions only & Typed evaluation
 The released HTTP response and browser expose semantic labels, typed values, candidate probabilities, concentration, and probability-semantics metadata. Raw candidate token IDs and logits belong to the internal engine and research traces; they are not fields in the public response. Table~\ref{tab:comparison_scope} distinguishes controlled comparisons, integration checks, and source-based related work. These observations do not establish that people work faster or make better decisions with this interface.
 
 \paragraph{Model-free evidence review.}
-The linked repository includes a frozen source/evidence ZIP and a reviewer guide. Its standard-library verification checks the archive and recorded request accounting without weights, network access, or inference. A separate CPU replay executes the six frozen analyses in a new directory and compares all 56 derived files. The three studies contain 26,050 measured requests; 300 earlier pilot predictions are retained as background and excluded from that count. The current manuscript and later framework diagnostics are separate from the frozen ZIP. Replaying recorded data verifies calculations, not the truth of the original observations or their generalization.
-
-The explorer is a later view of unchanged frozen records. Its exporter checks source hashes, physical candidate mappings, and aggregation recipes; software checks cover all comparisons and call unions.
+The frozen source/evidence ZIP retains the original 26,050 measured requests; 300 earlier pilot predictions are background and excluded. Standard-library checks verify accounting, and CPU replay reproduces 56 derived files without models or network access. The current manuscript and later studies are separate packages. The explorer validates unchanged source hashes, semantic mappings and physical-call unions. Reanalysis verifies calculations, not observation authenticity or generalization.
 
 \paragraph{Live installation.}
 The repository supplies native build and pinned-model acquisition commands: \texttt{build\_native.sh}, \texttt{fetch\_native\_model.py}, and \texttt{./run.sh --without-calibration}. Running \texttt{python3 -m demo.server --port 8766} serves the interface at \url{http://127.0.0.1:8766/}. Fresh builds use $T=1$; historical calibration artifacts are bound to their recorded runtime. The tested Mac uses macOS 26.4, Metal, and Accelerate. The 20.4\,GB model needs additional runtime memory. We distribute source, not weights or binaries; a minimum-memory configuration is unestablished. The static explorer can instead be served from \texttt{docs/} with Python's HTTP server; HTTPS or localhost enables browser hash verification.
@@ -277,33 +277,37 @@ The repository supplies native build and pinned-model acquisition commands: \tex
 All three original $10^{-5}$ probability failures remain. Maximum Score expectation error is $7.18\times10^{-5}$, within the separate $10^{-4}$ typed-value tolerance. Native probability margins exceed 0.9799, so matching labels provide no near-boundary evidence. Softmax of saved LMTP logits reproduces LMQL probabilities within $3.64\times10^{-9}$; native-path logit differences can account for discrepancies, but their cause remains unisolated. Type, candidate count, and prefix are confounded. This analysis adds no inference and changes no threshold.
 
 \paragraph{Matched saved-evidence workflow.}
-The \href{https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo/paper/naacl2027/workflow_comparison_20261002}{comparison package} freezes six ID-hash-selected cases and 32 diagnostic question instances before GUI execution; earlier outcomes were known. All presenters receive complete panels and source indices. Unmodified ChainForge imports adapted response caches; native search, lightboxes, spreadsheet and flow exports retain the evidence. The adapter supplies alignment, deltas, and call unions. Generic export access is not a native solution to every diagnostic question; no human scores or efficiency claims follow. Protocols retain setup, automation failures, and outputs.
+The \href{https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo/paper/naacl2027/workflow_comparison_20261002}{saved-evidence package} freezes six ID-hash-selected cases and 32 questions before GUI execution; earlier outcomes were known. All presenters receive complete panels and source indices. ChainForge's native search, lightboxes, spreadsheet and flow exports retain evidence supplied by the adapter, which computes alignment, deltas and call unions. No human performance was measured.
 
 \paragraph{Reconstruction from raw records.}
-A \href{https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo/paper/naacl2027/raw_workflow_20261002}{follow-up package} supplies only archived logits, candidate mappings, temperatures, gold references, and member recipes for those six panels. The unmodified ChainForge GUI executes supplied JavaScript from an empty output cache in Firefox 153. It recomputes softmax, semantic averaging, reference differences, shared-call unions, and panel summaries. An independently coded Python oracle checks the export: 2,400 original conditions agree with unchanged saved values; maximum numeric difference from JavaScript is $1.78\times10^{-15}$. Six tuple-reversal controls preserve results and eight malformed inputs are rejected. These finite software checks add no model observations or human evidence. The competitor needs custom code; the saved explorer uses preprocessed data. A later physical-record importer accepts logits but does not ingest this fixture's derived-member recipes. Neither implementation establishes a measured practical advantage.
+The \href{https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo/paper/naacl2027/raw_workflow_20261002}{raw-record package} instead supplies logits, mappings, temperatures, gold references and member recipes. ChainForge executes custom JavaScript from an empty cache in Firefox 153, reconstructing 2,400 conditions from 6,000 records. An independent Python oracle agrees within $1.78\times10^{-15}$. Six tuple-reversal controls preserve results; eight malformed inputs are rejected. These software checks establish competitor feasibility with custom code, not human advantage or new inference. The later physical-record importer does not ingest this fixture's derived-member recipes.
 
 \paragraph{Error detection and budgeted replay.}
-The \href{https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo/paper/naacl2027/diagnostic_value_20261003/publication}{new package} separates an already-inspected 200-item exploration from 240 project-unused JCQA questions, excluding prior IDs and exact question-text reuse. Before new inference, we locally froze selection, code, models, and five fixed-binding rotations per item; this is not independent preregistration or a contamination-free test. Both checkpoints completed 1,200 calls, excluding 30 total synthetic checks/warm-ups.
+The \href{https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo/paper/naacl2027/diagnostic_value_20261003/publication}{original diagnostic package} separates inspected exploration from 240 new JCQA questions and 2,400 calls. The \href{https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo/paper/naacl2027/generality_20261003/publication}{scope extension} adds distinct Japanese/English 240-item panels and 4,800 calls across two families. Selection, prompts, models and analyses were locally frozen before benchmark inference; prior null results were known. Neither study is independent preregistration or a contamination-free test. The extension uses float32/MPS, stock full-position vocabulary projection and candidate gather for both models. Its initial Phi optimization gate failed before any benchmark call. A versioned amendment retains that failure and uses full-position repeatability checks; no tolerance was relaxed. There are 128 excluded synthetic forwards across its initial failure, diagnosis and completed run.
 
-For error detection, the target is an incorrect two-call mean answer. The score averages outcome-free cohort midranks of normalized mean-distribution entropy and total variation, $\frac12\sum_i|p_i-q_i|$. Table~\ref{tab:diagnostic} compares it to entropy alone at equal two-call cost. For batch allocation, both policies pay two calls per question, then complete five-call means for their top 80 items: $2(240)+3(80)=720$ calls. Gold and later members never enter selection. Per-item correctness coincides at this budget; the conditional accuracy-difference interval is $[0,0]$, not population equivalence. The first-call-only entropy reference yields 200/240 and 235/240 at the same budget, without establishing a general winner.
+Error detection targets an incorrect two-call mean answer. The combined score averages within-stratum midranks of normalized mean-distribution entropy and TV, $\frac12\sum_i|p_i-q_i|$. Its entropy-only reference also costs two calls. For batch allocation, both pay two calls per question, then complete five-call means for their top 80 items: $2(240)+3(80)=720$. Gold and future members never enter selection. The extension's primary stratum is Phi-English; other strata are secondary. Tasks and unequal model sizes preclude causal language/family attribution.
 
 \begin{table}[h]
 \centering\small
 \begin{tabular}{@{}lrr@{}}
 \toprule
-Checkpoint & Pair errors & AP difference [95\% interval] \\
+Checkpoint/task & Errors & AP difference [95\% interval] \\
 \midrule
-1.5B & 52/240 & $-0.024\;[-0.092,\;0.067]$ \\
-35B-A3B & 5/240 & $-0.102\;[-0.464,\;0.124]$ \\
+Q1.5 / old JA & 52 & $-0.024\;[-0.092,\;0.067]$ \\
+Q35 / old JA & 5 & $-0.102\;[-0.464,\;0.124]$ \\
+Q1.5 / new JA & 40 & $-0.048\;[-0.151,\;0.039]$ \\
+Phi3.8 / new JA & 37 & $-0.067\;[-0.141,\;0.014]$ \\
+Q1.5 / EN & 74 & $-0.032\;[-0.082,\;0.022]$ \\
+Phi3.8 / EN & 62 & $-0.051\;[-0.119,\;0.013]$ \\
 \bottomrule
 \end{tabular}
-\caption{Entropy-plus-TV minus entropy AP. No added value is established. The 35B error count is small.}
+\caption{Entropy-plus-TV minus entropy AP; 240 questions per row. Old JA is the earlier panel. New JA and EN are separately shared across the extension models, not paired translations. Q denotes Qwen; Phi is 3.8B.}
 \label{tab:diagnostic}
 \end{table}
 
-We retain both targets, all eight scores, and all four policies at five budgets. The 2,000 paired-question percentile bootstraps condition on observed ranks/allocations; 11 primary-target 35B AP resamples without errors are undefined. Intervals are unadjusted descriptive estimates. Collection pays all five calls; policy costs are subsets of that pool. Recorded token/latency sums are replay accounting, not online timing or a speedup. The checkpoints share 240 questions; software reanalysis is not independent inference or human validation.
+Both packages retain two error targets, eight scores and four policies at five budgets. The 2,000 paired-question percentile bootstraps condition on observed ranks/allocations, with unadjusted descriptive intervals and undefined counts retained. Collection pays all five calls; replay costs sum the chosen physical members. Recorded token/latency sums are not online timing or speedups. Reanalysis is not independent inference or human validation.
 
 \paragraph{Human evaluation boundary.}
-No human study was conducted. An earlier synthetic-page rehearsal is material QA, excluded from experimental results. A counterbalanced pilot packet now targets the released explorer and complete-JSON view, with no participants or observations. Human comparative performance and cross-machine replication remain open.
+No human study was conducted. An earlier synthetic-page rehearsal is material QA, excluded from experimental results. A counterbalanced pilot packet targets the released local importer and complete comparison JSON, with no participants or observations. Human comparative performance and cross-machine replication remain open.
 
 \end{document}

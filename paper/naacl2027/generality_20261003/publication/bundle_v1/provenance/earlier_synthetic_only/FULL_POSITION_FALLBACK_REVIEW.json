@@ -1,0 +1,27 @@
+{
+  "checked_at_utc": "2026-10-02T18:23:02.285820+00:00",
+  "assessment": "Reasonable prospective technical amendment conditional on preserving failed v1, recording synthetic diagnostics and freezing v2 before any benchmark inference.",
+  "benchmark_requests_in_v1": 0,
+  "actual_synthetic_calls_in_v1": 24,
+  "v1_receipt_expected_excluded_calls": 28,
+  "v1_receipt_sha256": "9c51c6562388d80befb9d39188a295f71182b51c729da4c5920e253e58cd0a26",
+  "phi_native_source_sha256": "3b2e19b8396d472c6bad2cc86d10950c34aa5a13debcd9288daa8ee026f7c3bd",
+  "source_observation": "Phi3ForCausalLM computes the same backbone before slicing hidden_states, then applies lm_head. logits_to_keep changes final Linear input shape. Native code supports configured GQA, partial RoPE, longrope and tied embeddings. No source-level defect identified by this read-only review.",
+  "hypothesis_not_confirmed": "Shape-dependent floating-point accumulation in final MPS Linear can cause candidate probability differences even with float32 weights. PyTorch does not guarantee identical slice/full arithmetic. Need saved diagnostic logits and preferably same hidden-vector head comparison to localize cause.",
+  "recommended_v2": [
+    "Use stock full-position logits_to_keep=0 for both models; extract final position then candidates.",
+    "Do not relax thresholds or change dtype, prompt, data, gold, policy, selection or targets.",
+    "Name full0/full0 check repeatability, not optimized/full parity or proof of cross-backend correctness.",
+    "Save gate report before raising failure. Retain all v1 metadata and characterize rerun diagnostics as reruns.",
+    "Clarify actual vs planned excluded calls; v1 reports 24 actual calls while excluded_calls=28 was planned.",
+    "Record MPS fast-math/prefer-metal/fallback environment values without performance-driven tuning.",
+    "Retain separate experiment latency accounting because full-position projection costs more than optimized last-position projection."
+  ],
+  "sources": [
+    "https://docs.pytorch.org/docs/2.12/notes/numerical_accuracy.html",
+    "https://docs.pytorch.org/docs/2.12/mps_environment_variables.html",
+    "https://raw.githubusercontent.com/huggingface/transformers/v4.57.6/src/transformers/models/phi3/modeling_phi3.py"
+  ],
+  "frozen_sources_edited": false,
+  "inference_performed_by_reviewer": false
+}

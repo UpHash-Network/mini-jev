@@ -14,7 +14,7 @@ This independent project is inspired by [TypeSafe's Jev interface](https://docs.
 
 ## Start here — no model required
 
-**Reviewer entry updated 2 October 2026.** Begin with the saved evidence; installation of a language model is optional. The continuing NAACL 2027 System Demonstrations manuscript has not been submitted, accepted, or peer reviewed. The earlier arXiv submission and historical audits remain separate, unchanged artifacts. The recorded arXiv status on 27 September was awaiting moderation; this guide does not verify a newer moderation status.
+**Reviewer entry updated 3 October 2026 (JST).** Begin with the saved evidence; installation of a language model is optional. The continuing NAACL 2027 System Demonstrations manuscript has not been submitted, accepted, or peer reviewed. The earlier arXiv submission and historical audits remain separate, unchanged artifacts. The recorded arXiv status on 27 September was awaiting moderation; this guide does not verify a newer moderation status.
 
 1. **Explore saved decisions in your browser:** [open the evidence Explorer](https://uphash-network.github.io/mini-jev/explorer/). Select one item and compare two recorded conditions, semantic probabilities, typed values, shared physical-call counts, and source references. There is no model, API key, inference service, or installation to start this hosted view.
 2. **Verify and recompute with Python:** follow the [standalone reviewer guide](paper/naacl2027/reviewer_20261002/README.md). It separates a quick integrity/accounting check from the six frozen analyses and their 56 expected output files. Python 3.10+ and its standard library suffice; no pip packages or weights are required. The frozen analysis archive is **18,060,014 bytes**. Fresh same-Mac isolated-environment commands, timings, and results are included in the guide.
@@ -32,8 +32,10 @@ The current video shows saved-Explorer interaction plus a clearly labeled 16-sec
 | 7,600 presentation-sensitivity requests | Changing candidate presentation can change decisions; reduced sensitivity can coexist with incorrect or nearly constant answers |
 | 14,400 averaging-study requests | Probability averaging uses multiple model calls and does not consistently improve task quality |
 | CPU-only analysis replay | **56 / 56** derived files reproduced byte for byte from retained records |
+| Separate 2,400-call Japanese diagnostic follow-up | 240 further questions shared by two Qwen checkpoints; no added order-TV benefit established |
+| Separate 4,800-call Japanese/English follow-up | 240 questions per language/task shared by Qwen and Phi; all four strata and prespecified budgets retained |
 
-The three studies total **26,050 measured requests**, not 26,050 independent questions. The latter two span three checkpoints. Model comparisons also differ in runtime and precision; they do not isolate model size. Task-quality evaluations use Japanese public-data subsets on one Apple Silicon Mac, with unknown training-data contamination. There is no human usability study or second-machine replication.
+The original three studies total **26,050 measured requests**, not 26,050 independent questions, and use Japanese public-data subsets. The latter two span three checkpoints with differing runtimes and precision. The later **2,400-call** diagnostic study and **4,800-call** Japanese/English follow-up are separate evidence packages. The newest follow-up uses Qwen2.5-1.5B and Phi-4-mini on 240 JCommonsenseQA and 240 CommonsenseQA questions, with five calls per model and item. These are 480 distinct questions shared by two models. All studies use one Apple Silicon Mac; training-data contamination is unknown, and model size, family and dataset differences are not isolated causal effects. There is no human usability study or second-machine inference replication.
 
 The [paper package](paper/naacl2027/README.md) includes protocols, retained predictions, analyzers, and controlled LMQL/ChainForge integration diagnostics. [Scope and limitations](https://uphash-network.github.io/mini-jev/#evidence) explain what can and cannot be concluded. The original 2,400-item AI-authored regression suite is a separate historical evaluation, documented below.
 
@@ -46,6 +48,8 @@ The [raw-logit follow-up](paper/naacl2027/raw_workflow_20261002/README.md) execu
 The [local JSONL importer](https://uphash-network.github.io/mini-jev/explorer/import/) accepts your own physical decision records using a [documented v1 format](docs/explorer/import/README.md). It aligns semantic candidates, shows typed values and optional references, and exports exact source records. Files stay in the browser tab; missing references and latency remain unknown. This general-purpose import route is a software addition, not new evidence of usability or diagnostic superiority.
 
 A [new diagnostic and fixed-budget replay](paper/naacl2027/diagnostic_value_20261003/publication/README.md) adds 2,400 measured calls on 240 further JCQA questions shared by two checkpoints. Adding order total variation to entropy does not establish added error-detection value. At the primary 720-call budget, both allocations have identical per-item correctness (197/240 for 1.5B; 235/240 for 35B). All scores, budgets, negative findings, source witnesses, and CPU-only replay are retained; this is neither online timing nor independent human/machine validation.
+
+A [separate Japanese/English, two-family follow-up](paper/naacl2027/generality_20261003/publication/README.md) adds 4,800 measured calls and a model-free replay package. In the primary Phi-English stratum, entropy+order-TV and entropy alone have identical per-item correctness: **174/240 at 720 calls**. The fixed-random and first-entropy references score 180/240 and 177/240. Added order-TV benefit remains unestablished; [the full report](paper/naacl2027/generality_20261003/publication/REPORT.ja.md) retains all eight scores, both error targets, and all four policies across five budgets. A synthetic implementation failure and its versioned correction are retained separately; none of the benchmark questions was retried or replaced.
 
 ## Explore recorded decisions
 
@@ -112,7 +116,7 @@ with Client() as client:
     print(result.scores["danger"].score)
 ```
 
-The English example demonstrates the interface; the reported quality evaluation is Japanese. Choice returns a semantic key; Noul returns the true candidate's probability; Score returns the expected zero-based stage, with the most likely stage in `label`.
+The English example demonstrates the interface. The original three studies evaluate Japanese tasks; the separate two-family follow-up adds English five-choice evaluation. Choice returns a semantic key; Noul returns the true candidate's probability; Score returns the expected zero-based stage, with the most likely stage in `label`.
 
 Probabilities are normalized **within the allowed candidate set**, not over all tokens or all real-world outcomes. `confidence` is one minus normalized entropy, not the probability the answer is correct. [API details](service/README.md) · [Architecture](ARCHITECTURE.md)
 
@@ -172,4 +176,4 @@ AI coding agents contributed implementation, question authoring, review, experim
 
 Useful next contributions include family-disjoint evaluations, substantive repeated training experiments, and measured runs on other models and hardware. See the [current paper and evidence](paper/naacl2027/README.md); the original technical report retains its historical research plan.
 
-Use [CITATION.cff](CITATION.cff) to cite the software. Original project code and local authored data are MIT licensed. External dataset-derived selection, metadata, results, and task protocols/rubrics use CC BY-SA 4.0 with JGLUE/JCoLA attribution; mixed study records retain that data boundary. Third-party code and model artifacts retain their own terms. Original external dataset text, compiled binaries, and model weights are not included. See [NOTICE.md](NOTICE.md).
+Use [CITATION.cff](CITATION.cff) to cite the software. Original project code and local authored data are MIT licensed. Japanese dataset-derived selection, metadata, results, and task protocols/rubrics use CC BY-SA 4.0 with JGLUE/JCoLA attribution; English CommonsenseQA is MIT licensed. Mixed study records retain the applicable data boundaries. Third-party code and model artifacts retain their own terms. Original external dataset text, compiled binaries, and model weights are not included. See [NOTICE.md](NOTICE.md) and the [follow-up package's source and rights notes](paper/naacl2027/generality_20261003/publication/README.md#sources-and-rights).

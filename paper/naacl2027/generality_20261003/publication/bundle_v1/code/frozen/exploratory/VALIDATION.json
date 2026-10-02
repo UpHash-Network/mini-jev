@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "independent deterministic source/feature/point-metric checks, no new inference or full bootstrap rerun",
+  "model_item_rows": 400,
+  "raw_source_members_checked": 800,
+  "point_metrics_checked": 64,
+  "source_line_request_identity": "exact",
+  "probabilities_labels_costs": "exact",
+  "component_score_tolerance": 1e-14,
+  "all_cohort_rank_combinations": "exact",
+  "top20_with_ties": "exact",
+  "metric_reference": "direct per-positive thresholds for AP; all positive-negative pairs for AUROC",
+  "results_sha256": "8860cd02ebdf9c151ee894711ffe00ac718bd7c9eef741edd73d4ac2290b632e",
+  "records_sha256": "98f51f2554d73cae32494d99a50a8d6a95b9148e75d495b08098ec577ad8ce79",
+  "validator_sha256": "43105807c3069ab762f736d930e91b333d1c1523412f7734cb01ac1fc2aadf5d"
+}

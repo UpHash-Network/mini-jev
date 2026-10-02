@@ -12,7 +12,7 @@ Preview with `python3 -m http.server 8788 --bind 127.0.0.1 --directory docs`.
 
 - Scientific content: `paper/naacl2027/main.tex` and `paper/naacl2027/README.md`,
   numerical evidence frozen at commit `bd025e8b1d14352a440d289c73b00ae445290935`.
-  Current manuscript, reviewer entry, and demonstration were updated on 2 October 2026.
+  The current manuscript was updated on 3 October 2026; the reviewer entry was also updated on 3 October, and the demonstration on 2 October. Later diagnostic studies have separate bundles and are not part of that original evidence commit.
   The separately submitted arXiv preprint is awaiting moderation; the public PDF
   here follows the continuing conference-preparation revision.
 - `assets/LogitTrail_Manuscript.pdf`: byte-identical copy of `paper/naacl2027/NAACL2027_LogitTrail.pdf`, the current renamed conference-preparation manuscript. The Mini Jev manuscript and the submitted arXiv package remain historical artifacts; this is not a replacement arXiv upload.

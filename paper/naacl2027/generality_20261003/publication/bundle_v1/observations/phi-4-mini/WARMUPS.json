@@ -1,0 +1,90 @@
+[
+  {
+    "logits": [
+      50.76922607421875,
+      35.545997619628906,
+      34.221309661865234,
+      35.58907699584961,
+      37.716087341308594
+    ],
+    "probabilities": {
+      "option_0": 0.9999972914168224,
+      "option_1": 2.447004168030271e-07,
+      "option_2": 6.506239392419443e-08,
+      "option_3": 2.554723156085357e-07,
+      "option_4": 2.1433480514092133e-06
+    },
+    "label": "option_0",
+    "typed_value": "option_0",
+    "temperature": 1.0,
+    "concentration": 0.9999755405963472,
+    "top_logit_tie_count": 1,
+    "tie_break": "first_candidate_vector_index",
+    "backend": "transformers",
+    "forward_calls": 1,
+    "forward_calls_total": 27,
+    "use_cache": false,
+    "batch_size": 1,
+    "candidate_ids": [
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "input_tokens": 186,
+    "output_tokens": 0,
+    "model_ms": 266.27933280542493,
+    "latency_ms": 267.8742501884699,
+    "logits_to_keep": 0,
+    "candidate_boundary_verified": true,
+    "projection": "stock_causal_lm_all_positions_full_vocab_then_last_candidate_gather",
+    "error": null,
+    "model_training": false,
+    "parameters_require_grad": false,
+    "grad_enabled": false,
+    "inference_mode_enabled": true,
+    "past_key_values_returned": false
+  },
+  {
+    "logits": [
+      31.845598220825195,
+      40.61775588989258,
+      41.34830093383789
+    ],
+    "probabilities": {
+      "other": 5.038046804855904e-05,
+      "pencil": 0.32505875523580197,
+      "ruler": 0.6748908642961495
+    },
+    "label": "ruler",
+    "typed_value": "ruler",
+    "temperature": 1.0,
+    "concentration": 0.4254996931538193,
+    "top_logit_tie_count": 1,
+    "tie_break": "first_candidate_vector_index",
+    "backend": "transformers",
+    "forward_calls": 1,
+    "forward_calls_total": 28,
+    "use_cache": false,
+    "batch_size": 1,
+    "candidate_ids": [
+      32,
+      33,
+      34
+    ],
+    "input_tokens": 240,
+    "output_tokens": 0,
+    "model_ms": 342.06433314830065,
+    "latency_ms": 343.69424963369966,
+    "logits_to_keep": 0,
+    "candidate_boundary_verified": true,
+    "projection": "stock_causal_lm_all_positions_full_vocab_then_last_candidate_gather",
+    "error": null,
+    "model_training": false,
+    "parameters_require_grad": false,
+    "grad_enabled": false,
+    "inference_mode_enabled": true,
+    "past_key_values_returned": false
+  }
+]

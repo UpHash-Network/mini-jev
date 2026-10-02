@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-02T18:23:08.766339+00:00",
+  "status": "Prepared before any generality inference; exact artifacts frozen separately before model forward.",
+  "registration": "Locally timestamped prospective freeze, not independently preregistered. Earlier Japanese Qwen null results were known.",
+  "n_items": 240,
+  "dataset": "Two distinct task/language strata; never pooled into one accuracy or treated as translated/paired questions.",
+  "split": "valid",
+  "selection_salt": "logittrail-generality-20261003-v1:",
+  "schedule_seed": 2026100305,
+  "models": [
+    "qwen2.5-1.5b",
+    "phi-4-mini"
+  ],
+  "primary_model": "phi-4-mini",
+  "measured_requests_per_model": 2400,
+  "repeat_control_items": 0,
+  "repeat_control_calls_per_item": 0,
+  "physical_schedule": {
+    "method": "fixed_cyclic",
+    "anchor": "canonical",
+    "replicates": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "temperature": 1.0,
+    "max_input_tokens": 2048,
+    "schedule": "Seeded shuffled items and within-item physical execution order. Logical policy observations remain replicas 0, then 1, then 2..4.",
+    "averaging": "Uniform arithmetic mean of candidate-normalized probabilities aligned to fixed option_0..4 semantic keys; never mean logits."
+  },
+  "data": {
+    "selection": "240 per source split by SHA256(salt+item_id), no gold or model outcomes in selection; JP excludes prior 240 and all earlier project use; English audit recorded in SELECTION.json.",
+    "limitations": "Project-unused public validation items are not pretraining-unseen. Distinct data, prompts, model sizes and languages confound any causal language/family interpretation."
+  },
+  "A": {
+    "targets": {
+      "primary": "pair_mean_label_error",
+      "secondary": "first_label_error"
+    },
+    "scores": [
+      "first_maxprob_uncertainty",
+      "first_margin_uncertainty",
+      "first_entropy",
+      "order_flip",
+      "order_tv",
+      "pair_mean_entropy",
+      "first_entropy_tv_rank",
+      "pair_entropy_tv_rank"
+    ],
+    "definitions": "Identical to exploratory/SPECIFICATION.json. Entropy normalized by ln(5); TV=0.5*L1(first,second); rank composites equal weights of outcome-free model-dataset-specific cohort midranks. All scores oriented high=suspected error.",
+    "primary_metric": "tie-aware average precision",
+    "primary_contrast": [
+      "pair_entropy_tv_rank",
+      "pair_mean_entropy"
+    ],
+    "secondary_metrics": [
+      "AUROC",
+      "errors_found_at_nominal_top20_with_boundary_ties"
+    ],
+    "uncertainty": "2000 paired whole-question bootstrap resamples; cohort score ranks held fixed; percentile95% intervals and invalid count. Conditional on observed unlabeled cohort.",
+    "seed": 2026100306
+  },
+  "B": {
+    "setting": "Retrospective batch allocation from newly collected fixed pool; not measured online scheduler or per-request risk predictor.",
+    "primary_budget_calls_per_item": 3,
+    "budgets_calls_per_item": [
+      2,
+      2.5,
+      3,
+      4,
+      5
+    ],
+    "primary_contrast": [
+      "pair_entropy_tv_rank",
+      "pair_mean_entropy"
+    ],
+    "policies": {
+      "pair_entropy_tv_rank": "All items first two calls. Rank equal midrank pair-mean entropy + TV. Highest priority items complete all5 and return mean5; others return mean2.",
+      "pair_mean_entropy": "Same two-call start and completion rule, ranked by pair-mean entropy only.",
+      "pair_random": "Same two-call start and completion rule, selected by fixed SHA256(random_salt+item_id) ascending.",
+      "first_entropy": "All items first call. Rank first-call entropy only. Selected items complete all5 and return mean5; others return first."
+    },
+    "allocation": "For base b=2 or1, selected count=(budget*N-b*N)/(5-b); require integer, no free probes, no rounding to exceed budget. Pair selected counts0,40,80,160,240. First selected60,90,120,180,240.",
+    "random_salt": "logittrail-diagnostic-random-20261003-v1:",
+    "tie_salt": "logittrail-diagnostic-tie-20261003-v1:",
+    "tie_rule": "Descending score, then ascending SHA256(tie_salt+item_id), then item_id; fixed before outcomes.",
+    "gating_information": "First-only policy reads only replicate0 probabilities; pair policies only replicate0 and1. No gold or future member logits in gate.",
+    "primary_metric": "Accuracy contrast at720 physical logical calls per model-dataset stratum (3N), primary Phi-English.",
+    "secondary_metrics": [
+      "accuracy curve",
+      "paired correct-to-wrong and wrong-to-correct",
+      "total paid physical member calls",
+      "input token sum",
+      "recorded serial latency sum"
+    ],
+    "uncertainty": "2000 paired whole-question bootstrap on fixed chosen policy predictions, percentile95%. Conditional on realized cohort allocation; no refitting/reallocation in resamples and no overall population policy optimality claim.",
+    "seed": 2026100307
+  },
+  "interpretation": {
+    "primary_family": "A Phi-English AP difference and B Phi-English accuracy difference estimated descriptively, unadjusted intervals; other three strata and secondary metrics retained, no winner selection or significance claim.",
+    "retention": "All models, scores, budgets, negative and null results retained. No policy retuning, target switching or sample expansion on outcomes.",
+    "cost": "Logical policy cost is the union of selected physical members from a measured five-call pool. Collection actually pays1200 calls per model-dataset,2400 per model,4800 measured total plus56 excluded synthetic checks. Latency sums are replay bookkeeping, not online speedups.",
+    "fallback": "Record incomplete failure; do not replace failed items or silently retry. Resource blocking leaves secondarymodel incomplete.",
+    "limits": "Two unequal-size model families, one Japanese and one English commonsense five-choice task, one Mac, no human participants or independent machine replication. Broader observations do not prove universal utility."
+  },
+  "datasets": [
+    "JCommonsenseQA",
+    "CommonsenseQA"
+  ],
+  "n_items_per_dataset": 240,
+  "n_distinct_items": 480,
+  "total_measured_requests": 4800,
+  "primary_dataset": "CommonsenseQA",
+  "runtime": {
+    "backend": "stock Transformers4.57.6, torch2.12.1, MPS float32 eager",
+    "trust_remote_code": false,
+    "batch_size": 1,
+    "use_cache": false,
+    "projection": "stock all-position full-vocabulary head; select final position then candidate IDs; logits_to_keep=0 for both checkpoints",
+    "synthetic_checks": "24 Japanese three-type stock full-position repeatability forwards plus2 English choice repeatability forwards and2 bilingual warmups per model;56 excluded in completed v2. Does not establish parity with optimized head.",
+    "failure": "Retain partial outputs and stop; do not change dtype, threshold, selection or prompt after model outcome."
+  },
+  "revision": "v2 after synthetic-only v1 failure with zero benchmark calls. Same questions, prompts, dtype, tolerance, analyses. No benchmark outcome informed this implementation repair."
+}

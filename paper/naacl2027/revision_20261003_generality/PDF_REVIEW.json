@@ -1,0 +1,371 @@
+{
+  "reviewed_at_utc": "2026-10-02T19:04:31.436783+00:00",
+  "review_type": "AI visual rendering review; not scientific independent replication or human participant evaluation",
+  "pdf_path": "work/generality-20261003/LogitTrail-release.pdf",
+  "pdf_sha256": "66558fa4101944566112c0661f8802892f475e9532213cb5b650e5489190a5ad",
+  "pdf_bytes": 400239,
+  "pages": 10,
+  "renderer": "Poppler pdftoppm 130 DPI PNG",
+  "source_modified": false,
+  "all_pages_visually_inspected": true,
+  "page_partition": {
+    "body_limitations_acknowledgements": [
+      1,
+      6
+    ],
+    "ethics_references": [
+      7,
+      8
+    ],
+    "appendix": [
+      9,
+      10
+    ]
+  },
+  "automated_geometry": {
+    "outside_page_characters": 0,
+    "replacement_characters": 0,
+    "unresolved_double_question_mark": false
+  },
+  "visual_findings": {
+    "clipped_text": false,
+    "overlapping_text": false,
+    "horizontal_overflow": false,
+    "cut_tables": false,
+    "broken_figure": false,
+    "blank_pages": false,
+    "page_numbering": "1 through 10 consistent",
+    "table5": "All six rows visible, including Phi3.8/EN -0.051 [-0.119, 0.013]",
+    "text_size": "Main prose approx 10.91pt; table values approx 8.97pt readable. Figure interface fineprint is smaller; key comparisons remain legible in digital view. The 5.98pt minimum text extraction occurs in superscripts, not body prose."
+  },
+  "pages_reviewed": [
+    {
+      "page": 1,
+      "render_sha256": "2e189850e11c734dfd2ae6862cf581ec2fb6ff659692c6167443ab3b06b46e10",
+      "status": "pass",
+      "method": "pixel identity to prior direct visual review"
+    },
+    {
+      "page": 2,
+      "render_sha256": "8fa8093ec7ab43f48c3c7a8501a209ae12977a95b0bb4263f6fed3ad334bddcb",
+      "status": "pass",
+      "method": "pixel identity to prior direct visual review"
+    },
+    {
+      "page": 3,
+      "render_sha256": "0ca93bbfbfd8c934edf54868a81946191a84db4e064ccdfa2532e75cbe6ae24e",
+      "status": "pass",
+      "method": "pixel identity to prior direct visual review"
+    },
+    {
+      "page": 4,
+      "render_sha256": "ee53c90c8ba952f9ef82371c57990d4c3568a421ffe011b782def77c2f12863f",
+      "status": "pass",
+      "method": "pixel identity to prior direct visual review"
+    },
+    {
+      "page": 5,
+      "render_sha256": "fe813ddd6ef269084989cdc03d94a97a2fd91d58d9cdcab541efb5b044aa6cdc",
+      "status": "pass",
+      "method": "pixel identity to prior direct visual review"
+    },
+    {
+      "page": 6,
+      "render_sha256": "329e2c1c9b4342ac445369f270a5c2861170833c1611097c100d068862963d36",
+      "status": "pass",
+      "method": "direct visual"
+    },
+    {
+      "page": 7,
+      "render_sha256": "097f25aee981fffc984fb6ee0d628ab8a469664996386b2f929e62ed4af6467c",
+      "status": "pass",
+      "method": "pixel identity to prior direct visual review"
+    },
+    {
+      "page": 8,
+      "render_sha256": "a6a1473d1afb40619223d7b52e1e119b4bb8db8fc993b0b935e9bac835fbf0fc",
+      "status": "pass",
+      "method": "pixel identity to prior direct visual review"
+    },
+    {
+      "page": 9,
+      "render_sha256": "0008588dbdc3782c054c1f64c6ee980542c97d4de9e9239eb105fe1ef3fbccdb",
+      "status": "pass",
+      "method": "pixel identity to prior direct visual review"
+    },
+    {
+      "page": 10,
+      "render_sha256": "77fe0f54b5739473fd7abe020478e0244e22e08b80a8c837980b61a701595bde",
+      "status": "pass",
+      "method": "pixel identity to prior direct visual review"
+    }
+  ],
+  "issues": [],
+  "status": "PASS",
+  "awaiting_revised_pdf": false,
+  "review_history": [
+    {
+      "reviewed_at_utc": "2026-10-02T18:56:18.724144+00:00",
+      "review_type": "AI visual rendering review; not scientific independent replication or human participant evaluation",
+      "pdf_path": "work/generality-20261003/LogitTrail.pdf",
+      "pdf_sha256": "f3913868118df478c76b10ba396e91dfc765b69d02ed4ebe7b187a18d7b3a56b",
+      "pdf_bytes": 400179,
+      "pages": 10,
+      "renderer": "Poppler pdftoppm 130 DPI PNG",
+      "source_modified": false,
+      "all_pages_visually_inspected": true,
+      "page_partition": {
+        "body_limitations_acknowledgements": [
+          1,
+          6
+        ],
+        "ethics_references": [
+          7,
+          8
+        ],
+        "appendix": [
+          9,
+          10
+        ]
+      },
+      "automated_geometry": {
+        "outside_page_characters": 0,
+        "replacement_characters": 0,
+        "unresolved_double_question_mark": false
+      },
+      "visual_findings": {
+        "clipped_text": false,
+        "overlapping_text": false,
+        "horizontal_overflow": false,
+        "cut_tables": false,
+        "broken_figure": false,
+        "blank_pages": false,
+        "page_numbering": "1 through 10 consistent",
+        "table5": "All six rows visible, including Phi3.8/EN -0.051 [-0.119, 0.013]",
+        "text_size": "Main prose approx 10.91pt; table values approx 8.97pt readable. Figure interface fineprint is smaller; key comparisons remain legible in digital view. The 5.98pt minimum text extraction occurs in superscripts, not body prose."
+      },
+      "pages_reviewed": [
+        {
+          "page": 1,
+          "render_sha256": "2e189850e11c734dfd2ae6862cf581ec2fb6ff659692c6167443ab3b06b46e10",
+          "status": "pass"
+        },
+        {
+          "page": 2,
+          "render_sha256": "8fa8093ec7ab43f48c3c7a8501a209ae12977a95b0bb4263f6fed3ad334bddcb",
+          "status": "pass"
+        },
+        {
+          "page": 3,
+          "render_sha256": "0ca93bbfbfd8c934edf54868a81946191a84db4e064ccdfa2532e75cbe6ae24e",
+          "status": "pass"
+        },
+        {
+          "page": 4,
+          "render_sha256": "978d1d092a93d0015e3475486b403c176ecb496d089bb2c74db881fadb48460f",
+          "status": "pass"
+        },
+        {
+          "page": 5,
+          "render_sha256": "ae0c8982f59732b079cebc0985facfc31e45b82505ef6ccce64393ce1e2404d4",
+          "status": "pass_with_note"
+        },
+        {
+          "page": 6,
+          "render_sha256": "4a1a56cd18b26d3b418f2974336fbf4b4914c43c9300fd75bd72b6737a890a6b",
+          "status": "pass"
+        },
+        {
+          "page": 7,
+          "render_sha256": "097f25aee981fffc984fb6ee0d628ab8a469664996386b2f929e62ed4af6467c",
+          "status": "pass"
+        },
+        {
+          "page": 8,
+          "render_sha256": "a6a1473d1afb40619223d7b52e1e119b4bb8db8fc993b0b935e9bac835fbf0fc",
+          "status": "pass"
+        },
+        {
+          "page": 9,
+          "render_sha256": "0008588dbdc3782c054c1f64c6ee980542c97d4de9e9239eb105fe1ef3fbccdb",
+          "status": "pass"
+        },
+        {
+          "page": 10,
+          "render_sha256": "8a259a2af1a5a3b3eb922a4741dbbd9641c5b45d047e4391b4b7d7f5266a5d8e",
+          "status": "pass_with_note"
+        }
+      ],
+      "issues": [
+        {
+          "severity": "minor_layout",
+          "page": 5,
+          "location": "left column first line, line 286",
+          "finding": "Isolated single-word continuation accuracy. from previous page; shorten previous section final sentence."
+        },
+        {
+          "severity": "wording_consistency",
+          "page": 10,
+          "location": "Human evaluation boundary, lines 784-785",
+          "finding": "Newest local formative pilot targets the released local importer and complete comparison JSON; manuscript says released explorer."
+        }
+      ],
+      "status": "minor_revision_requested",
+      "awaiting_revised_pdf": true
+    },
+    {
+      "reviewed_at_utc": "2026-10-02T19:03:15.449790+00:00",
+      "review_type": "AI visual rendering review; not scientific independent replication or human participant evaluation",
+      "pdf_path": "work/generality-20261003/LogitTrail-final.pdf",
+      "pdf_sha256": "fb54bdb63bb55197ab46b272f9fdc555aaad007d79ffd1e8acc725a0855b3add",
+      "pdf_bytes": 400159,
+      "pages": 10,
+      "renderer": "Poppler pdftoppm 130 DPI PNG",
+      "source_modified": false,
+      "all_pages_visually_inspected": true,
+      "page_partition": {
+        "body_limitations_acknowledgements": [
+          1,
+          6
+        ],
+        "ethics_starts": 6,
+        "ethics_references_end": 8,
+        "appendix": [
+          9,
+          10
+        ]
+      },
+      "automated_geometry": {
+        "outside_page_characters": 0,
+        "replacement_characters": 0,
+        "unresolved_double_question_mark": false
+      },
+      "visual_findings": {
+        "clipped_text": false,
+        "overlapping_text": false,
+        "horizontal_overflow": false,
+        "cut_tables": false,
+        "broken_figure": false,
+        "blank_pages": false,
+        "page_numbering": "1 through 10 consistent",
+        "table5": "All six rows visible, including Phi3.8/EN -0.051 [-0.119, 0.013]",
+        "text_size": "Main prose approx 10.91pt; table values approx 8.97pt readable. Figure interface fineprint is smaller; key comparisons remain legible in digital view. The 5.98pt minimum text extraction occurs in superscripts, not body prose."
+      },
+      "pages_reviewed": [
+        {
+          "page": 1,
+          "render_sha256": "2e189850e11c734dfd2ae6862cf581ec2fb6ff659692c6167443ab3b06b46e10",
+          "status": "pass"
+        },
+        {
+          "page": 2,
+          "render_sha256": "8fa8093ec7ab43f48c3c7a8501a209ae12977a95b0bb4263f6fed3ad334bddcb",
+          "status": "pass"
+        },
+        {
+          "page": 3,
+          "render_sha256": "0ca93bbfbfd8c934edf54868a81946191a84db4e064ccdfa2532e75cbe6ae24e",
+          "status": "pass"
+        },
+        {
+          "page": 4,
+          "render_sha256": "ee53c90c8ba952f9ef82371c57990d4c3568a421ffe011b782def77c2f12863f",
+          "status": "pass"
+        },
+        {
+          "page": 5,
+          "render_sha256": "fe813ddd6ef269084989cdc03d94a97a2fd91d58d9cdcab541efb5b044aa6cdc",
+          "status": "pass"
+        },
+        {
+          "page": 6,
+          "render_sha256": "54f2cda8401547efc5ef0bb1d838dbb74f8fa7635f4e5147a480d36182acea4d",
+          "status": "pass_with_note"
+        },
+        {
+          "page": 7,
+          "render_sha256": "6b46a165655f8a747207e8c0ce74e771a5ae4cc0e4f8409e563e9e54c8ccab2d",
+          "status": "pass"
+        },
+        {
+          "page": 8,
+          "render_sha256": "aac4db87b57ef3d5c9ba9ce994bf73b4649866757bf804fe10c8f70ecad6ed98",
+          "status": "pass"
+        },
+        {
+          "page": 9,
+          "render_sha256": "0008588dbdc3782c054c1f64c6ee980542c97d4de9e9239eb105fe1ef3fbccdb",
+          "status": "pass"
+        },
+        {
+          "page": 10,
+          "render_sha256": "77fe0f54b5739473fd7abe020478e0244e22e08b80a8c837980b61a701595bde",
+          "status": "pass"
+        }
+      ],
+      "issues": [
+        {
+          "severity": "minor_layout",
+          "page": 6,
+          "finding": "Ethics heading and first two lines appear at page end; root is moving Ethics to page 7 with clearpage."
+        }
+      ],
+      "status": "pass_with_minor_layout_note_pending_release",
+      "awaiting_revised_pdf": true,
+      "resolved_previous_issues": [
+        "Single accuracy. orphan at page 5 removed.",
+        "Human evaluation boundary now accurately targets released local importer and complete comparison JSON."
+      ],
+      "revalidation": {
+        "pixel_identical_to_previous_pages": [
+          1,
+          2,
+          3,
+          9
+        ],
+        "changed_pages_visually_reinspected": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          10
+        ],
+        "all_updated_tables_and_body_visible": true,
+        "added_scope_extension_null_statement_visible": true
+      }
+    }
+  ],
+  "resolved_previous_issues": [
+    "Single accuracy. orphan at page 5 removed.",
+    "Human evaluation boundary now accurately targets released local importer and complete comparison JSON.",
+    "Ethics heading and paragraph start together on page 7; no partial Ethics section at page 6 end."
+  ],
+  "revalidation": {
+    "directly_reinspected_current_render_pages": [
+      6
+    ],
+    "pixel_identical_to_visually_reviewed_initial_pages": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9
+    ],
+    "pixel_identical_to_visually_reviewed_second_pages": [
+      4,
+      5,
+      10
+    ],
+    "coverage_total_pages": 10,
+    "all_updated_tables_and_body_visible": true,
+    "added_scope_extension_null_statement_visible": true
+  },
+  "notes": [
+    "Standard two-column paragraph continuations remain; no clipped table, overlapping element, isolated single-word page start, missing reference or unreadable body text identified.",
+    "Preparation-only human pilot remains local; this visual review did not recruit participants, publish pilot material, or create human usability observations."
+  ],
+  "private_review_sha256": "58b17ac443b4f1f51f701bdd532410dd2f11f14593e13721ef97c15eb8dafc81",
+  "public_projection": "Workspace prefix removed; review findings and file hashes unchanged."
+}

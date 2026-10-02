@@ -1,0 +1,6 @@
+{
+  "created_at": "2026-10-02T18:43:12.528977+00:00",
+  "model_key": "qwen2.5-1.5b",
+  "freeze_sha256": "2c4270d7eb2768999bd73b5727104e24be7a46a999844ccd6bcd11862904a8b5",
+  "expected_requests": 2400
+}

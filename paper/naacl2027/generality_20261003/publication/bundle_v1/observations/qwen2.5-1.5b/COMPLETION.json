@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-10-02T18:50:34.417858+00:00",
+  "model_key": "qwen2.5-1.5b",
+  "status": "completed",
+  "recorded_requests": 2400,
+  "failed_requests": 0,
+  "fatal_error_type": null,
+  "actual_calls_including_excluded": 2428,
+  "excluded_calls": 28,
+  "model_closed": true,
+  "source_unchanged": true,
+  "file_sha256": {
+    "RUNTIME.json": "1fa4d8d00da7770b6f982f5d7c9fc8edb3c6baf8038823a89512c58be460c214",
+    "CommonsenseQA.jsonl": "a2c93fc52f5ce7f583a44f4cf84500e6e80657a658f1fb9e62e2064dd96cd3c0",
+    "JCommonsenseQA.jsonl": "1ecc69c0acb6425e28ca0885fb2ca248f775a6857932c4b2a4d4de125574dbe9",
+    "ATTEMPT.json": "4fb5199164361df8c42a6f3e8db605262128c952820ac89be4373ebb6d0df294",
+    "WARMUPS.json": "a451cbedf69810f2d4734d7dd84fb5525c6deddba3f68298a6dfd7ca2003027c",
+    "REPEATABILITY_GATE.json": "f35a336b4cd20362982b88d0bab6764694d9033cf186494b4127d9f99a794f9d",
+    "JAPANESE_REPEATABILITY.json": "1c4c88e28f42edec356f4b79a5444180032c9d2bb2aa799e0dde339c8dfff4d1"
+  }
+}

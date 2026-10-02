@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scope": "exploratory diagnostic packet; no new inference",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4914,
+      "sha256": "423d3402d915bbafc808505c46acc0cc523324678d0adad1416f57e5dc95d003"
+    },
+    {
+      "path": "SPECIFICATION.json",
+      "bytes": 3805,
+      "sha256": "983d04ebe7cbb3aea0371da9f8dc0077a11987eb566990aefca3eeb3d8770152"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 797,
+      "sha256": "b8ff4aaa4e5388b6b7cfb92e9f13cdd5f286092bdf6b806ce8c0068204fd2804"
+    },
+    {
+      "path": "analyze.py",
+      "bytes": 16463,
+      "sha256": "49c34d963c0ddff94a9e8d266c9ba0d5d6a738b777955b638df2554cb4c06e46"
+    },
+    {
+      "path": "run01/FAILED.json",
+      "bytes": 528,
+      "sha256": "5fe939f99d142e090e7663430f89059d30404c5979e1ae0763be0d9a4e07de1b"
+    },
+    {
+      "path": "run02/REPORT.md",
+      "bytes": 9068,
+      "sha256": "33298af585d535615ec8227de6222f1090a4649d53f3e7f19822ce2d8624e6bd"
+    },
+    {
+      "path": "run02/RESULTS.json",
+      "bytes": 41164,
+      "sha256": "8860cd02ebdf9c151ee894711ffe00ac718bd7c9eef741edd73d4ac2290b632e"
+    },
+    {
+      "path": "run02/metrics.csv",
+      "bytes": 5927,
+      "sha256": "4b5b7ed7209894885210037fa52cb589dc46a0feb1fbbf40097676e9c3e8b0ee"
+    },
+    {
+      "path": "run02/records.jsonl",
+      "bytes": 814843,
+      "sha256": "98f51f2554d73cae32494d99a50a8d6a95b9148e75d495b08098ec577ad8ce79"
+    },
+    {
+      "path": "validate.py",
+      "bytes": 5188,
+      "sha256": "43105807c3069ab762f736d930e91b333d1c1523412f7734cb01ac1fc2aadf5d"
+    }
+  ]
+}

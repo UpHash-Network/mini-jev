@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-02T19:02:20.962670+00:00",
+  "status": "PASS",
+  "measured_forwards": 4800,
+  "measured_errors": 0,
+  "distinct_questions": 480,
+  "model_item_records": 960,
+  "model_families": 2,
+  "tasks": [
+    "JCommonsenseQA",
+    "CommonsenseQA"
+  ],
+  "excluded_forward_accounting": {
+    "failed_v1": 24,
+    "subsequent_diagnosis": 48,
+    "completed_v2_checks": 56,
+    "total": 128
+  },
+  "total_forward_calls": 4928,
+  "frozen_source_and_input_files_verified": 32,
+  "frozen_bundle_manifest_sha256": "a59589f8528a12f66e0dcba834fb86dcd93982d7a28726f3cee4d6f439e92cb1",
+  "results_sha256": "70ab407531e0e66f3657c6600b0c89f3738a8e83aabf4b13b6a073f6d4d61c14",
+  "public_reanalysis": {
+    "status": "exact_replay",
+    "maximum_absolute_difference": 0.0,
+    "new_inference_calls": 0
+  },
+  "independent_arithmetic_review": {
+    "file": "INDEPENDENT_NUMERICAL_REVIEW.json",
+    "sha256": "19ed0f40bc41041c35edfdb2677ff33d87eb055807fb4eacd0442c986d8693aa",
+    "status": "PASS",
+    "maximum_absolute_difference": 5.551115123125783e-16,
+    "point_AP_AUROC_values": 128,
+    "policy_budget_points": 80,
+    "bootstrap_scope": "Phi-English primary pair-mean-error AP/AUROC contrast, both component-score CIs, and primary 3-call accuracy contrast; 2000 paired whole-question draws each.",
+    "source_file": "independent_numeric_review.py",
+    "source_sha256": "d768d8351f9b19e2799d7de83c3f68d29f08f59948942441f4638d91b887a40d"
+  },
+  "question_restoration": {
+    "status": "PASS",
+    "japanese_questions_sha256": "ca65b75838e603e47f34486689e1f2468b8abfbb9a7f352a0357893b0838ca8b",
+    "english_questions_sha256": "4716159e35f3752b28be0943de17af702207aed688f7152733580c66a9f1566e",
+    "scope": "Restored from pinned original data and compared byte-for-byte; question text not redistributed."
+  },
+  "curve_figure_sha256": "35fe20341f944e96dc46f1fd0237814f8ab7483c77bd9781b3174866c8a07622",
+  "human_participants": 0,
+  "independent_machine_inference": false,
+  "scope": "Same-Mac inference extension and AI software/numerical verification. No added order-TV advantage established, no human benefit or generality across tasks established."
+}

@@ -1,0 +1,596 @@
+{
+  "passed": true,
+  "fixture_count": 12,
+  "forward_calls": 24,
+  "expected_forward_calls": 24,
+  "forward_count_semantics": "Stock model forward invocation attempts, incremented immediately before the call.",
+  "fixtures_sha256": "8f34aa13507784cbd655067d1b571f1d80eb9710a306c6891f5f38d82c44a935",
+  "logit_atol": 0.001,
+  "logit_rtol": 1e-05,
+  "probability_atol": 1e-05,
+  "exact_label_agreement_required": true,
+  "checks": [
+    {
+      "fixture": "synthetic-choice-0",
+      "input_tokens": 249,
+      "request_sha256": "44da4c1aec164dc558c85ce7d892028f39ec15ffbb1c401c198296c1a5c19a64",
+      "candidate_ids": [
+        32,
+        33,
+        34
+      ],
+      "candidate_keys": [
+        "other",
+        "pencil",
+        "ruler"
+      ],
+      "repeat_a_logits": [
+        18.670612335205078,
+        31.83371925354004,
+        21.620187759399414
+      ],
+      "repeat_b_logits": [
+        18.670612335205078,
+        31.83371925354004,
+        21.620187759399414
+      ],
+      "repeat_a_probabilities": {
+        "other": 1.9200765393441564e-06,
+        "pencil": 0.9999614106021574,
+        "ruler": 3.666932130317881e-05
+      },
+      "repeat_b_probabilities": {
+        "other": 1.9200765393441564e-06,
+        "pencil": 0.9999614106021574,
+        "ruler": 3.666932130317881e-05
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "pencil",
+      "repeat_b_label": "pencil",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-choice-1",
+      "input_tokens": 295,
+      "request_sha256": "e4df76f3b5477824d63901df22438a32218b4d1bdbbf6e3de0b3cc636b86da56",
+      "candidate_ids": [
+        32,
+        33,
+        34
+      ],
+      "candidate_keys": [
+        "other",
+        "pencil",
+        "ruler"
+      ],
+      "repeat_a_logits": [
+        17.129526138305664,
+        27.029844284057617,
+        18.138216018676758
+      ],
+      "repeat_b_logits": [
+        17.129526138305664,
+        27.029844284057617,
+        18.138216018676758
+      ],
+      "repeat_a_probabilities": {
+        "other": 5.0149308996124576e-05,
+        "pencil": 0.9998123409695703,
+        "ruler": 0.00013750972143362046
+      },
+      "repeat_b_probabilities": {
+        "other": 5.0149308996124576e-05,
+        "pencil": 0.9998123409695703,
+        "ruler": 0.00013750972143362046
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "pencil",
+      "repeat_b_label": "pencil",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-choice-2",
+      "input_tokens": 341,
+      "request_sha256": "78e58cf8cf6e4318c55ac2bed0323e143685bcea791207bca5a764b707112f90",
+      "candidate_ids": [
+        32,
+        33,
+        34
+      ],
+      "candidate_keys": [
+        "other",
+        "pencil",
+        "ruler"
+      ],
+      "repeat_a_logits": [
+        16.78607749938965,
+        26.2922306060791,
+        17.607177734375
+      ],
+      "repeat_b_logits": [
+        16.78607749938965,
+        26.2922306060791,
+        17.607177734375
+      ],
+      "repeat_a_probabilities": {
+        "other": 7.437456341125445e-05,
+        "pencil": 0.9997565721063421,
+        "ruler": 0.00016905333024667276
+      },
+      "repeat_b_probabilities": {
+        "other": 7.437456341125445e-05,
+        "pencil": 0.9997565721063421,
+        "ruler": 0.00016905333024667276
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "pencil",
+      "repeat_b_label": "pencil",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-choice-3",
+      "input_tokens": 387,
+      "request_sha256": "f3567f9c8834f8ed0fc6cddfb2a72f198ddcceb7cbcc2c205f150861d82fdcdc",
+      "candidate_ids": [
+        32,
+        33,
+        34
+      ],
+      "candidate_keys": [
+        "other",
+        "pencil",
+        "ruler"
+      ],
+      "repeat_a_logits": [
+        17.594362258911133,
+        27.32587242126465,
+        18.96044921875
+      ],
+      "repeat_b_logits": [
+        17.594362258911133,
+        27.32587242126465,
+        18.96044921875
+      ],
+      "repeat_a_probabilities": {
+        "other": 5.93652048164436e-05,
+        "pencil": 0.9997079242846403,
+        "ruler": 0.00023271051054325176
+      },
+      "repeat_b_probabilities": {
+        "other": 5.93652048164436e-05,
+        "pencil": 0.9997079242846403,
+        "ruler": 0.00023271051054325176
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "pencil",
+      "repeat_b_label": "pencil",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-noul-0",
+      "input_tokens": 231,
+      "request_sha256": "8e8d863a267a42af4f6349bcfed5e4681f7acd9cc7bb0857117ccb5dc3c4d210",
+      "candidate_ids": [
+        32,
+        33
+      ],
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "repeat_a_logits": [
+        18.112258911132812,
+        22.797340393066406
+      ],
+      "repeat_b_logits": [
+        18.112258911132812,
+        22.797340393066406
+      ],
+      "repeat_a_probabilities": {
+        "false": 0.009147532483453303,
+        "true": 0.9908524675165468
+      },
+      "repeat_b_probabilities": {
+        "false": 0.009147532483453303,
+        "true": 0.9908524675165468
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "true",
+      "repeat_b_label": "true",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-noul-1",
+      "input_tokens": 277,
+      "request_sha256": "ceb52f837b1bba0775c6a8eb56b6bfc3cf6b143e97bf37ae49268364314e288d",
+      "candidate_ids": [
+        32,
+        33
+      ],
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "repeat_a_logits": [
+        17.634078979492188,
+        20.33843994140625
+      ],
+      "repeat_b_logits": [
+        17.634078979492188,
+        20.33843994140625
+      ],
+      "repeat_a_probabilities": {
+        "false": 0.06271651557837557,
+        "true": 0.9372834844216245
+      },
+      "repeat_b_probabilities": {
+        "false": 0.06271651557837557,
+        "true": 0.9372834844216245
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "true",
+      "repeat_b_label": "true",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-noul-2",
+      "input_tokens": 323,
+      "request_sha256": "8659afecfaee6aa4a18e76174b4e9dc38b42fbc4e2443767a00d200846dfeef3",
+      "candidate_ids": [
+        32,
+        33
+      ],
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "repeat_a_logits": [
+        16.494176864624023,
+        18.948572158813477
+      ],
+      "repeat_b_logits": [
+        16.494176864624023,
+        18.948572158813477
+      ],
+      "repeat_a_probabilities": {
+        "false": 0.0791177233802176,
+        "true": 0.9208822766197823
+      },
+      "repeat_b_probabilities": {
+        "false": 0.0791177233802176,
+        "true": 0.9208822766197823
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "true",
+      "repeat_b_label": "true",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-noul-3",
+      "input_tokens": 369,
+      "request_sha256": "eb9a53fa082ff24489c6f002e957af7c1c9bd6a3e229fb13cb732432771fc91d",
+      "candidate_ids": [
+        32,
+        33
+      ],
+      "candidate_keys": [
+        "false",
+        "true"
+      ],
+      "repeat_a_logits": [
+        17.78683090209961,
+        19.94487953186035
+      ],
+      "repeat_b_logits": [
+        17.78683090209961,
+        19.94487953186035
+      ],
+      "repeat_a_probabilities": {
+        "false": 0.10358150070660832,
+        "true": 0.8964184992933916
+      },
+      "repeat_b_probabilities": {
+        "false": 0.10358150070660832,
+        "true": 0.8964184992933916
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "true",
+      "repeat_b_label": "true",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-score-0",
+      "input_tokens": 334,
+      "request_sha256": "b77943b44042f639865170b159558d1106f8c5c1003231d08de4bfc220a81346",
+      "candidate_ids": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "repeat_a_logits": [
+        19.98873519897461,
+        22.249103546142578,
+        29.665651321411133,
+        21.617233276367188,
+        20.063695907592773,
+        20.70824432373047
+      ],
+      "repeat_b_logits": [
+        19.98873519897461,
+        22.249103546142578,
+        29.665651321411133,
+        21.617233276367188,
+        20.063695907592773,
+        20.70824432373047
+      ],
+      "repeat_a_probabilities": {
+        "0": 6.264069908964935e-05,
+        "1": 0.0006005125612121568,
+        "2": 0.9988214715383162,
+        "3": 0.0003192304607533279,
+        "4": 6.751676386999957e-05,
+        "5": 0.00012862797675869273
+      },
+      "repeat_b_probabilities": {
+        "0": 6.264069908964935e-05,
+        "1": 0.0006005125612121568,
+        "2": 0.9988214715383162,
+        "3": 0.0003192304607533279,
+        "4": 6.751676386999957e-05,
+        "5": 0.00012862797675869273
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "2",
+      "repeat_b_label": "2",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-score-1",
+      "input_tokens": 380,
+      "request_sha256": "1c642e51f48ebc50c74ef4626b6c1cb36311bf70a0d4af0c1f9cd4eb43ddace0",
+      "candidate_ids": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "repeat_a_logits": [
+        21.841541290283203,
+        22.80596160888672,
+        28.78048324584961,
+        22.16718864440918,
+        21.435653686523438,
+        22.39314842224121
+      ],
+      "repeat_b_logits": [
+        21.841541290283203,
+        22.80596160888672,
+        28.78048324584961,
+        22.16718864440918,
+        21.435653686523438,
+        22.39314842224121
+      ],
+      "repeat_a_probabilities": {
+        "0": 0.0009623817528172687,
+        "1": 0.0025245838670589446,
+        "2": 0.9928681551730213,
+        "3": 0.0013328283717652697,
+        "4": 0.0006413168243954924,
+        "5": 0.0016707340109417773
+      },
+      "repeat_b_probabilities": {
+        "0": 0.0009623817528172687,
+        "1": 0.0025245838670589446,
+        "2": 0.9928681551730213,
+        "3": 0.0013328283717652697,
+        "4": 0.0006413168243954924,
+        "5": 0.0016707340109417773
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "2",
+      "repeat_b_label": "2",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-score-2",
+      "input_tokens": 426,
+      "request_sha256": "055aaa8775d4ae361e59fe91ef4348d3f09511efa38b06a80d2eca7b034dc760",
+      "candidate_ids": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "repeat_a_logits": [
+        21.48688316345215,
+        21.710790634155273,
+        27.93111228942871,
+        21.80109214782715,
+        21.224653244018555,
+        22.13960075378418
+      ],
+      "repeat_b_logits": [
+        21.48688316345215,
+        21.710790634155273,
+        27.93111228942871,
+        21.80109214782715,
+        21.224653244018555,
+        22.13960075378418
+      ],
+      "repeat_a_probabilities": {
+        "0": 0.001573881668962752,
+        "1": 0.0019688555587997316,
+        "2": 0.9900684623198107,
+        "3": 0.002154920760897324,
+        "4": 0.0012108408664251741,
+        "5": 0.003023038825104344
+      },
+      "repeat_b_probabilities": {
+        "0": 0.001573881668962752,
+        "1": 0.0019688555587997316,
+        "2": 0.9900684623198107,
+        "3": 0.002154920760897324,
+        "4": 0.0012108408664251741,
+        "5": 0.003023038825104344
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "2",
+      "repeat_b_label": "2",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    },
+    {
+      "fixture": "synthetic-score-3",
+      "input_tokens": 472,
+      "request_sha256": "5710c4d09886713bd8a75ccf56ce95bb2d381f8efd6062928e7536a6409a06bd",
+      "candidate_ids": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "repeat_a_logits": [
+        21.71588134765625,
+        21.729137420654297,
+        28.609718322753906,
+        22.24275016784668,
+        21.81344985961914,
+        22.73629379272461
+      ],
+      "repeat_b_logits": [
+        21.71588134765625,
+        21.729137420654297,
+        28.609718322753906,
+        22.24275016784668,
+        21.81344985961914,
+        22.73629379272461
+      ],
+      "repeat_a_probabilities": {
+        "0": 0.001006277259231903,
+        "1": 0.0010197053492721478,
+        "2": 0.9923686035246436,
+        "3": 0.001704252263643082,
+        "4": 0.001109407569048778,
+        "5": 0.0027917540341604184
+      },
+      "repeat_b_probabilities": {
+        "0": 0.001006277259231903,
+        "1": 0.0010197053492721478,
+        "2": 0.9923686035246436,
+        "3": 0.001704252263643082,
+        "4": 0.001109407569048778,
+        "5": 0.0027917540341604184
+      },
+      "repeat_a_top_logit_tie_count": 1,
+      "repeat_b_top_logit_tie_count": 1,
+      "repeat_a_label": "2",
+      "repeat_b_label": "2",
+      "max_absolute_logit_difference": 0.0,
+      "max_absolute_probability_difference": 0.0,
+      "labels_equal": true,
+      "passed": true
+    }
+  ],
+  "scope": "Stock full-position repeatability only, not optimized/full parity; no semantic-accuracy threshold or benchmark data.",
+  "english": {
+    "passed": true,
+    "repeat_a_logits": [
+      41.3184928894043,
+      24.70944595336914,
+      22.83945655822754,
+      21.54346466064453,
+      22.645601272583008
+    ],
+    "repeat_b_logits": [
+      41.3184928894043,
+      24.70944595336914,
+      22.83945655822754,
+      21.54346466064453,
+      22.645601272583008
+    ]
+  }
+}

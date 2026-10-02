@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-10-02T18:24:09.067554+00:00",
+  "reason": "Stock optimized last-position head failed pre-existing probability tolerance on two synthetic Phi Choice cases before any benchmark forward.",
+  "v1_original_freeze_sha256": "1695dab6b4a19d06c6d1b095c88a1d384ca7aaea8b451c9a39bd969710c90f5d",
+  "v1_actual_calls": 24,
+  "v1_planned_excluded_calls": 28,
+  "v1_benchmark_calls": 0,
+  "diagnostic_actual_calls": 48,
+  "diagnostic_benchmark_calls": 0,
+  "diagnostic_max_abs_probability_difference": 1.2785692607653054e-05,
+  "diagnostic_all_12_labels_equal": true,
+  "stock_full_position_repeat_max_abs_logit_difference": 0.0,
+  "remedy": "Use stock logits_to_keep=0 for both models. Preserve all thresholds, float32 MPS eager, dataset items, prompts and analyses. Full/full synthetic gate demonstrates repeatability, not parity with optimized head.",
+  "benchmark_results_available_when_amended": false,
+  "initial_failure_gate_details": "Original run stopped before serializing detailed gate; receipt retained. Subsequent48call diagnostic is separately dated and is not the original failed invocation.",
+  "hypothesis": "Final Linear shape rounding is plausible, not causally isolated.",
+  "v2_planned_excluded_calls": 56,
+  "total_project_calls_if_completed": 4928
+}

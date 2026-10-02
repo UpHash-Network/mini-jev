@@ -3,8 +3,9 @@
 **29 September 2026: renamed from Mini Jev to LogitTrail.** The submitted arXiv version retains its original Mini Jev title; this is a later conference-preparation revision. [Name and version mapping](../../NAMING.md).
 
 **Conference submission preparation, updated 3 October 2026 (JST).**
-The related preprint was submitted to arXiv on 26 September and is awaiting
-moderation; a public arXiv ID is not yet available. This NAACL manuscript is
+The related preprint was submitted to arXiv on 26 September. Its recorded status
+on 27 September was awaiting moderation, without a public arXiv ID; this revision
+does not verify a newer moderation status. This NAACL manuscript is
 **not submitted, accepted, or peer reviewed**. The arXiv submission and this
 continuing conference revision are distinct versions.
 
@@ -14,12 +15,16 @@ The October 2 revision integrates the saved-evidence Explorer, complete-record f
 
 A subsequent [matched saved-evidence workflow check](workflow_comparison_20261002/README.md) runs six hash-selected cases in the Explorer, complete JSON, and the published ChainForge 0.3.7.6 GUI. All retain the supplied information; the comparison does not establish a human-performance advantage. [Current revision checks](revision_20261002_workflows/README.md) and [unrun Explorer pilot materials](explorer_user_evaluation_20261002/README.md) are separate from the frozen research experiments.
 
-The [raw-record follow-up](raw_workflow_20261002/README.md) executes custom JavaScript in the unmodified ChainForge Processor, reconstructing 2,400 conditions from 6,000 archived logit records. The actual GUI export matches independent Python arithmetic within the frozen 1e-12 tolerance. This establishes competitor feasibility with custom code; neither human advantage nor new model performance is claimed. [Latest revision checks](revision_20261003_raw/README.md) cover this addition.
+The [raw-record follow-up](raw_workflow_20261002/README.md) executes custom JavaScript in the unmodified ChainForge Processor, reconstructing 2,400 conditions from 6,000 archived logit records. The actual GUI export matches independent Python arithmetic within the frozen 1e-12 tolerance. This establishes competitor feasibility with custom code; neither human advantage nor new model performance is claimed. [Raw-record revision checks](revision_20261003_raw/README.md) cover that addition.
+
+The separate [Japanese diagnostic confirmation](diagnostic_value_20261003/publication/README.md) adds 2,400 measured calls on 240 further questions shared by two Qwen checkpoints. A subsequent [two-family Japanese/English follow-up](generality_20261003/publication/README.md) adds 4,800 measured calls on 240 JCommonsenseQA and 240 CommonsenseQA questions shared by Qwen2.5-1.5B and Phi-4-mini. Its primary Phi-English comparison finds identical per-item correctness for entropy+order-TV and entropy alone: **174/240 at 720 calls**. Fixed-random and first-entropy references score 180/240 and 177/240. Added order-TV benefit remains unestablished; [the full report](generality_20261003/publication/REPORT.ja.md) retains all scores, error targets, strata and budgets, plus the synthetic implementation failure and versioned correction. An additional formative user-study packet is local and unpublished, with zero human participants or observations.
+
+[Latest manuscript revision checks](revision_20261003_generality/README.md) record the current PDF and new study.
 
 ## Read and run
 
 - [Research project page](https://uphash-network.github.io/mini-jev/) — manuscript, video, findings, and installation links in one place.
-- [Paper PDF](NAACL2027_LogitTrail.pdf) — 10 pages: main text, limitations, and acknowledgements end on page 6; ethics begins on page 6 and references end on page 8; Appendix A occupies pages 9–10.
+- [Paper PDF](NAACL2027_LogitTrail.pdf) — 10 pages: main text, limitations, and acknowledgements end on page 6; ethics and references occupy pages 7–8; Appendix A occupies pages 9–10.
 - [Download the versioned source and evidence ZIP](https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/naacl2027-demo/paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip)
   — 18,060,014 bytes; SHA-256
   `a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053`.
@@ -40,15 +45,18 @@ The [raw-record follow-up](raw_workflow_20261002/README.md) executes custom Java
   browser-interface or human usability claim.
 - [September 27 revision and checks](nonhuman_revision_20260927/README.md) — evidence-led evaluation without a required human study; comparison scopes and post-hoc LMQL diagnosis.
 - [Reviewer guide](reviewer_20261002/README.md) — standard-library integrity/accounting checks and the separate model-free numerical replay.
+- [Japanese diagnostic package](diagnostic_value_20261003/publication/README.md) — 2,400 additional calls; source witnesses and model-free replay.
+- [Japanese/English, two-family package](generality_20261003/publication/README.md) — 4,800 additional calls; all four strata, retained implementation failure, model-free replay and separate inference reproduction instructions.
 - [External replication handoff](external_replication_20261002/README.md) — pinned source, CPU preflight, separate second-Mac native smoke and blank operator log; no external result yet.
 - [Original source/evidence artifact checks](FINAL_CHECKS.20260925.json) — historical 25 September snapshot.
 
 The September 29 name revision preserves the numerical results and adds the distinct r-ms/mini-jev implementation to related work. [Rename revision and checks](rename_20260929/README.md). The September 27 manuscript remains available as [a historical PDF](NAACL2027_Mini_Jev.pdf). Its reviewer guide and post-hoc diagnostic remain applicable. Their [publication manifest](nonhuman_revision_20260927/PUBLICATION_MANIFEST.json) records exact file hashes. The published source/evidence ZIP remains unchanged.
 
-The source/evidence ZIP is a frozen composition of the application and the three
-paper studies (26,050 measured research requests). It excludes the current
-manuscript, video, later journal experiments, and the separately linked framework
-diagnostics. Its exact manifest distinguishes historical background records.
+The source/evidence ZIP is a frozen composition of the application and the original
+three paper studies (26,050 measured research requests). It excludes the current
+manuscript, video, later journal experiments, the separate 2,400-call and 4,800-call
+follow-up packages, and the separately linked framework diagnostics.
+Its exact manifest distinguishes historical background records.
 The ZIP preserves historical documentation; this page is the current entry point.
 
 ## What the evidence supports
@@ -59,8 +67,12 @@ these inspection ideas have precedents, identified in the paper. There is no
 claim of a new scoring algorithm, trained-head gain, one-token latency advantage,
 or human usability advantage.
 
-The three main experiments use 4,050, 7,600 and 14,400 measured requests;
-requests are not independent questions. The separate local regression suite has
+The original three experiments use Japanese public-data subsets and 4,050, 7,600
+and 14,400 measured requests; requests are not independent questions. The newer
+Japanese/English follow-up extends five-choice evidence to two model families
+and two distinct datasets on the same Mac; language, dataset, size and family
+differences are not isolated causal effects. Model pretraining overlap remains
+unknown. The separate local regression suite has
 2,400 AI-authored items. Reanalysis reproduced all 56 derived outputs byte for
 byte. A fresh native compile and a real three-type smoke succeeded on the same
 Mac, reusing verified upstream source and model caches. No second-machine or
@@ -89,10 +101,12 @@ The [official call](https://2027.naacl.org/calls/system_demonstration/) opens
 submission **1 November 2026**. Deadline: **4 December 2026, 23:59 AoE**
 (**5 December, 20:59 JST**). The internal target is 20 November JST. The actual
 submission form, account access and current venue requirements must be checked
-when the portal opens. There is no NAACL submission ID or receipt yet. The separate arXiv preprint is awaiting moderation. The earlier
+when the portal opens. There is no NAACL submission ID or receipt yet. This page
+does not newly verify the separate arXiv submission's moderation status. The earlier
 EACL attempt closed without a submission. No overlapping journal submission has
 been made; the substantive journal extension remains separate.
 
-Code and original project-authored material: MIT. Dataset-derived material:
-applicable CC BY-SA 4.0 terms and upstream attribution in the bundle. Model
+Code and original project-authored material: MIT. Japanese dataset-derived material:
+applicable CC BY-SA 4.0 terms and upstream attribution in the bundle; English
+CommonsenseQA retains MIT terms. Model
 weights and third-party libraries retain their upstream terms and are not bundled.

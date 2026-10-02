@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "reviewed_at_utc": "2026-10-02T19:10:57.304132+00:00",
+  "review_type": "Independent AI claim-consistency review of the manuscript, public prose, saved results and observations.",
+  "scope": "Read-only review of scientific claims and accounting; no new model inference, no complete analysis or bootstrap recomputation, no human validation. Reviewer wrote only this report.",
+  "path_base": "Repository root; all evidence paths below are relative.",
+  "artifacts": [
+    {
+      "path": "paper/naacl2027/generality_20261003/publication/README.md",
+      "sha256": "4c26eea8dcc217e279c5610199f1791f4c3582a21e6070aa3df5cb84fdde252b"
+    },
+    {
+      "path": "paper/naacl2027/generality_20261003/publication/REPORT.ja.md",
+      "sha256": "8cc4506d57fa7e4cd8fb0f0ec1ab4a05e7d3858c9a45ddc9da67a03727ebb6cb"
+    },
+    {
+      "path": "paper/naacl2027/generality_20261003/publication/CHECKS.json",
+      "sha256": "b2d14baf0de3053ab92d7da398a5386dee06360d3059384269c294316f313945"
+    },
+    {
+      "path": "paper/naacl2027/generality_20261003/publication/bundle_v1/RESULTS.json",
+      "sha256": "70ab407531e0e66f3657c6600b0c89f3738a8e83aabf4b13b6a073f6d4d61c14"
+    },
+    {
+      "path": "paper/naacl2027/generality_20261003/publication/bundle_v1/MANIFEST.json",
+      "sha256": "a59589f8528a12f66e0dcba834fb86dcd93982d7a28726f3cee4d6f439e92cb1"
+    },
+    {
+      "path": "paper/naacl2027/generality_20261003/publication/bundle_v1/code/AMENDMENT.json",
+      "sha256": "1351d8896e510a7acd18c2d3c7b7c9409ecf8be1964b890f9ee36e2b39a9e6e9"
+    },
+    {
+      "path": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+      "sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+    },
+    {
+      "path": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+      "sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+    },
+    {
+      "path": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/v1_COMPLETION.json",
+      "sha256": "9c51c6562388d80befb9d39188a295f71182b51c729da4c5920e253e58cd0a26"
+    },
+    {
+      "path": "paper/naacl2027/main.tex",
+      "sha256": "3d9ab50cc1e2ce41f275a3587b6d8e9e1ac47aac5c2c0c63aa8bb8649b74ea48"
+    }
+  ],
+  "verified_counts": {
+    "distinct_questions": 480,
+    "model_item_records": 960,
+    "models": 2,
+    "tasks": 2,
+    "items_per_stratum": 240,
+    "orders_per_item": 5,
+    "measured_forwards": 4800,
+    "measured_errors": 0,
+    "excluded_failed_v1_forwards": 24,
+    "excluded_subsequent_diagnostic_forwards": 48,
+    "excluded_completed_v2_checks": 56,
+    "total_excluded_forwards": 128,
+    "total_physical_forwards": 4928,
+    "largest_observed_input_token_count": 420
+  },
+  "observations_checked": {
+    "measured_jsonl_rows": 4800,
+    "per_stratum_rows": 1200,
+    "all_forward_calls_equal_one": true,
+    "all_candidate_boundary_verified": true,
+    "all_logits_to_keep_equal_zero": true,
+    "all_replicates_zero_through_four_present": true,
+    "fixed_candidate_tokens_and_semantic_keys": true,
+    "all_four_primary_policy_itemwise_correctness_arrays_identical": true,
+    "budget_table_rows_matched": 20,
+    "policy_budget_points_matched": 80
+  },
+  "primary_result": {
+    "model": "phi-4-mini",
+    "dataset": "CommonsenseQA",
+    "n": 240,
+    "pair_mean_errors": 62,
+    "mean_entropy_average_precision": 0.5125720911853042,
+    "entropy_plus_order_tv_average_precision": 0.46138599697565713,
+    "average_precision_difference": -0.05118609420964709,
+    "paired_percentile_95_ci": [
+      -0.11900001186452006,
+      0.013401454134775146
+    ],
+    "bootstrap_draws": 2000,
+    "manuscript_rounding_correct": true,
+    "budget_forwards": 720,
+    "entropy_plus_tv_correct": 174,
+    "mean_entropy_correct": 174,
+    "fixed_random_correct": 180,
+    "first_entropy_correct": 177
+  },
+  "claim_checks": [
+    {
+      "claim": "Additional order-TV benefit",
+      "status": "PASS",
+      "finding": "All four primary AP differences are negative with intervals crossing zero. All four primary 720-call policy contrasts have identical itemwise correctness, not merely equal totals. Prose explicitly says no added benefit established, preserves random/first-entropy results, and avoids population-equivalence claims."
+    },
+    {
+      "claim": "Full-position repeatability and retained initial failure",
+      "status": "PASS",
+      "finding": "The retained initial attempt stopped before benchmark inference after 24 actual synthetic calls. Its detailed gate was not serialized. The separately dated 48-call diagnosis is correctly distinguished from that initial observation. Its two probability-tolerance failures and maximum difference 1.2785692607653054e-05 agree with the report. The versioned amendment retains the threshold and uses stock logits_to_keep=0 for both models. Full-position repeatability is not described as parity with the rejected optimization. Completed checks are 28 per model, separate from failed/diagnostic calls."
+    },
+    {
+      "claim": "Conditional uncertainty and gate information boundary",
+      "status": "PASS",
+      "finding": "Two thousand paired-question percentile draws are described as conditional on observed ranks/allocations and descriptive/unadjusted; undefined draws are retained. No future-order observations or gold labels enter the budget gate. The 720-call pair policy allocates 2*240+3*80 calls; first-entropy allocates 240+4*120 calls."
+    },
+    {
+      "claim": "Generality and causal scope",
+      "status": "PASS",
+      "finding": "The study is described as a same-Mac extension across two unequal-size model families and distinct Japanese/English tasks. It does not establish a causal model-family/language effect, general superiority, or contamination-free evaluation. Local prospective freezing is explicitly distinguished from independent preregistration and acknowledges known earlier null findings."
+    },
+    {
+      "claim": "Independent verification scope",
+      "status": "PASS",
+      "finding": "Saved-record replay and AI arithmetic review are distinguished from fresh inference and independent-machine replication. CHECKS accurately restricts independently recomputed bootstrap checks to the Phi-English primary contrast/components and primary 3-call accuracy contrast."
+    },
+    {
+      "claim": "Human utility and runtime evidence",
+      "status": "PASS",
+      "finding": "Human participants remain zero. The formative pilot is preparation only and remains local. No independent-machine inference or independent human benefit is claimed. Token/latency sums are described as offline bookkeeping, without an online speedup claim."
+    }
+  ],
+  "resolved_findings": [
+    {
+      "severity": "minor_wording",
+      "path": "paper/naacl2027/generality_20261003/publication/README.md",
+      "before": "five fixed token-to-meaning bindings in cyclic display order",
+      "after": "five cyclic display orders with fixed token-to-meaning bindings",
+      "status": "Resolved by root and verified in the reviewed README; no scientific or code change needed."
+    }
+  ],
+  "open_blocking_findings": [],
+  "open_nonblocking_findings": [],
+  "limits": [
+    "This is an AI claim review, not independent human scientific review.",
+    "Existing data, stored results and the targeted source claims were inspected; a full bootstrap or inference rerun was outside scope.",
+    "No evidence from prepared future human or second-machine studies is counted as completed."
+  ]
+}

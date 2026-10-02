@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-02T18:19:53.223833+00:00",
+  "status": "PASS_READ_ONLY_NO_BLOCKER",
+  "scope": "AI code review of selection boundaries, English schema, bilingual strata, measurement accounting and primary analysis entrypoint. This is not independent human validation or model-inference replication.",
+  "files_sha256": {
+    "paper/naacl2027/generality_20261003/run.py": "90dafad14a953efaada2f25254545be5030ffd8704b5c74802b9e757bec490ff",
+    "paper/naacl2027/generality_20261003/analysis.py": "21df80240a059b1208db52528446030ed753c41874d6d2c03aa34cb1506945ed",
+    "paper/naacl2027/generality_20261003/analyze_all.py": "d4a985189cdba2e7084fa95a5c4169097155068ce77a55bd8f9b4af59dcf6227",
+    "paper/naacl2027/generality_20261003/PROTOCOL.json": "b08dcb0f5d53f481062d2b378650e368d28e55a2145398dae0630f3c06c23391",
+    "paper/naacl2027/generality_20261003/SELECTION.json": "e2b5123feddc573b102de1ed1ddf86288cc0ea5fe72b6098ae04c7f815c52c71",
+    "paper/naacl2027/generality_20261003/ENGLISH_PRIOR_USE_AUDIT.json": "813c079879b1b3164611f080e97fd83c3d4173a2817b8e9b50f6cab9b96e62e9",
+    "paper/naacl2027/generality_20261003/test_analysis.py": "83ca1d795f765a0ea5572a3e161b5331c52d8754ffeb622528aa4fa2b1f3536e",
+    "paper/naacl2027/generality_20261003/runtime_source/paper/journal_robustness/cross_model/engine.py": "142fae017f07f942a2bc6a0c17e3b59f88d74a495fd981ef62813c59776d9e0d"
+  },
+  "checked": [
+    "Gold omitted from model requests and selection rank uses only salt+item ID",
+    "All 480 frozen IDs/groups/canonical row hashes checked by runner before schedule construction",
+    "Five physical cyclic display orders retain A-E to option_0-4 binding",
+    "Two models and two distinct datasets analyzed separately; no pooled or cross-language paired accuracy",
+    "2400 measured requests/model and 28 excluded synthetic forward calls/model",
+    "AP and policy contrasts fixed prospectively; ranks within model-dataset cohort",
+    "B policies only read eligible first/pair scores and IDs; future logits and gold excluded from gate",
+    "720 logical physical member calls per model-dataset primary budget with all 1200 observations collected",
+    "Failure retained and stops model; no retry/replacement or silent sample dropping",
+    "Fixed model revisions, local-only stock Transformers, float32 MPS eager, no cache, full vocabulary last-position projection then candidate gather",
+    "Source/schedule/tokenization hashes and completed call counts verified by analysis wrapper"
+  ],
+  "nonblocking_notes": [
+    "analysis.py still contains legacy single-stratum CLI; documented entrypoint must be analyze_all.py. No code change required after freeze.",
+    "MPS model execution and parity success are pending actual synthetic gate; read-only review cannot certify them."
+  ],
+  "source_files_edited_by_reviewer_after_freeze": false
+}

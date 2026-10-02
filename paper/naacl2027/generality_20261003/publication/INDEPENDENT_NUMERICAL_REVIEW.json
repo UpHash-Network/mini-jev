@@ -1,0 +1,369 @@
+{
+  "checked_at_utc": "2026-10-02T18:51:34.887770+00:00",
+  "status": "PASS",
+  "reviewer_sha256": "d768d8351f9b19e2799d7de83c3f68d29f08f59948942441f4638d91b887a40d",
+  "implementation_independence": "No imports from primary analysis/runner/metric code. Raw logits -> independent softmax, semantic labels, bisect cohort ranks, weighted threshold AP and ascending concordance AUROC; independent policy-cost reconstruction.",
+  "scope": "AI numerical replay review, not independent model inference, independent hardware or human validation.",
+  "frozen_source_files_verified": 32,
+  "physical_rows_verified": 4800,
+  "distinct_questions": 480,
+  "model_item_records": 960,
+  "point_AP_AUROC_values_verified": 128,
+  "policy_budget_points_verified": 80,
+  "bootstrap_scope": "Phi-English primary pair-mean-error AP/AUROC contrast, both component-score CIs, and primary 3-call accuracy contrast; 2000 paired whole-question draws each.",
+  "recursive_value_comparisons": 273942,
+  "maximum_absolute_numeric_difference": 5.551115123125783e-16,
+  "observations_sha256": {
+    "observations/qwen2.5-1.5b/JCommonsenseQA.jsonl": "1ecc69c0acb6425e28ca0885fb2ca248f775a6857932c4b2a4d4de125574dbe9",
+    "observations/qwen2.5-1.5b/CommonsenseQA.jsonl": "a2c93fc52f5ce7f583a44f4cf84500e6e80657a658f1fb9e62e2064dd96cd3c0",
+    "observations/phi-4-mini/JCommonsenseQA.jsonl": "9737faaee0545b77ae906a0eef01d7a0c1c9bb136c5453efc02bf2514ef4c1d1",
+    "observations/phi-4-mini/CommonsenseQA.jsonl": "2fe3d0207c5e560e234bbf572b99b364c7dcc85c8a8f771e24c7f056a5f28f8e"
+  },
+  "analysis_results_sha256": "70ab407531e0e66f3657c6600b0c89f3738a8e83aabf4b13b6a073f6d4d61c14",
+  "strata": {
+    "qwen2.5-1.5b/JCommonsenseQA": {
+      "items": 240,
+      "physical_rows": 1200,
+      "point_metrics": {
+        "pair_mean_label_error": {
+          "first_maxprob_uncertainty": {
+            "ap": 0.4397016185001442,
+            "auroc": 0.781875
+          },
+          "first_margin_uncertainty": {
+            "ap": 0.41209621443231725,
+            "auroc": 0.781125
+          },
+          "first_entropy": {
+            "ap": 0.442907126221023,
+            "auroc": 0.781375
+          },
+          "order_flip": {
+            "ap": 0.2375,
+            "auroc": 0.6275
+          },
+          "order_tv": {
+            "ap": 0.3058228122677024,
+            "auroc": 0.7265
+          },
+          "pair_mean_entropy": {
+            "ap": 0.4046513196763605,
+            "auroc": 0.76375
+          },
+          "first_entropy_tv_rank": {
+            "ap": 0.35824318765139046,
+            "auroc": 0.784125
+          },
+          "pair_entropy_tv_rank": {
+            "ap": 0.3570862850740399,
+            "auroc": 0.7468125
+          }
+        },
+        "first_label_error": {
+          "first_maxprob_uncertainty": {
+            "ap": 0.48502413971949665,
+            "auroc": 0.8102868668758404
+          },
+          "first_margin_uncertainty": {
+            "ap": 0.44483020724345795,
+            "auroc": 0.8093904078888391
+          },
+          "first_entropy": {
+            "ap": 0.5088416111259243,
+            "auroc": 0.8108471537427163
+          },
+          "order_flip": {
+            "ap": 0.32132352941176473,
+            "auroc": 0.6778350515463918
+          },
+          "order_tv": {
+            "ap": 0.43466176768436565,
+            "auroc": 0.7800313760645451
+          },
+          "pair_mean_entropy": {
+            "ap": 0.474262988338195,
+            "auroc": 0.7921335723890632
+          },
+          "first_entropy_tv_rank": {
+            "ap": 0.6144945035780424,
+            "auroc": 0.8356118332586284
+          },
+          "pair_entropy_tv_rank": {
+            "ap": 0.46071506182615457,
+            "auroc": 0.7895562528014344
+          }
+        }
+      },
+      "policy_budget_points_verified": 20,
+      "primary_B_correct": {
+        "pair_entropy_tv_rank": 201,
+        "pair_mean_entropy": 201,
+        "pair_random": 200,
+        "first_entropy": 200
+      }
+    },
+    "qwen2.5-1.5b/CommonsenseQA": {
+      "items": 240,
+      "physical_rows": 1200,
+      "point_metrics": {
+        "pair_mean_label_error": {
+          "first_maxprob_uncertainty": {
+            "ap": 0.4926625906441348,
+            "auroc": 0.7139368283946598
+          },
+          "first_margin_uncertainty": {
+            "ap": 0.4855133062177008,
+            "auroc": 0.7122272875284924
+          },
+          "first_entropy": {
+            "ap": 0.5129964129812644,
+            "auroc": 0.7154835558450017
+          },
+          "order_flip": {
+            "ap": 0.33806306306306305,
+            "auroc": 0.5537284272224031
+          },
+          "order_tv": {
+            "ap": 0.365294724204163,
+            "auroc": 0.6116085965483555
+          },
+          "pair_mean_entropy": {
+            "ap": 0.42082513669365096,
+            "auroc": 0.6330185607294041
+          },
+          "first_entropy_tv_rank": {
+            "ap": 0.5038667046889885,
+            "auroc": 0.6893112992510583
+          },
+          "pair_entropy_tv_rank": {
+            "ap": 0.38866989876354024,
+            "auroc": 0.6234532725496581
+          }
+        },
+        "first_label_error": {
+          "first_maxprob_uncertainty": {
+            "ap": 0.5137507732972871,
+            "auroc": 0.715971996092478
+          },
+          "first_margin_uncertainty": {
+            "ap": 0.4928092055261657,
+            "auroc": 0.7141810485183979
+          },
+          "first_entropy": {
+            "ap": 0.5429268001353973,
+            "auroc": 0.7176001302507327
+          },
+          "order_flip": {
+            "ap": 0.33806306306306305,
+            "auroc": 0.5537284272224031
+          },
+          "order_tv": {
+            "ap": 0.3590263778410995,
+            "auroc": 0.6090849886030609
+          },
+          "pair_mean_entropy": {
+            "ap": 0.41443911154901036,
+            "auroc": 0.6306577661999349
+          },
+          "first_entropy_tv_rank": {
+            "ap": 0.5232500915626823,
+            "auroc": 0.6908987300553565
+          },
+          "pair_entropy_tv_rank": {
+            "ap": 0.36659814092821275,
+            "auroc": 0.6173477694562032
+          }
+        }
+      },
+      "policy_budget_points_verified": 20,
+      "primary_B_correct": {
+        "pair_entropy_tv_rank": 171,
+        "pair_mean_entropy": 171,
+        "pair_random": 167,
+        "first_entropy": 171
+      }
+    },
+    "phi-4-mini/JCommonsenseQA": {
+      "items": 240,
+      "physical_rows": 1200,
+      "point_metrics": {
+        "pair_mean_label_error": {
+          "first_maxprob_uncertainty": {
+            "ap": 0.4313000397361906,
+            "auroc": 0.8319797630142458
+          },
+          "first_margin_uncertainty": {
+            "ap": 0.4484847039881571,
+            "auroc": 0.8323791772067635
+          },
+          "first_entropy": {
+            "ap": 0.44122859701652734,
+            "auroc": 0.8345093862335242
+          },
+          "order_flip": {
+            "ap": 0.3274211711711712,
+            "auroc": 0.6927839169218479
+          },
+          "order_tv": {
+            "ap": 0.4330202294338491,
+            "auroc": 0.8178671282119558
+          },
+          "pair_mean_entropy": {
+            "ap": 0.5579725425219221,
+            "auroc": 0.8486220210358142
+          },
+          "first_entropy_tv_rank": {
+            "ap": 0.5360755164567882,
+            "auroc": 0.8460923978165358
+          },
+          "pair_entropy_tv_rank": {
+            "ap": 0.4913676306587099,
+            "auroc": 0.8366395952602849
+          }
+        },
+        "first_label_error": {
+          "first_maxprob_uncertainty": {
+            "ap": 0.4270364031060361,
+            "auroc": 0.8318355119825708
+          },
+          "first_margin_uncertainty": {
+            "ap": 0.4438355897451223,
+            "auroc": 0.8319716775599129
+          },
+          "first_entropy": {
+            "ap": 0.43557081787715934,
+            "auroc": 0.8334694989106753
+          },
+          "order_flip": {
+            "ap": 0.3055555555555556,
+            "auroc": 0.6830065359477124
+          },
+          "order_tv": {
+            "ap": 0.37507787109418755,
+            "auroc": 0.8092320261437909
+          },
+          "pair_mean_entropy": {
+            "ap": 0.5456869741235828,
+            "auroc": 0.8434095860566448
+          },
+          "first_entropy_tv_rank": {
+            "ap": 0.5245054125009682,
+            "auroc": 0.8411628540305011
+          },
+          "pair_entropy_tv_rank": {
+            "ap": 0.45412670774047836,
+            "auroc": 0.8291122004357299
+          }
+        }
+      },
+      "policy_budget_points_verified": 20,
+      "primary_B_correct": {
+        "pair_entropy_tv_rank": 205,
+        "pair_mean_entropy": 205,
+        "pair_random": 202,
+        "first_entropy": 205
+      }
+    },
+    "phi-4-mini/CommonsenseQA": {
+      "items": 240,
+      "physical_rows": 1200,
+      "point_metrics": {
+        "pair_mean_label_error": {
+          "first_maxprob_uncertainty": {
+            "ap": 0.5879742038727575,
+            "auroc": 0.7851576658209496
+          },
+          "first_margin_uncertainty": {
+            "ap": 0.5810968072602555,
+            "auroc": 0.7833454150054368
+          },
+          "first_entropy": {
+            "ap": 0.573479250359589,
+            "auroc": 0.7824392895976803
+          },
+          "order_flip": {
+            "ap": 0.30855734767025084,
+            "auroc": 0.5801920985864444
+          },
+          "order_tv": {
+            "ap": 0.39310216585483665,
+            "auroc": 0.7016129032258065
+          },
+          "pair_mean_entropy": {
+            "ap": 0.5125720911853044,
+            "auroc": 0.7392171076476984
+          },
+          "first_entropy_tv_rank": {
+            "ap": 0.5553455928742205,
+            "auroc": 0.7642714751721639
+          },
+          "pair_entropy_tv_rank": {
+            "ap": 0.46138599697565724,
+            "auroc": 0.7243113446901052
+          }
+        },
+        "first_label_error": {
+          "first_maxprob_uncertainty": {
+            "ap": 0.491509139977009,
+            "auroc": 0.7720370370370371
+          },
+          "first_margin_uncertainty": {
+            "ap": 0.49743284114912456,
+            "auroc": 0.7718518518518519
+          },
+          "first_entropy": {
+            "ap": 0.49935018854686014,
+            "auroc": 0.7712037037037037
+          },
+          "order_flip": {
+            "ap": 0.28620370370370374,
+            "auroc": 0.5638888888888889
+          },
+          "order_tv": {
+            "ap": 0.34893320484833423,
+            "auroc": 0.682037037037037
+          },
+          "pair_mean_entropy": {
+            "ap": 0.46480546751647495,
+            "auroc": 0.7272222222222222
+          },
+          "first_entropy_tv_rank": {
+            "ap": 0.45652397653726245,
+            "auroc": 0.7479166666666667
+          },
+          "pair_entropy_tv_rank": {
+            "ap": 0.40142338394020005,
+            "auroc": 0.7067129629629629
+          }
+        }
+      },
+      "policy_budget_points_verified": 20,
+      "primary_B_correct": {
+        "pair_entropy_tv_rank": 174,
+        "pair_mean_entropy": 174,
+        "pair_random": 180,
+        "first_entropy": 177
+      },
+      "primary_bootstrap_verified": {
+        "ap": {
+          "low": -0.11900001186452006,
+          "high": 0.013401454134774985,
+          "valid_resamples": 2000,
+          "invalid_resamples": 0
+        },
+        "auroc": {
+          "low": -0.0320185978568331,
+          "high": 0.001030670025214417,
+          "valid_resamples": 2000,
+          "invalid_resamples": 0
+        },
+        "B_accuracy_difference": {
+          "low": 0.0,
+          "high": 0.0,
+          "valid_resamples": 2000,
+          "invalid_resamples": 0
+        }
+      }
+    }
+  }
+}

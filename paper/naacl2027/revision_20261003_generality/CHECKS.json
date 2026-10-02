@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-02T19:05:58.229777+00:00",
+  "pdf_sha256": "66558fa4101944566112c0661f8802892f475e9532213cb5b650e5489190a5ad",
+  "main_tex_sha256": "3d9ab50cc1e2ce41f275a3587b6d8e9e1ac47aac5c2c0c63aa8bb8649b74ea48",
+  "references_sha256": "f8fb704212e2597fbb146a70431b77566fe19a2e4ee8846db9bbfffd0a322dc5",
+  "pages": 10,
+  "body_and_acknowledgements_end_page": 6,
+  "ethics_and_references_pages": [
+    7,
+    8
+  ],
+  "appendix_pages": [
+    9,
+    10
+  ],
+  "overfull_boxes": 0,
+  "unresolved_references": 0,
+  "public_pdf_identical": true,
+  "new_measured_calls": 4800,
+  "distinct_quality_items": 480,
+  "model_item_records": 960,
+  "model_families": 2,
+  "failed_measured_calls": 0,
+  "excluded_synthetic_calls": 128,
+  "human_participants": 0,
+  "independent_machine_inference": false,
+  "public_package": "../generality_20261003/publication/README.md",
+  "numerical_checks": "../generality_20261003/publication/CHECKS.json",
+  "visual_review": "PDF_REVIEW.json",
+  "protected_artifact_sha256": {
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+    "paper/arxiv/source/main.tex": "74f8f7c64ae4a1a057cd49c2921a32eae51377cc9185a13138c436fe085a733a",
+    "paper/arxiv/mini-jev-arxiv-source-20260925.zip": "0fc7ea4ffc83f80bef88405e6f3a9f6cd57a56db1224ac8e810db7dd09768d1d"
+  },
+  "scope": "No added order-TV value established. Same-Mac bilingual two-family scope extension, not independent human or second-machine validation.",
+  "fresh_index_snapshot_replay": {
+    "passed": true,
+    "status": "exact_replay",
+    "maximum_absolute_difference": 0.0,
+    "new_inference_calls": 0,
+    "strata": 4
+  },
+  "public_hygiene_scan": {
+    "schema_version": 1,
+    "passed": true,
+    "files_scanned": 842,
+    "bytes_scanned": 262043530,
+    "findings": [],
+    "scope": "Static release hygiene only. Not a comprehensive secret detector, legal review, or model-quality test."
+  },
+  "publication_test_suite": {
+    "test_module": "tests/test_public_release.py",
+    "passed": 11
+  },
+  "content_review": "CLAIM_REVIEW.json",
+  "site_asset_manifest_verified": 10
+}

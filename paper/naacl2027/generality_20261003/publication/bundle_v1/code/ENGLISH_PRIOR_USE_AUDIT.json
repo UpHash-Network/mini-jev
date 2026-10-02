@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "started_at_utc": "2026-10-02T18:16:26.691929+00:00",
+  "completed_at_utc": "2026-10-02T18:17:05.606554+00:00",
+  "scope": "Current outputs and work text artifacts enumerated with rg --hidden --no-ignore, plus all reachable Git blob versions for json/jsonl/csv/md/tex/py/yaml/yml/tsv/txt in the project common repository. New study, dependency directories, model weights/tokenizers, archives and binary files excluded.",
+  "excluded_directory_names": [
+    ".git",
+    "node_modules",
+    "site-packages",
+    "models",
+    "browsers",
+    "vendor",
+    "llama-cpp",
+    "llama.cpp"
+  ],
+  "new_study_excluded": [
+    "work/generality-20261003",
+    "paper/naacl2027/generality_20261003"
+  ],
+  "search_keys": "Every 1221 original English ID and exact complete question text in raw, JSON Unicode and JSON ASCII spellings; no labels or outcomes.",
+  "current_text_artifacts": 13020,
+  "current_path_list_sha256": "936e7c9430db4a88e5f09b2491337253544455a60d068603266d017808de783f",
+  "history_blob_versions": 840,
+  "history_blob_bytes": 255007962,
+  "history_inventory_sha256": "cb0f3e4efeff887f004e4cf23fddf05bf71d410cb60f11f7e63545bbdf4798f0",
+  "git_head": "8286850c2ae847a3727df7699c88d337abf17b40",
+  "git_refs_sha256": "549461f765a7a74b2af76886e5c1bbefa38a9923499f0633ee652c02de3b68e0",
+  "current_matches": [],
+  "history_matches": [],
+  "named_dataset_git_log_matches": [],
+  "no_prior_ids_or_exact_question_text_in_audited_scope": true,
+  "source_file_sha256": "bdbd9bf9cc4d2349b24901038b2ab2f58e10e4e507ad2fd425dca55cd3cb6660",
+  "source_rows": 1221,
+  "limitations": [
+    "No assertion about external accounts, unreachable Git objects, unlisted files or pretraining exposure.",
+    "Literal complete-question exclusion does not exclude paraphrases, translated questions, shared facts or shared answer words."
+  ]
+}

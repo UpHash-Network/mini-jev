@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "content_snapshot": "2026-10-02",
+  "content_snapshot": "2026-10-03",
   "evidence_commit": "bd025e8b1d14352a440d289c73b00ae445290935",
   "assets": [
     {
@@ -43,8 +43,8 @@
     {
       "path": "assets/LogitTrail_Manuscript.pdf",
       "source": "paper/naacl2027/NAACL2027_LogitTrail.pdf",
-      "bytes": 374794,
-      "sha256": "6a864f9a095a759648e9dada28cc315e146c8f88ad83166d7a38244167eabe09",
+      "bytes": 400239,
+      "sha256": "66558fa4101944566112c0661f8802892f475e9532213cb5b650e5489190a5ad",
       "status": "current",
       "pages": 10
     },
@@ -80,7 +80,7 @@
       "status": "current"
     }
   ],
-  "manuscript_revision": "paper/naacl2027/revision_20261002/MANIFEST.json",
+  "manuscript_revision": "paper/naacl2027/revision_20261003_generality/CHECKS.json",
   "arxiv_status": "submitted_awaiting_moderation",
   "arxiv_public_id": null,
   "evidence_commit_scope": "Original frozen source/evidence publication; not the current manuscript revision",
@@ -95,5 +95,9 @@
   },
   "project_name": "LogitTrail",
   "former_name": "Mini Jev",
-  "naming": "NAMING.md"
+  "naming": "NAMING.md",
+  "later_study_packages": [
+    "paper/naacl2027/diagnostic_value_20261003/publication",
+    "paper/naacl2027/generality_20261003/publication"
+  ]
 }

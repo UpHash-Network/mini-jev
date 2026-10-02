@@ -53,6 +53,8 @@ jobs:
         # Public model-named observation folders contain JSONL, not weights.
         # The immutable bundle also checks every included byte before analysis.
         run: python paper/naacl2027/diagnostic_value_20261003/publication/bundle_v1/replay.py --out "$RUNNER_TEMP/diagnostic-replay.json"
+      - name: Two-family Japanese-English replay (no inference)
+        run: python paper/naacl2027/generality_20261003/publication/bundle_v1/replay.py --out "$RUNNER_TEMP/generality-replay.json"
       - name: Tracked generated directories must be empty
         run: |
           python - <<'PY'

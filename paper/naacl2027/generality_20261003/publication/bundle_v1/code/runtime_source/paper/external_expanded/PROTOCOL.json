@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "experiment": "External expanded fixed 600-item zero-shot pilot preparation",
+  "status": "Preparation only; no model calls or result-based choices",
+  "repositories": {
+    "JGLUE": {
+      "url": "https://github.com/yahoojapan/JGLUE",
+      "commit": "6f071c09316baae89c3d083a90985b4b1cb9968c"
+    },
+    "JCoLA": {
+      "url": "https://github.com/osekilab/JCoLA",
+      "commit": "736d9eef3af04bb17e4cf59adf01325973234ff9"
+    }
+  },
+  "sources": [
+    {
+      "file": "jcola-in-valid.json",
+      "dataset": "JCoLA",
+      "split": "in_domain_valid",
+      "sample_n": 100,
+      "id_field": "uid",
+      "url": "https://raw.githubusercontent.com/osekilab/JCoLA/736d9eef3af04bb17e4cf59adf01325973234ff9/data/jcola-v1.0/in_domain_valid-v1.0.json",
+      "bytes": 165053,
+      "sha256": "677fb021886b6829d6a84e8ca9f62808f6bd479fa829439f49eac4f94f23658c"
+    },
+    {
+      "file": "jcola-out-valid.json",
+      "dataset": "JCoLA",
+      "split": "out_of_domain_valid",
+      "sample_n": 100,
+      "id_field": "uid",
+      "url": "https://raw.githubusercontent.com/osekilab/JCoLA/736d9eef3af04bb17e4cf59adf01325973234ff9/data/jcola-v1.0/out_of_domain_valid-v1.0.json",
+      "bytes": 130945,
+      "sha256": "029d60eb01a96ef333ffb247468bc3123f7a31a2668fa83757dd57af3ad50237"
+    },
+    {
+      "file": "jsts-valid.json",
+      "dataset": "JSTS",
+      "split": "valid",
+      "sample_n": 200,
+      "id_field": "sentence_pair_id",
+      "url": "https://raw.githubusercontent.com/yahoojapan/JGLUE/6f071c09316baae89c3d083a90985b4b1cb9968c/datasets/jsts-v1.3/valid-v1.3.json",
+      "bytes": 372253,
+      "sha256": "7c0bdcb381179f01096c635d058853d96da1e1248d23fe3f5c2beed5dc2d9b1a"
+    },
+    {
+      "file": "jcqa-valid.json",
+      "dataset": "JCommonsenseQA",
+      "split": "valid",
+      "sample_n": 200,
+      "id_field": "q_id",
+      "url": "https://raw.githubusercontent.com/yahoojapan/JGLUE/6f071c09316baae89c3d083a90985b4b1cb9968c/datasets/jcommonsenseqa-v1.3/valid-v1.3.json",
+      "bytes": 235633,
+      "sha256": "0d8d76f3bfa0d174866939882faccdd01fbc2bcd5a76c43748ba0c40a7b3b8d4"
+    }
+  ],
+  "overlap_reference": {
+    "file": "jnli-valid.json",
+    "dataset": "JNLI",
+    "split": "valid",
+    "sample_n": 300,
+    "id_field": "sentence_pair_id",
+    "url": "https://raw.githubusercontent.com/yahoojapan/JGLUE/6f071c09316baae89c3d083a90985b4b1cb9968c/datasets/jnli-v1.3/valid-v1.3.json",
+    "bytes": 632446,
+    "sha256": "ca0353efc7c2eebfb6de4e13f16295053c8b1ee65e7b0849190c90426fbc495f",
+    "selection": "paper/external_pilot/SELECTION.json",
+    "purpose": "Overlap audit only; JNLI rows are not part of the new 600 questions"
+  },
+  "license_sources": [
+    {
+      "file": "LICENSE-JGLUE.txt",
+      "url": "https://raw.githubusercontent.com/yahoojapan/JGLUE/6f071c09316baae89c3d083a90985b4b1cb9968c/LICENSE",
+      "bytes": 20138,
+      "sha256": "3b2890eacd851373001c4a14623458e3adaf1b1967939aa9c38a318e28d61c00"
+    },
+    {
+      "file": "LICENSE-JCoLA.txt",
+      "url": "https://raw.githubusercontent.com/osekilab/JCoLA/736d9eef3af04bb17e4cf59adf01325973234ff9/LICENSE",
+      "bytes": 20137,
+      "sha256": "5e436ff8ffbb77d8607220e9bce20c8915d860010feeb6c1ebef5a85688e9b39"
+    }
+  ],
+  "sampling": {
+    "salt": "mini-jev-external-expanded-v1:",
+    "rule": "Within each of four public-development source files, sort all rows by SHA256(salt + dataset + colon + split + colon + original ID), tie-break by string original ID, select first sample_n. Interleave 600 selected rows by the same rank and unique experiment ID. No gold stratification, text/length/difficulty filtering, substitution, deduplication-based exclusion, or result-dependent sampling.",
+    "budget": "JCoLA 100 in-domain + 100 out-of-domain; JSTS 200; JCommonsenseQA 200. Fixed by a 600-question inference budget, not a power calculation.",
+    "selection_timing": "Counts and ID-hash sampling choice fixed before source selection and all inference. Schema fields were inspected from the first source row to implement parsing; no model predictions were obtained or used. This is a local freeze, not an independent public preregistration."
+  },
+  "prompts": {
+    "JCoLA": {
+      "type": "noul",
+      "state_template": "判定する文: {sentence}",
+      "instructions": "提示された文は、日本語の文として文法的に容認できますか。内容が現実に起きるかどうかではなく、文の構造と語の結び付きで判断してください。",
+      "criteria": {
+        "false": "いいえ。日本語の文として文法的に容認できない。",
+        "true": "はい。日本語の文として文法的に容認できる。"
+      },
+      "gold_rule": "Original integer label 0 -> false, 1 -> true. Use only sentence, never original/diacritic/source/label as model input."
+    },
+    "JSTS": {
+      "type": "score",
+      "state_template": "文A: {sentence1}\n文B: {sentence2}",
+      "instructions": "文Aと文Bの意味の類似度を0から5の尺度で評価してください。段階の説明に基づき、意味と話題の共通性および相違の重要さを判断してください。",
+      "criteria": [
+        "意味にも話題にも共通点がない。",
+        "意味は異なるが、同じ話題を扱う。",
+        "意味は異なるが、一部の細かな要素が共通する。",
+        "意味が部分的に重なるが、重要な内容に違いがある。",
+        "意味はほぼ一致し、違いは重要でない細部に限られる。",
+        "両方の文が同じ意味を表している。"
+      ],
+      "gold_rule": "Preserve original continuous numeric label as gold_score in [0,5]; never round or construct a gold stage label. Evaluate sum(k*p_k) against gold_score.",
+      "rubric_source": "https://github.com/yahoojapan/JGLUE/blob/6f071c09316baae89c3d083a90985b4b1cb9968c/task_guidelines.md#jsts",
+      "rubric_note": "Japanese paraphrases of official 0..5 guidelines, fixed before selection; no dataset examples are included as few-shot demonstrations."
+    },
+    "JCommonsenseQA": {
+      "type": "choice",
+      "state_template": "質問: {question}",
+      "instructions": "質問に対して、一般的な知識や常識に基づく最も適切な答えを選択肢から一つ選んでください。",
+      "criteria_rule": "option_0 through option_4 map to unchanged original choice0 through choice4, preserving source order.",
+      "gold_rule": "Original label integer 0..4 maps to option_0..option_4."
+    }
+  },
+  "model_input_policy": "UTF-8 source sentence/question/candidate text inserted unchanged, with no rewriting, normalization, or truncation. Only type/state/instructions/criteria go to inference; omit id/source/dataset/split/label/gold_score/group and source metadata. Existing repeat_typed_score formatting remains unchanged. Zero few-shot examples.",
+  "primary_temperature": 1.0,
+  "secondary_temperature": 1.3489628825916533,
+  "temperature_policy": "Primary T=1. Secondary historical temperature applied to the same saved logits only; no fit, selection, or prompt revision using expanded pilot outcomes.",
+  "metrics": {
+    "JCoLA": [
+      "MCC primary with denominator-zero null",
+      "accuracy",
+      "balanced accuracy",
+      "macro F1",
+      "confusion counts",
+      "NLL",
+      "binary Brier and multiclass-sum Brier",
+      "ECE10 descriptive"
+    ],
+    "JCommonsenseQA": [
+      "accuracy primary",
+      "macro F1",
+      "confusion counts",
+      "NLL",
+      "multiclass-sum Brier",
+      "ECE10 descriptive"
+    ],
+    "JSTS": [
+      "MAE of expected score versus continuous gold_score primary",
+      "RMSE",
+      "Pearson correlation",
+      "Spearman correlation with average ranks for ties",
+      "normalized MAE divided by 5"
+    ],
+    "all": [
+      "dataset/split sample counts",
+      "complete input length",
+      "warm serial single-question wall latency p50/p95/max",
+      "validation failures and no silent exclusion"
+    ]
+  },
+  "forbidden_metric": "Do not invent rounded JSTS gold stages, argmax-stage accuracy, or a class NLL/Brier from the continuous mean score. Do not pool the three tasks into one overall accuracy.",
+  "group_policy": {
+    "JCoLA": "Hash original bibliographic source for group identity; record exact sentence duplication within and across domain splits. Literature-source grouping is a coarse dependence proxy, not proof of independent linguistic constructions.",
+    "JSTS": "Connected components across selected JSTS and prior selected JNLI rows sharing an exact sentence hash or source image ID parsed from yjcaptions_id; preserve caption IDs in metadata. This intentionally reveals cross-task caption/image dependence.",
+    "JCommonsenseQA": "Group by exact question-string SHA256. Shared ConceptNet concepts or semantic paraphrases may remain; no reliable semantic-family annotation is supplied."
+  },
+  "failure_policy": "No replacement or prompt edits for difficult/long/erroring selected cases. Preserve incomplete run and denominator; report any failures explicitly.",
+  "limitations": [
+    "Public-development samples, not hidden tests, full JGLUE scores, or independent preregistered outcomes.",
+    "Base-model pretraining/post-training overlap is unknown.",
+    "JSTS and JNLI share YJ Captions/image origins; overlapping selected source content is measured, not filtered after selection.",
+    "JCoLA in/out-of-domain names describe original dataset-source divisions, not proven unseen domains for this model.",
+    "Pilot size fixed by budget, with no power or generalization guarantee; correlation prevents an IID 600-row interpretation.",
+    "JSTS evaluates untrained transfer of a categorical readout to continuous similarity; no task-specific STS head is learned."
+  ],
+  "publication_policy": "Only IDs/hashes/gold/group metadata, protocols, script/tests, and license records in Git. Original datasets and transformed question text stay in an explicitly external cache. Derived dataset metadata uses CC-BY-SA-4.0, project code uses MIT. No upstream dataset is relicensed as MIT."
+}

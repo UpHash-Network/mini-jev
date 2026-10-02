@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-02T16:24:17.103986+00:00",
+  "status": "design before selection and any confirmation inference",
+  "registration": "Local timestamped protocol; not independent public preregistration. Old exploratory results were available.",
+  "n_items": 240,
+  "dataset": "JCommonsenseQA",
+  "split": "valid",
+  "selection_salt": "logittrail-diagnostic-confirmation-20261003-v1:",
+  "schedule_seed": 2026100302,
+  "models": [
+    "qwen2.5-1.5b",
+    "qwen3.6-35b-a3b"
+  ],
+  "primary_model": "qwen2.5-1.5b",
+  "measured_requests_per_model": 1200,
+  "repeat_control_items": 0,
+  "repeat_control_calls_per_item": 0,
+  "physical_schedule": {
+    "method": "fixed_cyclic",
+    "anchor": "canonical",
+    "replicates": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "temperature": 1.0,
+    "max_input_tokens": 2048,
+    "schedule": "Seeded shuffled items and within-item physical execution order. Logical policy observations remain replicas 0, then 1, then 2..4.",
+    "averaging": "Uniform arithmetic mean of candidate-normalized probabilities aligned to fixed option_0..4 semantic keys; never mean logits."
+  },
+  "data": {
+    "inventory": "../data_inventory/JCQA_UNUSED_INVENTORY.json",
+    "eligible_count": 517,
+    "excluded": "All project-used/reserved IDs and exact question text hashes across audited histories, including latest JNLP extra200.",
+    "selection": "Ascending SHA256(salt + dataset + colon + split + colon + original_id), then original_id; first240 distinct question groups. No gold, text content or model outcomes in selection.",
+    "remaining_eligible_after_selection": 277,
+    "limitations": "Public validation split, project-unused only; not demonstrably absent from model pretraining. Exact-hash separation does not establish semantic independence."
+  },
+  "A": {
+    "targets": {
+      "primary": "pair_mean_label_error",
+      "secondary": "first_label_error"
+    },
+    "scores": [
+      "first_maxprob_uncertainty",
+      "first_margin_uncertainty",
+      "first_entropy",
+      "order_flip",
+      "order_tv",
+      "pair_mean_entropy",
+      "first_entropy_tv_rank",
+      "pair_entropy_tv_rank"
+    ],
+    "definitions": "Identical to exploratory/SPECIFICATION.json. Entropy normalized by ln(5); TV=0.5*L1(first,second); rank composites equal weights of outcome-free model-specific cohort midranks. All scores oriented high=suspected error.",
+    "primary_metric": "tie-aware average precision",
+    "primary_contrast": [
+      "pair_entropy_tv_rank",
+      "pair_mean_entropy"
+    ],
+    "secondary_metrics": [
+      "AUROC",
+      "errors_found_at_nominal_top20_with_boundary_ties"
+    ],
+    "uncertainty": "2000 paired whole-question bootstrap resamples; cohort score ranks held fixed; percentile95% intervals and invalid count. Conditional on observed unlabeled cohort.",
+    "seed": 2026100303
+  },
+  "B": {
+    "setting": "Retrospective batch allocation from newly collected fixed pool; not measured online scheduler or per-request risk predictor.",
+    "primary_budget_calls_per_item": 3,
+    "budgets_calls_per_item": [
+      2,
+      2.5,
+      3,
+      4,
+      5
+    ],
+    "primary_contrast": [
+      "pair_entropy_tv_rank",
+      "pair_mean_entropy"
+    ],
+    "policies": {
+      "pair_entropy_tv_rank": "All items first two calls. Rank equal midrank pair-mean entropy + TV. Highest priority items complete all5 and return mean5; others return mean2.",
+      "pair_mean_entropy": "Same two-call start and completion rule, ranked by pair-mean entropy only.",
+      "pair_random": "Same two-call start and completion rule, selected by fixed SHA256(random_salt+item_id) ascending.",
+      "first_entropy": "All items first call. Rank first-call entropy only. Selected items complete all5 and return mean5; others return first."
+    },
+    "allocation": "For base b=2 or1, selected count=(budget*N-b*N)/(5-b); require integer, no free probes, no rounding to exceed budget. Pair selected counts0,40,80,160,240. First selected60,90,120,180,240.",
+    "random_salt": "logittrail-diagnostic-random-20261003-v1:",
+    "tie_salt": "logittrail-diagnostic-tie-20261003-v1:",
+    "tie_rule": "Descending score, then ascending SHA256(tie_salt+item_id), then item_id; fixed before outcomes.",
+    "gating_information": "First-only policy reads only replicate0 probabilities; pair policies only replicate0 and1. No gold or future member logits in gate.",
+    "primary_metric": "accuracy difference at 720 total logical calls (3N), primarymodel1.5B",
+    "secondary_metrics": [
+      "accuracy curve",
+      "paired correct-to-wrong and wrong-to-correct",
+      "total paid physical member calls",
+      "input token sum",
+      "recorded serial latency sum"
+    ],
+    "uncertainty": "2000 paired whole-question bootstrap on fixed chosen policy predictions, percentile95%. Conditional on realized cohort allocation; no refitting/reallocation in resamples and no overall population policy optimality claim.",
+    "seed": 2026100304
+  },
+  "interpretation": {
+    "primary_family": "A1.5B AP contrast and B1.5B accuracy contrast evaluated as separate descriptive estimation questions. No confirmatory significance claim or winner declaration from unadjusted intervals.",
+    "retention": "All models, scores, budgets, negative and null results retained. No policy retuning, target switching or sample expansion on outcomes.",
+    "cost": "Logical policy cost is unique selected physical members from a measured5-call pool; collection actually pays all1200 calls/model. Serial latency sums are replay bookkeeping, not causal online wall-time/speedups.",
+    "fallback": "Record incomplete failure; do not replace failed items or silently retry. Resource blocking leaves secondarymodel incomplete.",
+    "limits": "Two related Qwen checkpoints, one Japanese five-choice task, one physical Mac, no human participants or independent reproduction."
+  }
+}

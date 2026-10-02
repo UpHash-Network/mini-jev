@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-10-02T18:42:44.391763+00:00",
+  "model_key": "phi-4-mini",
+  "status": "completed",
+  "recorded_requests": 2400,
+  "failed_requests": 0,
+  "fatal_error_type": null,
+  "actual_calls_including_excluded": 2428,
+  "excluded_calls": 28,
+  "model_closed": true,
+  "source_unchanged": true,
+  "file_sha256": {
+    "RUNTIME.json": "cd575ed8eafaa4ac0a3dab01d64bebb0a9115730c527f3a8a98183c738b556e9",
+    "CommonsenseQA.jsonl": "2fe3d0207c5e560e234bbf572b99b364c7dcc85c8a8f771e24c7f056a5f28f8e",
+    "JCommonsenseQA.jsonl": "9737faaee0545b77ae906a0eef01d7a0c1c9bb136c5453efc02bf2514ef4c1d1",
+    "ATTEMPT.json": "260f28842534ebffcfc94d0fe9729d0497f02f5c2767c4935fa9ce1ba101d44b",
+    "WARMUPS.json": "08728e51835475438ebbc75763436e8ab6a1db7a4be630b217d40e806a9ea4e2",
+    "REPEATABILITY_GATE.json": "894207ffe440b75bc41155e299a3bb1b670e697f27e6defaa3187491bb7ba37c",
+    "JAPANESE_REPEATABILITY.json": "cdd963f154d350d2167c343a273d96c50292c2fbb9a8d2083df7595a170f07d3"
+  }
+}
