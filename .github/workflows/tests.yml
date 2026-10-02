@@ -40,6 +40,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p test_evidence_explorer.py -v
           node tests/test_evidence_core.mjs
+          node --test tests/test_import_core.mjs
       - name: Public artifact checks
         run: python scripts/check_public_release.py
       - name: Archived raw-logit reconstruction (no inference)

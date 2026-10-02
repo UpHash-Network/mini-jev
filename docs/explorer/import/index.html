@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="Inspect your own saved candidate distributions locally. JSONL stays in your browser; no upload or model calls.">
+  <title>Import your records · LogitTrail</title>
+  <link rel="stylesheet" href="import.css"><script src="app.mjs" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#input">Skip to import</a>
+  <header class="shell"><a class="brand" href="../../">{l} LogitTrail</a><nav><a href="../">Published evidence</a><a href="README.md">Import format</a></nav></header>
+  <main class="shell">
+    <p class="eyebrow">Local record inspection · No live inference</p><h1>Bring your own decision records.</h1>
+    <p class="lede">Compare conditions for the same model and item. Align candidate probabilities by semantic key and trace each value to the physical record you supplied.</p>
+    <p class="privacy">Your JSONL stays in this browser tab. No upload, network request with your data, analytics, or browser storage. Refresh or “Clear data” removes the app’s in-memory copy.</p>
+    <section id="input" class="card" aria-labelledby="input-title">
+      <h2 id="input-title">Choose a JSONL file</h2><p>One physical record per line, up to 25 MiB or 20,000 records. Supply logits plus temperature, or explicitly declared full candidate probabilities. <a href="README.md">Read the v1 schema</a>.</p>
+      <label for="file">Local file<input id="file" type="file" accept=".jsonl,.ndjson,.json,text/plain,application/json"></label>
+      <details><summary>Or paste JSONL</summary><label for="paste">JSONL records<textarea id="paste" rows="6" spellcheck="false" autocomplete="off" placeholder='{"schema_version":1,"kind":"physical",…}'></textarea></label><button id="parse" type="button">Inspect pasted records</button></details>
+      <div class="actions"><button id="synthetic" type="button" class="secondary">Try a synthetic example</button><button id="clear" type="button" class="secondary">Clear data</button></div>
+    </section>
+    <p id="status" class="status" role="status" aria-live="polite">Choose a file or try the clearly synthetic example.</p>
+    <details id="issues" class="card" hidden><summary id="issues-title">Input checks</summary><p id="issue-summary"></p><ol id="issue-list"></ol></details>
+    <section id="workspace" hidden>
+      <section class="card"><h2>Choose a comparison</h2><label for="group">Model / item<select id="group"></select></label><div class="grid"><label for="a">Condition A<select id="a"></select></label><label for="b">Condition B<select id="b"></select></label></div><p id="context" class="muted"></p></section>
+      <section class="card" aria-labelledby="comparison-title"><div class="heading"><h2 id="comparison-title">Candidate comparison</h2><button id="download" type="button" class="secondary">Download comparison</button></div><p id="outcome"></p><div id="metrics" class="metrics"></div><p class="muted">Probabilities are conditional on the declared candidate set. Δ is B − A in percentage points. They do not measure the probability of a correct answer.</p><div class="table-wrap"><table><thead><tr><th scope="col">Semantic key</th><th scope="col">A</th><th scope="col">B</th><th scope="col">Δ (pp)</th></tr></thead><tbody id="candidates"></tbody></table></div><p id="reference"></p><p id="origin" class="muted"></p><p id="latency" class="muted"></p></section>
+      <details class="card"><summary>Original records and provenance</summary><p class="muted">Source identities and file hashes are supplied by the author. The importer checks consistency, not source authenticity. Derived/shared-member recipes are unsupported in v1.</p><pre id="records"></pre></details>
+    </section>
+    <noscript><p>Enable JavaScript to import local records. This route performs no server-side processing.</p></noscript>
+    <p class="scope">This utility checks the format and compares supplied distributions. It does not assess model quality without a reference, verify semantic mappings, run a model, or establish human usability. “Full” means the author’s declared candidate set; an undisclosed missing candidate cannot be detected.</p>
+  </main><footer class="shell">LogitTrail · Local import v1 · <a href="../">Return to saved research records</a></footer>
+</body>
+</html>

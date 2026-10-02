@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-10-02T16:34:00.669Z",
+  "browser": "151.0.7922.34",
+  "synthetic": [
+    {
+      "group": "Synthetic demonstration — no model run / synthetic-choice (choice)",
+      "outcome": "Argmax label changed: red → green.",
+      "metrics": "Largest |Δ| (pp)28.5714Declared unique physical IDs2"
+    },
+    {
+      "group": "Synthetic demonstration — no model run / synthetic-noul (noul)",
+      "outcome": "Argmax label changed: false → true.",
+      "metrics": "A · P(true)0.25B · P(true)0.75Largest |Δ| (pp)50Declared unique physical IDs2"
+    },
+    {
+      "group": "Synthetic demonstration — no model run / synthetic-score (score)",
+      "outcome": "Argmax label changed: high → middle.",
+      "metrics": "A · expected Score6.5B · expected Score5.5Largest |Δ| (pp)20Declared unique physical IDs2"
+    }
+  ],
+  "archived_physical_records": 3,
+  "export_source_exact": true,
+  "mobile": {
+    "viewport": 390,
+    "body": 390
+  },
+  "post_load_requests": 0,
+  "errors": [],
+  "cleared": true,
+  "invalid_import_rejected": true,
+  "limitations": "Automated Chromium same-Mac software checks, not human usability or new inference."
+}

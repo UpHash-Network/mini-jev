@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "mode": "previously_published_record_projection",
+  "selection_rule": "Minimum SHA256 of compact ASCII JSON [panel_id,item_id], across published panels/items with at least two physical conditions; all selected physical conditions retained.",
+  "selection_hash": "000f2ad3bf9af404778c1a73c1a47c972cc1078725aa1e650a280b7f8ee22a66",
+  "eligible_model_item_groups": 3600,
+  "panel_id": "presentation_robustness--qwen2.5-1.5b--jcola",
+  "panel_path": "panels/presentation_robustness--qwen2.5-1.5b--jcola.json",
+  "panel_sha256": "97e56e8672f349e46cfef6f3590d3e80fc15bcc3e61f547ee990b133a67391d6",
+  "index_sha256": "22ee0270bce871e0c22808b3126f61b17410bdeac709f73f0a3fd6ced4331baa",
+  "item_id": "jcola:out_of_domain_valid:9798",
+  "conditions": [
+    "baseline",
+    "baseline_repeat",
+    "display_reverse"
+  ],
+  "projection_sha256": "30e4122737cdc4e35a2805deb60593952428d3e7635b01cf99057c76c5dee796",
+  "source_archive_sha256": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053",
+  "expected": [
+    {
+      "condition": "baseline",
+      "label": "true",
+      "typed_value": 0.997768849926363,
+      "probabilities": {
+        "false": 0.002231150073636942,
+        "true": 0.997768849926363
+      }
+    },
+    {
+      "condition": "baseline_repeat",
+      "label": "true",
+      "typed_value": 0.997768849926363,
+      "probabilities": {
+        "false": 0.002231150073636942,
+        "true": 0.997768849926363
+      }
+    },
+    {
+      "condition": "display_reverse",
+      "label": "true",
+      "typed_value": 0.9995365169536736,
+      "probabilities": {
+        "false": 0.00046348304632643866,
+        "true": 0.9995365169536736
+      }
+    }
+  ],
+  "new_model_calls": 0,
+  "human_participants": 0,
+  "scope": "Existing-record import compatibility only; not an additional model experiment, representative effectiveness evaluation, or human validation."
+}
