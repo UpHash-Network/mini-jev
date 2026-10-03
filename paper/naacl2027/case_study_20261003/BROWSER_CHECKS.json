@@ -1,0 +1,557 @@
+{
+  "passed": true,
+  "scope": "AI/software replay of retained observations; no new inference or human usability measurement",
+  "fixture_sha256": "5f7c7d5e14872a65d396726cf488a428b5153a4600f0831ffc40020f85bd636f",
+  "results": [
+    {
+      "browser": "chromium",
+      "version": "151.0.7922.34",
+      "records": 48,
+      "groups": 12,
+      "comparisons": 24,
+      "cases": [
+        {
+          "item": "synthetic-choice-0",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 0.000010880903907328765,
+          "largest_delta_display": "Largest |Δ| (pp)\n0.0011\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-0",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "Largest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-1",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 0.000012785692607653054,
+          "largest_delta_display": "Largest |Δ| (pp)\n0.0013\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-1",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "Largest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-2",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 0.000005713720118094567,
+          "largest_delta_display": "Largest |Δ| (pp)\n0.0006\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-2",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "Largest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-3",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 0.000008401987322437243,
+          "largest_delta_display": "Largest |Δ| (pp)\n0.0008\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-3",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "Largest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-0",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 3.549310496619995e-7,
+          "largest_delta_display": "A · P(true)\n0.976171\nB · P(true)\n0.976172\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 3.469446951953614e-18,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-0",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · P(true)\n0.976172\nB · P(true)\n0.976172\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 3.469446951953614e-18,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-1",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 1.9756638547363536e-8,
+          "largest_delta_display": "A · P(true)\n0.994794\nB · P(true)\n0.994794\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 8.673617379884035e-19,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-1",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · P(true)\n0.994794\nB · P(true)\n0.994794\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-2",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 1.4407374524048194e-7,
+          "largest_delta_display": "A · P(true)\n0.996555\nB · P(true)\n0.996555\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-2",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · P(true)\n0.996555\nB · P(true)\n0.996555\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-3",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 7.188440913873106e-8,
+          "largest_delta_display": "A · P(true)\n0.998427\nB · P(true)\n0.998427\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-3",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · P(true)\n0.998427\nB · P(true)\n0.998427\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-0",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 4.088307470340169e-11,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 2.6469779601696886e-23,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-0",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 2.6469779601696886e-23,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-1",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 1.3558265621327337e-11,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 1.3234889800848443e-23,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-1",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-2",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 8.774185269251107e-12,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-2",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-3",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 1.2517742398188147e-10,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 1.0587911840678754e-22,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-3",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 1.0587911840678754e-22,
+          "source_records_exact": true
+        }
+      ],
+      "page_errors": [],
+      "post_load_requests": []
+    },
+    {
+      "browser": "firefox",
+      "version": "153.0",
+      "records": 48,
+      "groups": 12,
+      "comparisons": 24,
+      "cases": [
+        {
+          "item": "synthetic-choice-0",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 0.000010880903907328765,
+          "largest_delta_display": "Largest |Δ| (pp)\n0.0011\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-0",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "Largest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-1",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 0.000012785692607653054,
+          "largest_delta_display": "Largest |Δ| (pp)\n0.0013\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-1",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "Largest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-2",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 0.000005713720118094567,
+          "largest_delta_display": "Largest |Δ| (pp)\n0.0006\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-2",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "Largest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-3",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 0.000008401987322437243,
+          "largest_delta_display": "Largest |Δ| (pp)\n0.0008\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-choice-3",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "Largest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-0",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 3.549310496619995e-7,
+          "largest_delta_display": "A · P(true)\n0.976171\nB · P(true)\n0.976172\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-0",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · P(true)\n0.976172\nB · P(true)\n0.976172\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-1",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 1.9756638547363536e-8,
+          "largest_delta_display": "A · P(true)\n0.994794\nB · P(true)\n0.994794\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-1",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · P(true)\n0.994794\nB · P(true)\n0.994794\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-2",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 1.4407374524048194e-7,
+          "largest_delta_display": "A · P(true)\n0.996555\nB · P(true)\n0.996555\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-2",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · P(true)\n0.996555\nB · P(true)\n0.996555\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-3",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 7.188440913873106e-8,
+          "largest_delta_display": "A · P(true)\n0.998427\nB · P(true)\n0.998427\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-noul-3",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · P(true)\n0.998427\nB · P(true)\n0.998427\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-0",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 4.088307470340169e-11,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-0",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-1",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 1.3558265621327337e-11,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-1",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-2",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 8.774185269251107e-12,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-2",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-3",
+          "pair": [
+            "diagnostic_last_position_only",
+            "diagnostic_stock_full_position"
+          ],
+          "max_delta": 1.2517742398188147e-10,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        },
+        {
+          "item": "synthetic-score-3",
+          "pair": [
+            "repeat_stock_full_position_a",
+            "repeat_stock_full_position_b"
+          ],
+          "max_delta": 0,
+          "largest_delta_display": "A · expected Score\n2\nB · expected Score\n2\nLargest |Δ| (pp)\n0\nDeclared unique physical IDs\n2",
+          "export_numeric_max_error": 0,
+          "source_records_exact": true
+        }
+      ],
+      "page_errors": [],
+      "post_load_requests": []
+    }
+  ]
+}

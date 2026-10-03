@@ -19,7 +19,7 @@ The [raw-record follow-up](raw_workflow_20261002/README.md) executes custom Java
 
 The separate [Japanese diagnostic confirmation](diagnostic_value_20261003/publication/README.md) adds 2,400 measured calls on 240 further questions shared by two Qwen checkpoints. A subsequent [two-family Japanese/English follow-up](generality_20261003/publication/README.md) adds 4,800 measured calls on 240 JCommonsenseQA and 240 CommonsenseQA questions shared by Qwen2.5-1.5B and Phi-4-mini. Its primary Phi-English comparison finds identical per-item correctness for entropy+order-TV and entropy alone: **174/240 at 720 calls**. Fixed-random and first-entropy references score 180/240 and 177/240. Added order-TV benefit remains unestablished; [the full report](generality_20261003/publication/REPORT.ja.md) retains all scores, error targets, strata and budgets, plus the synthetic implementation failure and versioned correction. An additional formative user-study packet is local and unpublished, with zero human participants or observations.
 
-[Latest manuscript revision checks](revision_20261003_generality/README.md) record the current PDF and new study.
+[Latest manuscript revision checks](revision_20261003_strengthening/README.md) record the current PDF, four added primary-source citations, and a [retrospective engineering case](case_study_20261003/CASE_STUDY.md). The case preserves 48 diagnostic/repeat records, two probability-tolerance failures with unchanged labels, the pre-benchmark amendment, and unchanged final study results. It is not a human study or new model experiment.
 
 ## Read and run
 

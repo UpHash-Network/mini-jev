@@ -39,3 +39,5 @@ the short evidence walkthrough presents its explanation as visible text.
 ## Current demonstration (2 October 2026)
 
 `assets/LogitTrail_Demo_20261002.mp4` contains actual browser interactions with the saved-evidence Explorer and a clearly labeled 16-second excerpt of the earlier local-inference recording. English captions are embedded outside the Explorer viewport; no new inference is claimed. See `publication/revision-20261002/video/` for capture/build scripts, transcript, provenance, and visual verification. The paper figure is a separate unmodified element screenshot of the JCoLA comparison, not a synthetic mockup.
+
+The 3 October strengthening revision adds four primary-source references and a retrospective retained-failure case. `explorer/import/engineering-case.jsonl` is byte-identical to the case projection; it adds no model measurement or human observation. Current source and checks: `paper/naacl2027/revision_20261003_strengthening/`.

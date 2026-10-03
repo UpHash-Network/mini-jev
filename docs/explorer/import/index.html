@@ -18,6 +18,7 @@
       <h2 id="input-title">Choose a JSONL file</h2><p>One physical record per line, up to 25 MiB or 20,000 records. Supply logits plus temperature, or explicitly declared full candidate probabilities. <a href="README.md">Read the v1 schema</a>.</p>
       <label for="file">Local file<input id="file" type="file" accept=".jsonl,.ndjson,.json,text/plain,application/json"></label>
       <details><summary>Or paste JSONL</summary><label for="paste">JSONL records<textarea id="paste" rows="6" spellcheck="false" autocomplete="off" placeholder='{"schema_version":1,"kind":"physical",…}'></textarea></label><button id="parse" type="button">Inspect pasted records</button></details>
+      <p class="muted">Inspect a recorded engineering case: <a href="engineering-case.jsonl" download>download 48 retained diagnostic records</a>, then choose that file above. These are model outputs on synthetic inputs, with two numerical-tolerance failures and unchanged labels. <a href="https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/case_study_20261003/CASE_STUDY.md">Read the case and its limits</a>.</p>
       <div class="actions"><button id="synthetic" type="button" class="secondary">Try a synthetic example</button><button id="clear" type="button" class="secondary">Clear data</button></div>
     </section>
     <p id="status" class="status" role="status" aria-live="polite">Choose a file or try the clearly synthetic example.</p>

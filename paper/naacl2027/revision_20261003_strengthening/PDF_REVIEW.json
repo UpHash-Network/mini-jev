@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-03T04:27:49.568416+00:00",
+  "reviewer": "Separate Codex agent; AI visual review, not independent human review",
+  "skill": "pdf:pdf (read-only; no artifact authoring marker required)",
+  "pdf": {
+    "path": "paper/naacl2027/NAACL2027_LogitTrail.pdf",
+    "sha256": "885f92c74b5b23237b4e67ba043bb22e6945b6e7fdaf7a7986d2d826918b72e6",
+    "bytes": 402591,
+    "version": "1.5",
+    "pages": 10,
+    "size": "A4 595.28 x 841.89 points"
+  },
+  "build_pdf_matches_release": true,
+  "rendered_pages": [
+    {
+      "page": 1,
+      "path": ".build/strengthening-20261003/page-01.png",
+      "sha256": "95dd37f2fbf0a46bb6952cc5ded873d16f3cb9a4236c345111501eff386ac751",
+      "width": 910,
+      "height": 1287,
+      "visually_inspected": true,
+      "layout_findings": []
+    },
+    {
+      "page": 2,
+      "path": ".build/strengthening-20261003/page-02.png",
+      "sha256": "71ea87319571fbcf8123428f31a08cc2332a3473d83cc89a40c047c059bffa31",
+      "width": 910,
+      "height": 1287,
+      "visually_inspected": true,
+      "layout_findings": []
+    },
+    {
+      "page": 3,
+      "path": ".build/strengthening-20261003/page-03.png",
+      "sha256": "30c94f8717c86d1b3c6ce4a0fd95195690700e531439962643dfcaf4cc5721f0",
+      "width": 910,
+      "height": 1287,
+      "visually_inspected": true,
+      "layout_findings": []
+    },
+    {
+      "page": 4,
+      "path": ".build/strengthening-20261003/page-04.png",
+      "sha256": "530e7b99005b4c318d6eba3cf402ab3f3e30816eedb9f6449b51fd6cf28d933f",
+      "width": 910,
+      "height": 1287,
+      "visually_inspected": true,
+      "layout_findings": []
+    },
+    {
+      "page": 5,
+      "path": ".build/strengthening-20261003/page-05.png",
+      "sha256": "1bfe383f1ae819b53e7d73a6609fe5c2f15a3e463ef046192b0d095ddedf33a7",
+      "width": 910,
+      "height": 1287,
+      "visually_inspected": true,
+      "layout_findings": []
+    },
+    {
+      "page": 6,
+      "path": ".build/strengthening-20261003/page-06.png",
+      "sha256": "17f7f4beaf8d71ab2791492b9038cca95cfb968cdd07277397804547099325d9",
+      "width": 910,
+      "height": 1287,
+      "visually_inspected": true,
+      "layout_findings": []
+    },
+    {
+      "page": 7,
+      "path": ".build/strengthening-20261003/page-07.png",
+      "sha256": "e6da7dc1ce4d2079c9a074ac6f6b95073454b9a3510b279e0cc63d6037d665bf",
+      "width": 910,
+      "height": 1287,
+      "visually_inspected": true,
+      "layout_findings": []
+    },
+    {
+      "page": 8,
+      "path": ".build/strengthening-20261003/page-08.png",
+      "sha256": "e90092a729a76b61a19acb0e244adf0f24a1cb5b1be52258063a4466a09fa286",
+      "width": 910,
+      "height": 1287,
+      "visually_inspected": true,
+      "layout_findings": []
+    },
+    {
+      "page": 9,
+      "path": ".build/strengthening-20261003/page-09.png",
+      "sha256": "35e44d60e6e42902690defc379d707d8281e09efcf27fb7a4257b4ad10a59674",
+      "width": 910,
+      "height": 1287,
+      "visually_inspected": true,
+      "layout_findings": []
+    },
+    {
+      "page": 10,
+      "path": ".build/strengthening-20261003/page-10.png",
+      "sha256": "ce54c5a2dee481a57592dd544dd9c4b2f14cd97a1219fe85cb5094e874608542",
+      "width": 910,
+      "height": 1287,
+      "visually_inspected": true,
+      "layout_findings": []
+    }
+  ],
+  "scope": "All10pages inspected at rendered resolution; page4 figure separately inspected at original PNG detail. Text extraction used additionally for commands/numerical checks. No external links or empirical outcomes newly validated.",
+  "layout": {
+    "clipping": false,
+    "text_overlap": false,
+    "figure_edge_loss": false,
+    "tables_outside_page": false,
+    "unreadable_replacement_glyphs": false,
+    "page_numbers_complete": true,
+    "body_and_acknowledgements_last_page": 6,
+    "ethics_and_references_pages": [
+      7,
+      8
+    ],
+    "appendix_pages": [
+      9,
+      10
+    ],
+    "appendix_page_count": 2,
+    "body_plus_ack_limit6_satisfied": true,
+    "appendix_limit2_satisfied": true,
+    "venue_rule_scope": "Checked against parent-specified6-page body+ack and2-page appendix constraints; not a fresh CFP audit."
+  },
+  "numerical_check": {
+    "case_source": "paper/naacl2027/case_study_20261003/CASE_EVIDENCE.json",
+    "case_source_sha256": "b4557c5be2f5231b289b774c33ef048dbf532bcfff0c7978826d531d8f9a04c9",
+    "checks_passed": [
+      "2of12synthetic comparisons exceed fixed1e-5 tolerance",
+      "1.28e-5 maximum is correct rounding of1.2785692607653054e-5",
+      "all12argmax labels unchanged",
+      "48retrospective diagnostic/repeat observations",
+      "128excludedcalls=24+48+56",
+      "4800completed benchmark forwards",
+      "Phi-English AP-0.051and interval[-0.119,0.013] match",
+      "primary entropy+TV and entropy174/240 at720calls",
+      "four new table5AP rows and intervals match stored values"
+    ],
+    "provenance_limits_present": [
+      "Original diagnosis CLI-based",
+      "No GUI discovery or accuracy repair claimed",
+      "Full-position repeatability does not prove rejected optimized-path parity",
+      "No human participants; Claude rehearsal excluded from human results"
+    ]
+  },
+  "latex_log": {
+    "overfull_warnings": 0,
+    "undefined_citation_warnings": 0,
+    "underfull_warnings_present": true,
+    "underfull_visual_effect": "Some justified spacing and hyphenation, no blocking layout defect observed."
+  },
+  "defects": [
+    {
+      "id": "PDF-CMD-001",
+      "severity": "minor",
+      "page": 9,
+      "issue": "Double hyphens in two literal command options become an en dash in rendered/extracted PDF.",
+      "observed": [
+        "./run.sh –without-calibration",
+        "python3 -m demo.server –port 8766"
+      ],
+      "recommendation": "Use literal double hyphens with ligatures disabled, e.g. texttt{-{}-without-calibration} and texttt{-{}-port}, then rebuild and recheck.",
+      "status": "resolved",
+      "original_pdf_sha256": "e9ae3efb2ca433d4319897a5d70e20ca8ec373c80e319bdb0cd858350624d08c"
+    }
+  ],
+  "result": "pass_after_cli_ligature_fix",
+  "manuscript_edited_by_reviewer": false,
+  "final_review": {
+    "reviewed_at_utc": "2026-10-03T04:30:01.143165+00:00",
+    "pdf_sha256": "885f92c74b5b23237b4e67ba043bb22e6945b6e7fdaf7a7986d2d826918b72e6",
+    "original_pdf_sha256": "e9ae3efb2ca433d4319897a5d70e20ca8ec373c80e319bdb0cd858350624d08c",
+    "render_hash_comparison_note": "At follow-up start, the existing review had already captured rebuilt hashes; original page hashes were not retained separately. All10current PNGs were visually re-inspected rather than inferring unchanged pages.",
+    "all_pages_reinspected": true,
+    "page_count": 10,
+    "rendered_files_sha256": {
+      ".build/strengthening-20261003/page-01.png": "95dd37f2fbf0a46bb6952cc5ded873d16f3cb9a4236c345111501eff386ac751",
+      ".build/strengthening-20261003/page-02.png": "71ea87319571fbcf8123428f31a08cc2332a3473d83cc89a40c047c059bffa31",
+      ".build/strengthening-20261003/page-03.png": "30c94f8717c86d1b3c6ce4a0fd95195690700e531439962643dfcaf4cc5721f0",
+      ".build/strengthening-20261003/page-04.png": "530e7b99005b4c318d6eba3cf402ab3f3e30816eedb9f6449b51fd6cf28d933f",
+      ".build/strengthening-20261003/page-05.png": "1bfe383f1ae819b53e7d73a6609fe5c2f15a3e463ef046192b0d095ddedf33a7",
+      ".build/strengthening-20261003/page-06.png": "17f7f4beaf8d71ab2791492b9038cca95cfb968cdd07277397804547099325d9",
+      ".build/strengthening-20261003/page-07.png": "e6da7dc1ce4d2079c9a074ac6f6b95073454b9a3510b279e0cc63d6037d665bf",
+      ".build/strengthening-20261003/page-08.png": "e90092a729a76b61a19acb0e244adf0f24a1cb5b1be52258063a4466a09fa286",
+      ".build/strengthening-20261003/page-09.png": "35e44d60e6e42902690defc379d707d8281e09efcf27fb7a4257b4ad10a59674",
+      ".build/strengthening-20261003/page-10.png": "ce54c5a2dee481a57592dd544dd9c4b2f14cd97a1219fe85cb5094e874608542"
+    },
+    "command_extraction_library": "pypdf",
+    "exact_command_checks": {
+      "./run.sh --without-calibration": true,
+      "python3 -m demo.server --port 8766": true
+    },
+    "page9_visual_commands_correct": true,
+    "clipping_overlap_or_figure_edge_loss": false,
+    "body_ack_last_page": 6,
+    "ethics_refs_pages": [
+      7,
+      8
+    ],
+    "appendix_pages": [
+      9,
+      10
+    ],
+    "remaining_defects": [],
+    "result": "pass"
+  }
+}

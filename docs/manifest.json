@@ -43,8 +43,8 @@
     {
       "path": "assets/LogitTrail_Manuscript.pdf",
       "source": "paper/naacl2027/NAACL2027_LogitTrail.pdf",
-      "bytes": 400239,
-      "sha256": "66558fa4101944566112c0661f8802892f475e9532213cb5b650e5489190a5ad",
+      "bytes": 402591,
+      "sha256": "885f92c74b5b23237b4e67ba043bb22e6945b6e7fdaf7a7986d2d826918b72e6",
       "status": "current",
       "pages": 10
     },
@@ -80,7 +80,7 @@
       "status": "current"
     }
   ],
-  "manuscript_revision": "paper/naacl2027/revision_20261003_generality/CHECKS.json",
+  "manuscript_revision": "paper/naacl2027/revision_20261003_strengthening/CHECKS.json",
   "arxiv_status": "submitted_awaiting_moderation",
   "arxiv_public_id": null,
   "evidence_commit_scope": "Original frozen source/evidence publication; not the current manuscript revision",
@@ -99,5 +99,14 @@
   "later_study_packages": [
     "paper/naacl2027/diagnostic_value_20261003/publication",
     "paper/naacl2027/generality_20261003/publication"
-  ]
+  ],
+  "retrospective_engineering_case": {
+    "source": "paper/naacl2027/case_study_20261003/CASE_STUDY.md",
+    "import": "explorer/import/engineering-case.jsonl",
+    "sha256": "5f7c7d5e14872a65d396726cf488a428b5153a4600f0831ffc40020f85bd636f",
+    "records": 48,
+    "groups": 12,
+    "new_inference_calls": 0,
+    "human_participants": 0
+  }
 }

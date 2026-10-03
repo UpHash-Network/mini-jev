@@ -1,0 +1,659 @@
+{
+  "schema_version": 1,
+  "mode": "local_user_supplied_physical_records",
+  "new_inference_calls": 0,
+  "model": "Phi-4-mini@cfbefacb99257ffa30c83adab238a50856ac3083/float32-MPS-eager",
+  "item_id": "synthetic-score-2",
+  "type": "score",
+  "key_schema": "retained-synthetic-fixture-8f34aa13507784cbd655067d1b571f1d80eb9710a306c6891f5f38d82c44a935",
+  "a": {
+    "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/10/optimized_logits",
+    "condition": "diagnostic_last_position_only",
+    "label": "2",
+    "tied_labels": [
+      "2"
+    ],
+    "typed_value": 2.000001033971155,
+    "origin": "softmax_of_supplied_logits",
+    "recorded_latency_ms": null
+  },
+  "b": {
+    "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/10/full_position_logits",
+    "condition": "diagnostic_stock_full_position",
+    "label": "2",
+    "tied_labels": [
+      "2"
+    ],
+    "typed_value": 2.0000010339692773,
+    "origin": "softmax_of_supplied_logits",
+    "recorded_latency_ms": null
+  },
+  "label_changed": false,
+  "reference": null,
+  "candidates": [
+    {
+      "key": "0",
+      "a": 3.655471486858835e-8,
+      "b": 3.6555551548944324e-8,
+      "delta": 8.366803559762105e-13,
+      "score": 0
+    },
+    {
+      "key": "1",
+      "a": 2.1192524117784906e-7,
+      "b": 2.1192685804387745e-7,
+      "delta": 1.616866028387989e-12,
+      "score": 1
+    },
+    {
+      "key": "2",
+      "a": 0.999998836994166,
+      "b": 0.9999988369874867,
+      "delta": -6.679323760749867e-12,
+      "score": 2
+    },
+    {
+      "key": "3",
+      "a": 5.750208704293703e-7,
+      "b": 5.750296446146396e-7,
+      "delta": 8.774185269251107e-12,
+      "score": 3
+    },
+    {
+      "key": "4",
+      "a": 2.745300662729367e-7,
+      "b": 2.745237828484526e-7,
+      "delta": -6.283424484130423e-12,
+      "score": 4
+    },
+    {
+      "key": "5",
+      "a": 6.49749410627679e-8,
+      "b": 6.497667610360914e-8,
+      "delta": 1.735040841235928e-12,
+      "score": 5
+    }
+  ],
+  "declared_physical_identities": {
+    "shared": 0,
+    "unique": 2,
+    "verified_against_external_source": false
+  },
+  "source_records": [
+    {
+      "schema_version": 1,
+      "kind": "physical",
+      "model": "Phi-4-mini@cfbefacb99257ffa30c83adab238a50856ac3083/float32-MPS-eager",
+      "item_id": "synthetic-score-2",
+      "type": "score",
+      "condition": "diagnostic_last_position_only",
+      "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/10/optimized_logits",
+      "key_schema": "retained-synthetic-fixture-8f34aa13507784cbd655067d1b571f1d80eb9710a306c6891f5f38d82c44a935",
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_count": 6,
+      "distribution_scope": "full_candidate_set",
+      "logits": [
+        31.852153778076172,
+        33.60957717895508,
+        48.97660827636719,
+        34.607749938964844,
+        33.868404388427734,
+        32.427345275878906
+      ],
+      "temperature": 1,
+      "provenance": {
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 475,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      "note": "Retrospective projection of a measured synthetic check, not a benchmark or human observation. Original JSON pointer /checks/10/optimized_logits. The original 24-call failure has no detailed gate; these are subsequent diagnostic/repeat observations. Full-position refers to input positions, not a selected-vocabulary-row optimization. Reference and latency were not recorded.",
+      "score_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "schema_version": 1,
+      "kind": "physical",
+      "model": "Phi-4-mini@cfbefacb99257ffa30c83adab238a50856ac3083/float32-MPS-eager",
+      "item_id": "synthetic-score-2",
+      "type": "score",
+      "condition": "diagnostic_stock_full_position",
+      "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/10/full_position_logits",
+      "key_schema": "retained-synthetic-fixture-8f34aa13507784cbd655067d1b571f1d80eb9710a306c6891f5f38d82c44a935",
+      "candidate_keys": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "candidate_count": 6,
+      "distribution_scope": "full_candidate_set",
+      "logits": [
+        31.85218048095703,
+        33.609588623046875,
+        48.97661209106445,
+        34.60776901245117,
+        33.868385314941406,
+        32.42737579345703
+      ],
+      "temperature": 1,
+      "provenance": {
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 483,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      "note": "Retrospective projection of a measured synthetic check, not a benchmark or human observation. Original JSON pointer /checks/10/full_position_logits. The original 24-call failure has no detailed gate; these are subsequent diagnostic/repeat observations. Full-position refers to input positions, not a selected-vocabulary-row optimization. Reference and latency were not recorded.",
+      "score_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "limitations": [
+    "All source identities, semantics, provenance, and references are supplied by the file author; source authenticity is not verified.",
+    "Full means the declared candidate set, not the whole model vocabulary. Omitted candidates cannot be detected if falsely declared complete.",
+    "Candidate probabilities and label matches are not calibrated correctness probabilities.",
+    "Missing latency or reference remains unknown. No model inference or human evaluation was performed.",
+    "This v1 accepts individual physical records; derived or shared-member recipes are unsupported."
+  ],
+  "input_warnings": [
+    {
+      "line": 1,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 1,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 2,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 2,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 3,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 3,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 4,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 4,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 5,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 5,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 6,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 6,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 7,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 7,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 8,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 8,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 9,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 9,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 10,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 10,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 11,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 11,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 12,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 12,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 13,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 13,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 14,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 14,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 15,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 15,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 16,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 16,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 17,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 17,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 18,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 18,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 19,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 19,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 20,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 20,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 21,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 21,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 22,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 22,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 23,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 23,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 24,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 24,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 25,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 25,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 26,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 26,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 27,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 27,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 28,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 28,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 29,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 29,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 30,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 30,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 31,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 31,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 32,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 32,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 33,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 33,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 34,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 34,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 35,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 35,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 36,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 36,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 37,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 37,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 38,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 38,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 39,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 39,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 40,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 40,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 41,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 41,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 42,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 42,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 43,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 43,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 44,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 44,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 45,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 45,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 46,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 46,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 47,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 47,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    },
+    {
+      "line": 48,
+      "code": "UNKNOWN_REFERENCE",
+      "message": "Reference is unknown; no correctness claim is available for this record."
+    },
+    {
+      "line": 48,
+      "code": "UNKNOWN_LATENCY",
+      "message": "Recorded latency is unknown; no zero-cost assumption is made."
+    }
+  ]
+}

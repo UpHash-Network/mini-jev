@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "checker": "released importer core, current local bytes",
+  "importer_core_sha256": "59e24d92a921dd98896c446387d52f74de3bb2a356f91bb9a450347e800dc178",
+  "fixture_sha256": "5f7c7d5e14872a65d396726cf488a428b5153a4600f0831ffc40020f85bd636f",
+  "records": 48,
+  "groups": 12,
+  "input_warnings": {
+    "missing_reference": 48,
+    "missing_latency": 48
+  },
+  "comparisons": [
+    {
+      "fixture": "synthetic-choice-0",
+      "type": "choice",
+      "diagnostic_max_abs_probability_difference": 0.000010880903907328765,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": true
+    },
+    {
+      "fixture": "synthetic-choice-1",
+      "type": "choice",
+      "diagnostic_max_abs_probability_difference": 0.000012785692607653054,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": true
+    },
+    {
+      "fixture": "synthetic-choice-2",
+      "type": "choice",
+      "diagnostic_max_abs_probability_difference": 0.000005713720118094567,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": false
+    },
+    {
+      "fixture": "synthetic-choice-3",
+      "type": "choice",
+      "diagnostic_max_abs_probability_difference": 0.000008401987322437243,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": false
+    },
+    {
+      "fixture": "synthetic-noul-0",
+      "type": "noul",
+      "diagnostic_max_abs_probability_difference": 3.549310496619995e-7,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": false
+    },
+    {
+      "fixture": "synthetic-noul-1",
+      "type": "noul",
+      "diagnostic_max_abs_probability_difference": 1.9756638547363536e-8,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": false
+    },
+    {
+      "fixture": "synthetic-noul-2",
+      "type": "noul",
+      "diagnostic_max_abs_probability_difference": 1.4407374524048194e-7,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": false
+    },
+    {
+      "fixture": "synthetic-noul-3",
+      "type": "noul",
+      "diagnostic_max_abs_probability_difference": 7.188440913873106e-8,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": false
+    },
+    {
+      "fixture": "synthetic-score-0",
+      "type": "score",
+      "diagnostic_max_abs_probability_difference": 4.088307470340169e-11,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": false
+    },
+    {
+      "fixture": "synthetic-score-1",
+      "type": "score",
+      "diagnostic_max_abs_probability_difference": 1.3558265621327337e-11,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": false
+    },
+    {
+      "fixture": "synthetic-score-2",
+      "type": "score",
+      "diagnostic_max_abs_probability_difference": 8.774185269251107e-12,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": false
+    },
+    {
+      "fixture": "synthetic-score-3",
+      "type": "score",
+      "diagnostic_max_abs_probability_difference": 1.2517742398188147e-10,
+      "diagnostic_label_changed": false,
+      "repeat_max_abs_probability_difference": 0,
+      "probability_threshold_exceeded": false
+    }
+  ],
+  "new_inference_calls": 0,
+  "human_participants": 0,
+  "scope": "Arithmetic/schema validation only; browser rendering and human comparative usability are separate."
+}

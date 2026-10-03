@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-03T04:18:45.428145+00:00",
+  "scope": "Four previously missing references; metadata and selected primary-source sections independently rechecked. No model/package/runtime experiment.",
+  "edited_file": "paper/naacl2027/references.bib",
+  "bib_sha256_after": "a9632fa8a0c0fd4e57ed141b74914be191b77e3985d523ff809849ab12327c8e",
+  "citation_keys_added": [
+    "tang2026omnimedjev",
+    "chen2023sensel",
+    "llamacpp2026systemone",
+    "promptfoo2026typesafe"
+  ],
+  "duplicate_keys": [],
+  "references": [
+    {
+      "key": "tang2026omnimedjev",
+      "primary_urls": [
+        "https://arxiv.org/abs/2610.00381v1",
+        "https://arxiv.org/html/2610.00381v1"
+      ],
+      "authors": [
+        "Luyao Tang",
+        "Cheng Chen"
+      ],
+      "title": "OmniMed-Jev: Calibrating LVLM Confidence for Trustworthy Medical Multimodal Decisions via System One",
+      "version": "v1",
+      "submitted_at_utc": "2026-09-30T08:53:54Z",
+      "publication_status": "arXiv preprint; peer-review acceptance not verified",
+      "evidence_locations": [
+        "arXiv abstract metadata and submission history",
+        "HTML sections 3.2, 3.4, 4.2 and Appendix E.2"
+      ],
+      "facts": [
+        "Candidate-conditioned medical multimodal head with separate head training and then head plus LoRA adaptation.",
+        "Not a frozen output-projection readout; authors acknowledge supervision and training differences."
+      ],
+      "suggested_sentence_latex": "\\citet{tang2026omnimedjev} train a candidate-conditioned head and low-rank adapters for medical multimodal decisions; their calibration findings do not isolate an interface-only effect or validate our frozen readout."
+    },
+    {
+      "key": "chen2023sensel",
+      "primary_urls": [
+        "https://aclanthology.org/2023.findings-emnlp.12/",
+        "https://aclanthology.org/2023.findings-emnlp.12.bib",
+        "https://aclanthology.org/2023.findings-emnlp.12.pdf"
+      ],
+      "authors": [
+        "Yanda Chen",
+        "Chen Zhao",
+        "Zhou Yu",
+        "Kathleen McKeown",
+        "He He"
+      ],
+      "title": "On the Relation between Sensitivity and Accuracy in In-Context Learning",
+      "publication_date": "2023-12",
+      "publication_status": "Peer-reviewed Findings EMNLP 2023, pages 155–167",
+      "evidence_locations": [
+        "ACL metadata/BibTeX",
+        "PDF sections 2.1, 2.2 and 3"
+      ],
+      "facts": [
+        "SenSel uses label-bias-adjusted changes in hard labels under instruction or in-context-example-order perturbations for abstention.",
+        "Its perturbations and sensitivity metric differ from our candidate-order total variation; our null result is neither a replication nor a refutation."
+      ],
+      "suggested_sentence_latex": "SenSel uses bias-adjusted sensitivity to instruction and example-order perturbations for abstention \\citep{chen2023sensel}; our candidate-order TV diagnostic uses different perturbations and does not reproduce or refute that result."
+    },
+    {
+      "key": "llamacpp2026systemone",
+      "primary_urls": [
+        "https://api.github.com/repos/ggml-org/llama.cpp/commits/a4cb4c61fd9d9c2066c7c1747821d3d65b8943bd",
+        "https://github.com/ggml-org/llama.cpp/commit/a4cb4c61fd9d9c2066c7c1747821d3d65b8943bd",
+        "https://raw.githubusercontent.com/ggml-org/llama.cpp/a4cb4c61fd9d9c2066c7c1747821d3d65b8943bd/tools/server/server-decision.cpp"
+      ],
+      "commit_author_display_name": "Xuan-Son Nguyen",
+      "commit_title": "llama, server: add /v1/systemone API (models: laya, julia-1, lev, openjev, kev) (#29818)",
+      "committed_at_utc": "2026-10-02T09:56:04Z",
+      "publication_status": "Official source integration; exact commit is an ancestor of prerelease b11362; binary/runtime not tested",
+      "evidence_locations": [
+        "GitHub commit API",
+        "server-decision.cpp:43–63,348–353,576–603"
+      ],
+      "facts": [
+        "Uses decision-model metadata/template; same endpoint or GGUF format does not establish ordinary frozen-LM compatibility.",
+        "LEV Choice uses two order variants and averages semantically aligned distributions; one request is not necessarily one physical forward."
+      ],
+      "suggested_sentence_latex": "A recent \\texttt{llama.cpp} source integration exposes typed decisions for supported decision models and two-order averaging for LEV Choice \\citep{llamacpp2026systemone}; this is not a matched runtime comparison with our frozen generic-LM readout."
+    },
+    {
+      "key": "promptfoo2026typesafe",
+      "primary_urls": [
+        "https://api.github.com/repos/promptfoo/promptfoo/commits/62657415e789c369ae388a01ac707c39f70be7b1",
+        "https://github.com/promptfoo/promptfoo/commit/62657415e789c369ae388a01ac707c39f70be7b1",
+        "https://raw.githubusercontent.com/promptfoo/promptfoo/62657415e789c369ae388a01ac707c39f70be7b1/src/providers/typesafe.ts"
+      ],
+      "commit_author_display_name": "Nobita Nobi",
+      "author_caveat": "Public commit author name, not a verified legal identity.",
+      "commit_title": "feat(providers): add TypeSafe Jev provider (#11299)",
+      "committed_at_utc": "2026-10-02T20:14:06Z",
+      "publication_status": "Official source integration; exact commit not an ancestor of observed 0.123.1 release; package/runtime/GUI not tested",
+      "evidence_locations": [
+        "GitHub commit API",
+        "src/providers/typesafe.ts:195–226,229–250,282–304,399–414"
+      ],
+      "facts": [
+        "Regular provider retains full answers and response metadata; rubric path retains typed answer metadata.",
+        "Classifier path returns a probability map; uniform metadata retention across all paths is unsupported."
+      ],
+      "suggested_sentence_latex": "Promptfoo also adds a TypeSafe provider that preserves typed answers in its regular and rubric paths \\citep{promptfoo2026typesafe}; this source inspection does not establish equivalent provenance retention in every path or a tested release."
+    }
+  ],
+  "release_ancestry_rechecked": {
+    "llama_b11362": {
+      "api_url": "https://api.github.com/repos/ggml-org/llama.cpp/compare/a4cb4c61fd9d9c2066c7c1747821d3d65b8943bd...b11362",
+      "html_url": "https://github.com/ggml-org/llama.cpp/compare/a4cb4c61fd9d9c2066c7c1747821d3d65b8943bd...b11362",
+      "status": "ahead",
+      "ahead_by": 1,
+      "behind_by": 0
+    },
+    "promptfoo_0.123.1": {
+      "api_url": "https://api.github.com/repos/promptfoo/promptfoo/compare/62657415e789c369ae388a01ac707c39f70be7b1...0.123.1",
+      "html_url": "https://github.com/promptfoo/promptfoo/compare/62657415e789c369ae388a01ac707c39f70be7b1...0.123.1",
+      "status": "behind",
+      "ahead_by": 0,
+      "behind_by": 253
+    }
+  },
+  "unverified": [
+    "Legal identity behind software author display names",
+    "Initial public announcement timestamp of OmniMed-Jev",
+    "OmniMed-Jev acceptance in a peer-reviewed venue",
+    "Competitor binary/package installation and runtime outcomes",
+    "Comparative human usability"
+  ],
+  "other_files_modified": []
+}

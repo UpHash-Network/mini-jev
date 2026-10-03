@@ -75,3 +75,7 @@ node --test tests/test_import_core.mjs
 ```
 
 Tests check independent hand-computed examples, tuple-order invariance, invalid and duplicate inputs, unknown-reference behavior, safe data representation, and exact agreement of the archived projection with the unchanged published source. This is software validation; it does not establish human usability or empirical model gains. A separate browser review is required before site integration.
+
+## Retained engineering case
+
+Download [engineering-case.jsonl](engineering-case.jsonl) and select it in the importer. This projects all 48 retained diagnostic/repeat observations across 12 synthetic fixtures, rather than selecting only the two tolerance failures. The original discovery was a command-line numerical gate; this is retrospective inspection. Source paths, hashes and JSON pointers, unchanged-label observations, the configuration amendment, and the complete-JSON baseline are documented in the [case report](https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/case_study_20261003/CASE_STUDY.md). References and latency remain unknown.

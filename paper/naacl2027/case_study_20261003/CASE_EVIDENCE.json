@@ -1,0 +1,642 @@
+{
+  "schema_version": 1,
+  "case_type": "retrospective_author_and_AI_assisted_engineering_case",
+  "new_model_inference_calls": 0,
+  "human_participants": 0,
+  "original_detection_route": "CLI synthetic gate and saved logs; no evidence of original GUI discovery",
+  "measurement_scope": "One Mac; stock last-position-only versus stock all-position full-vocabulary projection; not selected-row projection.",
+  "original_failed_attempt": {
+    "started_at": "2026-10-02T18:19:42.820393+00:00",
+    "completed_at": "2026-10-02T18:20:02.617226+00:00",
+    "actual_calls": 24,
+    "benchmark_calls": 0,
+    "detailed_gate_retained": false,
+    "receipt_excluded_calls_28_is_planned_not_executed": true
+  },
+  "subsequent_diagnosis": {
+    "comparison_calls": 24,
+    "repeat_calls": 24,
+    "benchmark_calls": 0,
+    "probability_atol": 1e-05,
+    "failed_comparisons": 2,
+    "total_comparisons": 12,
+    "all_labels_equal": true,
+    "max_abs_probability_difference": 1.2785692607653054e-05,
+    "cause": "Not isolated; shape-dependent floating-point rounding is a hypothesis, not an observed causal explanation.",
+    "fixtures": [
+      {
+        "fixture": "synthetic-choice-0",
+        "type": "choice",
+        "diagnostic_max_abs_probability_difference": 1.0880903907328765e-05,
+        "diagnostic_max_abs_logit_difference": 3.0517578125e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": false,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-choice-1",
+        "type": "choice",
+        "diagnostic_max_abs_probability_difference": 1.2785692607653054e-05,
+        "diagnostic_max_abs_logit_difference": 4.9591064453125e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": false,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-choice-2",
+        "type": "choice",
+        "diagnostic_max_abs_probability_difference": 5.713720118094567e-06,
+        "diagnostic_max_abs_logit_difference": 3.814697265625e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": true,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-choice-3",
+        "type": "choice",
+        "diagnostic_max_abs_probability_difference": 8.401987322437243e-06,
+        "diagnostic_max_abs_logit_difference": 8.392333984375e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": true,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-noul-0",
+        "type": "noul",
+        "diagnostic_max_abs_probability_difference": 3.549310496619995e-07,
+        "diagnostic_max_abs_logit_difference": 7.62939453125e-06,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": true,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-noul-1",
+        "type": "noul",
+        "diagnostic_max_abs_probability_difference": 1.9756638547363536e-08,
+        "diagnostic_max_abs_logit_difference": 1.1444091796875e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": true,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-noul-2",
+        "type": "noul",
+        "diagnostic_max_abs_probability_difference": 1.4407374524048194e-07,
+        "diagnostic_max_abs_logit_difference": 4.57763671875e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": true,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-noul-3",
+        "type": "noul",
+        "diagnostic_max_abs_probability_difference": 7.188440913873106e-08,
+        "diagnostic_max_abs_logit_difference": 2.288818359375e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": true,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-score-0",
+        "type": "score",
+        "diagnostic_max_abs_probability_difference": 4.088307470340169e-11,
+        "diagnostic_max_abs_logit_difference": 7.62939453125e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": true,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-score-1",
+        "type": "score",
+        "diagnostic_max_abs_probability_difference": 1.3558265621327337e-11,
+        "diagnostic_max_abs_logit_difference": 3.814697265625e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": true,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-score-2",
+        "type": "score",
+        "diagnostic_max_abs_probability_difference": 8.774185269251107e-12,
+        "diagnostic_max_abs_logit_difference": 3.0517578125e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": true,
+        "full_repeat_max_abs_logit_difference": 0.0
+      },
+      {
+        "fixture": "synthetic-score-3",
+        "type": "score",
+        "diagnostic_max_abs_probability_difference": 1.2517742398188147e-10,
+        "diagnostic_max_abs_logit_difference": 5.7220458984375e-05,
+        "diagnostic_labels_equal": true,
+        "diagnostic_passed": true,
+        "full_repeat_max_abs_logit_difference": 0.0
+      }
+    ]
+  },
+  "amendment": {
+    "created_at": "2026-10-02T18:24:09.067554+00:00",
+    "v2_freeze_at": "2026-10-02T18:24:23.451234+00:00",
+    "original_v2_freeze_sha256": "2c4270d7eb2768999bd73b5727104e24be7a46a999844ccd6bcd11862904a8b5",
+    "change": "Use stock logits_to_keep=0 for both models. Preserve all thresholds, float32 MPS eager, dataset items, prompts and analyses. Full/full synthetic gate demonstrates repeatability, not parity with optimized head.",
+    "no_benchmark_results_available": true,
+    "independent_preregistration": false
+  },
+  "completed_v2": {
+    "phi-4-mini": {
+      "created_at": "2026-10-02T18:42:44.391763+00:00",
+      "recorded_requests": 2400,
+      "failed_requests": 0,
+      "actual_calls_including_excluded": 2428,
+      "excluded_calls": 28
+    },
+    "qwen2.5-1.5b": {
+      "created_at": "2026-10-02T18:50:34.417858+00:00",
+      "recorded_requests": 2400,
+      "failed_requests": 0,
+      "actual_calls_including_excluded": 2428,
+      "excluded_calls": 28
+    }
+  },
+  "total_call_accounting": {
+    "measured": 4800,
+    "initial_failure": 24,
+    "subsequent_diagnosis": 48,
+    "v2_checks": 56,
+    "total": 4928
+  },
+  "retained_negative_results": {
+    "all_four_pair_error_AP_contrasts": {
+      "qwen2.5-1.5b/JCommonsenseQA": {
+        "difference": -0.04756503460232059,
+        "ci95": {
+          "low": -0.15125962327566767,
+          "high": 0.03925784176931712,
+          "valid_resamples": 2000,
+          "invalid_resamples": 0
+        }
+      },
+      "qwen2.5-1.5b/CommonsenseQA": {
+        "difference": -0.03215523793011066,
+        "ci95": {
+          "low": -0.08200829471034617,
+          "high": 0.022120027930260123,
+          "valid_resamples": 2000,
+          "invalid_resamples": 0
+        }
+      },
+      "phi-4-mini/JCommonsenseQA": {
+        "difference": -0.06660491186321249,
+        "ci95": {
+          "low": -0.14125333156472739,
+          "high": 0.014456769251394355,
+          "valid_resamples": 2000,
+          "invalid_resamples": 0
+        }
+      },
+      "phi-4-mini/CommonsenseQA": {
+        "difference": -0.05118609420964709,
+        "ci95": {
+          "low": -0.11900001186452006,
+          "high": 0.013401454134775146,
+          "valid_resamples": 2000,
+          "invalid_resamples": 0
+        }
+      }
+    },
+    "primary_phi_english_720_call_correct_counts": {
+      "pair_entropy_tv_rank": 174,
+      "pair_mean_entropy": 174,
+      "pair_random": 180,
+      "first_entropy": 177
+    }
+  },
+  "import_projection": {
+    "records": 48,
+    "groups": 12,
+    "selection": "All 12 recorded fixtures and all four diagnostic/repeat observations; no outcome selection.",
+    "provenance_semantics": "Original JSON file, SHA-256, first logit-array line, and JSON pointer; physical identities are source assertions verified locally by this adapter.",
+    "source_mapping": [
+      {
+        "jsonl_line_1based": 1,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/0/optimized_logits",
+        "original_json_pointer": "/checks/0/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 27,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 2,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/0/full_position_logits",
+        "original_json_pointer": "/checks/0/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 32,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 3,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/0/a",
+        "original_json_pointer": "/checks/0/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 5,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 4,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/0/b",
+        "original_json_pointer": "/checks/0/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 10,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 5,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/1/optimized_logits",
+        "original_json_pointer": "/checks/1/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 70,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 6,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/1/full_position_logits",
+        "original_json_pointer": "/checks/1/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 75,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 7,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/1/a",
+        "original_json_pointer": "/checks/1/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 19,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 8,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/1/b",
+        "original_json_pointer": "/checks/1/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 24,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 9,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/2/optimized_logits",
+        "original_json_pointer": "/checks/2/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 113,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 10,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/2/full_position_logits",
+        "original_json_pointer": "/checks/2/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 118,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 11,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/2/a",
+        "original_json_pointer": "/checks/2/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 33,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 12,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/2/b",
+        "original_json_pointer": "/checks/2/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 38,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 13,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/3/optimized_logits",
+        "original_json_pointer": "/checks/3/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 156,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 14,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/3/full_position_logits",
+        "original_json_pointer": "/checks/3/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 161,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 15,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/3/a",
+        "original_json_pointer": "/checks/3/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 47,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 16,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/3/b",
+        "original_json_pointer": "/checks/3/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 52,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 17,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/4/optimized_logits",
+        "original_json_pointer": "/checks/4/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 197,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 18,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/4/full_position_logits",
+        "original_json_pointer": "/checks/4/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 201,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 19,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/4/a",
+        "original_json_pointer": "/checks/4/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 61,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 20,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/4/b",
+        "original_json_pointer": "/checks/4/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 65,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 21,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/5/optimized_logits",
+        "original_json_pointer": "/checks/5/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 234,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 22,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/5/full_position_logits",
+        "original_json_pointer": "/checks/5/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 238,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 23,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/5/a",
+        "original_json_pointer": "/checks/5/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 73,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 24,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/5/b",
+        "original_json_pointer": "/checks/5/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 77,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 25,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/6/optimized_logits",
+        "original_json_pointer": "/checks/6/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 271,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 26,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/6/full_position_logits",
+        "original_json_pointer": "/checks/6/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 275,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 27,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/6/a",
+        "original_json_pointer": "/checks/6/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 85,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 28,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/6/b",
+        "original_json_pointer": "/checks/6/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 89,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 29,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/7/optimized_logits",
+        "original_json_pointer": "/checks/7/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 308,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 30,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/7/full_position_logits",
+        "original_json_pointer": "/checks/7/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 312,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 31,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/7/a",
+        "original_json_pointer": "/checks/7/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 97,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 32,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/7/b",
+        "original_json_pointer": "/checks/7/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 101,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 33,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/8/optimized_logits",
+        "original_json_pointer": "/checks/8/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 353,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 34,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/8/full_position_logits",
+        "original_json_pointer": "/checks/8/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 361,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 35,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/8/a",
+        "original_json_pointer": "/checks/8/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 109,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 36,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/8/b",
+        "original_json_pointer": "/checks/8/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 117,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 37,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/9/optimized_logits",
+        "original_json_pointer": "/checks/9/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 414,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 38,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/9/full_position_logits",
+        "original_json_pointer": "/checks/9/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 422,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 39,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/9/a",
+        "original_json_pointer": "/checks/9/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 129,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 40,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/9/b",
+        "original_json_pointer": "/checks/9/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 137,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 41,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/10/optimized_logits",
+        "original_json_pointer": "/checks/10/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 475,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 42,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/10/full_position_logits",
+        "original_json_pointer": "/checks/10/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 483,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 43,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/10/a",
+        "original_json_pointer": "/checks/10/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 149,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 44,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/10/b",
+        "original_json_pointer": "/checks/10/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 157,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 45,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/11/optimized_logits",
+        "original_json_pointer": "/checks/11/optimized_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 536,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 46,
+        "source_id": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142#checks/11/full_position_logits",
+        "original_json_pointer": "/checks/11/full_position_logits",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "line_1based": 544,
+        "file_sha256": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142"
+      },
+      {
+        "jsonl_line_1based": 47,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/11/a",
+        "original_json_pointer": "/checks/11/a",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 169,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      },
+      {
+        "jsonl_line_1based": 48,
+        "source_id": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d#checks/11/b",
+        "original_json_pointer": "/checks/11/b",
+        "file_id": "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "line_1based": 177,
+        "file_sha256": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d"
+      }
+    ]
+  },
+  "baseline_fairness": {
+    "same_data_full_json_available": true,
+    "sources": [
+      "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+      "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json"
+    ],
+    "baseline_equivalence": "JSON contains the same complete logits and diagnostic probabilities; a JSON reader or script can recover every comparison. UI is a retrospective presentation, not privileged evidence.",
+    "not_measured": [
+      "human completion time",
+      "human error rate",
+      "discovery advantage",
+      "online latency gain",
+      "benchmark accuracy repair"
+    ]
+  },
+  "sources_sha256": {
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json": "8f6440eb0051c1aeba5f51d347bc679b11e8952e3167958a97e78abc40b48142",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json": "d3bb686a77b00d33013095624dac072f2b7c09e3e260fa54a0fa4fe769734f8d",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/v1_COMPLETION.json": "9c51c6562388d80befb9d39188a295f71182b51c729da4c5920e253e58cd0a26",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/v1_ATTEMPT.json": "e31ecd5794a142b9bcd599e9b57aaaae11fe6aaac3c7d4017f7aeac59168e4ea",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/code/AMENDMENT.json": "1351d8896e510a7acd18c2d3c7b7c9409ecf8be1964b890f9ee36e2b39a9e6e9",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/provenance/FREEZE.public.json": "d2d43ccaa530ee20674a4d2aaea5206709b81b72ca40bf3832614e2364a929d6",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/RESULTS.json": "70ab407531e0e66f3657c6600b0c89f3738a8e83aabf4b13b6a073f6d4d61c14",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/phi-4-mini/RUNTIME.json": "cd575ed8eafaa4ac0a3dab01d64bebb0a9115730c527f3a8a98183c738b556e9",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/phi-4-mini/COMPLETION.json": "585f962b3df199b1dfab22c3e852a09fcab34e60ad4bd1057f2c5f5fe4027d1b",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/phi-4-mini/REPEATABILITY_GATE.json": "894207ffe440b75bc41155e299a3bb1b670e697f27e6defaa3187491bb7ba37c",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/phi-4-mini/ATTEMPT.json": "260f28842534ebffcfc94d0fe9729d0497f02f5c2767c4935fa9ce1ba101d44b",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/phi-4-mini/JCommonsenseQA.jsonl": "9737faaee0545b77ae906a0eef01d7a0c1c9bb136c5453efc02bf2514ef4c1d1",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/phi-4-mini/CommonsenseQA.jsonl": "2fe3d0207c5e560e234bbf572b99b364c7dcc85c8a8f771e24c7f056a5f28f8e",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/qwen2.5-1.5b/COMPLETION.json": "53fb85be0b3fa13477cc1243190d1ad9789ff980ae8da227a2966d00cf88159a",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/qwen2.5-1.5b/REPEATABILITY_GATE.json": "f35a336b4cd20362982b88d0bab6764694d9033cf186494b4127d9f99a794f9d",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/qwen2.5-1.5b/ATTEMPT.json": "4fb5199164361df8c42a6f3e8db605262128c952820ac89be4373ebb6d0df294",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/qwen2.5-1.5b/JCommonsenseQA.jsonl": "1ecc69c0acb6425e28ca0885fb2ca248f775a6857932c4b2a4d4de125574dbe9",
+    "paper/naacl2027/generality_20261003/publication/bundle_v1/observations/qwen2.5-1.5b/CommonsenseQA.jsonl": "a2c93fc52f5ce7f583a44f4cf84500e6e80657a658f1fb9e62e2064dd96cd3c0"
+  },
+  "public_bundle_manifest_sha256": "a59589f8528a12f66e0dcba834fb86dcd93982d7a28726f3cee4d6f439e92cb1"
+}

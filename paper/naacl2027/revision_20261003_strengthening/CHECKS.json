@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-03T04:32:09.427531+00:00",
+  "pdf_sha256": "885f92c74b5b23237b4e67ba043bb22e6945b6e7fdaf7a7986d2d826918b72e6",
+  "main_tex_sha256": "b9ba36af67e958547fa6d39a91dbc54bff72ccfb03f032483e4a0056f5755690",
+  "references_sha256": "a9632fa8a0c0fd4e57ed141b74914be191b77e3985d523ff809849ab12327c8e",
+  "pages": 10,
+  "body_and_acknowledgements_end_page": 6,
+  "ethics_and_references_pages": [
+    7,
+    8
+  ],
+  "appendix_pages": [
+    9,
+    10
+  ],
+  "overfull_boxes": 0,
+  "unresolved_references": 0,
+  "replacement_glyphs": 0,
+  "public_pdf_identical": true,
+  "literal_cli_hyphens_verified": true,
+  "protected_artifact_sha256": {
+    "paper/arxiv/source/main.tex": "74f8f7c64ae4a1a057cd49c2921a32eae51377cc9185a13138c436fe085a733a",
+    "paper/arxiv/mini-jev-arxiv-source-20260925.zip": "0fc7ea4ffc83f80bef88405e6f3a9f6cd57a56db1224ac8e810db7dd09768d1d",
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053"
+  },
+  "new_model_inference_calls": 0,
+  "human_participants": 0,
+  "independent_machine_inference": false,
+  "case_records": 48,
+  "case_groups": 12,
+  "case_all_source_and_output_hashes_match": true,
+  "browser_checks": {
+    "file": "../case_study_20261003/BROWSER_CHECKS.json",
+    "browsers": [
+      "chromium",
+      "firefox"
+    ],
+    "export_comparisons": 48,
+    "no_postload_network_requests": true,
+    "page_errors": 0
+  },
+  "public_release_unit_tests": {
+    "passed": 11
+  },
+  "visual_review": "PDF_REVIEW.json",
+  "content_review": "CLAIM_REVIEW.json",
+  "reference_review": "REFERENCES_REVIEW.json",
+  "scope": "Retrospective engineering evidence and clearer positioning. No new model-quality, independent operator/machine or human-usability evidence.",
+  "staged_changed_files_hygiene": {
+    "schema_version": 1,
+    "passed": true,
+    "files_scanned": 77,
+    "bytes_scanned": 2757507,
+    "findings": [],
+    "scope": "All77curatedstagedchangedfiles, not wholeworkingdirectory; priorpublicsource retained."
+  }
+}

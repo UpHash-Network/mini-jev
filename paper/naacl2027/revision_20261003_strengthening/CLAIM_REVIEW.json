@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-03T04:20:56.189800+00:00",
+  "review_type": "Read-only independent AI claim audit; not human peer review",
+  "main_sha256_reviewed": "eec504ded49ac79872d1e8cbf00d186fc0522f608065742b53642cc9099bdc6d",
+  "scope": [
+    "Abstract",
+    "Introduction",
+    "Related work",
+    "Importer versus saved explorer scope",
+    "Human and sensitivity novelty boundaries",
+    "Retrospective engineering case and frozen source hash cross-check"
+  ],
+  "excluded": [
+    "Independent benchmark recomputation",
+    "PDF layout",
+    "New model/runtime execution"
+  ],
+  "findings": [
+    {
+      "id": "CR-01",
+      "status": "resolved",
+      "priority": 1,
+      "section": "Abstract",
+      "claim": "did a prompt alter candidate meaning",
+      "finding": "The browser aligns declared semantic keys; it cannot validate whether edited criteria preserve meaning. Saved task text is withheld, and the importer explicitly disclaims semantic-mapping verification. The opening question suggests stronger semantic diagnosis than implemented.",
+      "recommendation": "Replace with: did a configuration change fix an error, move probability mass, or hide a stable but degenerate predictor?",
+      "evidence": [
+        "main.tex: Inspect saved evidence without a model",
+        "docs/explorer/import/index.html:31",
+        "docs/explorer/import/README.md"
+      ],
+      "initial_status": "actionable",
+      "resolution": "The opening no longer implies detection of candidate semantic changes; it describes decision/error/probability consequences.",
+      "resolved_at_utc": "2026-10-03T04:25:50.395838+00:00",
+      "line_at_initial_review": 36
+    },
+    {
+      "id": "CR-02",
+      "status": "resolved",
+      "priority": 2,
+      "section": "Abstract / feature scope",
+      "claim": "a model-free browser exposes saved results and imports users' records",
+      "finding": "Body text correctly separates saved explorer and local physical-record importer, but the abstract combines them after a sentence promising panel outcomes and call provenance. Readers could infer importer support for panel marginals or derived-member accounting. These belong to the saved explorer.",
+      "recommendation": "Use: a saved-evidence browser exposes recorded panels, while a separate importer compares users' physical records. Keep full-panel and shared-call claims tied to the saved explorer.",
+      "evidence": [
+        "main.tex: Inspect saved evidence without a model",
+        "docs/explorer/import/index.html:18,27–31",
+        "main.tex: Reconstruction from raw records"
+      ],
+      "initial_status": "actionable",
+      "resolution": "The abstract explicitly distinguishes saved panels from the separate importer of physical records.",
+      "resolved_at_utc": "2026-10-03T04:25:50.395838+00:00",
+      "line_at_initial_review": 36
+    },
+    {
+      "id": "CR-03",
+      "status": "resolved",
+      "priority": 2,
+      "section": "Related Work / Inspection interfaces",
+      "claim": "New promptfoo source retains Jev answers in evaluation outputs",
+      "finding": "Accurate for normal provider and rubric paths; classifier returns only the probabilities map. The broad sentence omits that material boundary established in the source audit.",
+      "recommendation": "Use: New promptfoo source retains typed answers in regular and rubric paths. The existing source-only/runtime-untested qualification should remain.",
+      "evidence": [
+        "REFERENCES_REVIEW.json: promptfoo2026typesafe",
+        "https://raw.githubusercontent.com/promptfoo/promptfoo/62657415e789c369ae388a01ac707c39f70be7b1/src/providers/typesafe.ts:195–250,282–304"
+      ],
+      "initial_status": "actionable",
+      "resolution": "The promptfoo statement is restricted to regular and rubric evaluation paths and remains source-only.",
+      "resolved_at_utc": "2026-10-03T04:25:50.395838+00:00",
+      "line_at_initial_review": 216
+    },
+    {
+      "id": "CR-04",
+      "status": "pass",
+      "priority": null,
+      "section": "Abstract / Introduction / limitations / human boundary",
+      "finding": "The revision identifies NLP developers, linked inspection questions, equal-information JSON/ChainForge evidence, and reconstruction/failure visibility as measured scope. It explicitly leaves faster diagnosis, usability, human performance and second-machine inference unestablished. Claude rehearsal remains AI-only QA.",
+      "recommendation": "Retain these scope statements when adding the retrospective engineering case; do not count software reproduction as a human participant or independent inference.",
+      "evidence": [
+        "main.tex: Introduction",
+        "main.tex: Limitations",
+        "main.tex: Human evaluation boundary"
+      ],
+      "line_at_initial_review": 44
+    },
+    {
+      "id": "CR-05",
+      "status": "pass",
+      "priority": null,
+      "section": "Related Work / structured interfaces / sensitivity",
+      "finding": "The four new citations match audited sources. The text separates dedicated decision-model serving from generic frozen readout, trained OmniMed head/LoRA from interface-only effects, and SenSel instruction/example-order abstention from candidate-order TV nulls. It does not claim a new sensitivity phenomenon, scoring rule, or general superiority.",
+      "recommendation": "Keep commit-specific source citations and the non-runtime comparison boundary. New source integrations should not be described as matched benchmarks.",
+      "evidence": [
+        "REFERENCES_REVIEW.json",
+        "main.tex: Structured interfaces",
+        "main.tex: Sensitivity and calibration"
+      ],
+      "line_at_initial_review": 219
+    },
+    {
+      "id": "CR-06",
+      "status": "pass",
+      "priority": null,
+      "section": "Reproduction and framework integration / Error detection and budgeted replay",
+      "line": 280,
+      "finding": "The case is explicitly retrospective and sourced from a CLI gate; it does not claim GUI discovery, human benefit, accuracy repair, a new benchmark outcome, or equivalence to the rejected projection. The manuscript correctly distinguishes initial failure from subsequent retained diagnosis, keeps two of twelve failures and identical labels, and preserves the 128 excluded forward accounting.",
+      "verified_details": {
+        "initial_failure_actual_calls": 24,
+        "initial_benchmark_calls": 0,
+        "subsequent_diagnostic_pairs": 12,
+        "subsequent_probability_failures": 2,
+        "max_abs_probability_difference": 1.2785692607653054e-05,
+        "repeat_pairs": 12,
+        "retrospective_records": 48,
+        "benchmark_calls": 4800,
+        "excluded_calls": 128,
+        "total_calls": 4928,
+        "new_inference_calls": 0,
+        "human_participants": 0
+      },
+      "source_hashes_checked": 18,
+      "source_hash_mismatches": [],
+      "evidence": [
+        "case_study_20261003/CASE_STUDY.md",
+        "case_study_20261003/CASE_EVIDENCE.json",
+        "case_study_20261003/IMPORT_CORE_CHECK.json",
+        "generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_SYNTHETIC_FAILURE_DIAGNOSIS.json",
+        "generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/PHI_FULL_POSITION_REPEAT.json",
+        "generality_20261003/publication/bundle_v1/provenance/earlier_synthetic_only/v1_COMPLETION.json"
+      ],
+      "recommendation": "Retain the retrospective and no-accuracy-repair qualifiers in future summaries. The observed discrepancy is a small numerical tolerance failure with no demonstrated consequential semantic error."
+    }
+  ],
+  "manuscript_modified_by_reviewer": false,
+  "initial_main_sha256_reviewed": "f5b883fbe3e59f892cd1c3f745022e814a3a22eead574257f3752f9c3fe5fbe9",
+  "final_rechecked_at_utc": "2026-10-03T04:25:50.395838+00:00",
+  "final_status": "pass_after_three_wording_corrections",
+  "unresolved_actionable_findings": 0,
+  "final_typographic_followup": {
+    "main_tex_sha256": "b9ba36af67e958547fa6d39a91dbc54bff72ccfb03f032483e4a0056f5755690",
+    "change": "Only CLI double-hyphen ligatures disabled after content review; visual and exact-text extraction verified."
+  }
+}

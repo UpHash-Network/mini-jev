@@ -1,0 +1,26 @@
+{
+  "scope": "Browser harness development, not new model evidence",
+  "attempts": [
+    {
+      "outcome": "harness_schema_error",
+      "details": "Verifier initially assumed object-array candidates; corrected to actual candidate_keys/logits schema. Product import and first export succeeded."
+    },
+    {
+      "outcome": "download_event_timeout",
+      "details": "Rapid repeated export run stopped after ten saved Chromium exports. No product change; subsequent check spaces user export actions. Exact cause not isolated."
+    },
+    {
+      "outcome": "firefox_not_installed",
+      "details": "Completed Chromium comparisons before missing Firefox executable stopped the first two-browser attempt. Installed Playwright Firefox153.0 and reran the complete current-page check."
+    }
+  ],
+  "final": {
+    "passed": true,
+    "browsers": [
+      "chromium",
+      "firefox"
+    ],
+    "comparisons": 48,
+    "details": "Paced downloads completed; retained numeric/source/reference checks pass. No application JavaScript change or new inference."
+  }
+}
