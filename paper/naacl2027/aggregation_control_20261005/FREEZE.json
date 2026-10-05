@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-05T06:34:46.515195+00:00",
+  "stage": "Before first execution of new aggregation-control outcomes; underlying dataset and original arithmetic results already seen.",
+  "registration": "Local post-hoc analysis freeze, not preregistration or unseen confirmation.",
+  "files_sha256": {
+    "PROTOCOL.json": "43148186bd9d2cf2d05554c5a676bbf87dc02570bde8c61aa95a15abfb7754fb",
+    "INPUTS.json": "6b9e0103f89afc667f100215f6096984838b09a1ee685aa49b339b202381954b",
+    "analyze.py": "4fa134ebef27f672b27e69c46d2340f14b2c3a7954a6891868ce289e0be66362",
+    "test_analyze.py": "e9ddf8e1dcf08a18a4261dfa24f118551c4f64c7fd47b4d303587b1075710eae",
+    "README.md": "b6801491d9f6364564dabfe5c77ad4634f6355674ef8d1a2a48d7e5a993ac95a"
+  }
+}

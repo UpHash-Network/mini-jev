@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-05T06:30:29.664965+00:00",
+  "path_base": "Directory containing this INPUTS.json; all paths are relative.",
+  "files": [
+    {
+      "path": "../generality_20261003/publication/bundle_v1/MANIFEST.json",
+      "sha256": "a59589f8528a12f66e0dcba834fb86dcd93982d7a28726f3cee4d6f439e92cb1",
+      "bytes": 10561
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/replay.py",
+      "sha256": "7ad3501f7ad54828b6e34a9286e75bb5ba7fb87049ea9ec84104e835355a44b7",
+      "bytes": 5015
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/RESULTS.json",
+      "sha256": "70ab407531e0e66f3657c6600b0c89f3738a8e83aabf4b13b6a073f6d4d61c14",
+      "bytes": 7315934
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/data/SCHEDULES.json",
+      "sha256": "c21ad5736754001659cad5e6f4d394a7fb4334a1805b545728e60507913fbeaf",
+      "bytes": 2942684
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/provenance/FREEZE.public.json",
+      "sha256": "d2d43ccaa530ee20674a4d2aaea5206709b81b72ca40bf3832614e2364a929d6",
+      "bytes": 13789
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/code/PROTOCOL.json",
+      "sha256": "9e4504d7fa2a025ac862921207832b2331c23d62b5a23e2831dfa8fafb987a30",
+      "bytes": 7057
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/code/analysis.py",
+      "sha256": "21df80240a059b1208db52528446030ed753c41874d6d2c03aa34cb1506945ed",
+      "bytes": 15031
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/code/frozen/exploratory/analyze.py",
+      "sha256": "49c34d963c0ddff94a9e8d266c9ba0d5d6a738b777955b638df2554cb4c06e46",
+      "bytes": 16463
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/code/SELECTION.json",
+      "sha256": "e2b5123feddc573b102de1ed1ddf86288cc0ea5fe72b6098ae04c7f815c52c71",
+      "bytes": 448322
+    },
+    {
+      "path": "../generality_20261003/publication/REPORT.ja.md",
+      "sha256": "8cc4506d57fa7e4cd8fb0f0ec1ab4a05e7d3858c9a45ddc9da67a03727ebb6cb",
+      "bytes": 7422
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/observations/qwen2.5-1.5b/COMPLETION.json",
+      "sha256": "53fb85be0b3fa13477cc1243190d1ad9789ff980ae8da227a2966d00cf88159a",
+      "bytes": 991
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/observations/qwen2.5-1.5b/ATTEMPT.json",
+      "sha256": "4fb5199164361df8c42a6f3e8db605262128c952820ac89be4373ebb6d0df294",
+      "bytes": 202
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/observations/qwen2.5-1.5b/JCommonsenseQA.jsonl",
+      "sha256": "1ecc69c0acb6425e28ca0885fb2ca248f775a6857932c4b2a4d4de125574dbe9",
+      "bytes": 2540465
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/observations/qwen2.5-1.5b/CommonsenseQA.jsonl",
+      "sha256": "a2c93fc52f5ce7f583a44f4cf84500e6e80657a658f1fb9e62e2064dd96cd3c0",
+      "bytes": 2583789
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/observations/phi-4-mini/COMPLETION.json",
+      "sha256": "585f962b3df199b1dfab22c3e852a09fcab34e60ad4bd1057f2c5f5fe4027d1b",
+      "bytes": 989
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/observations/phi-4-mini/ATTEMPT.json",
+      "sha256": "260f28842534ebffcfc94d0fe9729d0497f02f5c2767c4935fa9ce1ba101d44b",
+      "bytes": 200
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/observations/phi-4-mini/JCommonsenseQA.jsonl",
+      "sha256": "9737faaee0545b77ae906a0eef01d7a0c1c9bb136c5453efc02bf2514ef4c1d1",
+      "bytes": 2535237
+    },
+    {
+      "path": "../generality_20261003/publication/bundle_v1/observations/phi-4-mini/CommonsenseQA.jsonl",
+      "sha256": "2fe3d0207c5e560e234bbf572b99b364c7dcc85c8a8f771e24c7f056a5f28f8e",
+      "bytes": 2577749
+    }
+  ]
+}

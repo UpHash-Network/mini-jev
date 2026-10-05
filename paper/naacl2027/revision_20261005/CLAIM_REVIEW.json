@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-05T06:42:03.937644+00:00",
+  "status": "pass_with_stated_scope_limits",
+  "review_type": "AI-assisted independent calculation and claim review; not independent human validation or independent-machine inference",
+  "scope": "Review of revised Diagnostic value, Structured interfaces, Aggregation-only control and Table aggregation in main.tex; source evidence for three new citations; numerical control code and all saved item-level results. No manuscript or analyzer edits made by this reviewer.",
+  "files_sha256": {
+    "paper/naacl2027/main.tex": "cda34e6c5d87e1ec7cf88eaa747cf3b4c0056b2575f3e25eb4d5b87e492f94ee",
+    "paper/naacl2027/references.bib": "d6428b66ac6359e7857e14b8b8fb4deed21f0ef3509fd069eb5d817fd5235628",
+    "paper/naacl2027/aggregation_control_20261005/PROTOCOL.json": "43148186bd9d2cf2d05554c5a676bbf87dc02570bde8c61aa95a15abfb7754fb",
+    "paper/naacl2027/aggregation_control_20261005/INPUTS.json": "6b9e0103f89afc667f100215f6096984838b09a1ee685aa49b339b202381954b",
+    "paper/naacl2027/aggregation_control_20261005/FREEZE.json": "6d5b18c04471a7d97c9dffcce318fc8263a66483a114f68f575465e92abfd8ad",
+    "paper/naacl2027/aggregation_control_20261005/analyze.py": "4fa134ebef27f672b27e69c46d2340f14b2c3a7954a6891868ce289e0be66362",
+    "paper/naacl2027/aggregation_control_20261005/test_analyze.py": "e9ddf8e1dcf08a18a4261dfa24f118551c4f64c7fd47b4d303587b1075710eae",
+    "paper/naacl2027/aggregation_control_20261005/results/RESULTS.json": "00c1f62d5baa47514205a6af544febf3b944d96c276f0c9ded08e3e3cc28d440",
+    "paper/naacl2027/aggregation_control_20261005/results/records.jsonl": "3c0231764871c5341b6d8bb72bcfeff8af3ad965a4555e05c633d5473a786920",
+    "paper/naacl2027/aggregation_control_20261005/results/REPORT.md": "56fb3bc5631655b23206a5d4feec0faa0021e3b3003b8cc467402f457c6ca8fc",
+    "paper/naacl2027/aggregation_control_20261005/results/MANIFEST.json": "2e6139685134396bca45f820d2b7323c3e95db8f51be9faec41b8e8e991099e2"
+  },
+  "bibliographic_claims": [
+    {
+      "key": "li2026llm2jev",
+      "status": "supported",
+      "evidence": "REFERENCES_REVIEW.json; arXiv 2610.02076v1 §§3.2–3.4",
+      "assessment": "Complete bracketed numeric suffix scoring on frozen backbones and separate fine-tuning are accurately distinguished from one-token readout."
+    },
+    {
+      "key": "zhang2026anyjev",
+      "status": "supported",
+      "evidence": "REFERENCES_REVIEW.json; arXiv 2610.00831v1 §§3–5",
+      "assessment": "Wording says the report studies prior correction and log-space cyclic aggregation; it does not incorrectly compose per-layout prior correction before Eq. 3. Position-bound labels are distinguished from fixed token–meaning bindings. The control explicitly excludes a full-system reproduction."
+    },
+    {
+      "key": "lv2026audiojev",
+      "status": "supported",
+      "evidence": "REFERENCES_REVIEW.json; arXiv 2610.01293v1 §§3–4",
+      "assessment": "Supervised audio order consistency accurately summarizes the relevant trained method; it is not presented as frozen text readout."
+    }
+  ],
+  "control_review": {
+    "formula": "Pass. Arithmetic mean and normalized geometric mean are different aggregation rules on the identical five semantically aligned vectors. Stable log-softmax at T=1 and final softmax implement normalized geometric averaging; candidate keys equal canonical keys under fixed token binding.",
+    "normalization": "Pass. Independent Decimal-60 direct products of raw saved probabilities reproduce all 960 normalized geometric vectors within 2.78e-16. Saved probability/logit consistency, arithmetic vectors and TV also reproduce within floating-point tolerance.",
+    "paired_units": "Pass. All five physical records stay attached to a question; 240 questions form each stratum. Common sampled question indices across methods preserve pairing. Models share 480 distinct questions; manuscript explicitly avoids pooling.",
+    "uncertainty": "Pass. Independently recomputed 10000 question bootstrap draws per stratum, including all 12 paired contrasts and each method accuracy interval. Results match to at most 1.05e-16. Intervals are described as exploratory and unadjusted. All four G−A intervals include zero; no equivalence or significance claim is made.",
+    "retained_results": "Pass. All four strata and all three methods appear in the manuscript table. Qwen-JA and Phi-JA adverse changes, Qwen-EN exact accuracy tie, Phi-EN improvement versus arithmetic and continued deficit versus first order are retained. Report/JSON retain every specified contrast and wrong-to-different-wrong label disagreements.",
+    "cost": "Pass. Both five-member methods share 1200 recorded calls per stratum; first order uses 240. The manuscript disclaims new inference and equal-budget superiority over the first-order reference. Input-token and latency sums independently match raw member records.",
+    "post_hoc_scope": "Pass. The manuscript states that the panel had already been inspected and that the local plan is not preregistration. The control changes only aggregation, with no rebinding, prior correction, new model output or external-system benchmark.",
+    "raw_support": {
+      "status": "pass",
+      "implementation": "Independent inline reviewer calculation; imports neither control analyzer nor frozen reader. Decimal-60 direct products of saved probabilities validate geometric distributions; question-wise integer differences validate bootstrap contrasts.",
+      "records_checked": 960,
+      "raw_responses_checked": 4800,
+      "max_absolute_errors": {
+        "saved_softmax": 4.440892098500626e-16,
+        "arithmetic": 2.220446049250313e-16,
+        "decimal_geometric": 2.7755575615628914e-16,
+        "tv": 2.220446049250313e-16,
+        "bootstrap": 1.0408340855860843e-16
+      },
+      "strata": [
+        {
+          "stratum": "qwen2.5-1.5b/JCommonsenseQA",
+          "n": 240,
+          "correct": {
+            "first_order": 194,
+            "arithmetic_mean5": 200,
+            "geometric_mean5": 198
+          },
+          "geometric_minus_arithmetic": {
+            "alternative": "geometric_mean5",
+            "reference": "arithmetic_mean5",
+            "reference_wrong_alternative_correct": 1,
+            "reference_correct_alternative_wrong": 3,
+            "both_correct": 197,
+            "both_wrong": 39,
+            "label_disagreements": 7,
+            "accuracy_difference": -0.008333333333333333,
+            "accuracy_difference_ci95": {
+              "low": -0.025000000000000022,
+              "high": 0.008333333333333304,
+              "valid_draws": 10000,
+              "invalid_draws": 0
+            }
+          }
+        },
+        {
+          "stratum": "qwen2.5-1.5b/CommonsenseQA",
+          "n": 240,
+          "correct": {
+            "first_order": 166,
+            "arithmetic_mean5": 170,
+            "geometric_mean5": 170
+          },
+          "geometric_minus_arithmetic": {
+            "alternative": "geometric_mean5",
+            "reference": "arithmetic_mean5",
+            "reference_wrong_alternative_correct": 2,
+            "reference_correct_alternative_wrong": 2,
+            "both_correct": 168,
+            "both_wrong": 68,
+            "label_disagreements": 5,
+            "accuracy_difference": 0.0,
+            "accuracy_difference_ci95": {
+              "low": -0.01666666666666672,
+              "high": 0.01666666666666672,
+              "valid_draws": 10000,
+              "invalid_draws": 0
+            }
+          }
+        },
+        {
+          "stratum": "phi-4-mini/JCommonsenseQA",
+          "n": 240,
+          "correct": {
+            "first_order": 204,
+            "arithmetic_mean5": 205,
+            "geometric_mean5": 202
+          },
+          "geometric_minus_arithmetic": {
+            "alternative": "geometric_mean5",
+            "reference": "arithmetic_mean5",
+            "reference_wrong_alternative_correct": 0,
+            "reference_correct_alternative_wrong": 3,
+            "both_correct": 202,
+            "both_wrong": 35,
+            "label_disagreements": 4,
+            "accuracy_difference": -0.0125,
+            "accuracy_difference_ci95": {
+              "low": -0.029166666666666674,
+              "high": 0.0,
+              "valid_draws": 10000,
+              "invalid_draws": 0
+            }
+          }
+        },
+        {
+          "stratum": "phi-4-mini/CommonsenseQA",
+          "n": 240,
+          "correct": {
+            "first_order": 180,
+            "arithmetic_mean5": 174,
+            "geometric_mean5": 178
+          },
+          "geometric_minus_arithmetic": {
+            "alternative": "geometric_mean5",
+            "reference": "arithmetic_mean5",
+            "reference_wrong_alternative_correct": 6,
+            "reference_correct_alternative_wrong": 2,
+            "both_correct": 172,
+            "both_wrong": 60,
+            "label_disagreements": 8,
+            "accuracy_difference": 0.016666666666666666,
+            "accuracy_difference_ci95": {
+              "low": -0.004166666666666652,
+              "high": 0.04166666666666663,
+              "valid_draws": 10000,
+              "invalid_draws": 0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "manuscript_table_check": {
+    "status": "pass",
+    "row_order": [
+      "qwen2.5-1.5b/JCommonsenseQA",
+      "qwen2.5-1.5b/CommonsenseQA",
+      "phi-4-mini/JCommonsenseQA",
+      "phi-4-mini/CommonsenseQA"
+    ],
+    "first_arithmetic_geometric_correct": [
+      [
+        194,
+        200,
+        198
+      ],
+      [
+        166,
+        170,
+        170
+      ],
+      [
+        204,
+        205,
+        202
+      ],
+      [
+        180,
+        174,
+        178
+      ]
+    ],
+    "geometric_minus_arithmetic_pp": [
+      -0.83,
+      0.0,
+      -1.25,
+      1.67
+    ],
+    "displayed_ci95_pp": [
+      [
+        -2.5,
+        0.83
+      ],
+      [
+        -1.67,
+        1.67
+      ],
+      [
+        -2.92,
+        0.0
+      ],
+      [
+        -0.42,
+        4.17
+      ]
+    ],
+    "body_label_change_range": "4–8 labels among 240 per stratum; observed counts 7, 5, 4, 8.",
+    "conclusion": "No consistent accuracy gain is supported by the directionally mixed observed outcomes; this phrasing does not assert population equivalence."
+  },
+  "findings": [],
+  "limits": [
+    "This review operates on saved outputs and validates transformations, provenance hashes and reporting, not observation authenticity.",
+    "The reviewer and control author are AI agents in the same environment; independently written arithmetic is not human validation or an independent-machine replication.",
+    "The original public panel was already seen and offers no new out-of-sample confirmation; no human usability or downstream utility claim is added.",
+    "Compilation, rendered PDF layout, remote publication and non-revised background source claims are outside this review.",
+    "Review applies to the recorded main.tex and artifact hashes; substantive subsequent edits require renewed review."
+  ],
+  "final_manuscript_addendum": {
+    "status": "pass_document_consistency_check",
+    "reviewed_at_utc": "2026-10-05T06:42:03.937644+00:00",
+    "previous_main_sha256": "871b8bf2f83fa47289fcd9cde5254da17662a6ebb01edf16408e9c6a6cd62d69",
+    "updated_main_sha256": "cda34e6c5d87e1ec7cf88eaa747cf3b4c0056b2575f3e25eb4d5b87e492f94ee",
+    "only_change_since_previous_review": {
+      "old": "External-dataset-derived selection metadata, rubrics, protocols, and results separately retain applicable CC BY-SA 4.0 attribution and share-alike terms.",
+      "new": "Japanese-dataset-derived selection metadata, rubrics, protocols, and results retain applicable CC BY-SA 4.0 terms; English CommonsenseQA material retains MIT terms."
+    },
+    "verification": "Replacing exactly the new sentence with the prior sentence reconstructs the previously reviewed full-manuscript SHA-256; all other previously reviewed artifact hashes are unchanged.",
+    "source_locations": [
+      "NOTICE.md lines 9–16",
+      "generality_20261003/publication/README.md lines 69–70",
+      "generality_20261003/publication/bundle_v1/code/SELECTION.json source records at lines 20–38"
+    ],
+    "source_sha256": {
+      "NOTICE.md": "04a8a48b88e2a601ed9af5ea8aafaed78d6a0316579f6f933e428dafd277623c",
+      "paper/naacl2027/generality_20261003/publication/README.md": "4c26eea8dcc217e279c5610199f1791f4c3582a21e6070aa3df5cb84fdde252b",
+      "paper/naacl2027/generality_20261003/publication/bundle_v1/code/SELECTION.json": "e2b5123feddc573b102de1ed1ddf86288cc0ea5fe72b6098ae04c7f815c52c71"
+    },
+    "assessment": "The revised scope matches the existing Japanese CC BY-SA 4.0 and English CommonsenseQA MIT declarations in the repository notices and frozen selection metadata. Scientific claims and table values remain byte-identical.",
+    "limit": "This is consistency checking against recorded package declarations, not a legal opinion or fresh upstream-license verification."
+  }
+}

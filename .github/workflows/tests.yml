@@ -55,6 +55,11 @@ jobs:
         run: python paper/naacl2027/diagnostic_value_20261003/publication/bundle_v1/replay.py --out "$RUNNER_TEMP/diagnostic-replay.json"
       - name: Two-family Japanese-English replay (no inference)
         run: python paper/naacl2027/generality_20261003/publication/bundle_v1/replay.py --out "$RUNNER_TEMP/generality-replay.json"
+      - name: Post-hoc aggregation control replay (no inference)
+        run: |
+          python -B -m unittest discover -s paper/naacl2027/aggregation_control_20261005 -p 'test_*.py' -v
+          python -B paper/naacl2027/aggregation_control_20261005/analyze.py --out "$RUNNER_TEMP/aggregation-replay"
+          python -B paper/naacl2027/aggregation_control_20261005/verify_replay.py --actual "$RUNNER_TEMP/aggregation-replay"
       - name: Tracked generated directories must be empty
         run: |
           python - <<'PY'

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-05T06:43:59.452747+00:00",
+  "pdf_sha256": "9bd1b03489f1fbfead292d9cb86051a55bb60e10ab72b67eeb65c46e2044323f",
+  "reviewer": "Primary AI agent; visual inspection of rendered PNGs, not human review",
+  "status": "passed",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "render": "pdftoppm -scale-to 1400 -png",
+  "findings": [],
+  "observations": [
+    "All 11 pages visually inspected; no clipping, overlapping text or missing glyphs.",
+    "Body, limitations and acknowledgements end on page6; ethics/references pages7\u20139; appendix10\u201311.",
+    "References continue briefly on page9; intentional clear page before 2-page appendix. Reference-page count is unrestricted in checkedCFP.",
+    "NewTable 6 fits column with all 4 strata/counts/intervals andcaption; source links andformula readable.",
+    "ExistingFigure1 retains both semantic probability bars andfull captured view; current CLI hyphens display literally."
+  ],
+  "final_revision_visual_check": {
+    "page7_rechecked_after_notice_clarification": true,
+    "other_ten_page_renders_byte_identical_to_reviewed_images": true
+  }
+}

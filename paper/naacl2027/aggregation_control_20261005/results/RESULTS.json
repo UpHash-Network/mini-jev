@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-05T06:34:52.667350+00:00",
+  "status": "post_hoc_exploratory",
+  "protocol_sha256": "43148186bd9d2cf2d05554c5a676bbf87dc02570bde8c61aa95a15abfb7754fb",
+  "inputs_sha256": "6b9e0103f89afc667f100215f6096984838b09a1ee685aa49b339b202381954b",
+  "freeze_sha256": "6d5b18c04471a7d97c9dffcce318fc8263a66483a114f68f575465e92abfd8ad",
+  "new_forward_calls": 0,
+  "saved_collection_calls_total": 4800,
+  "distinct_questions": 480,
+  "model_item_observations": 960,
+  "uncertainty": {
+    "method": "Paired whole-question nonparametric percentile bootstrap within each stratum; resample the same question indices across all three methods. Predictions are fixed; no refit, selection or aggregation tuning.",
+    "draws": 10000,
+    "seed": 2026100501,
+    "randomization": "Separate random.Random(seed + stratum_index) generators; stratum order models outer, datasets inner.",
+    "interval": "95% percentile interval with linear interpolation at positions (B-1)*0.025 and (B-1)*0.975; report valid/invalid draw counts.",
+    "interpretation": "All intervals are exploratory and unadjusted. No p-values, multiplicity-adjusted winner claim, population equivalence claim, or replacement of original prespecified results. All positive, negative and null findings retained."
+  },
+  "strata": {
+    "qwen2.5-1.5b/JCommonsenseQA": {
+      "n": 240,
+      "methods": {
+        "first_order": {
+          "correct": 194,
+          "n": 240,
+          "accuracy": 0.8083333333333333,
+          "accuracy_ci95": {
+            "low": 0.7583333333333333,
+            "high": 0.8583333333333333,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 240,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 76608,
+          "reused_recorded_serial_latency_ms": 48343.46633777022
+        },
+        "arithmetic_mean5": {
+          "correct": 200,
+          "n": 240,
+          "accuracy": 0.8333333333333334,
+          "accuracy_ci95": {
+            "low": 0.7833333333333333,
+            "high": 0.8791666666666667,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 1200,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 383040,
+          "reused_recorded_serial_latency_ms": 241448.4633365646
+        },
+        "geometric_mean5": {
+          "correct": 198,
+          "n": 240,
+          "accuracy": 0.825,
+          "accuracy_ci95": {
+            "low": 0.775,
+            "high": 0.8708333333333333,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 1200,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 383040,
+          "reused_recorded_serial_latency_ms": 241448.4633365646
+        }
+      },
+      "paired_contrasts": [
+        {
+          "alternative": "geometric_mean5",
+          "reference": "arithmetic_mean5",
+          "reference_wrong_alternative_correct": 1,
+          "reference_correct_alternative_wrong": 3,
+          "both_correct": 197,
+          "both_wrong": 39,
+          "label_disagreements": 7,
+          "accuracy_difference": -0.008333333333333333,
+          "accuracy_difference_ci95": {
+            "low": -0.025000000000000022,
+            "high": 0.008333333333333304,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        },
+        {
+          "alternative": "arithmetic_mean5",
+          "reference": "first_order",
+          "reference_wrong_alternative_correct": 10,
+          "reference_correct_alternative_wrong": 4,
+          "both_correct": 190,
+          "both_wrong": 36,
+          "label_disagreements": 18,
+          "accuracy_difference": 0.025,
+          "accuracy_difference_ci95": {
+            "low": -0.004166666666666652,
+            "high": 0.054166666666666696,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        },
+        {
+          "alternative": "geometric_mean5",
+          "reference": "first_order",
+          "reference_wrong_alternative_correct": 8,
+          "reference_correct_alternative_wrong": 4,
+          "both_correct": 190,
+          "both_wrong": 38,
+          "label_disagreements": 20,
+          "accuracy_difference": 0.016666666666666666,
+          "accuracy_difference_ci95": {
+            "low": -0.012499999999999956,
+            "high": 0.04583333333333328,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        }
+      ],
+      "arithmetic_geometric_distribution_tv": {
+        "mean": 0.09965440167183662,
+        "maximum": 0.3864454243769264
+      },
+      "maximum_geometric_mean_logit_identity_absolute_error": 5.551115123125783e-16,
+      "saved_collection_calls": 1200,
+      "new_forward_calls": 0
+    },
+    "qwen2.5-1.5b/CommonsenseQA": {
+      "n": 240,
+      "methods": {
+        "first_order": {
+          "correct": 166,
+          "n": 240,
+          "accuracy": 0.6916666666666667,
+          "accuracy_ci95": {
+            "low": 0.6333333333333333,
+            "high": 0.75,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 240,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 57264,
+          "reused_recorded_serial_latency_ms": 38768.86662654579
+        },
+        "arithmetic_mean5": {
+          "correct": 170,
+          "n": 240,
+          "accuracy": 0.7083333333333334,
+          "accuracy_ci95": {
+            "low": 0.65,
+            "high": 0.7626041666666651,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 1200,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 286320,
+          "reused_recorded_serial_latency_ms": 193238.0721513182
+        },
+        "geometric_mean5": {
+          "correct": 170,
+          "n": 240,
+          "accuracy": 0.7083333333333334,
+          "accuracy_ci95": {
+            "low": 0.65,
+            "high": 0.7626041666666651,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 1200,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 286320,
+          "reused_recorded_serial_latency_ms": 193238.0721513182
+        }
+      },
+      "paired_contrasts": [
+        {
+          "alternative": "geometric_mean5",
+          "reference": "arithmetic_mean5",
+          "reference_wrong_alternative_correct": 2,
+          "reference_correct_alternative_wrong": 2,
+          "both_correct": 168,
+          "both_wrong": 68,
+          "label_disagreements": 5,
+          "accuracy_difference": 0.0,
+          "accuracy_difference_ci95": {
+            "low": -0.01666666666666672,
+            "high": 0.01666666666666672,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        },
+        {
+          "alternative": "arithmetic_mean5",
+          "reference": "first_order",
+          "reference_wrong_alternative_correct": 17,
+          "reference_correct_alternative_wrong": 13,
+          "both_correct": 153,
+          "both_wrong": 57,
+          "label_disagreements": 34,
+          "accuracy_difference": 0.016666666666666666,
+          "accuracy_difference_ci95": {
+            "low": -0.029166666666666563,
+            "high": 0.0625,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        },
+        {
+          "alternative": "geometric_mean5",
+          "reference": "first_order",
+          "reference_wrong_alternative_correct": 17,
+          "reference_correct_alternative_wrong": 13,
+          "both_correct": 153,
+          "both_wrong": 57,
+          "label_disagreements": 33,
+          "accuracy_difference": 0.016666666666666666,
+          "accuracy_difference_ci95": {
+            "low": -0.025000000000000022,
+            "high": 0.0625,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        }
+      ],
+      "arithmetic_geometric_distribution_tv": {
+        "mean": 0.12277220052633918,
+        "maximum": 0.3921882080638902
+      },
+      "maximum_geometric_mean_logit_identity_absolute_error": 1.2212453270876722e-15,
+      "saved_collection_calls": 1200,
+      "new_forward_calls": 0
+    },
+    "phi-4-mini/JCommonsenseQA": {
+      "n": 240,
+      "methods": {
+        "first_order": {
+          "correct": 204,
+          "n": 240,
+          "accuracy": 0.85,
+          "accuracy_ci95": {
+            "low": 0.8041666666666667,
+            "high": 0.8958333333333334,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 240,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 76662,
+          "reused_recorded_serial_latency_ms": 117333.16570846364
+        },
+        "arithmetic_mean5": {
+          "correct": 205,
+          "n": 240,
+          "accuracy": 0.8541666666666666,
+          "accuracy_ci95": {
+            "low": 0.8083333333333333,
+            "high": 0.8959374999999985,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 1200,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 383310,
+          "reused_recorded_serial_latency_ms": 586180.4079920985
+        },
+        "geometric_mean5": {
+          "correct": 202,
+          "n": 240,
+          "accuracy": 0.8416666666666667,
+          "accuracy_ci95": {
+            "low": 0.7958333333333333,
+            "high": 0.8875,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 1200,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 383310,
+          "reused_recorded_serial_latency_ms": 586180.4079920985
+        }
+      },
+      "paired_contrasts": [
+        {
+          "alternative": "geometric_mean5",
+          "reference": "arithmetic_mean5",
+          "reference_wrong_alternative_correct": 0,
+          "reference_correct_alternative_wrong": 3,
+          "both_correct": 202,
+          "both_wrong": 35,
+          "label_disagreements": 4,
+          "accuracy_difference": -0.0125,
+          "accuracy_difference_ci95": {
+            "low": -0.029166666666666674,
+            "high": 0.0,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        },
+        {
+          "alternative": "arithmetic_mean5",
+          "reference": "first_order",
+          "reference_wrong_alternative_correct": 6,
+          "reference_correct_alternative_wrong": 5,
+          "both_correct": 199,
+          "both_wrong": 30,
+          "label_disagreements": 16,
+          "accuracy_difference": 0.004166666666666667,
+          "accuracy_difference_ci95": {
+            "low": -0.02083333333333337,
+            "high": 0.029166666666666674,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        },
+        {
+          "alternative": "geometric_mean5",
+          "reference": "first_order",
+          "reference_wrong_alternative_correct": 5,
+          "reference_correct_alternative_wrong": 7,
+          "both_correct": 197,
+          "both_wrong": 31,
+          "label_disagreements": 18,
+          "accuracy_difference": -0.008333333333333333,
+          "accuracy_difference_ci95": {
+            "low": -0.03749999999999998,
+            "high": 0.02083333333333326,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        }
+      ],
+      "arithmetic_geometric_distribution_tv": {
+        "mean": 0.06418411968992835,
+        "maximum": 0.36850237220071685
+      },
+      "maximum_geometric_mean_logit_identity_absolute_error": 1.2212453270876722e-15,
+      "saved_collection_calls": 1200,
+      "new_forward_calls": 0
+    },
+    "phi-4-mini/CommonsenseQA": {
+      "n": 240,
+      "methods": {
+        "first_order": {
+          "correct": 180,
+          "n": 240,
+          "accuracy": 0.75,
+          "accuracy_ci95": {
+            "low": 0.6957291666666667,
+            "high": 0.8041666666666667,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 240,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 55186,
+          "reused_recorded_serial_latency_ms": 91033.7552856654
+        },
+        "arithmetic_mean5": {
+          "correct": 174,
+          "n": 240,
+          "accuracy": 0.725,
+          "accuracy_ci95": {
+            "low": 0.6666666666666666,
+            "high": 0.7791666666666667,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 1200,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 275930,
+          "reused_recorded_serial_latency_ms": 455774.4507701136
+        },
+        "geometric_mean5": {
+          "correct": 178,
+          "n": 240,
+          "accuracy": 0.7416666666666667,
+          "accuracy_ci95": {
+            "low": 0.6833333333333333,
+            "high": 0.7958333333333333,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          },
+          "questions_with_exact_top_ties": 0,
+          "reused_physical_calls": 1200,
+          "new_forward_calls": 0,
+          "reused_input_tokens": 275930,
+          "reused_recorded_serial_latency_ms": 455774.4507701136
+        }
+      },
+      "paired_contrasts": [
+        {
+          "alternative": "geometric_mean5",
+          "reference": "arithmetic_mean5",
+          "reference_wrong_alternative_correct": 6,
+          "reference_correct_alternative_wrong": 2,
+          "both_correct": 172,
+          "both_wrong": 60,
+          "label_disagreements": 8,
+          "accuracy_difference": 0.016666666666666666,
+          "accuracy_difference_ci95": {
+            "low": -0.004166666666666652,
+            "high": 0.04166666666666663,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        },
+        {
+          "alternative": "arithmetic_mean5",
+          "reference": "first_order",
+          "reference_wrong_alternative_correct": 6,
+          "reference_correct_alternative_wrong": 12,
+          "both_correct": 168,
+          "both_wrong": 54,
+          "label_disagreements": 24,
+          "accuracy_difference": -0.025,
+          "accuracy_difference_ci95": {
+            "low": -0.05833333333333335,
+            "high": 0.008333333333333304,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        },
+        {
+          "alternative": "geometric_mean5",
+          "reference": "first_order",
+          "reference_wrong_alternative_correct": 8,
+          "reference_correct_alternative_wrong": 10,
+          "both_correct": 170,
+          "both_wrong": 52,
+          "label_disagreements": 24,
+          "accuracy_difference": -0.008333333333333333,
+          "accuracy_difference_ci95": {
+            "low": -0.04166666666666674,
+            "high": 0.025000000000000022,
+            "valid_draws": 10000,
+            "invalid_draws": 0
+          }
+        }
+      ],
+      "arithmetic_geometric_distribution_tv": {
+        "mean": 0.06906661218144605,
+        "maximum": 0.4945929520284603
+      },
+      "maximum_geometric_mean_logit_identity_absolute_error": 1.4432899320127035e-15,
+      "saved_collection_calls": 1200,
+      "new_forward_calls": 0
+    }
+  }
+}

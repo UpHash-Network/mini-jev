@@ -1,0 +1,38 @@
+{
+  "scope": "Automated local project-page content and responsive-layout checks; not human usability evaluation",
+  "checks": [
+    {
+      "browser": "chromium",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "control_link": "https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/aggregation_control_20261005/README.md"
+    },
+    {
+      "browser": "chromium",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "control_link": "https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/aggregation_control_20261005/README.md"
+    },
+    {
+      "browser": "firefox",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "control_link": "https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/aggregation_control_20261005/README.md"
+    },
+    {
+      "browser": "firefox",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "control_link": "https://github.com/UpHash-Network/mini-jev/blob/research/naacl2027-demo/paper/naacl2027/aggregation_control_20261005/README.md"
+    }
+  ],
+  "initial_check_limit": "An initial networkidle navigation wait timed out with the page video request active on the local Python server. The content/layout check was rerun using DOMContentLoaded plus document.fonts.ready; it does not test complete video download or playback."
+}

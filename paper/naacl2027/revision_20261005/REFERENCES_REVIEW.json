@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-10-05T06:29:16Z",
+  "scope": "Primary arXiv abstract metadata and selected methods passages for three citations; no numerical replication, full-paper audit, code audit, or peer-review verification.",
+  "context": [
+    "paper/naacl2027/competition/PAPERS.20261004.json",
+    "paper/naacl2027/competition/PAPERS.20261005.json",
+    "paper/naacl2027/main.tex"
+  ],
+  "papers": [
+    {
+      "bibtex_key": "li2026llm2jev",
+      "arxiv_id": "2610.02076",
+      "version": "v1",
+      "title": "LLM2Jev: LLMs Are Already Jev-Style Decision Models -- When and How to Fine-Tune Them",
+      "authors": ["Yinheng Li", "Justin Wagle"],
+      "submitted_at_utc": "2026-10-01T17:15:24Z",
+      "primary_class": "cs.CL",
+      "metadata_source": "https://arxiv.org/abs/2610.02076",
+      "metadata_location": "Title/authors and submission history, extracted lines 8–27",
+      "method_source": "https://arxiv.org/html/2610.02076v1",
+      "method_location": "Sections 3.2–3.4, Eq. 1, extracted lines 175–244",
+      "verified_scope": "Frozen inference sums token log-probabilities for each bracketed numeric suffix, then normalizes across candidates. It reuses prompt KV state for parallel branch scoring. A separate fine-tuning recipe uses a tree-factorized loss and KL anchors. Inference omits permutation averaging.",
+      "comparison_inference": "A close frozen-readout comparator, but its full-suffix scoring can require branch forwards beyond the prompt prefill. Single-token and suffix scoring are distinct conditions.",
+      "publication_status": "arXiv preprint; no peer-reviewed venue verified in the checked primary metadata"
+    },
+    {
+      "bibtex_key": "zhang2026anyjev",
+      "arxiv_id": "2610.00831",
+      "version": "v1",
+      "title": "AnyJev Technical Report",
+      "authors": ["Jiamu Zhang", "Tianze Yang", "Yucheng Shi", "Evan Chen", "Zixiang Nie", "Kelly Wan", "Liangjie Hong", "Ninghao Liu", "Liang Wu"],
+      "submitted_at_utc": "2026-09-30T23:43:04Z",
+      "primary_class": "cs.LG",
+      "metadata_source": "https://arxiv.org/abs/2610.00831",
+      "metadata_location": "Title/authors/comments and submission history, extracted lines 8–27",
+      "method_source": "https://arxiv.org/html/2610.00831v1",
+      "method_location": "Sections 3–5, Eqs. 1–5, extracted lines 104–165",
+      "verified_scope": "The report uses restricted single-token readout, estimates label priors from unlabelled inputs, and studies cyclic log-probability aggregation with position-bound labels. Eq. 3 averages pre-prior probabilities in log space; it does not apply per-layout prior correction first. Prior strength was selected with labels, and confidence temperature fitting is a separate labelled step.",
+      "comparison_inference": "Contrast log-space aggregation with LogitTrail's arithmetic probability mean and fixed token–meaning bindings. Adaptive stopping targets agreement with the full-cycle decision, not gold accuracy.",
+      "publication_status": "Early arXiv technical report; no peer-reviewed venue verified in the checked primary metadata"
+    },
+    {
+      "bibtex_key": "lv2026audiojev",
+      "arxiv_id": "2610.01293",
+      "version": "v1",
+      "title": "AudioJev: Direct Audio Decisions with Order-Calibrated Probabilities",
+      "authors": ["Sihan Lv", "Zhen Li", "Zhiqi Cao", "Jinshan Zhang", "Ying Li", "Meng Xi", "Jianwei Yin"],
+      "submitted_at_utc": "2026-10-01T08:29:04Z",
+      "primary_class": "cs.SD",
+      "metadata_source": "https://arxiv.org/abs/2610.01293",
+      "metadata_location": "Title/authors and submission history, extracted lines 8–26",
+      "method_source": "https://arxiv.org/html/2610.01293v1",
+      "method_location": "Sections 3.1–4, Eqs. 1–6, extracted lines 117–163",
+      "verified_scope": "A trained audio classifier uses candidate-only logits and supervised random-derangement pairs. It aligns distributions by answer meaning before symmetric KL, updates all active classification parameters, and uses one forward at inference. Its order-consistency objective is separate from empirical confidence reliability.",
+      "comparison_inference": "Relevant to semantic alignment and order sensitivity; it is not a frozen text baseline. Position-relative alternatives fall outside its permutation-bias comparison domain.",
+      "publication_status": "arXiv preprint; no peer-reviewed venue verified in the checked primary metadata"
+    }
+  ],
+  "editorial_boundaries": [
+    "Submission timestamps are not independently verified first-public-announcement times.",
+    "Do not infer a runtime or accuracy advantage from these paper descriptions.",
+    "The separate AnyJev opt-in implementation discrepancy in PAPERS.20261005.json is outside the proposed related-work text and does not invalidate the report's methods.",
+    "No planned comparison is presented as completed evidence; bibliography completion is not independent human validation."
+  ],
+  "changes": [
+    "Added the three missing, version-pinned arXiv entries to paper/naacl2027/references.bib.",
+    "Wrote concise citation-ready prose and source distinctions in REFERENCES_NOTES.md."
+  ]
+}

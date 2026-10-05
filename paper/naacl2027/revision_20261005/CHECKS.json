@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-05T06:43:59.452747+00:00",
+  "pdf_sha256": "9bd1b03489f1fbfead292d9cb86051a55bb60e10ab72b67eeb65c46e2044323f",
+  "main_tex_sha256": "cda34e6c5d87e1ec7cf88eaa747cf3b4c0056b2575f3e25eb4d5b87e492f94ee",
+  "references_sha256": "d6428b66ac6359e7857e14b8b8fb4deed21f0ef3509fd069eb5d817fd5235628",
+  "pages": 11,
+  "body_and_acknowledgements_end_page": 6,
+  "ethics_and_references_pages": [
+    7,
+    8,
+    9
+  ],
+  "appendix_pages": [
+    10,
+    11
+  ],
+  "overfull_boxes": 0,
+  "unresolved_references": 0,
+  "replacement_glyphs": 0,
+  "public_pdf_identical": true,
+  "protected_artifact_sha256": {
+    "paper/arxiv/source/main.tex": "74f8f7c64ae4a1a057cd49c2921a32eae51377cc9185a13138c436fe085a733a",
+    "paper/arxiv/mini-jev-arxiv-source-20260925.zip": "0fc7ea4ffc83f80bef88405e6f3a9f6cd57a56db1224ac8e810db7dd09768d1d",
+    "paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip": "a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053"
+  },
+  "new_model_inference_calls": 0,
+  "human_participants": 0,
+  "independent_machine_inference": false,
+  "analysis_scope": "Post-hoc aggregation-only control on the existing 4,800 responses / 480 questions reused across two models; no whole-system AnyJev benchmark.",
+  "aggregation_checks": "../aggregation_control_20261005/CHECKS.json",
+  "replay_verifier_checks": "../aggregation_control_20261005/VERIFIER_CHECKS.json",
+  "public_release_unit_tests": {
+    "passed": 11
+  },
+  "visual_review": "PDF_REVIEW.json",
+  "content_review": "CLAIM_REVIEW.json",
+  "reference_review": "REFERENCES_REVIEW.json",
+  "cfp": {
+    "url": "https://2027.naacl.org/calls/system_demonstration/",
+    "checked_on": "2026-10-05",
+    "main_limit": 6,
+    "appendix_limit": 2,
+    "references_and_ethics_unlimited": true
+  },
+  "scope": "AI/software and saved-data checks only. No human utility, external adoption or independent machine inference established.",
+  "site_checks": "SITE_CHECKS.json",
+  "staged_changed_files_hygiene": {
+    "schema_version": 1,
+    "passed": true,
+    "files_scanned": 33,
+    "bytes_scanned": 3010901,
+    "findings": [],
+    "scope": "33 curated staged changed files, not private untracked working files."
+  }
+}

@@ -2,7 +2,7 @@
 
 **29 September 2026: renamed from Mini Jev to LogitTrail.** The submitted arXiv version retains its original Mini Jev title; this is a later conference-preparation revision. [Name and version mapping](../../NAMING.md).
 
-**Conference submission preparation, updated 3 October 2026 (JST).**
+**Conference submission preparation, updated 5 October 2026 (JST).**
 The related preprint was submitted to arXiv on 26 September. Its recorded status
 on 27 September was awaiting moderation, without a public arXiv ID; this revision
 does not verify a newer moderation status. This NAACL manuscript is
@@ -19,12 +19,14 @@ The [raw-record follow-up](raw_workflow_20261002/README.md) executes custom Java
 
 The separate [Japanese diagnostic confirmation](diagnostic_value_20261003/publication/README.md) adds 2,400 measured calls on 240 further questions shared by two Qwen checkpoints. A subsequent [two-family Japanese/English follow-up](generality_20261003/publication/README.md) adds 4,800 measured calls on 240 JCommonsenseQA and 240 CommonsenseQA questions shared by Qwen2.5-1.5B and Phi-4-mini. Its primary Phi-English comparison finds identical per-item correctness for entropy+order-TV and entropy alone: **174/240 at 720 calls**. Fixed-random and first-entropy references score 180/240 and 177/240. Added order-TV benefit remains unestablished; [the full report](generality_20261003/publication/REPORT.ja.md) retains all scores, error targets, strata and budgets, plus the synthetic implementation failure and versioned correction. An additional formative user-study packet is local and unpublished, with zero human participants or observations.
 
-[Latest manuscript revision checks](revision_20261003_strengthening/README.md) record the current PDF, four added primary-source citations, and a [retrospective engineering case](case_study_20261003/CASE_STUDY.md). The case preserves 48 diagnostic/repeat records, two probability-tolerance failures with unchanged labels, the pre-benchmark amendment, and unchanged final study results. It is not a human study or new model experiment.
+[October 3 manuscript revision checks](revision_20261003_strengthening/README.md) record that PDF, four added primary-source citations, and a [retrospective engineering case](case_study_20261003/CASE_STUDY.md). The case preserves 48 diagnostic/repeat records, two probability-tolerance failures with unchanged labels, the pre-benchmark amendment, and unchanged final study results. It is not a human study or new model experiment.
+
+The [October 5 revision](revision_20261005/README.md) adds verified LLM2Jev, AnyJev and AudioJev references and a [post-hoc aggregation-only control](aggregation_control_20261005/README.md). The same 4,800 saved responses produce all four arithmetic-versus-geometric comparisons; 4–8 labels change per 240-item stratum, without a consistent accuracy gain. Full first-order references, paired intervals, source hashes and replay code are retained. There is no new inference, unseen confirmation, human evaluation or complete AnyJev benchmark.
 
 ## Read and run
 
 - [Research project page](https://uphash-network.github.io/mini-jev/) — manuscript, video, findings, and installation links in one place.
-- [Paper PDF](NAACL2027_LogitTrail.pdf) — 10 pages: main text, limitations, and acknowledgements end on page 6; ethics and references occupy pages 7–8; Appendix A occupies pages 9–10.
+- [Paper PDF](NAACL2027_LogitTrail.pdf) — 11 pages: main text, limitations, and acknowledgements end on page 6; ethics and references occupy pages 7–9; Appendix A occupies pages 10–11.
 - [Download the versioned source and evidence ZIP](https://raw.githubusercontent.com/UpHash-Network/mini-jev/refs/heads/research/naacl2027-demo/paper/naacl2027/reproducibility/naacl-repro-v1-20260925.zip)
   — 18,060,014 bytes; SHA-256
   `a15e0699a54be15d56bd99ed8181429b71fdfc7ace756d6e065a75538786c053`.
@@ -92,7 +94,7 @@ python3 paper/naacl2027/build.py --tectonic /path/to/tectonic
 ```
 
 Tested with Tectonic 0.17.0. Official ACL style files are unmodified and checked
-against [their provenance](STYLE_PROVENANCE.json). All ten rendered pages were
+against [their provenance](STYLE_PROVENANCE.json). All eleven rendered pages were
 visually checked; there are no undefined citations or overfull boxes. Ordinary
 underfull-box and the style dependency's existing `lineno` UTF-8 warnings remain
 without visible corruption.

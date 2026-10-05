@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-05T06:30:29.664580+00:00",
+  "status": "POST-HOC analysis specification locally recorded before calculating the new aggregation-control results.",
+  "registration": "Not preregistered and not unseen confirmation: these saved datasets and their original arithmetic-mean outcomes were already available and inspected.",
+  "question": "On exactly the same saved five fixed-binding responses, how do normalized geometric probability averaging and original arithmetic probability averaging compare? The original canonical first order is retained as a lower-cost reference.",
+  "motivation": "Aggregation-only control inspired by log-probability averaging; not an AnyJev reproduction. Token-to-semantic-option binding, prompts, candidate sets, orders, model outputs and candidate normalization stay fixed. No permutation-dependent token rebinding, prior correction, null prompt or additional inference is introduced.",
+  "bundle_relative_path": "../generality_20261003/publication/bundle_v1",
+  "models": [
+    "qwen2.5-1.5b",
+    "phi-4-mini"
+  ],
+  "datasets": [
+    "JCommonsenseQA",
+    "CommonsenseQA"
+  ],
+  "n_items_per_stratum": 240,
+  "members_per_item": 5,
+  "scope": "All four model/dataset strata reported separately. The same 480 distinct questions are reused across two models; no pooled accuracy, independence assumption across models, or causal language/family attribution.",
+  "methods": {
+    "first_order": "Replicate 0 in the frozen logical order, regardless of randomized physical execution order. Use saved candidate-normalized probabilities.",
+    "arithmetic_mean5": "a_k = (1/5) sum_r p_rk, using the saved candidate-normalized probabilities with option_0..4 semantic alignment. Identical to the original five-member arithmetic ensemble.",
+    "geometric_mean5": "g_k = exp((1/5) sum_r log p_rk) / sum_j exp((1/5) sum_r log p_rj). Compute log p from saved finite logits with stable log-softmax at T=1, avoiding clipping and probability underflow. Verify saved probabilities against reconstructed softmax using the frozen reader. At fixed binding and T=1 this equals softmax of the mean candidate logits; verify that identity independently for each question."
+  },
+  "prediction_ties": "First index in canonical option_0..4 order, matching the original reader. Record exact top-score tie counts.",
+  "outcomes": {
+    "accuracy": "Correct count and fraction for all three methods.",
+    "contrasts": [
+      [
+        "geometric_mean5",
+        "arithmetic_mean5"
+      ],
+      [
+        "arithmetic_mean5",
+        "first_order"
+      ],
+      [
+        "geometric_mean5",
+        "first_order"
+      ]
+    ],
+    "paired": "For every contrast report question-paired accuracy difference, reference-wrong/alternative-correct, reference-correct/alternative-wrong, both correct, both wrong, and label disagreements (including wrong-to-different-wrong).",
+    "diagnostic": "Mean and maximum total variation between arithmetic and geometric distributions, with all item predictions/probabilities retained in records.jsonl. This is a distribution-change description, not a calibration result."
+  },
+  "uncertainty": {
+    "method": "Paired whole-question nonparametric percentile bootstrap within each stratum; resample the same question indices across all three methods. Predictions are fixed; no refit, selection or aggregation tuning.",
+    "draws": 10000,
+    "seed": 2026100501,
+    "randomization": "Separate random.Random(seed + stratum_index) generators; stratum order models outer, datasets inner.",
+    "interval": "95% percentile interval with linear interpolation at positions (B-1)*0.025 and (B-1)*0.975; report valid/invalid draw counts.",
+    "interpretation": "All intervals are exploratory and unadjusted. No p-values, multiplicity-adjusted winner claim, population equivalence claim, or replacement of original prespecified results. All positive, negative and null findings retained."
+  },
+  "cost": {
+    "new_forward_calls": 0,
+    "new_model_downloads": 0,
+    "saved_collection_calls_per_stratum": 1200,
+    "saved_collection_calls_total": 4800,
+    "first_order_reused_calls_per_stratum": 240,
+    "each_five_member_method_reused_calls_per_stratum": 1200,
+    "accounting": "Arithmetic and geometric methods use exactly the same 1200 physical responses per stratum; their costs are not added together. First-order is a 240-response lower-cost reference, not a same-budget competitor. Record input-token and serial-latency sums from the reused members, never interpret these as new timing or online speedups."
+  },
+  "exclusions_and_failures": "No exclusions, new item selection, retries, sample expansion, policy tuning or new inference. Fail on any manifest, schedule, identity, finiteness, normalization or member completeness mismatch.",
+  "limits": [
+    "Already-seen public validation panel; pretraining exposure unknown.",
+    "One Japanese and one English commonsense five-choice task; unequal-size model families and different datasets confound causal comparisons.",
+    "One original machine; numerical code checks are not independent human or machine replication.",
+    "This isolates only the aggregation rule with the original fixed binding; it cannot establish effects of AnyJev token reassignment or prior correction."
+  ]
+}

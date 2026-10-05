@@ -12,7 +12,7 @@ Preview with `python3 -m http.server 8788 --bind 127.0.0.1 --directory docs`.
 
 - Scientific content: `paper/naacl2027/main.tex` and `paper/naacl2027/README.md`,
   numerical evidence frozen at commit `bd025e8b1d14352a440d289c73b00ae445290935`.
-  The current manuscript was updated on 3 October 2026; the reviewer entry was also updated on 3 October, and the demonstration on 2 October. Later diagnostic studies have separate bundles and are not part of that original evidence commit.
+  The current manuscript was updated on 5 October 2026; the reviewer entry was also updated on 5 October, and the demonstration on 2 October. Later diagnostic studies have separate bundles and are not part of that original evidence commit.
   The separately submitted arXiv preprint is awaiting moderation; the public PDF
   here follows the continuing conference-preparation revision.
 - `assets/LogitTrail_Manuscript.pdf`: byte-identical copy of `paper/naacl2027/NAACL2027_LogitTrail.pdf`, the current renamed conference-preparation manuscript. The Mini Jev manuscript and the submitted arXiv package remain historical artifacts; this is not a replacement arXiv upload.
@@ -41,3 +41,5 @@ the short evidence walkthrough presents its explanation as visible text.
 `assets/LogitTrail_Demo_20261002.mp4` contains actual browser interactions with the saved-evidence Explorer and a clearly labeled 16-second excerpt of the earlier local-inference recording. English captions are embedded outside the Explorer viewport; no new inference is claimed. See `publication/revision-20261002/video/` for capture/build scripts, transcript, provenance, and visual verification. The paper figure is a separate unmodified element screenshot of the JCoLA comparison, not a synthetic mockup.
 
 The 3 October strengthening revision adds four primary-source references and a retrospective retained-failure case. `explorer/import/engineering-case.jsonl` is byte-identical to the case projection; it adds no model measurement or human observation. Current source and checks: `paper/naacl2027/revision_20261003_strengthening/`.
+
+The 5 October revision adds three verified references and a post-hoc arithmetic-versus-geometric aggregation control on the same saved responses. All four strata, adverse/null outcomes and paired exploratory intervals are retained. Source and checks: `paper/naacl2027/revision_20261005/`. No new inference, human observations or complete AnyJev benchmark is claimed.

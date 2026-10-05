@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-05T06:42:12.762942+00:00",
+  "status": "passed",
+  "role": "Unfrozen CI verification added after the aggregation results; does not alter the frozen analysis.",
+  "verifier_tests": {
+    "passed": 10,
+    "failed": 0,
+    "command": "python3 -B -m unittest discover -s paper/naacl2027/aggregation_control_20261005 -p 'test_verify_replay.py' -v"
+  },
+  "combined_analysis_and_verifier_tests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "real_saved_pool_replay": {
+    "absolute_numeric_tolerance": 1e-12,
+    "ignored_value_paths": [
+      "RESULTS.json/created_at"
+    ],
+    "maximum_records_absolute_difference": 0.0,
+    "maximum_results_absolute_difference": 0.0,
+    "records_compared": 960,
+    "report_byte_identical": true,
+    "status": "passed",
+    "strict_json_types": true,
+    "verified_manifests": 2
+  },
+  "working_directory_independence": true,
+  "fresh_manifest_perturbations_rejected": [
+    "accuracy",
+    "integer_cost",
+    "record_probability",
+    "record_count",
+    "integer_to_float_type",
+    "integer_to_boolean_type",
+    "nested_created_at",
+    "missing_dictionary_key",
+    "changed_report",
+    "duplicate_JSON_key",
+    "NaN",
+    "Infinity",
+    "overflow_to_infinity"
+  ],
+  "both_expected_and_actual_manifest_tampering_rejected": true,
+  "small_float_differences_accepted_below_tolerance": true,
+  "all_freeze_bound_sources_unchanged": true,
+  "new_forward_calls": 0,
+  "verifier_source_sha256": {
+    "verify_replay.py": "77768e9513da4f62778f2323f4e28b634b35ee7ac0e91d3225cd45ebd3e146a3",
+    "test_verify_replay.py": "65068eaa47125d7564fca98ecc184ab9f66c3b0e1db6c08590d5a5eae4e21ce9",
+    "PUBLICATION_NOTES.md": "feb22bb9d0b7b953734b3166f600f1ce84bd2cd070c8f4145cd44d122a092054"
+  },
+  "limits": "Computational fault injection and replay by an AI agent, not independent human validation or another physical machine."
+}

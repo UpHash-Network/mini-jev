@@ -192,7 +192,7 @@ Qwen3.6 35B-A3B & $98.5\to98.0$ & $4.5\to1.5$ \\
 \end{table}
 
 \paragraph{Diagnostic value.}
-A frozen 240-question JCQA panel adds 2,400 calls across Qwen 1.5B and 35B. Adding order-induced total variation (TV) to entropy did not establish added error-detection value; at 720 calls, the two policies have identical per-item correctness. A separate scope extension adds 4,800 calls on 240 new JCQA and 240 English CommonsenseQA items \citep{talmor2019commonsenseqa}, shared by Qwen 1.5B and Phi-4-mini \citep{microsoft2025phi4mini}. The extension also does not establish added order-TV value: the primary Phi-English AP difference is $-0.051$; at 720 calls, both policies return 174/240 correct answers. Full intervals and all budgets are retained (Appendix~\ref{sec:comparison_scope}, Table~\ref{tab:diagnostic}). Accordingly, sensitivity remains an inspection signal, not a confidence or routing guarantee; the display retains outcomes, panel marginals, and cost.
+A frozen 240-question JCQA panel adds 2,400 calls across Qwen 1.5B and 35B; adding order-induced total variation (TV) to entropy did not establish added error-detection value. A scope extension adds 4,800 calls on 240 new JCQA and 240 English CommonsenseQA items \citep{talmor2019commonsenseqa}, shared by Qwen 1.5B and Phi-4-mini \citep{microsoft2025phi4mini}. Its primary Phi-English AP difference is $-0.051$; at 720 calls, both policies return 174/240 correct answers. All intervals and budgets are retained (Appendix~\ref{sec:comparison_scope}). A post-hoc aggregation control on the same extension responses changes 4--8 labels per 240 items between arithmetic and geometric means, without consistent accuracy gains (Table~\ref{tab:aggregation}). Sensitivity remains an inspection signal, not a confidence or routing guarantee.
 
 \subsection{Reproduction and framework integration}
 The original package retains 26,050 requests, protocols, hashes, and analyzers. Clean-directory CPU replay reproduced 56 derived files byte-for-byte. A fresh native build served all three types with a cached, hash-verified model on the same Mac: source/cache reconstruction, not independent-machine replication.
@@ -204,7 +204,7 @@ Synthetic integration checks retain failures. With matched checkpoint, prefixes,
 Verbalizers \citep{schick2021pet}, decoding-free selection \citep{ma2025inferring}, Qwen3 reranking \citep{zhang2025qwen3embedding,qwen3reranker}, and G-Eval's weighted scores \citep{liu2023geval} precede our readouts. Expected ordinal relevance appears in zero-shot ranking \citep{zhuang2024beyond} and trained job-candidate scoring \citep{wang2026singletoken}. We claim neither a new scoring rule nor ranking gains.
 
 \paragraph{Structured interfaces.}
-LMQL scores continuations \citep{lmqlscoring}; multi-token scores need not equal single-token readout. Outlines, Guidance, and grammars constrain generation \citep{outlines,guidance,geng2023grammar}. TypeSafe's adapter constructs Jev-style responses from general LLM outputs \citep{typesafeadapter}; generated probabilities differ from candidate-logit probabilities. New \texttt{llama.cpp} source provides a typed API for supported decision models, including LEV order averaging \citep{llamacpp2026systemone}; it is not automatic support for ordinary GGUF models. OmniMed-Jev trains a candidate head with LoRA for medical multimodal decisions \citep{tang2026omnimedjev}; its calibration evidence does not evaluate frozen readout. Our JSON experiment compares serialization, not these frameworks.
+LMQL scores continuations \citep{lmqlscoring}; Outlines, Guidance, and grammars constrain generation \citep{outlines,guidance,geng2023grammar}. TypeSafe's adapter returns generated rather than candidate-logit probabilities \citep{typesafeadapter}. Native \texttt{llama.cpp} source serves supported decision models, including LEV order averaging, not arbitrary GGUF models \citep{llamacpp2026systemone}. LLM2Jev scores complete bracketed numeric suffixes on frozen backbones and separately studies fine-tuning \citep{li2026llm2jev}; this differs from one-token readout. AnyJev studies label-prior correction and log-space cyclic aggregation with position-bound labels \citep{zhang2026anyjev}; we retain fixed token--meaning bindings. OmniMed-Jev trains a medical multimodal candidate head with LoRA \citep{tang2026omnimedjev}; AudioJev trains supervised audio order consistency \citep{lv2026audiojev}. Our serialization and aggregation checks do not benchmark these systems.
 
 \paragraph{Inspection interfaces.}
 Rakutko's distinct mini-jev compares frozen letter-logit scoring with constrained JSON in an inspection bench \citep{rakutko2026minijev}; our rename avoids confusion. Ollama documents local Choice/Noul/Score probabilities \citep{ollama2026decision}; ChainForge adds an Ollama decision provider \citep{arawjo2024chainforge,chainforge2026decision}. Its inference path remains untested here. ChainForge 0.3.7.6's GUI retains six matched saved-evidence cases; its native Processor also executes our custom JavaScript to reconstruct 2,400 conditions from 6,000 archived logit records within $10^{-12}$ tolerance. This supports competitor feasibility, not inspection superiority (Appendix~\ref{sec:comparison_scope}). LLM Comparator compares responses \citep{kahng2025comparator}; Langfuse and Phoenix expose typed distributions or metadata \citep{langfuse2026jev,phoenix2026jev}. New promptfoo source retains Jev answers in regular and rubric evaluation paths \citep{promptfoo2026typesafe}; these source integrations are untested here. Our distinction concerns connecting complete panels, semantic alignment, shared calls, and archive-line provenance.
@@ -222,7 +222,7 @@ OpenAI Codex agents assisted implementation, question authoring, checks, experim
 
 \clearpage
 \section*{Ethics and Availability}
-The demonstration supports model inspection and typed-interface prototyping, with no evidence for high-stakes deployment. Inference is local; users remain responsible for inputs and downstream use. Code and self-authored local data use MIT terms. External-dataset-derived selection metadata, rubrics, protocols, and results separately retain applicable CC BY-SA 4.0 attribution and share-alike terms. Upstream dataset text, model weights, and compiled binaries are not bundled; repository data cards and notices specify acquisition and attribution.
+The demonstration supports model inspection and typed-interface prototyping, with no evidence for high-stakes deployment. Inference is local; users remain responsible for inputs and downstream use. Code and self-authored local data use MIT terms. Japanese-dataset-derived selection metadata, rubrics, protocols, and results retain applicable CC BY-SA 4.0 terms; English CommonsenseQA material retains MIT terms. Upstream dataset text, model weights, and compiled binaries are not bundled; repository data cards and notices specify acquisition and attribution.
 
 \bibliography{references}
 \clearpage
@@ -265,7 +265,7 @@ The released HTTP response and browser expose semantic labels, typed values, can
 The frozen source/evidence ZIP retains the original 26,050 measured requests; 300 earlier pilot predictions are background and excluded. Standard-library checks verify accounting, and CPU replay reproduces 56 derived files without models or network access. The current manuscript and later studies are separate packages. The explorer validates unchanged source hashes, semantic mappings and physical-call unions. Reanalysis verifies calculations, not observation authenticity or generalization.
 
 \paragraph{Live installation.}
-The repository supplies native build and pinned-model acquisition commands: \texttt{build\_native.sh}, \texttt{fetch\_native\_model.py}, and \texttt{./run.sh -{}-without-calibration}. Running \texttt{python3 -m demo.server -{}-port 8766} serves the interface at \url{http://127.0.0.1:8766/}. Fresh builds use $T=1$; historical calibration artifacts are bound to their recorded runtime. The tested Mac uses macOS 26.4, Metal, and Accelerate. The 20.4\,GB model needs additional runtime memory. We distribute source, not weights or binaries; a minimum-memory configuration is unestablished. The static explorer can instead be served from \texttt{docs/} with Python's HTTP server; HTTPS or localhost enables browser hash verification.
+The reviewer guide supplies native build, pinned-model acquisition, and \texttt{./run.sh -{}-without-calibration} commands. Running \texttt{python3 -m demo.server -{}-port 8766} serves the interface at \url{http://127.0.0.1:8766/}. Fresh builds use $T=1$; historical calibration is runtime-bound. Tests use macOS 26.4, Metal, and Accelerate. The 20.4\,GB model requires additional runtime memory; a minimum configuration is unestablished. We distribute source, not weights or binaries. Serving \texttt{docs/} over HTTPS or localhost enables model-free browser hash verification.
 
 \paragraph{Post-hoc LMQL diagnosis.}
 All three original $10^{-5}$ probability failures remain. Maximum Score expectation error is $7.18\times10^{-5}$, within the separate $10^{-4}$ typed-value tolerance. Native probability margins exceed 0.9799, so matching labels provide no near-boundary evidence. Softmax of saved LMTP logits reproduces LMQL probabilities within $3.64\times10^{-9}$; native-path logit differences can account for discrepancies, but their cause remains unisolated. Type, candidate count, and prefix are confounded. This analysis adds no inference and changes no threshold.
@@ -301,7 +301,27 @@ Phi3.8 / EN & 62 & $-0.051\;[-0.119,\;0.013]$ \\
 
 Both packages retain two error targets, eight scores and four policies at five budgets. The 2,000 paired-question percentile bootstraps condition on observed ranks/allocations, with unadjusted descriptive intervals and undefined counts retained. Collection pays all five calls; replay costs sum the chosen physical members. Recorded token/latency sums are not online timing or speedups. Reanalysis is not independent inference or human validation.
 
+\paragraph{Aggregation-only control.}
+A \href{https://github.com/UpHash-Network/mini-jev/tree/research/naacl2027-demo/paper/naacl2027/aggregation_control_20261005}{post-hoc reanalysis} compares arithmetic means with $g_k\propto\exp(\frac15\sum_r\log p_{rk})$ on the same five extension responses. Fixed token--meaning bindings and $T=1$ remain unchanged; this does not reproduce AnyJev's position-bound labels or prior correction. All four strata were already inspected; a local plan recorded before this calculation is not preregistration. Table~\ref{tab:aggregation} reports all strata. Arithmetic and geometric means share 1,200 physical calls per row; the first-order reference uses 240. No new inference or equal-budget advantage over that reference is claimed. Intervals use 10,000 paired-question bootstrap draws, exploratory and unadjusted; no consistent aggregation winner is established.
+
+\begin{table}[h]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Stratum & Correct F/A/G & G$-$A pp [95\% interval] \\
+\midrule
+Q1.5 / JA & 194/200/198 & $-0.83\;[-2.50,\;0.83]$ \\
+Q1.5 / EN & 166/170/170 & $0.00\;[-1.67,\;1.67]$ \\
+Phi3.8 / JA & 204/205/202 & $-1.25\;[-2.92,\;0.00]$ \\
+Phi3.8 / EN & 180/174/178 & $1.67\;[-0.42,\;4.17]$ \\
+\bottomrule
+\end{tabular}
+\caption{Correct counts among 240 items per row: first-order (F), arithmetic (A), geometric (G). Models share the 480 distinct questions; strata are not pooled.}
+\label{tab:aggregation}
+\end{table}
+
 \paragraph{Human evaluation boundary.}
-No human study was conducted. Synthetic-page checks and a Claude Code interface rehearsal are software QA, excluded from human results. A counterbalanced developer pilot compares the released importer with equally informed complete JSON; it has zero human participants. Human comparative performance and cross-machine inference remain open.
+No human study was conducted. Synthetic checks and a Claude Code rehearsal are software QA. A prepared importer-versus-complete-JSON pilot has zero participants. Human comparative performance and independent-machine inference remain open.
 
 \end{document}
