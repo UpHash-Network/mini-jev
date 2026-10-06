@@ -1,6 +1,6 @@
 # LogitTrail: reviewer quick start — 2 October 2026
 
-Start with saved evidence, then verify or recompute it. A local model is **optional**. This guide is for the continuing NAACL manuscript; it does not modify the frozen experiments, earlier audit receipts, or submitted arXiv files. The original `mini-jev` repository/archive identifiers remain valid after the LogitTrail rename.
+Start with saved evidence, then verify or recompute it. A local model is **optional**. This guide accompanies the manuscript submitted to EACL 2027 System Demonstrations on 6 October 2026; the decision is pending, and it does not modify the frozen experiments, earlier audit receipts, or submitted arXiv files. The original `mini-jev` repository/archive identifiers remain valid after the LogitTrail rename.
 
 [Current manuscript PDF](../../../docs/assets/LogitTrail_Manuscript.pdf) · [Current demonstration](../../../docs/assets/LogitTrail_Demo_20261002.mp4) · [Hosted Explorer](https://uphash-network.github.io/mini-jev/explorer/)
 

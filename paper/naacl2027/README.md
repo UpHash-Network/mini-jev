@@ -1,13 +1,14 @@
-# LogitTrail — NAACL 2027 System Demonstrations manuscript
+# LogitTrail — EACL 2027 System Demonstrations submission
 
-**29 September 2026: renamed from Mini Jev to LogitTrail.** The submitted arXiv version retains its original Mini Jev title; this is a later conference-preparation revision. [Name and version mapping](../../NAMING.md).
+**29 September 2026: renamed from Mini Jev to LogitTrail.** The submitted arXiv version retains its original Mini Jev title; this is a later conference revision. [Name and version mapping](../../NAMING.md).
 
-**Conference submission preparation, updated 5 October 2026 (JST).**
-The related preprint was submitted to arXiv on 26 September. Its recorded status
-on 27 September was awaiting moderation, without a public arXiv ID; this revision
-does not verify a newer moderation status. This NAACL manuscript is
-**not submitted, accepted, or peer reviewed**. The arXiv submission and this
-continuing conference revision are distinct versions.
+**Submitted to EACL 2027 System Demonstrations on 6 October 2026.**
+A decision is pending; no acceptance is claimed. The related preprint was
+submitted to arXiv on 26 September, under its original Mini Jev title. No public
+arXiv identifier has been verified as of 6 October. The arXiv submission and
+this conference revision are distinct versions. Existing `paper/naacl2027/`
+paths, PDF filenames and the `research/naacl2027-demo` branch remain for link
+compatibility; they do not indicate a concurrent NAACL submission.
 
 Author: **Yuki Oshio, UPHASH Inc.** Single author; identified for the single-blind track.
 
@@ -99,14 +100,13 @@ visually checked; there are no undefined citations or overfull boxes. Ordinary
 underfull-box and the style dependency's existing `lineno` UTF-8 warnings remain
 without visible corruption.
 
-The [official call](https://2027.naacl.org/calls/system_demonstration/) opens
-submission **1 November 2026**. Deadline: **4 December 2026, 23:59 AoE**
-(**5 December, 20:59 JST**). The internal target is 20 November JST. The actual
-submission form, account access and current venue requirements must be checked
-when the portal opens. There is no NAACL submission ID or receipt yet. This page
-does not newly verify the separate arXiv submission's moderation status. The earlier
-EACL attempt closed without a submission. No overlapping journal submission has
-been made; the substantive journal extension remains separate.
+The current PDF was submitted through the reopened EACL portal on
+**6 October 2026**; the receipt and submitted record were verified. The
+[official EACL call](https://2027.eacl.org/calls/demos/) lists author notification
+on **18 December 2026**. The decision is pending. The PDF and frozen evidence
+were not changed for this submission-status update. No concurrent NAACL or
+overlapping journal submission has been made; the substantive journal extension
+remains separate.
 
 Code and original project-authored material: MIT. Japanese dataset-derived material:
 applicable CC BY-SA 4.0 terms and upstream attribution in the bundle; English

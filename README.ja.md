@@ -14,7 +14,7 @@
 
 ## はじめに
 
-**2026年9月27日時点：arXivへ投稿済み、モデレーション待ちです。公開arXiv IDはまだありません。** 現行の学会向け原稿はNAACL 2027 System Demonstrationsへの投稿準備中で、未投稿・未採択・未査読です。以前のEACLへの投稿は成立しませんでした。
+**2026年10月6日：EACL 2027 System Demonstrationsへの正式投稿が完了しました。採否結果待ちで、採択済みではありません。** 以前のarXiv投稿は別の版で、提出済みファイルは変更していません。10月6日時点で公開arXiv IDは未確認です。既存リンクを維持するため、`research/naacl2027-demo` ブランチ名と `paper/naacl2027/` パスはそのまま残しています。
 
 1. **読む：** [最新原稿PDF](https://uphash-network.github.io/mini-jev/assets/LogitTrail_Manuscript.pdf)と[論文・証拠の案内](paper/naacl2027/README.md)。
 2. **見る：** [10月2日改訂の127秒デモ](https://uphash-network.github.io/mini-jev/assets/LogitTrail_Demo_20261002.mp4)。保存済みExplorerの操作と、明示した過去のローカル推論映像で構成しています。
